@@ -1,5 +1,99 @@
 # Deploy a Testnet
 
+## Install Cosmos-SDK on a Digital Ocean Droplet \(Recomended\)
+
+```
+export PATH=$PATH:/usr/lib/go-1.10/bin
+export PATH=$PATH:/root/go/bin
+bash <(curl -s https://gist.github.com/melekes/1bd57c73646de97c8f6cbe1b780eb822/raw/2447b0fbf95775852c93a91ed3e12631c7ceb648/install.sh)
+nohup ./build/gaiad start &
+```
+
+## Software Setup
+
+**Install **[**GNU Wget**](https://www.gnu.org/software/wget/)**: **
+
+**MacOS**
+
+```
+brew install wget
+```
+
+**Linux**
+
+```
+sudo apt-get install wget
+```
+
+Note: You can check other available options for downloading `wget` [here](https://www.gnu.org/software/wget/faq.html#download).
+
+**Get Source Code**
+
+```
+go get github.com/cosmos/cosmos-sdk
+```
+
+Now we can fetch the correct versions of each dependency by running:
+
+```
+ggmgit fetch --all
+git checkout develop
+make get_tools // run $ make update_tools if already installed
+make get_vendor_deps
+make install
+make install_examples
+```
+
+The latest cosmos-sdk should now be installed. Verify that everything is OK by running:
+
+```
+gaiad version
+```
+
+You should see:
+
+```
+0.15.0-rc0-0f2aa6b
+```
+
+And also:
+
+```
+gaiacli version
+```
+
+You should see:
+
+```
+0.15.0-rc0-0f2aa6b
+```
+
+## Genesis Setup
+
+Initiliaze `gaiad` :
+
+```
+gaiad init
+```
+
+You can find the corresponding genesis files [here](https://github.com/tendermint/testnets). Then replace the `genesis.json`and `config.toml` files:
+
+```
+rm $HOME/.gaiad/config/genesis.json $HOME/.gaiad/config/config.toml $HOME/.gaiad/config/addrbook.json
+
+wget -O $HOME/.gaiad/config/genesis.json https://raw.githubusercontent.com/tendermint/testnets/master/gaia-4000/gaia/genesis.json
+
+wget -O $HOME/.gaiad/config/config.toml https://raw.githubusercontent.com/tendermint/testnets/master/gaia-4000/gaia/config.toml
+```
+
+Lastly change the `moniker` string in the`config.toml`to identify your node.
+
+```
+# A custom human readable name for this node
+moniker = "<your_custom_name>"
+```
+
+
 ## Starting Gaiad
 
 Start the full node:
