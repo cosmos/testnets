@@ -81,9 +81,9 @@ You can find the corresponding genesis files [here](https://github.com/tendermin
 ```
 rm $HOME/.gaiad/config/genesis.json $HOME/.gaiad/config/config.toml $HOME/.gaiad/config/addrbook.json
 
-wget -O $HOME/.gaiad/config/genesis.json https://raw.githubusercontent.com/tendermint/testnets/master/gaia-4000/gaia/genesis.json
+wget -O $HOME/.gaiad/config/genesis.json https://raw.githubusercontent.com/cosmos/testnet/master/gaia-4000/genesis.json
 
-wget -O $HOME/.gaiad/config/config.toml https://raw.githubusercontent.com/tendermint/testnets/master/gaia-4000/gaia/config.toml
+wget -O $HOME/.gaiad/config/config.toml https://raw.githubusercontent.com/cosmos/testnet/master/gaia-4000/config.toml
 ```
 
 Lastly change the `moniker` string in the`config.toml`to identify your node.
