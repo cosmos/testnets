@@ -36,7 +36,7 @@ go get github.com/cosmos/cosmos-sdk
 Now we can fetch the correct versions of each dependency by running:
 
 ```
-ggmgit fetch --all
+git fetch --all
 git checkout develop
 make get_tools // run $ make update_tools if already installed
 make get_vendor_deps
@@ -214,7 +214,7 @@ gaiacli candidate --address-candidate=$MYADDR --chain-id=<name_of_the_testnet_ch
 To check that the validator is active you can find it on the validator set list:
 
 ```
-basecli validatorset <height>
+gaiacli validatorset
 ```
 
 \*_Note: Remember that to be in the validator set you need to have more total power than the Xnd validator, where X is the assigned size for the validator set \(by default _`X = 100`_\). _
