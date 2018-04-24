@@ -1,6 +1,6 @@
 # Deploy a Testnet
 
-## Install Cosmos-SDK on a Digital Ocean Droplet \(Recomended\)
+## Install Cosmos-SDK on a Digital Ocean Droplet \(Recommended\)
 
 ```
 export PATH=$PATH:/usr/lib/go-1.10/bin
@@ -9,9 +9,9 @@ bash <(curl -s https://gist.github.com/melekes/1bd57c73646de97c8f6cbe1b780eb822/
 nohup ./build/gaiad start &
 ```
 
-## Software Setup
+## Software Setup \(Manual Installation\)
 
-**Install **[**GNU Wget**](https://www.gnu.org/software/wget/)**: **
+- Install [GNU Wget](https://www.gnu.org/software/wget/):
 
 **MacOS**
 
@@ -44,7 +44,7 @@ make install
 make install_examples
 ```
 
-The latest cosmos-sdk should now be installed. Verify that everything is OK by running:
+The latest binaries should now be installed. Verify that everything is OK by running:
 
 ```
 gaiad version
@@ -112,14 +112,14 @@ gaiacli status
 
 You'll need a private and public key pair \(a.k.a. `sk, pk` respectively\) to be able to receive funds, send txs, bond tx, etc.
 
-To generate your a new key \(default _ed25519 _elliptic curve\):
+To generate your a new key \(default _ed25519_ elliptic curve\):
 
 ```
 KEYNAME=<set_a_name_for_your_new_key>
 gaiacli keys add $KEYNAME
 ```
 
-Next, you will have to enter a passphrase for your`$KEYNAME`key twice. Save the _seed phrase _in a safe place in case you forget the password.
+Next, you will have to enter a passphrase for your`$KEYNAME`key twice. Save the _seed phrase_ in a safe place in case you forget the password.
 
 Now if you check your private keys you will see the `$KEYNAME `key among them:
 
@@ -140,7 +140,7 @@ MYADDR=<your_newly_generated_address>
 MYPUBKEY=<your_newly_generated_public_key>
 ```
 
-_IMPORTANT: We strongly recommend to **NOT** use the same passphrase for your different keys. The Tendermint team and the Interchain Foundation will not be responsible for the lost of funds._
+**IMPORTANT:** We strongly recommend to **NOT** use the same passphrase for your different keys. The Tendermint team and the Interchain Foundation will not be responsible for the lost of funds.
 
 ## Getting Coins
 
@@ -217,7 +217,7 @@ To check that the validator is active you can find it on the validator set list:
 gaiacli validatorset
 ```
 
-\*_Note: Remember that to be in the validator set you need to have more total power than the Xnd validator, where X is the assigned size for the validator set \(by default _`X = 100`_\). _
+**Note:** Remember that to be in the validator set you need to have more total power than the Xnd validator, where X is the assigned size for the validator set \(by default _`X = 100`_\).
 
 #### Delegating: Bonding and unbonding to a validator
 
