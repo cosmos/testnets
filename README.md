@@ -42,7 +42,6 @@ git checkout 0f2aa6b
 make get_tools // run $ make update_tools if already installed
 make get_vendor_deps
 make install
-make install_examples
 ```
 
 The latest binaries should now be installed. Verify that everything is OK by running:
