@@ -36,8 +36,9 @@ go get github.com/cosmos/cosmos-sdk
 Now we can fetch the correct versions of each dependency by running:
 
 ```
+cd $GOPATH/src/github.com/cosmos/cosmos-sdk
 git fetch --all
-git checkout develop
+git checkout 0f2aa6b
 make get_tools // run $ make update_tools if already installed
 make get_vendor_deps
 make install
