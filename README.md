@@ -81,7 +81,7 @@ wget -O $HOME/.gaiad/config/genesis.json https://raw.githubusercontent.com/cosmo
 wget -O $HOME/.gaiad/config/config.toml https://raw.githubusercontent.com/cosmos/testnet/master/gaia-4000/config.toml
 ```
 
-Lastly change the `moniker` string in the `config.toml` to identify your node.
+Lastly, change the `moniker` string in the `config.toml` to identify your node.
 
 ```
 # A custom human readable name for this node
