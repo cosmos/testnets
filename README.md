@@ -6,7 +6,7 @@ If you're running a full node validator we recommend you to comply with the nece
 
 ### Install the SDK on a Cloud Server
 
-You can set up a cloud server of your choice to run a non-validator full node.
+You can set up a cloud server of your choice to run a **non-validator** full node.
 
 #### Digital Ocean Droplet
 
@@ -133,10 +133,10 @@ Now get your public key by typing:
 gaiad show_validator
 ```
 
-You'll get the `value` of your `pk` in `base64` format and the `type` of it
-To convert your `pk` to `hex` go to this [website](https://cryptii.com/base64-to-hex) and paste the value of the public key in the left box. On the right, select `Group By: None` to covert it.
+You'll get the `value` of your `pk` in a `base64` encoded string format and the `type` of the elliptic curve.
+To convert your `pubkey` to `hex` go to this [website](https://cryptii.com/base64-to-hex) and paste the value of the public key in the left box. On the right box, select `Group By` to `None` to get the `hex` value.
 
-Finally, save your address and pubkey into a variable
+Finally, save your address and pubkey into a variable to use them afterwards.
 
 ```
 MYADDR=<your_newly_generated_address>
@@ -188,11 +188,25 @@ The command to `transfer` tokens to other chain is the same as `send`, we just n
 gaiacli transfer --amount=20fermion --chain-id=<name_of_testnet_chain> --chain=<destination_chain> --sequence=1 --name=$KEYNAME --to=<sidechain_destination_address>
 ```
 
+### Relaying
+
+Relaying is key to enable interoperability in the Cosmos Ecosystem. It allows IBC packets of data to be sent from one chain to another.
+
+The command to relay packets is the following:
+
+```
+gaiacli relay --from-chain-id=<name_of_testnet_chain> --to-chain-id=<destination_chain_name> --from-chain-node=<host>:<port> --to-chain-node=<host>:<port> --name=$KEYNAME --sequence=1
+```
+
 ## Become a Validator
 
-You can become a validator candidate by staking some tokens:
+[Validators](https://cosmos.network/validators) are actors from the network that are responsible from commiting new blocks to the blockchain by submitting their votes. You can become a validator candidate by staking some tokens:
 
-To check that the validator is active you can find it on the validator set list:
+```
+gaiacli bond --stake=20fermion --validator=$MYADDR --name=$KEYNAME --chain-id=<name_of_testnet_chain> --sequence=1
+```
+
+To check that the validator node is active you can find it on the validator set list:
 
 ```
 gaiacli validatorset
@@ -200,13 +214,19 @@ gaiacli validatorset
 
 **Note:** Remember that to be in the validator set you need to have more total power than the Xnd validator, where X is the assigned size for the validator set \(by default _`X = 100`_\).
 
-#### Delegating: Bonding and unbonding to a validator
+## Delegate your tokens
 
-You can delegate \(i.e. bind\) **Atoms** to a validator to obtain a part of its fee revenue in exchange \(the fee token in the Cosmos Hub are **Photons**\).
+You can delegate \(_i.e._ bind\) **Atoms** to a validator to become a [delegator](https://cosmos.network/resources/delegators) and obtain a part of its fee revenue in **Photons**. For more information about the Cosmos Token Model, refer to our [whitepaper](https://github.com/cosmos/cosmos/raw/master/Cosmos_Token_Model.pdf).
+
+### Bonding to a validator
+
+Bond your tokens to a validator candidate with the following command:
 
 ```
 gaiacli bond --stake=10fermion --validator=<bonded_validator_address> --name=$KEYNAME --chain-id=<name_of_testnet_chain> --sequence=1
 ```
+
+### Unbonding
 
 If for any reason the validator misbehaves or you just want to unbond a certain amount of the bonded tokens:
 
@@ -218,14 +238,4 @@ You should now see the unbonded tokens reflected in your balance:
 
 ```
 gaiacli account $MYADDR
-```
-
-#### Relaying
-
-Relaying is key to enable interoperability in the Cosmos Ecosystem. It allows IBC packets of data to be sent from one chain to another.
-
-The command to relay packets is the following:
-
-```
-gaiacli relay --from-chain-id=<name_of_testnet_chain> --to-chain-id=<destination_chain_name> --from-chain-node=<host>:<port> --to-chain-node=<host>:<port> --name=$KEYNAME --sequence=1
 ```
