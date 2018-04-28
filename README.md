@@ -67,7 +67,9 @@ You should see in both cases:
 
 ### Genesis Setup
 
-Now that we have completed the basic SDK setup, we can start working on the genesis configuration for the chain we want to connect to. Initiliaze `gaiad` :
+Now that we have completed the basic SDK setup, we can start working on the genesis configuration for the chain we want to connect to.
+
+Initiliaze `gaiad` :
 
 ```
 gaiad init
@@ -197,7 +199,7 @@ gaiacli relay --from-chain-id=<name_of_testnet_chain> --to-chain-id=<destination
 
 ## Become a Validator
 
-[Validators](https://cosmos.network/validators) are the actors from the network that are responsible from commiting new blocks to the blockchain by submitting their votes.
+[Validators](https://cosmos.network/validators) are actors from the network that are responsible from commiting new blocks to the blockchain by submitting their votes.
 
 Your `$PUBKEY` can be used to create a new validator candidate by staking some tokens:
 
@@ -227,7 +229,7 @@ gaiacli validatorset
 
 ## Delegate your tokens
 
-You can delegate \(i.e. bind\) **Atoms** to a validator to become a [delegator](https://cosmos.network/resources/delegators) and obtain a part of its fee revenue in **Photons**. For more information about the Cosmos Token Model, refer to our [whitepaper](https://github.com/cosmos/cosmos/raw/master/Cosmos_Token_Model.pdf).
+You can delegate \(_i.e._ bind\) **Atoms** to a validator to become a [delegator](https://cosmos.network/resources/delegators) and obtain a part of its fee revenue in **Photons**. For more information about the Cosmos Token Model, refer to our [whitepaper](https://github.com/cosmos/cosmos/raw/master/Cosmos_Token_Model.pdf).
 
 ### Bonding to a validator
 
