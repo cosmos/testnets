@@ -21,7 +21,6 @@ nohup ./build/gaiad start &
 
 ### Software Setup (Manual Installation)
 
-
 #### Install [GNU Wget](https://www.gnu.org/software/wget/)
 
 **MacOS**
@@ -109,9 +108,9 @@ You'll need a private and public key pair \(a.k.a. `sk, pk` respectively\) to be
 To generate your a new key \(default _ed25519_ elliptic curve\):
 
 ```
-KEYNAME=<set_a_name_for_your_new_key>
-gaiacli keys add $KEYNAME
+gaiacli keys add default
 ```
+
 
 Next, you will have to enter a passphrase for your `$KEYNAME` key twice. Save the _seed_ _phrase_ in a safe place in case you forget the password.
 
@@ -152,7 +151,9 @@ Go to the faucet in [http://atomexplorer.com/](http://atomexplorer.com/) and cla
 ### Send tokens
 
 ```
+
 gaiacli --amount=1000fermion --chain-id=<name_of_testnet_chain> --sequence=1 --name=$KEYNAME --to=<destination_address>
+
 ```
 
 The `--amount` flag defines the corresponding amount of the coin in the format `--amount=<value|coin_name>`
@@ -163,7 +164,7 @@ Now check the destination account and your own account to check the updated bala
 
 ```
 gaiacli account <destination_address>
-gaiacli account $MYADDR
+gaiacli account <your_address>
 ```
 
 You can also check your balance at a given block by using the `--block` flag:
