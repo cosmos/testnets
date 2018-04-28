@@ -6,7 +6,7 @@ If you're running a full node validator we recommend you to comply with the nece
 
 ### Install the SDK on a Cloud Server
 
-You can set up a cloud server of your choice to run a non-validator full node.
+You can set up a cloud server of your choice to run a **non-validator** full node.
 
 #### Digital Ocean Droplet
 
@@ -46,7 +46,7 @@ Cosmos SDK can be installed to `$GOPATH/src/github.com/cosmos/cosmos-sdk` like a
 go get github.com/cosmos/cosmos-sdk
 cd $GOPATH/src/github.com/cosmos/cosmos-sdk
 git fetch --all
-git checkout 0f2aa6b
+git checkout d613c2b9
 make get_tools // run $ make update_tools if already installed
 make get_vendor_deps
 make install
@@ -62,7 +62,7 @@ gaiacli version
 You should see in both cases:
 
 ```
-0.15.0-rc0-0f2aa6b
+0.15.0-rc0-d613c2b9
 ```
 
 ### Genesis Setup
@@ -115,7 +115,7 @@ gaiacli keys add $KEYNAME
 
 Next, you will have to enter a passphrase for your `$KEYNAME` key twice. Save the _seed_ _phrase_ in a safe place in case you forget the password.
 
-Now if you check your private keys you will see the `$KEYNAME` key among them with the value of your `address`:
+Now if you check your private keys you will see the `$KEYNAME` key among them:
 
 ```
 gaiacli keys show $KEYNAME
@@ -127,16 +127,13 @@ You can see all your other available keys by typing:
 gaiacli keys list
 ```
 
-Now get your public key by typing:
+The validator pubkey from your node should be the same as the one printed with the command:
 
 ```
 gaiad show_validator
 ```
 
-You'll get the `value` of your `pk` in `base64` format and the `type` of it
-To convert your `pk` to `hex` go to this [website](https://cryptii.com/base64-to-hex) and paste the value of the public key in the left box. On the right, select `Group By: None` to covert it.
-
-Finally, save your address and pubkey into a variable
+Finally, save your address and pubkey into a variable to use them afterwards.
 
 ```
 MYADDR=<your_newly_generated_address>
@@ -152,7 +149,7 @@ Go to the faucet in [http://atomexplorer.com/](http://atomexplorer.com/) and cla
 ### Send tokens
 
 ```
-gaiacli --amount=1000fermion --chain-id=<name_of_testnet_chain> --sequence=1 --name=$KEYNAME --to=<destination_address>
+gaiacli send --amount=1000fermion --chain-id=<name_of_testnet_chain> --sequence=1 --name=$KEYNAME --to=<destination_address>
 ```
 
 The `--amount` flag defines the corresponding amount of the coin in the format `--amount=<value|coin_name>`
@@ -190,7 +187,25 @@ gaiacli transfer --amount=20fermion --chain-id=<name_of_testnet_chain> --chain=<
 
 ## Become a Validator
 
-You can become a validator candidate by staking some tokens:
+[Validators](https://cosmos.network/validators) are the actors from the network that are responsible from commiting new blocks to the blockchain by submitting their votes.
+
+Your `$PUBKEY` can be used to create a new validator candidate by staking some tokens:
+
+```
+gaiacli declare-candidacy --amount=500fermions --pubkey=$PUBKEY --address-candidate=$MYADDR --moniker=satoshi --chain-id=<name_of_the_testnet_chain> --sequence=1 --name=$KEYNAME
+```
+
+You can add more information of the validator candidate such as`--website`, `--keybase-sig `or additional `--details`. If you want to edit the candidate info:
+
+```
+gaiacli edit-candidacy --details="To the cosmos !" --website="https://cosmos.network"
+```
+
+Finally, you can check all the candidate information by typing:
+
+```
+gaiacli candidate --address-candidate=$MYADDR --chain-id=<name_of_the_testnet_chain>
+```
 
 To check that the validator is active you can find it on the validator set list:
 
@@ -200,24 +215,33 @@ gaiacli validatorset
 
 **Note:** Remember that to be in the validator set you need to have more total power than the Xnd validator, where X is the assigned size for the validator set \(by default _`X = 100`_\).
 
-#### Delegating: Bonding and unbonding to a validator
+## Delegate your tokens
 
-You can delegate \(i.e. bind\) **Atoms** to a validator to obtain a part of its fee revenue in exchange \(the fee token in the Cosmos Hub are **Photons**\).
+You can delegate \(i.e. bind\) **Atoms** to a validator to become a [delegator](https://cosmos.network/resources/delegators) and obtain a part of its fee revenue in **Photons**. For more information about the Cosmos Token Model, refer to our [whitepaper](https://github.com/cosmos/cosmos/raw/master/Cosmos_Token_Model.pdf).
+
+### Bonding to a validator
+
+Bond your tokens to a validator candidate with the following command:
 
 ```
-gaiacli bond --stake=10fermion --validator=<bonded_validator_address> --name=$KEYNAME --chain-id=<name_of_testnet_chain> --sequence=1
+gaiacli delegate --amount=10fermion --address-delegator=$MYADDR --address-candidate=<bonded_validator_address> --name=$KEYNAME --chain-id=<name_of_testnet_chain> --sequence=1
 ```
+
+### Unbonding
 
 If for any reason the validator misbehaves or you just want to unbond a certain amount of the bonded tokens:
 
 ```
-gaiacli unbond --name=$KEYNAME --chain-id=<name_of_testnet_chain> --sequence=1
+gaiacli unbond --address-delegator=$MYADDR --address-candidate=<bonded_validator_address> --shares=MAX --name=$KEYNAME --chain-id=<name_of_testnet_chain> --sequence=1
 ```
 
-You should now see the unbonded tokens reflected in your balance:
+You can unbond a specific amount of`shares`\(eg:`12.1`\) or all of them \(`MAX`\).
+
+You should now see the unbonded tokens reflected in your balance and in your delegator bond:
 
 ```
 gaiacli account $MYADDR
+gaiacli delegator-bond --address-delegator=$MYADDR --address-candidate=<bonded_validator_address> --chain-id=<name_of_testnet_chain>
 ```
 
 #### Relaying
