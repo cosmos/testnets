@@ -185,6 +185,16 @@ The command to `transfer` tokens to other chain is the same as `send`, we just n
 gaiacli transfer --amount=20fermion --chain-id=<name_of_testnet_chain> --chain=<destination_chain> --sequence=1 --name=$KEYNAME --to=<sidechain_destination_address>
 ```
 
+### Relaying
+
+Relaying is key to enable interoperability in the Cosmos Ecosystem. It allows IBC packets of data to be sent from one chain to another.
+
+The command to relay packets is the following:
+
+```
+gaiacli relay --from-chain-id=<name_of_testnet_chain> --to-chain-id=<destination_chain_name> --from-chain-node=<host>:<port> --to-chain-node=<host>:<port> --name=$KEYNAME --sequence=1
+```
+
 ## Become a Validator
 
 [Validators](https://cosmos.network/validators) are the actors from the network that are responsible from commiting new blocks to the blockchain by submitting their votes.
@@ -242,14 +252,4 @@ You should now see the unbonded tokens reflected in your balance and in your del
 ```
 gaiacli account $MYADDR
 gaiacli delegator-bond --address-delegator=$MYADDR --address-candidate=<bonded_validator_address> --chain-id=<name_of_testnet_chain>
-```
-
-#### Relaying
-
-Relaying is key to enable interoperability in the Cosmos Ecosystem. It allows IBC packets of data to be sent from one chain to another.
-
-The command to relay packets is the following:
-
-```
-gaiacli relay --from-chain-id=<name_of_testnet_chain> --to-chain-id=<destination_chain_name> --from-chain-node=<host>:<port> --to-chain-node=<host>:<port> --name=$KEYNAME --sequence=1
 ```
