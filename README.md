@@ -1,28 +1,64 @@
-# Deploy a Testnet
+# Connect to a Testnet
 
-## Setup
+This document explains how to connect to the Testnet of a [Cosmos-SDK](https://github.com/cosmos/cosmos-sdk/) based blockchain. It can be used to connect to the latest Testnet for the Cosmos Hub.
 
-If you're running a full node validator we recommend you to comply with the necessary [technical requirements](https://github.com/cosmos/cosmos/blob/master/VALIDATORS_FAQ.md#technical-requirements). You can check more information regarding validators in our [website](https://cosmos.network/validators) or in the [validator FAQ](https://cosmos.network/resources/validator-faq).
+## Software Setup (Manual Installation)
 
-### Install the SDK on a Cloud Server
+Follow this instructions to install the Cosmos-SDK and connect to the latest Testnet. This instructions work for both a local machine and a VM in a cloud server.
 
-You can set up a cloud server of your choice to run a **non-validator** full node.
+If you intend to run a non-validator full-node, installing the SDK on a Cloud server is a good option. Although, if you are want to become a validator for the `mainnet` you should look at more complex setups to protect your node from DDOS and ensure high-availability (see the [technical requirements](https://github.com/cosmos/cosmos/blob/master/VALIDATORS_FAQ.md#technical-requirements)). You can check more information regarding validators in our [website](https://cosmos.network/validators) or in the [validator FAQ](https://cosmos.network/resources/validator-faq).
 
-#### Digital Ocean Droplet
+### Install [Go](https://golang.org/)
 
-Follow these commands to install the SDK on a Digital Ocean [Droplet](https://www.digitalocean.com/products/droplets/):
+Install `go` following the [instructions](https://golang.org/doc/install) in the official golang website.
+You will require **Go 1.9+** for this tutorial.
+
+#### Set GOPATH
+
+First, you will need to set up your `GOPATH`. Make sure that the location `$HOME` is something like `/Users/<username>`, you can corroborate it by typing `echo $HOME` in your terminal.
+
+Go to `$HOME` with the command `cd $HOME` and open the the hidden file `.barshrc` with a code editor and paste the following lines \(or `.bash_profile` if your're using OS X\).
 
 ```
-export PATH=$PATH:/usr/lib/go-1.10/bin
-export PATH=$PATH:/root/go/bin
-bash <(curl -s https://gist.github.com/melekes/1bd57c73646de97c8f6cbe1b780eb822/raw/2447b0fbf95775852c93a91ed3e12631c7ceb648/install.sh)
-nohup ./build/gaiad start &
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 ```
 
-### Software Setup (Manual Installation)
+Save and restart the terminal.
 
+_Note_: If you can't see the hidden file, use the shortcut `Command + Shift + .` in Finder.
 
-#### Install [GNU Wget](https://www.gnu.org/software/wget/)
+#### Update Packages
+
+To update all packages in your `GOPATH` run:
+
+```
+go get -u all
+```
+
+If you want to update a specific package run:
+
+```
+go get -u <package_name>
+```
+
+### Glide
+
+[Glide](https://glide.sh/) is a package manager for Go used in most of Tendermint's and Cosmos' codebases.
+
+To install it copy and paste the following command in your Terminal:
+
+```
+curl https://glide.sh/get | sh
+```
+
+Or install it with [Homebrew](https://brew.sh/) if you have MacOS \(OSX\):
+
+```
+brew install glide
+```
+
+### Install [GNU Wget](https://www.gnu.org/software/wget/)
 
 **MacOS**
 
@@ -38,7 +74,7 @@ sudo apt-get install wget
 
 Note: You can check other available options for downloading `wget` [here](https://www.gnu.org/software/wget/faq.html#download).
 
-#### Install binaries
+### Install binaries
 
 Cosmos SDK can be installed to `$GOPATH/src/github.com/cosmos/cosmos-sdk` like a normal Go program:
 
@@ -52,7 +88,7 @@ make get_vendor_deps
 make install
 ```
 
-This will install `gaiad` and `gaiacli` and four example binaries: `basecoind`, `basecli`, `democoind`, and `democli`. Verify that everything is OK by running:
+This will install the `gaiad` and `gaiacli` binaries. Verify that everything is OK by running:
 
 ```
 gaiad version
@@ -90,7 +126,7 @@ Lastly change the `moniker` string in the `config.toml` to identify your node.
 moniker = "<your_custom_name>"
 ```
 
-## Running a Full Node
+## Run a Full Node
 
 Start the full node:
 
@@ -111,16 +147,15 @@ You'll need a private and public key pair \(a.k.a. `sk, pk` respectively\) to be
 To generate your a new key \(default _ed25519_ elliptic curve\):
 
 ```
-KEYNAME=<set_a_name_for_your_new_key>
-gaiacli keys add $KEYNAME
+gaiacli keys add <your_key_name>
 ```
 
-Next, you will have to enter a passphrase for your `$KEYNAME` key twice. Save the _seed_ _phrase_ in a safe place in case you forget the password.
+Next, you will have to enter a passphrase for your key twice. Save the _seed_ _phrase_ in a safe place in case you forget the password.
 
-Now if you check your private keys you will see the `$KEYNAME` key among them:
+Now if you check your private keys you will see the `<your_key_name>` key among them:
 
 ```
-gaiacli keys show $KEYNAME
+gaiacli keys show <your_key_name>
 ```
 
 You can see all your other available keys by typing:
@@ -144,14 +179,14 @@ MYPUBKEY=<your_newly_generated_public_key>
 
 **IMPORTANT:** We strongly recommend to **NOT** use the same passphrase for your different keys. The Tendermint team and the Interchain Foundation will not be responsible for the lost of funds.
 
-### Getting coins
+### Get coins
 
 Go to the faucet in [http://atomexplorer.com/](http://atomexplorer.com/) and claim some coins for your testnet by typing the address of your key, as printed out above.
 
 ### Send tokens
 
 ```
-gaiacli send --amount=1000fermion --chain-id=<name_of_testnet_chain> --sequence=1 --name=$KEYNAME --to=<destination_address>
+gaiacli send --amount=1000fermion --chain-id=<name_of_testnet_chain> --sequence=1 --name=<key_name> --to=<destination_address>
 ```
 
 The `--amount` flag defines the corresponding amount of the coin in the format `--amount=<value|coin_name>`
@@ -162,49 +197,23 @@ Now check the destination account and your own account to check the updated bala
 
 ```
 gaiacli account <destination_address>
-gaiacli account $MYADDR
+gaiacli account <your_address>
 ```
 
 You can also check your balance at a given block by using the `--block` flag:
 
 ```
-gaiacli account $MYADDR --block=<block_height>
+gaiacli account <your_address> --block=<block_height>
 ```
 
-##### Custom fee \(coming soon\)
+## Run a Validator Node
 
-You can also define a custom fee on the transaction by adding the `--fee` flag using the same format:
+[Validators](https://cosmos.network/validators) are actors from the network that are responsible from commiting new blocks to the blockchain by submitting their votes. This section covers the instructions necessary to stake tokens to become a testnet validator candidate.
 
-```
-gaiacli send --from=$MYADDR --amount=1000fermion --fee=1fermion --chain-id=<name_of_testnet_chain> --sequence=1 --name=$KEYNAME --to=<destination_address>
-```
-
-### Transfer tokens to other chain
-
-The command to `transfer` tokens to other chain is the same as `send`, we just need to add the `--chain` flag:
+Your `pubkey` can be used to create a new validator candidate by staking some tokens:
 
 ```
-gaiacli transfer --amount=20fermion --chain-id=<name_of_testnet_chain> --chain=<destination_chain> --sequence=1 --name=$KEYNAME --to=<sidechain_destination_address>
-```
-
-### Relaying
-
-Relaying is key to enable interoperability in the Cosmos Ecosystem. It allows IBC packets of data to be sent from one chain to another.
-
-The command to relay packets is the following:
-
-```
-gaiacli relay --from-chain-id=<name_of_testnet_chain> --to-chain-id=<destination_chain_name> --from-chain-node=<host>:<port> --to-chain-node=<host>:<port> --name=$KEYNAME --sequence=1
-```
-
-## Become a Validator
-
-[Validators](https://cosmos.network/validators) are actors from the network that are responsible from commiting new blocks to the blockchain by submitting their votes.
-
-Your `$PUBKEY` can be used to create a new validator candidate by staking some tokens:
-
-```
-gaiacli declare-candidacy --amount=500fermions --pubkey=$PUBKEY --address-candidate=$MYADDR --moniker=satoshi --chain-id=<name_of_the_testnet_chain> --sequence=1 --name=$KEYNAME
+gaiacli declare-candidacy --amount=500fermions --pubkey=<your_pubkey> --address-candidate=<your_address> --moniker=satoshi --chain-id=<name_of_the_testnet_chain> --sequence=1 --name=<key_name>
 ```
 
 You can add more information of the validator candidate such as`--website`, `--keybase-sig `or additional `--details`. If you want to edit the candidate info:
@@ -216,7 +225,7 @@ gaiacli edit-candidacy --details="To the cosmos !" --website="https://cosmos.net
 Finally, you can check all the candidate information by typing:
 
 ```
-gaiacli candidate --address-candidate=$MYADDR --chain-id=<name_of_the_testnet_chain>
+gaiacli candidate --address-candidate=<your_address> --chain-id=<name_of_the_testnet_chain>
 ```
 
 To check that the validator is active you can find it on the validator set list:
@@ -231,20 +240,20 @@ gaiacli validatorset
 
 You can delegate \(_i.e._ bind\) **Atoms** to a validator to become a [delegator](https://cosmos.network/resources/delegators) and obtain a part of its fee revenue in **Photons**. For more information about the Cosmos Token Model, refer to our [whitepaper](https://github.com/cosmos/cosmos/raw/master/Cosmos_Token_Model.pdf).
 
-### Bonding to a validator
+### Bond to a validator
 
 Bond your tokens to a validator candidate with the following command:
 
 ```
-gaiacli delegate --amount=10fermion --address-delegator=$MYADDR --address-candidate=<bonded_validator_address> --name=$KEYNAME --chain-id=<name_of_testnet_chain> --sequence=1
+gaiacli delegate --amount=10fermion --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=1
 ```
 
-### Unbonding
+### Unbond
 
 If for any reason the validator misbehaves or you just want to unbond a certain amount of the bonded tokens:
 
 ```
-gaiacli unbond --address-delegator=$MYADDR --address-candidate=<bonded_validator_address> --shares=MAX --name=$KEYNAME --chain-id=<name_of_testnet_chain> --sequence=1
+gaiacli unbond --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --shares=MAX --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=1
 ```
 
 You can unbond a specific amount of`shares`\(eg:`12.1`\) or all of them \(`MAX`\).
@@ -252,6 +261,6 @@ You can unbond a specific amount of`shares`\(eg:`12.1`\) or all of them \(`MAX`\
 You should now see the unbonded tokens reflected in your balance and in your delegator bond:
 
 ```
-gaiacli account $MYADDR
-gaiacli delegator-bond --address-delegator=$MYADDR --address-candidate=<bonded_validator_address> --chain-id=<name_of_testnet_chain>
+gaiacli account <your_address>
+gaiacli delegator-bond --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --chain-id=<name_of_testnet_chain>
 ```
