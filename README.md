@@ -114,9 +114,9 @@ gaiad init
 You can find the corresponding genesis files [here](https://github.com/cosmos/testnets). Then replace the `genesis.json` and `config.toml` files:
 
 ```
-wget -O $HOME/.gaiad/config/genesis.json https://raw.githubusercontent.com/cosmos/testnet/master/gaia-4000/genesis.json
+wget -O $HOME/.gaiad/config/genesis.json https://raw.githubusercontent.com/cosmos/testnet/master/gaia-5000/genesis.json
 
-wget -O $HOME/.gaiad/config/config.toml https://raw.githubusercontent.com/cosmos/testnet/master/gaia-4000/config.toml
+wget -O $HOME/.gaiad/config/config.toml https://raw.githubusercontent.com/cosmos/testnet/master/gaia-5000/config.toml
 ```
 
 Lastly change the `moniker` string in the `config.toml` to identify your node.
