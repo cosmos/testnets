@@ -1,0 +1,25 @@
+{
+  "app_message": {
+    "secret": "rebel tennis town price noise dirt ice crunch wonder fish bracket dress praise dutch attend abandon"
+  },
+  "gen_tx_file": {
+    "node_id": "678503e6c8f50db7279c7da3cb9b072aac4bc0d5",
+    "ip": "35.202.97.136",
+    "validator": {
+      "pub_key": {
+        "type": "AC26791624DE60",
+        "value": "RMwWTZsVdkq1heicNJb2fosy9Fls4NHxAHReiJvHl+8="
+      },
+      "power": 100,
+      "name": ""
+    },
+    "app_gen_tx": {
+      "name": "poldsam1",
+      "address": "8FFC82B179888FA15328EEA06EBFCE396E53F3FA",
+      "pub_key": {
+        "type": "AC26791624DE60",
+        "value": "RMwWTZsVdkq1heicNJb2fosy9Fls4NHxAHReiJvHl+8="
+      }
+    }
+  }
+}
