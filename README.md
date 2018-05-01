@@ -4,9 +4,9 @@ This document explains how to connect to the Testnet of a [Cosmos-SDK](https://g
 
 ## Software Setup (Manual Installation)
 
-Follow this instructions to install the Cosmos-SDK and connect to the latest Testnet. This instructions work for both a local machine and a VM in a cloud server.
+Follow these instructions to install the Cosmos-SDK and connect to the latest Testnet. This instructions work for both a local machine and a VM in a cloud server.
 
-If you intend to run a non-validator full-node, installing the SDK on a Cloud server is a good option. However, if you are want to become a validator for the `mainnet` you should look at more complex setups, like a [Sentry Node Architecture](https://github.com/cosmos/cosmos/blob/master/VALIDATORS_FAQ.md#how-can-validators-protect-themselves-from-denial-of-service-attacks), to protect your node from DDOS and ensure high-availability (see the [technical requirements](https://github.com/cosmos/cosmos/blob/master/VALIDATORS_FAQ.md#technical-requirements)). You can check more information regarding validators in our [website](https://cosmos.network/validators), in the [Validator FAQ](https://cosmos.network/resources/validator-faq) or in the [Validator Chat](https://riot.im/app/#/room/#cosmos_validators:matrix.org).
+If you want to run a non-validator full-node, installing the SDK on a Cloud server is a good option. However, if you are want to become a validator for the Hub's `mainnet` you should look at more complex setups, including [Sentry Node Architecture](https://github.com/cosmos/cosmos/blob/master/VALIDATORS_FAQ.md#how-can-validators-protect-themselves-from-denial-of-service-attacks), to protect your node from DDOS and ensure high-availability (see the [technical requirements](https://github.com/cosmos/cosmos/blob/master/VALIDATORS_FAQ.md#technical-requirements)). You can find more information on validators in our [website](https://cosmos.network/validators), in the [Validator FAQ](https://cosmos.network/resources/validator-faq) and in the [Validator Chat](https://riot.im/app/#/room/#cosmos_validators:matrix.org).
 
 ### Install [Go](https://golang.org/)
 
@@ -42,9 +42,9 @@ If you want to update a specific package run:
 go get -u <package_name>
 ```
 
-### Glide
+### Install [Glide](https://glide.sh/)
 
-[Glide](https://glide.sh/) is a package manager for Go used in most of Tendermint's and Cosmos' codebases.
+Glide is a package manager for Go used in most of Tendermint's and Cosmos' codebases.
 
 To install it copy and paste the following command in your Terminal:
 
