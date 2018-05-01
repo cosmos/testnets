@@ -42,22 +42,6 @@ If you want to update a specific package run:
 go get -u <package_name>
 ```
 
-### Install [Glide](https://glide.sh/)
-
-Glide is a package manager for Go used in most of Tendermint's and Cosmos' codebases.
-
-To install it copy and paste the following command in your Terminal:
-
-```
-curl https://glide.sh/get | sh
-```
-
-Or install it with [Homebrew](https://brew.sh/) if you have MacOS \(OSX\):
-
-```
-brew install glide
-```
-
 ### Install [GNU Wget](https://www.gnu.org/software/wget/)
 
 **MacOS**
@@ -118,6 +102,8 @@ You should see:
 ```
 
 ## Genesis Setup
+
+Genesis files are the starting point for the full-node to sync up with the network. In order to sync up with the correct version of the Testnet, be sure to choose the genesis file corresponding to the version of the Testnet you want to connect to.
 
 Now that we have completed the basic SDK setup, we can start working on the genesis configuration for the chain we want to connect to.
 
@@ -223,7 +209,9 @@ gaiacli account <your_address> --block=<block_height>
 
 ## Run a Validator Node
 
-[Validators](https://cosmos.network/validators) are actors from the network that are responsible from commiting new blocks to the blockchain by submitting their votes. This section covers the instructions necessary to stake tokens to become a testnet validator candidate.
+[Validators](https://cosmos.network/validators) are actors from the network that are responsible from committing new blocks to the blockchain by submitting their votes. In terms of security, validators' stake is slashed in all the zones they belong if they become unavailable, double sign a transaction, or don't cast their votes. We strongly recommend entities intending to run validators in the Cosmos Hub's `mainnet` to check the [technical requirements](https://github.com/cosmos/cosmos/blob/master/VALIDATORS_FAQ.md#technical-requirements) and take the necessary precautions to ensure high-availability, such as setting a Sentry Node architecture. If you have any question about validators, read the [Validator FAQ](https://cosmos.network/resources/validator-faq) and join the [Validator Chat](https://riot.im/app/#/room/#cosmos_validators:matrix.org).
+
+This section covers the instructions necessary to stake tokens to become a testnet validator candidate.
 
 Your `pubkey` can be used to create a new validator candidate by staking some tokens:
 
