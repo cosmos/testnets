@@ -80,6 +80,11 @@ Cosmos SDK can be installed to `$GOPATH/src/github.com/cosmos/cosmos-sdk` like a
 
 ```
 go get github.com/cosmos/cosmos-sdk
+```
+
+Now we can fetch the correct versions of each dependency by running:
+
+```
 cd $GOPATH/src/github.com/cosmos/cosmos-sdk
 git fetch --all
 git checkout d613c2b9
@@ -92,16 +97,27 @@ This will install the `gaiad` and `gaiacli` binaries. Verify that everything is 
 
 ```
 gaiad version
+```
+
+You should see:
+
+```
+0.15.0-rc0-0f2aa6b
+```
+
+And also:
+
+```
 gaiacli version
 ```
 
-You should see in both cases:
+You should see:
 
 ```
 0.15.0-rc0-d613c2b9
 ```
 
-### Genesis Setup
+## Genesis Setup
 
 Now that we have completed the basic SDK setup, we can start working on the genesis configuration for the chain we want to connect to.
 
@@ -111,15 +127,14 @@ Initiliaze `gaiad` :
 gaiad init
 ```
 
-You can find the corresponding genesis files [here](https://github.com/cosmos/testnets). Then replace the `genesis.json` and `config.toml` files:
+You can find the corresponding genesis files [here](https://github.com/tendermint/testnets). Then replace the `genesis.json`and `config.toml` files:
 
 ```
 wget -O $HOME/.gaiad/config/genesis.json https://raw.githubusercontent.com/cosmos/testnet/master/gaia-5000/genesis.json
-
 wget -O $HOME/.gaiad/config/config.toml https://raw.githubusercontent.com/cosmos/testnet/master/gaia-5000/config.toml
 ```
 
-Lastly change the `moniker` string in the `config.toml` to identify your node.
+Lastly change the `moniker` string in the`config.toml`to identify your node.
 
 ```
 # A custom human readable name for this node
@@ -140,7 +155,7 @@ Check the everything is running smoothly:
 gaiacli status
 ```
 
-### Generate keys
+## Generate keys
 
 You'll need a private and public key pair \(a.k.a. `sk, pk` respectively\) to be able to receive funds, send txs, bond tx, etc.
 
@@ -183,7 +198,7 @@ MYPUBKEY=<your_newly_generated_public_key>
 
 Go to the faucet in [http://atomexplorer.com/](http://atomexplorer.com/) and claim some coins for your testnet by typing the address of your key, as printed out above.
 
-### Send tokens
+## Send tokens
 
 ```
 gaiacli send --amount=1000fermion --chain-id=<name_of_testnet_chain> --sequence=1 --name=<key_name> --to=<destination_address>
