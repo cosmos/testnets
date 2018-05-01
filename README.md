@@ -71,7 +71,7 @@ Now we can fetch the correct versions of each dependency by running:
 ```
 cd $GOPATH/src/github.com/cosmos/cosmos-sdk
 git fetch --all
-git checkout d613c2b9
+git checkout v0.16.0-rc0
 make get_tools // run $ make update_tools if already installed
 make get_vendor_deps
 make install
@@ -98,7 +98,7 @@ gaiacli version
 You should see:
 
 ```
-0.15.0-rc0-d613c2b9
+0.16.0-dev-7ef5e90
 ```
 
 ## Genesis Setup
@@ -107,19 +107,16 @@ Genesis files are the starting point for the full-node to sync up with the netwo
 
 Now that we have completed the basic SDK setup, we can start working on the genesis configuration for the chain we want to connect to.
 
-Initiliaze `gaiad` :
+Get the genesis transactions
 
 ```
-gaiad init
-```
+git clone github.com/cosmos/testnets
 
-You can find the corresponding genesis files [here](https://github.com/tendermint/testnets). Then replace the `genesis.json`and `config.toml` files:
+cp -a testnets/gaia-5000/. $HOME/.gaiad/config/gentx
+gaiad unsafe_reset_all
+gaiad init --gen-txs -o --chain-id=gaia-5000
 
 ```
-wget -O $HOME/.gaiad/config/genesis.json https://raw.githubusercontent.com/cosmos/testnet/master/gaia-5000/genesis.json
-wget -O $HOME/.gaiad/config/config.toml https://raw.githubusercontent.com/cosmos/testnet/master/gaia-5000/config.toml
-```
-
 Lastly change the `moniker` string in the`config.toml`to identify your node.
 
 ```
@@ -243,7 +240,7 @@ gaiacli validatorset
 
 You can delegate \(_i.e._ bind\) **Atoms** to a validator to become a [delegator](https://cosmos.network/resources/delegators) and obtain a part of its fee revenue in **Photons**. For more information about the Cosmos Token Model, refer to our [whitepaper](https://github.com/cosmos/cosmos/raw/master/Cosmos_Token_Model.pdf).
 
-### Bond to a validator
+### Declare candidacy
 
 Bond your tokens to a validator candidate with the following command:
 
