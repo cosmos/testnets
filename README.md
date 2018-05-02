@@ -86,7 +86,7 @@ gaiad version
 You should see:
 
 ```
-0.15.0-rc0-0f2aa6b
+0.16.0-dev-7ef5e90
 ```
 
 And also:
@@ -110,8 +110,9 @@ Now that we have completed the basic SDK setup, we can start working on the gene
 Get the genesis transactions
 
 ```
-git clone github.com/cosmos/testnets
+git clone https://github.com/cosmos/testnets
 
+mkdir -p $HOME/.gaiad/config
 cp -a testnets/gaia-5000/. $HOME/.gaiad/config/gentx
 gaiad unsafe_reset_all
 gaiad init --gen-txs -o --chain-id=gaia-5000
