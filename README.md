@@ -213,6 +213,17 @@ This section covers the instructions necessary to stake tokens to become a testn
 
 Your `pubkey` can be used to create a new validator candidate by staking some tokens:
 
+You can find your node pubkey by running
+```
+gaiacli status
+```
+
+and extracting your pubkey from the value field in validator info
+```
+"validator_info":{"address":"CF217B72C54FBB27D012D616B2B2114A9F8EFAF0","pub_key":{"type":"AC26791624DE60","value":"CDF/8aD8Lt+ikR3LyCg9c7DwWBA51NH+MUkH7tzxrfY="},"voting_power":0}}
+```
+
+
 ```
 gaiacli declare-candidacy --amount=500steak --pubkey=<your_node_pubkey> --address-candidate=<your_address> --moniker=satoshi --chain-id=<name_of_the_testnet_chain> --sequence=1 --name=<key_name>
 ```
