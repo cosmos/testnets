@@ -213,8 +213,19 @@ This section covers the instructions necessary to stake tokens to become a testn
 
 Your `pubkey` can be used to create a new validator candidate by staking some tokens:
 
+You can find your node pubkey by running
 ```
-gaiacli declare-candidacy --amount=500fermions --pubkey=<your_pubkey> --address-candidate=<your_address> --moniker=satoshi --chain-id=<name_of_the_testnet_chain> --sequence=1 --name=<key_name>
+gaiacli status
+```
+
+and extracting your pubkey from the value field in validator info
+```
+"validator_info":{"address":"CF217B72C54FBB27D012D616B2B2114A9F8EFAF0","pub_key":{"type":"AC26791624DE60","value":"CDF/8aD8Lt+ikR3LyCg9c7DwWBA51NH+MUkH7tzxrfY="},"voting_power":0}}
+```
+
+
+```
+gaiacli declare-candidacy --amount=500steak --pubkey=<your_node_pubkey> --address-candidate=<your_address> --moniker=satoshi --chain-id=<name_of_the_testnet_chain> --sequence=1 --name=<key_name>
 ```
 
 You can add more information of the validator candidate such as`--website`, `--keybase-sig `or additional `--details`. If you want to edit the candidate info:
@@ -241,12 +252,12 @@ gaiacli validatorset
 
 You can delegate \(_i.e._ bind\) **Atoms** to a validator to become a [delegator](https://cosmos.network/resources/delegators) and obtain a part of its fee revenue in **Photons**. For more information about the Cosmos Token Model, refer to our [whitepaper](https://github.com/cosmos/cosmos/raw/master/Cosmos_Token_Model.pdf).
 
-### Declare candidacy
+### Bond your tokens
 
 Bond your tokens to a validator candidate with the following command:
 
 ```
-gaiacli delegate --amount=10fermion --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=1
+gaiacli delegate --amount=10steak --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=1
 ```
 
 ### Unbond
