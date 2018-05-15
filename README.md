@@ -71,7 +71,7 @@ Now we can fetch the correct versions of each dependency by running:
 ```
 cd $GOPATH/src/github.com/cosmos/cosmos-sdk
 git fetch --all
-git checkout v0.16.0-rc0
+git checkout v0.17.0-rc0
 make get_tools // run $ make update_tools if already installed
 make get_vendor_deps
 make install
@@ -86,7 +86,7 @@ gaiad version
 You should see:
 
 ```
-0.16.0-dev-7ef5e90
+0.17.0-20abeb3d
 ```
 
 And also:
@@ -98,7 +98,7 @@ gaiacli version
 You should see:
 
 ```
-0.16.0-dev-7ef5e90
+0.17.0-20abeb3d
 ```
 
 ## Genesis Setup
@@ -113,9 +113,9 @@ Get the genesis transactions
 git clone https://github.com/cosmos/testnets
 
 mkdir -p $HOME/.gaiad/config
-cp -a testnets/gaia-5000/. $HOME/.gaiad/config/gentx
+cp -a testnets/gaia-5001/. $HOME/.gaiad/config/gentx
 gaiad unsafe_reset_all
-gaiad init --gen-txs -o --chain-id=gaia-5000
+gaiad init --gen-txs -o --chain-id=gaia-5001
 
 ```
 Lastly change the `moniker` string in the`config.toml`to identify your node.
