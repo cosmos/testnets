@@ -7,11 +7,11 @@
       "value": "TZTQnfqOsi89SeoXVnIw+tnFJnr4X8qVC0U8AsEmFk4="
     },
     "power": 100,
-    "name": ""
+    "name": "adrian"
   },
   "app_gen_tx": {
-    "name": "",
-    "address": "02143BEA2B284E7FBF1EE7046A909DC5D577E1AD",
+    "name": "default",
+    "address": "D9C12CB5186FE0018179742FD3110EE534C63460",
     "pub_key": {
       "type": "AC26791624DE60",
       "value": "TZTQnfqOsi89SeoXVnIw+tnFJnr4X8qVC0U8AsEmFk4="
