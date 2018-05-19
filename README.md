@@ -215,13 +215,10 @@ Your `pubkey` can be used to create a new validator candidate by staking some to
 
 You can find your node pubkey by running
 ```
-gaiacli status
+gaiad show_validator
 ```
 
-and extracting your pubkey from the value field in validator info
-```
-"validator_info":{"address":"CF217B72C54FBB27D012D616B2B2114A9F8EFAF0","pub_key":{"type":"AC26791624DE60","value":"CDF/8aD8Lt+ikR3LyCg9c7DwWBA51NH+MUkH7tzxrfY="},"voting_power":0}}
-```
+and this returns your public key for the declare-candidate command
 
 
 ```
