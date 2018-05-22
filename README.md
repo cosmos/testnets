@@ -17,7 +17,7 @@ You will require **Go 1.9+** for this tutorial.
 
 First, you will need to set up your `GOPATH`. Make sure that the location `$HOME` is something like `/Users/<username>`, you can corroborate it by typing `echo $HOME` in your terminal.
 
-Go to `$HOME` with the command `cd $HOME` and open the the hidden file `.barshrc` with a code editor and paste the following lines \(or `.bash_profile` if your're using OS X\).
+Go to `$HOME` with the command `cd $HOME` and open the the hidden file `.bashrc` with a code editor and paste the following lines \(or `.bash_profile` if your're using OS X\).
 
 ```
 export GOPATH=$HOME/go
