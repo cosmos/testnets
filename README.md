@@ -189,7 +189,7 @@ Go to the [Riot chat](https://riot.im/app/#/room/#cosmos_validators:matrix.org) 
 ## Send tokens
 
 ```
-gaiacli send --amount=1000fermion --name=<key_name> --to=<destination_address>
+gaiacli send --amount=1000fermion --chain-id=<name_of_testnet_chain> --name=<key_name> --to=<destination_address>
 ```
 
 The `--amount` flag defines the corresponding amount of the coin in the format `--amount=<value|coin_name>`
