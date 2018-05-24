@@ -185,7 +185,7 @@ Go to the faucet in [http://atomexplorer.com/](http://atomexplorer.com/) and cla
 ## Send tokens
 
 ```
-gaiacli send --amount=1000fermion --chain-id=<name_of_testnet_chain> --name=<key_name> --to=<destination_address>
+gaiacli send --amount=1000fermion --name=<key_name> --to=<destination_address>
 ```
 
 The `--amount` flag defines the corresponding amount of the coin in the format `--amount=<value|coin_name>`
@@ -222,7 +222,7 @@ and this returns your public key for the declare-candidate command
 
 
 ```
-gaiacli declare-candidacy --amount=<amount_of_fermions_to_steak>steak --pubkey=<your_node_pubkey> --address-candidate=<your_address> --moniker=satoshi --chain-id=<name_of_the_testnet_chain> --name=<key_name>
+gaiacli declare-candidacy --amount=<amount_of_fermions_to_steak>steak --pubkey=<your_node_pubkey> --address-candidate=<your_address> --moniker=<your_moniker> --name=<key_name>
 ```
 
 You can add more information of the validator candidate such as`--website`, `--keybase-sig `or additional `--details`. If you want to edit the candidate info:
@@ -234,7 +234,7 @@ gaiacli edit-candidacy --details="To the cosmos !" --website="https://cosmos.net
 Finally, you can check all the candidate information by typing:
 
 ```
-gaiacli candidate --address-candidate=<your_address> --chain-id=<name_of_the_testnet_chain>
+gaiacli candidate --address-candidate=<your_address>
 ```
 
 To check that the validator is active you can find it on the validator set list:
@@ -254,7 +254,7 @@ You can delegate \(_i.e._ bind\) **Atoms** to a validator to become a [delegator
 Bond your tokens to a validator candidate with the following command:
 
 ```
-gaiacli delegate --amount=10steak --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --name=<key_name> --chain-id=<name_of_testnet_chain>
+gaiacli delegate --amount=10steak --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --name=<key_name>
 ```
 
 ### Unbond
@@ -262,7 +262,7 @@ gaiacli delegate --amount=10steak --address-delegator=<your_address> --address-c
 If for any reason the validator misbehaves or you just want to unbond a certain amount of the bonded tokens:
 
 ```
-gaiacli unbond --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --shares=MAX --name=<key_name> --chain-id=<name_of_testnet_chain>
+gaiacli unbond --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --shares=MAX --name=<key_name>
 ```
 
 You can unbond a specific amount of `shares`\(eg:`12.1`\) or all of them \(`MAX`\).
@@ -271,5 +271,5 @@ You should now see the unbonded tokens reflected in your balance and in your del
 
 ```
 gaiacli account <your_address>
-gaiacli delegator-bond --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --chain-id=<name_of_testnet_chain>
+gaiacli delegator-bond --address-delegator=<your_address> --address-candidate=<bonded_validator_address>
 ```
