@@ -184,7 +184,7 @@ MYPUBKEY=<your_newly_generated_public_key>
 
 ### Get coins
 
-Go to the faucet in [http://atomexplorer.com/](http://atomexplorer.com/) and claim some coins for your testnet by typing the address of your key, as printed out above.
+Go to the [Riot chat](https://riot.im/app/#/room/#cosmos_validators:matrix.org) and ask for some coins for your testnet. Be sure to provide the address of your key, as printed out above.
 
 ## Send tokens
 
