@@ -229,7 +229,7 @@ and this returns your public key for the declare-candidate command
 gaiacli declare-candidacy --amount=<amount_of_fermions_to_steak>steak --pubkey=<your_node_pubkey> --address-candidate=<your_address> --moniker=<your_moniker> --name=<key_name>
 ```
 
-You can add more information of the validator candidate such as`--website`, `--keybase-sig `or additional `--details`. If you want to edit the candidate info:
+You can add more information of the validator candidate such as `--website`, `--keybase-sig ` or additional `--details`. If you want to edit the candidate info:
 
 ```
 gaiacli edit-candidacy --details="To the cosmos !" --website="https://cosmos.network"
@@ -269,7 +269,7 @@ If for any reason the validator misbehaves or you just want to unbond a certain 
 gaiacli unbond --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --shares=MAX --name=<key_name>
 ```
 
-You can unbond a specific amount of `shares`\(eg:`12.1`\) or all of them \(`MAX`\).
+You can unbond a specific amount of `shares` \(eg: `12.1`\) or all of them \(`MAX`\).
 
 You should now see the unbonded tokens reflected in your balance and in your delegator bond:
 
