@@ -71,7 +71,7 @@ Now we can fetch the correct versions of each dependency by running:
 ```
 cd $GOPATH/src/github.com/cosmos/cosmos-sdk
 git fetch --all
-git checkout v0.17.0-rc0
+git checkout v0.17.2
 make get_tools // run $ make update_tools if already installed
 make get_vendor_deps
 make install
@@ -86,7 +86,7 @@ gaiad version
 You should see:
 
 ```
-0.17.0-20abeb3d
+0.17.2-187be1a
 ```
 
 And also:
@@ -98,7 +98,7 @@ gaiacli version
 You should see:
 
 ```
-0.17.0-20abeb3d
+0.17.2-187be1a
 ```
 
 ## Genesis Setup
@@ -118,12 +118,16 @@ gaiad unsafe_reset_all
 gaiad init --gen-txs -o --chain-id=gaia-5001
 
 ```
-Lastly change the `moniker` string in the`config.toml`to identify your node.
+Lastly change the `moniker` string in the `config.toml` to identify your node.
 
 ```
 # A custom human readable name for this node
 moniker = "<your_custom_name>"
 ```
+
+## Bugfix
+
+Until [this](https://github.com/tendermint/tendermint/issues/1623) issue is fixed, also update the `fast_sync = true` line to `fast_sync = false` in `config.toml`.
 
 ## Run a Full Node
 
@@ -180,17 +184,17 @@ MYPUBKEY=<your_newly_generated_public_key>
 
 ### Get coins
 
-Go to the faucet in [http://atomexplorer.com/](http://atomexplorer.com/) and claim some coins for your testnet by typing the address of your key, as printed out above.
+Go to the [Riot chat](https://riot.im/app/#/room/#cosmos_validators:matrix.org) and ask for some coins for your testnet. Be sure to provide the address of your key, as printed out above.
 
 ## Send tokens
 
 ```
-gaiacli send --amount=1000fermion --chain-id=<name_of_testnet_chain> --sequence=1 --name=<key_name> --to=<destination_address>
+gaiacli send --amount=1000fermion --chain-id=<name_of_testnet_chain> --name=<key_name> --to=<destination_address>
 ```
 
 The `--amount` flag defines the corresponding amount of the coin in the format `--amount=<value|coin_name>`
 
-The `--sequence` flag corresponds to the sequence number to sign the tx.
+Optionally you can manually set the sequence number using the `--sequence` flag. `gaiacli` will infer it automatically if you do not.
 
 Now check the destination account and your own account to check the updated balances \(by default the latest block\):
 
@@ -222,10 +226,10 @@ and this returns your public key for the declare-candidate command
 
 
 ```
-gaiacli declare-candidacy --amount=500steak --pubkey=<your_node_pubkey> --address-candidate=<your_address> --moniker=satoshi --chain-id=<name_of_the_testnet_chain> --sequence=1 --name=<key_name>
+gaiacli declare-candidacy --amount=<amount_of_fermions_to_steak>steak --pubkey=<your_node_pubkey> --address-candidate=<your_address> --moniker=<your_moniker> --name=<key_name> --chain-id=<name_of_testnet_chain>
 ```
 
-You can add more information of the validator candidate such as`--website`, `--keybase-sig `or additional `--details`. If you want to edit the candidate info:
+You can add more information of the validator candidate such as `--website`, `--keybase-sig ` or additional `--details`. If you want to edit the candidate info:
 
 ```
 gaiacli edit-candidacy --details="To the cosmos !" --website="https://cosmos.network"
@@ -234,7 +238,7 @@ gaiacli edit-candidacy --details="To the cosmos !" --website="https://cosmos.net
 Finally, you can check all the candidate information by typing:
 
 ```
-gaiacli candidate --address-candidate=<your_address> --chain-id=<name_of_the_testnet_chain>
+gaiacli candidate --address-candidate=<your_address>
 ```
 
 To check that the validator is active you can find it on the validator set list:
@@ -254,7 +258,7 @@ You can delegate \(_i.e._ bind\) **Atoms** to a validator to become a [delegator
 Bond your tokens to a validator candidate with the following command:
 
 ```
-gaiacli delegate --amount=10steak --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=1
+gaiacli delegate --amount=10steak --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --name=<key_name> --chain-id=<name_of_testnet_chain>
 ```
 
 ### Unbond
@@ -262,10 +266,10 @@ gaiacli delegate --amount=10steak --address-delegator=<your_address> --address-c
 If for any reason the validator misbehaves or you just want to unbond a certain amount of the bonded tokens:
 
 ```
-gaiacli unbond --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --shares=MAX --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=1
+gaiacli unbond --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --shares=MAX --name=<key_name> --chain-id=<name_of_testnet_chain>
 ```
 
-You can unbond a specific amount of`shares`\(eg:`12.1`\) or all of them \(`MAX`\).
+You can unbond a specific amount of `shares` \(eg: `12.1`\) or all of them \(`MAX`\).
 
 You should now see the unbonded tokens reflected in your balance and in your delegator bond:
 
