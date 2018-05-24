@@ -125,6 +125,10 @@ Lastly change the `moniker` string in the `config.toml` to identify your node.
 moniker = "<your_custom_name>"
 ```
 
+## Bugfix
+
+Until [this](https://github.com/tendermint/tendermint/issues/1623) issue is fixed, also update the `fast_sync = true` line to `fast_sync = false` in `config.toml`.
+
 ## Run a Full Node
 
 Start the full node:
