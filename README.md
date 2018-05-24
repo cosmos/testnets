@@ -185,12 +185,12 @@ Go to the faucet in [http://atomexplorer.com/](http://atomexplorer.com/) and cla
 ## Send tokens
 
 ```
-gaiacli send --amount=1000fermion --chain-id=<name_of_testnet_chain> --sequence=1 --name=<key_name> --to=<destination_address>
+gaiacli send --amount=1000fermion --chain-id=<name_of_testnet_chain> --name=<key_name> --to=<destination_address>
 ```
 
 The `--amount` flag defines the corresponding amount of the coin in the format `--amount=<value|coin_name>`
 
-The `--sequence` flag corresponds to the sequence number to sign the tx.
+Optionally you can manually set the sequence number using the `--sequence` flag. `gaiacli` will infer it automatically if you do not.
 
 Now check the destination account and your own account to check the updated balances \(by default the latest block\):
 
@@ -222,7 +222,7 @@ and this returns your public key for the declare-candidate command
 
 
 ```
-gaiacli declare-candidacy --amount=500steak --pubkey=<your_node_pubkey> --address-candidate=<your_address> --moniker=satoshi --chain-id=<name_of_the_testnet_chain> --sequence=1 --name=<key_name>
+gaiacli declare-candidacy --amount=500steak --pubkey=<your_node_pubkey> --address-candidate=<your_address> --moniker=satoshi --chain-id=<name_of_the_testnet_chain> --name=<key_name>
 ```
 
 You can add more information of the validator candidate such as`--website`, `--keybase-sig `or additional `--details`. If you want to edit the candidate info:
