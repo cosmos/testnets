@@ -11,7 +11,7 @@ If you want to run a non-validator full-node, installing the SDK on a Cloud serv
 ### Install [Go](https://golang.org/)
 
 Install `go` following the [instructions](https://golang.org/doc/install) in the official golang website.
-You will require **Go 1.9+** for this tutorial.
+You will require **Go 1.10+** for this tutorial.
 
 #### Set GOPATH
 
@@ -28,19 +28,6 @@ Save and restart the terminal.
 
 _Note_: If you can't see the hidden file, use the shortcut `Command + Shift + .` in Finder.
 
-#### Update Packages
-
-To update all packages in your `GOPATH` run:
-
-```
-go get -u all
-```
-
-If you want to update a specific package run:
-
-```
-go get -u <package_name>
-```
 
 ### Install [GNU Wget](https://www.gnu.org/software/wget/)
 
@@ -58,20 +45,14 @@ sudo apt-get install wget
 
 Note: You can check other available options for downloading `wget` [here](https://www.gnu.org/software/wget/faq.html#download).
 
-### Install binaries
-
-Cosmos SDK can be installed to `$GOPATH/src/github.com/cosmos/cosmos-sdk` like a normal Go program:
-
-```
-go get github.com/cosmos/cosmos-sdk
-```
+### Install Gaia
 
 Now we can fetch the correct versions of each dependency by running:
 
 ```
-cd $GOPATH/src/github.com/cosmos/cosmos-sdk
-git fetch --all
-git checkout v0.17.0-rc0
+mkdir -p $GOPATH/src/github.com/cosmos/cosmos-sdk
+git clone https://github.com/cosmos/cosmos-sdk.git
+git checkout v0.17.3
 make get_tools // run $ make update_tools if already installed
 make get_vendor_deps
 make install
@@ -86,7 +67,7 @@ gaiad version
 You should see:
 
 ```
-0.17.0-20abeb3d
+0.17.3-a5a78eb5
 ```
 
 And also:
@@ -98,7 +79,7 @@ gaiacli version
 You should see:
 
 ```
-0.17.0-20abeb3d
+0.17.3-a5a78eb5
 ```
 
 ## Genesis Setup
