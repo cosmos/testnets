@@ -1,6 +1,4 @@
-{
-  "app_message": null,
-  "gen_tx_file": {
+ {
     "node_id": "d43c0ac0dd387082eb05a6ce45d3ecf93bdb9429",
     "ip": "172.31.23.97",
     "validator": {
@@ -20,4 +18,4 @@
       }
     }
   }
-}
+
