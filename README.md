@@ -84,6 +84,18 @@ You should see:
 
 ## Genesis Setup
 
+### Making your own genesis transaction
+
+Create your own genesis transactions
+
+```
+gaiad init gen-tx --name YOUR_NAME
+```
+
+Copy the JSON value under `gen_tx_file` into `YOUR_NAME.json` in the appropriate folder on this Github repository.
+
+### Retrieving & combining genesis transactions
+
 Genesis files are the starting point for the full-node to sync up with the network. In order to sync up with the correct version of the Testnet, be sure to choose the genesis file corresponding to the version of the Testnet you want to connect to.
 
 Now that we have completed the basic SDK setup, we can start working on the genesis configuration for the chain we want to connect to.
