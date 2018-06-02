@@ -173,7 +173,7 @@ MYPUBKEY=<your_newly_generated_public_key>
 
 ### Get coins
 
-Go to the faucet in [http://atomexplorer.com/](http://atomexplorer.com/) and claim some coins for your testnet by typing the address of your key, as printed out above.
+The best way to get coins at the moment is to ask in Riot chat. We plan to have a reliable faucet in future testnets.
 
 ## Send tokens
 
