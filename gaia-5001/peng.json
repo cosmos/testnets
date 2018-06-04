@@ -1,0 +1,20 @@
+{
+  "node_id": "b908cf8ae2008625180c692d69fe4708a8ebecc7",
+  "ip": "206.189.151.41",
+  "validator": {
+    "pub_key": {
+      "type": "AC26791624DE60",
+      "value": "VfOsmcON77auerRc9zKwOR+CvL0sj1nA45hS2WqX1xE="
+    },
+    "power": 100,
+    "name": "nylira"
+  },
+  "app_gen_tx": {
+    "name": "peng",
+    "address": "B75C2C4309475C91E8DE271BC52CBAC408365B83",
+    "pub_key": {
+      "type": "AC26791624DE60",
+      "value": "VfOsmcON77auerRc9zKwOR+CvL0sj1nA45hS2WqX1xE="
+    }
+  }
+}
