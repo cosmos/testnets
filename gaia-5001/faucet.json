@@ -1,0 +1,20 @@
+{
+  "node_id": "7a752f87274dcc6e4d9b3a48c798cd5a9a1d8c52",
+  "ip": "167.99.69.153",
+  "validator": {
+    "pub_key": {
+      "type": "AC26791624DE60",
+      "value": "r3HM/NGjGeUUPKnizOuEpHWN0tqiXXC42U2ZMANZA3Y="
+    },
+    "power": 1000000,
+    "name": "gaia-faucet"
+  },
+  "app_gen_tx": {
+    "name": "gaia-faucet",
+    "address": "FD30D5C983FFEDEC069C3DDFCF270E41A556A86E",
+    "pub_key": {
+      "type": "AC26791624DE60",
+      "value": "r3HM/NGjGeUUPKnizOuEpHWN0tqiXXC42U2ZMANZA3Y="
+    }
+  }
+}
