@@ -250,6 +250,8 @@ Bond your tokens to a validator candidate with the following command:
 gaiacli delegate --amount=10steak --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=1
 ```
 
+When tokens are bonded, they are pooled with all the other bonded tokens in the network. Validators and delegators obtain shares that represent their stake in this pool. 
+
 ### Unbond
 
 If for any reason the validator misbehaves or you just want to unbond a certain amount of the bonded tokens:
