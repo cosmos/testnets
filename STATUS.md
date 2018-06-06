@@ -1,5 +1,17 @@
 TESTNET STATUS
 
+*June 5, 2018, 21:00 EST* - New Release
+
+- Released gaia
+  [v0.17.5](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.17.5) with update for Tendermint v0.19.9
+- Fixes many bugs!
+    - evidence gossipping 
+    - mempool deadlock
+    - WAL panic
+    - memory leak
+- Please update to this to put a stop to the rampant invalid evidence gossiping
+  :)
+
 *May 31, 2018, 14:00 EST* - New Release
 
 - Released gaia
