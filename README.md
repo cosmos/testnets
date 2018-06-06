@@ -52,7 +52,7 @@ Now we can fetch the correct versions of each dependency by running:
 ```
 mkdir -p $GOPATH/src/github.com/cosmos/cosmos-sdk
 git clone https://github.com/cosmos/cosmos-sdk.git
-git checkout v0.17.3
+git checkout v0.17.5
 make get_tools // run $ make update_tools if already installed
 make get_vendor_deps
 make install
@@ -67,7 +67,7 @@ gaiad version
 You should see:
 
 ```
-0.17.3-a5a78eb5
+0.17.5-cf46be22
 ```
 
 And also:
@@ -79,7 +79,7 @@ gaiacli version
 You should see:
 
 ```
-0.17.3-a5a78eb5
+0.17.5-cf46be22
 ```
 
 ## Genesis Setup
