@@ -38,9 +38,9 @@
             {
                 "pub_key": {
                     "type": "AC26791624DE60",
-                    "value": "vq0V0BjpmIh6WyNnFpMaO5LyUK2FamkNt65eJYa5AaQ="
+                    "value": "bIvXwf0qlOy0rO0SY/h8FfsqyW/AMpGL2yUhUNOY7hs="
                 },
-                "power": 1000,
+                "power": 100,
                 "name": "staked"
             },
             {
@@ -226,14 +226,6 @@
                 },
                 "power":1000,
                 "name":"vultr.guest"
-            },
-            {
-                "pub_key": {
-                    "type": "AC26791624DE60",
-                    "value": "u/Ra5oGuTpWJycIjuI+jAc4hqJOU5yBV29RzdyL0YAc="
-                },
-                "power":1000,
-                "name":"gnitset"
             },
             {
                 "pub_key": {
@@ -473,11 +465,24 @@
                     "coins": [
                         {
                             "denom": "steak",
+                            "amount": 100
+                        },
+                        {
+                            "denom": "pengToken",
                             "amount": 1000
+                        }
+                    ]
+                },
+                {
+                    "address": "FD30D5C983FFEDEC069C3DDFCF270E41A556A86E",
+                    "coins": [
+                        {
+                            "denom": "steak",
+                            "amount": 900
                         },
                         {
                             "denom": "faucetToken",
-                            "amount": 1000000
+                            "amount": 10000000
                         }
                     ]
                 },
@@ -627,10 +632,10 @@
             ],
             "stake": {
                 "pool": {
-                    "total_supply": 28600,
-                    "bonded_shares": "26200",
+                    "total_supply": 27600,
+                    "bonded_shares": "25200",
                     "unbonded_shares": "0",
-                    "bonded_pool": 26200,
+                    "bonded_pool": 25200,
                     "unbonded_pool": 0,
                     "inflation_last_time": 0,
                     "inflation": "9012837/100000000"
@@ -645,7 +650,7 @@
                 },
                 "bonds": [
                 ],
-                "candidates": [
+                "validators": [
                     {
                         "owner": "04F01D5AF8DD248130BBE1D0780EA219CE479A9B",
                         "pub_key": {
@@ -660,10 +665,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -686,10 +691,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "100"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "100",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -712,10 +717,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -738,10 +743,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "100"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "100",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -764,10 +769,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -790,10 +795,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -816,10 +821,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -842,10 +847,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -868,10 +873,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,        
+                            "status": 2,        
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -884,7 +889,7 @@
                         "owner": "935E04662697134905706A4CCDB822AC6FC11C2E",
                         "pub_key": {
                             "type": "AC26791624DE60",
-                            "value": "vq0V0BjpmIh6WyNnFpMaO5LyUK2FamkNt65eJYa5AaQ="
+                            "value": "bIvXwf0qlOy0rO0SY/h8FfsqyW/AMpGL2yUhUNOY7hs="
                         },
                         "description": {
                             "moniker": "default",
@@ -894,10 +899,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "100"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "100",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -920,10 +925,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -946,10 +951,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "100"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -972,10 +977,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -998,36 +1003,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
-                        "bond_height": 0,
-                        "bond_intra_tx_counter": 0,
-                        "commision": "0/1",
-                        "commission_max": "0/1",
-                        "commission_change_rate": "0/1",
-                        "commission_change_rate_today": "0/1",
-                        "prev_bonded_shares": "0/1"
-                    },
-                    {
-                        "owner": "ABB0A52177EA1E6FD932E46438E2C3C6538FC6BA",
-                        "pub_key": {
-                            "type": "AC26791624DE60",
-                            "value": "u/Ra5oGuTpWJycIjuI+jAc4hqJOU5yBV29RzdyL0YAc="
-                        },
-                        "description": {
-                            "moniker": "gnitest",
-                            "identity": "",
-                            "website": "",
-                            "details": ""
-                        },
-                        "revoked": false,
-                        "pool_shares": {
-                            "status": 1,
-                            "amount": "1000"
-                        },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -1050,10 +1029,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -1076,10 +1055,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -1102,10 +1081,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -1128,10 +1107,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
-                            "amount": "6365138839349/6393179664000"
+                            "status": 2,
+                            "amount": "1000"
                         },
-                        "delegator_shares": "6365138839349/6393179664000",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -1154,10 +1133,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -1180,10 +1159,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -1206,10 +1185,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -1232,10 +1211,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -1258,10 +1237,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -1284,10 +1263,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -1310,10 +1289,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -1336,10 +1315,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
@@ -1362,10 +1341,10 @@
                         },
                         "revoked": false,
                         "pool_shares": {
-                            "status": 1,
+                            "status": 2,
                             "amount": "1000"
                         },
-                        "delegator_shares": "0",
+                        "delegator_shares": "1000",
                         "bond_height": 0,
                         "bond_intra_tx_counter": 0,
                         "commision": "0/1",
