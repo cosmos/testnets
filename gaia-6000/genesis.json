@@ -158,14 +158,6 @@
             {
                 "pub_key": {
                     "type": "AC26791624DE60",
-                    "value": "ah3JtmBA7gbxSiimPsLqQlV85gpNOUBJMvnxGx8eVlo="
-                },
-                "power":1000,
-                "name":"kwunyeung"
-            },
-            {
-                "pub_key": {
-                    "type": "AC26791624DE60",
                     "value": "vSr94aI+zfF3D8Cr2VtCXPpfgj7t2ck8SlZxRsfn7gk="
                 },
                 "power":1000,
@@ -635,10 +627,10 @@
             ],
             "stake": {
                 "pool": {
-                    "total_supply": 29600,
-                    "bonded_shares": "27200",
+                    "total_supply": 28600,
+                    "bonded_shares": "26200",
                     "unbonded_shares": "0",
-                    "bonded_pool": 27200,
+                    "bonded_pool": 26200,
                     "unbonded_pool": 0,
                     "inflation_last_time": 0,
                     "inflation": "9012837/100000000"
@@ -922,32 +914,6 @@
                         },
                         "description": {
                             "moniker": "bucky",
-                            "identity": "",
-                            "website": "",
-                            "details": ""
-                        },
-                        "revoked": false,
-                        "pool_shares": {
-                            "status": 1,
-                            "amount": "1000"
-                        },
-                        "delegator_shares": "0",
-                        "bond_height": 0,
-                        "bond_intra_tx_counter": 0,
-                        "commision": "0/1",
-                        "commission_max": "0/1",
-                        "commission_change_rate": "0/1",
-                        "commission_change_rate_today": "0/1",
-                        "prev_bonded_shares": "0/1"
-                    },
-                    {
-                        "owner": "99FFAEE5BF6040EADA2F26548C4A702619797C9F",
-                        "pub_key": {
-                            "type": "AC26791624DE60",
-                            "value": "ah3JtmBA7gbxSiimPsLqQlV85gpNOUBJMvnxGx8eVlo="
-                        },
-                        "description": {
-                            "moniker": "kwunyeung",
                             "identity": "",
                             "website": "",
                             "details": ""
