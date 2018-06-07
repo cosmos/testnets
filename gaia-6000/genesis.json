@@ -126,14 +126,6 @@
         {
             "pub_key": {
                 "type": "AC26791624DE60",
-                "value": "07ugXHEjuA7yus73nI8lssLpi2gO+1mOLSbij/SvA0M="
-            },
-            "power": 1000,
-            "name": "idoorMacPack_5001"
-        },
-        {
-            "pub_key": {
-                "type": "AC26791624DE60",
                 "value": "kol7Gj60Fct4X8T1rHLJQ0z/b14UqqSae8h1e37rLL8="
             },
             "power": 1000,
@@ -253,6 +245,19 @@
                 ]
             },
             {
+                "address": "FD8DA5F512A59A30F8698E3CA638D384A68DF977",
+                "coins": [
+                    {
+                        "denom": "adrianToken",
+                        "amount": 1000
+                    },
+                    {
+                        "denom": "steak",
+                        "amount": 50
+                    }
+                ]
+            },
+            {
                 "address": "109720515B4F8C0858DA3521E448262334534FFD",
                 "coins": [
                     {
@@ -321,7 +326,7 @@
                 "address": "4B5BE759EB23B0D76C6A60636BD0E3111178794E",
                 "coins": [
                     {
-                        "denom": "=suyuToken",
+                        "denom": "suyuToken",
                         "amount": 1000
                     },
                     {
@@ -430,19 +435,6 @@
                     },
                     {
                         "denom": "dokiaToken",
-                        "amount": 1000
-                    }
-                ]
-            },
-            {
-                "address": "ABB0A52177EA1E6FD932E46438E2C3C6538FC6BA",
-                "coins": [
-                    {
-                        "denom": "steak",
-                        "amount": 50
-                    },
-                    {
-                        "denom": "gnitestToken",
                         "amount": 1000
                     }
                 ]
@@ -976,7 +968,7 @@
                         "value": "7SaH/LyM+qdz9ovD/pvqIf2q7LC7tc5v0ZJxsA2CGTw="
                     },
                     "description": {
-                        "moniker": "=suyu",
+                        "moniker": "suyu",
                         "identity": "",
                         "website": "",
                         "details": ""
