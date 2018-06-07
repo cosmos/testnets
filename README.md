@@ -178,7 +178,7 @@ The best way to get coins at the moment is to ask in Riot chat. We plan to have 
 ## Send tokens
 
 ```
-gaiacli send --amount=1000fermion --chain-id=<name_of_testnet_chain> --sequence=1 --name=<key_name> --to=<destination_address>
+gaiacli send --amount=1000fermion --chain-id=<name_of_testnet_chain> --sequence=0 --name=<key_name> --to=<destination_address>
 ```
 
 The `--amount` flag defines the corresponding amount of the coin in the format `--amount=<value|coin_name>`
@@ -247,7 +247,7 @@ You can delegate \(_i.e._ bind\) **Atoms** to a validator to become a [delegator
 Bond your tokens to a validator candidate with the following command:
 
 ```
-gaiacli delegate --amount=10steak --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=1
+gaiacli delegate --amount=10steak --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=2
 ```
 
 When tokens are bonded, they are pooled with all the other bonded tokens in the network. Validators and delegators obtain shares that represent their stake in this pool. 
@@ -257,7 +257,7 @@ When tokens are bonded, they are pooled with all the other bonded tokens in the 
 If for any reason the validator misbehaves or you just want to unbond a certain amount of the bonded tokens:
 
 ```
-gaiacli unbond --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --shares=MAX --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=1
+gaiacli unbond --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --shares=MAX --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=3
 ```
 
 You can unbond a specific amount of`shares`\(eg:`12.1`\) or all of them \(`MAX`\).
