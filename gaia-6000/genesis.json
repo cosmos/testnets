@@ -570,19 +570,6 @@
                 ]
             },
             {
-                "address": "EFE31452FB141E9683BD39D55CA7675BB84E6237",
-                "coins": [
-                    {
-                        "denom": "steak",
-                        "amount": 50
-                    },
-                    {
-                        "denom": "idoorToken",
-                        "amount": 1000
-                    }
-                ]
-            },
-            {
                 "address": "EFE597F7A90D3F3E7599B25259449628E2C4AFAD",
                 "coins": [
                     {
@@ -773,12 +760,6 @@
                 {
                     "delegator_addr": "ECE57661F0CDCF28EED257B72F86240E57F4A612",
                     "validator_addr": "ECE57661F0CDCF28EED257B72F86240E57F4A612",
-                    "shares": "1000",
-                    "height": 0
-                },
-                {
-                    "delegator_addr": "EFE31452FB141E9683BD39D55CA7675BB84E6237",
-                    "validator_addr": "EFE31452FB141E9683BD39D55CA7675BB84E6237",
                     "shares": "1000",
                     "height": 0
                 },
@@ -1402,32 +1383,6 @@
                     },
                     "description": {
                         "moniker": "zaki",
-                        "identity": "",
-                        "website": "",
-                        "details": ""
-                    },
-                    "revoked": false,
-                    "pool_shares": {
-                        "status": 2,
-                        "amount": "1000"
-                    },
-                    "delegator_shares": "1000",
-                    "bond_height": 0,
-                    "bond_intra_tx_counter": 0,
-                    "commision": "0/1",
-                    "commission_max": "0/1",
-                    "commission_change_rate": "0/1",
-                    "commission_change_rate_today": "0/1",
-                    "prev_bonded_shares": "0/1"
-                },
-                {
-                    "owner": "EFE31452FB141E9683BD39D55CA7675BB84E6237",
-                    "pub_key": {
-                        "type": "AC26791624DE60",
-                        "value": "07ugXHEjuA7yus73nI8lssLpi2gO+1mOLSbij/SvA0M="
-                    },
-                    "description": {
-                        "moniker": "idoorMacPack_5001",
                         "identity": "",
                         "website": "",
                         "details": ""
