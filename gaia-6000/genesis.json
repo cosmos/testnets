@@ -169,7 +169,7 @@
                     "value": "p5ijoVwp2zmA7RkXXvPl+yqdnlaWMwoV2pYIN8bDyFs="
                 },
                 "power":1000,
-                "name":"jla-bsd"
+                "name":"jlandrews-bsd"
             },
             {
                 "pub_key": {
@@ -226,14 +226,6 @@
                 },
                 "power":1000,
                 "name":"vultr.guest"
-            },
-            {
-                "pub_key": {
-                    "type": "AC26791624DE60",
-                    "value": "u/Ra5oGuTpWJycIjuI+jAc4hqJOU5yBV29RzdyL0YAc="
-                },
-                "power":1000,
-                "name":"gnitset"
             },
             {
                 "pub_key": {
@@ -443,19 +435,6 @@
                     ]
                 },
                 {
-                    "address": "ABB0A52177EA1E6FD932E46438E2C3C6538FC6BA",
-                    "coins": [
-                        {
-                            "denom": "steak",
-                            "amount": 50
-                        },
-                        {
-                            "denom": "gnitestToken",
-                            "amount": 1000
-                        }
-                    ]
-                },
-                {
                     "address": "B6834D914FE50F0C743E6A012AB20438CFADFB95",
                     "coins": [
                         {
@@ -627,10 +606,10 @@
             ],
             "stake": {
                 "pool": {
-                    "total_supply": 28600,
-                    "bonded_shares": "26200",
+                    "total_supply": 27600,
+                    "bonded_shares": "25200",
                     "unbonded_shares": "0",
-                    "bonded_pool": 26200,
+                    "bonded_pool": 25200,
                     "unbonded_pool": 0,
                     "inflation_last_time": 0,
                     "inflation": "9012837/100000000"
@@ -1011,32 +990,6 @@
                         "prev_bonded_shares": "0/1"
                     },
                     {
-                        "owner": "ABB0A52177EA1E6FD932E46438E2C3C6538FC6BA",
-                        "pub_key": {
-                            "type": "AC26791624DE60",
-                            "value": "u/Ra5oGuTpWJycIjuI+jAc4hqJOU5yBV29RzdyL0YAc="
-                        },
-                        "description": {
-                            "moniker": "gnitest",
-                            "identity": "",
-                            "website": "",
-                            "details": ""
-                        },
-                        "revoked": false,
-                        "pool_shares": {
-                            "status": 1,
-                            "amount": "1000"
-                        },
-                        "delegator_shares": "0",
-                        "bond_height": 0,
-                        "bond_intra_tx_counter": 0,
-                        "commision": "0/1",
-                        "commission_max": "0/1",
-                        "commission_change_rate": "0/1",
-                        "commission_change_rate_today": "0/1",
-                        "prev_bonded_shares": "0/1"
-                    },
-                    {
                         "owner": "B6834D914FE50F0C743E6A012AB20438CFADFB95",
                         "pub_key": {
                             "type": "AC26791624DE60",
@@ -1121,7 +1074,7 @@
                             "value": "p5ijoVwp2zmA7RkXXvPl+yqdnlaWMwoV2pYIN8bDyFs="
                         },
                         "description": {
-                            "moniker": "jla-bsd",
+                            "moniker": "jlandrews-bsd",
                             "identity": "",
                             "website": "",
                             "details": ""
