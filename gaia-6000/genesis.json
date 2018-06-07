@@ -611,7 +611,7 @@
         ],
         "stake": {
             "pool": {
-                "loose_unbonded_tokens": 2400,
+                "loose_unbonded_tokens": 2350,
                 "unbonded_tokens": 0,
                 "unbonding_tokens": 0,
                 "bonded_tokens": 25200,
