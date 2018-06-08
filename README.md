@@ -90,7 +90,7 @@ Clone the testnet repo.
 git clone https://github.com/cosmos/testnets
 
 mkdir -p $HOME/.gaiad/config
-cp -a testnets/gaia-6000/genesis.json $HOME/.gaiad/config/genesis.json
+cp -a testnets/gaia-6001/genesis.json $HOME/.gaiad/config/genesis.json
 gaiad unsafe_reset_all
 ```
 
