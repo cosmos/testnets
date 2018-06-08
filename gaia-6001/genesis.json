@@ -1,6 +1,6 @@
 {
     "genesis_time": "2018-05-15T18:29:12.38288148Z",
-    "chain_id": "gaia-tardigrade",
+    "chain_id": "gaia-6001",
     "consensus_params": {
         "block_size_params": {
             "max_bytes": 22020096,
@@ -24,7 +24,7 @@
                 "type": "AC26791624DE60",
                 "value": "TZTQnfqOsi89SeoXVnIw+tnFJnr4X8qVC0U8AsEmFk4="
             },
-            "power": 1800,
+            "power": 1000,
             "name": "adrian"
         },
         {
@@ -32,7 +32,7 @@
                 "type": "AC26791624DE60",
                 "value": "CDF/8aD8Lt+ikR3LyCg9c7DwWBA51NH+MUkH7tzxrfY="
             },
-            "power": 100,
+            "power": 1000,
             "name": "zaki"
         },
         {
@@ -48,7 +48,7 @@
                 "type": "AC26791624DE60",
                 "value": "RMwWTZsVdkq1heicNJb2fosy9Fls4NHxAHReiJvHl+8="
             },
-            "power": 100,
+            "power": 1000,
             "name": "polsdam"
         },
         {
@@ -56,7 +56,7 @@
                 "type": "AC26791624DE60",
                 "value": "SW12+WpGKUCO9oT2CV0CD5kUclbXjJHV1MjerLWB7Oc="
             },
-            "power": 100,
+            "power": 1000,
             "name": "lino"
         },
         {
@@ -80,7 +80,7 @@
                 "type": "AC26791624DE60",
                 "value": "pY7eLF0Ez3yq495kIjag8mD67Q131np/ssagpEvlV2A="
             },
-            "power": 100,
+            "power": 1000,
             "name": "pbostrom"
         },
         {
@@ -96,7 +96,7 @@
                 "type": "AC26791624DE60",
                 "value": "0aNTDL49987ZNRi3FtJIi0jk93ybHuYg1FjWrfP9H2o="
             },
-            "power": 1800,
+            "power": 1000,
             "name": "bucky"
         },
         {
@@ -120,7 +120,7 @@
                 "type": "AC26791624DE60",
                 "value": "cvGYknYP9XMUzqlXZde7lRpvAp/kZiSRYHg66krJNxQ="
             },
-            "power": 100,
+            "power": 1000,
             "name": "melea-trust"
         },
         {
@@ -128,7 +128,7 @@
                 "type": "AC26791624DE60",
                 "value": "kol7Gj60Fct4X8T1rHLJQ0z/b14UqqSae8h1e37rLL8="
             },
-            "power": 100,
+            "power": 1000,
             "name": "naruemon"
         },
         {
@@ -136,7 +136,7 @@
                 "type": "AC26791624DE60",
                 "value": "rcl+kuM69Un/a7e+fQsQrCEtT1g04tFviOeq2GygSIw="
             },
-            "power": 100,
+            "power": 1000,
             "name": "idoor"
         },
         {
@@ -144,7 +144,7 @@
                 "type": "AC26791624DE60",
                 "value": "S9urD5q7je21qp5vEobiURdWrtJwvqMsfZGQhb8GOBQ="
             },
-            "power": 100,
+            "power": 1000,
             "name": "ATEAM1"
         },
         {
@@ -152,7 +152,7 @@
                 "type": "AC26791624DE60",
                 "value": "vSr94aI+zfF3D8Cr2VtCXPpfgj7t2ck8SlZxRsfn7gk="
             },
-            "power": 100,
+            "power": 1000,
             "name": "figmatt"
         },
         {
@@ -160,7 +160,7 @@
                 "type": "AC26791624DE60",
                 "value": "p5ijoVwp2zmA7RkXXvPl+yqdnlaWMwoV2pYIN8bDyFs="
             },
-            "power": 100,
+            "power": 1000,
             "name": "jla-bsd"
         },
         {
@@ -168,7 +168,7 @@
                 "type": "AC26791624DE60",
                 "value": "KOdWpo4aQFrLxVlkyc66p7m6mBNnPLmGuO4Z4L+CI1Y="
             },
-            "power": 100,
+            "power": 1000,
             "name": "Gold"
         },
         {
@@ -176,7 +176,7 @@
                 "type": "AC26791624DE60",
                 "value": "VfOsmcON77auerRc9zKwOR+CvL0sj1nA45hS2WqX1xE="
             },
-            "power": 100,
+            "power": 1000,
             "name": "nylira"
         },
         {
@@ -184,7 +184,7 @@
                 "type": "AC26791624DE60",
                 "value": "QYONAknaJqx3OKPSKraDrOPkx6xssezYtXVS84nZvZE="
             },
-            "power": 100,
+            "power": 1000,
             "name": "BKCM"
         },
         {
@@ -192,7 +192,7 @@
                 "type": "AC26791624DE60",
                 "value": "PyFJmNrUres3QOkj2BjxplCxrOF+HDFGohi3tRKsToY="
             },
-            "power": 1800,
+            "power": 1000,
             "name": "Dev's Validator"
         },
         {
@@ -200,7 +200,7 @@
                 "type": "AC26791624DE60",
                 "value": "s4ER09+WeX10euzGyK7xDW7+myQVXt3Plup8IHUE4nk="
             },
-            "power": 100,
+            "power": 1000,
             "name": "Staking Facilities"
         },
         {
@@ -208,7 +208,7 @@
                 "type": "AC26791624DE60",
                 "value": "OPxj9edXgufNEjYNhZKqLgmYnK4A3nGw3rxaFQrHn24="
             },
-            "power": 100,
+            "power": 1000,
             "name": "nuevax"
         },
         {
@@ -216,7 +216,7 @@
                 "type": "AC26791624DE60",
                 "value": "Hi2rtbdJdQtOe3Kq4OoD/xkWJbIjIsUI9qgLQ6TlhiM="
             },
-            "power": 100,
+            "power": 1000,
             "name": "vultr.guest"
         },
         {
@@ -226,14 +226,6 @@
             },
             "power": 1000,
             "name": "forebole"
-        },
-        {
-            "pub_key": {
-                "type": "AC26791624DE60",
-                "value": "9Sq7194UP6d8Jb+v8ZuLNXZWCRV49fjBSJsZMwl8myQ="
-            },
-            "power": 1800,
-            "name": "sunny"
         }
     ],
     "app_hash": "",
@@ -248,20 +240,7 @@
                     },
                     {
                         "denom": "steak",
-                        "amount": 500
-                    }
-                ]
-            },
-            {
-                "address": "36ED572AD2071337BDC5445CE69A44F6FEBCB234",
-                "coins": [
-                    {
-                        "denom": "sunnyToken",
-                        "amount": 1000
-                    },
-                    {
-                        "denom": "steak",
-                        "amount": 500
+                        "amount": 50
                     }
                 ]
             },
@@ -274,7 +253,7 @@
                     },
                     {
                         "denom": "steak",
-                        "amount": 1000
+                        "amount": 50
                     }
                 ]
             },
@@ -339,7 +318,7 @@
                     },
                     {
                         "denom": "steak",
-                        "amount": 250
+                        "amount": 50
                     }
                 ]
             },
@@ -352,7 +331,7 @@
                     },
                     {
                         "denom": "steak",
-                        "amount": 250
+                        "amount": 50
                     }
                 ]
             },
@@ -404,7 +383,7 @@
                     },
                     {
                         "denom": "steak",
-                        "amount": 250
+                        "amount": 50
                     }
                 ]
             },
@@ -417,7 +396,7 @@
                     },
                     {
                         "denom": "steak",
-                        "amount": 250
+                        "amount": 50
                     }
                 ]
             },
@@ -456,7 +435,7 @@
                     },
                     {
                         "denom": "dokiaToken",
-                        "amount": 50
+                        "amount": 1000
                     }
                 ]
             },
@@ -469,7 +448,7 @@
                     },
                     {
                         "denom": "forboleToken",
-                        "amount": 250
+                        "amount": 1000
                     }
                 ]
             },
@@ -482,7 +461,7 @@
                     },
                     {
                         "denom": "pengToken",
-                        "amount": 50
+                        "amount": 1000
                     }
                 ]
             },
@@ -491,7 +470,7 @@
                 "coins": [
                     {
                         "denom": "steak",
-                        "amount": 1000
+                        "amount": 900
                     },
                     {
                         "denom": "faucetToken",
@@ -582,7 +561,7 @@
                 "coins": [
                     {
                         "denom": "steak",
-                        "amount": 500
+                        "amount": 50
                     },
                     {
                         "denom": "zakiToken",
@@ -619,13 +598,13 @@
         ],
         "stake": {
             "pool": {
-                "loose_unbonded_tokens": 5550,
+                "loose_unbonded_tokens": 2300,
                 "unbonded_tokens": 0,
                 "unbonding_tokens": 0,
-                "bonded_tokens": 13100,
+                "bonded_tokens": 23300,
                 "unbonded_shares": "0",
                 "unbonding_shares": "0",
-                "bonded_shares": "13100",
+                "bonded_shares": "23300",
                 "inflation_last_time": 0,
                 "inflation": "9012837/100000000",
                 "date_last_commission_reset": 0,
@@ -643,13 +622,13 @@
                 {
                     "delegator_addr": "04F01D5AF8DD248130BBE1D0780EA219CE479A9B",
                     "validator_addr": "04F01D5AF8DD248130BBE1D0780EA219CE479A9B",
-                    "shares": "1800",
+                    "shares": "1000",
                     "height": 0
                 },
                 {
                     "delegator_addr": "109720515B4F8C0858DA3521E448262334534FFD",
                     "validator_addr": "109720515B4F8C0858DA3521E448262334534FFD",
-                    "shares": "100",
+                    "shares": "1000",
                     "height": 0
                 },
                 {
@@ -703,7 +682,7 @@
                 {
                     "delegator_addr": "935E48ED79F1006ED135553768E1D9A768747CF6",
                     "validator_addr": "935E48ED79F1006ED135553768E1D9A768747CF6",
-                    "shares": "1800",
+                    "shares": "1000",
                     "height": 0
                 },
                 {
@@ -775,7 +754,7 @@
                 {
                     "delegator_addr": "FD8DA5F512A59A30F8698E3CA638D384A68DF977",
                     "validator_addr": "FD8DA5F512A59A30F8698E3CA638D384A68DF977",
-                    "shares": "1800",
+                    "shares": "1000",
                     "height": 0
                 },
                 {
@@ -795,12 +774,6 @@
                     "validator_addr": "FA929191B04C5DB222AFC6F15C63EF48CCC864C5",
                     "shares": "1000",
                     "height": 0
-                },
-                {
-                    "delegator_addr": "36ED572AD2071337BDC5445CE69A44F6FEBCB234",
-                    "validator_addr": "36ED572AD2071337BDC5445CE69A44F6FEBCB234",
-                    "shares": "1800",
-                    "height": 0
                 }
             ],
             "validators": [
@@ -819,35 +792,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "1800"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "1800",
-                    "bond_height": 0,
-                    "bond_intra_tx_counter": 0,
-                    "commision": "0/1",
-                    "commission_max": "0/1",
-                    "commission_change_rate": "0/1",
-                    "commission_change_rate_today": "0/1",
-                    "prev_bonded_shares": "0/1"
-                },
-                {
-                    "owner": "36ED572AD2071337BDC5445CE69A44F6FEBCB234",
-                    "pub_key": {
-                        "type": "AC26791624DE60",
-                        "value": "9Sq7194UP6d8Jb+v8ZuLNXZWCRV49fjBSJsZMwl8myQ="
-                    },
-                    "description": {
-                        "moniker": "sunny",
-                        "identity": "",
-                        "website": "",
-                        "details": ""
-                    },
-                    "revoked": false,
-                    "pool_shares": {
-                        "status": 2,
-                        "amount": "1800"
-                    },
-                    "delegator_shares": "1800",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -871,9 +818,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "100"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "100",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -949,9 +896,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "100"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "100",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1027,9 +974,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "100"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "100",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1053,9 +1000,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "100"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "100",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1105,9 +1052,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "1800"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "1800",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1157,9 +1104,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "100"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "100",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1183,9 +1130,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "100"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "100",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1235,9 +1182,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "100"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "100",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1261,9 +1208,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "100"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "100",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1287,9 +1234,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "100"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "100",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1313,9 +1260,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "100"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "100",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1339,9 +1286,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "100"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "100",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1365,9 +1312,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "100"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "100",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1391,9 +1338,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "100"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "100",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1417,9 +1364,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "1800"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "1800",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1443,9 +1390,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "100"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "100",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1469,9 +1416,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "100"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "100",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1495,9 +1442,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "100"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "100",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
