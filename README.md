@@ -259,7 +259,7 @@ gaiacli stake validator --address-candidate=<your_address> --chain-id=<name_of_t
 To check that the validator is active you can find it on the validator set list:
 
 ```
-gaiacli advanced tendermint validatorset
+gaiacli advanced tendermint validator-set
 ```
 
 **Note:** Remember that to be in the validator set you need to have more total power than the Xnd validator, where X is the assigned size for the validator set \(by default _`X = 100`_\).
