@@ -93,6 +93,9 @@ mkdir -p $HOME/.gaiad/config
 cp -a testnets/gaia-6001/genesis.json $HOME/.gaiad/config/genesis.json
 gaiad unsafe_reset_all
 ```
+
+Add a seed node by changing `seed = ""` in `config.toml` to `seed = "80a35a46ce09cfb31ee220c8141a25e73e0b239b@35.198.166.171:46656`.
+
 Lastly change the `moniker` string in the`config.toml`to identify your node.
 
 ```
