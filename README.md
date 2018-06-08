@@ -52,7 +52,7 @@ Now we can fetch the correct versions of each dependency by running:
 ```
 mkdir -p $GOPATH/src/github.com/cosmos/cosmos-sdk
 git clone https://github.com/cosmos/cosmos-sdk.git
-git checkout v0.17.3
+git checkout v0.18.0-rc0
 make get_tools // run $ make update_tools if already installed
 make get_vendor_deps
 make install
@@ -67,7 +67,7 @@ gaiad version
 You should see:
 
 ```
-0.17.3-a5a78eb5
+0.18.0-dev-af15f89
 ```
 
 And also:
@@ -79,43 +79,69 @@ gaiacli version
 You should see:
 
 ```
-0.17.3-a5a78eb5
+0.18.0-dev-af15f89
 ```
 
-## Genesis Setup
+## Full Node Setup
 
-### Making your own genesis transaction
-
-Create your own genesis transactions
-
-```
-gaiad init gen-tx --name YOUR_NAME
-```
-
-Copy the JSON value under `gen_tx_file` into `YOUR_NAME.json` in the appropriate folder on this Github repository.
-
-### Retrieving & combining genesis transactions
-
-Genesis files are the starting point for the full-node to sync up with the network. In order to sync up with the correct version of the Testnet, be sure to choose the genesis file corresponding to the version of the Testnet you want to connect to.
-
-Now that we have completed the basic SDK setup, we can start working on the genesis configuration for the chain we want to connect to.
-
-Get the genesis transactions
+Clone the testnet repo.
 
 ```
 git clone https://github.com/cosmos/testnets
 
 mkdir -p $HOME/.gaiad/config
-cp -a testnets/gaia-5001/. $HOME/.gaiad/config/gentx
+cp -a testnets/gaia-6000/genesis.json $HOME/.gaiad/config/genesis.json
 gaiad unsafe_reset_all
-gaiad init --gen-txs -o --chain-id=gaia-5001
-
 ```
+
+Add a seed node by changing `seed = ""` in `config.toml` to `seed = "80a35a46ce09cfb31ee220c8141a25e73e0b239b@35.198.166.171:46656"`.
+
 Lastly change the `moniker` string in the`config.toml`to identify your node.
 
 ```
 # A custom human readable name for this node
 moniker = "<your_custom_name>"
+```
+
+## Upgrading from a previous network
+
+These instructions are for anyone that ran a previous network and would like to upgrade to a newer version.
+
+Remove the ephemeral files and reset the data.
+```
+rm $HOME/.gaiad/config/addrbook.json $HOME/.gaiad/config/genesis.json
+gaiad unsafe_reset_all
+```
+
+Now your node is in a prestine state without changing your validator key. If you had any
+sentry nodes or full nodes setup correctly previously they should work.
+
+**Make sure that every node has a unique `priv_validator.json`. Do not copy the `priv_validator.json` from an old node to multiple new nodes. Running two nodes with the same `priv_validator.json` will cause you to double sign.**\
+
+
+Now it is time to upgrade the software.
+```
+cd $GOPATH/src/github.com/cosmos/cosmos-sdk
+git fetch --all
+git checkout v0.18.0-rc0
+make update_tools
+make get_vendor_deps
+make install
+```
+
+The next step is to obtain the new genesis file from `https://github.com/cosmos/testnets`.
+```
+cd $HOME/testnets
+git pull origin master
+
+cp -a gaia-6001/genesis.json $HOME/.gaiad/config
+```
+
+The last step is the adjust the `config.toml`. Make sure that you are connected to healthy peers or seed nodes.
+These are some seeds nodes and they can be put into the config under the `seeds` key. Alternatively you can also
+ask user validators directly for a persistent peer and add it under the `persisent_peers` key.
+```
+80a35a46ce09cfb31ee220c8141a25e73e0b239b@cosmos.cryptium.ch:46656
 ```
 
 ## Run a Full Node
@@ -178,7 +204,7 @@ The best way to get coins at the moment is to ask in Riot chat. We plan to have 
 ## Send tokens
 
 ```
-gaiacli send --amount=1000fermion --chain-id=<name_of_testnet_chain> --sequence=1 --name=<key_name> --to=<destination_address>
+gaiacli send --amount=1000fermion --chain-id=<name_of_testnet_chain> --sequence=0 --name=<key_name> --to=<destination_address>
 ```
 
 The `--amount` flag defines the corresponding amount of the coin in the format `--amount=<value|coin_name>`
@@ -247,15 +273,17 @@ You can delegate \(_i.e._ bind\) **Atoms** to a validator to become a [delegator
 Bond your tokens to a validator candidate with the following command:
 
 ```
-gaiacli stake delegate --amount=10steak --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=1
+gaiacli stake delegate --amount=10steak --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=2
 ```
+
+When tokens are bonded, they are pooled with all the other bonded tokens in the network. Validators and delegators obtain shares that represent their stake in this pool. 
 
 ### Unbond
 
 If for any reason the validator misbehaves or you just want to unbond a certain amount of the bonded tokens:
 
 ```
-gaiacli stake unbond --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --shares=MAX --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=1
+gaiacli stake unbond --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --shares=MAX --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=3
 ```
 
 You can unbond a specific amount of`shares`\(eg:`12.1`\) or all of them \(`MAX`\).
