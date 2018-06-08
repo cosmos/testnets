@@ -625,7 +625,7 @@
                 "bonded_tokens": 13100,
                 "unbonded_shares": "0",
                 "unbonding_shares": "0",
-                "bonded_shares": "13900",
+                "bonded_shares": "13100",
                 "inflation_last_time": 0,
                 "inflation": "9012837/100000000",
                 "date_last_commission_reset": 0,
