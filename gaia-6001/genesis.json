@@ -598,13 +598,13 @@
         ],
         "stake": {
             "pool": {
-                "loose_unbonded_tokens": 2350,
+                "loose_unbonded_tokens": 2300,
                 "unbonded_tokens": 0,
                 "unbonding_tokens": 0,
-                "bonded_tokens": 25200,
+                "bonded_tokens": 23300,
                 "unbonded_shares": "0",
                 "unbonding_shares": "0",
-                "bonded_shares": "25200",
+                "bonded_shares": "23300",
                 "inflation_last_time": 0,
                 "inflation": "9012837/100000000",
                 "date_last_commission_reset": 0,
@@ -628,7 +628,7 @@
                 {
                     "delegator_addr": "109720515B4F8C0858DA3521E448262334534FFD",
                     "validator_addr": "109720515B4F8C0858DA3521E448262334534FFD",
-                    "shares": "100",
+                    "shares": "1000",
                     "height": 0
                 },
                 {
@@ -818,9 +818,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "100"
+                        "amount": "1000"
                     },
-                    "delegator_shares": "100",
+                    "delegator_shares": "1000",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1080,7 +1080,7 @@
                         "status": 2,
                         "amount": "100"
                     },
-                    "delegator_shares": "1000",
+                    "delegator_shares": "100",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
