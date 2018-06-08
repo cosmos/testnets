@@ -622,7 +622,7 @@
                 "loose_unbonded_tokens": 5550,
                 "unbonded_tokens": 0,
                 "unbonding_tokens": 0,
-                "bonded_tokens": 13900,
+                "bonded_tokens": 13100,
                 "unbonded_shares": "0",
                 "unbonding_shares": "0",
                 "bonded_shares": "13900",
@@ -643,7 +643,7 @@
                 {
                     "delegator_addr": "04F01D5AF8DD248130BBE1D0780EA219CE479A9B",
                     "validator_addr": "04F01D5AF8DD248130BBE1D0780EA219CE479A9B",
-                    "shares": "1000",
+                    "shares": "1800",
                     "height": 0
                 },
                 {
@@ -703,7 +703,7 @@
                 {
                     "delegator_addr": "935E48ED79F1006ED135553768E1D9A768747CF6",
                     "validator_addr": "935E48ED79F1006ED135553768E1D9A768747CF6",
-                    "shares": "1000",
+                    "shares": "1800",
                     "height": 0
                 },
                 {
@@ -775,7 +775,7 @@
                 {
                     "delegator_addr": "FD8DA5F512A59A30F8698E3CA638D384A68DF977",
                     "validator_addr": "FD8DA5F512A59A30F8698E3CA638D384A68DF977",
-                    "shares": "1000",
+                    "shares": "1800",
                     "height": 0
                 },
                 {
@@ -799,7 +799,7 @@
                 {
                     "delegator_addr": "36ED572AD2071337BDC5445CE69A44F6FEBCB234",
                     "validator_addr": "36ED572AD2071337BDC5445CE69A44F6FEBCB234",
-                    "shares": "1000",
+                    "shares": "1800",
                     "height": 0
                 }
             ],
@@ -819,9 +819,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "1000"
+                        "amount": "1800"
                     },
-                    "delegator_shares": "1000",
+                    "delegator_shares": "1800",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -845,9 +845,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "1000"
+                        "amount": "1800"
                     },
-                    "delegator_shares": "1000",
+                    "delegator_shares": "1800",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1105,9 +1105,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "1000"
+                        "amount": "1800"
                     },
-                    "delegator_shares": "1000",
+                    "delegator_shares": "1800",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
@@ -1417,9 +1417,9 @@
                     "revoked": false,
                     "pool_shares": {
                         "status": 2,
-                        "amount": "1000"
+                        "amount": "1800"
                     },
-                    "delegator_shares": "1000",
+                    "delegator_shares": "1800",
                     "bond_height": 0,
                     "bond_intra_tx_counter": 0,
                     "commision": "0/1",
