@@ -103,6 +103,47 @@ Lastly change the `moniker` string in the`config.toml`to identify your node.
 moniker = "<your_custom_name>"
 ```
 
+## Upgrading from a previous network
+
+These instructions are for anyone that ran a previous network and would like to upgrade to a newer version.
+
+Remove the ephemeral files and reset the data.
+```
+rm $HOME/.gaiad/config/addrbook.json $HOME/.gaiad/config/genesis.json
+gaiad unsafe_reset_all
+```
+
+Now your node is in a prestine state without changing your validator key. If you had any
+sentry nodes or full nodes setup correctly previously they should work.
+
+**Make sure that every node has a unique `priv_validator.json`. Do not copy the `priv_validator.json` from an old node to multiple new nodes. Running two nodes with the same `priv_validator.json` will cause you to double sign.**\
+
+
+Now it is time to upgrade the software.
+```
+cd $GOPATH/src/github.com/cosmos/cosmos-sdk
+git fetch --all
+git checkout v0.18.0-rc0
+make update_tools
+make get_vendor_deps
+make install
+```
+
+The next step is to obtain the new genesis file from `https://github.com/cosmos/testnets`.
+```
+cd $HOME/testnets
+git pull origin master
+
+cp -a gaia-6001/genesis.json $HOME/.gaiad/config
+```
+
+The last step is the adjust the `config.toml`. Make sure that you are connected to healthy peers or seed nodes.
+These are some seeds nodes and they can be put into the config under the `seeds` key. Alternatively you can also
+ask user validators directly for a persistent peer and add it under the `persisent_peers` key.
+```
+80a35a46ce09cfb31ee220c8141a25e73e0b239b@cosmos.cryptium.ch:46656
+```
+
 ## Run a Full Node
 
 Start the full node:
