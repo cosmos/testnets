@@ -199,17 +199,15 @@ MYPUBKEY=<your_newly_generated_public_key>
 
 ### Get coins
 
-The best way to get coins at the moment is to ask in Riot chat. We plan to have a reliable faucet in future testnets.
+The best way to get coins is from the [Cosmos Testnet Faucet](https://faucetcosmos.network). If the faucet is not working for you, try asking [#cosmos-validators](https://riot.im/app/#/room/#cosmos-validators:matrix.org).
 
 ## Send tokens
 
 ```
-gaiacli send --amount=1000fermion --chain-id=<name_of_testnet_chain> --sequence=0 --name=<key_name> --to=<destination_address>
+gaiacli send --amount=1000fermion --chain-id=<name_of_testnet_chain> --name=<key_name> --to=<destination_address>
 ```
 
 The `--amount` flag defines the corresponding amount of the coin in the format `--amount=<value|coin_name>`
-
-The `--sequence` flag corresponds to the sequence number to sign the tx.
 
 Now check the destination account and your own account to check the updated balances \(by default the latest block\):
 
