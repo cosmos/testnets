@@ -1,3 +1,5 @@
+# DEPRECATED: See https://github.com/cosmos/cosmos-sdk#testnet
+
 # Connect to a Testnet
 
 This document explains how to connect to the Testnet of a [Cosmos-SDK](https://github.com/cosmos/cosmos-sdk/) based blockchain. It can be used to connect to the latest Testnet for the Cosmos Hub.
