@@ -1,3 +1,5 @@
+# DEPRECATED: See https://github.com/cosmos/cosmos-sdk#testnet
+
 # Connect to a Testnet
 
 This document explains how to connect to the Testnet of a [Cosmos-SDK](https://github.com/cosmos/cosmos-sdk/) based blockchain. It can be used to connect to the latest Testnet for the Cosmos Hub.
@@ -67,7 +69,7 @@ gaiad version
 You should see:
 
 ```
-0.18.0-dev-af15f89
+0.18.0-dev-af15f895
 ```
 
 And also:
@@ -79,7 +81,7 @@ gaiacli version
 You should see:
 
 ```
-0.18.0-dev-af15f89
+0.18.0-dev-af15f895
 ```
 
 ## Full Node Setup
@@ -90,13 +92,13 @@ Clone the testnet repo.
 git clone https://github.com/cosmos/testnets
 
 mkdir -p $HOME/.gaiad/config
-cp -a testnets/gaia-6000/genesis.json $HOME/.gaiad/config/genesis.json
+cp -a testnets/gaia-6001/genesis.json $HOME/.gaiad/config/genesis.json
 gaiad unsafe_reset_all
 ```
 
-Add a seed node by changing `seed = ""` in `config.toml` to `seed = "80a35a46ce09cfb31ee220c8141a25e73e0b239b@35.198.166.171:46656"`.
+Add a seed node by changing `seeds = ""` in `$HOME/.gaiad/config/config.toml` to `seeds = "80a35a46ce09cfb31ee220c8141a25e73e0b239b@seed.cosmos.cryptium.ch:46656,80a35a46ce09cfb31ee220c8141a25e73e0b239b@35.198.166.171:46656,032fa56301de335d835057fb6ad9f7ce2242a66d@165.227.236.213:46656"`.
 
-Lastly change the `moniker` string in the`config.toml`to identify your node.
+Lastly change the `moniker` string in the`$HOME/.gaiad/config/config.toml`to identify your node.
 
 ```
 # A custom human readable name for this node
@@ -137,11 +139,11 @@ git pull origin master
 cp -a gaia-6001/genesis.json $HOME/.gaiad/config
 ```
 
-The last step is the adjust the `config.toml`. Make sure that you are connected to healthy peers or seed nodes.
+The last step is the adjust the `$HOME/.gaiad/config/config.toml`. Make sure that you are connected to healthy peers or seed nodes.
 These are some seeds nodes and they can be put into the config under the `seeds` key. Alternatively you can also
 ask user validators directly for a persistent peer and add it under the `persisent_peers` key.
 ```
-80a35a46ce09cfb31ee220c8141a25e73e0b239b@cosmos.cryptium.ch:46656
+80a35a46ce09cfb31ee220c8141a25e73e0b239b@seed.cosmos.cryptium.ch:46656,80a35a46ce09cfb31ee220c8141a25e73e0b239b@35.198.166.171:46656,032fa56301de335d835057fb6ad9f7ce2242a66d@165.227.236.213:46656,
 ```
 
 ## Run a Full Node
@@ -234,32 +236,32 @@ Your `pubkey` can be used to create a new validator candidate by staking some to
 
 You can find your node pubkey by running
 ```
-gaiad show_validator
+gaiad tendermint show_validator
 ```
 
 and this returns your public key for the declare-candidate command
 
 
 ```
-gaiacli declare-candidacy --amount=500steak --pubkey=<your_node_pubkey> --address-candidate=<your_address> --moniker=satoshi --chain-id=<name_of_the_testnet_chain> --sequence=1 --name=<key_name>
+gaiacli stake create-validator --amount=500steak --pubkey=<your_node_pubkey> --address-candidate=<your_address> --moniker=satoshi --chain-id=<name_of_the_testnet_chain> --sequence=1 --name=<key_name>
 ```
 
 You can add more information of the validator candidate such as`--website`, `--keybase-sig `or additional `--details`. If you want to edit the candidate info:
 
 ```
-gaiacli edit-candidacy --details="To the cosmos !" --website="https://cosmos.network"
+gaiacli stake edit-validator --details="To the cosmos !" --website="https://cosmos.network"
 ```
 
 Finally, you can check all the candidate information by typing:
 
 ```
-gaiacli candidate --address-candidate=<your_address> --chain-id=<name_of_the_testnet_chain>
+gaiacli stake validator --address-candidate=<your_address> --chain-id=<name_of_the_testnet_chain>
 ```
 
 To check that the validator is active you can find it on the validator set list:
 
 ```
-gaiacli validatorset
+gaiacli advanced tendermint validator-set
 ```
 
 **Note:** Remember that to be in the validator set you need to have more total power than the Xnd validator, where X is the assigned size for the validator set \(by default _`X = 100`_\).
@@ -273,7 +275,7 @@ You can delegate \(_i.e._ bind\) **Atoms** to a validator to become a [delegator
 Bond your tokens to a validator candidate with the following command:
 
 ```
-gaiacli delegate --amount=10steak --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=2
+gaiacli stake delegate --amount=10steak --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=2
 ```
 
 When tokens are bonded, they are pooled with all the other bonded tokens in the network. Validators and delegators obtain shares that represent their stake in this pool. 
@@ -283,7 +285,7 @@ When tokens are bonded, they are pooled with all the other bonded tokens in the 
 If for any reason the validator misbehaves or you just want to unbond a certain amount of the bonded tokens:
 
 ```
-gaiacli unbond --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --shares=MAX --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=3
+gaiacli stake unbond --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --shares=MAX --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=3
 ```
 
 You can unbond a specific amount of`shares`\(eg:`12.1`\) or all of them \(`MAX`\).
@@ -292,5 +294,5 @@ You should now see the unbonded tokens reflected in your balance and in your del
 
 ```
 gaiacli account <your_address>
-gaiacli delegator-bond --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --chain-id=<name_of_testnet_chain>
+gaiacli stake delegation --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --chain-id=<name_of_testnet_chain>
 ```
