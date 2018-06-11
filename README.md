@@ -94,9 +94,9 @@ cp -a testnets/gaia-6001/genesis.json $HOME/.gaiad/config/genesis.json
 gaiad unsafe_reset_all
 ```
 
-Add a seed node by changing `seed = ""` in `config.toml` to `seed = "80a35a46ce09cfb31ee220c8141a25e73e0b239b@35.198.166.171:46656"`.
+Add a seed node by changing `seed = ""` in `$HOME/.gaiad/config/config.toml` to `seed = "80a35a46ce09cfb31ee220c8141a25e73e0b239b@35.198.166.171:46656"`.
 
-Lastly change the `moniker` string in the`config.toml`to identify your node.
+Lastly change the `moniker` string in the`$HOME/.gaiad/config/config.toml`to identify your node.
 
 ```
 # A custom human readable name for this node
@@ -137,7 +137,7 @@ git pull origin master
 cp -a gaia-6001/genesis.json $HOME/.gaiad/config
 ```
 
-The last step is the adjust the `config.toml`. Make sure that you are connected to healthy peers or seed nodes.
+The last step is the adjust the `$HOME/.gaiad/config/config.toml`. Make sure that you are connected to healthy peers or seed nodes.
 These are some seeds nodes and they can be put into the config under the `seeds` key. Alternatively you can also
 ask user validators directly for a persistent peer and add it under the `persisent_peers` key.
 ```
