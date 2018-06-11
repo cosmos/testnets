@@ -67,7 +67,7 @@ gaiad version
 You should see:
 
 ```
-0.18.0-dev-af15f89
+0.18.0-dev-af15f895
 ```
 
 And also:
@@ -79,7 +79,7 @@ gaiacli version
 You should see:
 
 ```
-0.18.0-dev-af15f89
+0.18.0-dev-af15f895
 ```
 
 ## Full Node Setup
