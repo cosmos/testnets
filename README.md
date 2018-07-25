@@ -2,15 +2,17 @@
 
 This repo collects the genesis and configuration files for the various Cosmos
 testnets. It exists so the Cosmos-SDK repo does not get bogged down with large
-genesis files and updates to the STATUS.md file.
+genesis files and status updates.
 
-This README serves up-to-date information about the testnets in the form of a
-status log.
+Most likely, you are looking for something in the
+[Cosmos-SDK](https://github.com/cosmos/cosmos-sdk).
+
+# Getting Started
 
 To get started with the latest testnet, see the
 [docs](https://cosmos.network/docs/getting-started/full-node.html).
 
-# TESTNET STATUS
+# Testnet Status
 
 ## *July 17, 2018, 4:00 EST* - New Testnet Gaia-7001 
 
