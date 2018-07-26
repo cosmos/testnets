@@ -1,11 +1,8 @@
 # Cosmos Testnets
 
 This repo collects the genesis and configuration files for the various Cosmos
-testnets. It exists so the Cosmos-SDK repo does not get bogged down with large
-genesis files and status updates.
-
-Most likely, you are looking for something in the
-[Cosmos-SDK](https://github.com/cosmos/cosmos-sdk).
+testnets. It exists so the [Cosmos-SDK](https://github.com/cosmos/cosmos-sdk) 
+repo does not get bogged down with large genesis files and status updates.
 
 # Getting Started
 
@@ -13,6 +10,17 @@ To get started with the latest testnet, see the
 [docs](https://cosmos.network/docs/getting-started/full-node.html).
 
 # Testnet Status
+
+## *July 26, 2018, 0:00 EST* - Gaia-7002 
+
+- [v0.23.0 of the
+  SDK](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.23.0)
+- [Launch timeline](https://forum.cosmos.network/t/gaia-7002-launch-timeline/581)
+- [Details on genesis.json](https://forum.cosmos.network/t/building-gaia-7002-genesis-json/589)
+
+## *July 22, 2018, 17:00 EST* - Gaia-7001 consensus failure
+
+- Bug in the governance module caused a panic
 
 ## *July 17, 2018, 4:00 EST* - New Testnet Gaia-7001 
 
