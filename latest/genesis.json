@@ -5706,7 +5706,7 @@
       ]
     }
   },
-  "chain_id": "gaia-7002",
+  "chain_id": "gaia-7003",
   "consensus_params": {
     "block_gossip_params": {
       "block_part_size_bytes": "65536"
