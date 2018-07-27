@@ -11,11 +11,11 @@ To get started with the latest testnet, see the
 
 # Testnet Status
 
-## *July 27, 2018, 20:00 EST* - Gaia-7002 
+## *July 27, 2018, 20:00 EST* - Gaia-7003 
 
 -Testnet halted on a Tendermint (regression)[https://github.com/tendermint/tendermint/pull/2076]
 -[v0.23.1 of the SDK](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.23.1)
-- We will attempt to continue `gaia-7002` with the hotfix all nodes must upgrade.
+- Details on `gaia-7003` can be found (here)[https://forum.cosmos.network/t/launching-gaia-7003/607]
 
 
 
