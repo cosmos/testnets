@@ -13,7 +13,7 @@ To get started with the latest testnet, see the
 
 ## *July 29, 2018, 12:00 EST* - Gaia-7003 
 - `gaia-7003` halted as fortold by the fuzzer. Stack trace here:https://github.com/cosmos/cosmos-sdk/issues/1872
-
+- `gaia-7004` is online now https://forum.cosmos.network/t/gaia-7004-launching/635
 
 ## *July 27, 2018, 20:00 EST* - Gaia-7003 
 
