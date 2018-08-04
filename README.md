@@ -11,6 +11,11 @@ To get started with the latest testnet, see the
 
 # Testnet Status
 
+## *August 4, 2018 1:30 EST* - Gaia-7004
+
+- `gaia--7004` Network halted. Stack Trace https://github.com/cosmos/cosmos-sdk/issues/1920
+
+
 ## *July 29, 2018, 12:00 EST* - Gaia-7003 
 - `gaia-7003` halted as fortold by the fuzzer. Stack trace here:https://github.com/cosmos/cosmos-sdk/issues/1872
 - `gaia-7004` is online now https://forum.cosmos.network/t/gaia-7004-launching/635
