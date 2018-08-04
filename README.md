@@ -13,7 +13,7 @@ To get started with the latest testnet, see the
 
 ## *August 4, 2018 1:30 EST* - Gaia-7004
 
-- Network halted. Investigating will update
+- `gaia--7004` Network halted. Stack Trace https://github.com/cosmos/cosmos-sdk/issues/1920
 
 
 ## *July 29, 2018, 12:00 EST* - Gaia-7003 
