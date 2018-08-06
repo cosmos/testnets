@@ -3825,7 +3825,7 @@
             "type": "tendermint/PubKeyEd25519",
             "value": "r8ObA8qeSscl54T9I2SrdH5uUFxjbqYs2IjtU1ZxnAA="
           },
-          "revoked": true,
+          "revoked": false,
           "status": 0,
           "tokens": "63/2",
           "delegator_shares": "35",
@@ -4100,7 +4100,7 @@
             "type": "tendermint/PubKeyEd25519",
             "value": "tg8QOFWDiDL4dAlRnOoD1v6u9gOPFC2+rkf1YCm/SB4="
           },
-          "revoked": true,
+          "revoked": false,
           "status": 0,
           "tokens": "9/2",
           "delegator_shares": "5",
@@ -4300,7 +4300,7 @@
             "type": "tendermint/PubKeyEd25519",
             "value": "BqlZxJkG3oUh7x14+BVpiXchKI9fbQ4G2llagRJithw="
           },
-          "revoked": true,
+          "revoked": false,
           "status": 0,
           "tokens": "9/2",
           "delegator_shares": "5",
@@ -4350,7 +4350,7 @@
             "type": "tendermint/PubKeyEd25519",
             "value": "92HX8Xt4jN7KFMnkOCoSshw2ihCQEE+ers9EvGKhxL4="
           },
-          "revoked": true,
+          "revoked": false,
           "status": 0,
           "tokens": "9/2",
           "delegator_shares": "5",
@@ -4375,7 +4375,7 @@
             "type": "tendermint/PubKeyEd25519",
             "value": "ocujtNWoFsmh22NmGX8U7X0uNoRuUg2L0/lMZIGIQbE="
           },
-          "revoked": true,
+          "revoked": false,
           "status": 0,
           "tokens": "45/2",
           "delegator_shares": "25",
@@ -5200,7 +5200,7 @@
             "type": "tendermint/PubKeyEd25519",
             "value": "uEWWDBwFW+/BpTCvNCLW7AP98hndBukzSbrwCb7sooo="
           },
-          "revoked": true,
+          "revoked": false,
           "status": 0,
           "tokens": "12/5",
           "delegator_shares": "3",
@@ -5525,7 +5525,7 @@
             "type": "tendermint/PubKeyEd25519",
             "value": "GTnDCQ1qvYXfljMQD9ekCruCnVzY5Vfhww/YNCKkmFA="
           },
-          "revoked": true,
+          "revoked": false,
           "status": 0,
           "tokens": "9/10",
           "delegator_shares": "1",
@@ -5575,7 +5575,7 @@
             "type": "tendermint/PubKeyEd25519",
             "value": "kCfC+M4tOz3Js2IFJw331BkWcW+cdpSJXFRkSakmFZU="
           },
-          "revoked": true,
+          "revoked": false,
           "status": 0,
           "tokens": "81/2",
           "delegator_shares": "45",
@@ -6075,7 +6075,7 @@
             "type": "tendermint/PubKeyEd25519",
             "value": "bZSEBDNIOr0xJ/PxaAScJIyG6hqFtryBAMNwghAOTTU="
           },
-          "revoked": true,
+          "revoked": false,
           "status": 0,
           "tokens": "1125",
           "delegator_shares": "1250",
@@ -6175,7 +6175,7 @@
             "type": "tendermint/PubKeyEd25519",
             "value": "2gOiMAdnIdND4cA75E7naQdyyIYDAdcjF3uO6OiEZlU="
           },
-          "revoked": true,
+          "revoked": false,
           "status": 0,
           "tokens": "1323/10",
           "delegator_shares": "147",
@@ -6350,7 +6350,7 @@
             "type": "tendermint/PubKeyEd25519",
             "value": "u4GEbsk9IEF56V1am5dRtAWXz4iFQkO03FVL87BZXIM="
           },
-          "revoked": true,
+          "revoked": false,
           "status": 0,
           "tokens": "90",
           "delegator_shares": "100",
@@ -6425,7 +6425,7 @@
             "type": "tendermint/PubKeyEd25519",
             "value": "s3yBiatOnBzzPwfAvCj8Np5UkPx9aw/iVAc6xtBFMPo="
           },
-          "revoked": true,
+          "revoked": false,
           "status": 0,
           "tokens": "25",
           "delegator_shares": "25",
@@ -6675,7 +6675,7 @@
             "type": "tendermint/PubKeyEd25519",
             "value": "jnLS3Z0zv0IG1jPaHZH+DUmh0zcZv2u4jFhK28/LtpU="
           },
-          "revoked": true,
+          "revoked": false,
           "status": 0,
           "tokens": "9/10",
           "delegator_shares": "1",
@@ -6750,7 +6750,7 @@
             "type": "tendermint/PubKeyEd25519",
             "value": "H0SIA/BU6Xj8oT5bQkvLpEITN3CqFLbMeBcQ72NZrAE="
           },
-          "revoked": true,
+          "revoked": false,
           "status": 0,
           "tokens": "135",
           "delegator_shares": "150",
@@ -6825,7 +6825,7 @@
             "type": "tendermint/PubKeyEd25519",
             "value": "0XvxGzOAer6H/VZOQCx7CH0/q0BqetMpoArXPhi6p50="
           },
-          "revoked": true,
+          "revoked": false,
           "status": 0,
           "tokens": "27/10",
           "delegator_shares": "3",
