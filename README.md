@@ -11,6 +11,10 @@ To get started with the latest testnet, see the
 
 # Testnet Status
 
+## *August 7, 2018 11:00 EST* - Gaia-7005
+
+- `gaia--7005` Launching Gaia-7005 https://forum.cosmos.network/t/launching-gaia-7005/698
+
 ## *August 4, 2018 1:30 EST* - Gaia-7004
 
 - `gaia--7004` Network halted. Stack Trace https://github.com/cosmos/cosmos-sdk/issues/1920
