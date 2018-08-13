@@ -7,7 +7,7 @@ $ gaiad version
 0.24.0-0b2bf8f3
 ```
 
-Submit genesis transactions to this folder, as `[moniker].json`:
+Submit genesis transactions to this folder, as `[moniker].json`, in a new PR to this repo:
 
 ```bash
 gaiad init gen-tx --name [name]
