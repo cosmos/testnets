@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2018-08-13T17:23:04.046574833Z",
-  "chain_id": "test-chain-BzqxJD",
+  "genesis_time": "2018-08-13T17:43:19.344582344Z",
+  "chain_id": "internal-8000",
   "consensus_params": {
     "block_size_params": {
       "max_bytes": "22020096",
@@ -47,6 +47,14 @@
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
         "value": "PVkIp8D1THzFTopTwsKj97Z3nAjYhiES2nRX1fZnLzM="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "FuzJ0bjeyRV/yGkiQh//wa0KW0a8gAW17DEiaVWsOLM="
       },
       "power": "100",
       "name": ""
@@ -124,6 +132,19 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1j84gl9qm5vzwnjasj2cyk899s242jdpg9kjj9w",
+        "coins": [
+          {
+            "denom": "crsToken",
+            "amount": "1000"
+          },
+          {
+            "denom": "steak",
+            "amount": "50"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr12v9y8lqcnry34xt0exhp3fxfm9l3d6d7ypljue",
         "coins": [
           {
@@ -152,7 +173,7 @@
     ],
     "stake": {
       "pool": {
-        "loose_tokens": "900",
+        "loose_tokens": "1050",
         "bonded_tokens": "0",
         "inflation_last_time": "1970-01-01T00:00:00Z",
         "inflation": "7/100",
@@ -270,6 +291,31 @@
           "prev_bonded_tokens": "0"
         },
         {
+          "owner": "cosmosaccaddr1j84gl9qm5vzwnjasj2cyk899s242jdpg9kjj9w",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "FuzJ0bjeyRV/yGkiQh//wa0KW0a8gAW17DEiaVWsOLM="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100",
+          "delegator_shares": "100",
+          "description": {
+            "moniker": "crs",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
           "owner": "cosmosaccaddr12v9y8lqcnry34xt0exhp3fxfm9l3d6d7ypljue",
           "pub_key": {
             "type": "tendermint/PubKeyEd25519",
@@ -342,6 +388,12 @@
         {
           "delegator_addr": "cosmosaccaddr1p5x2gjue76st9ded85ex9hgztppzxja2a2axw6",
           "validator_addr": "cosmosaccaddr1p5x2gjue76st9ded85ex9hgztppzxja2a2axw6",
+          "shares": "100",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1j84gl9qm5vzwnjasj2cyk899s242jdpg9kjj9w",
+          "validator_addr": "cosmosaccaddr1j84gl9qm5vzwnjasj2cyk899s242jdpg9kjj9w",
           "shares": "100",
           "height": "0"
         },
