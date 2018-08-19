@@ -13,7 +13,7 @@ To get started with the latest testnet, see the
 
 ## *August 20, 2018 11:00 EST* - Gaia-8000
 
-- `gaia--8000` Launching Gaia-8000 
+- `gaia--8000` Launching Gaia-8000 https://forum.cosmos.network/t/launching-gaia-8000/739
 
 ## *August 7, 2018 11:00 EST* - Gaia-7005
 
