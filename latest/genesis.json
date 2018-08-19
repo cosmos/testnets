@@ -1,6 +1,6 @@
 {
   "genesis_time": "2018-08-06T08:00:00.123456789Z",
-  "chain_id": "gaia-7005",
+  "chain_id": "gaia-8000",
   "consensus_params": {
     "block_size_params": {
       "max_bytes": "22020096",
@@ -22,17 +22,17 @@
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "tU8IqlII8g8ngcmtMVG/k/8SmunfJJBkAoOisN+qcKE="
+        "value": "WnV5CjfHHyMrAPbX796iXgnfAwTP/cFL+kzz99bW+kA="
       },
-      "power": "119",
-      "name": "JB-The-Valid"
+      "power": "7",
+      "name": "baryon.network"
     },
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
         "value": "RBuRRNEzA9RA1Wrdi9PPFQJ29/n/bqN9O2tQv9Gq248="
       },
-      "power": "2161",
+      "power": "2164",
       "name": "skoed-validator-7000"
     },
     {
@@ -46,9 +46,17 @@
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
+        "value": "1XB37ELQL8SIu5CeeRNMByNFtf2rQf543PKoxUCBeBA="
+      },
+      "power": "54",
+      "name": "sentinel.co"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
         "value": "NQX4yKpOztKrmgBhGIC5WOALOLOq3LTpbzsN4ZLXGec="
       },
-      "power": "1100",
+      "power": "990",
       "name": "Dokia-Interstellar-Cruiser"
     },
     {
@@ -70,26 +78,10 @@
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "Wz36ZKKPAL/yPW+d5mZ+xHb7w3QlAZCquplGKbGL+yk="
-      },
-      "power": "74",
-      "name": "liangping"
-    },
-    {
-      "pub_key": {
-        "type": "tendermint/PubKeyEd25519",
         "value": "pPGLc4NhNaehdoV2antWuyr0GmBVEG1NhD9NiSRrTi0="
       },
       "power": "1250",
       "name": "sikka.tech"
-    },
-    {
-      "pub_key": {
-        "type": "tendermint/PubKeyEd25519",
-        "value": "7vURd1EqPVfI/1viF/+LNm9lwaBAN/tSuoJ+Od972z0="
-      },
-      "power": "100",
-      "name": "Project Bohr"
     },
     {
       "pub_key": {
@@ -112,7 +104,7 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "b52QQPpAO9Wa5qEmOr8ZPvLho0CgbBJx+WWxK+bpaYI="
       },
-      "power": "2262",
+      "power": "2265",
       "name": "wxvalidator0"
     },
     {
@@ -134,10 +126,26 @@
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
+        "value": "FSj9jMpCOdWfX0rCQ0TpnEa8/uOroQl4V4Bk3Msck3w="
+      },
+      "power": "10",
+      "name": "trusted-validator"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
         "value": "M2Iu/A8RQcmoiIEar/iV4wBjVj0I0gcd/nNnvwmnT2g="
       },
       "power": "1000",
       "name": "layover run"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "w0Xbnzcm1tLGgpUrICpotJJXKDlmctoPz/JTBjzkIfk="
+      },
+      "power": "10",
+      "name": "ATEAM-TT"
     },
     {
       "pub_key": {
@@ -166,25 +174,33 @@
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "+pZYup+40uW60mwWqLTxdjuu+wRXPq3c9Z+0fTDVvpg="
+        "value": "qgws5Mm+saA71C4cdQavr1bw0UytNqJcpwPDHR0k2hk="
       },
-      "power": "41",
-      "name": "baryon.network"
+      "power": "9",
+      "name": "EddyG-cVali"
     },
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "tOEqjO2t51PEgO9Tv0B7qM0yPmy1n5tMa3Beg0tp3ns="
+        "value": "dpYEHcQAo439YIswYnm3ytxyoP7RtorAS59+FOXiOKQ="
       },
-      "power": "919",
-      "name": "divislight"
+      "power": "230",
+      "name": "new_vali"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "UQHY8OYNqCwDkAm7bn+X/VqV6p3PHTRqkQGEsqnpdws="
+      },
+      "power": "110",
+      "name": "kreios-2"
     },
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
         "value": "lUMCRAeu47BsOhNvCQTQJQeB68z0/VaElC9j5gDt9y8="
       },
-      "power": "1001",
+      "power": "1501",
       "name": "vhxnode1"
     },
     {
@@ -192,7 +208,7 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "ilDFePqWkNRNWUEoWKq42jZC5CD4rglfs7+gCuq6Qc8="
       },
-      "power": "70",
+      "power": "151",
       "name": "lino"
     },
     {
@@ -232,7 +248,7 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "MfyCioP9/yGlqUcwnL/ENi23RKPBm1O1wum1DUUUYT8="
       },
-      "power": "27",
+      "power": "56",
       "name": "Bity Validator"
     },
     {
@@ -240,23 +256,23 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "ISIM341M+EUYOMpwhn9gyCvRUZ06xomp/+lOwa50meQ="
       },
-      "power": "15",
+      "power": "800",
       "name": "corona02"
     },
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "nsofE1FmSr1TiDR0gfnxfMDQ8o2pC+1NE7Oa9ceztSg="
+        "value": "DrgnMZqdtzRbDvDGh5290M1QtAfem1VHaY+zhq/nBWI="
       },
-      "power": "380",
-      "name": "coinone"
+      "power": "50",
+      "name": "FennecFox"
     },
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
         "value": "VSz12Gh6kqPKSlwrZZQ0QZsXvRadOvAeDhmuboV/Lqc="
       },
-      "power": "131",
+      "power": "281",
       "name": "412"
     },
     {
@@ -272,7 +288,7 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "lB+CgSbTzpHXJHUU15fJIPaPl6XF0nSfdNxBnlKJqTk="
       },
-      "power": "2013",
+      "power": "1829",
       "name": "delegate-now"
     },
     {
@@ -280,7 +296,7 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "ViJzrw9Unk1XyDg4f0UQLFE4zfUaFh23wZZY0f31Qg0="
       },
-      "power": "1131",
+      "power": "1200",
       "name": "CosCloud"
     },
     {
@@ -288,7 +304,7 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "RwPRoiY5C0covekqbr3VrQwxWGHioUUIf2+TOq8LIC0="
       },
-      "power": "150",
+      "power": "135",
       "name": "starfish"
     },
     {
@@ -302,25 +318,25 @@
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "kol7Gj60Fct4X8T1rHLJQ0z/b14UqqSae8h1e37rLL8="
+        "value": "5GAxIHzu06l0n3MU8wNQrCcrrnpZR9EKe5qZMsM2h/E="
       },
       "power": "100",
-      "name": "VNode01"
+      "name": "ip-10-0-3-99"
     },
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "T3ITN3B9p3HuIo4m8G3zzLmmR+JmPyAat+L2eYG3/sw="
+        "value": "kol7Gj60Fct4X8T1rHLJQ0z/b14UqqSae8h1e37rLL8="
       },
-      "power": "2337",
-      "name": "bdongerNext"
+      "power": "90",
+      "name": "VNode01"
     },
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
         "value": "N3K5kDdfcKJurfaa6s2zfKgtYvz1Pagz7VWi9ZfX8yM="
       },
-      "power": "532",
+      "power": "1252",
       "name": "ATEAM1"
     },
     {
@@ -360,7 +376,7 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "dnFjFoTM9sP/RjQkXBK1YpYn3v5W+j0+g/OfUHS4xu8="
       },
-      "power": "655",
+      "power": "55",
       "name": "aether"
     },
     {
@@ -368,7 +384,7 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "omAzuJps8KX3/iOC1LjwkMPMH3c6tjfLXwCNWXRBdWw="
       },
-      "power": "1440",
+      "power": "1455",
       "name": "Adrian Brink - Cryptium Labs"
     },
     {
@@ -376,24 +392,32 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "BaaCxmYHKJ6obIzTCdRtjw1cc8d2mUJcMbLWCjf1aLo="
       },
-      "power": "270",
+      "power": "3359",
       "name": "grass-fed"
     },
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "QRDgIC3dwcj0pqN95IShVJ5aNrnV/nvr19KkCr6koWo="
+        "value": "31942iQRr+ajHMCklJslIbPzQl6OplvluWuXUnHlVQ0="
       },
-      "power": "2",
-      "name": "spark-yuan"
+      "power": "606",
+      "name": "newaether"
     },
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
         "value": "gJDxhwAE6GeGCKQeVaNZ5is7+7MFHXtOG0UsnguKdoA="
       },
-      "power": "215",
+      "power": "300",
       "name": "BlissDynamics"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "GpHZ0Hr3C1hvVMkcDe/76lvWMjw5SF0JBI/D6gDkQTo="
+      },
+      "power": "250",
+      "name": "StakeStack"
     },
     {
       "pub_key": {
@@ -406,18 +430,34 @@
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "LUYsagcVciSK95n6WEIbKhsTKD4tgAbBz7kND3ZBpVo="
-      },
-      "power": "1005",
-      "name": "suyuuuuu"
-    },
-    {
-      "pub_key": {
-        "type": "tendermint/PubKeyEd25519",
         "value": "t07LChLn+eoTivIraUyU0M/T4zkhY6TZkn8cAWtOLfU="
       },
       "power": "18",
       "name": "egon validator"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "tkdOxR2CIOctyc5e9IMGwnMwB420OTN3Rfb6fUMVhr8="
+      },
+      "power": "5",
+      "name": "Mythos(private)"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "dj4b9d19oYvNJP1WMHJ1g5tzzMGMNxRnxrtCXBF6jsc="
+      },
+      "power": "30",
+      "name": "Liviu"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "1UyFY3YJja8vrmDc/ZqQFo7ORvLdLK2X2wYeCUBZzJc="
+      },
+      "power": "204",
+      "name": "clawmvp.xyz"
     },
     {
       "pub_key": {
@@ -446,26 +486,18 @@
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "HQA+mntabk10g6Us3YQ1I9U4jfv9LPGGXMmTCVbPB+Y="
-      },
-      "power": "11",
-      "name": "teamSoNicX"
-    },
-    {
-      "pub_key": {
-        "type": "tendermint/PubKeyEd25519",
         "value": "Oxp5JKfzexRWJravPZ9XAEF2ydyzh04362Eo4WloEBE="
       },
-      "power": "4",
+      "power": "31",
       "name": "Yakut"
     },
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "2p8s/pRBZPjYWKKMlR7AOXypDzDmPo762iXlKpCwtco="
+        "value": "KfZeww1iQ6YnslfhtZ0qi8yVy0PQHj7/j0Rrkk2gz5o="
       },
-      "power": "396",
-      "name": "Forbole"
+      "power": "110",
+      "name": "bharvest-validator(USW1)"
     },
     {
       "pub_key": {
@@ -486,33 +518,49 @@
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
+        "value": "6lTjnB9szF+z4c0XwBrplBjK6GaaMUAcFJ/8VHwzOuE="
+      },
+      "power": "10",
+      "name": "ATEAM-H"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "Kv+wY9i0uMGO8ukF4o+Za5uuUp/S8o9N4C1rdA22h8M="
+      },
+      "power": "10",
+      "name": "louis"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
         "value": "UZlobYgzLP7gOVwBtMRo5S3yrMPlZWIXYEwXCs7dhIA="
       },
-      "power": "159",
+      "power": "359",
       "name": "kreios"
     },
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "L0I4JoDfktbDWe0fCDL/nQlBPkF5mNgqamnM5JKJ1Uc="
+        "value": "+Uc1tDCsc8rM+mPQ79C8Mp3Y7ajlL2Lb5AjYboPqlQE="
       },
-      "power": "150",
-      "name": "JCol"
+      "power": "5",
+      "name": "chungkueiblock"
     },
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "SNwrT1B+A4g6TY7x0QzVrmVbcbl3cHXzXdD1tFHxLNo="
+        "value": "kCfC+M4tOz3Js2IFJw331BkWcW+cdpSJXFRkSakmFZU="
       },
-      "power": "90",
-      "name": "TruNode"
+      "power": "40",
+      "name": "INVIERNO"
     },
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
         "value": "QEMDwUVoyJT7MNfOYKa25xU+Lnsz/ciH8rFUri4diLI="
       },
-      "power": "100",
+      "power": "90",
       "name": "SVNode01"
     },
     {
@@ -536,24 +584,8 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "UBTju7UZfXLVPPYb1a8gPZ69BeCv2Fho7YVo2EUbxKc="
       },
-      "power": "150",
+      "power": "135",
       "name": "7768"
-    },
-    {
-      "pub_key": {
-        "type": "tendermint/PubKeyEd25519",
-        "value": "wdUJrATbIN7C9pgzDzaBZ4WANQzQL+/r+36yXqDdeCQ="
-      },
-      "power": "11",
-      "name": "fullnode04"
-    },
-    {
-      "pub_key": {
-        "type": "tendermint/PubKeyEd25519",
-        "value": "q5ezDn4DcWFPWvMayPJI35nXr//jjF8fGHsuiHjpDcU="
-      },
-      "power": "100",
-      "name": "spptest1"
     },
     {
       "pub_key": {
@@ -568,8 +600,8 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "oG8Q5o+SN4wqMLvlIfVgQPnsQzNEKeH0D/XGM8JlGrY="
       },
-      "power": "170",
-      "name": "wancloudsentry"
+      "power": "2512",
+      "name": "wancloud"
     },
     {
       "pub_key": {
@@ -578,14 +610,6 @@
       },
       "power": "150",
       "name": "kittyfish"
-    },
-    {
-      "pub_key": {
-        "type": "tendermint/PubKeyEd25519",
-        "value": "JFh7R/vhQU/SW43OPRcFtPKdCHowiYrISAl+V+bv3V8="
-      },
-      "power": "20",
-      "name": "vps"
     },
     {
       "pub_key": {
@@ -600,7 +624,7 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "3wRufybSUsTMnUeQkP74uJNDRKeM8jBLAS64T0BRfpY="
       },
-      "power": "200",
+      "power": "180",
       "name": "mpaxeNode"
     },
     {
@@ -608,7 +632,7 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "MRCeBDANSjH6IsxO0z6tRe+xqoZvIGhdfl1t+SXGUpM="
       },
-      "power": "1157",
+      "power": "1160",
       "name": "jlandrews"
     },
     {
@@ -616,7 +640,7 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "b9RSkt+WmMxVHQExQH0IMPpnR9zDAaJwz/mv1gtyRVY="
       },
-      "power": "90",
+      "power": "81",
       "name": "smartpesa"
     },
     {
@@ -624,7 +648,7 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "2qtEBT+Tc+SD2wJsdrVMHXrBKfvesxtmtSKDK5fXwA0="
       },
-      "power": "160",
+      "power": "144",
       "name": "jjangg96"
     },
     {
@@ -640,24 +664,32 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "66j9af4xDJSblMLS+mFbp7d8TaFGu0FOo+0MwEYm2lE="
       },
-      "power": "1341",
+      "power": "1210",
       "name": "bkcm"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "G5xqaI1M/ckd6k5tLzWkGF/MdGZ4/xmJThP4AjksrFk="
+      },
+      "power": "29",
+      "name": "basement"
     },
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
         "value": "CuPin/hLM2tK6KvcUlOi/Brm5xNi3zq6UPgpLFPSzt8="
       },
-      "power": "35",
+      "power": "28",
       "name": "NodeBreaker"
     },
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "yW/UYA7l6xOwS6/Upa4cZCiaPPR8m7ih9NL4LDj3kt0="
+        "value": "ePxcUeuPx3UiqfCPLioJjYwDgk/E7HGhatxfzl4/vI0="
       },
-      "power": "11",
-      "name": "TEAM_Korea_No.1"
+      "power": "1340",
+      "name": "shensi-cosmos-validator"
     },
     {
       "pub_key": {
@@ -666,6 +698,14 @@
       },
       "power": "1100",
       "name": "Gold2"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "wwgoAZrmpxQRYXHDXRUBX4kX7IBTpDsvuyxFfKuhEZI="
+      },
+      "power": "20",
+      "name": "fourthstate"
     },
     {
       "pub_key": {
@@ -686,17 +726,17 @@
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "z4VrDRaACHkmiCZr5fZmCo5awgV3Bi16HMDYjU9EKPY="
+        "value": "IS4skJndcdUJqSxMPkMmOD4rGaySvA8JJZk/TBxN7dQ="
       },
-      "power": "20",
-      "name": "monochord"
+      "power": "32",
+      "name": "hallophen"
     },
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
         "value": "TwzOJ4GcN+ZTswub4R8488SrKeWXjY/PaqCF5neXJig="
       },
-      "power": "200",
+      "power": "400",
       "name": "kochacolaj"
     },
     {
@@ -704,7 +744,7 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "S8s6fdAQNQ3bN9SNVAsHB/j8uv1CM1roxeLesL+fh4g="
       },
-      "power": "126",
+      "power": "129",
       "name": "luigi001"
     },
     {
@@ -712,16 +752,8 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "8K3clCjVU33BTIpUhdahGmu++WxHj4NUE9krCRkk++s="
       },
-      "power": "528",
+      "power": "1008",
       "name": "lunamint"
-    },
-    {
-      "pub_key": {
-        "type": "tendermint/PubKeyEd25519",
-        "value": "72qgkZiyI788usRQ/tGmbs3TzU9t4quP+WX7rxPX/7I="
-      },
-      "power": "50",
-      "name": "spark"
     },
     {
       "pub_key": {
@@ -734,9 +766,25 @@
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
+        "value": "pggq0WUTlsiA8cBiptRgxlw4WUG2GmXfLQxkbMbCBPk="
+      },
+      "power": "155",
+      "name": "wecosmos"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "0ZPHmftStU+DSqvnIleNyaFmBQsgWJwPC7vk4uF5u00="
+      },
+      "power": "2456",
+      "name": "sentinel.co"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
         "value": "ENAVynNXVpj/IdYx9kCPKaPs4bWSxRIHNlmS9QiDuZQ="
       },
-      "power": "1150",
+      "power": "1155",
       "name": "iqlusion"
     },
     {
@@ -744,8 +792,16 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "5XCMLGNTGkMh9/JsUzi/8Xl7Y0cdDe38stX+zvBLXuE="
       },
-      "power": "78",
+      "power": "974",
       "name": "bharvest-validator(KR1)"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "JREG9eji9gfJR2b61qMu8jNZ835ezPY2A4o+zjYMfDg="
+      },
+      "power": "107",
+      "name": "kamon-moniker"
     },
     {
       "pub_key": {
@@ -766,6 +822,14 @@
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
+        "value": "H0SIA/BU6Xj8oT5bQkvLpEITN3CqFLbMeBcQ72NZrAE="
+      },
+      "power": "135",
+      "name": "4455"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
         "value": "WRsXnLz3gf8o4lYYeCZjAXgPU1cdmOOYPdy7aY63iIA="
       },
       "power": "100",
@@ -776,7 +840,7 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "P9RgE4RMQT/aHap2oICpwpgKeBAwxPUwuU9zIffKFNM="
       },
-      "power": "1151",
+      "power": "1231",
       "name": "Nylira Validator"
     },
     {
@@ -784,7 +848,7 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "4DEDoU/RsHMPS54GzgwkWnW5zPQfMt9aInFFc3GyfA8="
       },
-      "power": "463",
+      "power": "506",
       "name": "crytter"
     },
     {
@@ -808,6 +872,15 @@
   "app_state": {
     "accounts": [
       {
+        "address": "cosmosaccaddr1qz9pauujxsypyu3q9n0t6mydsfwev50j8g8ras",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "11"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1qrc3ed8tnz6vc24ftmnht8efs5ufhjmrjkds4x",
         "coins": [
           {
@@ -817,6 +890,24 @@
           {
             "denom": "steak",
             "amount": "251"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1qtkc837fpfprvr2fcmuw6hgkesen4pxnslkr4z",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "30"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1qv68kxwmarzefrcgnu4trdrznslzdtra7gfxhy",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "3"
           }
         ]
       },
@@ -855,8 +946,12 @@
         "address": "cosmosaccaddr1qjzjfn55hygaak9l9x04z792mexce2zd2gvkzk",
         "coins": [
           {
+            "denom": "mycoin5Token",
+            "amount": "100"
+          },
+          {
             "denom": "steak",
-            "amount": "10"
+            "amount": "72"
           }
         ]
       },
@@ -927,6 +1022,24 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1qmw6d8uh3rs9uj8c0tztznu9x4zezekq89635d",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "5"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1qarnnunjrsd66yuz65ugsl7pm3v3hxrxd5jvaq",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "385"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1pp58pzp26zqf4sscwdzpns9c5prpkcr7j2v0nx",
         "coins": [
           {
@@ -949,8 +1062,44 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1pynxhek6ls6xcwptuwt6cz94lezz6wu6j062gq",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "30"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1p9wdfa8kt2khg2kgj74l7zwcveg9nkp82le3g8",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "20"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1p054wqkus4rjajwh3e079xuk4g7l4zm5t74kce",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1pj6vfgetplkcuq0k9m98dpej6zew3pdest842v",
         "coins": null
+      },
+      {
+        "address": "cosmosaccaddr1pngeljxmaecunw2uw246vejvg8pezrpc7ltg4m",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "56"
+          }
+        ]
       },
       {
         "address": "cosmosaccaddr1p56gv748xfd74qek5e637vhcr6tyjd9ukqfecc",
@@ -961,7 +1110,7 @@
           },
           {
             "denom": "steak",
-            "amount": "135"
+            "amount": "35"
           }
         ]
       },
@@ -1019,6 +1168,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1p7jg2t7xrjmxpu94tp9wawmnx64ds8skfmsqe0",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "15"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1p75wzde5z2ataefw65j3mtrm25kha779yfrvt6",
         "coins": null
       },
@@ -1036,11 +1194,29 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1zpdmfsq9p32sxgqmxfvvczndxg0s7l506a6n0x",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1z8mltyca36vv5fud4xgtntjzekn20tz5auut72",
         "coins": [
           {
             "denom": "steak",
             "amount": "2"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1zvyjt8aw6xgqfxmh7mguvntudrz4llln2dyaam",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "19"
           }
         ]
       },
@@ -1062,7 +1238,7 @@
           },
           {
             "denom": "steak",
-            "amount": "50"
+            "amount": "60"
           }
         ]
       },
@@ -1085,7 +1261,20 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1z49r5y3yk6kpz6wy64cr5tu0lung2cgg3j4tn5",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1zkupr83hrzkn3up5elktzcq3tuft8nxseu9x80",
+        "coins": null
+      },
+      {
+        "address": "cosmosaccaddr1zagese3pa7k002epyy8cpt783pe2p2n5qprug6",
         "coins": null
       },
       {
@@ -1111,7 +1300,7 @@
         "coins": [
           {
             "denom": "steak",
-            "amount": "7"
+            "amount": "67"
           }
         ]
       },
@@ -1129,7 +1318,7 @@
         "coins": [
           {
             "denom": "steak",
-            "amount": "1405"
+            "amount": "405"
           }
         ]
       },
@@ -1160,6 +1349,28 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1rnjapk7nw3ts6h6lsse3vm9d8mjjqqrx9mvc09",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1r5epqszx4supvesf4csxxlaxn4947lc38cjkcw",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "30"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1r4lzzzf683ec70fxfd9a3jmczxxkdxpfafz4ar",
+        "coins": null
+      },
+      {
         "address": "cosmosaccaddr1rcp29q3hpd246n6qak7jluqep4v006cdj2zse3",
         "coins": null
       },
@@ -1177,8 +1388,35 @@
         "coins": null
       },
       {
+        "address": "cosmosaccaddr1yqpa5vhs8nq9mguyd2j5k5kn7dlqlgmjl4h67x",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "6"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1ypk9spe0lsta44f3ay6rqrzygh90ekayxcxcfn",
         "coins": null
+      },
+      {
+        "address": "cosmosaccaddr1yz2t5qxggyq0ffkfhw6v59xnaqackkw0009wjy",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "70"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1yfd9a4sqm8jm7lq932jc6fu8k86f394tgc2sku",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "370"
+          }
+        ]
       },
       {
         "address": "cosmosaccaddr1yfseqtj5sjhzz2q2ym09jym4h4nc4yevae0jp2",
@@ -1199,6 +1437,10 @@
           {
             "denom": "pbostrom/Mythos-1Token",
             "amount": "1000"
+          },
+          {
+            "denom": "steak",
+            "amount": "10"
           }
         ]
       },
@@ -1248,7 +1490,21 @@
       },
       {
         "address": "cosmosaccaddr1y3fydat73q569cceaccpuytm3y4tdpv3n0fhdv",
-        "coins": null
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "80"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1y32vvanvz88ajamugxrgl7vnvf0vtmjg5wxg7f",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "60"
+          }
+        ]
       },
       {
         "address": "cosmosaccaddr1yj87w5yjftyar3mhuefg569q4v26rfp4ntacc5",
@@ -1260,6 +1516,15 @@
           {
             "denom": "steak",
             "amount": "1"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1ye7jc0hldu3k7nz42zcg2yvy7lzttx9q5yf3w9",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
           }
         ]
       },
@@ -1282,6 +1547,24 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1ymwytdwfu39uxpxmkjenfnyv3mkskehf97hwu8",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "1"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1yu7a5agy0ypchjcj467ej6jys468makfsvgg9e",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1yaxhcrpu9a009aavd86rrewlsmxcxh6lycazky",
         "coins": [
           {
@@ -1300,17 +1583,47 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1y7n3emnw6mkxutvs26rczynpvq84ddqu332hlv",
+        "coins": null
+      },
+      {
         "address": "cosmosaccaddr1y75427njr6vrfhd5tljw4gpffezgmmwx3slz2m",
         "coins": [
           {
             "denom": "steak",
-            "amount": "1"
+            "amount": "11"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1ylz6tqpgz0flpl6h5szmj6mmzyr598rq7heuye",
+        "coins": null
+      },
+      {
+        "address": "cosmosaccaddr19q6y4mk3x668vm2jx0pu6e0jfy5a39jz0qwvxt",
+        "coins": [
+          {
+            "denom": "2400bpsToken",
+            "amount": "1000"
+          },
+          {
+            "denom": "steak",
+            "amount": "40"
           }
         ]
       },
       {
         "address": "cosmosaccaddr19pkt3aeaprl8dt9x5c77u9unkrndfd3ze40tj9",
         "coins": null
+      },
+      {
+        "address": "cosmosaccaddr19rlhdmplhnmvy3jmcd835awask4l46nvp3pt4g",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "40"
+          }
+        ]
       },
       {
         "address": "cosmosaccaddr1998p0xkdwvul952ydavnx88tmwkhlfa0vhrngj",
@@ -1322,6 +1635,15 @@
           {
             "denom": "steak",
             "amount": "50"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1990ceh7wh50j2z6wq08ekzez7yr6hpwtpap9ku",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "2"
           }
         ]
       },
@@ -1357,6 +1679,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr19dfkpwfj3mls96ny2ulgq7cf0dh5xs5a05pn6e",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "2"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr19dw2kndn6shyx968zc3k4ah5wa05z0zhy8gsh8",
         "coins": [
           {
@@ -1379,7 +1710,24 @@
         ]
       },
       {
+        "address": "cosmosaccaddr193e492vdft33xu3td0wmkc9kswemcyysvkz8x7",
+        "coins": null
+      },
+      {
         "address": "cosmosaccaddr19nqkn77ya8fxcjgmcdzepecypvx270avjfyjy8",
+        "coins": null
+      },
+      {
+        "address": "cosmosaccaddr19n4s8fx9hr0j2dttr4fg48wr7kpxxste7evjzk",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "240"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr19ncpp07tuqqgu2kjp4wq2zlt3s0q5f9ywvhwuw",
         "coins": null
       },
       {
@@ -1401,6 +1749,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr19h5dc2c76h4ryvl9zl9373mk52ka77vy5g48gs",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "19"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr19cemj59p7mvmnfukya2a328dsh6nd7yg3hdzt0",
         "coins": [
           {
@@ -1414,7 +1771,7 @@
         "coins": [
           {
             "denom": "steak",
-            "amount": "930"
+            "amount": "450"
           },
           {
             "denom": "vhxnode1Token",
@@ -1432,6 +1789,15 @@
           {
             "denom": "steak",
             "amount": "50"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr19ljp6mlsfuy52r7d4c7r8mqfm0cxw5yktkqt80",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
           }
         ]
       },
@@ -1458,6 +1824,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1xxln0menrvzkjdjtqaqf7juya2dtchezqj9fc7",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "20"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1xf56zlpjs9f5w3ygy4mq907ea60pqw6z3xk0x3",
         "coins": [
           {
@@ -1467,11 +1842,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1xtkfzzty24l66a0f9guqt4w8k0p66fpat7rlf2",
+        "coins": null
+      },
+      {
         "address": "cosmosaccaddr1xvzw5nz4mp5s5cat7rancc248v5wpecrlqtw6n",
         "coins": [
           {
             "denom": "steak",
-            "amount": "13"
+            "amount": "2"
           }
         ]
       },
@@ -1520,6 +1899,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1xhzp9marf3zjtjn4hl73xkv4stgsjhj2xyws0r",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1xupfqk73y7rmc6qdgv7rtjy8wsngvt2g2t59t3",
         "coins": [
           {
@@ -1530,12 +1918,7 @@
       },
       {
         "address": "cosmosaccaddr1xuwcmdvef5xudnyqa9gh5vqlq6ff0meu87zjxh",
-        "coins": [
-          {
-            "denom": "steak",
-            "amount": "40"
-          }
-        ]
+        "coins": null
       },
       {
         "address": "cosmosaccaddr1xa8z3sza70wrt06yfhlxq0ujg6fa7ld8h7m6xz",
@@ -1551,7 +1934,7 @@
         "coins": [
           {
             "denom": "steak",
-            "amount": "2"
+            "amount": "10"
           }
         ]
       },
@@ -1566,12 +1949,7 @@
       },
       {
         "address": "cosmosaccaddr18zwvgsrl3gc8y0fhzdev378u9gn37d9024njy0",
-        "coins": [
-          {
-            "denom": "steak",
-            "amount": "5"
-          }
-        ]
+        "coins": null
       },
       {
         "address": "cosmosaccaddr18z3pnjgdtt337z8g5drfts7r3fm6n9a0896h0r",
@@ -1581,6 +1959,14 @@
             "amount": "1000"
           }
         ]
+      },
+      {
+        "address": "cosmosaccaddr18raps2wmm63n2gldsrqc5x5z023p559l7r5vv6",
+        "coins": null
+      },
+      {
+        "address": "cosmosaccaddr182rhfxwz8ycec8sjq5frdg8qpwcnwrclu2gnya",
+        "coins": null
       },
       {
         "address": "cosmosaccaddr1825jrcgu3keurjlnpsujx9y8lrzgddjfsmax0n",
@@ -1600,11 +1986,20 @@
         ]
       },
       {
+        "address": "cosmosaccaddr18tkxwzhyn4a5ss63vttwpespvm7kxm895m9ppf",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "20"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr18thamkhnj9wz8pa4nhnp9rldprgant57ryzag7",
         "coins": [
           {
             "denom": "steak",
-            "amount": "200"
+            "amount": "380"
           }
         ]
       },
@@ -1614,6 +2009,15 @@
           {
             "denom": "shensiToken",
             "amount": "1000"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr18w20rry3cclx23z2r70j8cd8an79kudja6s6gj",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "20"
           }
         ]
       },
@@ -1645,6 +2049,19 @@
         ]
       },
       {
+        "address": "cosmosaccaddr183tl5h22xfz8e8n5dp3fphu55kltfxxtr54vyw",
+        "coins": null
+      },
+      {
+        "address": "cosmosaccaddr18jtgkmw6ahnxd5lllp6256kuex2u2wsc5qt2u8",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "35"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr18ja9lhun5le78j36s8rs2je6z4pzc6far7xfuz",
         "coins": null
       },
@@ -1653,13 +2070,22 @@
         "coins": [
           {
             "denom": "steak",
-            "amount": "10"
+            "amount": "1"
           }
         ]
       },
       {
         "address": "cosmosaccaddr18cswjuy9qzwcjnkmvp32ryyht0rlaueazynegn",
         "coins": null
+      },
+      {
+        "address": "cosmosaccaddr18cut539f6w9xewnz0fcxa95784pg4mk5ghk3fz",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "30"
+          }
+        ]
       },
       {
         "address": "cosmosaccaddr18m09d56pg5p2660de4sjfezpd8ud6jfghndfnt",
@@ -1708,6 +2134,10 @@
             "amount": "50"
           }
         ]
+      },
+      {
+        "address": "cosmosaccaddr1g8xwmm3tp7pgdrmjgt4fm7d26anrrnle4yavuw",
+        "coins": null
       },
       {
         "address": "cosmosaccaddr1gghhdtx2sceafvgg8dry5sqrvc8srxghm4qqsy",
@@ -1771,6 +2201,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1gujxamhwhfh6ndeuc96u4m9y2hrhsnurce786l",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1g7re7m8fq0qaumpwztmgptrhw9ravqa4py0qsk",
         "coins": [
           {
@@ -1778,6 +2217,19 @@
             "amount": "1"
           }
         ]
+      },
+      {
+        "address": "cosmosaccaddr1fzqwytcm25gsxg67l2z3rtmskpx75u6l5a2mq7",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "5"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1frdjhnkgvlq5s0v5unf9njzlshdtsruv4z3sey",
+        "coins": null
       },
       {
         "address": "cosmosaccaddr1fyevhdmxpkz8stjxggv9wejf9caed02vyp8y5p",
@@ -1789,6 +2241,24 @@
           {
             "denom": "steak",
             "amount": "5"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1fxfr3e277d3a7jkqqry963ktep8fftpz5uyxv7",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "35"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1fxtfxtx4y46svzs3qtavlcnn0vtnlryad29jgy",
+        "coins": [
+          {
+            "denom": "coin6Token",
+            "amount": "2"
           }
         ]
       },
@@ -1819,7 +2289,7 @@
           },
           {
             "denom": "steak",
-            "amount": "80"
+            "amount": "10"
           }
         ]
       },
@@ -1829,6 +2299,15 @@
           {
             "denom": "steak",
             "amount": "1"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1f4sah2y8r995wsazt2dw909akhdjvr4f9zv28r",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "5"
           }
         ]
       },
@@ -1847,6 +2326,19 @@
           {
             "denom": "steak",
             "amount": "15"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr12qprqyxtxxlu7unncd9rrhmer5emg2pmrw27qk",
+        "coins": null
+      },
+      {
+        "address": "cosmosaccaddr12qnaj7mwyjjdw4506s2d47j7cfdtkg3jy9vdqh",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "25"
           }
         ]
       },
@@ -1877,6 +2369,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr12y7e5t78tw7d9z20c2rfvl4ne3jll9nuvk6s7l",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr12xmjdkyf6stle05tdls28u4aelzep0rhzhllyc",
         "coins": [
           {
@@ -1903,7 +2404,7 @@
         "coins": [
           {
             "denom": "steak",
-            "amount": "4436"
+            "amount": "6426"
           }
         ]
       },
@@ -1929,7 +2430,7 @@
           },
           {
             "denom": "steak",
-            "amount": "26"
+            "amount": "600"
           }
         ]
       },
@@ -1952,10 +2453,6 @@
           {
             "denom": "grass-fedToken",
             "amount": "1000"
-          },
-          {
-            "denom": "steak",
-            "amount": "60"
           }
         ]
       },
@@ -1965,6 +2462,15 @@
           {
             "denom": "steak",
             "amount": "3"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1tqgmgng39tars3vgsmvdsk6n2yu04l66vs05pt",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "40"
           }
         ]
       },
@@ -1986,9 +2492,13 @@
         "coins": [
           {
             "denom": "steak",
-            "amount": "1"
+            "amount": "11"
           }
         ]
+      },
+      {
+        "address": "cosmosaccaddr1t9rqvvys4zh300x93a6fr3h064gp9y8al7m4en",
+        "coins": null
       },
       {
         "address": "cosmosaccaddr1t99umqef9m3yscftgm6jh6gacxqad7t5xw93xg",
@@ -2005,12 +2515,7 @@
       },
       {
         "address": "cosmosaccaddr1t9l4ztfwk0mp3za3x38yfqkernuclxwgdqzme6",
-        "coins": [
-          {
-            "denom": "steak",
-            "amount": "16"
-          }
-        ]
+        "coins": null
       },
       {
         "address": "cosmosaccaddr1txmm2ya9tdf378a9awnglzp7mwj0qsmsm3y397",
@@ -2052,7 +2557,7 @@
           },
           {
             "denom": "steak",
-            "amount": "100"
+            "amount": "9"
           }
         ]
       },
@@ -2061,7 +2566,16 @@
         "coins": [
           {
             "denom": "steak",
-            "amount": "260"
+            "amount": "10"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1tc6jhusrwymrus63rl7yrk37z5jdksnytahuj4",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "870"
           }
         ]
       },
@@ -2079,7 +2593,25 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1vv9d030rnupxs2nrcnujhwzksy8fxz5r7t5n94",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1v04pxgxepjx5jxcayndexnwlhumy0jpsfcn5e4",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1vsg7a4q6vrcwlqsfm26je3xzzepwnjg2pss5vk",
         "coins": [
           {
             "denom": "steak",
@@ -2096,7 +2628,7 @@
         "coins": [
           {
             "denom": "steak",
-            "amount": "1"
+            "amount": "21"
           }
         ]
       },
@@ -2127,8 +2659,22 @@
         "coins": null
       },
       {
+        "address": "cosmosaccaddr1v7hutth05td5242x4y0nh9gq03qumdmz3tayay",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "20"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1vlmpl003lzm4lq0vr94227l2u02n2y490gsc89",
-        "coins": null
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "5"
+          }
+        ]
       },
       {
         "address": "cosmosaccaddr1dq7jt3pn7mrce2twac907jue7hjd0p0rgt3qnq",
@@ -2136,6 +2682,15 @@
           {
             "denom": "sparkpool-validator-02Token",
             "amount": "1000"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1drycruvuzjn4d6hx39hxz6jsz6hwkf09a8cyxy",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
           }
         ]
       },
@@ -2158,6 +2713,28 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1ds3yvnzup07u4j778xmnrh624j096fma3hw4nz",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1dkm8z36m96k8aukg5rxnfpw46dt5mnmvsfuze2",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "5"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1dcgqsyam6d0am5z2m7dufp7s9k2px2kcqaswxt",
+        "coins": null
+      },
+      {
         "address": "cosmosaccaddr1dazry9zqmwduf7svv4extay64jnlg2yghfk482",
         "coins": [
           {
@@ -2167,11 +2744,42 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1d79807agakq8k5aeykva98gzem60f9k2kpetm6",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1dl9mu7uya6mfsd80wyw2rgjmwjtk5ajjf8mxcz",
+        "coins": null
+      },
+      {
         "address": "cosmosaccaddr1dlgd8tksf635zntchgc3kh60fkgpe9sstkql0l",
         "coins": [
           {
             "denom": "steak",
             "amount": "3"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1dl0hk7064k5wp43zkllmd0p9pgu2mnra898gyh",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "20"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1wz3smpf4grhd7f82e3u3a8lk32kvq7s2raxudx",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
           }
         ]
       },
@@ -2225,10 +2833,19 @@
       },
       {
         "address": "cosmosaccaddr1wf3sncgk7s2ykamrhy4etf09y94rrrg4k73wwr",
-        "coins": null
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "30"
+          }
+        ]
       },
       {
         "address": "cosmosaccaddr1w2j930e3ueg8f365ff2t92m5lnp856fe47f3hy",
+        "coins": null
+      },
+      {
+        "address": "cosmosaccaddr1wd965wxzyl2krp67sdwddy4ep48xhsrdrq63rd",
         "coins": null
       },
       {
@@ -2245,6 +2862,10 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1whqnxfj5fakx2tmjsja8y9ev7fqdzdldaesmx2",
+        "coins": null
+      },
+      {
         "address": "cosmosaccaddr1whxd48da3r56n8eecym8zg0c6xmf35fn2myart",
         "coins": [
           {
@@ -2256,6 +2877,10 @@
             "amount": "50"
           }
         ]
+      },
+      {
+        "address": "cosmosaccaddr1whd2u62u3zk7w09yuq4cz97fueq8e96qp69xz0",
+        "coins": null
       },
       {
         "address": "cosmosaccaddr1wesup293xcfjze34u98j05ffu04cssy32gjv3u",
@@ -2338,6 +2963,24 @@
         ]
       },
       {
+        "address": "cosmosaccaddr10j2c9vspxg0rxfy2am7h4pkswdga3jzwk0x0nv",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr105fhlukl4s2a9h7kv86lf69ayy0mv6y7quw8v5",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr10505nl7yftsme9jk2glhjhta7w0475uva87paj",
         "coins": [
           {
@@ -2346,13 +2989,48 @@
           },
           {
             "denom": "steak",
-            "amount": "39"
+            "amount": "29"
           }
         ]
       },
       {
+        "address": "cosmosaccaddr104e3vqacz2kncw979dczttp5jwts3sacv3ksz7",
+        "coins": null
+      },
+      {
+        "address": "cosmosaccaddr10h3v6phzsfuw6yvwpdvv0a4q3ha9zkq67gl8w6",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "60"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr106ccejx2h7hwzj9xxaz3hju22yyq5mfy4rydav",
+        "coins": null
+      },
+      {
         "address": "cosmosaccaddr10mfxvxjga3rxp5w93rx8jdxtt68j5qk0wv02hn",
         "coins": null
+      },
+      {
+        "address": "cosmosaccaddr10atd0mjtdt7uzk0jgr32c32semnh3xvu4nx77p",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "5"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr10lur643c66xdn4tsty4lgzwhq9etmhj850sc7j",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
       },
       {
         "address": "cosmosaccaddr1sqec04r28jfevkzfkdj4ql2qzr2zwrmg78qzj8",
@@ -2384,6 +3062,10 @@
             "amount": "1000"
           }
         ]
+      },
+      {
+        "address": "cosmosaccaddr1st4262sfqk7jqdwp2s7gk2umm5yhexhjrew53z",
+        "coins": null
       },
       {
         "address": "cosmosaccaddr1svu9nw80fzurmevlku9mzeqxrr8tpl5550034a",
@@ -2426,6 +3108,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1s4w7w56ymm5fnm25nhdvae5yuc5792zxfynq9h",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "13"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1shuqhpl273t96yg6nnqvyfeewj3ew3mdcwvcnu",
         "coins": [
           {
@@ -2448,6 +3139,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1s76r4v04tt4fq6cvr39y6wy5zla9p6kdmz0wkr",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr13q937pwglh24knwa2v23ml0kkpl9vwzjmfmj3q",
         "coins": [
           {
@@ -2461,8 +3161,25 @@
         ]
       },
       {
+        "address": "cosmosaccaddr13q0fl9qakvt5zkh6qurlrur4xq7gullkv9f5zq",
+        "coins": null
+      },
+      {
+        "address": "cosmosaccaddr13psmeywshfyfcg3tr5l4qm968smtkcu8um0nqn",
+        "coins": null
+      },
+      {
         "address": "cosmosaccaddr13rt2suxfgefcquy9pveuc5uxfayy5rscr4vld7",
         "coins": null
+      },
+      {
+        "address": "cosmosaccaddr13fw4ff9u2qftsjj39mda54ufrpjs77q0ke6m49",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "33"
+          }
+        ]
       },
       {
         "address": "cosmosaccaddr13fet8nre9ra2rs7gtw035evk2254pgw9mpn79z",
@@ -2504,6 +3221,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr135shy2er3weyxf44cp4q0whmc4rkuqcup3389j",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "20"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr134muwl6a0n8suc5gruj6gh2ka74wkh4kqh8vm4",
         "coins": [
           {
@@ -2530,6 +3256,19 @@
         ]
       },
       {
+        "address": "cosmosaccaddr13lcax0d224sch59zz76m7n60nw0qfzty957l3s",
+        "coins": null
+      },
+      {
+        "address": "cosmosaccaddr1jp66q0yftj6rhwqs2n9uxnmfm78et8gfplacpz",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1j9w65cmt5s5kw9430jsv87yd4dgmmq6w60f3tl",
         "coins": [
           {
@@ -2540,7 +3279,12 @@
       },
       {
         "address": "cosmosaccaddr1j2frwt2vq2xer7f060wpsu3y3f63uys2w9lx2e",
-        "coins": null
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "90"
+          }
+        ]
       },
       {
         "address": "cosmosaccaddr1jtt6al0acr8h0uvq489rt9zx9lnau7rlcu30pt",
@@ -2553,7 +3297,12 @@
       },
       {
         "address": "cosmosaccaddr1jt77t00gucffqhrq7lh6vwmwzrwgw2fpvnhwk7",
-        "coins": null
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "50"
+          }
+        ]
       },
       {
         "address": "cosmosaccaddr1jvh448tvk368k4md83ys7auledclek0vfpckz2",
@@ -2574,7 +3323,12 @@
       },
       {
         "address": "cosmosaccaddr1jdehygp2p8z4f2wyf9t5q6f6mfqex66mfhfwdg",
-        "coins": null
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
       },
       {
         "address": "cosmosaccaddr1jw554408yw2h438q200jyuqgln76xh4ax0q4s0",
@@ -2616,6 +3370,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1j4k7p2yqn6d5kfjqg0ductjmr48l75pw8tp6w8",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "20"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1jkmn6asju47zuuzrf8rjt7sllaj5cx4kueyv8p",
         "coins": [
           {
@@ -2642,7 +3405,7 @@
           },
           {
             "denom": "steak",
-            "amount": "55"
+            "amount": "115"
           }
         ]
       },
@@ -2683,6 +3446,15 @@
           {
             "denom": "steak",
             "amount": "1"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1j6uaeggxkn0t4n4n8zna0g9vqgfj6jw6ejwyv4",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
           }
         ]
       },
@@ -2771,6 +3543,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1n0l69ax723z2n060eeh357c0vsz2kagf06vscz",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1nnyel6v0kx8zmfh9edmre3ua4dt9306cfxsxgd",
         "coins": [
           {
@@ -2780,6 +3561,15 @@
           {
             "denom": "steak",
             "amount": "50"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1nn6mjdtcutmmpjcapkecg5muqrgp7td6s0gre2",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "30"
           }
         ]
       },
@@ -2798,6 +3588,15 @@
           {
             "denom": "steak",
             "amount": "2"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1nhnhk0q53lfmwhq58268302zxz3trpgrwgr02w",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "30"
           }
         ]
       },
@@ -2823,12 +3622,30 @@
         "address": "cosmosaccaddr15rrxdflhq4744qt9m5ysstq3zpykhacf908eez",
         "coins": [
           {
-            "denom": "steak",
-            "amount": "13"
-          },
-          {
             "denom": "wancloudsentryToken",
             "amount": "1000"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr15yqm96jm0mhlluerr2ze0u369vqjdhfye2f9e9",
+        "coins": null
+      },
+      {
+        "address": "cosmosaccaddr15xlevh5an4gqnyvjs7yv5ccpp9rvyrcfemteey",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "20"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr15twdq9t9pnmr2y5ynccqfjdkj5wt5vzsq0hp0r",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "20"
           }
         ]
       },
@@ -2852,10 +3669,27 @@
       },
       {
         "address": "cosmosaccaddr15wkl5rq6uk8qdnpehdkp7clng255e06z2p9lfk",
+        "coins": null
+      },
+      {
+        "address": "cosmosaccaddr15wmreh6mryt49ly2v3e5gaw8ssv49xmzqrxqax",
         "coins": [
           {
             "denom": "steak",
-            "amount": "2"
+            "amount": "10"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr15nhcasamcyav7gs34nezq0r0g9zyswrzh6gt3f",
+        "coins": null
+      },
+      {
+        "address": "cosmosaccaddr15k7ws7jddz6qfnnclg5h27q4gpjeyamkgupeaw",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
           }
         ]
       },
@@ -2890,7 +3724,7 @@
           },
           {
             "denom": "steak",
-            "amount": "20"
+            "amount": "80"
           }
         ]
       },
@@ -2908,6 +3742,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr14q7h5s8w0fgruyv3qwcauaxpy7cmu289hd8hsh",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "20"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr14zfph0h8rexsca6gg6jkwqup3sgl6mwj6eu4e6",
         "coins": [
           {
@@ -2916,7 +3759,7 @@
           },
           {
             "denom": "steak",
-            "amount": "50"
+            "amount": "70"
           }
         ]
       },
@@ -2938,7 +3781,7 @@
         "coins": [
           {
             "denom": "steak",
-            "amount": "25"
+            "amount": "5"
           }
         ]
       },
@@ -2948,6 +3791,15 @@
           {
             "denom": "cwgoesToken",
             "amount": "800"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1kzp74plx94h8mp90vun33nmdw3qck7mecs6hdy",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
           }
         ]
       },
@@ -2982,6 +3834,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1k0lw4fzp2adfh30ranet6mfujhzdywd6l22nag",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "19"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1k5ah4mpy8ykzp2mpcvapnyv6gemp35zuyhw8sy",
         "coins": null
       },
@@ -2991,6 +3852,15 @@
           {
             "denom": "cwgoesToken",
             "amount": "99"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1k7u0ysqy89jkt7n9804cl4vzy45afa5jqevx6p",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
           }
         ]
       },
@@ -3030,6 +3900,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1hydk58dtxr87ml34xqc07ph2h66yt2f0rrhyt8",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "30"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1hfygmryre7r8m9pfqmc85y7kw7ejphmp59k2x8",
         "coins": [
           {
@@ -3048,6 +3927,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1hf0qr0z36v38geace28mfwyayv2r5r8kl9st8p",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1h2faa4f2vcg7rjss6y5wnswnrw4mh82hf4wrcp",
         "coins": [
           {
@@ -3057,11 +3945,38 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1hwyayqqsm4nv570ux8u7dla0xn4ad08gydppyj",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1h4q0xkdg30cl9vw0u8ejm0rs337dszy98gnd4a",
         "coins": [
           {
             "denom": "joltz-secureware.ioToken",
             "amount": "1000"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1hhcffh2fjf5w42q7lmlcpsrg4agslmm2ercuqk",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1hhu6pvea5l934c059jxjv3ccfan6m7jy39zfs6",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "30"
           }
         ]
       },
@@ -3078,11 +3993,20 @@
         "coins": null
       },
       {
+        "address": "cosmosaccaddr1h7yr9pm3ffhq5djx75ycmumvpwlxhulss3e2yv",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "30"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1cze0acxhmpx26awlc98h2v33ay95k232yenkqx",
         "coins": [
           {
             "denom": "steak",
-            "amount": "17"
+            "amount": "37"
           }
         ]
       },
@@ -3095,13 +4019,18 @@
           },
           {
             "denom": "steak",
-            "amount": "50"
+            "amount": "35"
           }
         ]
       },
       {
         "address": "cosmosaccaddr1cy5t4e62z4h7r74cn7vkylx77n5s4hds2xeud6",
-        "coins": null
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "20"
+          }
+        ]
       },
       {
         "address": "cosmosaccaddr1cyayv35tv47t829mel6jm0vqzmrdhf3jq87tqg",
@@ -3117,6 +4046,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1cgvwwnfeu7jv3wxsy6znr2dqnhs5xc6cjpfmxw",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1c2dkaym4teqw6jl9jkq8eu8nf4wzn2lgf4ydyt",
         "coins": [
           {
@@ -3125,7 +4063,16 @@
           },
           {
             "denom": "steak",
-            "amount": "9960011"
+            "amount": "9935501"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1csk8r7uahekf9a5qf5axsl00fjvemhkrfu8kep",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "20"
           }
         ]
       },
@@ -3147,12 +4094,25 @@
         "coins": null
       },
       {
+        "address": "cosmosaccaddr1c7r8w934puc05af2yssgwsdu3w4vgp6a5p2xaz",
+        "coins": null
+      },
+      {
         "address": "cosmosaccaddr1ep87dml7wrc0t6d4rh05np5evtqwlxy0kstpvy",
         "coins": null
       },
       {
-        "address": "cosmosaccaddr1eyd6g0h5h96heegs42djrptlq9zflx3q2cndmp",
+        "address": "cosmosaccaddr1ezlvjcfq5s6fzrzp0rgrfudkte280dy528v93m",
         "coins": null
+      },
+      {
+        "address": "cosmosaccaddr1eyd6g0h5h96heegs42djrptlq9zflx3q2cndmp",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
       },
       {
         "address": "cosmosaccaddr1eg88jsn38mrael6cqu7d2u8j6dynya7fv2p2tl",
@@ -3173,11 +4133,24 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1e078whe3xwhagy2hjjsht36tq3uehz3v2cs2n5",
+        "coins": null
+      },
+      {
         "address": "cosmosaccaddr1e3qm8jd9357zhdemwnaafmf0wy3f4yqmd307c2",
         "coins": [
           {
             "denom": "firstblock.ioToken",
             "amount": "1000"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1e32c8x0dcgv0kz6qr7xceerne2gznt5s8e8tr7",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
           }
         ]
       },
@@ -3195,7 +4168,7 @@
         "coins": [
           {
             "denom": "steak",
-            "amount": "3"
+            "amount": "30"
           }
         ]
       },
@@ -3213,15 +4186,24 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1eu22vuernyw7yemd29lnkmd4x2l5grvx9kh6he",
+        "coins": null
+      },
+      {
         "address": "cosmosaccaddr1eamypvjgl8hjfa4gysujkt780f0qv3c5q5a3tt",
         "coins": [
           {
-            "denom": "2400bpsToken",
-            "amount": "1000"
-          },
+            "denom": "steak",
+            "amount": "60"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1elpemwnp36jjcltv80hz76kcrk4zmllg0p6wk7",
+        "coins": [
           {
             "denom": "steak",
-            "amount": "50"
+            "amount": "10"
           }
         ]
       },
@@ -3239,8 +4221,44 @@
         ]
       },
       {
+        "address": "cosmosaccaddr16yrgs9d5gdu0erduz0rnd5et6u5ux0n9uyxh3g",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr16yxdmg8w5vc038cg0myh0w32s4h74ch59j67u6",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "2"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr16yk2su2ndeetfqvra5cwwcf3sk59yjagyz99a8",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "130"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr16xae9kqqllsjak3ntxmlgn4s3jmvvyeqcwzgen",
         "coins": null
+      },
+      {
+        "address": "cosmosaccaddr168q7hkcnwahkugh02m0dr293hpzgj9w3z68r2d",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "70"
+          }
+        ]
       },
       {
         "address": "cosmosaccaddr162k6wg0ufzy6pe079m3evt0tqrjfrrath5qw0d",
@@ -3248,6 +4266,15 @@
           {
             "denom": "steak",
             "amount": "5"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr16dfl4ruvt54qyhyf26fwmle62jnywp7mu9akt7",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
           }
         ]
       },
@@ -3265,7 +4292,20 @@
         ]
       },
       {
+        "address": "cosmosaccaddr163rcl6f2vfl6x9svkl49edqhdl6agpfzncgupl",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr163emaq8ahwp25pmfqrjaz3c7wm9vtytcwmlphg",
+        "coins": null
+      },
+      {
+        "address": "cosmosaccaddr1640dsytftqn2uxk4prlfxjvn46nnp8wxt5s0ye",
         "coins": null
       },
       {
@@ -3274,6 +4314,10 @@
           {
             "denom": "lunamintToken",
             "amount": "1000"
+          },
+          {
+            "denom": "steak",
+            "amount": "280"
           }
         ]
       },
@@ -3299,11 +4343,20 @@
         ]
       },
       {
+        "address": "cosmosaccaddr16lz93dqwq6rmn3eflugjnz5exr3jpspe3akwug",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "80"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1m9nu6haug2v25nsrudv0xevxs52zyjzqld3drr",
         "coins": [
           {
             "denom": "steak",
-            "amount": "159"
+            "amount": "209"
           }
         ]
       },
@@ -3326,6 +4379,19 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1m2pl4vq3g8t4am0zk8qme08dnwe2p95e37l33s",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "40"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1mtez787cl6phgkylneq9wjj3d6letn0247lhf5",
+        "coins": null
+      },
+      {
         "address": "cosmosaccaddr1mvqtcm5a8pf8q5xv50ag6k445032fz7qaax5ge",
         "coins": [
           {
@@ -3340,6 +4406,15 @@
           {
             "denom": "steak",
             "amount": "8"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1mvmdrtuxjttv90wssvh6xreeguvq8tksm789m5",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "40"
           }
         ]
       },
@@ -3397,6 +4472,28 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1uffeh2wq0lrvwm7z77c595v040q4kk4g3v8vte",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1usm7kdwff58zjyz3wy89qemetrqehklala7mkm",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "2"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1u374sn4c4arc8nsnpqdaqm2s5n70gpg6xvw4ny",
+        "coins": null
+      },
+      {
         "address": "cosmosaccaddr1unqmzc0w20qnpu94n7xs4z9nrteh8flxag028u",
         "coins": [
           {
@@ -3413,6 +4510,10 @@
             "amount": "5"
           }
         ]
+      },
+      {
+        "address": "cosmosaccaddr1uknhjkw775zp5xkztc4clxr240ut59ek5seerx",
+        "coins": null
       },
       {
         "address": "cosmosaccaddr1ukcuqpqw3eq505wkqd2adgn8ugewxr6jtakngs",
@@ -3437,6 +4538,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1u6ddcsjueax884l3tfrs66497c7g86sk3vfmqj",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "160"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1umaajfgap5ef6yxvk5706kwk8j08l7wh6h9fp2",
         "coins": [
           {
@@ -3445,18 +4555,13 @@
           },
           {
             "denom": "steak",
-            "amount": "89500"
+            "amount": "88399"
           }
         ]
       },
       {
         "address": "cosmosaccaddr1ul3ef4trvjfmgaptu70ed4fjlky2aa49t4pfle",
-        "coins": [
-          {
-            "denom": "steak",
-            "amount": "11"
-          }
-        ]
+        "coins": null
       },
       {
         "address": "cosmosaccaddr1uluae4kaxq3wxd698t256a8luv2tf0ngy40qp3",
@@ -3464,6 +4569,15 @@
           {
             "denom": "steak",
             "amount": "200"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1artqm53zt7j7znm8cpgqzgp9jhlx0xrtle2pjr",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
           }
         ]
       },
@@ -3495,6 +4609,24 @@
           {
             "denom": "steak",
             "amount": "10"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1a8ct2evn3944h2fww346nsmc22z9rlmv7g6flk",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr1agfqwpcxpl8s8pl3uhxhw7h0r05an60dmlgukx",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "18"
           }
         ]
       },
@@ -3535,7 +4667,12 @@
       },
       {
         "address": "cosmosaccaddr1aaumwh9rc9ksh7dwuxux43jd93e7t4u88g5kg4",
-        "coins": null
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "20"
+          }
+        ]
       },
       {
         "address": "cosmosaccaddr17rqsh3fw6rehnwzarz90jkqtt5fupmh50gy556",
@@ -3556,6 +4693,15 @@
           {
             "denom": "gruberxToken",
             "amount": "1000"
+          }
+        ]
+      },
+      {
+        "address": "cosmosaccaddr17wg97pzzlswd4p9rejdavp87rv4vdugmm8pwkf",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "10"
           }
         ]
       },
@@ -3624,7 +4770,7 @@
           },
           {
             "denom": "steak",
-            "amount": "6"
+            "amount": "48"
           }
         ]
       },
@@ -3669,6 +4815,15 @@
         ]
       },
       {
+        "address": "cosmosaccaddr1lc4jjw8zveuuj3njhy70zl23vgmpds2x24efca",
+        "coins": [
+          {
+            "denom": "steak",
+            "amount": "250"
+          }
+        ]
+      },
+      {
         "address": "cosmosaccaddr1ledtq3q59uws8x78fjp30jvyulgjxl6yrx9x7j",
         "coins": [
           {
@@ -3702,9 +4857,9 @@
     ],
     "stake": {
       "pool": {
-        "loose_tokens": "4556685643614806773703553181541342812730441658025530674645692995202461531134739325176068262906913104454152368224516897101200859561292780162850250863204380395747004572663116551297730308720665813504700127252092743175799113981682877032883828071299635052757923616548662957362910093253156322338732320554158983081475521024464031935741884658978937511796590513890916989566981901851791713271596544552143335223130646654180175386923037401166754865747449361849852521639663901793848486629185030814038894154129417317176582036852865809523027521281357051443847579433531026074564539963/451178035712568103262002290638280266703193014725095241081268287283298429479620199101274623429465446176015455524629284889674851745951379815571786898829463400783122554315003200982483444501455063812459240316112082608877934991822444519510401440798317310580284438198353061627024411449520740170365009047077545073783962934022580024921928493436848251702930642555134669601197389334349672660602904140661179502351927503641167525214721620594207433009183000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
-        "bonded_tokens": "26797850023/500000",
-        "inflation_last_time": "1533351965",
+        "loose_tokens": "212234692368559902773014687327484492499334064496342017769139923035458728144919945137085919281749652786862586180209457322113759521105809070531211470506853218958050414866880167260657863739551652192137986049110725956052905704758818959982320658920794675668552064072238944093207349839633292480904346056107796224020080112445238478513757301551906370650373478169897541122069802602945534940145786304533068814943533930972906449983847914418613883243454229191697608448325572106833582710351535919362394483029380480542586486261407813018972054510265531490657883920535958690038587946293781570140135933217290963138230954485933118636731702849516112455184967089435748052528036914591916846061696750735527083841046512146774731083493285079420185153635615506205679139707366838712372605550276090588769737701435671243899824765182112838167666029900569234536970608040574716511086893100048478224094190486876917185986809531136797511860121445977859007948872468785789703779795691443108195616502424916434207502486427828788956840836992496531085759517722416727807667390924847734758804566179091636514959392799069188372721367831331110458081955835928443892419095932693400385273950885920091488321433751751535289836946545305590199876648995139778938250490114289510274183655998132281709023181865632542357298066269777564343753095882413548444231877206287627063978602318337637493451025792225507132732684643687486970003518524413564431921084394163011620507576101798101868687109423014977363066898839160979876401484528151191566119497417614711893271336419362034551327787658513622548663272288015026248873461521204921520317957869695103087669105075589633490514906981823236481320900674887471684246836161077527577918361885107730942590068766549236646992402788358566097270158463105833136968000705430256339804514651753256418561907619221566022910606606764721518296229753733641382514940120234521365586915145709181638223891153820569480497157851844433542586180525308478072757485213896182698413125792187729794843162037178476565265231421389422260592759821033883/20891080884821288214936513078767214469995841625290057084591977940219676920201103573603743654086273216540116817461098873206255880046908414217131166077880682528389281138014445604719519941588711798520441515463960396551523169294059582356600171764959826348969443952432853391059045461602343063648470338757779668479373347477478521355103694977501171737505983368487928796369306792077357030331966812678021793060446683766024779586855353966404049083602927499437752904965368719257394516323420051267652055024786806061807282124874257024889193873082268069292215810584394051776563161580278635823211761332288683787297085577465315444622264536480307169606763243105908257500502993503793484760386558210386840141656073106458220614126868493299191464939098381355626390008684156692722414660824992906786009750166861660454111502952749111939065695767011842636683869084062347771270413109022400836402699141165569131339421912716913002878566963211095013746548273413182056902584622759826444565509891551815878120259377745017492491285251896611745779513234465971017710455120244774552433479282660133754670813719046534492669403007823721365077824812739657392186031098902304403076796004295479892678612582906711521817557244571481951756843512724064309431463095282564288969492675967736221948943329034584116924461238339562647788542136485763482574600083575883466642001774801289514924627144010449754930076548579082867620591947286500534079824430946876218758498309184347779714955120422161085340625362053168273912668361524974414018116452843496772223549567360891625083368517506494362533454336269091585886586953590300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "bonded_tokens": "31284000023/500000",
+        "inflation_last_time": "2018-08-06T08:00:00.123456789Z",
         "inflation": "1/5",
         "date_last_commission_reset": "0",
         "prev_bonded_shares": "0"
@@ -3715,10 +4870,35 @@
         "inflation_min": "7/100",
         "goal_bonded": "67/100",
         "unbonding_time": "10000",
-        "max_validators": 1000,
+        "max_validators": 300,
         "bond_denom": "steak"
       },
       "validators": [
+        {
+          "owner": "cosmosaccaddr1qv68kxwmarzefrcgnu4trdrznslzdtra7gfxhy",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "WnV5CjfHHyMrAPbX796iXgnfAwTP/cFL+kzz99bW+kA="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "7",
+          "delegator_shares": "7",
+          "description": {
+            "moniker": "baryon.network",
+            "identity": "EA1BCB68BEA98362",
+            "website": "https://www.baryon.network",
+            "details": "Baryons are Cosmos building blocks"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
         {
           "owner": "cosmosaccaddr1qvut6w8v5fccephuv502qhmvhn7hy6cnddrdyf",
           "pub_key": {
@@ -3727,10 +4907,35 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "10",
-          "delegator_shares": "10",
+          "tokens": "99",
+          "delegator_shares": "110",
           "description": {
             "moniker": "AT-Validator",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1qjzjfn55hygaak9l9x04z792mexce2zd2gvkzk",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "2RYn/WYgNvvDb0NLcdJ70bDiuAVH+tLH7VWH2M59i1c="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "787/10",
+          "delegator_shares": "548/3",
+          "description": {
+            "moniker": "#🔥WuTiao.Com🔥",
             "identity": "[do-not-modify]",
             "website": "[do-not-modify]",
             "details": "[do-not-modify]"
@@ -3751,8 +4956,8 @@
             "value": "tU8IqlII8g8ngcmtMVG/k/8SmunfJJBkAoOisN+qcKE="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "119",
+          "status": 0,
+          "tokens": "482/5",
           "delegator_shares": "119",
           "description": {
             "moniker": "JB-The-Valid",
@@ -3777,8 +4982,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "2161",
-          "delegator_shares": "2161",
+          "tokens": "2164",
+          "delegator_shares": "2164",
           "description": {
             "moniker": "skoed-validator-7000",
             "identity": "D889FE03C0655B11",
@@ -3820,6 +5025,31 @@
           "prev_bonded_tokens": "0"
         },
         {
+          "owner": "cosmosaccaddr1qarnnunjrsd66yuz65ugsl7pm3v3hxrxd5jvaq",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "1XB37ELQL8SIu5CeeRNMByNFtf2rQf543PKoxUCBeBA="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "54",
+          "delegator_shares": "60",
+          "description": {
+            "moniker": "sentinel.co",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "Sentinel Validator 1 on gaia-7005"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
           "owner": "cosmosaccaddr1pj6vfgetplkcuq0k9m98dpej6zew3pdest842v",
           "pub_key": {
             "type": "tendermint/PubKeyEd25519",
@@ -3827,7 +5057,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "63/2",
+          "tokens": "283/10",
           "delegator_shares": "35",
           "description": {
             "moniker": "Yakut",
@@ -3852,7 +5082,7 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "1100",
+          "tokens": "990",
           "delegator_shares": "1100",
           "description": {
             "moniker": "Dokia-Interstellar-Cruiser",
@@ -3926,8 +5156,8 @@
             "value": "Wz36ZKKPAL/yPW+d5mZ+xHb7w3QlAZCquplGKbGL+yk="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "74",
+          "status": 0,
+          "tokens": "333/5",
           "delegator_shares": "74",
           "description": {
             "moniker": "liangping",
@@ -3976,8 +5206,8 @@
             "value": "7vURd1EqPVfI/1viF/+LNm9lwaBAN/tSuoJ+Od972z0="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "100",
+          "status": 0,
+          "tokens": "90",
           "delegator_shares": "100",
           "description": {
             "moniker": "Project Bohr",
@@ -4052,8 +5282,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "2262",
-          "delegator_shares": "7540/3",
+          "tokens": "2265",
+          "delegator_shares": "7550/3",
           "description": {
             "moniker": "wxvalidator0",
             "identity": "[do-not-modify]",
@@ -4102,7 +5332,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "9/2",
+          "tokens": "41/10",
           "delegator_shares": "5",
           "description": {
             "moniker": "@fulltrust",
@@ -4145,6 +5375,31 @@
           "prev_bonded_tokens": "0"
         },
         {
+          "owner": "cosmosaccaddr1r4lzzzf683ec70fxfd9a3jmczxxkdxpfafz4ar",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "FSj9jMpCOdWfX0rCQ0TpnEa8/uOroQl4V4Bk3Msck3w="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "10",
+          "delegator_shares": "10",
+          "description": {
+            "moniker": "trusted-validator",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
           "owner": "cosmosaccaddr1rcp29q3hpd246n6qak7jluqep4v006cdj2zse3",
           "pub_key": {
             "type": "tendermint/PubKeyEd25519",
@@ -4159,6 +5414,56 @@
             "identity": "",
             "website": "",
             "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1yqpa5vhs8nq9mguyd2j5k5kn7dlqlgmjl4h67x",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "15LL69u+d5RdR8NA/5187ycW7SstSmrwiu1sk/JvhCU="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "9/5",
+          "delegator_shares": "2",
+          "description": {
+            "moniker": "art_Fvalid",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1yfd9a4sqm8jm7lq932jc6fu8k86f394tgc2sku",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "w0Xbnzcm1tLGgpUrICpotJJXKDlmctoPz/JTBjzkIfk="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "10",
+          "delegator_shares": "10",
+          "description": {
+            "moniker": "ATEAM-TT",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
           },
           "bond_height": "0",
           "bond_intra_tx_counter": 0,
@@ -4251,11 +5556,36 @@
             "value": "qgws5Mm+saA71C4cdQavr1bw0UytNqJcpwPDHR0k2hk="
           },
           "revoked": false,
-          "status": 0,
-          "tokens": "10",
+          "status": 2,
+          "tokens": "9",
           "delegator_shares": "10",
           "description": {
             "moniker": "EddyG-cVali",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1y32vvanvz88ajamugxrgl7vnvf0vtmjg5wxg7f",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "e9SYHFlpZz134w539AzQBlsw+Wk0N59eUkER6n/PcgU="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "18",
+          "delegator_shares": "20",
+          "description": {
+            "moniker": "noroute",
             "identity": "[do-not-modify]",
             "website": "[do-not-modify]",
             "details": "[do-not-modify]"
@@ -4276,11 +5606,86 @@
             "value": "+pZYup+40uW60mwWqLTxdjuu+wRXPq3c9Z+0fTDVvpg="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "41",
+          "status": 0,
+          "tokens": "369/10",
           "delegator_shares": "41",
           "description": {
             "moniker": "baryon.network",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1y7n3emnw6mkxutvs26rczynpvq84ddqu332hlv",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "oyA3rg/uuKNv4xASzi1tmmkn+FuVAstd+wZjDVYCirU="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "45",
+          "delegator_shares": "50",
+          "description": {
+            "moniker": "kr_test",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1ylz6tqpgz0flpl6h5szmj6mmzyr598rq7heuye",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "+CUXpZTFWwT7jG4DCPezLBtv1+lAgdJd+36rRb7QnmM="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "180",
+          "delegator_shares": "20000/81",
+          "description": {
+            "moniker": "Bajun",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr19q6y4mk3x668vm2jx0pu6e0jfy5a39jz0qwvxt",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "eNKen3yMRu2SDLEu3V+U2LXsyka3Na7sp99V7AuDP+s="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "243/5",
+          "delegator_shares": "60",
+          "description": {
+            "moniker": "blackhole",
             "identity": "[do-not-modify]",
             "website": "[do-not-modify]",
             "details": "[do-not-modify]"
@@ -4302,7 +5707,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "9/2",
+          "tokens": "41/10",
           "delegator_shares": "5",
           "description": {
             "moniker": "agaoye",
@@ -4320,20 +5725,120 @@
           "prev_bonded_tokens": "0"
         },
         {
+          "owner": "cosmosaccaddr19rlhdmplhnmvy3jmcd835awask4l46nvp3pt4g",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "RpY+WLYnDD2KYvSvfqnSjsNE2592f55L61rdbcsXRDk="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "27",
+          "delegator_shares": "30",
+          "description": {
+            "moniker": "ATEAM-T",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr19dfkpwfj3mls96ny2ulgq7cf0dh5xs5a05pn6e",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "ncrdAm41M/iC+6ROlnGvtwYZ2UHioDeQl2Hc6okEDew="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "27/10",
+          "delegator_shares": "3",
+          "description": {
+            "moniker": "Forbole-1",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
           "owner": "cosmosaccaddr193vn0gk3nsmjkxwz78gce8e8mkmagmvulpg5jt",
           "pub_key": {
             "type": "tendermint/PubKeyEd25519",
             "value": "tOEqjO2t51PEgO9Tv0B7qM0yPmy1n5tMa3Beg0tp3ns="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "919",
+          "status": 0,
+          "tokens": "8271/10",
           "delegator_shares": "9190/9",
           "description": {
             "moniker": "divislight",
             "identity": "6A0D65E29A4CBC8E",
             "website": "https://jackzampolin.com",
             "details": "Its all about the signatures baby"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr19n4s8fx9hr0j2dttr4fg48wr7kpxxste7evjzk",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "dpYEHcQAo439YIswYnm3ytxyoP7RtorAS59+FOXiOKQ="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "230",
+          "delegator_shares": "230",
+          "description": {
+            "moniker": "new_vali",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr19ncpp07tuqqgu2kjp4wq2zlt3s0q5f9ywvhwuw",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "UQHY8OYNqCwDkAm7bn+X/VqV6p3PHTRqkQGEsqnpdws="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "110",
+          "delegator_shares": "110",
+          "description": {
+            "moniker": "kreios-2",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
           },
           "bond_height": "0",
           "bond_intra_tx_counter": 0,
@@ -4352,7 +5857,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "9/2",
+          "tokens": "41/10",
           "delegator_shares": "5",
           "description": {
             "moniker": "lowpeople",
@@ -4377,10 +5882,35 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "45/2",
+          "tokens": "203/10",
           "delegator_shares": "25",
           "description": {
             "moniker": "baryon.network",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr19h5dc2c76h4ryvl9zl9373mk52ka77vy5g48gs",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "cJv3rBtHyIGTsVQ0ZWXdjIL/dBQwn8N9ml2aT8e3/jM="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "117/10",
+          "delegator_shares": "13",
+          "description": {
+            "moniker": "gridworkz",
             "identity": "[do-not-modify]",
             "website": "[do-not-modify]",
             "details": "[do-not-modify]"
@@ -4402,8 +5932,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "1001",
-          "delegator_shares": "1001",
+          "tokens": "1501",
+          "delegator_shares": "1501",
           "description": {
             "moniker": "vhxnode1",
             "identity": "",
@@ -4427,8 +5957,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "70",
-          "delegator_shares": "70",
+          "tokens": "151",
+          "delegator_shares": "151",
           "description": {
             "moniker": "lino",
             "identity": "[do-not-modify]",
@@ -4552,8 +6082,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "27",
-          "delegator_shares": "27",
+          "tokens": "56",
+          "delegator_shares": "56",
           "description": {
             "moniker": "Bity Validator",
             "identity": "[do-not-modify]",
@@ -4577,8 +6107,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "15",
-          "delegator_shares": "15",
+          "tokens": "800",
+          "delegator_shares": "8000/9",
           "description": {
             "moniker": "corona02",
             "identity": "[do-not-modify]",
@@ -4601,11 +6131,36 @@
             "value": "nsofE1FmSr1TiDR0gfnxfMDQ8o2pC+1NE7Oa9ceztSg="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "380",
+          "status": 0,
+          "tokens": "342",
           "delegator_shares": "380",
           "description": {
             "moniker": "coinone",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr18raps2wmm63n2gldsrqc5x5z023p559l7r5vv6",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "DrgnMZqdtzRbDvDGh5290M1QtAfem1VHaY+zhq/nBWI="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "50",
+          "delegator_shares": "50",
+          "description": {
+            "moniker": "FennecFox",
             "identity": "[do-not-modify]",
             "website": "[do-not-modify]",
             "details": "[do-not-modify]"
@@ -4627,8 +6182,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "131",
-          "delegator_shares": "1310/9",
+          "tokens": "281",
+          "delegator_shares": "2810/9",
           "description": {
             "moniker": "412",
             "identity": "[do-not-modify]",
@@ -4677,8 +6232,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "20129/10",
-          "delegator_shares": "20129/9",
+          "tokens": "18291/10",
+          "delegator_shares": "9463951/4191",
           "description": {
             "moniker": "delegate-now",
             "identity": "[do-not-modify]",
@@ -4702,8 +6257,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "1131",
-          "delegator_shares": "1131",
+          "tokens": "1200",
+          "delegator_shares": "1200",
           "description": {
             "moniker": "CosCloud",
             "identity": "[do-not-modify]",
@@ -4727,7 +6282,7 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "150",
+          "tokens": "135",
           "delegator_shares": "150",
           "description": {
             "moniker": "starfish",
@@ -4770,6 +6325,31 @@
           "prev_bonded_tokens": "0"
         },
         {
+          "owner": "cosmosaccaddr1g8xwmm3tp7pgdrmjgt4fm7d26anrrnle4yavuw",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "5GAxIHzu06l0n3MU8wNQrCcrrnpZR9EKe5qZMsM2h/E="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "100",
+          "delegator_shares": "100",
+          "description": {
+            "moniker": "ip-10-0-3-99",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
           "owner": "cosmosaccaddr1g6sc5t9t68vmcj3alk7dfqr54tvastpxac28k6",
           "pub_key": {
             "type": "tendermint/PubKeyEd25519",
@@ -4777,7 +6357,7 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "100",
+          "tokens": "90",
           "delegator_shares": "100",
           "description": {
             "moniker": "VNode01",
@@ -4802,7 +6382,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "10",
+          "tokens": "9",
           "delegator_shares": "10",
           "description": {
             "moniker": "threez",
@@ -4826,9 +6406,9 @@
             "value": "T3ITN3B9p3HuIo4m8G3zzLmmR+JmPyAat+L2eYG3/sw="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "2337",
-          "delegator_shares": "2337",
+          "status": 0,
+          "tokens": "2106",
+          "delegator_shares": "2340",
           "description": {
             "moniker": "bdongerNext",
             "identity": "[do-not-modify]",
@@ -4852,8 +6432,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "532",
-          "delegator_shares": "532",
+          "tokens": "1252",
+          "delegator_shares": "1252",
           "description": {
             "moniker": "ATEAM1",
             "identity": "E503F770E04D5684",
@@ -4884,6 +6464,31 @@
             "identity": "",
             "website": "",
             "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr12qprqyxtxxlu7unncd9rrhmer5emg2pmrw27qk",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "E0KYUg0eXCnwZ1GL2vZ0214HGqbydUQ7sowpwS5VpXM="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "243/10",
+          "delegator_shares": "30",
+          "description": {
+            "moniker": "cm-gaia-1",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
           },
           "bond_height": "0",
           "bond_intra_tx_counter": 0,
@@ -4977,8 +6582,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "655",
-          "delegator_shares": "655",
+          "tokens": "55",
+          "delegator_shares": "55",
           "description": {
             "moniker": "aether",
             "identity": "",
@@ -5002,8 +6607,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "1440",
-          "delegator_shares": "1440",
+          "tokens": "1455",
+          "delegator_shares": "1455",
           "description": {
             "moniker": "Adrian Brink - Cryptium Labs",
             "identity": "F61053D3FBD06353",
@@ -5027,10 +6632,35 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "270",
-          "delegator_shares": "270",
+          "tokens": "33593/10",
+          "delegator_shares": "302672930/65691",
           "description": {
             "moniker": "grass-fed",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1t9rqvvys4zh300x93a6fr3h064gp9y8al7m4en",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "31942iQRr+ajHMCklJslIbPzQl6OplvluWuXUnHlVQ0="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "606",
+          "delegator_shares": "606",
+          "description": {
+            "moniker": "newaether",
             "identity": "[do-not-modify]",
             "website": "[do-not-modify]",
             "details": "[do-not-modify]"
@@ -5052,7 +6682,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "9/5",
+          "tokens": "8/5",
           "delegator_shares": "2",
           "description": {
             "moniker": "spark-test",
@@ -5076,8 +6706,8 @@
             "value": "QRDgIC3dwcj0pqN95IShVJ5aNrnV/nvr19KkCr6koWo="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "2",
+          "status": 0,
+          "tokens": "9/5",
           "delegator_shares": "2",
           "description": {
             "moniker": "spark-yuan",
@@ -5102,13 +6732,38 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "215",
-          "delegator_shares": "215",
+          "tokens": "300",
+          "delegator_shares": "300",
           "description": {
             "moniker": "BlissDynamics",
             "identity": "2A60089536521E12",
             "website": "https://cosmos.network",
             "details": "Prosper with Bliss Dynamics"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1t3lvwnp0rmfyc96c0qh6qa67nplpdhytr5dd59",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "GpHZ0Hr3C1hvVMkcDe/76lvWMjw5SF0JBI/D6gDkQTo="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "250",
+          "delegator_shares": "250",
+          "description": {
+            "moniker": "StakeStack",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
           },
           "bond_height": "0",
           "bond_intra_tx_counter": 0,
@@ -5151,8 +6806,8 @@
             "value": "LUYsagcVciSK95n6WEIbKhsTKD4tgAbBz7kND3ZBpVo="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "1005",
+          "status": 0,
+          "tokens": "13071/20",
           "delegator_shares": "1005",
           "description": {
             "moniker": "suyuuuuu",
@@ -5161,7 +6816,7 @@
             "details": "Istanbul"
           },
           "bond_height": "0",
-          "bond_intra_tx_counter": 0,
+          "bond_intra_tx_counter": 3,
           "proposer_reward_pool": null,
           "commission": "0",
           "commission_max": "0",
@@ -5202,10 +6857,85 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "12/5",
+          "tokens": "11/5",
           "delegator_shares": "3",
           "description": {
             "moniker": "spark",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1dkm8z36m96k8aukg5rxnfpw46dt5mnmvsfuze2",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "tkdOxR2CIOctyc5e9IMGwnMwB420OTN3Rfb6fUMVhr8="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "5",
+          "delegator_shares": "5",
+          "description": {
+            "moniker": "Mythos(private)",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1dl9mu7uya6mfsd80wyw2rgjmwjtk5ajjf8mxcz",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "dj4b9d19oYvNJP1WMHJ1g5tzzMGMNxRnxrtCXBF6jsc="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "30",
+          "delegator_shares": "30",
+          "description": {
+            "moniker": "Liviu",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1dl0hk7064k5wp43zkllmd0p9pgu2mnra898gyh",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "ParbWCAIUA/JGPjgapGrRhYzKy6FQ1HpaJcAQwGGn1s="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "45",
+          "delegator_shares": "50",
+          "description": {
+            "moniker": "EU_test",
             "identity": "[do-not-modify]",
             "website": "[do-not-modify]",
             "details": "[do-not-modify]"
@@ -5226,9 +6956,9 @@
             "value": "1UyFY3YJja8vrmDc/ZqQFo7ORvLdLK2X2wYeCUBZzJc="
           },
           "revoked": false,
-          "status": 0,
-          "tokens": "5",
-          "delegator_shares": "5",
+          "status": 2,
+          "tokens": "409/2",
+          "delegator_shares": "2045/9",
           "description": {
             "moniker": "clawmvp.xyz",
             "identity": "[do-not-modify]",
@@ -5252,7 +6982,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "81/10",
+          "tokens": "53/10",
           "delegator_shares": "10",
           "description": {
             "moniker": "chainflow09",
@@ -5345,14 +7075,39 @@
           "prev_bonded_tokens": "0"
         },
         {
+          "owner": "cosmosaccaddr1whd2u62u3zk7w09yuq4cz97fueq8e96qp69xz0",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "t6nC3SGVoHDhRGw0xNpBHsD9GIcTs+1aCXkXjWXYXOY="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "18",
+          "delegator_shares": "20",
+          "description": {
+            "moniker": "liangping-bj",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
           "owner": "cosmosaccaddr1wesup293xcfjze34u98j05ffu04cssy32gjv3u",
           "pub_key": {
             "type": "tendermint/PubKeyEd25519",
             "value": "HQA+mntabk10g6Us3YQ1I9U4jfv9LPGGXMmTCVbPB+Y="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "11",
+          "status": 0,
+          "tokens": "99/10",
           "delegator_shares": "11",
           "description": {
             "moniker": "teamSoNicX",
@@ -5377,8 +7132,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "4",
-          "delegator_shares": "4",
+          "tokens": "31",
+          "delegator_shares": "31",
           "description": {
             "moniker": "Yakut",
             "identity": "[do-not-modify]",
@@ -5401,12 +7156,37 @@
             "value": "2p8s/pRBZPjYWKKMlR7AOXypDzDmPo762iXlKpCwtco="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "396",
-          "delegator_shares": "440",
+          "status": 0,
+          "tokens": "1818/5",
+          "delegator_shares": "4040/9",
           "description": {
             "moniker": "Forbole",
             "identity": "4A5D9C100A76D9A8",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr106ccejx2h7hwzj9xxaz3hju22yyq5mfy4rydav",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "KfZeww1iQ6YnslfhtZ0qi8yVy0PQHj7/j0Rrkk2gz5o="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "110",
+          "delegator_shares": "110",
+          "description": {
+            "moniker": "bharvest-validator(USW1)",
+            "identity": "[do-not-modify]",
             "website": "[do-not-modify]",
             "details": "[do-not-modify]"
           },
@@ -5427,10 +7207,35 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "10",
+          "tokens": "9",
           "delegator_shares": "10",
           "description": {
             "moniker": "lowpeople2",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr10atd0mjtdt7uzk0jgr32c32semnh3xvu4nx77p",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "xIS+GYtNUOsWEbVq1BtXciEVRVVRDVJogfuyauE0H90="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "9/2",
+          "delegator_shares": "5",
+          "description": {
+            "moniker": "deadlock",
             "identity": "[do-not-modify]",
             "website": "[do-not-modify]",
             "details": "[do-not-modify]"
@@ -5470,6 +7275,31 @@
           "prev_bonded_tokens": "0"
         },
         {
+          "owner": "cosmosaccaddr1st4262sfqk7jqdwp2s7gk2umm5yhexhjrew53z",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "Bawa9CE/IGarJDSWdA7gXLJjBxtnCWk7BX94H3Zyhd0="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "9",
+          "delegator_shares": "10",
+          "description": {
+            "moniker": "bharvest-validator(FF1)",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
           "owner": "cosmosaccaddr1shuqhpl273t96yg6nnqvyfeewj3ew3mdcwvcnu",
           "pub_key": {
             "type": "tendermint/PubKeyEd25519",
@@ -5495,6 +7325,56 @@
           "prev_bonded_tokens": "0"
         },
         {
+          "owner": "cosmosaccaddr13q0fl9qakvt5zkh6qurlrur4xq7gullkv9f5zq",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "6lTjnB9szF+z4c0XwBrplBjK6GaaMUAcFJ/8VHwzOuE="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "10",
+          "delegator_shares": "10",
+          "description": {
+            "moniker": "ATEAM-H",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr13psmeywshfyfcg3tr5l4qm968smtkcu8um0nqn",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "Kv+wY9i0uMGO8ukF4o+Za5uuUp/S8o9N4C1rdA22h8M="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "10",
+          "delegator_shares": "10",
+          "description": {
+            "moniker": "louis",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
           "owner": "cosmosaccaddr13rt2suxfgefcquy9pveuc5uxfayy5rscr4vld7",
           "pub_key": {
             "type": "tendermint/PubKeyEd25519",
@@ -5502,11 +7382,36 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "159",
-          "delegator_shares": "159",
+          "tokens": "359",
+          "delegator_shares": "359",
           "description": {
             "moniker": "kreios",
             "identity": "A0D6EFF27E1AA89D",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr13fw4ff9u2qftsjj39mda54ufrpjs77q0ke6m49",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "+Uc1tDCsc8rM+mPQ79C8Mp3Y7ajlL2Lb5AjYboPqlQE="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "5",
+          "delegator_shares": "5",
+          "description": {
+            "moniker": "chungkueiblock",
+            "identity": "[do-not-modify]",
             "website": "[do-not-modify]",
             "details": "[do-not-modify]"
           },
@@ -5527,7 +7432,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "9/10",
+          "tokens": "4/5",
           "delegator_shares": "1",
           "description": {
             "moniker": "jst002",
@@ -5551,8 +7456,8 @@
             "value": "L0I4JoDfktbDWe0fCDL/nQlBPkF5mNgqamnM5JKJ1Uc="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "150",
+          "status": 0,
+          "tokens": "135",
           "delegator_shares": "150",
           "description": {
             "moniker": "JCol",
@@ -5576,7 +7481,7 @@
             "value": "kCfC+M4tOz3Js2IFJw331BkWcW+cdpSJXFRkSakmFZU="
           },
           "revoked": false,
-          "status": 0,
+          "status": 2,
           "tokens": "81/2",
           "delegator_shares": "45",
           "description": {
@@ -5602,7 +7507,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "10",
+          "tokens": "9",
           "delegator_shares": "10",
           "description": {
             "moniker": "baryon.network-x",
@@ -5626,8 +7531,8 @@
             "value": "SNwrT1B+A4g6TY7x0QzVrmVbcbl3cHXzXdD1tFHxLNo="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "90",
+          "status": 0,
+          "tokens": "81",
           "delegator_shares": "100",
           "description": {
             "moniker": "TruNode",
@@ -5652,7 +7557,7 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "100",
+          "tokens": "90",
           "delegator_shares": "100",
           "description": {
             "moniker": "SVNode01",
@@ -5727,7 +7632,7 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "150",
+          "tokens": "135",
           "delegator_shares": "150",
           "description": {
             "moniker": "7768",
@@ -5752,7 +7657,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "5",
+          "tokens": "9/2",
           "delegator_shares": "5",
           "description": {
             "moniker": "RockChain",
@@ -5776,8 +7681,8 @@
             "value": "wdUJrATbIN7C9pgzDzaBZ4WANQzQL+/r+36yXqDdeCQ="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "11",
+          "status": 0,
+          "tokens": "99/10",
           "delegator_shares": "11",
           "description": {
             "moniker": "fullnode04",
@@ -5801,8 +7706,8 @@
             "value": "q5ezDn4DcWFPWvMayPJI35nXr//jjF8fGHsuiHjpDcU="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "100",
+          "status": 0,
+          "tokens": "90",
           "delegator_shares": "100",
           "description": {
             "moniker": "spptest1",
@@ -5852,10 +7757,10 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "170",
-          "delegator_shares": "170",
+          "tokens": "2512",
+          "delegator_shares": "2512",
           "description": {
-            "moniker": "wancloudsentry",
+            "moniker": "wancloud",
             "identity": "D185B18E845FEA40",
             "website": "https://www.wancloud.io",
             "details": "wanxiang blockchain - wancloud"
@@ -5901,8 +7806,8 @@
             "value": "JFh7R/vhQU/SW43OPRcFtPKdCHowiYrISAl+V+bv3V8="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "20",
+          "status": 0,
+          "tokens": "18",
           "delegator_shares": "20",
           "description": {
             "moniker": "vps",
@@ -5952,7 +7857,7 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "200",
+          "tokens": "180",
           "delegator_shares": "200",
           "description": {
             "moniker": "mpaxeNode",
@@ -5977,7 +7882,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "29",
+          "tokens": "47/2",
           "delegator_shares": "290/9",
           "description": {
             "moniker": "Stone",
@@ -6002,8 +7907,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "1157",
-          "delegator_shares": "1157",
+          "tokens": "1160",
+          "delegator_shares": "1160",
           "description": {
             "moniker": "jlandrews",
             "identity": "",
@@ -6027,7 +7932,7 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "90",
+          "tokens": "81",
           "delegator_shares": "100",
           "description": {
             "moniker": "smartpesa",
@@ -6052,8 +7957,8 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "5",
-          "delegator_shares": "5",
+          "tokens": "2021/10",
+          "delegator_shares": "2245/9",
           "description": {
             "moniker": "shensi",
             "identity": "[do-not-modify]",
@@ -6077,8 +7982,8 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "1125",
-          "delegator_shares": "1250",
+          "tokens": "81",
+          "delegator_shares": "100",
           "description": {
             "moniker": "cwgoes",
             "identity": "",
@@ -6102,7 +8007,7 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "160",
+          "tokens": "144",
           "delegator_shares": "1600/9",
           "description": {
             "moniker": "jjangg96",
@@ -6145,6 +8050,56 @@
           "prev_bonded_tokens": "0"
         },
         {
+          "owner": "cosmosaccaddr1k5ah4mpy8ykzp2mpcvapnyv6gemp35zuyhw8sy",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "PV9ZicPQGtOsRT3UnuY+4YGbHUIHwaVGc1JsHhcOM/c="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "36",
+          "delegator_shares": "40",
+          "description": {
+            "moniker": "chorus_test",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1hydk58dtxr87ml34xqc07ph2h66yt2f0rrhyt8",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "aunzA3JTNtbn4EW3t914GMHjogqHQV6vvsm3Z7dJ07o="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "45",
+          "delegator_shares": "50",
+          "description": {
+            "moniker": "tokyo_test",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
           "owner": "cosmosaccaddr1hfygmryre7r8m9pfqmc85y7kw7ejphmp59k2x8",
           "pub_key": {
             "type": "tendermint/PubKeyEd25519",
@@ -6152,8 +8107,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "1341",
-          "delegator_shares": "1341",
+          "tokens": "12099/10",
+          "delegator_shares": "4033/3",
           "description": {
             "moniker": "bkcm",
             "identity": "",
@@ -6177,7 +8132,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "1323/10",
+          "tokens": "1191/10",
           "delegator_shares": "147",
           "description": {
             "moniker": "joltz-secureware.io",
@@ -6201,7 +8156,7 @@
             "value": "G5xqaI1M/ckd6k5tLzWkGF/MdGZ4/xmJThP4AjksrFk="
           },
           "revoked": false,
-          "status": 0,
+          "status": 2,
           "tokens": "29",
           "delegator_shares": "29",
           "description": {
@@ -6227,7 +8182,7 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "347/10",
+          "tokens": "281/10",
           "delegator_shares": "347/9",
           "description": {
             "moniker": "NodeBreaker",
@@ -6251,14 +8206,39 @@
             "value": "yW/UYA7l6xOwS6/Upa4cZCiaPPR8m7ih9NL4LDj3kt0="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "11",
+          "status": 0,
+          "tokens": "99/10",
           "delegator_shares": "11",
           "description": {
             "moniker": "TEAM_Korea_No.1",
             "identity": "",
             "website": "",
             "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1h7yr9pm3ffhq5djx75ycmumvpwlxhulss3e2yv",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "ePxcUeuPx3UiqfCPLioJjYwDgk/E7HGhatxfzl4/vI0="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "1340",
+          "delegator_shares": "1340",
+          "description": {
+            "moniker": "shensi-cosmos-validator",
+            "identity": "6F7EB61673529227",
+            "website": "https://validator.shensi.com",
+            "details": "Shensi Public Chain"
           },
           "bond_height": "0",
           "bond_intra_tx_counter": 0,
@@ -6277,7 +8257,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "12",
+          "tokens": "54/5",
           "delegator_shares": "12",
           "description": {
             "moniker": "eon-sent-01",
@@ -6326,9 +8306,9 @@
             "value": "wwgoAZrmpxQRYXHDXRUBX4kX7IBTpDsvuyxFfKuhEZI="
           },
           "revoked": false,
-          "status": 0,
-          "tokens": "10",
-          "delegator_shares": "10",
+          "status": 2,
+          "tokens": "20",
+          "delegator_shares": "20",
           "description": {
             "moniker": "fourthstate",
             "identity": "[do-not-modify]",
@@ -6352,7 +8332,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "90",
+          "tokens": "81",
           "delegator_shares": "100",
           "description": {
             "moniker": "buckster",
@@ -6420,6 +8400,31 @@
           "prev_bonded_tokens": "0"
         },
         {
+          "owner": "cosmosaccaddr1e32c8x0dcgv0kz6qr7xceerne2gznt5s8e8tr7",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "IS4skJndcdUJqSxMPkMmOD4rGaySvA8JJZk/TBxN7dQ="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "32",
+          "delegator_shares": "32",
+          "description": {
+            "moniker": "hallophen",
+            "identity": "[do-not-modify]",
+            "website": "altheamesh.com",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
           "owner": "cosmosaccaddr1ejhdq2gpj20schz5n2r7lyxt6pwp2usahaf3wz",
           "pub_key": {
             "type": "tendermint/PubKeyEd25519",
@@ -6427,7 +8432,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "25",
+          "tokens": "45/2",
           "delegator_shares": "25",
           "description": {
             "moniker": "wancloud",
@@ -6451,8 +8456,8 @@
             "value": "z4VrDRaACHkmiCZr5fZmCo5awgV3Bi16HMDYjU9EKPY="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "20",
+          "status": 0,
+          "tokens": "18",
           "delegator_shares": "20",
           "description": {
             "moniker": "monochord",
@@ -6477,8 +8482,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "200",
-          "delegator_shares": "200",
+          "tokens": "400",
+          "delegator_shares": "400",
           "description": {
             "moniker": "kochacolaj",
             "identity": "",
@@ -6502,13 +8507,63 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "63000023/500000",
-          "delegator_shares": "63000023/500000",
+          "tokens": "64650023/500000",
+          "delegator_shares": "4428528062450529/30825011500000",
           "description": {
             "moniker": "luigi001",
             "identity": "",
             "website": "",
             "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr16yxdmg8w5vc038cg0myh0w32s4h74ch59j67u6",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "AFnJW89yDemEVNQFHXagLxvI3FCsvBlw5l4yfZujbH4="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "27/10",
+          "delegator_shares": "3",
+          "description": {
+            "moniker": "Forbole-2",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr16dfl4ruvt54qyhyf26fwmle62jnywp7mu9akt7",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "P8qibtjNrOXNb8HlESQEPpdGeZrN43xmEfer7NJQ/2A="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "18",
+          "delegator_shares": "20",
+          "description": {
+            "moniker": "magoo",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
           },
           "bond_height": "0",
           "bond_intra_tx_counter": 0,
@@ -6527,10 +8582,35 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "20",
+          "tokens": "18",
           "delegator_shares": "20",
           "description": {
             "moniker": "0xMrManlu-Validator",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1640dsytftqn2uxk4prlfxjvn46nnp8wxt5s0ye",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "puPhAssdpqKTl8h1eZqSScYPjSSQJA/EMEnFLh3GyjE="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "117",
+          "delegator_shares": "130",
+          "description": {
+            "moniker": "wancloud02",
             "identity": "[do-not-modify]",
             "website": "[do-not-modify]",
             "details": "[do-not-modify]"
@@ -6552,8 +8632,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "528",
-          "delegator_shares": "528",
+          "tokens": "1008",
+          "delegator_shares": "1008",
           "description": {
             "moniker": "lunamint",
             "identity": "",
@@ -6576,14 +8656,64 @@
             "value": "72qgkZiyI788usRQ/tGmbs3TzU9t4quP+WX7rxPX/7I="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "99/2",
+          "status": 0,
+          "tokens": "89/2",
           "delegator_shares": "55",
           "description": {
             "moniker": "spark",
             "identity": "",
             "website": "",
             "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1mtez787cl6phgkylneq9wjj3d6letn0247lhf5",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "sQfjU1RODJ/QxQLhZ3AabdaH3aNLz3PaERf2kwEFWRg="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "309",
+          "delegator_shares": "1030",
+          "description": {
+            "moniker": "wxvali_slave",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 3,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1mvmdrtuxjttv90wssvh6xreeguvq8tksm789m5",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "9eFY/cE8j9uIbxZIjys8e6O0T5E3xKvllw7EFBETY2k="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "1579/10",
+          "delegator_shares": "650/3",
+          "description": {
+            "moniker": "cm-gaia-2",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
           },
           "bond_height": "0",
           "bond_intra_tx_counter": 0,
@@ -6620,6 +8750,81 @@
           "prev_bonded_tokens": "0"
         },
         {
+          "owner": "cosmosaccaddr1uffeh2wq0lrvwm7z77c595v040q4kk4g3v8vte",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "pggq0WUTlsiA8cBiptRgxlw4WUG2GmXfLQxkbMbCBPk="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "155",
+          "delegator_shares": "155",
+          "description": {
+            "moniker": "wecosmos",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1uknhjkw775zp5xkztc4clxr240ut59ek5seerx",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "8onIV6eJHhGmQObsD7HRUdG/6OC2ogxCRIdLyh1HXxg="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "45",
+          "delegator_shares": "50",
+          "description": {
+            "moniker": "east_test",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1u6ddcsjueax884l3tfrs66497c7g86sk3vfmqj",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "0ZPHmftStU+DSqvnIleNyaFmBQsgWJwPC7vk4uF5u00="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "4913/2",
+          "delegator_shares": "24565/9",
+          "description": {
+            "moniker": "sentinel.co",
+            "identity": "[do-not-modify]",
+            "website": "https://sentinel.co/",
+            "details": "Sentinel-validator-2 on gaia-7005"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
           "owner": "cosmosaccaddr1umaajfgap5ef6yxvk5706kwk8j08l7wh6h9fp2",
           "pub_key": {
             "type": "tendermint/PubKeyEd25519",
@@ -6627,8 +8832,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "1150",
-          "delegator_shares": "1150",
+          "tokens": "1155",
+          "delegator_shares": "1155",
           "description": {
             "moniker": "iqlusion",
             "identity": "7843656AA22520BC",
@@ -6652,8 +8857,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "78",
-          "delegator_shares": "78",
+          "tokens": "4871/5",
+          "delegator_shares": "9742/9",
           "description": {
             "moniker": "bharvest-validator(KR1)",
             "identity": "[do-not-modify]",
@@ -6677,13 +8882,88 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "9/10",
+          "tokens": "4/5",
           "delegator_shares": "1",
           "description": {
             "moniker": "liangping-bj",
             "identity": "[do-not-modify]",
             "website": "[do-not-modify]",
             "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1artqm53zt7j7znm8cpgqzgp9jhlx0xrtle2pjr",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "yLIfj0Nm4P1dqnhE4qfh8YYKns1+Cs25WkE7NSrnmtk="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "9",
+          "delegator_shares": "10",
+          "description": {
+            "moniker": "art_Fvalid",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1agfqwpcxpl8s8pl3uhxhw7h0r05an60dmlgukx",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "PZcgDAjOlJunLVEj896yzbMUKiQzSj4k9Xeqt7votvo="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "9/10",
+          "delegator_shares": "1",
+          "description": {
+            "moniker": "baryon.network",
+            "identity": "[do-not-modify]",
+            "website": "[do-not-modify]",
+            "details": "[do-not-modify]"
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": null,
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "cosmosaccaddr1aaumwh9rc9ksh7dwuxux43jd93e7t4u88g5kg4",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "JREG9eji9gfJR2b61qMu8jNZ835ezPY2A4o+zjYMfDg="
+          },
+          "revoked": false,
+          "status": 2,
+          "tokens": "107",
+          "delegator_shares": "107",
+          "description": {
+            "moniker": "kamon-moniker",
+            "identity": "A6B9D417A70E5C33",
+            "website": "https://deroris.net/",
+            "details": "welcome to Deroris net"
           },
           "bond_height": "0",
           "bond_intra_tx_counter": 0,
@@ -6751,7 +9031,7 @@
             "value": "H0SIA/BU6Xj8oT5bQkvLpEITN3CqFLbMeBcQ72NZrAE="
           },
           "revoked": false,
-          "status": 0,
+          "status": 2,
           "tokens": "135",
           "delegator_shares": "150",
           "description": {
@@ -6777,7 +9057,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "19/2",
+          "tokens": "17/2",
           "delegator_shares": "95/9",
           "description": {
             "moniker": "gkrizek validator",
@@ -6827,7 +9107,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "27/10",
+          "tokens": "12/5",
           "delegator_shares": "3",
           "description": {
             "moniker": "SteakSquad",
@@ -6852,7 +9132,7 @@
           },
           "revoked": false,
           "status": 0,
-          "tokens": "5",
+          "tokens": "9/2",
           "delegator_shares": "5",
           "description": {
             "moniker": "snatico",
@@ -6877,8 +9157,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "1151",
-          "delegator_shares": "1151",
+          "tokens": "1231",
+          "delegator_shares": "1231",
           "description": {
             "moniker": "Nylira Validator",
             "identity": "6A0D65E29A4CBC8E",
@@ -6902,8 +9182,8 @@
           },
           "revoked": false,
           "status": 2,
-          "tokens": "2313/5",
-          "delegator_shares": "514",
+          "tokens": "2528/5",
+          "delegator_shares": "5056/9",
           "description": {
             "moniker": "crytter",
             "identity": "C1FBCF0D1850E5DD",
@@ -6972,15 +9252,39 @@
       ],
       "bonds": [
         {
+          "delegator_addr": "cosmosaccaddr1qz9pauujxsypyu3q9n0t6mydsfwev50j8g8ras",
+          "validator_addr": "cosmosaccaddr19h5dc2c76h4ryvl9zl9373mk52ka77vy5g48gs",
+          "shares": "12",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1qz9pauujxsypyu3q9n0t6mydsfwev50j8g8ras",
+          "validator_addr": "cosmosaccaddr100ztxxmwkqr44jts3a543xhme7vjychzyagz3g",
+          "shares": "17",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1qv68kxwmarzefrcgnu4trdrznslzdtra7gfxhy",
+          "validator_addr": "cosmosaccaddr1qv68kxwmarzefrcgnu4trdrznslzdtra7gfxhy",
+          "shares": "7",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1qvut6w8v5fccephuv502qhmvhn7hy6cnddrdyf",
           "validator_addr": "cosmosaccaddr1qvut6w8v5fccephuv502qhmvhn7hy6cnddrdyf",
-          "shares": "10",
+          "shares": "110",
           "height": "0"
         },
         {
           "delegator_addr": "cosmosaccaddr1qsvdcgf7zyue0usl2tt3ptn0x6lzs0ua6y5dgs",
           "validator_addr": "cosmosaccaddr1l0qw5znfd6e8pshpjvyghjjzyr4l6ymla080lt",
           "shares": "1",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1qjzjfn55hygaak9l9x04z792mexce2zd2gvkzk",
+          "validator_addr": "cosmosaccaddr1qjzjfn55hygaak9l9x04z792mexce2zd2gvkzk",
+          "shares": "548/3",
           "height": "0"
         },
         {
@@ -7011,6 +9315,18 @@
           "delegator_addr": "cosmosaccaddr1qe82wd64ncuh8z05kmwpqhc5vkq4wsxqv67cvz",
           "validator_addr": "cosmosaccaddr1y6d5g4s75s9m8xemrs6d9am2cef4nm3ku0s5lv",
           "shares": "6",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1qmw6d8uh3rs9uj8c0tztznu9x4zezekq89635d",
+          "validator_addr": "cosmosaccaddr16rcrnftjyl2mctz78825ng8tx5ss22jf6jcp9l",
+          "shares": "5",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1qarnnunjrsd66yuz65ugsl7pm3v3hxrxd5jvaq",
+          "validator_addr": "cosmosaccaddr1qarnnunjrsd66yuz65ugsl7pm3v3hxrxd5jvaq",
+          "shares": "60",
           "height": "0"
         },
         {
@@ -7050,6 +9366,12 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1p7jg2t7xrjmxpu94tp9wawmnx64ds8skfmsqe0",
+          "validator_addr": "cosmosaccaddr18thamkhnj9wz8pa4nhnp9rldprgant57ryzag7",
+          "shares": "50/9",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1p75wzde5z2ataefw65j3mtrm25kha779yfrvt6",
           "validator_addr": "cosmosaccaddr1p75wzde5z2ataefw65j3mtrm25kha779yfrvt6",
           "shares": "49",
@@ -7068,6 +9390,12 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1zvyjt8aw6xgqfxmh7mguvntudrz4llln2dyaam",
+          "validator_addr": "cosmosaccaddr16rcrnftjyl2mctz78825ng8tx5ss22jf6jcp9l",
+          "shares": "1",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1zds6r7jyxyxcpf05r5yyyy3u8q2rvj9kkc6vcv",
           "validator_addr": "cosmosaccaddr1zds6r7jyxyxcpf05r5yyyy3u8q2rvj9kkc6vcv",
           "shares": "100",
@@ -7077,6 +9405,12 @@
           "delegator_addr": "cosmosaccaddr1zkupr83hrzkn3up5elktzcq3tuft8nxseu9x80",
           "validator_addr": "cosmosaccaddr1zkupr83hrzkn3up5elktzcq3tuft8nxseu9x80",
           "shares": "150",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1zagese3pa7k002epyy8cpt783pe2p2n5qprug6",
+          "validator_addr": "cosmosaccaddr1xlkah6d2pcr8rchunmn6qdmdptr02844eee6le",
+          "shares": "30",
           "height": "0"
         },
         {
@@ -7110,15 +9444,33 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1r4lzzzf683ec70fxfd9a3jmczxxkdxpfafz4ar",
+          "validator_addr": "cosmosaccaddr1r4lzzzf683ec70fxfd9a3jmczxxkdxpfafz4ar",
+          "shares": "10",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1rcp29q3hpd246n6qak7jluqep4v006cdj2zse3",
           "validator_addr": "cosmosaccaddr1rcp29q3hpd246n6qak7jluqep4v006cdj2zse3",
           "shares": "970",
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1yqpa5vhs8nq9mguyd2j5k5kn7dlqlgmjl4h67x",
+          "validator_addr": "cosmosaccaddr1yqpa5vhs8nq9mguyd2j5k5kn7dlqlgmjl4h67x",
+          "shares": "2",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1ypk9spe0lsta44f3ay6rqrzygh90ekayxcxcfn",
           "validator_addr": "cosmosaccaddr1rww4u22qqf2rhw02fww63t539d3ppeur3ywff3",
           "shares": "70",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1yfd9a4sqm8jm7lq932jc6fu8k86f394tgc2sku",
+          "validator_addr": "cosmosaccaddr1yfd9a4sqm8jm7lq932jc6fu8k86f394tgc2sku",
+          "shares": "10",
           "height": "0"
         },
         {
@@ -7152,6 +9504,12 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1y32vvanvz88ajamugxrgl7vnvf0vtmjg5wxg7f",
+          "validator_addr": "cosmosaccaddr1y32vvanvz88ajamugxrgl7vnvf0vtmjg5wxg7f",
+          "shares": "20",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1yj87w5yjftyar3mhuefg569q4v26rfp4ntacc5",
           "validator_addr": "cosmosaccaddr18thamkhnj9wz8pa4nhnp9rldprgant57ryzag7",
           "shares": "100/9",
@@ -7164,15 +9522,81 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1y7n3emnw6mkxutvs26rczynpvq84ddqu332hlv",
+          "validator_addr": "cosmosaccaddr1y7n3emnw6mkxutvs26rczynpvq84ddqu332hlv",
+          "shares": "50",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1ylz6tqpgz0flpl6h5szmj6mmzyr598rq7heuye",
+          "validator_addr": "cosmosaccaddr1ylz6tqpgz0flpl6h5szmj6mmzyr598rq7heuye",
+          "shares": "20000/81",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr19q6y4mk3x668vm2jx0pu6e0jfy5a39jz0qwvxt",
+          "validator_addr": "cosmosaccaddr19q6y4mk3x668vm2jx0pu6e0jfy5a39jz0qwvxt",
+          "shares": "60",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr19pkt3aeaprl8dt9x5c77u9unkrndfd3ze40tj9",
           "validator_addr": "cosmosaccaddr19pkt3aeaprl8dt9x5c77u9unkrndfd3ze40tj9",
           "shares": "5",
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr19rlhdmplhnmvy3jmcd835awask4l46nvp3pt4g",
+          "validator_addr": "cosmosaccaddr19rlhdmplhnmvy3jmcd835awask4l46nvp3pt4g",
+          "shares": "30",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1990ceh7wh50j2z6wq08ekzez7yr6hpwtpap9ku",
+          "validator_addr": "cosmosaccaddr12ceualfg92x7du73mtcv0zya4nxvq3tl2m52uz",
+          "shares": "15",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1990ceh7wh50j2z6wq08ekzez7yr6hpwtpap9ku",
+          "validator_addr": "cosmosaccaddr126ayk3hse5zvk9gxfmpsjr9565ef72pv9g20yx",
+          "shares": "90100/65691",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1990ceh7wh50j2z6wq08ekzez7yr6hpwtpap9ku",
+          "validator_addr": "cosmosaccaddr16rcrnftjyl2mctz78825ng8tx5ss22jf6jcp9l",
+          "shares": "68500023/61650023",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1990ceh7wh50j2z6wq08ekzez7yr6hpwtpap9ku",
+          "validator_addr": "cosmosaccaddr1u6ddcsjueax884l3tfrs66497c7g86sk3vfmqj",
+          "shares": "10/9",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr19dfkpwfj3mls96ny2ulgq7cf0dh5xs5a05pn6e",
+          "validator_addr": "cosmosaccaddr19dfkpwfj3mls96ny2ulgq7cf0dh5xs5a05pn6e",
+          "shares": "3",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr193vn0gk3nsmjkxwz78gce8e8mkmagmvulpg5jt",
           "validator_addr": "cosmosaccaddr193vn0gk3nsmjkxwz78gce8e8mkmagmvulpg5jt",
           "shares": "1020",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr19n4s8fx9hr0j2dttr4fg48wr7kpxxste7evjzk",
+          "validator_addr": "cosmosaccaddr19n4s8fx9hr0j2dttr4fg48wr7kpxxste7evjzk",
+          "shares": "230",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr19ncpp07tuqqgu2kjp4wq2zlt3s0q5f9ywvhwuw",
+          "validator_addr": "cosmosaccaddr19ncpp07tuqqgu2kjp4wq2zlt3s0q5f9ywvhwuw",
+          "shares": "110",
           "height": "0"
         },
         {
@@ -7188,15 +9612,27 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr19h5dc2c76h4ryvl9zl9373mk52ka77vy5g48gs",
+          "validator_addr": "cosmosaccaddr19h5dc2c76h4ryvl9zl9373mk52ka77vy5g48gs",
+          "shares": "1",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr19uhnhct0p45ek6qxp3cjjrjtz4pacwcsgzvpuj",
           "validator_addr": "cosmosaccaddr19uhnhct0p45ek6qxp3cjjrjtz4pacwcsgzvpuj",
-          "shares": "456",
+          "shares": "956",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1xtkfzzty24l66a0f9guqt4w8k0p66fpat7rlf2",
+          "validator_addr": "cosmosaccaddr1640dsytftqn2uxk4prlfxjvn46nnp8wxt5s0ye",
+          "shares": "10",
           "height": "0"
         },
         {
           "delegator_addr": "cosmosaccaddr1xvzw5nz4mp5s5cat7rancc248v5wpecrlqtw6n",
           "validator_addr": "cosmosaccaddr1xvzw5nz4mp5s5cat7rancc248v5wpecrlqtw6n",
-          "shares": "40",
+          "shares": "121",
           "height": "0"
         },
         {
@@ -7226,13 +9662,13 @@
         {
           "delegator_addr": "cosmosaccaddr1xlkah6d2pcr8rchunmn6qdmdptr02844eee6le",
           "validator_addr": "cosmosaccaddr1xlkah6d2pcr8rchunmn6qdmdptr02844eee6le",
-          "shares": "2",
+          "shares": "1",
           "height": "0"
         },
         {
           "delegator_addr": "cosmosaccaddr18zwvgsrl3gc8y0fhzdev378u9gn37d9024njy0",
           "validator_addr": "cosmosaccaddr18zwvgsrl3gc8y0fhzdev378u9gn37d9024njy0",
-          "shares": "15",
+          "shares": "8000/9",
           "height": "0"
         },
         {
@@ -7242,9 +9678,21 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr18raps2wmm63n2gldsrqc5x5z023p559l7r5vv6",
+          "validator_addr": "cosmosaccaddr18raps2wmm63n2gldsrqc5x5z023p559l7r5vv6",
+          "shares": "50",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr182rhfxwz8ycec8sjq5frdg8qpwcnwrclu2gnya",
+          "validator_addr": "cosmosaccaddr1640dsytftqn2uxk4prlfxjvn46nnp8wxt5s0ye",
+          "shares": "10",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1825jrcgu3keurjlnpsujx9y8lrzgddjfsmax0n",
           "validator_addr": "cosmosaccaddr1825jrcgu3keurjlnpsujx9y8lrzgddjfsmax0n",
-          "shares": "599/9",
+          "shares": "2099/9",
           "height": "0"
         },
         {
@@ -7284,6 +9732,12 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr18tkxwzhyn4a5ss63vttwpespvm7kxm895m9ppf",
+          "validator_addr": "cosmosaccaddr1l0qw5znfd6e8pshpjvyghjjzyr4l6ymla080lt",
+          "shares": "40",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr18thamkhnj9wz8pa4nhnp9rldprgant57ryzag7",
           "validator_addr": "cosmosaccaddr182ujqw3r8p5fffjqkf0rxzj29pg5q96nxd2khq",
           "shares": "15",
@@ -7308,6 +9762,12 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr183tl5h22xfz8e8n5dp3fphu55kltfxxtr54vyw",
+          "validator_addr": "cosmosaccaddr1uffeh2wq0lrvwm7z77c595v040q4kk4g3v8vte",
+          "shares": "50",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr18ja9lhun5le78j36s8rs2je6z4pzc6far7xfuz",
           "validator_addr": "cosmosaccaddr163emaq8ahwp25pmfqrjaz3c7wm9vtytcwmlphg",
           "shares": "10",
@@ -7316,13 +9776,19 @@
         {
           "delegator_addr": "cosmosaccaddr185n9jln2g4w79w39m0g85x2tns6uekqg99tq7u",
           "validator_addr": "cosmosaccaddr185n9jln2g4w79w39m0g85x2tns6uekqg99tq7u",
-          "shares": "101",
+          "shares": "170",
           "height": "0"
         },
         {
           "delegator_addr": "cosmosaccaddr18cswjuy9qzwcjnkmvp32ryyht0rlaueazynegn",
           "validator_addr": "cosmosaccaddr1emaa7mwgpnpmc7yptm728ytp9quamsvu9rk4hp",
           "shares": "20",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr18cut539f6w9xewnz0fcxa95784pg4mk5ghk3fz",
+          "validator_addr": "cosmosaccaddr1640dsytftqn2uxk4prlfxjvn46nnp8wxt5s0ye",
+          "shares": "10",
           "height": "0"
         },
         {
@@ -7344,9 +9810,27 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1g8xwmm3tp7pgdrmjgt4fm7d26anrrnle4yavuw",
+          "validator_addr": "cosmosaccaddr1g8xwmm3tp7pgdrmjgt4fm7d26anrrnle4yavuw",
+          "shares": "100",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1g6sc5t9t68vmcj3alk7dfqr54tvastpxac28k6",
           "validator_addr": "cosmosaccaddr1g6sc5t9t68vmcj3alk7dfqr54tvastpxac28k6",
           "shares": "100",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1fzqwytcm25gsxg67l2z3rtmskpx75u6l5a2mq7",
+          "validator_addr": "cosmosaccaddr16rcrnftjyl2mctz78825ng8tx5ss22jf6jcp9l",
+          "shares": "5",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1frdjhnkgvlq5s0v5unf9njzlshdtsruv4z3sey",
+          "validator_addr": "cosmosaccaddr18thamkhnj9wz8pa4nhnp9rldprgant57ryzag7",
+          "shares": "2017900/163449",
           "height": "0"
         },
         {
@@ -7364,13 +9848,25 @@
         {
           "delegator_addr": "cosmosaccaddr1fskmzyt2hr8usr3s65dq3rfur3fy6g2hjp23tm",
           "validator_addr": "cosmosaccaddr1fskmzyt2hr8usr3s65dq3rfur3fy6g2hjp23tm",
-          "shares": "300",
+          "shares": "1020",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1f4sah2y8r995wsazt2dw909akhdjvr4f9zv28r",
+          "validator_addr": "cosmosaccaddr1uffeh2wq0lrvwm7z77c595v040q4kk4g3v8vte",
+          "shares": "5",
           "height": "0"
         },
         {
           "delegator_addr": "cosmosaccaddr1fhfcs5npydv8s96wrk9p5ychctslu92t4n5qd4",
           "validator_addr": "cosmosaccaddr1fhfcs5npydv8s96wrk9p5ychctslu92t4n5qd4",
           "shares": "150",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr12qprqyxtxxlu7unncd9rrhmer5emg2pmrw27qk",
+          "validator_addr": "cosmosaccaddr12qprqyxtxxlu7unncd9rrhmer5emg2pmrw27qk",
+          "shares": "30",
           "height": "0"
         },
         {
@@ -7394,7 +9890,7 @@
         {
           "delegator_addr": "cosmosaccaddr120skmenn2a0ra8y6zassrxvnfc5rlme8rqarvs",
           "validator_addr": "cosmosaccaddr120skmenn2a0ra8y6zassrxvnfc5rlme8rqarvs",
-          "shares": "615",
+          "shares": "15",
           "height": "0"
         },
         {
@@ -7406,7 +9902,13 @@
         {
           "delegator_addr": "cosmosaccaddr126ayk3hse5zvk9gxfmpsjr9565ef72pv9g20yx",
           "validator_addr": "cosmosaccaddr126ayk3hse5zvk9gxfmpsjr9565ef72pv9g20yx",
-          "shares": "270",
+          "shares": "301889030/65691",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1t9rqvvys4zh300x93a6fr3h064gp9y8al7m4en",
+          "validator_addr": "cosmosaccaddr1t9rqvvys4zh300x93a6fr3h064gp9y8al7m4en",
+          "shares": "606",
           "height": "0"
         },
         {
@@ -7418,7 +9920,7 @@
         {
           "delegator_addr": "cosmosaccaddr1t9l4ztfwk0mp3za3x38yfqkernuclxwgdqzme6",
           "validator_addr": "cosmosaccaddr15rrxdflhq4744qt9m5ysstq3zpykhacf908eez",
-          "shares": "10",
+          "shares": "2196",
           "height": "0"
         },
         {
@@ -7442,7 +9944,31 @@
         {
           "delegator_addr": "cosmosaccaddr1t3afuz2kt99jz4pe5k4vjvkdmldn2x0lqzv83w",
           "validator_addr": "cosmosaccaddr1t3afuz2kt99jz4pe5k4vjvkdmldn2x0lqzv83w",
-          "shares": "210",
+          "shares": "295",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1t3afuz2kt99jz4pe5k4vjvkdmldn2x0lqzv83w",
+          "validator_addr": "cosmosaccaddr10505nl7yftsme9jk2glhjhta7w0475uva87paj",
+          "shares": "80/9",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1t3afuz2kt99jz4pe5k4vjvkdmldn2x0lqzv83w",
+          "validator_addr": "cosmosaccaddr157mg9hnhchfrqvk3enrvmvj29yhmlwf759xrgw",
+          "shares": "3",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1t3afuz2kt99jz4pe5k4vjvkdmldn2x0lqzv83w",
+          "validator_addr": "cosmosaccaddr1umaajfgap5ef6yxvk5706kwk8j08l7wh6h9fp2",
+          "shares": "5",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1t3lvwnp0rmfyc96c0qh6qa67nplpdhytr5dd59",
+          "validator_addr": "cosmosaccaddr1t3lvwnp0rmfyc96c0qh6qa67nplpdhytr5dd59",
+          "shares": "250",
           "height": "0"
         },
         {
@@ -7476,20 +10002,62 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1vlmpl003lzm4lq0vr94227l2u02n2y490gsc89",
+          "validator_addr": "cosmosaccaddr1aaumwh9rc9ksh7dwuxux43jd93e7t4u88g5kg4",
+          "shares": "3",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1dq7jt3pn7mrce2twac907jue7hjd0p0rgt3qnq",
           "validator_addr": "cosmosaccaddr1dq7jt3pn7mrce2twac907jue7hjd0p0rgt3qnq",
           "shares": "1",
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1dkm8z36m96k8aukg5rxnfpw46dt5mnmvsfuze2",
+          "validator_addr": "cosmosaccaddr1dkm8z36m96k8aukg5rxnfpw46dt5mnmvsfuze2",
+          "shares": "5",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1dcgqsyam6d0am5z2m7dufp7s9k2px2kcqaswxt",
+          "validator_addr": "cosmosaccaddr126ayk3hse5zvk9gxfmpsjr9565ef72pv9g20yx",
+          "shares": "450500/65691",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1dcgqsyam6d0am5z2m7dufp7s9k2px2kcqaswxt",
+          "validator_addr": "cosmosaccaddr16rcrnftjyl2mctz78825ng8tx5ss22jf6jcp9l",
+          "shares": "342500115/61650023",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1dl9mu7uya6mfsd80wyw2rgjmwjtk5ajjf8mxcz",
+          "validator_addr": "cosmosaccaddr1dl9mu7uya6mfsd80wyw2rgjmwjtk5ajjf8mxcz",
+          "shares": "30",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1dl0hk7064k5wp43zkllmd0p9pgu2mnra898gyh",
+          "validator_addr": "cosmosaccaddr1dl0hk7064k5wp43zkllmd0p9pgu2mnra898gyh",
+          "shares": "50",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1wf3sncgk7s2ykamrhy4etf09y94rrrg4k73wwr",
           "validator_addr": "cosmosaccaddr1wf3sncgk7s2ykamrhy4etf09y94rrrg4k73wwr",
-          "shares": "5",
+          "shares": "2045/9",
           "height": "0"
         },
         {
           "delegator_addr": "cosmosaccaddr1w2j930e3ueg8f365ff2t92m5lnp856fe47f3hy",
           "validator_addr": "cosmosaccaddr1w2j930e3ueg8f365ff2t92m5lnp856fe47f3hy",
+          "shares": "10",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1wd965wxzyl2krp67sdwddy4ep48xhsrdrq63rd",
+          "validator_addr": "cosmosaccaddr1640dsytftqn2uxk4prlfxjvn46nnp8wxt5s0ye",
           "shares": "10",
           "height": "0"
         },
@@ -7506,9 +10074,21 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1whqnxfj5fakx2tmjsja8y9ev7fqdzdldaesmx2",
+          "validator_addr": "cosmosaccaddr1640dsytftqn2uxk4prlfxjvn46nnp8wxt5s0ye",
+          "shares": "10",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1whxd48da3r56n8eecym8zg0c6xmf35fn2myart",
           "validator_addr": "cosmosaccaddr1whxd48da3r56n8eecym8zg0c6xmf35fn2myart",
           "shares": "1100",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1whd2u62u3zk7w09yuq4cz97fueq8e96qp69xz0",
+          "validator_addr": "cosmosaccaddr1whd2u62u3zk7w09yuq4cz97fueq8e96qp69xz0",
+          "shares": "20",
           "height": "0"
         },
         {
@@ -7526,7 +10106,7 @@
         {
           "delegator_addr": "cosmosaccaddr100ztxxmwkqr44jts3a543xhme7vjychzyagz3g",
           "validator_addr": "cosmosaccaddr100ztxxmwkqr44jts3a543xhme7vjychzyagz3g",
-          "shares": "4",
+          "shares": "14",
           "height": "0"
         },
         {
@@ -7632,9 +10212,27 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr104e3vqacz2kncw979dczttp5jwts3sacv3ksz7",
+          "validator_addr": "cosmosaccaddr1l0qw5znfd6e8pshpjvyghjjzyr4l6ymla080lt",
+          "shares": "40",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr106ccejx2h7hwzj9xxaz3hju22yyq5mfy4rydav",
+          "validator_addr": "cosmosaccaddr106ccejx2h7hwzj9xxaz3hju22yyq5mfy4rydav",
+          "shares": "110",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr10mfxvxjga3rxp5w93rx8jdxtt68j5qk0wv02hn",
           "validator_addr": "cosmosaccaddr10mfxvxjga3rxp5w93rx8jdxtt68j5qk0wv02hn",
           "shares": "10",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr10atd0mjtdt7uzk0jgr32c32semnh3xvu4nx77p",
+          "validator_addr": "cosmosaccaddr10atd0mjtdt7uzk0jgr32c32semnh3xvu4nx77p",
+          "shares": "5",
           "height": "0"
         },
         {
@@ -7644,15 +10242,93 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1st4262sfqk7jqdwp2s7gk2umm5yhexhjrew53z",
+          "validator_addr": "cosmosaccaddr1st4262sfqk7jqdwp2s7gk2umm5yhexhjrew53z",
+          "shares": "10",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1s4w7w56ymm5fnm25nhdvae5yuc5792zxfynq9h",
+          "validator_addr": "cosmosaccaddr1qkc3tghc3fms7eye7vtu0g0370epr4jkje2ne7",
+          "shares": "3",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1s4w7w56ymm5fnm25nhdvae5yuc5792zxfynq9h",
+          "validator_addr": "cosmosaccaddr1rvm0em6w3qkzcwnzf9hkqvksujl895dfww4ecn",
+          "shares": "10/3",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1s4w7w56ymm5fnm25nhdvae5yuc5792zxfynq9h",
+          "validator_addr": "cosmosaccaddr18thamkhnj9wz8pa4nhnp9rldprgant57ryzag7",
+          "shares": "201790/54483",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1s4w7w56ymm5fnm25nhdvae5yuc5792zxfynq9h",
+          "validator_addr": "cosmosaccaddr1ftrggumlvkesqny90par3gc9lp70yqhtlqucsk",
+          "shares": "3",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1s4w7w56ymm5fnm25nhdvae5yuc5792zxfynq9h",
+          "validator_addr": "cosmosaccaddr126ayk3hse5zvk9gxfmpsjr9565ef72pv9g20yx",
+          "shares": "100/27",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1s4w7w56ymm5fnm25nhdvae5yuc5792zxfynq9h",
+          "validator_addr": "cosmosaccaddr1hfygmryre7r8m9pfqmc85y7kw7ejphmp59k2x8",
+          "shares": "10/3",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1s4w7w56ymm5fnm25nhdvae5yuc5792zxfynq9h",
+          "validator_addr": "cosmosaccaddr1u6ddcsjueax884l3tfrs66497c7g86sk3vfmqj",
+          "shares": "10/3",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1s4w7w56ymm5fnm25nhdvae5yuc5792zxfynq9h",
+          "validator_addr": "cosmosaccaddr1ul3ef4trvjfmgaptu70ed4fjlky2aa49t4pfle",
+          "shares": "10/3",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1s4w7w56ymm5fnm25nhdvae5yuc5792zxfynq9h",
+          "validator_addr": "cosmosaccaddr1l3agyg568dsk2r9v7f35wge3yr85ampza7cdfj",
+          "shares": "10/3",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1shuqhpl273t96yg6nnqvyfeewj3ew3mdcwvcnu",
           "validator_addr": "cosmosaccaddr1shuqhpl273t96yg6nnqvyfeewj3ew3mdcwvcnu",
           "shares": "1130",
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr13q0fl9qakvt5zkh6qurlrur4xq7gullkv9f5zq",
+          "validator_addr": "cosmosaccaddr13q0fl9qakvt5zkh6qurlrur4xq7gullkv9f5zq",
+          "shares": "10",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr13psmeywshfyfcg3tr5l4qm968smtkcu8um0nqn",
+          "validator_addr": "cosmosaccaddr13psmeywshfyfcg3tr5l4qm968smtkcu8um0nqn",
+          "shares": "10",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr13rt2suxfgefcquy9pveuc5uxfayy5rscr4vld7",
           "validator_addr": "cosmosaccaddr13rt2suxfgefcquy9pveuc5uxfayy5rscr4vld7",
-          "shares": "159",
+          "shares": "359",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr13fw4ff9u2qftsjj39mda54ufrpjs77q0ke6m49",
+          "validator_addr": "cosmosaccaddr13fw4ff9u2qftsjj39mda54ufrpjs77q0ke6m49",
+          "shares": "5",
           "height": "0"
         },
         {
@@ -7677,6 +10353,12 @@
           "delegator_addr": "cosmosaccaddr13dre54wd7md0wg77x5fj5scj5u20e6stvdr829",
           "validator_addr": "cosmosaccaddr12ceualfg92x7du73mtcv0zya4nxvq3tl2m52uz",
           "shares": "7",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr13lcax0d224sch59zz76m7n60nw0qfzty957l3s",
+          "validator_addr": "cosmosaccaddr14sqp5mqtmfjdk9khae6lkfytwj9crtunpzr8f7",
+          "shares": "200/9",
           "height": "0"
         },
         {
@@ -7764,6 +10446,12 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1n0l69ax723z2n060eeh357c0vsz2kagf06vscz",
+          "validator_addr": "cosmosaccaddr1mvmdrtuxjttv90wssvh6xreeguvq8tksm789m5",
+          "shares": "500/3",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1nnyel6v0kx8zmfh9edmre3ua4dt9306cfxsxgd",
           "validator_addr": "cosmosaccaddr1nnyel6v0kx8zmfh9edmre3ua4dt9306cfxsxgd",
           "shares": "100",
@@ -7790,7 +10478,13 @@
         {
           "delegator_addr": "cosmosaccaddr15rrxdflhq4744qt9m5ysstq3zpykhacf908eez",
           "validator_addr": "cosmosaccaddr15rrxdflhq4744qt9m5ysstq3zpykhacf908eez",
-          "shares": "160",
+          "shares": "313",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr15yqm96jm0mhlluerr2ze0u369vqjdhfye2f9e9",
+          "validator_addr": "cosmosaccaddr1640dsytftqn2uxk4prlfxjvn46nnp8wxt5s0ye",
+          "shares": "10",
           "height": "0"
         },
         {
@@ -7803,6 +10497,12 @@
           "delegator_addr": "cosmosaccaddr15wkl5rq6uk8qdnpehdkp7clng255e06z2p9lfk",
           "validator_addr": "cosmosaccaddr15wkl5rq6uk8qdnpehdkp7clng255e06z2p9lfk",
           "shares": "20",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr15nhcasamcyav7gs34nezq0r0g9zyswrzh6gt3f",
+          "validator_addr": "cosmosaccaddr1mvmdrtuxjttv90wssvh6xreeguvq8tksm789m5",
+          "shares": "30",
           "height": "0"
         },
         {
@@ -7850,13 +10550,7 @@
         {
           "delegator_addr": "cosmosaccaddr14sqp5mqtmfjdk9khae6lkfytwj9crtunpzr8f7",
           "validator_addr": "cosmosaccaddr14sqp5mqtmfjdk9khae6lkfytwj9crtunpzr8f7",
-          "shares": "5",
-          "height": "0"
-        },
-        {
-          "delegator_addr": "cosmosaccaddr14e774gfzt5l9ka766ehfgu6n5hgy9f3sehzyv8",
-          "validator_addr": "cosmosaccaddr14e774gfzt5l9ka766ehfgu6n5hgy9f3sehzyv8",
-          "shares": "1150",
+          "shares": "2045/9",
           "height": "0"
         },
         {
@@ -7878,9 +10572,21 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1k5ah4mpy8ykzp2mpcvapnyv6gemp35zuyhw8sy",
+          "validator_addr": "cosmosaccaddr1k5ah4mpy8ykzp2mpcvapnyv6gemp35zuyhw8sy",
+          "shares": "40",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1hqclw9xcymkhtrazzq9x576v9khhe6j9ja3jp0",
           "validator_addr": "cosmosaccaddr1h4q0xkdg30cl9vw0u8ejm0rs337dszy98gnd4a",
           "shares": "2",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1hydk58dtxr87ml34xqc07ph2h66yt2f0rrhyt8",
+          "validator_addr": "cosmosaccaddr1hydk58dtxr87ml34xqc07ph2h66yt2f0rrhyt8",
+          "shares": "50",
           "height": "0"
         },
         {
@@ -7920,6 +10626,12 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1h7yr9pm3ffhq5djx75ycmumvpwlxhulss3e2yv",
+          "validator_addr": "cosmosaccaddr1h7yr9pm3ffhq5djx75ycmumvpwlxhulss3e2yv",
+          "shares": "1340",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1cze0acxhmpx26awlc98h2v33ay95k232yenkqx",
           "validator_addr": "cosmosaccaddr1cze0acxhmpx26awlc98h2v33ay95k232yenkqx",
           "shares": "12",
@@ -7934,7 +10646,7 @@
         {
           "delegator_addr": "cosmosaccaddr1cy5t4e62z4h7r74cn7vkylx77n5s4hds2xeud6",
           "validator_addr": "cosmosaccaddr1cy5t4e62z4h7r74cn7vkylx77n5s4hds2xeud6",
-          "shares": "10",
+          "shares": "20",
           "height": "0"
         },
         {
@@ -7956,6 +10668,18 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1c7r8w934puc05af2yssgwsdu3w4vgp6a5p2xaz",
+          "validator_addr": "cosmosaccaddr1640dsytftqn2uxk4prlfxjvn46nnp8wxt5s0ye",
+          "shares": "10",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1ezlvjcfq5s6fzrzp0rgrfudkte280dy528v93m",
+          "validator_addr": "cosmosaccaddr1640dsytftqn2uxk4prlfxjvn46nnp8wxt5s0ye",
+          "shares": "10",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1eyd6g0h5h96heegs42djrptlq9zflx3q2cndmp",
           "validator_addr": "cosmosaccaddr1y2z20pwqu5qpclque3pqkguruvheum2djtzjw3",
           "shares": "30",
@@ -7974,9 +10698,27 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1e078whe3xwhagy2hjjsht36tq3uehz3v2cs2n5",
+          "validator_addr": "cosmosaccaddr1640dsytftqn2uxk4prlfxjvn46nnp8wxt5s0ye",
+          "shares": "10",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1e3qm8jd9357zhdemwnaafmf0wy3f4yqmd307c2",
           "validator_addr": "cosmosaccaddr1e3qm8jd9357zhdemwnaafmf0wy3f4yqmd307c2",
           "shares": "392",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1e32c8x0dcgv0kz6qr7xceerne2gznt5s8e8tr7",
+          "validator_addr": "cosmosaccaddr1e32c8x0dcgv0kz6qr7xceerne2gznt5s8e8tr7",
+          "shares": "32",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1ejhdq2gpj20schz5n2r7lyxt6pwp2usahaf3wz",
+          "validator_addr": "cosmosaccaddr15rrxdflhq4744qt9m5ysstq3zpykhacf908eez",
+          "shares": "3",
           "height": "0"
         },
         {
@@ -7988,13 +10730,31 @@
         {
           "delegator_addr": "cosmosaccaddr1emaa7mwgpnpmc7yptm728ytp9quamsvu9rk4hp",
           "validator_addr": "cosmosaccaddr1emaa7mwgpnpmc7yptm728ytp9quamsvu9rk4hp",
-          "shares": "180",
+          "shares": "380",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1eu22vuernyw7yemd29lnkmd4x2l5grvx9kh6he",
+          "validator_addr": "cosmosaccaddr1640dsytftqn2uxk4prlfxjvn46nnp8wxt5s0ye",
+          "shares": "10",
           "height": "0"
         },
         {
           "delegator_addr": "cosmosaccaddr16rcrnftjyl2mctz78825ng8tx5ss22jf6jcp9l",
           "validator_addr": "cosmosaccaddr16rcrnftjyl2mctz78825ng8tx5ss22jf6jcp9l",
           "shares": "50500023/500000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr16yxdmg8w5vc038cg0myh0w32s4h74ch59j67u6",
+          "validator_addr": "cosmosaccaddr16yxdmg8w5vc038cg0myh0w32s4h74ch59j67u6",
+          "shares": "3",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr16yk2su2ndeetfqvra5cwwcf3sk59yjagyz99a8",
+          "validator_addr": "cosmosaccaddr1640dsytftqn2uxk4prlfxjvn46nnp8wxt5s0ye",
+          "shares": "10",
           "height": "0"
         },
         {
@@ -8010,6 +10770,12 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr16dfl4ruvt54qyhyf26fwmle62jnywp7mu9akt7",
+          "validator_addr": "cosmosaccaddr16dfl4ruvt54qyhyf26fwmle62jnywp7mu9akt7",
+          "shares": "20",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr160836cl5pqyy4mmk2k5u5v5xwcuztc8fksrk3k",
           "validator_addr": "cosmosaccaddr1jkmn6asju47zuuzrf8rjt7sllaj5cx4kueyv8p",
           "shares": "10",
@@ -8022,9 +10788,15 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1640dsytftqn2uxk4prlfxjvn46nnp8wxt5s0ye",
+          "validator_addr": "cosmosaccaddr1640dsytftqn2uxk4prlfxjvn46nnp8wxt5s0ye",
+          "shares": "10",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr164jntjfk9zs8x29mc27qansfwvjqs60gj6ermu",
           "validator_addr": "cosmosaccaddr164jntjfk9zs8x29mc27qansfwvjqs60gj6ermu",
-          "shares": "500",
+          "shares": "980",
           "height": "0"
         },
         {
@@ -8043,6 +10815,12 @@
           "delegator_addr": "cosmosaccaddr1mx36cmexzz6dxntf6lxpsdsf8u7kuzerh07m4s",
           "validator_addr": "cosmosaccaddr1fskmzyt2hr8usr3s65dq3rfur3fy6g2hjp23tm",
           "shares": "100",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1mtez787cl6phgkylneq9wjj3d6letn0247lhf5",
+          "validator_addr": "cosmosaccaddr1mtez787cl6phgkylneq9wjj3d6letn0247lhf5",
+          "shares": "1030",
           "height": "0"
         },
         {
@@ -8070,6 +10848,12 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1mvmdrtuxjttv90wssvh6xreeguvq8tksm789m5",
+          "validator_addr": "cosmosaccaddr1mvmdrtuxjttv90wssvh6xreeguvq8tksm789m5",
+          "shares": "20",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1mwmcpq5nhaen8zyy86mrrept2gmp0z5peapkhu",
           "validator_addr": "cosmosaccaddr1mwmcpq5nhaen8zyy86mrrept2gmp0z5peapkhu",
           "shares": "147",
@@ -8088,9 +10872,33 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1uffeh2wq0lrvwm7z77c595v040q4kk4g3v8vte",
+          "validator_addr": "cosmosaccaddr1uffeh2wq0lrvwm7z77c595v040q4kk4g3v8vte",
+          "shares": "100",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1u374sn4c4arc8nsnpqdaqm2s5n70gpg6xvw4ny",
+          "validator_addr": "cosmosaccaddr1640dsytftqn2uxk4prlfxjvn46nnp8wxt5s0ye",
+          "shares": "10",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1u40w3tq6w9cycgdpy4s692e92k03wnt8824zhp",
           "validator_addr": "cosmosaccaddr12ceualfg92x7du73mtcv0zya4nxvq3tl2m52uz",
           "shares": "3",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1uknhjkw775zp5xkztc4clxr240ut59ek5seerx",
+          "validator_addr": "cosmosaccaddr1uknhjkw775zp5xkztc4clxr240ut59ek5seerx",
+          "shares": "50",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1u6ddcsjueax884l3tfrs66497c7g86sk3vfmqj",
+          "validator_addr": "cosmosaccaddr1u6ddcsjueax884l3tfrs66497c7g86sk3vfmqj",
+          "shares": "2725",
           "height": "0"
         },
         {
@@ -8162,7 +10970,7 @@
         {
           "delegator_addr": "cosmosaccaddr1ul3ef4trvjfmgaptu70ed4fjlky2aa49t4pfle",
           "validator_addr": "cosmosaccaddr1ul3ef4trvjfmgaptu70ed4fjlky2aa49t4pfle",
-          "shares": "53",
+          "shares": "9487/9",
           "height": "0"
         },
         {
@@ -8172,9 +10980,27 @@
           "height": "0"
         },
         {
+          "delegator_addr": "cosmosaccaddr1artqm53zt7j7znm8cpgqzgp9jhlx0xrtle2pjr",
+          "validator_addr": "cosmosaccaddr1artqm53zt7j7znm8cpgqzgp9jhlx0xrtle2pjr",
+          "shares": "10",
+          "height": "0"
+        },
+        {
           "delegator_addr": "cosmosaccaddr1a8ppz2vh0zjfh8vaqckp67ct0ajm9crv0t3v0g",
           "validator_addr": "cosmosaccaddr164jntjfk9zs8x29mc27qansfwvjqs60gj6ermu",
           "shares": "10",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1agfqwpcxpl8s8pl3uhxhw7h0r05an60dmlgukx",
+          "validator_addr": "cosmosaccaddr1agfqwpcxpl8s8pl3uhxhw7h0r05an60dmlgukx",
+          "shares": "1",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "cosmosaccaddr1aaumwh9rc9ksh7dwuxux43jd93e7t4u88g5kg4",
+          "validator_addr": "cosmosaccaddr1aaumwh9rc9ksh7dwuxux43jd93e7t4u88g5kg4",
+          "shares": "104",
           "height": "0"
         },
         {
@@ -8258,7 +11084,7 @@
         {
           "delegator_addr": "cosmosaccaddr1l3agyg568dsk2r9v7f35wge3yr85ampza7cdfj",
           "validator_addr": "cosmosaccaddr1l3agyg568dsk2r9v7f35wge3yr85ampza7cdfj",
-          "shares": "514",
+          "shares": "5026/9",
           "height": "0"
         },
         {
