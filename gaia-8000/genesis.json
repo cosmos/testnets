@@ -875,7 +875,7 @@
         "address": "cosmosaccaddr1qz9pauujxsypyu3q9n0t6mydsfwev50j8g8ras",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "11"
           }
         ]
@@ -888,7 +888,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "251"
           }
         ]
@@ -897,7 +897,7 @@
         "address": "cosmosaccaddr1qtkc837fpfprvr2fcmuw6hgkesen4pxnslkr4z",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "30"
           }
         ]
@@ -906,7 +906,7 @@
         "address": "cosmosaccaddr1qv68kxwmarzefrcgnu4trdrznslzdtra7gfxhy",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "3"
           }
         ]
@@ -915,7 +915,7 @@
         "address": "cosmosaccaddr1qvut6w8v5fccephuv502qhmvhn7hy6cnddrdyf",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "4"
           }
         ]
@@ -928,7 +928,7 @@
         "address": "cosmosaccaddr1qsvdcgf7zyue0usl2tt3ptn0x6lzs0ua6y5dgs",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -937,7 +937,7 @@
         "address": "cosmosaccaddr1q3lcu430n2mjar6q52s2y7z2hjt7j5dy7t7w2d",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -950,7 +950,7 @@
             "amount": "100"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "72"
           }
         ]
@@ -959,7 +959,7 @@
         "address": "cosmosaccaddr1qkpevcffatqksc7zw28mzrqd0hwkus5qrlsmpt",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -968,7 +968,7 @@
         "address": "cosmosaccaddr1qk2q3l28t6qhzyc7p832ep8uwd0ypstgqla8yx",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -985,7 +985,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5000"
           }
         ]
@@ -1007,7 +1007,7 @@
         "address": "cosmosaccaddr1qe82wd64ncuh8z05kmwpqhc5vkq4wsxqv67cvz",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "4"
           }
         ]
@@ -1016,7 +1016,7 @@
         "address": "cosmosaccaddr1q6uza2sy8wux9ws33dtfax6j3vn307f7lrv7t5",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -1025,7 +1025,7 @@
         "address": "cosmosaccaddr1qmw6d8uh3rs9uj8c0tztznu9x4zezekq89635d",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5"
           }
         ]
@@ -1034,7 +1034,7 @@
         "address": "cosmosaccaddr1qarnnunjrsd66yuz65ugsl7pm3v3hxrxd5jvaq",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "385"
           }
         ]
@@ -1043,7 +1043,7 @@
         "address": "cosmosaccaddr1pp58pzp26zqf4sscwdzpns9c5prpkcr7j2v0nx",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "19"
           }
         ]
@@ -1056,7 +1056,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "151"
           }
         ]
@@ -1065,7 +1065,7 @@
         "address": "cosmosaccaddr1pynxhek6ls6xcwptuwt6cz94lezz6wu6j062gq",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "30"
           }
         ]
@@ -1074,7 +1074,7 @@
         "address": "cosmosaccaddr1p9wdfa8kt2khg2kgj74l7zwcveg9nkp82le3g8",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -1083,7 +1083,7 @@
         "address": "cosmosaccaddr1p054wqkus4rjajwh3e079xuk4g7l4zm5t74kce",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -1096,7 +1096,7 @@
         "address": "cosmosaccaddr1pngeljxmaecunw2uw246vejvg8pezrpc7ltg4m",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "56"
           }
         ]
@@ -1109,7 +1109,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "35"
           }
         ]
@@ -1118,7 +1118,7 @@
         "address": "cosmosaccaddr1ph64lhnqwp4tjf4y70y45u5e7cnv2djfg9nkgr",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -1127,7 +1127,7 @@
         "address": "cosmosaccaddr1pc63alzz2qdgxk7f3mhr56xly8xz5cs47k294m",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "4"
           }
         ]
@@ -1140,7 +1140,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "150"
           }
         ]
@@ -1162,7 +1162,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "150"
           }
         ]
@@ -1171,7 +1171,7 @@
         "address": "cosmosaccaddr1p7jg2t7xrjmxpu94tp9wawmnx64ds8skfmsqe0",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "15"
           }
         ]
@@ -1188,7 +1188,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "200"
           }
         ]
@@ -1197,7 +1197,7 @@
         "address": "cosmosaccaddr1zpdmfsq9p32sxgqmxfvvczndxg0s7l506a6n0x",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -1206,7 +1206,7 @@
         "address": "cosmosaccaddr1z8mltyca36vv5fud4xgtntjzekn20tz5auut72",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -1215,7 +1215,7 @@
         "address": "cosmosaccaddr1zvyjt8aw6xgqfxmh7mguvntudrz4llln2dyaam",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "19"
           }
         ]
@@ -1224,7 +1224,7 @@
         "address": "cosmosaccaddr1zv9ayyk8l5ptzuuur8wt5up73pptzm2sv4spj5",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -1237,7 +1237,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "60"
           }
         ]
@@ -1246,7 +1246,7 @@
         "address": "cosmosaccaddr1zn5hc3rtpd4twuwaemj550gx5hmh9vvez2jmla",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -1255,7 +1255,7 @@
         "address": "cosmosaccaddr1z5ujex3hy53c3kwlaktgxwqf00lraud6qna5fy",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -1264,7 +1264,7 @@
         "address": "cosmosaccaddr1z49r5y3yk6kpz6wy64cr5tu0lung2cgg3j4tn5",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -1290,7 +1290,7 @@
         "address": "cosmosaccaddr1rg7udx3zvn3ux8l2j0l7ysyskum79972fgndpz",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -1299,7 +1299,7 @@
         "address": "cosmosaccaddr1r2hjwvyudlmxlr3dqdq6r72khcc7yej9zew48d",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "67"
           }
         ]
@@ -1308,7 +1308,7 @@
         "address": "cosmosaccaddr1rvjcqjnxmsq3nlhv4cwjnhfjag508qkh6r62tr",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -1317,7 +1317,7 @@
         "address": "cosmosaccaddr1rvm0em6w3qkzcwnzf9hkqvksujl895dfww4ecn",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "405"
           }
         ]
@@ -1334,7 +1334,7 @@
         "address": "cosmosaccaddr1r05wuvemjzl25n3lspfku03e069cs5xsulfusn",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "35"
           }
         ]
@@ -1352,7 +1352,7 @@
         "address": "cosmosaccaddr1rnjapk7nw3ts6h6lsse3vm9d8mjjqqrx9mvc09",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -1361,7 +1361,7 @@
         "address": "cosmosaccaddr1r5epqszx4supvesf4csxxlaxn4947lc38cjkcw",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "30"
           }
         ]
@@ -1378,7 +1378,7 @@
         "address": "cosmosaccaddr1resera5tks46p0gshs8svvjk34fz9vhsmhpztg",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -1391,7 +1391,7 @@
         "address": "cosmosaccaddr1yqpa5vhs8nq9mguyd2j5k5kn7dlqlgmjl4h67x",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "6"
           }
         ]
@@ -1404,7 +1404,7 @@
         "address": "cosmosaccaddr1yz2t5qxggyq0ffkfhw6v59xnaqackkw0009wjy",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "70"
           }
         ]
@@ -1413,7 +1413,7 @@
         "address": "cosmosaccaddr1yfd9a4sqm8jm7lq932jc6fu8k86f394tgc2sku",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "370"
           }
         ]
@@ -1426,7 +1426,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -1439,7 +1439,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -1452,7 +1452,7 @@
         "address": "cosmosaccaddr1yvawtylze64y5t6x7c9e6nzf6num9s0hd762ze",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -1465,7 +1465,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2131"
           }
         ]
@@ -1474,7 +1474,7 @@
         "address": "cosmosaccaddr1y0qavya7zxwrn0qe43f6nxmm48kaavgpvuxge6",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -1492,7 +1492,7 @@
         "address": "cosmosaccaddr1y3fydat73q569cceaccpuytm3y4tdpv3n0fhdv",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "80"
           }
         ]
@@ -1501,7 +1501,7 @@
         "address": "cosmosaccaddr1y32vvanvz88ajamugxrgl7vnvf0vtmjg5wxg7f",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "60"
           }
         ]
@@ -1514,7 +1514,7 @@
         "address": "cosmosaccaddr1ychw8dj7r37j9mlpd4j22azqzwzdryqkejf0ac",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -1523,7 +1523,7 @@
         "address": "cosmosaccaddr1ye7jc0hldu3k7nz42zcg2yvy7lzttx9q5yf3w9",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -1532,7 +1532,7 @@
         "address": "cosmosaccaddr1y6d5g4s75s9m8xemrs6d9am2cef4nm3ku0s5lv",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5"
           }
         ]
@@ -1541,7 +1541,7 @@
         "address": "cosmosaccaddr1y63usu5k67zr37ha5p30pgzawv4g74qtmvwsyp",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -1550,7 +1550,7 @@
         "address": "cosmosaccaddr1ymwytdwfu39uxpxmkjenfnyv3mkskehf97hwu8",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -1559,7 +1559,7 @@
         "address": "cosmosaccaddr1yu7a5agy0ypchjcj467ej6jys468makfsvgg9e",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -1568,7 +1568,7 @@
         "address": "cosmosaccaddr1yaxhcrpu9a009aavd86rrewlsmxcxh6lycazky",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -1577,7 +1577,7 @@
         "address": "cosmosaccaddr1yanwmhh6hxldue3szsm36k74n0xxrz3u8wllex",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -1590,7 +1590,7 @@
         "address": "cosmosaccaddr1y75427njr6vrfhd5tljw4gpffezgmmwx3slz2m",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "11"
           }
         ]
@@ -1607,7 +1607,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "40"
           }
         ]
@@ -1620,7 +1620,7 @@
         "address": "cosmosaccaddr19rlhdmplhnmvy3jmcd835awask4l46nvp3pt4g",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "40"
           }
         ]
@@ -1633,7 +1633,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -1642,7 +1642,7 @@
         "address": "cosmosaccaddr1990ceh7wh50j2z6wq08ekzez7yr6hpwtpap9ku",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -1664,7 +1664,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -1673,7 +1673,7 @@
         "address": "cosmosaccaddr19d8m2wg4glf4rfaaz96pdxxhq8tx4e98zrhuqu",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -1682,7 +1682,7 @@
         "address": "cosmosaccaddr19dfkpwfj3mls96ny2ulgq7cf0dh5xs5a05pn6e",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -1691,7 +1691,7 @@
         "address": "cosmosaccaddr19dw2kndn6shyx968zc3k4ah5wa05z0zhy8gsh8",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -1704,7 +1704,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -1721,7 +1721,7 @@
         "address": "cosmosaccaddr19n4s8fx9hr0j2dttr4fg48wr7kpxxste7evjzk",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "240"
           }
         ]
@@ -1734,7 +1734,7 @@
         "address": "cosmosaccaddr195qlnqc2mxsxnfvcljqr5ssfjjymn0usk35v75",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -1743,7 +1743,7 @@
         "address": "cosmosaccaddr194pux2wkhuusey6x4wwaqm0wh26cleh06u28lr",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5"
           }
         ]
@@ -1752,7 +1752,7 @@
         "address": "cosmosaccaddr19h5dc2c76h4ryvl9zl9373mk52ka77vy5g48gs",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "19"
           }
         ]
@@ -1761,7 +1761,7 @@
         "address": "cosmosaccaddr19cemj59p7mvmnfukya2a328dsh6nd7yg3hdzt0",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -1770,7 +1770,7 @@
         "address": "cosmosaccaddr19uhnhct0p45ek6qxp3cjjrjtz4pacwcsgzvpuj",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "450"
           },
           {
@@ -1787,7 +1787,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -1796,7 +1796,7 @@
         "address": "cosmosaccaddr19ljp6mlsfuy52r7d4c7r8mqfm0cxw5yktkqt80",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -1805,7 +1805,7 @@
         "address": "cosmosaccaddr19l4ytmyrf0234r20n0u3av830adsljw2jck7jl",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "4"
           }
         ]
@@ -1818,7 +1818,7 @@
         "address": "cosmosaccaddr1x9zs84mzzcdncyxh84k99sn3qhqw5ry8r8zwy7",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -1827,7 +1827,7 @@
         "address": "cosmosaccaddr1xxln0menrvzkjdjtqaqf7juya2dtchezqj9fc7",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -1836,7 +1836,7 @@
         "address": "cosmosaccaddr1xf56zlpjs9f5w3ygy4mq907ea60pqw6z3xk0x3",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -1849,7 +1849,7 @@
         "address": "cosmosaccaddr1xvzw5nz4mp5s5cat7rancc248v5wpecrlqtw6n",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -1862,7 +1862,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "48"
           }
         ]
@@ -1875,7 +1875,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -1884,7 +1884,7 @@
         "address": "cosmosaccaddr1xs8gy05pgxtsddx42az9lnrpu3ah0sg09krawq",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -1893,7 +1893,7 @@
         "address": "cosmosaccaddr1x3k0xzhrrxk95el2f8a8w4pcn03lq5mzfgjmvc",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -1902,7 +1902,7 @@
         "address": "cosmosaccaddr1xhzp9marf3zjtjn4hl73xkv4stgsjhj2xyws0r",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -1924,7 +1924,7 @@
         "address": "cosmosaccaddr1xa8z3sza70wrt06yfhlxq0ujg6fa7ld8h7m6xz",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "35"
           }
         ]
@@ -1933,7 +1933,7 @@
         "address": "cosmosaccaddr1xlkah6d2pcr8rchunmn6qdmdptr02844eee6le",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -1942,7 +1942,7 @@
         "address": "cosmosaccaddr1xla8lu6qmk8j0wwlxzd9txclurglrp4r34khhz",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -1980,7 +1980,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -1989,7 +1989,7 @@
         "address": "cosmosaccaddr18tkxwzhyn4a5ss63vttwpespvm7kxm895m9ppf",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -1998,7 +1998,7 @@
         "address": "cosmosaccaddr18thamkhnj9wz8pa4nhnp9rldprgant57ryzag7",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "380"
           }
         ]
@@ -2016,7 +2016,7 @@
         "address": "cosmosaccaddr18w20rry3cclx23z2r70j8cd8an79kudja6s6gj",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -2025,7 +2025,7 @@
         "address": "cosmosaccaddr18sqscwa5g4q6quc97eggwqk4wyzjyvrmvtq7f2",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2034,7 +2034,7 @@
         "address": "cosmosaccaddr183ytuac46uh2q7jw4r8phvueljn7pfy3gfu3tv",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "8"
           }
         ]
@@ -2043,7 +2043,7 @@
         "address": "cosmosaccaddr183g7an5mvj347annxtsyw05etu6ezx400ykte5",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -2056,7 +2056,7 @@
         "address": "cosmosaccaddr18jtgkmw6ahnxd5lllp6256kuex2u2wsc5qt2u8",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "35"
           }
         ]
@@ -2069,7 +2069,7 @@
         "address": "cosmosaccaddr185n9jln2g4w79w39m0g85x2tns6uekqg99tq7u",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -2082,7 +2082,7 @@
         "address": "cosmosaccaddr18cut539f6w9xewnz0fcxa95784pg4mk5ghk3fz",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "30"
           }
         ]
@@ -2108,7 +2108,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -2117,7 +2117,7 @@
         "address": "cosmosaccaddr187en8ww5322c3e6y6c67daxugs8f93dldyw73g",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2130,7 +2130,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -2147,7 +2147,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -2160,7 +2160,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -2169,7 +2169,7 @@
         "address": "cosmosaccaddr1gjwzk6vcl89hdyl95agsvqng7kuf47nlhnkdx3",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2182,7 +2182,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -2195,7 +2195,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -2204,7 +2204,7 @@
         "address": "cosmosaccaddr1gujxamhwhfh6ndeuc96u4m9y2hrhsnurce786l",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2213,7 +2213,7 @@
         "address": "cosmosaccaddr1g7re7m8fq0qaumpwztmgptrhw9ravqa4py0qsk",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -2222,7 +2222,7 @@
         "address": "cosmosaccaddr1fzqwytcm25gsxg67l2z3rtmskpx75u6l5a2mq7",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5"
           }
         ]
@@ -2239,7 +2239,7 @@
         "address": "cosmosaccaddr1f9mxupaw2sx78hren09pga6ndc5z3urszq94c7",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5"
           }
         ]
@@ -2248,7 +2248,7 @@
         "address": "cosmosaccaddr1fxfr3e277d3a7jkqqry963ktep8fftpz5uyxv7",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "35"
           }
         ]
@@ -2266,7 +2266,7 @@
         "address": "cosmosaccaddr1ff94l3uh7gans5qjgj7j3tjfwsg5sl4ytq25ad",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2275,7 +2275,7 @@
         "address": "cosmosaccaddr1ftrggumlvkesqny90par3gc9lp70yqhtlqucsk",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "43"
           }
         ]
@@ -2288,7 +2288,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2297,7 +2297,7 @@
         "address": "cosmosaccaddr1fnklmrcpwnlv0pl85vg4h7evpl6wjdnvhacts7",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -2306,7 +2306,7 @@
         "address": "cosmosaccaddr1f4sah2y8r995wsazt2dw909akhdjvr4f9zv28r",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5"
           }
         ]
@@ -2324,7 +2324,7 @@
         "address": "cosmosaccaddr1fmk62wmcufp8dgemdrcxme88lxxnyxq9a93stc",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "15"
           }
         ]
@@ -2337,7 +2337,7 @@
         "address": "cosmosaccaddr12qnaj7mwyjjdw4506s2d47j7cfdtkg3jy9vdqh",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "25"
           }
         ]
@@ -2350,7 +2350,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -2363,7 +2363,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "9"
           }
         ]
@@ -2372,7 +2372,7 @@
         "address": "cosmosaccaddr12y7e5t78tw7d9z20c2rfvl4ne3jll9nuvk6s7l",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2381,7 +2381,7 @@
         "address": "cosmosaccaddr12xmjdkyf6stle05tdls28u4aelzep0rhzhllyc",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -2403,7 +2403,7 @@
         "address": "cosmosaccaddr12fm2n7pkmtqk7untyhs9my749jyzef3vhne95q",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "6426"
           }
         ]
@@ -2416,7 +2416,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -2429,7 +2429,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "600"
           }
         ]
@@ -2442,7 +2442,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "119"
           }
         ]
@@ -2460,7 +2460,7 @@
         "address": "cosmosaccaddr12uggfcy84ghj4sepeyd95ym2wahw2l73fhcju3",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "3"
           }
         ]
@@ -2469,7 +2469,7 @@
         "address": "cosmosaccaddr1tqgmgng39tars3vgsmvdsk6n2yu04l66vs05pt",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "40"
           }
         ]
@@ -2482,7 +2482,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -2491,7 +2491,7 @@
         "address": "cosmosaccaddr1tywpgw32j0fntw4mjdm9l29j8xp3faj3ph0ylm",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "11"
           }
         ]
@@ -2504,7 +2504,7 @@
         "address": "cosmosaccaddr1t99umqef9m3yscftgm6jh6gacxqad7t5xw93xg",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -2521,7 +2521,7 @@
         "address": "cosmosaccaddr1txmm2ya9tdf378a9awnglzp7mwj0qsmsm3y397",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -2534,7 +2534,7 @@
         "address": "cosmosaccaddr1tgwg9ewvmhsf8l7v28ugqmf07s5e2dpxj9qpxz",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -2543,7 +2543,7 @@
         "address": "cosmosaccaddr1tsysfw53f36ap440e5ljf6hnc3ueuwal9vmcx4",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -2556,7 +2556,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "9"
           }
         ]
@@ -2565,7 +2565,7 @@
         "address": "cosmosaccaddr1t3lvwnp0rmfyc96c0qh6qa67nplpdhytr5dd59",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2574,7 +2574,7 @@
         "address": "cosmosaccaddr1tc6jhusrwymrus63rl7yrk37z5jdksnytahuj4",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "870"
           }
         ]
@@ -2596,7 +2596,7 @@
         "address": "cosmosaccaddr1vv9d030rnupxs2nrcnujhwzksy8fxz5r7t5n94",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2605,7 +2605,7 @@
         "address": "cosmosaccaddr1v04pxgxepjx5jxcayndexnwlhumy0jpsfcn5e4",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2614,7 +2614,7 @@
         "address": "cosmosaccaddr1vsg7a4q6vrcwlqsfm26je3xzzepwnjg2pss5vk",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2627,7 +2627,7 @@
         "address": "cosmosaccaddr1vk5dwhn8m3sht9xrartj9kuv098t00spkqphcd",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "21"
           }
         ]
@@ -2640,7 +2640,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -2649,7 +2649,7 @@
         "address": "cosmosaccaddr1vuc8ex5f02z4hg5jm4lztrhv9j8cyt6cy0m4ey",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -2662,7 +2662,7 @@
         "address": "cosmosaccaddr1v7hutth05td5242x4y0nh9gq03qumdmz3tayay",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -2671,7 +2671,7 @@
         "address": "cosmosaccaddr1vlmpl003lzm4lq0vr94227l2u02n2y490gsc89",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5"
           }
         ]
@@ -2689,7 +2689,7 @@
         "address": "cosmosaccaddr1drycruvuzjn4d6hx39hxz6jsz6hwkf09a8cyxy",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2698,7 +2698,7 @@
         "address": "cosmosaccaddr1d2t6h36cvqh6clmfk6w3u7spehv7ql7alcpfr4",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -2707,7 +2707,7 @@
         "address": "cosmosaccaddr1dw4dajgyff0pgmtjdv8t7hqp5va7xdadwpp7n6",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "4"
           }
         ]
@@ -2716,7 +2716,7 @@
         "address": "cosmosaccaddr1ds3yvnzup07u4j778xmnrh624j096fma3hw4nz",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2725,7 +2725,7 @@
         "address": "cosmosaccaddr1dkm8z36m96k8aukg5rxnfpw46dt5mnmvsfuze2",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5"
           }
         ]
@@ -2738,7 +2738,7 @@
         "address": "cosmosaccaddr1dazry9zqmwduf7svv4extay64jnlg2yghfk482",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2747,7 +2747,7 @@
         "address": "cosmosaccaddr1d79807agakq8k5aeykva98gzem60f9k2kpetm6",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2760,7 +2760,7 @@
         "address": "cosmosaccaddr1dlgd8tksf635zntchgc3kh60fkgpe9sstkql0l",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "3"
           }
         ]
@@ -2769,7 +2769,7 @@
         "address": "cosmosaccaddr1dl0hk7064k5wp43zkllmd0p9pgu2mnra898gyh",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -2778,7 +2778,7 @@
         "address": "cosmosaccaddr1wz3smpf4grhd7f82e3u3a8lk32kvq7s2raxudx",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2787,7 +2787,7 @@
         "address": "cosmosaccaddr1wzelzhl5a0hm403sgy8ydy7pnmwjjx0thu78et",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -2800,7 +2800,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -2813,7 +2813,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -2822,7 +2822,7 @@
         "address": "cosmosaccaddr1wf9nug554ugpw4t0wnlppxc6crl2n02qr8v3cd",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           },
           {
@@ -2835,7 +2835,7 @@
         "address": "cosmosaccaddr1wf3sncgk7s2ykamrhy4etf09y94rrrg4k73wwr",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "30"
           }
         ]
@@ -2873,7 +2873,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -2886,7 +2886,7 @@
         "address": "cosmosaccaddr1wesup293xcfjze34u98j05ffu04cssy32gjv3u",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5"
           }
         ]
@@ -2895,7 +2895,7 @@
         "address": "cosmosaccaddr1w7n4zcftpv4yvsjjlegmcgk25kslvy0xdpk03v",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "3"
           }
         ]
@@ -2904,7 +2904,7 @@
         "address": "cosmosaccaddr1wlqylrnsjyxtex97fq762tt3xx570rv6ydqpja",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -2913,7 +2913,7 @@
         "address": "cosmosaccaddr10qp8kqwm2cuql0hw2az5mngpmw5xm9ee32exlp",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           },
           {
@@ -2926,7 +2926,7 @@
         "address": "cosmosaccaddr10z0xk35lmfwfzk3tgzljvvr4nvfaj4778y5kgz",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "7"
           }
         ]
@@ -2935,7 +2935,7 @@
         "address": "cosmosaccaddr10yx3zn39va2rdvcn76cljlzn7zmlyecc7wdtvq",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "25"
           }
         ]
@@ -2944,7 +2944,7 @@
         "address": "cosmosaccaddr10t65mmpnd4r9uzq7hqachgzw0ct9uqea9r5365",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5"
           }
         ]
@@ -2957,7 +2957,7 @@
         "address": "cosmosaccaddr10s62wd8qca4pnhdk602xqnvpy0ck8uzll4hrsf",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "4"
           }
         ]
@@ -2966,7 +2966,7 @@
         "address": "cosmosaccaddr10j2c9vspxg0rxfy2am7h4pkswdga3jzwk0x0nv",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2975,7 +2975,7 @@
         "address": "cosmosaccaddr105fhlukl4s2a9h7kv86lf69ayy0mv6y7quw8v5",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -2988,7 +2988,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "29"
           }
         ]
@@ -3001,7 +3001,7 @@
         "address": "cosmosaccaddr10h3v6phzsfuw6yvwpdvv0a4q3ha9zkq67gl8w6",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "60"
           }
         ]
@@ -3018,7 +3018,7 @@
         "address": "cosmosaccaddr10atd0mjtdt7uzk0jgr32c32semnh3xvu4nx77p",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5"
           }
         ]
@@ -3027,7 +3027,7 @@
         "address": "cosmosaccaddr10lur643c66xdn4tsty4lgzwhq9etmhj850sc7j",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3040,7 +3040,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -3049,7 +3049,7 @@
         "address": "cosmosaccaddr1szlc8n7c2drvhxcaw0cs4h03jrstzjkl9yamj7",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3071,7 +3071,7 @@
         "address": "cosmosaccaddr1svu9nw80fzurmevlku9mzeqxrr8tpl5550034a",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5"
           }
         ]
@@ -3080,7 +3080,7 @@
         "address": "cosmosaccaddr1sv7kdmv2haprv3c5ap62aar68d2apc9a7fwmnu",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "11"
           }
         ]
@@ -3089,7 +3089,7 @@
         "address": "cosmosaccaddr1swydkj5u3jd4jwe7uygu4479zgs4qg6v4ds3c9",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "45"
           },
           {
@@ -3102,7 +3102,7 @@
         "address": "cosmosaccaddr1s0p83zm5uxjppf8x9ugyp6hpta9kagl44ke7as",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3111,7 +3111,7 @@
         "address": "cosmosaccaddr1s4w7w56ymm5fnm25nhdvae5yuc5792zxfynq9h",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "13"
           }
         ]
@@ -3124,7 +3124,7 @@
             "amount": "960"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "18"
           }
         ]
@@ -3133,7 +3133,7 @@
         "address": "cosmosaccaddr1smg58zu028xkq53c8avp2kqhzcaf8wgq5jzrww",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3142,7 +3142,7 @@
         "address": "cosmosaccaddr1s76r4v04tt4fq6cvr39y6wy5zla9p6kdmz0wkr",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3155,7 +3155,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -3176,7 +3176,7 @@
         "address": "cosmosaccaddr13fw4ff9u2qftsjj39mda54ufrpjs77q0ke6m49",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "33"
           }
         ]
@@ -3185,7 +3185,7 @@
         "address": "cosmosaccaddr13fet8nre9ra2rs7gtw035evk2254pgw9mpn79z",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3198,7 +3198,7 @@
         "address": "cosmosaccaddr13dre54wd7md0wg77x5fj5scj5u20e6stvdr829",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "8"
           }
         ]
@@ -3215,7 +3215,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -3224,7 +3224,7 @@
         "address": "cosmosaccaddr135shy2er3weyxf44cp4q0whmc4rkuqcup3389j",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -3250,7 +3250,7 @@
         "address": "cosmosaccaddr13lsvgpu9lptwg0ef3c8ykqf2x35yjvndfqeqkj",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -3263,7 +3263,7 @@
         "address": "cosmosaccaddr1jp66q0yftj6rhwqs2n9uxnmfm78et8gfplacpz",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3272,7 +3272,7 @@
         "address": "cosmosaccaddr1j9w65cmt5s5kw9430jsv87yd4dgmmq6w60f3tl",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "9"
           }
         ]
@@ -3281,7 +3281,7 @@
         "address": "cosmosaccaddr1j2frwt2vq2xer7f060wpsu3y3f63uys2w9lx2e",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "90"
           }
         ]
@@ -3299,7 +3299,7 @@
         "address": "cosmosaccaddr1jt77t00gucffqhrq7lh6vwmwzrwgw2fpvnhwk7",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -3312,7 +3312,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -3325,7 +3325,7 @@
         "address": "cosmosaccaddr1jdehygp2p8z4f2wyf9t5q6f6mfqex66mfhfwdg",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3338,7 +3338,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "132"
           }
         ]
@@ -3351,7 +3351,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -3364,7 +3364,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -3373,7 +3373,7 @@
         "address": "cosmosaccaddr1j4k7p2yqn6d5kfjqg0ductjmr48l75pw8tp6w8",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -3391,7 +3391,7 @@
         "address": "cosmosaccaddr1jhsuj64hgtuptm07safql27hwzm9jht50zxzre",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -3404,7 +3404,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "115"
           }
         ]
@@ -3426,7 +3426,7 @@
         "address": "cosmosaccaddr1je98ejgpvv2uzku3t6h5cydyr9hzva2cqhf3v5",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5"
           }
         ]
@@ -3435,7 +3435,7 @@
         "address": "cosmosaccaddr1jegatcczazsuj86at74pwcv5ew0q29k8r2h3nn",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -3444,7 +3444,7 @@
         "address": "cosmosaccaddr1j68chllpyc0myr5fjhpw5uzmfntpgdlhuurk9d",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -3453,7 +3453,7 @@
         "address": "cosmosaccaddr1j6uaeggxkn0t4n4n8zna0g9vqgfj6jw6ejwyv4",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3462,7 +3462,7 @@
         "address": "cosmosaccaddr1ja98tyxchsde6v3l02thp4fc35eymg88kts070",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -3475,7 +3475,7 @@
         "address": "cosmosaccaddr1npga2sl3xt8kn0st2fdjg2x73zj2s0xg2znumn",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -3484,7 +3484,7 @@
         "address": "cosmosaccaddr1nzh0av9pyd36j07mjwug9eddycywzng4d0843j",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -3493,7 +3493,7 @@
         "address": "cosmosaccaddr1nypejllw6gku8cgzccpdp07ae0j442xphdrlen",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "130"
           }
         ]
@@ -3502,7 +3502,7 @@
         "address": "cosmosaccaddr1nyje8wp0w9t9c6r7ycx75p29zpxv8hrw0fu0mf",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -3515,7 +3515,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -3528,7 +3528,7 @@
         "address": "cosmosaccaddr1ngqq8lsadzerg66wcgv3hx86gaefedjhpyvakh",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -3537,7 +3537,7 @@
         "address": "cosmosaccaddr1n2jad3hurvgfxamr2ee0mmv5tsckyxmesqz294",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "3"
           }
         ]
@@ -3546,7 +3546,7 @@
         "address": "cosmosaccaddr1n0l69ax723z2n060eeh357c0vsz2kagf06vscz",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3559,7 +3559,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -3568,7 +3568,7 @@
         "address": "cosmosaccaddr1nn6mjdtcutmmpjcapkecg5muqrgp7td6s0gre2",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "30"
           }
         ]
@@ -3577,7 +3577,7 @@
         "address": "cosmosaccaddr1n54p3gh6vrqarcdqxd8xqvpt5p6slnqhta55v6",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5"
           }
         ]
@@ -3586,7 +3586,7 @@
         "address": "cosmosaccaddr1nkgjjd9nvhamh8gp973y5vfmze3dsa550t8dkx",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -3595,7 +3595,7 @@
         "address": "cosmosaccaddr1nhnhk0q53lfmwhq58268302zxz3trpgrwgr02w",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "30"
           }
         ]
@@ -3613,7 +3613,7 @@
         "address": "cosmosaccaddr15pzn94awwmcff4m9cmju84t59t0uj5m65fwtl6",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -3635,7 +3635,7 @@
         "address": "cosmosaccaddr15xlevh5an4gqnyvjs7yv5ccpp9rvyrcfemteey",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -3644,7 +3644,7 @@
         "address": "cosmosaccaddr15twdq9t9pnmr2y5ynccqfjdkj5wt5vzsq0hp0r",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -3653,7 +3653,7 @@
         "address": "cosmosaccaddr15dt7zafut73my95xclacfjldschxjnesye6385",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -3675,7 +3675,7 @@
         "address": "cosmosaccaddr15wmreh6mryt49ly2v3e5gaw8ssv49xmzqrxqax",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3688,7 +3688,7 @@
         "address": "cosmosaccaddr15k7ws7jddz6qfnnclg5h27q4gpjeyamkgupeaw",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3701,7 +3701,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -3710,7 +3710,7 @@
         "address": "cosmosaccaddr15mzck4rm5w55sfgr9kgexgtna22v608907t8y6",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3723,7 +3723,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "80"
           }
         ]
@@ -3745,7 +3745,7 @@
         "address": "cosmosaccaddr14q7h5s8w0fgruyv3qwcauaxpy7cmu289hd8hsh",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -3758,7 +3758,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "70"
           }
         ]
@@ -3771,7 +3771,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "30"
           }
         ]
@@ -3780,7 +3780,7 @@
         "address": "cosmosaccaddr14sqp5mqtmfjdk9khae6lkfytwj9crtunpzr8f7",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5"
           }
         ]
@@ -3798,7 +3798,7 @@
         "address": "cosmosaccaddr1kzp74plx94h8mp90vun33nmdw3qck7mecs6hdy",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3811,7 +3811,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "120"
           }
         ]
@@ -3828,7 +3828,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -3837,7 +3837,7 @@
         "address": "cosmosaccaddr1k0lw4fzp2adfh30ranet6mfujhzdywd6l22nag",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "19"
           }
         ]
@@ -3859,7 +3859,7 @@
         "address": "cosmosaccaddr1k7u0ysqy89jkt7n9804cl4vzy45afa5jqevx6p",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3872,7 +3872,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -3885,7 +3885,7 @@
             "amount": "50"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "35"
           }
         ]
@@ -3894,7 +3894,7 @@
         "address": "cosmosaccaddr1hqclw9xcymkhtrazzq9x576v9khhe6j9ja3jp0",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "3"
           }
         ]
@@ -3903,7 +3903,7 @@
         "address": "cosmosaccaddr1hydk58dtxr87ml34xqc07ph2h66yt2f0rrhyt8",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "30"
           }
         ]
@@ -3921,7 +3921,7 @@
         "address": "cosmosaccaddr1hf2965c3zewcqapaey4mchyga88nd2rpqlldk9",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -3930,7 +3930,7 @@
         "address": "cosmosaccaddr1hf0qr0z36v38geace28mfwyayv2r5r8kl9st8p",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3939,7 +3939,7 @@
         "address": "cosmosaccaddr1h2faa4f2vcg7rjss6y5wnswnrw4mh82hf4wrcp",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "13"
           }
         ]
@@ -3948,7 +3948,7 @@
         "address": "cosmosaccaddr1hwyayqqsm4nv570ux8u7dla0xn4ad08gydppyj",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3966,7 +3966,7 @@
         "address": "cosmosaccaddr1hhcffh2fjf5w42q7lmlcpsrg4agslmm2ercuqk",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -3975,7 +3975,7 @@
         "address": "cosmosaccaddr1hhu6pvea5l934c059jxjv3ccfan6m7jy39zfs6",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "30"
           }
         ]
@@ -3996,7 +3996,7 @@
         "address": "cosmosaccaddr1h7yr9pm3ffhq5djx75ycmumvpwlxhulss3e2yv",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "30"
           }
         ]
@@ -4005,7 +4005,7 @@
         "address": "cosmosaccaddr1cze0acxhmpx26awlc98h2v33ay95k232yenkqx",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "37"
           }
         ]
@@ -4018,7 +4018,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "35"
           }
         ]
@@ -4027,7 +4027,7 @@
         "address": "cosmosaccaddr1cy5t4e62z4h7r74cn7vkylx77n5s4hds2xeud6",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -4040,7 +4040,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -4049,7 +4049,7 @@
         "address": "cosmosaccaddr1cgvwwnfeu7jv3wxsy6znr2dqnhs5xc6cjpfmxw",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -4062,7 +4062,7 @@
             "amount": "10000000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "9935501"
           }
         ]
@@ -4071,7 +4071,7 @@
         "address": "cosmosaccaddr1csk8r7uahekf9a5qf5axsl00fjvemhkrfu8kep",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -4080,7 +4080,7 @@
         "address": "cosmosaccaddr1cnf4nztxfrtwcfztfzz3sreylfkxe2xh5z307x",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "3"
           }
         ]
@@ -4109,7 +4109,7 @@
         "address": "cosmosaccaddr1eyd6g0h5h96heegs42djrptlq9zflx3q2cndmp",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -4127,7 +4127,7 @@
         "address": "cosmosaccaddr1ev9gnq7z9dga7mr0nf403942hnuj39r8dx8m40",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -4149,7 +4149,7 @@
         "address": "cosmosaccaddr1e32c8x0dcgv0kz6qr7xceerne2gznt5s8e8tr7",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -4158,7 +4158,7 @@
         "address": "cosmosaccaddr1e3kz5kwptnwaslhnynq7jlrnya4sswswe4xprl",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -4167,7 +4167,7 @@
         "address": "cosmosaccaddr1ejhdq2gpj20schz5n2r7lyxt6pwp2usahaf3wz",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "30"
           }
         ]
@@ -4193,7 +4193,7 @@
         "address": "cosmosaccaddr1eamypvjgl8hjfa4gysujkt780f0qv3c5q5a3tt",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "60"
           }
         ]
@@ -4202,7 +4202,7 @@
         "address": "cosmosaccaddr1elpemwnp36jjcltv80hz76kcrk4zmllg0p6wk7",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -4215,7 +4215,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "37"
           }
         ]
@@ -4224,7 +4224,7 @@
         "address": "cosmosaccaddr16yrgs9d5gdu0erduz0rnd5et6u5ux0n9uyxh3g",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -4233,7 +4233,7 @@
         "address": "cosmosaccaddr16yxdmg8w5vc038cg0myh0w32s4h74ch59j67u6",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -4242,7 +4242,7 @@
         "address": "cosmosaccaddr16yk2su2ndeetfqvra5cwwcf3sk59yjagyz99a8",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "130"
           }
         ]
@@ -4255,7 +4255,7 @@
         "address": "cosmosaccaddr168q7hkcnwahkugh02m0dr293hpzgj9w3z68r2d",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "70"
           }
         ]
@@ -4264,7 +4264,7 @@
         "address": "cosmosaccaddr162k6wg0ufzy6pe079m3evt0tqrjfrrath5qw0d",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5"
           }
         ]
@@ -4273,7 +4273,7 @@
         "address": "cosmosaccaddr16dfl4ruvt54qyhyf26fwmle62jnywp7mu9akt7",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -4286,7 +4286,7 @@
         "address": "cosmosaccaddr160wqlavl0sa4fzm6lgm92cdc0lgzpzhcu7sl7q",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "4"
           }
         ]
@@ -4295,7 +4295,7 @@
         "address": "cosmosaccaddr163rcl6f2vfl6x9svkl49edqhdl6agpfzncgupl",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -4316,7 +4316,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "280"
           }
         ]
@@ -4337,7 +4337,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -4346,7 +4346,7 @@
         "address": "cosmosaccaddr16lz93dqwq6rmn3eflugjnz5exr3jpspe3akwug",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "80"
           }
         ]
@@ -4355,7 +4355,7 @@
         "address": "cosmosaccaddr1m9nu6haug2v25nsrudv0xevxs52zyjzqld3drr",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "209"
           }
         ]
@@ -4364,7 +4364,7 @@
         "address": "cosmosaccaddr1mx36cmexzz6dxntf6lxpsdsf8u7kuzerh07m4s",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "110"
           }
         ]
@@ -4373,7 +4373,7 @@
         "address": "cosmosaccaddr1mf66nhhpqjtqt4pp6uqzu933h9wkkrc4z7l8wv",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -4382,7 +4382,7 @@
         "address": "cosmosaccaddr1m2pl4vq3g8t4am0zk8qme08dnwe2p95e37l33s",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "40"
           }
         ]
@@ -4395,7 +4395,7 @@
         "address": "cosmosaccaddr1mvqtcm5a8pf8q5xv50ag6k445032fz7qaax5ge",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "18"
           }
         ]
@@ -4404,7 +4404,7 @@
         "address": "cosmosaccaddr1mvsaaudvvhkfxnkjev3r9g73nrjejvdfc36zz9",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "8"
           }
         ]
@@ -4413,7 +4413,7 @@
         "address": "cosmosaccaddr1mvmdrtuxjttv90wssvh6xreeguvq8tksm789m5",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "40"
           }
         ]
@@ -4431,7 +4431,7 @@
         "address": "cosmosaccaddr1m0u78hks3hcf5c6szvlly7x40dkattyal0wy2w",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -4453,7 +4453,7 @@
         "address": "cosmosaccaddr1upnvzj3zwqu7vnd7w5mtay6ugn482jerv028nz",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "3"
           }
         ]
@@ -4462,7 +4462,7 @@
         "address": "cosmosaccaddr1uga4nuresex5u8ajjh2pcr39l0s9hszdkp843j",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           },
           {
@@ -4475,7 +4475,7 @@
         "address": "cosmosaccaddr1uffeh2wq0lrvwm7z77c595v040q4kk4g3v8vte",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -4484,7 +4484,7 @@
         "address": "cosmosaccaddr1usm7kdwff58zjyz3wy89qemetrqehklala7mkm",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -4497,7 +4497,7 @@
         "address": "cosmosaccaddr1unqmzc0w20qnpu94n7xs4z9nrteh8flxag028u",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -4506,7 +4506,7 @@
         "address": "cosmosaccaddr1u40w3tq6w9cycgdpy4s692e92k03wnt8824zhp",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "5"
           }
         ]
@@ -4523,7 +4523,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -4532,7 +4532,7 @@
         "address": "cosmosaccaddr1uep3zha7srhafrggd5dn3gp0l08xua0x24yzj4",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "70"
           }
         ]
@@ -4541,7 +4541,7 @@
         "address": "cosmosaccaddr1u6ddcsjueax884l3tfrs66497c7g86sk3vfmqj",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "160"
           }
         ]
@@ -4554,7 +4554,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "88399"
           }
         ]
@@ -4567,7 +4567,7 @@
         "address": "cosmosaccaddr1uluae4kaxq3wxd698t256a8luv2tf0ngy40qp3",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "200"
           }
         ]
@@ -4576,7 +4576,7 @@
         "address": "cosmosaccaddr1artqm53zt7j7znm8cpgqzgp9jhlx0xrtle2pjr",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -4589,7 +4589,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -4598,7 +4598,7 @@
         "address": "cosmosaccaddr1ay37rp2pc3kjarg7a322vu3sa8j9puahqavh2n",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -4607,7 +4607,7 @@
         "address": "cosmosaccaddr1a8ppz2vh0zjfh8vaqckp67ct0ajm9crv0t3v0g",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -4616,7 +4616,7 @@
         "address": "cosmosaccaddr1a8ct2evn3944h2fww346nsmc22z9rlmv7g6flk",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -4625,7 +4625,7 @@
         "address": "cosmosaccaddr1agfqwpcxpl8s8pl3uhxhw7h0r05an60dmlgukx",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "18"
           }
         ]
@@ -4634,7 +4634,7 @@
         "address": "cosmosaccaddr1ad44rugqnfazzxqep43svkvd7jj4d9e38ynn0n",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "3"
           }
         ]
@@ -4647,7 +4647,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "50"
           }
         ]
@@ -4660,7 +4660,7 @@
         "address": "cosmosaccaddr1a694yvd5c2fuwd79p0qsfsdvnpykqz250l35zf",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -4669,7 +4669,7 @@
         "address": "cosmosaccaddr1aaumwh9rc9ksh7dwuxux43jd93e7t4u88g5kg4",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "20"
           }
         ]
@@ -4682,7 +4682,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -4700,7 +4700,7 @@
         "address": "cosmosaccaddr17wg97pzzlswd4p9rejdavp87rv4vdugmm8pwkf",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "10"
           }
         ]
@@ -4730,7 +4730,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "45"
           }
         ]
@@ -4752,7 +4752,7 @@
         "address": "cosmosaccaddr1lvmxcdhua2kt3qd86wnnej5m6gm4max4um5sx2",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -4769,7 +4769,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "48"
           }
         ]
@@ -4787,7 +4787,7 @@
         "address": "cosmosaccaddr1lnsr37qy64k4026gak3hvt8j2yh6c0ctxu46dw",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "13"
           }
         ]
@@ -4796,7 +4796,7 @@
         "address": "cosmosaccaddr1l529pzwyqyh7c5gg2wvmnx86qve7hyzr5mlk85",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "2"
           }
         ]
@@ -4809,7 +4809,7 @@
             "amount": "1000"
           },
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1322"
           }
         ]
@@ -4818,7 +4818,7 @@
         "address": "cosmosaccaddr1lc4jjw8zveuuj3njhy70zl23vgmpds2x24efca",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "250"
           }
         ]
@@ -4827,7 +4827,7 @@
         "address": "cosmosaccaddr1ledtq3q59uws8x78fjp30jvyulgjxl6yrx9x7j",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -4840,7 +4840,7 @@
         "address": "cosmosaccaddr1lufq4294z7mmv8pghu9c30jmrrr9629lnwgd2u",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "40"
           }
         ]
@@ -4849,7 +4849,7 @@
         "address": "cosmosaccaddr1lamtaccmxtak3w87g2dc0dlmecn9r0xgumkgtz",
         "coins": [
           {
-            "denom": "testnet-atom",
+            "denom": "steak",
             "amount": "1"
           }
         ]
@@ -4871,7 +4871,7 @@
         "goal_bonded": "67/100",
         "unbonding_time": "10000",
         "max_validators": 300,
-        "bond_denom": "testnet-atom"
+        "bond_denom": "steak"
       },
       "validators": [
         {
@@ -9110,7 +9110,7 @@
           "tokens": "12/5",
           "delegator_shares": "3",
           "description": {
-            "moniker": "testnet-atomSquad",
+            "moniker": "steakSquad",
             "identity": "[do-not-modify]",
             "website": "[do-not-modify]",
             "details": "[do-not-modify]"
