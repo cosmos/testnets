@@ -43,6 +43,12 @@ async function getStuff() {
         val.jailed = val.revoked;
         delete val.revoked;
     }
+    let bonds = genesis.app_state.stake.bonds;
+    for (let bond of bonds){
+        bond.shares = fractionToDecimal(bond.shares);
+        bond.height = 0;
+    }
+
     let accounts = genesis.app_state.accounts
     for (let account of accounts){
         account.address = convertBech32(account.address)
