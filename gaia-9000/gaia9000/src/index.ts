@@ -38,8 +38,10 @@ async function getStuff() {
     for (let val of validators){
         val.tokens = fractionToDecimal(val.tokens)
         val.delegator_shares = fractionToDecimal(val.delegator_shares)
-        val.jailed = val.revoked
-        delete val.revoked
+        val.bond_height = "0";
+        val.bond_intra_tx_counter = 0;
+        val.jailed = val.revoked;
+        delete val.revoked;
     }
     let accounts = genesis.app_state.accounts
     for (let account of accounts){
