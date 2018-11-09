@@ -7410,8 +7410,8 @@
         "community_pool": []
       },
       "community_tax": "0.0200000000",
-      "base_proposer_reward": "100.0000000000",
-      "bonus_proposer_reward": "400.0000000000",
+      "base_proposer_reward": "0.2000000000",
+      "bonus_proposer_reward": "0.0400000000",
       "validator_dist_infos": null,
       "delegator_dist_infos": null,
       "delegator_withdraw_infos": null
