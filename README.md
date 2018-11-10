@@ -11,6 +11,11 @@ To get started with the latest testnet, see the
 
 # Testnet Status
 
+## *November 9, 2018 21:00 EST* - Gaia-9001
+
+- `gaia--9001` Launching Gaia-9001 https://forum.cosmos.network/t/gaia-9001-launch-thread-w-seeds-lets-try-this-again/1301/4
+
+
 ## *August 20, 2018 11:00 EST* - Gaia-8000
 
 - `gaia--8000` Launching Gaia-8000 https://forum.cosmos.network/t/launching-gaia-8000/739
