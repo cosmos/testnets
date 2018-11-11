@@ -1,16 +1,5 @@
 [
     {
-        "address": "cosmos1umaajfgap5ef6yxvk5706kwk8j08l7wha3e6zh",
-        "coins": [
-            {
-                "denom": "stake",
-                "amount": "10000"
-            }
-        ],
-        "sequence_number": "0",
-        "account_number": "0"
-    },
-    {
         "address": "cosmos14ewx62w4l8akxvewmkcdpchqxx70tus4qzdmpn",
         "coins": [
             {
@@ -550,6 +539,17 @@
         "account_number": "0"
     },
     {
+        "address": "cosmos1t5zedkqk3dx49mphjnfvpcl7uprlkgcsqpj8cl",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
         "address": "cosmos1lylsf9cke4vxyc8z824ygzdvvcwrc9j8t4a9zg",
         "coins": [
             {
@@ -594,6 +594,17 @@
         "account_number": "0"
     },
     {
+        "address": "cosmos1twe23ys96t7ttq7m4kr97un3rrjukxjs94q06m",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
         "address": "cosmos1js7z6rg5n8eugefg07p3q7letg2a58u38gyrhw",
         "coins": [
             {
@@ -616,7 +627,29 @@
         "account_number": "0"
     },
     {
+        "address": "cosmos1msesrv5jxt0jk5vtwrgygdjq60vnn6a46fkgvq",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
         "address": "cosmos1c27f7klwxze75phrd0nnqwddpva3gzq8h3k7kj",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos1t3da02katujzgqnpnulew6v9xqmzj75664wxwc",
         "coins": [
             {
                 "denom": "stake",
@@ -638,6 +671,39 @@
         "account_number": "0"
     },
     {
+        "address": "cosmos14dp76w9srztynh40m2zm2hlaykpxtnm25qdxh3",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos1gpwyat78vagv5hujuqyteajkmgq3wku5mta69u",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos1ujqf7m03qd6gf7car0teefgc50qujtzc5e86ps",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
         "address": "cosmos1d9v2wvuzcuqwl3euhzy8p3khvlveqsf9mmmtxs",
         "coins": [
             {
@@ -649,7 +715,29 @@
         "account_number": "0"
     },
     {
+        "address": "cosmos19t5k4la55fr3s92e4hj5uqpk956ka6uz6khh5d",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
         "address": "cosmos1la3s8xgn5h3nzjdgsdhgdkf29n9ud0km7fellc",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos13wpyugwm3cxt58cmvy08up54pa47dpj0e3lc25",
         "coins": [
             {
                 "denom": "stake",
@@ -693,7 +781,51 @@
         "account_number": "0"
     },
     {
+        "address": "cosmos1f797cgxtj4ueyvzlras08tq6zn6l87ckgvl26g",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
         "address": "cosmos1gux94xvmj6uwf0ncpxhzqnlmrm9rayle96f6jy",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos13zyvm5hrh7yqasg04ffd9e4etpeakttkfe4v3e",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos15qavwkx8qv8y9htxdppamsjfu4f5627jfqhs6d",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos1njvv9cd0avfzrkn04xyh3weu4dsuhv5mgxqyrt",
         "coins": [
             {
                 "denom": "stake",
@@ -727,6 +859,17 @@
     },
     {
         "address": "cosmos16fu02hmnhlvtf47gv92mz0mkejjvhcqw0fja26",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos193hrufpulxc4a6c0gum2hp0xeqw2sx9e6dysgd",
         "coins": [
             {
                 "denom": "stake",
@@ -771,6 +914,17 @@
     },
     {
         "address": "cosmos1d0qhwuw3f5kh9ukpdx7f9j0c6ume9lefx0w0px",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos1unvmn2wsh65avenajzfy254j0v8d58f7rnqgjs",
         "coins": [
             {
                 "denom": "stake",
@@ -858,7 +1012,29 @@
         "account_number": "0"
     },
     {
+        "address": "cosmos1uuzqhrcjfaeusa5cx0ljjjkszqmxheslcg77ga",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
         "address": "cosmos1uk7wd0psudl83cgzw6khzjnnen6tkyzcqr0zwr",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos1l98y3tyl3h6ez5xevh8dgaymr5spdrwqkt5mp2",
         "coins": [
             {
                 "denom": "stake",
@@ -1056,6 +1232,17 @@
         "account_number": "0"
     },
     {
+        "address": "cosmos1rya9rdtqn87tct75gq8qqlvvkllchtvwlxdjdd",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
         "address": "cosmos16gdxm24ht2mxtpz9cma6tr6a6d47x63hlq4pxt",
         "coins": [
             {
@@ -1068,6 +1255,17 @@
     },
     {
         "address": "cosmos12rnuncs35arvr5xg3q8ceyyc592072rx36vaax",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos1jmu27x27r8sqkxtqxfv2hsv6fmf8uzclyg2haj",
         "coins": [
             {
                 "denom": "stake",
@@ -1144,6 +1342,17 @@
         "account_number": "0"
     },
     {
+        "address": "cosmos1vkggdmhuacs2306uasqw3au8a8lmcmqhqngtj4",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
         "address": "cosmos1rq4dftz3c6ufngqkzcngnfluc0snwn9lgwdelf",
         "coins": [
             {
@@ -1166,7 +1375,29 @@
         "account_number": "0"
     },
     {
+        "address": "cosmos1hdpnc8gw8a98ud9cxgyphyajk265sxrky5kk0x",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
         "address": "cosmos1rww4u22qqf2rhw02fww63t539d3ppeurkzj62v",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos1a50f7wq7nr2tj4rvsfv6q7y8q6wqply66472mt",
         "coins": [
             {
                 "denom": "stake",
@@ -1276,6 +1507,28 @@
         "account_number": "0"
     },
     {
+        "address": "cosmos1dstz57ywraws376jkerrqhe50w6uaj0zutm2sk",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos1q4hj4h0ftmjt9x2z6m4m6a0x9u7c5xz4ddc0ed",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
         "address": "cosmos12ckzjfa5g22t2y0d303vnle35q6mk2vkc9wx8f",
         "coins": [
             {
@@ -1321,6 +1574,17 @@
     },
     {
         "address": "cosmos169cxw3pkffw66vxlppy86n205rklhna86n073g",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos1xxatfhev58rvnlx7ql6aq77kd362qh35awpzrh",
         "coins": [
             {
                 "denom": "stake",
@@ -1420,6 +1684,17 @@
     },
     {
         "address": "cosmos1ppphmx3eql5y5dvm82x6nspqwh4jwnpt4auk8z",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos13psmeywshfyfcg3tr5l4qm968smtkcu8manqrw",
         "coins": [
             {
                 "denom": "stake",
@@ -1573,6 +1848,17 @@
         "account_number": "0"
     },
     {
+        "address": "cosmos164jntjfk9zs8x29mc27qansfwvjqs60g4u9scp",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
         "address": "cosmos17j3clumsq4tpachmsd3fx9fm2jzemqjqwjgudt",
         "coins": [
             {
@@ -1628,7 +1914,29 @@
         "account_number": "0"
     },
     {
+        "address": "cosmos1yqux0z7duyke6rwunkcruk66lw9nl896swez0x",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
         "address": "cosmos15u9ve7fz8fqaf7r2u3p4f9ru4ze47paun76mm4",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos1z024mfnytmtj9p5hj48mzm5gv6sdwg40dcqahr",
         "coins": [
             {
                 "denom": "stake",
@@ -1683,6 +1991,17 @@
         "account_number": "0"
     },
     {
+        "address": "cosmos1d7s4n059rze09859enym6zjqvxcdqcqw9h4fk3",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
         "address": "cosmos1ktcwmkrgamuhfqm78mwy0py8a0uy5mddjz86mm",
         "coins": [
             {
@@ -1717,6 +2036,17 @@
     },
     {
         "address": "cosmos1fh03auu8lrefrdjpu3zyl9n9s424xs622rerc9",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos1ex62wk5m0dg3jfraczv9xpuqttedj2egqelsj0",
         "coins": [
             {
                 "denom": "stake",
@@ -1772,6 +2102,17 @@
     },
     {
         "address": "cosmos16pjkhxw79mw7u5ag3g0cngxw86yf3r964x264p",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos1gfnc7h7zdqclxwqyuhx5p9l0wlzcmg46txgyzc",
         "coins": [
             {
                 "denom": "stake",
@@ -1925,6 +2266,17 @@
         "account_number": "0"
     },
     {
+        "address": "cosmos1898yp955e2yfad8qk42xz8m099xm52xaal7994",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
         "address": "cosmos1uzhdvw0xe4urq7n65w2k2fhfgdvx6y6cxmpc20",
         "coins": [
             {
@@ -2046,6 +2398,17 @@
         "account_number": "0"
     },
     {
+        "address": "cosmos185n9jln2g4w79w39m0g85x2tns6uekqgzrhnap",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
         "address": "cosmos1dsg4nxuxgz6zzm2hu97yk70gzet3d6n8cmp0vs",
         "coins": [
             {
@@ -2146,6 +2509,17 @@
     },
     {
         "address": "cosmos1gcjxqkmgks8etmefnjznssver7ajyxzkarap24",
+        "coins": [
+            {
+                "denom": "stake",
+                "amount": "10000"
+            }
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+    },
+    {
+        "address": "cosmos1ge0pwcycy7dq84fwlh0dddymh9nvg48eeahpsl",
         "coins": [
             {
                 "denom": "stake",
