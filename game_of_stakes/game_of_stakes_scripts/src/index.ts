@@ -39,6 +39,8 @@ async function getStuff() {
 
     let accounts = [];
 
+    var written_address = new Map();
+
     for (let player of csv_data){
 
         if (player[1].length == 0){
@@ -51,6 +53,12 @@ async function getStuff() {
 
         if (data.prefix == "cosmos" || data.prefix == "cosmosaccaddr" || data.prefix == "cosmosvaloper"){
             let converted = convertBech32(player[1],"cosmos")
+
+            if (written_address.get(converted)){
+                continue;
+            }
+            written_address.set(converted, true)
+
             let acc = {
                 "address":converted,
                 "coins":[
