@@ -9039,7 +9039,7 @@
       "params": {
         "mint_denom": "steak",
         "inflation_rate_change": "0.1000000000",
-        "inflation_max": "1000.00000000",
+        "inflation_max": "0.00000000",
         "inflation_min": "1000.00000000",
         "goal_bonded": "0.6700000000"
       }
