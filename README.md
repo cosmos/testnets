@@ -7,7 +7,7 @@ repo does not get bogged down with large genesis files and status updates.
 # Getting Started
 
 To get started with the latest testnet, see the
-[docs](https://cosmos.network/docs/getting-started/full-node.html).
+[docs](https://cosmos.network/docs/gaia/join-testnet.html).
 
 # Testnet Status
 
