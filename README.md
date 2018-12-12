@@ -11,6 +11,15 @@ To get started with the latest testnet, see the
 
 # Testnet Status
 
+## *December 11, 2018 15:00 EST* - Genki-3001
+
+`genki-3001` is a community-driven interim testnet that uses GoS accounts and parameters.
+
+Any Game of Stakes participant can join even if they weren't present for genesis.
+
+- [Forum thread with more info](https://forum.cosmos.network/t/genki-3000-also-gos-is-delayed-by-48-hours/1442/3)
+- [GitHub repo with genesis and seeds](https://github.com/certusone/genki-3001)
+
 
 ## *November 30, 2018 21:00 EST* - Gaia-9002
 
