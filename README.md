@@ -13,7 +13,7 @@ To get started with the latest testnet, see the
 
 ## *January 24, 2019 22:30 EST* - Gaia-10k
 
-We are gather gentxs for gaia-10k. Final genesis deadline isn't finalized yet but we are accepting pull requests for gen-txs to `gaia-10k/gentxs`
+We are gather gentxs for gaia-10k. Final genesis will be published around 10am pacific time on Jan 25th. We are accepting pull requests for gen-txs to `gaia-10k/gentxs`
 
 
 ## *December 11, 2018 15:00 EST* - Genki-3001
