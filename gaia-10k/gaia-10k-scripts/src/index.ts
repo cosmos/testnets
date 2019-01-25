@@ -82,12 +82,12 @@ async function getAddresses() {
         "address":"cosmos1uclv9m6xuh4m8puxd8ndwhxhf968gxyhk5udyx",
         "coins":[
             {
-                "denom":"STAKE",
-                "amount":"10000"
+                "amount":"10000000000",
+                "denom":"photinos",
             },
             {
-                "denom":"photinos",
-                "amount":"10000000000"
+                "amount":"10000",
+                "denom":"stake",
             }
         ],
         "sequence_number":"0",
@@ -107,12 +107,12 @@ async function getAddresses() {
             "address":account.address,
             "coins":[
                 {
-                    "denom":"STAKE",
-                    "amount":"10000"
+                    "amount":"10000000000",
+                    "denom":"photinos"
                 },
                 {
-                    "denom":"photinos",
-                    "amount":"10000000000"
+                    "amount":"10000",
+                    "denom":"stake"
                 }
             ],
             "sequence_number":"0",
