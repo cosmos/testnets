@@ -11,6 +11,15 @@ To get started with the latest testnet, see the
 
 # Testnet Status
 
+## *January 25, 2019 15:30 EST* -Gaia-10k
+
+The final genesis file for gaia-10k is released.
+
+Down the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-10k/genesis.json)
+
+Will list seeds nodes below shortly
+
+
 ## *January 24, 2019 22:30 EST* - Gaia-10k
 
 We are gather gentxs for gaia-10k. Final genesis will be published around 10am pacific time on Jan 25th. We are accepting pull requests for gen-txs to `gaia-10k/gentxs`
