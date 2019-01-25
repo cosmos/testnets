@@ -19,7 +19,7 @@ Down the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testne
 
 Seed nodes
 ```
-289673e4aab1edec9e8eaeaf6caf5a57e0a1400a@35.202.24.200
+289673e4aab1edec9e8eaeaf6caf5a57e0a1400a@35.202.24.200:26656
 ```
 
 ## *January 24, 2019 22:30 EST* - Gaia-10k
