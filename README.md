@@ -13,7 +13,14 @@ To get started with the latest testnet, see the
 
 ## *January 24, 2019 22:30 EST* - Gaia-10k
 
-We are gather gentxs for gaia-10k. Final genesis deadline isn't finalized yet but we are accepting pull requests for gen-txs to `gaia-10k/gentxs`
+We are gather gentxs for gaia-10k. Final genesis will be published around 10am pacific time on Jan 25th. We are accepting pull requests for gen-txs to `gaia-10k/gentxs`
+
+```
+cosmos-sdk: 0.30.0-0-ge003c5ebe
+git commit: e003c5ebe02bed51056e46d5ff1a232e2bd00dda
+vendor hash:
+go version go1.11.4 darwin/amd64
+```
 
 
 ## *December 11, 2018 15:00 EST* - Genki-3001
