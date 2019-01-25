@@ -17,8 +17,10 @@ The final genesis file for gaia-10k is released.
 
 Down the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-10k/genesis.json)
 
-Will list seeds nodes below shortly
-
+Seed nodes
+```
+289673e4aab1edec9e8eaeaf6caf5a57e0a1400a@35.202.24.200
+```
 
 ## *January 24, 2019 22:30 EST* - Gaia-10k
 
