@@ -39,6 +39,26 @@
                 "end_time": "0"
             },
             {
+                "address": "cosmos1v0k4jsnhmydpzm8w92k9u7064glzys92shugtv",
+                "coins": [
+                    {
+                        "amount": "10000000000",
+                        "denom": "photinos"
+                    },
+                    {
+                        "amount": "10000",
+                        "denom": "stake"
+                    }
+                ],
+                "sequence_number": "0",
+                "account_number": "0",
+                "original_vesting": null,
+                "delegated_free": null,
+                "delegated_vesting": null,
+                "start_time": "0",
+                "end_time": "0"
+            },
+            {
                 "address": "cosmos157ez5zlaq0scm9aycwphhqhmg3kws4qusmekll",
                 "coins": [
                     {
