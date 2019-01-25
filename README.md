@@ -1,278 +1,205 @@
-# Connect to a Testnet
+# Cosmos Testnets
 
-This document explains how to connect to the Testnet of a [Cosmos-SDK](https://github.com/cosmos/cosmos-sdk/) based blockchain. It can be used to connect to the latest Testnet for the Cosmos Hub.
+This repo collects the genesis and configuration files for the various Cosmos
+testnets. It exists so the [Cosmos-SDK](https://github.com/cosmos/cosmos-sdk) 
+repo does not get bogged down with large genesis files and status updates.
 
-## Software Setup (Manual Installation)
+# Getting Started
 
-Follow these instructions to install the Cosmos-SDK and connect to the latest Testnet. This instructions work for both a local machine and a VM in a cloud server.
+To get started with the latest testnet, see the
+[docs](https://cosmos.network/docs/gaia/join-testnet.html).
 
-If you want to run a non-validator full-node, installing the SDK on a Cloud server is a good option. However, if you are want to become a validator for the Hub's `mainnet` you should look at more complex setups, including [Sentry Node Architecture](https://github.com/cosmos/cosmos/blob/master/VALIDATORS_FAQ.md#how-can-validators-protect-themselves-from-denial-of-service-attacks), to protect your node from DDOS and ensure high-availability (see the [technical requirements](https://github.com/cosmos/cosmos/blob/master/VALIDATORS_FAQ.md#technical-requirements)). You can find more information on validators in our [website](https://cosmos.network/validators), in the [Validator FAQ](https://cosmos.network/resources/validator-faq) and in the [Validator Chat](https://riot.im/app/#/room/#cosmos_validators:matrix.org).
+# Testnet Status
 
-### Install [Go](https://golang.org/)
+## *January 24, 2019 22:30 EST* - Gaia-10k
 
-Install `go` following the [instructions](https://golang.org/doc/install) in the official golang website.
-You will require **Go 1.9+** for this tutorial.
+We are gather gentxs for gaia-10k. Final genesis will be published around 10am pacific time on Jan 25th. We are accepting pull requests for gen-txs to `gaia-10k/gentxs`
 
-#### Set GOPATH
-
-First, you will need to set up your `GOPATH`. Make sure that the location `$HOME` is something like `/Users/<username>`, you can corroborate it by typing `echo $HOME` in your terminal.
-
-Go to `$HOME` with the command `cd $HOME` and open the the hidden file `.barshrc` with a code editor and paste the following lines \(or `.bash_profile` if your're using OS X\).
-
-```
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-```
-
-Save and restart the terminal.
-
-_Note_: If you can't see the hidden file, use the shortcut `Command + Shift + .` in Finder.
-
-#### Update Packages
-
-To update all packages in your `GOPATH` run:
-
-```
-go get -u all
-```
-
-If you want to update a specific package run:
-
-```
-go get -u <package_name>
-```
-
-### Install [GNU Wget](https://www.gnu.org/software/wget/)
-
-**MacOS**
-
-```
-brew install wget
-```
-
-**Linux**
-
-```
-sudo apt-get install wget
-```
-
-Note: You can check other available options for downloading `wget` [here](https://www.gnu.org/software/wget/faq.html#download).
-
-### Install binaries
-
-Cosmos SDK can be installed to `$GOPATH/src/github.com/cosmos/cosmos-sdk` like a normal Go program:
-
-```
-go get github.com/cosmos/cosmos-sdk
-```
-
-Now we can fetch the correct versions of each dependency by running:
-
-```
-cd $GOPATH/src/github.com/cosmos/cosmos-sdk
-git fetch --all
-git checkout v0.17.0-rc0
-make get_tools // run $ make update_tools if already installed
-make get_vendor_deps
-make install
-```
-
-This will install the `gaiad` and `gaiacli` binaries. Verify that everything is OK by running:
-
-```
-gaiad version
-```
-
-You should see:
-
-```
-0.17.0-20abeb3d
-```
-
-And also:
-
 ```
-gaiacli version
+cosmos-sdk: 0.30.0-0-ge003c5ebe
+git commit: e003c5ebe02bed51056e46d5ff1a232e2bd00dda
+vendor hash:
+go version go1.11.4 darwin/amd64
 ```
 
-You should see:
 
-```
-0.17.0-20abeb3d
-```
+## *December 11, 2018 15:00 EST* - Genki-3001
 
-## Genesis Setup
+`genki-3001` is a community-driven interim testnet that uses GoS accounts and parameters.
 
-Genesis files are the starting point for the full-node to sync up with the network. In order to sync up with the correct version of the Testnet, be sure to choose the genesis file corresponding to the version of the Testnet you want to connect to.
+Any Game of Stakes participant can join even if they weren't present for genesis.
 
-Now that we have completed the basic SDK setup, we can start working on the genesis configuration for the chain we want to connect to.
+- [Forum thread with more info](https://forum.cosmos.network/t/genki-3000-also-gos-is-delayed-by-48-hours/1442/3)
+- [GitHub repo with genesis and seeds](https://github.com/certusone/genki-3001)
 
-Get the genesis transactions
 
-```
-git clone https://github.com/cosmos/testnets
+## *November 30, 2018 21:00 EST* - Gaia-9002
 
-mkdir -p $HOME/.gaiad/config
-cp -a testnets/gaia-5001/. $HOME/.gaiad/config/gentx
-gaiad unsafe_reset_all
-gaiad init --gen-txs -o --chain-id=gaia-5001
+- `gaia--9002` Launching Gaia-9002 https://forum.cosmos.network/t/gaia-9002-planning-thread/1378
 
-```
-Lastly change the `moniker` string in the`config.toml`to identify your node.
 
-```
-# A custom human readable name for this node
-moniker = "<your_custom_name>"
-```
 
-## Run a Full Node
+## *November 9, 2018 21:00 EST* - Gaia-9001
 
-Start the full node:
+- `gaia--9001` Launching Gaia-9001 https://forum.cosmos.network/t/gaia-9001-launch-thread-w-seeds-lets-try-this-again/1301/4
 
-```
-gaiad start
-```
 
-Check the everything is running smoothly:
+## *August 20, 2018 11:00 EST* - Gaia-8000
 
-```
-gaiacli status
-```
+- `gaia--8000` Launching Gaia-8000 https://forum.cosmos.network/t/launching-gaia-8000/739
 
-## Generate keys
+## *August 7, 2018 11:00 EST* - Gaia-7005
 
-You'll need a private and public key pair \(a.k.a. `sk, pk` respectively\) to be able to receive funds, send txs, bond tx, etc.
+- `gaia--7005` Launching Gaia-7005 https://forum.cosmos.network/t/launching-gaia-7005/698
 
-To generate your a new key \(default _ed25519_ elliptic curve\):
+## *August 4, 2018 1:30 EST* - Gaia-7004
 
-```
-gaiacli keys add <your_key_name>
-```
+- `gaia--7004` Network halted. Stack Trace https://github.com/cosmos/cosmos-sdk/issues/1920
 
-Next, you will have to enter a passphrase for your key twice. Save the _seed_ _phrase_ in a safe place in case you forget the password.
 
-Now if you check your private keys you will see the `<your_key_name>` key among them:
+## *July 29, 2018, 12:00 EST* - Gaia-7003 
+- `gaia-7003` halted as fortold by the fuzzer. Stack trace here:https://github.com/cosmos/cosmos-sdk/issues/1872
+- `gaia-7004` is online now https://forum.cosmos.network/t/gaia-7004-launching/635
 
-```
-gaiacli keys show <your_key_name>
-```
+## *July 27, 2018, 20:00 EST* - Gaia-7003 
 
-You can see all your other available keys by typing:
+- Testnet halted on a Tendermint [regression](https://github.com/tendermint/tendermint/pull/2076)
+- [v0.23.1 of the SDK](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.23.1)
+- Details on `gaia-7003` can be found [here](https://forum.cosmos.network/t/launching-gaia-7003/607)
 
-```
-gaiacli keys list
-```
 
-The validator pubkey from your node should be the same as the one printed with the command:
 
-```
-gaiad show_validator
-```
+## *July 26, 2018, 0:00 EST* - Gaia-7002 
 
-Finally, save your address and pubkey into a variable to use them afterwards.
+- [v0.23.0 of the
+  SDK](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.23.0)
+- [Launch timeline](https://forum.cosmos.network/t/gaia-7002-launch-timeline/581)
+- [Details on genesis.json](https://forum.cosmos.network/t/building-gaia-7002-genesis-json/589)
 
-```
-MYADDR=<your_newly_generated_address>
-MYPUBKEY=<your_newly_generated_public_key>
-```
+## *July 22, 2018, 17:00 EST* - Gaia-7001 consensus failure
 
-**IMPORTANT:** We strongly recommend to **NOT** use the same passphrase for your different keys. The Tendermint team and the Interchain Foundation will not be responsible for the lost of funds.
+- Bug in the governance module caused a panic
 
-### Get coins
+## *July 17, 2018, 4:00 EST* - New Testnet Gaia-7001 
 
-Go to the faucet in [http://atomexplorer.com/](http://atomexplorer.com/) and claim some coins for your testnet by typing the address of your key, as printed out above.
+- New testnet with fixes for the genesis file 
+- Increased max validators to 128
 
-## Send tokens
+## *July 17, 2018, 3:00 EST* - Gaia-7000 consensus failure
 
-```
-gaiacli send --amount=1000fermion --chain-id=<name_of_testnet_chain> --sequence=1 --name=<key_name> --to=<destination_address>
-```
+- Misconfiguration in the genesis file led to a consensus failure
+- New genesis file for gaia-7001 will be up soon
 
-The `--amount` flag defines the corresponding amount of the coin in the format `--amount=<value|coin_name>`
+## *July 17, 2018, 2:40 EST* - Gaia-7000 is making blocks!
 
-The `--sequence` flag corresponds to the sequence number to sign the tx.
+- Gaia-7000 is live and making blocks!
 
-Now check the destination account and your own account to check the updated balances \(by default the latest block\):
+## *July 16, 2018, 17:00 EST* - New Testnet Gaia-7000
 
-```
-gaiacli account <destination_address>
-gaiacli account <your_address>
-```
+- Gaia-7000 is up!
+- 108 validators in the genesis.json file.
 
-You can also check your balance at a given block by using the `--block` flag:
+## *July 2, 2018, 1:00 EST* - Gaia-6002 slashing failure
 
-```
-gaiacli account <your_address> --block=<block_height>
-```
+- Gaia-6002 has been halted due to a slashing issue.
+- The team is taking its time to look into this Gaia-7000 will be introduced this week.
 
-## Run a Validator Node
+## *June 13, 2018, 17:00 EST* - Gaia-6002 is making blocks!
 
-[Validators](https://cosmos.network/validators) are actors from the network that are responsible from committing new blocks to the blockchain by submitting their votes. In terms of security, validators' stake is slashed in all the zones they belong if they become unavailable, double sign a transaction, or don't cast their votes. We strongly recommend entities intending to run validators in the Cosmos Hub's `mainnet` to check the [technical requirements](https://github.com/cosmos/cosmos/blob/master/VALIDATORS_FAQ.md#technical-requirements) and take the necessary precautions to ensure high-availability, such as setting a Sentry Node architecture. If you have any question about validators, read the [Validator FAQ](https://cosmos.network/resources/validator-faq) and join the [Validator Chat](https://riot.im/app/#/room/#cosmos_validators:matrix.org).
+- Gaia-6002 is live and making blocks
+- Absent validators have been slashed and revoked 
+- Currently live with 17 validators
 
-This section covers the instructions necessary to stake tokens to become a testnet validator candidate.
+## *June 13, 2018, 4:30 EST* - New Testnet Gaia-6002
 
-Your `pubkey` can be used to create a new validator candidate by staking some tokens:
+- After fixing bugs from gaia-6001, especially [issue
+  #1197](https://github.com/cosmos/cosmos-sdk/issues/1197), we are announcing a
+  new testnet, Gaia-6002
+- Gaia-6002 has the same genesis file as Gaia-6001, just with the chain-id
+  updated
+- Update from previous testnet [here](https://github.com/cosmos/cosmos-sdk/tree/master/cmd/gaia/testnets#upgrading-from-previous-testnet)
 
-You can find your node pubkey by running
-```
-gaiacli status
-```
+## *June 13, 2018, 4:30 EST* - New Release
 
-and extracting your pubkey from the value field in validator info
-```
-"validator_info":{"address":"CF217B72C54FBB27D012D616B2B2114A9F8EFAF0","pub_key":{"type":"AC26791624DE60","value":"CDF/8aD8Lt+ikR3LyCg9c7DwWBA51NH+MUkH7tzxrfY="},"voting_power":0}}
-```
+- Released gaia
+  [v0.19.0](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.19.0)
+- Includes various bug-fixes for staking found on Gaia-6001
 
+## *June 13, 2018, 2:30 EST* - Published Postmortem of Gaia-6001 failure
 
-```
-gaiacli declare-candidacy --amount=500steak --pubkey=<your_node_pubkey> --address-candidate=<your_address> --moniker=satoshi --chain-id=<name_of_the_testnet_chain> --sequence=1 --name=<key_name>
-```
+- A bug in the design of the staking data model caused a sanity check to fail
+- Full writeup
+  [here](https://github.com/cosmos/cosmos-sdk/issues/1197#issuecomment-396823021)
 
-You can add more information of the validator candidate such as`--website`, `--keybase-sig `or additional `--details`. If you want to edit the candidate info:
+## *June 10, 2018, 8:30 EST* - Gaia-6001 consensus failure
 
-```
-gaiacli edit-candidacy --details="To the cosmos !" --website="https://cosmos.network"
-```
+- Validator unbonding and revocation activity caused a consensus failure
+- There is a bug in the staking module that must be fixed
+- The team is taking its time to look into this and release a fix following a
+  proper protocol for hotfix upgrades to the testnet
+- Please stay tuned!
 
-Finally, you can check all the candidate information by typing:
+## *June 9, 2018, 14:00 EST* - New Release
 
-```
-gaiacli candidate --address-candidate=<your_address> --chain-id=<name_of_the_testnet_chain>
-```
+- Released gaia
+  [v0.18.0](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.18.0) with
+  update for Tendermint
+  [v0.20.0](https://github.com/tendermint/tendermint/releases/tag/v0.20.0)
+- Includes bug fix for declaring candidacy from the command line
 
-To check that the validator is active you can find it on the validator set list:
+## *June 8, 2018, 23:30 EST* - Gaia-6001 is making blocks
 
-```
-gaiacli validatorset
-```
+- +2/3 of the voting power is finally online for Gaia-6001 and it is making
+  blocks!
+- This is a momentous achievement - a successful asynchronous decentralized
+  testnet launch
+- Congrats everyone!
 
-**Note:** Remember that to be in the validator set you need to have more total power than the Xnd validator, where X is the assigned size for the validator set \(by default _`X = 100`_\).
+## *June 8, 2018, 12:00 EST* - New Testnet Gaia-6001
 
-## Delegate your tokens
+- After some confusion around testnet deployment and a contention testnet
+  hardfork, a new genesis file and network was released for `gaia-6001`
 
-You can delegate \(_i.e._ bind\) **Atoms** to a validator to become a [delegator](https://cosmos.network/resources/delegators) and obtain a part of its fee revenue in **Photons**. For more information about the Cosmos Token Model, refer to our [whitepaper](https://github.com/cosmos/cosmos/raw/master/Cosmos_Token_Model.pdf).
+## *June 7, 2018, 9:00 EST* - New Testnet Gaia-6000
 
-### Bond your tokens
+- Released a new `genesis.json` file for `gaia-6000`
+- Initial validators include those that were most active in
+  the gaia-5001 testnet
+- Join the network via gaia `v0.18.0-rc0`
 
-Bond your tokens to a validator candidate with the following command:
+## *June 5, 2018, 21:00 EST* - New Release
 
-```
-gaiacli delegate --amount=10steak --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=1
-```
+- Released gaia
+  [v0.17.5](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.17.5) 
+  with update for Tendermint
+  [v0.19.9](https://github.com/tendermint/tendermint/releases/tag/v0.19.9)
+- Fixes many bugs!
+    - evidence gossipping 
+    - mempool deadlock
+    - WAL panic
+    - memory leak
+- Please update to this to put a stop to the rampant invalid evidence gossiping
+  :)
 
-### Unbond
+## *May 31, 2018, 14:00 EST* - New Release
 
-If for any reason the validator misbehaves or you just want to unbond a certain amount of the bonded tokens:
+- Released gaia
+  [v0.17.4](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.17.4) with update for Tendermint v0.19.7
+- Fixes a WAL bug and some more
+- Please update to this if you have trouble restarting a node
 
-```
-gaiacli unbond --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --shares=MAX --name=<key_name> --chain-id=<name_of_testnet_chain> --sequence=1
-```
+## *May 31, 2018, 2:00 EST* - Testnet Halt
 
-You can unbond a specific amount of`shares`\(eg:`12.1`\) or all of them \(`MAX`\).
+- A validator equivocated last week and Evidence is being rampantly gossipped
+- Peers that can't process the evidence (either too far behind or too far ahead) are disconnecting from the peers that
+  sent it, causing high peer turn-over
+- The high peer turn-over may be causing a memory-leak, resulting in some nodes
+  crashing and the testnet halting
+- We need to fix some issues in the EvidenceReactor to address this and also
+  investigate the possible memory-leak
 
-You should now see the unbonded tokens reflected in your balance and in your delegator bond:
+## *May 29, 2018* - New Release
 
-```
-gaiacli account <your_address>
-gaiacli delegator-bond --address-delegator=<your_address> --address-candidate=<bonded_validator_address> --chain-id=<name_of_testnet_chain>
-```
+- Released v0.17.3 with update for Tendermint v0.19.6
+- Fixes fast-sync bug
+- Please update to this to sync with the testnet
