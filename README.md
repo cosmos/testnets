@@ -11,6 +11,11 @@ To get started with the latest testnet, see the
 
 # Testnet Status
 
+## *January 24, 2019 22:30 EST* - Gaia-10k
+
+We are gather gentxs for gaia-10k. Final genesis deadline isn't finalized yet but we are accepting pull requests for gen-txs to `gaia-10k/gentxs`
+
+
 ## *December 11, 2018 15:00 EST* - Genki-3001
 
 `genki-3001` is a community-driven interim testnet that uses GoS accounts and parameters.
