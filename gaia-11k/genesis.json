@@ -9819,31 +9819,6 @@
         "end_time": "1518652800"
       },
       {
-        "address": "cosmos1wtv0kp6ydt03edd8kyr5arr4f3yc52vp5g7na0",
-        "coins": [
-          {
-            "denom": "muon",
-            "amount": "10000000000"
-          },
-          {
-            "denom": "photino",
-            "amount": "10000000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [
-          {
-            "denom": "muon",
-            "amount": "5000000000"
-          }
-        ],
-        "delegated_free": null,
-        "delegated_vesting": null,
-        "start_time": "0",
-        "end_time": "1518652800"
-      },
-      {
         "address": "cosmos1wd965wxzyl2krp67sdwddy4ep48xhsrdyxxzqs",
         "coins": [
           {
