@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2019-02-09T18:48:17.693788Z",
+  "genesis_time": "2019-02-09T20:33:22.443879Z",
   "chain_id": "gaia-11k",
   "consensus_params": {
     "block_size": {
@@ -45,31 +45,6 @@
       },
       {
         "address": "cosmos1msz843gguwhqx804cdc97n22c4lllfkk39qlnc",
-        "coins": [
-          {
-            "denom": "muon",
-            "amount": "10000000000"
-          },
-          {
-            "denom": "photino",
-            "amount": "10000000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [
-          {
-            "denom": "muon",
-            "amount": "5000000000"
-          }
-        ],
-        "delegated_free": null,
-        "delegated_vesting": null,
-        "start_time": "0",
-        "end_time": "1518652800"
-      },
-      {
-        "address": "cosmos1wtv0kp6ydt03edd8kyr5arr4f3yc52vp5g7na0",
         "coins": [
           {
             "denom": "muon",
@@ -9795,6 +9770,31 @@
       },
       {
         "address": "cosmos1wtxtrd0z0vzr7xgl8j9aw202z5rrrt7wggwvg4",
+        "coins": [
+          {
+            "denom": "muon",
+            "amount": "10000000000"
+          },
+          {
+            "denom": "photino",
+            "amount": "10000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [
+          {
+            "denom": "muon",
+            "amount": "5000000000"
+          }
+        ],
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "1518652800"
+      },
+      {
+        "address": "cosmos1wtv0kp6ydt03edd8kyr5arr4f3yc52vp5g7na0",
         "coins": [
           {
             "denom": "muon",
