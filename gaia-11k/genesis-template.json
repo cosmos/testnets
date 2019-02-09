@@ -15,7 +15,6 @@
       ]
     }
   },
-  "app_hash": "",
   "app_state": {
     "accounts": null,
     "auth": {
@@ -40,7 +39,7 @@
         "unbonding_time": "259200000000000",
         "max_validators": 100,
         "max_entries": 7,
-        "bond_denom": "stake"
+        "bond_denom": "muon"
       },
       "last_total_power": "0",
       "last_validator_powers": null,
@@ -56,7 +55,7 @@
         "annual_provisions": "0.000000000000000000"
       },
       "params": {
-        "mint_denom": "stake",
+        "mint_denom": "muon",
         "inflation_rate_change": "0.130000000000000000",
         "inflation_max": "0.200000000000000000",
         "inflation_min": "0.070000000000000000",
@@ -89,8 +88,8 @@
       "deposit_params": {
         "min_deposit": [
           {
-            "denom": "stake",
-            "amount": "10000000"
+            "denom": "muon",
+            "amount": "100000"
           }
         ],
         "max_deposit_period": "172800000000000"
