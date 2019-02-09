@@ -24709,7 +24709,7 @@
     },
     "staking": {
       "pool": {
-        "not_bonded_tokens": "0",
+        "not_bonded_tokens": "9870000000000",
         "bonded_tokens": "0"
       },
       "params": {

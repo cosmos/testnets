@@ -130,35 +130,8 @@ async function getAddresses() {
         "end_time": "1518652800"
     }
 
-    let kytzu_acc ={
-        "address":"cosmos1wtv0kp6ydt03edd8kyr5arr4f3yc52vp5g7na0",
-        "coins":[
-            {
-                "amount":"10000000000",
-                "denom":"muon",
-            },
-            {
-                "amount":"10000000000",
-                "denom":"photino"
-            },
-        ],
-        "sequence_number":"0",
-        "account_number":"0",
-        "original_vesting": [
-            {
-                "amount":"5000000000",
-                "denom":"muon",
-            }
-        ],
-        "delegated_free": null,
-        "delegated_vesting": null,
-        "start_time": "0",
-        "end_time": "1518652800"
-    }
-
     accounts.push(new_acc)
     accounts.push(jack_acc)
-    accounts.push(kytzu_acc)
 
     for (let account of accounts_9001.app_state.accounts){
 
