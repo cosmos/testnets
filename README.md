@@ -17,11 +17,11 @@ Gaia-11k is live!
 
 Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-11k/genesis.json)
 
-
 Seed Nodes
 ```
-8817873909b42bb4c0feb54e23601e206f5ef5b4@35.239.201.214:26656```
+8817873909b42bb4c0feb54e23601e206f5ef5b4@35.239.201.214:26656
 ```
+
 Public Sentry
 ```
 80ebcab99fb949503bdeaee1d9c06d9c92d0f6c8@104.155.188.48:26656
@@ -29,6 +29,12 @@ Public Sentry
 
 gaiad version
 0.31.1-1-gaf935066d
+
+Block explorers:
+
+- https://hubble.figment.network/chains/gaia-11k
+- https://gaia-11k1.bigdipper.live/
+- https://stargazer-gaia11k.certus.one
 
 ## *January 25, 2019 15:30 EST* -Gaia-10k
 
