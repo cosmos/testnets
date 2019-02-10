@@ -1,10 +1,10 @@
 {
-  "genesis_time": "2019-02-09T20:33:22.443879Z",
-  "chain_id": "gaia-11k",
+  "genesis_time": "2019-02-09T23:57:58.754525Z",
+  "chain_id": "gaia-11001",
   "consensus_params": {
     "block_size": {
-      "max_bytes": "22020096",
-      "max_gas": "-1"
+      "max_bytes": "1000000",
+      "max_gas": "300000"
     },
     "evidence": {
       "max_age": "100000"
@@ -24784,11 +24784,11 @@
     "slashing": {
       "params": {
         "max_evidence_age": "120000000000",
-        "signed_blocks_window": "100",
-        "min_signed_per_window": "0.500000000000000000",
+        "signed_blocks_window": "5000",
+        "min_signed_per_window": "0.050000000000000000",
         "downtime_jail_duration": "600000000000",
         "slash_fraction_double_sign": "0.050000000000000000",
-        "slash_fraction_downtime": "0.010000000000000000"
+        "slash_fraction_downtime": "0.000000000000000000"
       },
       "signing_infos": {},
       "missed_blocks": {}
@@ -24833,7 +24833,7 @@
                 "type": "tendermint/PubKeySecp256k1",
                 "value": "ApVF6/Qlb34lJN4s2rBQqCYg2+e21/WR1JRWXy1A9kIb"
               },
-              "signature": "PcIlbkMNF+mUfkvKViby7EmrPxmSsGNxFKFyHFhawDJ52izevLa2r8CsTMTJTa32v9ZERJaSYRWPaUeGffezzw=="
+              "signature": "l3OPjQGgjmGC5J/E1fecsvz4EtbKjhX/3opylghVp6YUSUf9xMS+A2J9p4Rx+/EYO8Dmyhn3veNTdfMsxkGX/A=="
             }
           ],
           "memo": "1b7ff6fcb695e313266b34fae1ec03461db221ea@192.168.86.103:26656"

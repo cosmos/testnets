@@ -168,23 +168,17 @@ async function getAddresses() {
     template.app_state.accounts= accounts
 
     fs.writeFileSync("../genesis.json",JSON.stringify(template,undefined, 4))
+    // let tokens  = accounts.length * 10000000000
+
+    // console.log(tokens)
 
 
     })
 
 
-
-    // let accounts = genesis.app_state.accounts
-    // for (let account of accounts){
-    //     account.address = convertBech32(account.address, "cosmos")
-    //     account.coins = [{
-    //         "denom":"steak",
-    //         "amount":"50"
-    //     }]
-    // }
     // let tokens  = accounts.length * 50
 
-    // console.log(JSON.stringify(accounts, null, 4))
+    // // console.log(JSON.stringify(accounts, null, 4))
 
     // console.log(tokens)
 
