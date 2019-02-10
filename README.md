@@ -27,7 +27,6 @@ Public Sentry
 80ebcab99fb949503bdeaee1d9c06d9c92d0f6c8@104.155.188.48:26656
 ```
 
-```
 gaiad version
 0.31.1-1-gaf935066d
 
