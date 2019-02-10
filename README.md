@@ -11,7 +11,7 @@ To get started with the latest testnet, see the
 
 # Testnet Status
 
-## *February 9, 2019 18:00 EST -Gaia 11k.
+## *February 9, 2019 18:00 EST* -Gaia 11k.
 
 Gaia-11k is live! 
 
