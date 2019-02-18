@@ -1,10 +1,10 @@
 {
-  "genesis_time": "2019-02-09T23:57:58.754525Z",
-  "chain_id": "gaia-11001",
+  "genesis_time": "2019-02-18T22:08:08.225600074Z",
+  "chain_id": "gaia-12000",
   "consensus_params": {
     "block_size": {
-      "max_bytes": "1000000",
-      "max_gas": "300000"
+      "max_bytes": "22020096",
+      "max_gas": "-1"
     },
     "evidence": {
       "max_age": "100000"
@@ -24709,7 +24709,7 @@
     },
     "staking": {
       "pool": {
-        "not_bonded_tokens": "9870000000000",
+        "not_bonded_tokens": "19740000000000",
         "bonded_tokens": "0"
       },
       "params": {
@@ -24802,20 +24802,20 @@
               "type": "cosmos-sdk/MsgCreateValidator",
               "value": {
                 "description": {
-                  "moniker": "zaki",
+                  "moniker": "jack",
                   "identity": "",
                   "website": "",
                   "details": ""
                 },
                 "commission": {
                   "rate": "0.100000000000000000",
-                  "max_rate": "1.000000000000000000",
+                  "max_rate": "0.200000000000000000",
                   "max_change_rate": "0.010000000000000000"
                 },
-                "min_self_delegation": "5000000000",
-                "delegator_address": "cosmos1umaajfgap5ef6yxvk5706kwk8j08l7wha3e6zh",
-                "validator_address": "cosmosvaloper1umaajfgap5ef6yxvk5706kwk8j08l7whc9d0wy",
-                "pubkey": "cosmosvalconspub1zcjduepqdja382gtmcguacus29s68fxvdtzfp0pqws8g76ur93n3ya64t7esu6h2th",
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1msz843gguwhqx804cdc97n22c4lllfkk39qlnc",
+                "validator_address": "cosmosvaloper1msz843gguwhqx804cdc97n22c4lllfkk5352lt",
+                "pubkey": "cosmosvalconspub1zcjduepqxlsa4hznnyn3ylju5cc6hx379adpjfs3xh5nxdxesnjaw97v2e3s0lq587",
                 "value": {
                   "denom": "muon",
                   "amount": "10000000000"
@@ -24831,12 +24831,12 @@
             {
               "pub_key": {
                 "type": "tendermint/PubKeySecp256k1",
-                "value": "ApVF6/Qlb34lJN4s2rBQqCYg2+e21/WR1JRWXy1A9kIb"
+                "value": "AlT62zuYGlZGUG3Yv0RtIFoPTzVY4N+WEFmBvz1syjws"
               },
-              "signature": "l3OPjQGgjmGC5J/E1fecsvz4EtbKjhX/3opylghVp6YUSUf9xMS+A2J9p4Rx+/EYO8Dmyhn3veNTdfMsxkGX/A=="
+              "signature": "Kqrgyvd5gLGBSrxAwSai6/sttAnSFpmkko5a2N7C5KUE9kQMchTYgzFnXsxTHBW+/eTzdbOBEWUu1aq+pe2X6g=="
             }
           ],
-          "memo": "1b7ff6fcb695e313266b34fae1ec03461db221ea@192.168.86.103:26656"
+          "memo": "01cbbd3506b422d782e5472e1e1b4aca8f8eaec0@10.138.0.3:26656"
         }
       }
     ]
