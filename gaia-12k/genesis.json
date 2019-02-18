@@ -3,8 +3,8 @@
   "chain_id": "gaia-12000",
   "consensus_params": {
     "block_size": {
-      "max_bytes": "22020096",
-      "max_gas": "-1"
+      "max_bytes": "1000000",
+      "max_gas": "300000"
     },
     "evidence": {
       "max_age": "100000"
