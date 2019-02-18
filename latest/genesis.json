@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2019-02-18T22:08:08.225600074Z",
+  "genesis_time": "2019-02-18T22:38:35.477194684Z",
   "chain_id": "gaia-12000",
   "consensus_params": {
     "block_size": {
@@ -24709,7 +24709,7 @@
     },
     "staking": {
       "pool": {
-        "not_bonded_tokens": "19740000000000",
+        "not_bonded_tokens": "9870000000000",
         "bonded_tokens": "0"
       },
       "params": {
