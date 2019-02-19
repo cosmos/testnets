@@ -1,10 +1,10 @@
 {
-  "genesis_time": "2019-02-18T22:38:35.477194684Z",
-  "chain_id": "gaia-12000",
+  "genesis_time": "2019-02-19T00:23:39.188698484Z",
+  "chain_id": "gaia-12001",
   "consensus_params": {
     "block_size": {
-      "max_bytes": "1000000",
-      "max_gas": "300000"
+      "max_bytes": "22020096",
+      "max_gas": "-1"
     },
     "evidence": {
       "max_age": "100000"
@@ -24721,7 +24721,7 @@
       "last_total_power": "0",
       "last_validator_powers": null,
       "validators": null,
-      "bonds": null,
+      "delegations": null,
       "unbonding_delegations": null,
       "redelegations": null,
       "exported": false
@@ -24833,7 +24833,7 @@
                 "type": "tendermint/PubKeySecp256k1",
                 "value": "AlT62zuYGlZGUG3Yv0RtIFoPTzVY4N+WEFmBvz1syjws"
               },
-              "signature": "Kqrgyvd5gLGBSrxAwSai6/sttAnSFpmkko5a2N7C5KUE9kQMchTYgzFnXsxTHBW+/eTzdbOBEWUu1aq+pe2X6g=="
+              "signature": "GJ+QtaoM49jj8bmniwhG1nsK+kj/zy8l82bwI1GH29NqOvxqxNj8xlaSPoHaz4r3Edj0O9S+GzveAhMsqcHUVQ=="
             }
           ],
           "memo": "01cbbd3506b422d782e5472e1e1b4aca8f8eaec0@10.138.0.3:26656"
