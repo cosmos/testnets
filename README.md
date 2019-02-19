@@ -11,6 +11,20 @@ To get started with the latest testnet, see the
 
 # Testnet Status
 
+## *February 18, 2019 00:23 GMT* -Gaia 12k.
+
+Gaia-12k is live!
+
+Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-11k/genesis.json)
+
+Public Sentries:
+
+```
+01cbbd3506b422d782e5472e1e1b4aca8f8eaec0@35.247.100.212:26656
+5e13a96357d7326b1eff969ef8d96da39896327d@51.38.113.59:26656
+6165404a4b45ab0c2469deda809db89dac5cec01@34.210.245.242:26656
+```
+
 ## *February 9, 2019 18:00 EST* -Gaia 11k.
 
 Gaia-11k is live! 
