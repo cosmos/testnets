@@ -15,7 +15,7 @@ To get started with the latest testnet, see the
 
 Gaia-12k is live!
 
-Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-11k/genesis.json)
+Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-12k/genesis.json)
 
 Public Sentries:
 
