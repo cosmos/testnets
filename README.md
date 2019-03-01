@@ -23,7 +23,14 @@ Public Sentries:
 01cbbd3506b422d782e5472e1e1b4aca8f8eaec0@35.247.100.212:26656
 5e13a96357d7326b1eff969ef8d96da39896327d@51.38.113.59:26656
 6165404a4b45ab0c2469deda809db89dac5cec01@34.210.245.242:26656
+ed6b6d5019563b40e81ae29c80c712fce7ae68f0@public-seed-node.gaia.certus.one
 ```
+
+Block explorers:
+
+- https://hubble.figment.network/chains/gaia-12001
+- https://gaia-12k1.bigdipper.live
+- https://stargazer-gaia.certus.one
 
 ## *February 9, 2019 18:00 EST* -Gaia 11k.
 
