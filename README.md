@@ -13,6 +13,8 @@ To get started with the latest testnet, see the
 
 ## *March 7, 2019 21:00 GMT* -Gaia 13k
 
+### __**MAINNET RELEASE CANDIDATE!!**__
+
 Gaia-13k is live!
 
 Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-13k/genesis.json)
