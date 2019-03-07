@@ -1,7 +1,7 @@
 # Cosmos Testnets
 
 This repo collects the genesis and configuration files for the various Cosmos
-testnets. It exists so the [Cosmos-SDK](https://github.com/cosmos/cosmos-sdk) 
+testnets. It exists so the [Cosmos-SDK](https://github.com/cosmos/cosmos-sdk)
 repo does not get bogged down with large genesis files and status updates.
 
 # Getting Started
@@ -10,6 +10,25 @@ To get started with the latest testnet, see the
 [docs](https://cosmos.network/docs/gaia/join-testnet.html).
 
 # Testnet Status
+
+## *March 7, 2019 21:00 GMT* -Gaia 13k
+
+### __**MAINNET RELEASE CANDIDATE!!**__
+
+Gaia-13k is live!
+
+Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-13k/genesis.json)
+
+```bash
+$ shasum -a 256 genesis.json
+94d06c24e0c9ed6b4c09beb394570055478f7998bba21ebc908de10d8031b329  genesis.json
+```
+
+Public Node:
+
+```
+01cbbd3506b422d782e5472e1e1b4aca8f8eaec0@35.247.100.212:26656
+```
 
 ## *February 18, 2019 00:23 GMT* -Gaia 12k.
 
@@ -27,7 +46,7 @@ Public Sentries:
 
 ## *February 9, 2019 18:00 EST* -Gaia 11k.
 
-Gaia-11k is live! 
+Gaia-11k is live!
 
 Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-11k/genesis.json)
 
@@ -107,11 +126,11 @@ Any Game of Stakes participant can join even if they weren't present for genesis
 - `gaia--7004` Network halted. Stack Trace https://github.com/cosmos/cosmos-sdk/issues/1920
 
 
-## *July 29, 2018, 12:00 EST* - Gaia-7003 
+## *July 29, 2018, 12:00 EST* - Gaia-7003
 - `gaia-7003` halted as fortold by the fuzzer. Stack trace here:https://github.com/cosmos/cosmos-sdk/issues/1872
 - `gaia-7004` is online now https://forum.cosmos.network/t/gaia-7004-launching/635
 
-## *July 27, 2018, 20:00 EST* - Gaia-7003 
+## *July 27, 2018, 20:00 EST* - Gaia-7003
 
 - Testnet halted on a Tendermint [regression](https://github.com/tendermint/tendermint/pull/2076)
 - [v0.23.1 of the SDK](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.23.1)
@@ -119,7 +138,7 @@ Any Game of Stakes participant can join even if they weren't present for genesis
 
 
 
-## *July 26, 2018, 0:00 EST* - Gaia-7002 
+## *July 26, 2018, 0:00 EST* - Gaia-7002
 
 - [v0.23.0 of the
   SDK](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.23.0)
@@ -130,9 +149,9 @@ Any Game of Stakes participant can join even if they weren't present for genesis
 
 - Bug in the governance module caused a panic
 
-## *July 17, 2018, 4:00 EST* - New Testnet Gaia-7001 
+## *July 17, 2018, 4:00 EST* - New Testnet Gaia-7001
 
-- New testnet with fixes for the genesis file 
+- New testnet with fixes for the genesis file
 - Increased max validators to 128
 
 ## *July 17, 2018, 3:00 EST* - Gaia-7000 consensus failure
@@ -157,7 +176,7 @@ Any Game of Stakes participant can join even if they weren't present for genesis
 ## *June 13, 2018, 17:00 EST* - Gaia-6002 is making blocks!
 
 - Gaia-6002 is live and making blocks
-- Absent validators have been slashed and revoked 
+- Absent validators have been slashed and revoked
 - Currently live with 17 validators
 
 ## *June 13, 2018, 4:30 EST* - New Testnet Gaia-6002
@@ -220,11 +239,11 @@ Any Game of Stakes participant can join even if they weren't present for genesis
 ## *June 5, 2018, 21:00 EST* - New Release
 
 - Released gaia
-  [v0.17.5](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.17.5) 
+  [v0.17.5](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.17.5)
   with update for Tendermint
   [v0.19.9](https://github.com/tendermint/tendermint/releases/tag/v0.19.9)
 - Fixes many bugs!
-    - evidence gossipping 
+    - evidence gossipping
     - mempool deadlock
     - WAL panic
     - memory leak
