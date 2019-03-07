@@ -24,10 +24,10 @@ $ shasum -a 256 genesis.json
 94d06c24e0c9ed6b4c09beb394570055478f7998bba21ebc908de10d8031b329  genesis.json
 ```
 
-Public Node:
+Seed node:
 
 ```
-01cbbd3506b422d782e5472e1e1b4aca8f8eaec0@35.247.100.212:26656
+c24f496b951148697f8a24fd749786075c128f00@35.203.176.214:26656
 ```
 
 ## *February 18, 2019 00:23 GMT* -Gaia 12k.
@@ -55,7 +55,7 @@ Seed Nodes
 8817873909b42bb4c0feb54e23601e206f5ef5b4@35.239.201.214:26656
 ```
 
-Public Sentry
+Seed node
 ```
 80ebcab99fb949503bdeaee1d9c06d9c92d0f6c8@104.155.188.48:26656
 ```
