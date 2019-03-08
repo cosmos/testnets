@@ -21,7 +21,7 @@ Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/te
 
 ```bash
 $ shasum -a 256 genesis.json
-94d06c24e0c9ed6b4c09beb394570055478f7998bba21ebc908de10d8031b329  genesis.json
+ece5834e5b7c0a57824066e76c36e3657b564a60ca9270b4fb444158086b91f9  genesis.json
 ```
 
 Seed node:
