@@ -11,7 +11,7 @@ To get started with the latest testnet, see the
 
 # Testnet Status
 
-## *March 7, 2019 21:00 GMT* -Gaia 13k
+## *March 7, 2019 23:59 GMT* -Gaia 13k
 
 ### __**MAINNET RELEASE CANDIDATE!!**__
 
