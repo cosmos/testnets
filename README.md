@@ -11,7 +11,23 @@ To get started with the latest testnet, see the
 
 # Testnet Status
 
-## *March 7, 2019 23:59 GMT* -Gaia 13k
+## *March 20, 2019 21:24 GMT* -Gaia 13002
+
+Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-13k/genesis.json)
+
+```bash
+$ shasum -a 256 genesis.json
+f2685060238fbef50810d067e28aed274bbf22df2586294584da52c894575cfd  genesis.json
+```
+
+Seed node:
+
+```
+c24f496b951148697f8a24fd749786075c128f00@35.203.176.214:26656
+```
+
+
+## *March 7, 2019 23:59 GMT* -Gaia 13001
 
 ### __**MAINNET RELEASE CANDIDATE!!**__
 
@@ -30,7 +46,7 @@ Seed node:
 c24f496b951148697f8a24fd749786075c128f00@35.203.176.214:26656
 ```
 
-## *February 18, 2019 00:23 GMT* -Gaia 12k.
+## *February 18, 2019 00:23 GMT* -Gaia 12k
 
 Gaia-12k is live!
 
@@ -44,7 +60,7 @@ Public Sentries:
 6165404a4b45ab0c2469deda809db89dac5cec01@34.210.245.242:26656
 ```
 
-## *February 9, 2019 18:00 EST* -Gaia 11k.
+## *February 9, 2019 18:00 EST* -Gaia 11k
 
 Gaia-11k is live!
 
