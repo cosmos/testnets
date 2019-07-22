@@ -30,35 +30,11 @@ c24f496b951148697f8a24fd749786075c128f00@35.203.176.214:26656
 
 ## *April 08, 2019 22:00 GMT* -Gaia 13003
 
-Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-13k/genesis.json)
-
-```bash
-$ shasum -a 256 genesis.json
-48519942c69dbda18fd9dfba949bca5591ad67772bff669fc8649d796b9cf3c3  genesis.json
-```
-
-Seed node:
-
-```
-c24f496b951148697f8a24fd749786075c128f00@35.203.176.214:26656
-```
-
+Gaia 13003 was updated to Gaia 13004
 
 ## *March 20, 2019 21:24 GMT* -Gaia 13002
 
-Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-13k/genesis.json)
-
-```bash
-$ shasum -a 256 genesis.json
-f2685060238fbef50810d067e28aed274bbf22df2586294584da52c894575cfd  genesis.json
-```
-
-Seed node:
-
-```
-c24f496b951148697f8a24fd749786075c128f00@35.203.176.214:26656
-```
-
+Gaia 13002 was updated to Gaia 13003
 
 ## *March 7, 2019 23:59 GMT* -Gaia 13001
 
@@ -66,18 +42,7 @@ c24f496b951148697f8a24fd749786075c128f00@35.203.176.214:26656
 
 Gaia-13k is live!
 
-Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-13k/genesis.json)
-
-```bash
-$ shasum -a 256 genesis.json
-94d06c24e0c9ed6b4c09beb394570055478f7998bba21ebc908de10d8031b329  genesis.json
-```
-
-Seed node:
-
-```
-c24f496b951148697f8a24fd749786075c128f00@35.203.176.214:26656
-```
+Gaia 13001 was updated to Gaia 13002
 
 ## *February 18, 2019 00:23 GMT* -Gaia 12k
 
