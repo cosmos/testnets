@@ -11,6 +11,23 @@ To get started with the latest testnet, see the
 
 # Testnet Status
 
+## *July 22, 2019 21:20 GMT* -Gaia 13004
+
+Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-13k/genesis.json)
+
+```bash
+$ shasum -a 256 genesis.json
+a22d5d16ec2666b0a8cca9bd374fe26c1c0f2f52b1dc1ccf6e0cb8c93eefc771  -
+```
+
+Seed nodes:
+```
+35b9658ca14dd4908b37f327870cbd5007ee06f1@116.203.146.149:26656
+c24f496b951148697f8a24fd749786075c128f00@35.203.176.214:26656
+6be0856f6365559fdc2e9e97a07d609f754632b0@cosmos-gaia-13004-seed.nodes.polychainlabs.com:26656
+```
+
+
 ## *April 08, 2019 22:00 GMT* -Gaia 13003
 
 Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-13k/genesis.json)
