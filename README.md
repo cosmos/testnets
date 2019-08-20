@@ -11,6 +11,13 @@ To get started with the latest testnet, see the
 
 # Testnet Status
 
+## *August 20, 2019 19:00 CEST* - Gaia 13006
+
+Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-13k/genesis.json)
+
+For this testnet we have changed two thing in the genesis: `max_commission` and denom for the crisis module to submit crisis transactions. For this reason we are not able to provide a `shasum` from the previous testnet.
+
+
 ## *August 8, 2019 00:00 GMT* -Gaia 13005
 
 Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-13k/genesis.json)
