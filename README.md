@@ -11,7 +11,7 @@ To get started with the latest testnet, see the
 
 # Testnet Status
 
-## *August 20, 2019 18:00 CEST* - Gaia 13006
+## *August 20, 2019 19:00 CEST* - Gaia 13006
 
 Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-13k/genesis.json)
 
