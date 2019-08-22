@@ -7,9 +7,18 @@ repo does not get bogged down with large genesis files and status updates.
 # Getting Started
 
 To get started with the latest testnet, see the
-[docs](https://cosmos.network/docs/gaia/join-testnet.html).
+[docs](https://hub.cosmos.network/docs/join-testnet.htmll).
 
 # Testnet Status
+
+## *August 20, 2019 19:00 CEST* - Gaia 13006
+
+*Gaia Version:* v2.0.0-rc1
+
+Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-13k/genesis.json)
+
+For this testnet we have changed two thing in the genesis: `max_commission` and denom for the crisis module to submit crisis transactions. For this reason we are not able to provide a `shasum` from the previos testnet.
+
 
 ## *August 8, 2019 00:00 GMT* -Gaia 13005
 
