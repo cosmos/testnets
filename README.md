@@ -21,7 +21,7 @@ For this testnet we have changed two things in the genesis: `max_commission` and
 
 ## *August 8, 2019 00:00 GMT* -Gaia 13005
 
-Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-13k/genesis.json)
+Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/666e3eafcf2d253969a7278d92039fb0ac839650/gaia-13k/genesis.json)
 
 ```bash
 $ shasum -a 256 genesis.json
