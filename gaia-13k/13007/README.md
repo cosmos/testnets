@@ -4,7 +4,7 @@
    chain-id
 
    ```shell
-   $ gaiad init monikername --chain-id gaia-13007`
+   $ gaiad init monikername --chain-id=gaia-13007
    ```
 
 2. Create a local key pair in the Keybase
@@ -20,16 +20,13 @@
    $ gaiad add-genesis-account $(gaiacli keys show <key-name> -a) 50000000000umuon
    ```
 
-4. Verify your validator's information
+4. Create the gentx
 
    ```shell
-   $ gaiad tendermint show-validator
-   ```
-
-5. Create the gentx
-
-   ```shell
-   $ gaiad gentx --amount 50000000000umuon --commission-rate <rate> \
-     --commission-max-rate <max-rate> --commission-max-change-rate \
-     <max-change-rate-rate> --pubkey cosmosvalconspub... --name <key-name>
+   $ gaiad gentx --amount 50000000000umuon \
+     --commission-rate=<rate> \
+     --commission-max-rate=<max-rate> \
+     --commission-max-change-rate=<max-change-rate-rate> \
+     --pubkey $(gaiad tendermint show-validator) \
+     --name=<key-name>
    ```
