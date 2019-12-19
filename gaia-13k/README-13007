@@ -15,6 +15,8 @@ PATH="$PATH:/usr/local/go/bin"
 
 git clone https://github.com/cosmos/gaia.git && cd gaia && git checkout v2.0.3; make install
 
+# gentx to genesis 13007
+
 gaiad init monikername --chain-id gaia-13007
 
 gaiacli keys add mycosmostst
@@ -25,3 +27,4 @@ gaiad tendermint show-validator
 
 gaiad gentx --amount 50000000000umuon --commission-rate 0.1 --commission-max-rate 0.2 --commission-max-change-rate 0.1 --pubkey cosmosvalconspub.............. --name mycosmostst
 
+#upload gentx github repo
