@@ -1,19 +1,120 @@
 # Cosmos Testnets
 
 This repo collects the genesis and configuration files for the various Cosmos
-testnets. It exists so the [Cosmos-SDK](https://github.com/cosmos/cosmos-sdk) 
+testnets. It exists so the [Cosmos-SDK](https://github.com/cosmos/cosmos-sdk)
 repo does not get bogged down with large genesis files and status updates.
 
 # Getting Started
 
 To get started with the latest testnet, see the
-[docs](https://cosmos.network/docs/gaia/join-testnet.html).
+[docs](https://hub.cosmos.network/docs/join-testnet.html).
 
 # Testnet Status
 
+## *August 20, 2019 19:00 CEST* - Gaia 13006
+
+*Gaia Version:* v2.0.0-rc1
+
+Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-13k/genesis.json)
+
+For this testnet we have changed two things in the genesis: `max_commission` and denom for the crisis module to submit crisis transactions. For this reason we are not able to provide a `shasum` from the previos testnet.
+
+## *August 8, 2019 00:00 GMT* -Gaia 13005
+
+Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/666e3eafcf2d253969a7278d92039fb0ac839650/gaia-13k/genesis.json)
+
+```bash
+$ shasum -a 256 genesis.json
+d3d98e86ecdd3691bd88251e6c71acef6307cd3cbbe923f73609c6a5671c8c6f  -
+```
+
+Seed nodes:
+```
+35b9658ca14dd4908b37f327870cbd5007ee06f1@116.203.146.149:26656
+c24f496b951148697f8a24fd749786075c128f00@35.203.176.214:26656
+6be0856f6365559fdc2e9e97a07d609f754632b0@cosmos-gaia-13004-seed.nodes.polychainlabs.com:26656
+```
+
+## *July 22, 2019 21:20 GMT* -Gaia 13004
+
+Gaia 13004 was updated to Gaia 13005
+
+## *April 08, 2019 22:00 GMT* -Gaia 13003
+
+Gaia 13003 was updated to Gaia 13004
+
+## *March 20, 2019 21:24 GMT* -Gaia 13002
+
+Gaia 13002 was updated to Gaia 13003
+
+## *March 7, 2019 23:59 GMT* -Gaia 13001
+
+### __**MAINNET RELEASE CANDIDATE!!**__
+
+Gaia-13k is live!
+
+Gaia 13001 was updated to Gaia 13002
+
+## *February 18, 2019 00:23 GMT* -Gaia 12k
+
+Gaia-12k is live!
+
+Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-12k/genesis.json)
+
+Public Sentries:
+
+```
+01cbbd3506b422d782e5472e1e1b4aca8f8eaec0@35.247.100.212:26656
+5e13a96357d7326b1eff969ef8d96da39896327d@51.38.113.59:26656
+6165404a4b45ab0c2469deda809db89dac5cec01@34.210.245.242:26656
+```
+
+## *February 9, 2019 18:00 EST* -Gaia 11k
+
+Gaia-11k is live!
+
+Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-11k/genesis.json)
+
+Seed Nodes
+```
+8817873909b42bb4c0feb54e23601e206f5ef5b4@35.239.201.214:26656
+```
+
+Seed node
+```
+80ebcab99fb949503bdeaee1d9c06d9c92d0f6c8@104.155.188.48:26656
+```
+
+gaiad version
+0.31.1-1-gaf935066d
+
+Block explorers:
+
+- https://hubble.figment.network/chains/gaia-11k
+- https://gaia-11k1.bigdipper.live/
+- https://stargazer-gaia11k.certus.one
+
+## *January 25, 2019 15:30 EST* -Gaia-10k
+
+The final genesis file for gaia-10k is released.
+
+Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-10k/genesis.json)
+
+Seed nodes
+```
+289673e4aab1edec9e8eaeaf6caf5a57e0a1400a@35.202.24.200:26656
+```
+
 ## *January 24, 2019 22:30 EST* - Gaia-10k
 
-We are gather gentxs for gaia-10k. Final genesis deadline isn't finalized yet but we are accepting pull requests for gen-txs to `gaia-10k/gentxs`
+We are gather gentxs for gaia-10k. Final genesis will be published around 10am pacific time on Jan 25th. We are accepting pull requests for gen-txs to `gaia-10k/gentxs`
+
+```
+cosmos-sdk: 0.30.0-0-ge003c5ebe
+git commit: e003c5ebe02bed51056e46d5ff1a232e2bd00dda
+vendor hash:
+go version go1.11.4 darwin/amd64
+```
 
 
 ## *December 11, 2018 15:00 EST* - Genki-3001
@@ -50,11 +151,11 @@ Any Game of Stakes participant can join even if they weren't present for genesis
 - `gaia--7004` Network halted. Stack Trace https://github.com/cosmos/cosmos-sdk/issues/1920
 
 
-## *July 29, 2018, 12:00 EST* - Gaia-7003 
+## *July 29, 2018, 12:00 EST* - Gaia-7003
 - `gaia-7003` halted as fortold by the fuzzer. Stack trace here:https://github.com/cosmos/cosmos-sdk/issues/1872
 - `gaia-7004` is online now https://forum.cosmos.network/t/gaia-7004-launching/635
 
-## *July 27, 2018, 20:00 EST* - Gaia-7003 
+## *July 27, 2018, 20:00 EST* - Gaia-7003
 
 - Testnet halted on a Tendermint [regression](https://github.com/tendermint/tendermint/pull/2076)
 - [v0.23.1 of the SDK](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.23.1)
@@ -62,7 +163,7 @@ Any Game of Stakes participant can join even if they weren't present for genesis
 
 
 
-## *July 26, 2018, 0:00 EST* - Gaia-7002 
+## *July 26, 2018, 0:00 EST* - Gaia-7002
 
 - [v0.23.0 of the
   SDK](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.23.0)
@@ -73,9 +174,9 @@ Any Game of Stakes participant can join even if they weren't present for genesis
 
 - Bug in the governance module caused a panic
 
-## *July 17, 2018, 4:00 EST* - New Testnet Gaia-7001 
+## *July 17, 2018, 4:00 EST* - New Testnet Gaia-7001
 
-- New testnet with fixes for the genesis file 
+- New testnet with fixes for the genesis file
 - Increased max validators to 128
 
 ## *July 17, 2018, 3:00 EST* - Gaia-7000 consensus failure
@@ -100,7 +201,7 @@ Any Game of Stakes participant can join even if they weren't present for genesis
 ## *June 13, 2018, 17:00 EST* - Gaia-6002 is making blocks!
 
 - Gaia-6002 is live and making blocks
-- Absent validators have been slashed and revoked 
+- Absent validators have been slashed and revoked
 - Currently live with 17 validators
 
 ## *June 13, 2018, 4:30 EST* - New Testnet Gaia-6002
@@ -163,11 +264,11 @@ Any Game of Stakes participant can join even if they weren't present for genesis
 ## *June 5, 2018, 21:00 EST* - New Release
 
 - Released gaia
-  [v0.17.5](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.17.5) 
+  [v0.17.5](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.17.5)
   with update for Tendermint
   [v0.19.9](https://github.com/tendermint/tendermint/releases/tag/v0.19.9)
 - Fixes many bugs!
-    - evidence gossipping 
+    - evidence gossipping
     - mempool deadlock
     - WAL panic
     - memory leak
