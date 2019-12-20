@@ -11,11 +11,10 @@ To get started with the latest testnet, see the
 
 ## Testnet Status
 
-### *August 20, 2019 19:00 CEST* - Gaia 13006
+⚠️ Latest testnet: [gaia-13007](./gaia-13k/13007) ⚠️
 
-*Gaia Version:* v2.0.3
-
-Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/master/gaia-13k/13006/genesis.json)
+- *December 20, 2019 17:00 UTC* - [gaia-13007](./gaia-13k/13007)
+- *August 20, 2019 19:00 CEST* - [gaia-13006](./gaia-13k/13006)
 
 ### *August 8, 2019 00:00 GMT* -Gaia 13005
 

@@ -1,4 +1,16 @@
-# GenTx Generation
+# Gaia-13007
+
+- Go version: [v1.13+](https://golang.org/dl/)
+- Gaia version: [v2.0.3+](https://github.com/cosmos/gaia/releases)
+- Seeds:
+
+```
+055a315b20c847813535d7c2b4cedba5756e3d79@207.180.204.112
+444d209bd0f89d7bf18cf389a74872e7082b237e@44.230.205.153:26656
+30e46db6f9e6f5f19d1c08785faec03616024759@51.68.102.106:26656
+```
+
+## GenTx Generation
 
 1. Initialize the gaia directories and create the local genesis file with the correct
    chain-id
