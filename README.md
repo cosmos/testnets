@@ -16,6 +16,8 @@ To get started with the latest testnet, see the
 - *December 20, 2019 17:00 UTC* - [gaia-13007](./gaia-13k/13007)
 - *August 20, 2019 19:00 CEST* - [gaia-13006](./gaia-13k/13006)
 
+## Legacy Testnets
+
 ### *August 8, 2019 00:00 GMT* -Gaia 13005
 
 Download the genesis here: [genesis](https://raw.githubusercontent.com/cosmos/testnets/666e3eafcf2d253969a7278d92039fb0ac839650/gaia-13k/genesis.json)
