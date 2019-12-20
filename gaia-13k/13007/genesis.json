@@ -536,7 +536,7 @@
         "coins": [
           {
             "denom": "umuon",
-            "amount": "50000000000"
+            "amount": "60000000000"
           }
         ],
         "sequence_number": "0",
