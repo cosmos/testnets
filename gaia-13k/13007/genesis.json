@@ -1,5 +1,5 @@
 {
-  "genesis_time": "",
+  "genesis_time": "2019-12-20T17:00:00Z",
   "chain_id": "gaia-13007",
   "consensus_params": {
     "block": {
@@ -536,7 +536,7 @@
         "coins": [
           {
             "denom": "umuon",
-            "amount": "60000000000"
+            "amount": "5520000000000"
           }
         ],
         "sequence_number": "0",
