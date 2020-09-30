@@ -115,26 +115,27 @@ persistent_peers = ""
 
 Create a systemd service
 
-```
+```shell
 $ sudo nano /lib/systemd/system/gaiad.service
 ```
+
 Copy-Paste in the following and update `<your_username>` and `<go_workspace>` as required:
 
-    ```
-    [Unit]
-    Description=Gaiad
-    After=network-online.target
+```
+[Unit]
+Description=Gaiad
+After=network-online.target
 
-    [Service]
-    User=<your_username>
-    ExecStart=/home/<your_username>/<go_workspace>/bin/gaiad start
-    Restart=always
-    RestartSec=3
-    LimitNOFILE=4096
+[Service]
+User=<your_username>
+ExecStart=/home/<your_username>/<go_workspace>/bin/gaiad start
+Restart=always
+RestartSec=3
+LimitNOFILE=4096
 
-    [Install]
-    WantedBy=multi-user.target
-    ```
+[Install]
+WantedBy=multi-user.target
+```
 
 **This tutorial assumes `$HOME/go_workspace` to be your Go workspace. Your actual workspace directory may vary.**
 
