@@ -175,7 +175,7 @@ This section applies to those who are looking to join the testnet post genesis.
 
    ```shell
    $ gaiacli tx staking create-validator \
-   --amount 1000000000stake \
+   --amount 900000000stake \
    --commission-max-change-rate "0.1" \
    --commission-max-rate "0.20" \
    --commission-rate "0.1" \
