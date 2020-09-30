@@ -19,7 +19,7 @@ Bigbang-1 is focused on testing stargate release features. It will comprise 3 ph
 
 ### [Click here for the instructions to join phase-1](./phase-1/)
 
-## Phase-2 - It's Stargate time
+## Phase-2 : It's Stargate time - 2 weeks
 This Phase focuses majorly on `Client`  integrations to test `Wallets`, `Block explorers`, `Staking Dashboards` etc. `Cosmwasm` is another key focus in the phase.
 
 **Schedule:** 23-Oct-2020 1500UTC _to_ 06-Nov-2020 1500UTC
@@ -30,3 +30,7 @@ This Phase focuses majorly on `Client`  integrations to test `Wallets`, `Block e
 - 
 
 ### [Click here for the instructions to join phase-2](./phase-2/)
+
+## Phase-3 : Amazing IBC - 3 weeks
+
+**Schedule:** 06-Nov-2020 1500UTC _to_ 27-Nov-2020 1500UTC
