@@ -120,7 +120,7 @@ $ sudo nano /lib/systemd/system/gaiad.service
 ```
 Copy-Paste in the following and update `<your_username>` and `<go_workspace>` as required:
 
-```
+    ```
     [Unit]
     Description=Gaiad
     After=network-online.target
@@ -134,7 +134,7 @@ Copy-Paste in the following and update `<your_username>` and `<go_workspace>` as
 
     [Install]
     WantedBy=multi-user.target
-```
+    ```
 
 **This tutorial assumes `$HOME/go_workspace` to be your Go workspace. Your actual workspace directory may vary.**
 
