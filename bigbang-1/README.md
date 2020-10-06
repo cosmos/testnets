@@ -13,9 +13,9 @@ Bigbang-1 is focused on testing stargate release features. It will comprise 3 ph
 - Genesis Release _13-Oct-2020 1600UTC_
 - Network Start Time (Genesis Time) _14-Oct-2020 1600UTC_
 - Software Upgrade Proposal - 1 & Voting (Voting period is about 48hours) 
-- Test Skip-Upgrade via `x/upgrade` (manual and using `cosmvisor`)
+- Test Skip-Upgrade via `x/upgrade` (manual or using [`cosmovisor`](https://github.com/cosmos/cosmos-sdk/tree/master/cosmovisor))
 - Software upgrade proposal - 2 (`Stargate` upgrade) & voting
-- `Stargate` upgrade via `x/upgrade` (manual and using `cosmvisor`)
+- `Stargate` upgrade via `x/upgrade` (manual or using [`cosmovisor`](https://github.com/cosmos/cosmos-sdk/tree/master/cosmovisor))
 
 ### [Click here for the instructions to join phase-1](./phase-1/)
 
