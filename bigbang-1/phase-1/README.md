@@ -2,32 +2,32 @@
 
 ## Software Requirements:
 - Go version v1.14.+
-- Gaia version : [TBD]()
 - Cosmos SDK version: [v0.39.1](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.39.1)
+- Akash version : [v0.8.1](https://github.com/ovrclk/akash/releases/tag/v0.8.1)
 
 
-### Install Gaia
+### Install Akash
 ```
-$ mkdir -p $GOPATH/src/github.com/cosmos
-$ cd $GOPATH/src/github.com/cosmos
-$ git clone https://github.com/cosmos/gaia && cd gaia
-$ git checkout <0.39.branch>
+$ mkdir -p $GOPATH/src/github.com/ovrclk
+$ cd $GOPATH/src/github.com/ovrclk
+$ git clone https://github.com/ovrclk/akash && cd akash
+$ git checkout v0.8.1
 $ make install
 ```
 
 To verify if the installation was successful, execute the following command:
 ```
-$ gaiad version --long
+$ akashd version --long
 ```
-It will display the version of xrnd currently installed:
+It will display the version of akashd currently installed:
 ```
-name: gaia
-server_name: gaia
-client_name: gaiacli
-version: ...
-commit: ...
+name: akash
+server_name: akashd
+client_name: akashctl
+version: 0.8.1
+commit: 1f7e40ae25da683f9728eb36d28ace3b6f9b7604
 build_tags: netgo,ledger
-go: go version go1.14.3 linux/amd64
+go: go version go1.15.2 linux/amd64
 ```
 
 ## Activity-1: Start your validator node
@@ -39,31 +39,31 @@ Below are the instructions to generate & submit your `GenTx`
    chain-id
 
    ```shell
-   $ gaiad init <moniker-name> --chain-id=bigbang-1
+   $ akashd init <moniker-name> --chain-id=bigbang-1
    ```
 
 2. Create a local key pair in the Keybase
 
    ```shell
-   $ gaiacli keys add <key-name>
+   $ akashcli keys add <key-name>
    ```
 
 3. Add your account to your local genesis file with a given amount and the key you
    just created. Use only `1000000000stake`, other amounts will be ignored.
 
    ```shell
-   $ gaiad add-genesis-account $(gaiacli keys show <key-name> -a) 1000000000stake
+   $ akashd add-genesis-account $(akashcli keys show <key-name> -a) 1000000000stake
    ```
 
 4. Create the gentx
 
    ```shell
-   $ gaiad gentx --amount 900000000stake --name=<key-name>
+   $ akashd gentx --amount 900000000stake --name=<key-name>
    ```
 
    If all goes well, you will see a message similar to the following:
     ```shell
-    Genesis transaction written to "/home/user/.gaiad/config/gentx/gentx-******.json"
+    Genesis transaction written to "/home/user/.akashd/config/gentx/gentx-******.json"
     ```
 
 ### Submit Gentx
@@ -77,11 +77,11 @@ Submit your gentx in a PR [here](https://github.com/cosmos/testnets)
     $ git clone https://github.com/<your-github-username>/testnets
     ```
 
-- Copy the generated gentx json file to `<repo_path>/bigbang-1/phase-1/gentx/`
+- Copy the generated gentx json file to `<repo_path>/bigbang-1/gentx/`
 
     ```sh
     $ cd $GOPATH/src/github.com/cosmos/testnets
-    $ cp ~/.gaiad/config/gentx/gentx*.json ./bigbang-1/phase-1/gentx/
+    $ cp ~/.akashd/config/gentx/gentx*.json ./bigbang-1/gentx/
     ```
 
 - Commit and push to your repo
@@ -92,14 +92,14 @@ Submit your gentx in a PR [here](https://github.com/cosmos/testnets)
 Once after the genesis is released (i.e., _13-Oct-2020 1600UTC_), follow the instructions below to start your validator node.
 
 #### Genesis & Seeds
-Fetch `genesis.json` into `gaiad`'s `config` directory.
+Fetch `genesis.json` into `akashd`'s `config` directory.
 ```
-$ curl https://raw.githubusercontent.com/cosmos/testnets/master/bigbang-1/genesis.json > $HOME/.gaiad/config/genesis.json
+$ curl https://raw.githubusercontent.com/cosmos/testnets/master/bigbang-1/genesis.json > $HOME/.akashd/config/genesis.json
 ```
 
 Add seed nodes in `config.toml`.
 ```
-$ nano $HOME/.gaiad/config/config.toml
+$ nano $HOME/.akashd/config/config.toml
 ```
 Find the following section and add the seed nodes.
 ```
@@ -116,19 +116,19 @@ persistent_peers = ""
 Create a systemd service
 
 ```shell
-$ sudo nano /lib/systemd/system/gaiad.service
+$ sudo nano /lib/systemd/system/akashd.service
 ```
 
 Copy-Paste in the following and update `<your_username>` and `<go_workspace>` as required:
 
 ```
 [Unit]
-Description=Gaiad
+Description=akashd
 After=network-online.target
 
 [Service]
 User=<your_username>
-ExecStart=/home/<your_username>/<go_workspace>/bin/gaiad start
+ExecStart=/home/<your_username>/<go_workspace>/bin/akashd start
 Restart=always
 RestartSec=3
 LimitNOFILE=4096
@@ -140,16 +140,16 @@ WantedBy=multi-user.target
 **This tutorial assumes `$HOME/go_workspace` to be your Go workspace. Your actual workspace directory may vary.**
 
 ```
-$ sudo systemctl enable gaiad
-$ sudo systemctl start gaiad
+$ sudo systemctl enable akashd
+$ sudo systemctl start akashd
 ```
 Check node status
 ```
-$ gaiad status
+$ akashd status
 ```
 Check logs
 ```
-$ sudo journalctl -u gaiad -f
+$ sudo journalctl -u akashd -f
 ```
 
 ## Create Testnet Validator
@@ -157,7 +157,7 @@ This section applies to those who are looking to join the testnet post genesis.
 
 1. Init Chain and start your node
    ```shell
-   $ gaiad init <moniker-name> --chain-id=bigbang-1
+   $ akashd init <moniker-name> --chain-id=bigbang-1
    ```
 
    After that, please follow all the instructions from [Start your validator node](#start-your-validator-node)
@@ -166,8 +166,8 @@ This section applies to those who are looking to join the testnet post genesis.
 2. Create a local key pair in the Keybase
 
    ```shell
-   $ gaiacli keys add <key-name>
-   $ gaiacli keys show <key-name> -a
+   $ akashcli keys add <key-name>
+   $ akashcli keys show <key-name> -a
    ```
 
 3. Request tokens from faucet: https://faucet.stargate.vitwit.com
@@ -175,14 +175,14 @@ This section applies to those who are looking to join the testnet post genesis.
 4. Create validator
 
    ```shell
-   $ gaiacli tx staking create-validator \
+   $ akashcli tx staking create-validator \
    --amount 900000000stake \
    --commission-max-change-rate "0.1" \
    --commission-max-rate "0.20" \
    --commission-rate "0.1" \
    --min-self-delegation "1" \
    --details "Some details about yourvalidator" \
-   --pubkey=$(gaiad tendermint show-validator) \
+   --pubkey=$(akashd tendermint show-validator) \
    --moniker <your_moniker> \
    --chain-id bigbang-1 \
    --from <key-name> 
