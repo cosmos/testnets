@@ -9,7 +9,7 @@ Bigbang-1 is focused on testing stargate release features. It will comprise 3 ph
 **Schedule:** 13-Oct-2020 1500UTC _to_ 23-Oct-2020 1500UTC
 
 ### Activities:
-- GenTxs - _13-Oct-2020 1500UTC_ *to* _13-Oct-2020 1500UTC_
+- GenTxs - _13-Oct-2020 1500UTC_ *to* _15-Oct-2020 1500UTC_
 - Genesis Release _15-Oct-2020 1600UTC_
 - Network Start Time (Genesis Time) _16-Oct-2020 1600UTC_
 - Software upgrade proposal (`Stargate` upgrade) - _21-Oct-2020 1500UTC_
