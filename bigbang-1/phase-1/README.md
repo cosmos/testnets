@@ -45,14 +45,14 @@ Below are the instructions to generate & submit your `GenTx`
 2. Create a local key pair in the Keybase
 
    ```shell
-   $ akashcli keys add <key-name>
+   $ akashctl keys add <key-name>
    ```
 
 3. Add your account to your local genesis file with a given amount and the key you
    just created. Use only `1000000000penny`, other amounts will be ignored.
 
    ```shell
-   $ akashd add-genesis-account $(akashcli keys show <key-name> -a) 1000000000penny
+   $ akashd add-genesis-account $(akashctl keys show <key-name> -a) 1000000000penny
    ```
 
 4. Create the gentx
@@ -166,8 +166,8 @@ This section applies to those who are looking to join the testnet post genesis.
 2. Create a local key pair in the Keybase
 
    ```shell
-   $ akashcli keys add <key-name>
-   $ akashcli keys show <key-name> -a
+   $ akashctl keys add <key-name>
+   $ akashctl keys show <key-name> -a
    ```
 
 3. Request tokens from faucet: https://faucet.stargate.vitwit.com
@@ -175,7 +175,7 @@ This section applies to those who are looking to join the testnet post genesis.
 4. Create validator
 
    ```shell
-   $ akashcli tx staking create-validator \
+   $ akashctl tx staking create-validator \
    --amount 900000000penny \
    --commission-max-change-rate "0.1" \
    --commission-max-rate "0.20" \
