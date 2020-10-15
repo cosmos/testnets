@@ -2,7 +2,7 @@ name: Gentx
 on:
   pull_request:
     paths:
-      - **/gentxs/*.json
+      - /**/gentx/*.json
 jobs:
   verify-gentx:
     runs-on: ubuntu-latest
