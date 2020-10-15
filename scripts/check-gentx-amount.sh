@@ -10,7 +10,7 @@ extraquery='[.value.msg[]| select(.type != "cosmos-sdk/MsgCreateValidator")]|len
 
 gentxquery='.value.msg[]| select(.type == "cosmos-sdk/MsgCreateValidator")|.value.value'
 
-denomquery="[$gentxquery | select(.denom != \"uakt\")] | length"
+denomquery="[$gentxquery | select(.denom != \"penny\")] | length"
 
 amountquery="$gentxquery | .amount"
 
@@ -20,7 +20,7 @@ if [ "$(jq "$extraquery" "$path")" != "0" ]; then
   exit 1
 fi
 
-# only allow "uakt" tokens to be bonded
+# only allow "penny" tokens to be bonded
 if [ "$(jq "$denomquery" "$path")" != "0" ]; then
   echo "invalid denomination"
   exit 1
