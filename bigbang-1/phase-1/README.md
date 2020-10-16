@@ -49,16 +49,16 @@ Below are the instructions to generate & submit your `GenTx`
    ```
 
 3. Add your account to your local genesis file with a given amount and the key you
-   just created. Use only `1000000000penny`, other amounts will be ignored.
+   just created. Use only `1000000000star`, other amounts will be ignored.
 
    ```shell
-   $ akashd add-genesis-account $(akashctl keys show <key-name> -a) 1000000000penny
+   $ akashd add-genesis-account $(akashctl keys show <key-name> -a) 1000000000star
    ```
 
 4. Create the gentx
 
    ```shell
-   $ akashd gentx --amount 900000000penny --name=<key-name>
+   $ akashd gentx --amount 900000000star --name=<key-name>
    ```
 
    If all goes well, you will see a message similar to the following:
@@ -179,7 +179,7 @@ This section applies to those who are looking to join the testnet post genesis.
 
    ```shell
    $ akashctl tx staking create-validator \
-   --amount 900000000penny \
+   --amount 900000000star \
    --commission-max-change-rate "0.1" \
    --commission-max-rate "0.20" \
    --commission-rate "0.1" \
