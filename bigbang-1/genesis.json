@@ -29,7 +29,7 @@
         "annual_provisions": "0.000000000000000000"
       },
       "params": {
-        "mint_denom": "penny",
+        "mint_denom": "star",
         "inflation_rate_change": "0.130000000000000000",
         "inflation_max": "0.200000000000000000",
         "inflation_min": "0.070000000000000000",
@@ -46,7 +46,7 @@
       "deposit_params": {
         "min_deposit": [
           {
-            "denom": "penny",
+            "denom": "star",
             "amount": "1000000"
           }
         ],
@@ -73,7 +73,7 @@
         "max_validators": 12,
         "max_entries": 7,
         "historical_entries": 0,
-        "bond_denom": "penny"
+        "bond_denom": "star"
       },
       "last_total_power": "0",
       "last_validator_powers": null,
@@ -109,7 +109,7 @@
             "address": "akash1dz70tfxxrsh8fned6len7feu3atz7k59zgz77n",
             "coins": [
               {
-                "denom": "penny",
+                "denom": "star",
                 "amount": "1000000000"
               }
             ],
@@ -122,7 +122,7 @@
     },
     "crisis": {
       "constant_fee": {
-        "denom": "penny",
+        "denom": "star",
         "amount": "1000"
       }
     },

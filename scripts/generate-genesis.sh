@@ -4,7 +4,7 @@ NETWORK=bigbang-1
 DAEMON=akashd
 HOME_DIR=~/.akashd
 CONFIG=~/.akashd/config
-TOKEN_DENOM=penny
+TOKEN_DENOM=star
 FAUCET_ACCOUNTS=("akash1czxh6ewhuy00tsv5zu50gz7lz2cxcpufdrarty" "akash1qjcvelu4rud75jztawcls48luxmapcajvfdhuy")
 
 rm -rf $HOME_DIR
