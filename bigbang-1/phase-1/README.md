@@ -31,34 +31,34 @@ go: go version go1.15.2 linux/amd64
 ```
 
 ## Activity-1: Start your validator node
-If you are looking to join the testnet post genesis time (i.e, _14-Oct-2020 1600UTC_), skip to [Create Testnet Validator](#create-testnet-validator)
+If you are looking to join the testnet post genesis time (i.e, _20-Oct-2020 16:00UTC_), skip to [Create Testnet Validator](#create-testnet-validator)
 
 Below are the instructions to generate & submit your `GenTx`
 ### Generate GenTx
-1. Initialize the gaia directories and create the local genesis file with the correct
+1. Initialize the akash directories and create the local genesis file with the correct
    chain-id
 
    ```shell
    $ akashd init <moniker-name> --chain-id=bigbang-1
    ```
 
-2. Create a local key pair in the Keybase
+2. Create a local key pair in the Keyring
 
    ```shell
    $ akashctl keys add <key-name>
    ```
 
 3. Add your account to your local genesis file with a given amount and the key you
-   just created. Use only `1000000000penny`, other amounts will be ignored.
+   just created. Use only `1000000000star`, other amounts will be ignored.
 
    ```shell
-   $ akashd add-genesis-account $(akashctl keys show <key-name> -a) 1000000000penny
+   $ akashd add-genesis-account $(akashctl keys show <key-name> -a) 1000000000star
    ```
 
 4. Create the gentx
 
    ```shell
-   $ akashd gentx --amount 900000000penny --name=<key-name>
+   $ akashd gentx --amount 900000000star --name=<key-name>
    ```
 
    If all goes well, you will see a message similar to the following:
@@ -89,7 +89,7 @@ Submit your gentx in a PR [here](https://github.com/cosmos/testnets)
 
 
 ### Start your validator node
-Once after the genesis is released (i.e., _13-Oct-2020 1600UTC_), follow the instructions below to start your validator node.
+Once the genesis is released (i.e., _19-Oct-2020 16:00UTC_), follow the instructions below to start your validator node.
 
 #### Genesis & Seeds
 Fetch `genesis.json` into `akashd`'s `config` directory.
@@ -98,6 +98,9 @@ $ curl https://raw.githubusercontent.com/cosmos/testnets/master/bigbang-1/genesi
 ```
 
 Add seed nodes in `config.toml`.
+
+  ```seeds = "<To be published here>"```
+  ```persistent_peers = "<To be published here>"```
 ```
 $ nano $HOME/.akashd/config/config.toml
 ```
@@ -145,7 +148,7 @@ $ sudo systemctl start akashd
 ```
 Check node status
 ```
-$ akashd status
+$ systemctl status akashd 
 ```
 Check logs
 ```
@@ -160,10 +163,10 @@ This section applies to those who are looking to join the testnet post genesis.
    $ akashd init <moniker-name> --chain-id=bigbang-1
    ```
 
-   After that, please follow all the instructions from [Start your validator node](#start-your-validator-node)
+   After that, please follow all the instructions from [Start your validator node ](#start-your-validator-node) section.
 
 
-2. Create a local key pair in the Keybase
+2. Create a local key pair in the Keyring
 
    ```shell
    $ akashctl keys add <key-name>
@@ -176,7 +179,7 @@ This section applies to those who are looking to join the testnet post genesis.
 
    ```shell
    $ akashctl tx staking create-validator \
-   --amount 900000000penny \
+   --amount 900000000star \
    --commission-max-change-rate "0.1" \
    --commission-max-rate "0.20" \
    --commission-rate "0.1" \

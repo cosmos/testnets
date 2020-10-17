@@ -3,7 +3,7 @@ DAEMON_HOME="/tmp/app$(date +%s)"
 CLI_HOME="/tmp/appcli$(date +%s)"
 DAEMON=akashd
 CLI=akashctl
-DENOM=penny
+DENOM=star
 RANDOM_KEY="randomvalidatorkeyxx"
 CHAIN_ID=bigbang-1
 
