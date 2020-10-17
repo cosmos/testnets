@@ -44,7 +44,7 @@ else
 
     echo "12345678" | ./$DAEMON add-genesis-account $RANDOM_KEY 1000000000000$DENOM --home $DAEMON_HOME \
         --keyring-backend test --home-client $CLI_HOME
-    # ./$DAEMON add-genesis-account $GENACC 1000000000$DENOM --home $DAEMON_HOME
+    ./$DAEMON add-genesis-account $GENACC 1000000000$DENOM --home $DAEMON_HOME
 
     echo "12345678" | ./$DAEMON gentx --name $RANDOM_KEY --amount 900000000000$DENOM --home $DAEMON_HOME \
         --keyring-backend test --home-client $CLI_HOME
