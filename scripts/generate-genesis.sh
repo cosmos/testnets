@@ -15,7 +15,7 @@ rm -rf $CONFIG/gentx && mkdir $CONFIG/gentx
 
 sed -i "s/\"stake\"/\"$TOKEN_DENOM\"/g" $HOME_DIR/config/genesis.json
 
-for i in $NETWORK/gentxs/*.json; do
+for i in $NETWORK/gentx/*.json; do
   echo $i
   $DAEMON add-genesis-account $(jq -r '.value.msg[0].value.delegator_address' $i) 1000000000$TOKEN_DENOM
   cp $i $CONFIG/gentx/
