@@ -111,7 +111,7 @@ seeds = ""
 ```
 ```
 # Comma separated list of persistent peers to connect to
-persistent_peers = ""
+persistent_peers = "7eb6b7cf07b47991c786994d48b7bb143300bc1b@157.230.185.206:26656" // Witval peer
 ```
 
 #### Start Your Node
