@@ -5,7 +5,6 @@
 - Cosmos SDK version: [v0.39.1](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.39.1)
 - Akash version : [v0.8.1](https://github.com/ovrclk/akash/releases/tag/v0.8.1)
 
-
 ### Install Akash
 ```
 $ mkdir -p $GOPATH/src/github.com/ovrclk
@@ -173,7 +172,7 @@ This section applies to those who are looking to join the testnet post genesis.
    $ akashctl keys show <key-name> -a
    ```
 
-3. Request tokens from faucet: https://faucet.stargate.vitwit.com
+3. Request tokens from faucet: https://faucet.bigbang.vitwit.com
 
 4. Create validator
 
@@ -190,3 +189,7 @@ This section applies to those who are looking to join the testnet post genesis.
    --chain-id bigbang-1 \
    --from <key-name> 
    ```
+
+## Useful Links
+### Explorers: [Aneka](https://bigbang.aneka.io) [BigDipper](https://bigbang.bigdipper.live)
+### Faucet: https://faucet.bigbang.vitwit.com
