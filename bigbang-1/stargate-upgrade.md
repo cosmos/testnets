@@ -11,12 +11,12 @@ is using `cosmos-sdk@0.39.1` and the upgrade will change the underlying SDK vers
 **Description:** Stargate upgrade proposal is to upgrade the current Bigbang testnet to use stargate version of the software. 
 Stargate compatible version is available on *bigbang* branch of the Akash Network repo (https://github.com/ovrclk/akash/tree/bigbang). 
 This upgrade focuses on testing the upgrade path from 0.39 to stargate release candidate (i.e.cosmos-sdk@v0.40.0-rc1). In case of any upgrade issues, 
-network will continue with old binary (akash@v0.8.1) using `akashd --unsafe-skip-upgrades <height>` flag. Here height will be the height of 
+network will continue with old binary (akash@v0.8.1) using upgrade module's `--unsafe-skip-upgrades <height>` flag. Here height will be the height of 
 the network before upgrade + 1.
 
 **Upgrade Time:** 30th Oct 2020, 1500UTC
 
-**Explorer Links:** https://bigbang.aneka.io/proposals/1 https://bigbang.bigdipper.live/proposals/1 https://look.ping.pub/#/validator?chain=bigbang-1
+**Explorer Links:** https://bigbang.aneka.io/proposals/1 https://bigbang.bigdipper.live/proposals/1 https://look.ping.pub/#/governance/1?chain=bigbang-1
 
 **Voting Period Start Time:** 26th Oct 2020, 1500UTC 
 
