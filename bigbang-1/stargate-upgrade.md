@@ -16,7 +16,7 @@ the network before upgrade + 1.
 
 **Upgrade Time:** 30th Oct 2020, 1500UTC
 
-**Explorer Links:** https://bigbang.aneka.io/proposals/1 https://bigbang.bigdipper.live/proposals/1
+**Explorer Links:** https://bigbang.aneka.io/proposals/1 https://bigbang.bigdipper.live/proposals/1 https://look.ping.pub/#/validator?chain=bigbang-1
 
 **Voting Period Start Time:** 26th Oct 2020, 1500UTC 
 
