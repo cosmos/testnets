@@ -30,7 +30,7 @@ akashctl tx gov vote 1 yes --from <your_key>
 Note: Though there are different options for voting, it is advised to vote "yes" as this proposal is about testing the upgrade path itself.
  
 ## How to upgrade 
-[TBD]
+[Setting up cosmovisor](.cosmovisor-setup.md)
 
 ## What if the upgrade fails?
 
