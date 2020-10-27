@@ -16,7 +16,7 @@ cp cosmovisor $GOBIN/cosmovisor
 mkdir -p ~/.akashd/cosmovisor
 mkdir -p ~/.akashd/cosmovisor/genesis/bin
 mkdir -p ~/.akashd/cosmovisor/upgrades/stargate/bin
-cp $GOBIN/akashd ~/.desmosd/cosmovisor/genesis/bin
+cp $GOBIN/akashd ~/.akashd/cosmovisor/genesis/bin
 ```
 
 #### Building the stargate release 
