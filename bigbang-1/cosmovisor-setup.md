@@ -46,7 +46,7 @@ After=network-online.target
 
 [Service]
 Environment="DAEMON_NAME=akashd"
-Environment="DAEMON_HOME=$HOME/.akashd"
+Environment="DAEMON_HOME=/home/<your_username>/.akashd"
 Environment="DAEMON_RESTART_AFTER_UPGRADE=on"
 User=<your_username>
 ExecStart=/home/<your_username>/<go_workspace>/bin/cosmovisor start
