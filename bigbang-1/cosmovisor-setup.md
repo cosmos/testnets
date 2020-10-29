@@ -1,4 +1,5 @@
 We will be using `cosmovisor` to perform an automatic software upgrade from `bigbang-1` to a stargate release candidate. 
+
 **Note**: Building the `bigbang` binary requires GO version 1.15+
 
 #### Installing cosmovisor
