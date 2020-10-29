@@ -1,4 +1,5 @@
 We will be using `cosmovisor` to perform an automatic software upgrade from `bigbang-1` to a stargate release candidate. 
+**Note**: Building the `bigbang` binary requires GO version 1.15+
 
 #### Installing cosmovisor
 
@@ -24,12 +25,12 @@ cp $GOBIN/akashd ~/.akashd/cosmovisor/genesis/bin
 ```
 cd $GOPATH/src/github.com/ovrclk/akash
 git fetch -a && git checkout bigbang
-make build
+make all
 ```
 
 This will create `akashd` binary built on stargate release. This binary has to be placed in the upgrades folder.
 ```
-cp build/akashd ~/.akashd/cosmovisor/upgrades/stargate/bin
+cp akashd ~/.akashd/cosmovisor/upgrades/stargate/bin
 ```
 
 #### Modifying or setting up service file
