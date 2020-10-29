@@ -119,5 +119,5 @@ WantedBy=multi-user.target
 
 ```
 sudo systemctl daemon-reload
-sudo systemctl restart akash.service
+sudo systemctl restart akashd.service
 ```
