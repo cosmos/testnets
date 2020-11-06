@@ -1,6 +1,6 @@
 # Bigbang State Migration and Upgrade
 
-We will be performing a state export of the current ```bigbang``` testnet and upgrade to **Stargate** phase of the testnet on Mon, 09 Nov 2020 1500UTC. Due to a minor bug in akash@v0.8.1, exporting state by passing the flag `--height` is not possible. It is recommended for all the validators to upgrade their nodes to [fixed](https://github.com/ovrclk/akash/tree/boz/mainnet/prevent-double-init) version of the binary with halt height specified in `app.toml`.
+We will be performing a state export of the current ```bigbang``` testnet and upgrade to **Stargate** phase of the testnet on Mon, 09 Nov 2020 1500UTC. Due to a minor bug in akash@v0.8.1, exporting state by passing the flag `--height` is not possible. It is recommended for all the validators to upgrade their nodes to [fixed](https://github.com/ovrclk/akash/tree/boz/mainnet/prevent-double-init) version of the binary with halt time specified in `app.toml`.
 
 ### Build the fixed binary:
 ```
