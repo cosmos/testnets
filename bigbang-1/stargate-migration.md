@@ -51,7 +51,7 @@ cp akashd $GOBIN
 
 With the stargate release binary of `akashd`, migrate the genesis to `v0.40`.
 ```
-akashd migrate v0.40 bigbang_genesis_export.json > new_v40_genesis.json
+akashd migrate v0.40 bigbang_genesis_export.json --chain-id bigbang-2 > new_v40_genesis.json
 ```
 Verify the sha256 sum of the new genesis file
 
@@ -64,6 +64,12 @@ Replace the original genesis with the new v40 genesis:
 
 ```
 cp new_v40_genesis.json ~/.akasd/config/genesis.json
+```
+
+Due to changes is SDK, `app.toml` will have to be updated/replaced. Sample app.toml is provided in the repo. To download it:
+
+```
+curl https://raw.githubusercontent.com/cosmos/testnets/master/bigbang-1/app.toml > $HOME/.akashd/config/app.toml
 ```
 
 New genesis file will be pushed to this repo for validators after being generated.
