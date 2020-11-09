@@ -63,7 +63,7 @@ Hash of the file: **TBA**
 Replace the original genesis with the new v40 genesis:
 
 ```
-cp new_v40_genesis.json ~/.akasd/config/genesis.json
+cp new_v40_genesis.json ~/.akashd/config/genesis.json
 ```
 
 New genesis file will be pushed to this repo for validators after being generated.
