@@ -1,8 +1,10 @@
 # Bigbang State Migration and Upgrade
 
-We will be performing a state export of the current ```bigbang``` testnet and upgrade to **Stargate** phase of the testnet on Fri, 27 Nov 2020 1500UTC. **Note**: Building the fixed binary section can be skipped if a validator has participated in the previous migration attempt. Due to a minor bug in akash@v0.8.1, exporting state by passing the flag `--height` is not possible. It is recommended for all the validators to upgrade their nodes to [fixed](https://github.com/ovrclk/akash/tree/boz/mainnet/prevent-double-init) version of the binary with halt time specified in `app.toml`.
-
+We will be performing a state export of the current ```bigbang``` testnet and upgrade to **Stargate** phase of the testnet on Fri, 27 Nov 2020 1500UTC.
+ 
 ### Build the fixed binary:
+**Note**: Building the fixed binary section can be skipped if a validator has participated in the previous migration attempt. Due to a minor bug in akash@v0.8.1, exporting state by passing the flag `--height` is not possible. It is recommended for all the validators to upgrade their nodes to [fixed](https://github.com/ovrclk/akash/tree/boz/mainnet/prevent-double-init) version of the binary prior to the upgrade.
+
 ```
 cd $GOPATH/src/github.com/ovrclk/akash
 git fetch -a && git checkout boz/mainnet/prevent-double-init
@@ -11,6 +13,7 @@ make install
 ```
 This will create the fixed version of `akashd` and place it automatically in your `$GOBIN`.
 
+### Set the halt-time:
 To ensure all the validators stop at the right time, it's recommended for all to edit the `app.toml` file with the right halt-time.
 ```
 nano ~/.akashd/config/app.toml
