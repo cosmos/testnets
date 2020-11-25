@@ -116,7 +116,10 @@ akashd keys add <key-name> --recover
 
 Paste your mnemonic after the prompt to restore your key.
 
-If you have the private key saved to a file import using the following command:
+If you don't have the `seed`, you can export the private key using:
+`akashctl keys export <keyname>`
+
+Save the contents to a file and use that to import into `akashd` using the following command:
 ```
 akashd keys import <key-name> <file-name>
 ```
