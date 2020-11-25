@@ -42,12 +42,28 @@ jq -S -c -M '' bigbang_genesis_export.json | shasum -a 256
 ```
 Hash of the file: **TBA**
 
+If you do not have the mnemonic of your key saved please export your private key using the following command:
+```
+akashctl keys export <key-name>
+```
+Save the contents of the output to a file and save it.
+
 #### Build the bigbang binary
 ```
 cd $GOPATH/src/github.com/ovrclk/akash
 git fetch -a && git checkout bigbang
 git pull origin bigbang
 make install
+```
+Verify the version
+```
+akashd version --long
+name: akashd
+server_name: akashd
+version: 0.7.9-rc14-12-g6a16ab5
+commit: 6a16ab5e7d3fb7f850adbaa25079724328373c44
+build_tags: netgo,ledger,mainnet
+go: go version go1.15.5 linux/amd64
 ```
 
 With the stargate release binary of `akashd`, migrate the genesis to `v0.40`.
@@ -100,3 +116,10 @@ akashd keys add <key-name> --recover
 
 Paste your mnemonic after the prompt to restore your key.
 
+If you don't have the `seed`, you can export the private key using:
+`akashctl keys export <keyname>`
+
+Save the contents to a file and use that to import into `akashd` using the following command:
+```
+akashd keys import <key-name> <file-name>
+```
