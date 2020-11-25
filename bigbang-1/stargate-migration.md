@@ -1,6 +1,6 @@
 # Bigbang State Migration and Upgrade
 
-We will be performing a state export of the current ```bigbang``` testnet and upgrade to **Stargate** phase of the testnet on Fri, 27 Nov 2020 1500UTC. Due to a minor bug in akash@v0.8.1, exporting state by passing the flag `--height` is not possible. It is recommended for all the validators to upgrade their nodes to [fixed](https://github.com/ovrclk/akash/tree/boz/mainnet/prevent-double-init) version of the binary with halt time specified in `app.toml`.
+We will be performing a state export of the current ```bigbang``` testnet and upgrade to **Stargate** phase of the testnet on Fri, 27 Nov 2020 1500UTC. **Note**: Building the fixed binary section can be skipped if a validator has participated in the previous migration attempt. Due to a minor bug in akash@v0.8.1, exporting state by passing the flag `--height` is not possible. It is recommended for all the validators to upgrade their nodes to [fixed](https://github.com/ovrclk/akash/tree/boz/mainnet/prevent-double-init) version of the binary with halt time specified in `app.toml`.
 
 ### Build the fixed binary:
 ```
@@ -44,11 +44,7 @@ Hash of the file: **TBA**
 cd $GOPATH/src/github.com/ovrclk/akash
 git fetch -a && git checkout bigbang
 git pull origin bigbang
-make bins
-```
-This will create `akashd` binary built on stargate release. Copy the binary to your `$GOBIN`.
-```
-cp akashd $GOBIN
+make install
 ```
 
 With the stargate release binary of `akashd`, migrate the genesis to `v0.40`.
@@ -58,23 +54,23 @@ akashd migrate v0.40 bigbang_genesis_export.json --chain-id bigbang-2 > new_v40_
 
 After migration it is important to add `ibc` module parameters to the genesis file. To add the ibc module to your genesis use the following command:
 ```
-cat new_v40_genesis.json | jq '.app_state |= . + {"ibc":{"client_genesis":{"clients":[],"clients_consensus":[],"create_localhost":false},"connection_genesis":{"connections":[],"client_connection_paths":[]},"channel_genesis":{"channels":[],"acknowledgements":[],"commitments":[],"receipts":[],"send_sequences":[],"recv_sequences":[],"ack_sequences":[]}},"transfer":{"port_id":"transfer","denom_traces":[],"params":{"send_enabled":true,"receive_enabled":true}},"capability":{"index":"1","owners":[]}}' > ibc_genesis.json
+cat new_v40_genesis.json | jq '.app_state |= . + {"ibc":{"client_genesis":{"clients":[],"clients_consensus":[],"create_localhost":false},"connection_genesis":{"connections":[],"client_connection_paths":[]},"channel_genesis":{"channels":[],"acknowledgements":[],"commitments":[],"receipts":[],"send_sequences":[],"recv_sequences":[],"ack_sequences":[]}},"transfer":{"port_id":"transfer","denom_traces":[],"params":{"send_enabled":false,"receive_enabled":false}},"capability":{"index":"1","owners":[]}}' > genesis_with_ibc_state.json
 ```
 
 Verify the sha256 sum of the new genesis file
 
 ```
-jq -S -c -M '' ibc_genesis.json | shasum -a 256
+jq -S -c -M '' genesis_with_ibc_state.json | shasum -a 256
 ```
 Hash of the file: **TBA**
 
-Replace the original genesis with the new ibc genesis:
+Replace the original genesis with the new genesis:
 
 ```
-cp ibc_genesis.json ~/.akashd/config/genesis.json
+cp genesis_with_ibc_state.json ~/.akashd/config/genesis.json
 ```
 
-Due to changes in SDK, `app.toml` will have to be updated/replaced. Sample app.toml is provided in the repo. To download it:
+Due to changes in SDK, `app.toml` will have to be updated/replaced to support gRPC & telemetry configurations. Sample app.toml is provided in the repo. To download it:
 
 ```
 curl https://raw.githubusercontent.com/cosmos/testnets/master/bigbang-1/app.toml > $HOME/.akashd/config/app.toml
