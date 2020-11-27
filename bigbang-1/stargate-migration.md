@@ -40,7 +40,7 @@ The `export` command will generate the file `bigbang_genesis_export.json` with t
 ```
 jq -S -c -M '' bigbang_genesis_export.json | shasum -a 256
 ```
-Hash of the file: **TBA**
+Hash of the file: **a7cc66b7acde92b6a49354e9535a23a23d51afd15e76d0d2e473b4b77c27c4bb  -**
 
 If you do not have the mnemonic of your key saved please export your private key using the following command:
 ```
@@ -81,7 +81,7 @@ Verify the sha256 sum of the new genesis file
 ```
 jq -S -c -M '' genesis_with_ibc_state.json | shasum -a 256
 ```
-Hash of the file: **TBA**
+Hash of the file: **3b6bd610a9b3e6ed142b078268084c8b8de8e26a0a76eb77a69294b04bddfd3e  -**
 
 Replace the original genesis with the new genesis:
 
