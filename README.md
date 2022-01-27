@@ -1,22 +1,16 @@
-# Cosmos Testnets
-
-This repo collects the genesis and configuration files for the various Cosmos
-testnets. It exists so the [Cosmos-SDK](https://github.com/cosmos/cosmos-sdk)
-repo does not get bogged down with large genesis files and status updates.
-
-## Getting Started
-
-To get started with the latest testnet, see the
-[docs](https://hub.cosmos.network/master/gaia-tutorials/join-testnet.html).
-
-## Testnet Status
-
-⚠️ Latest testnet: [gaia-13007](./gaia-13k/13007) ⚠️
-
-- *December 20, 2019 17:00 UTC* - [gaia-13007](./gaia-13k/13007)
-- *August 20, 2019 19:00 CEST* - [gaia-13006](./gaia-13k/13006)
-
 ## Legacy Testnets
+
+### *Feb 02, 2021*, Stargate Testnet
+
+See [repository](https://github.com/cosmos/stargate-launch)
+
+### *May 1, 2020*, Game of Zones
+
+See [repository](https://github.com/cosmosdevs/GameOfZones)
+
+### *December 20, 2019 17:00 UTC* - [gaia-13007](./gaia-13k/13007)
+
+### *August 20, 2019 19:00 CEST* - [gaia-13006](./gaia-13k/13006)
 
 ### *August 8, 2019 00:00 GMT* -Gaia 13005
 
