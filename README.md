@@ -1,6 +1,6 @@
 # Cosmos Hub Testnets
 
-This repository contains current and archived genesis files, scripts, and configurations for Cosmos Hub testnets. Key network information is present here, but for step-by-step instructions on how to join the testnets, please check out the tutorial in [Cosmos Hub documentation](https://hub.cosmos.network/main/hub-tutorials/join-testnet.html). You can also find legacy network information [here](legacy/README.md).
+This repository contains current and archived genesis files, scripts, and configurations for Cosmos Hub testnets. Key network information is present here, but for step-by-step instructions on how to join whichever testnet is currently running, please check out the tutorial in [Cosmos Hub documentation](https://hub.cosmos.network/main/hub-tutorials/join-testnet.html). You can also find legacy network information [here](legacy/README.md).
 
 ## Network Information for Active Testnets
 
