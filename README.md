@@ -50,7 +50,7 @@ Based on learnings from vega, we will configure `v07-theta` so that:
 
 ### 2. Persistent testnet.
 
-After the `v07-theta` testnet we will assess whether we can continue using the same testnets on a persistent basis for future upgrades.
+After the `v7-theta` testnet we will assess whether we can continue using the same testnets on a persistent basis for future upgrades.
 
 
 
