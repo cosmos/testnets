@@ -6,7 +6,7 @@ This repository contains current and archived genesis files, scripts, and config
 
 ### Vega Upgrade testnet
 
-This testnet targets validators and integrators who want to test their tooling with Vega. It mirrors the state of mainnet before the Vega testnet with modifications to enable liveness and to with convenient parameters to simulate a governance permissioned software upgrade.
+This testnet targets validators and integrators who want to test their tooling with Vega. It mirrors the state of mainnet before the Vega testnet with modifications to enable liveness and with convenient parameters to simulate a governance permissioned software upgrade.
 
 - **Chain-ID**: `vega-test`
 - **Gaia Version:** `release/v6.0.0-rc3`
