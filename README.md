@@ -6,7 +6,7 @@ This repository contains current and archived genesis files, scripts, and config
 
 ### Vega Upgrade testnet
 
-This testnet targets validators and integrators who want to test their tooling with Vega. It mirrors the state of mainnet before the Vega testnet with modifications to enable liveness and to make governance parameters for convenient to simulate a governance permissioned upgrade.
+This testnet targets validators and integrators who want to test their tooling with Vega. It mirrors the state of mainnet before the Vega testnet with modifications to enable liveness and to with convenient parameters to simulate a governance permissioned software upgrade.
 
 - **Chain-ID**: `vega-test`
 - **Gaia Version:** `release/v6.0.0-rc3`
@@ -26,7 +26,7 @@ This testnet targets validators and integrators who want to test their tooling w
   * `b7feb9619bef083e3a3e86925824f023c252745b@143.198.41.219:26656`
 - **[Network statistics](https://monitor.prod.earthball.xyz/d/UJyurCTWz/cosmos-dashboard?orgId=2)**
 - **[Block Explorer](https://vega-explorer.hypha.coop/)**
-- **Faucet**: Please make an issue in the [vega-test](https://github.com/cosmos/vega-test) repsoitory or ask in the `#validator-verified` channel in the Cosmos Developers discord
+- **Faucet**: Please make an issue in the [vega-test](https://github.com/cosmos/vega-test) repsository or ask in the `#validator-verified` channel in the Cosmos Developers discord
 
 ### Developer testnet
 
@@ -40,7 +40,7 @@ We are expecting the roll out as follows:
 
 ### 1. Rolling testnets for each gaia upgrade.
 
-These testnets aim to help validators set up robust automation around upgrades using Cosmovisor. This phase includes working directly with validators to understand current pain points and develop tools and processes to support their workflows. The `v6-vega` testnet was in Q4 2021 and the `v7-theta` testnet was in Q1 2022.
+These testnets aim to help validators set up robust automation around upgrades using Cosmovisor. This phase includes working directly with validators to understand current pain points and develop tools and processes to support their workflows. The `v6-vega` testnet was in Q4 2021 and we are currently working on `v7-theta` testnet for Q1 2022.
 
 Based on learnings from vega, we will configure `v7-theta` so that:
 * Testnet coordinators will operate 4+ validators with combined voting power exceeding 75% total power
