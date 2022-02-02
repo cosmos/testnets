@@ -42,7 +42,7 @@ We are expecting the roll out as follows:
 
 These testnets aim to help validators set up robust automation around upgrades using Cosmovisor. This phase includes working directly with validators to understand current pain points and develop tools and processes to support their workflows. The `v6-vega` testnet was in Q4 2021 and the `v7-theta` testnet was in Q1 2022.
 
-Based on learnings from vega, we will configure `v07-theta` so that:
+Based on learnings from vega, we will configure `v7-theta` so that:
 * Testnet coordinators will operate 4+ validators with combined voting power exceeding 75% total power
 * These validators will require an addition of ~550M bonded test ATOM (current bonded ATOM are ~180M) and a corresponding increase in total supply.
 * Tesnet coordinators control a faucet with >175M liquid tokens
