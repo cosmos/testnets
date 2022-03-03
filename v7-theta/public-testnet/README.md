@@ -9,7 +9,7 @@
 
 export GAIA_BRANCH=release/v6.0.0
 export GENESIS_ZIPPED_URL=https://github.com/hyphacoop/testnets/raw/add-theta-testnet/v7-theta/public-testnet/genesis.json.gz
-export NODE_HOME=~/.gaia
+export NODE_HOME=$HOME/.gaia
 export CHAIN_ID=theta-testnet-001
 export NODE_MONIKER=my-node # only really need to change this one
 export BINARY=gaiad
@@ -31,7 +31,7 @@ echo "Installing go..."
 wget -q -O - https://git.io/vQhTU | bash -s - --version 1.17
 
 echo "Sourcing bashrc to get go in our path..."
-source /root/.bashrc
+source $HOME/.bashrc
 
 export GOROOT=$HOME/.go
 export PATH=$GOROOT/bin:$PATH
