@@ -83,7 +83,7 @@ Set minimum gas prices.
 sed -i -e 's/minimum-gas-prices = ""/minimum-gas-prices = "0.0025uatom"/g' $NODE_HOME/config/app.toml
 ```
 
-Set block sync to be false. This allow us to achieve liveness without additional peers.
+Set block sync to be false. This allow us to achieve liveness without additional peers. See this [issue](https://github.com/osmosis-labs/osmosis/issues/735) for details.
 
 ```
 sed -i -e '/fast_sync =/ s/= .*/= false/' $NODE_HOME/config/config.toml
@@ -171,6 +171,12 @@ And view the logs like this:
 
 ```
 sudo journalctl -fu $NODE_MONIKER.service
+```
+
+**Please make sure your node is running and producing blocks before you proceed further!** It can take up to 10 minutes for your node to start up. Once it's producing blocks you'll start seeing log messages like the following:
+
+```
+INF committed state app_hash=99D509C03FDDFEACAD90608008942C0B4C801151BDC1B8998EEC69A1772B22DF height=9060257 module=state num_txs=0
 ```
 
 ### Manually preparing the upgrade binary (if you don't have auto-download enabled on Cosmovisor)
