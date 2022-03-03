@@ -15,9 +15,14 @@ export NODE_MONIKER=my-node # only really need to change this one
 export BINARY=gaiad
 export PERSISTENT_PEERS="5c9850dc5ec603b0c97ffd8d67bde3221b877acf@p2p.sentry-01.theta-testnet.polypore.xyz:26656,208683ee734ba3cec1cfc0c8bcbc326969641952@p2p.sentry-02.theta-testnet.polypore.xyz:26656,58e9d022962a3875fa22d7146949d0dc34e51ba6@p2p.state-sync-01.theta-testnet.polypore.xyz:26656,6954e0479cd71fa01aeed15e1a3b87c06433d827@p2p.state-sync-02.theta-testnet.polypore.xyz:26656"
 
-##### TODO STATE SYNC CONFIGURATION ###
+##### OPTIONAL STATE SYNC CONFIGURATION ###
 
-export STATE_SYNC=false
+export STATE_SYNC=true # if you set this to true, please have TRUST HEIGHT and TRUST HASH and RPC configured
+export TRUST_HEIGHT=9057300
+export TRUST_HASH="35628D6804C6340CC19BBB49E7ED1AAAA4CF1628B4CBDA903EE142BC0D3B7D0A"
+export SYNC_RPC="rpc.sentry-01.theta-testnet.polypore.xyz:26657,rpc.sentry-02.theta-testnet.polypore.xyz:26657"
+
+############## 
 
 # you shouldn't need to edit anything below this
 
@@ -64,6 +69,16 @@ $BINARY config chain-id $CHAIN_ID --home $NODE_HOME
 $BINARY config keyring-backend test --home $NODE_HOME
 $BINARY config broadcast-mode block --home $NODE_HOME
 $BINARY init $NODE_MONIKER --home $NODE_HOME --chain-id=$CHAIN_ID
+
+if $STATE_SYNC; then
+    echo "enabling state sync..."
+    sed -i -e '/enable =/ s/= .*/= true/' $NODE_HOME/config/config.toml
+    sed -i -e "/trust_height =/ s/= .*/= $TRUST_HEIGHT/" $NODE_HOME/config/config.toml
+    sed -i -e "/trust_hash =/ s/= .*/= \"$TRUST_HASH\"/" $NODE_HOME/config/config.toml
+    sed -i -e "/rpc_servers =/ s/= .*/= \"$SYNC_RPC\"/" $NODE_HOME/config/config.toml
+else
+    echo "disabling state sync..."
+fi
 
 echo "copying over genesis file..."
 cp genesis.json $NODE_HOME/config/genesis.json
