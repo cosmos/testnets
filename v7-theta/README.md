@@ -12,45 +12,79 @@ We have a number of ways you can test out the coming release, through local, dev
 
 ## Theta Developer testnet
 
-Integrators such as exchanges and wallets who want to test againt theta endpoints early may do so using:
+Integrators such as exchanges and wallets who want to test againt theta endpoints early may do so using the Theta devnet.
 
-RPC endpoint: 159.223.187.74:26657
-REST endpoint: 159.223.187.74:1317
+### Chain ID
 
-**NOTE:** We'll be re-running these devnets regularly with fresh state. If you'd like us to add you to our genesis accounts each time, please make a PR with a cosmos address.
+`theta-devnet`
 
-## Theta Local testnets
+### Software version
+
+We'll be tracking this branch until an RC has been cut: https://github.com/cosmos/gaia/tree/theta-prepare
+
+### Endpoints
+
+- **RPC:** `https://rpc.one.theta-devnet.polypore.xyz`
+- **REST:** `https://rest.one.theta-devnet.polypore.xyz`
+
+### Add to Keplr
+
+Use this [jsfiddle](https://jsfiddle.net/hba2rxd0/4/).
+
+**NOTE:** We'll be re-running these devnets regularly with fresh state. If you'd like us to add you to our genesis accounts each time, please make a PR with a cosmos address and stating that you'd like to be automatically included in future devnets.
+
+## Theta Public testnet
+
+We're running a public testnet to help validators participated in a simulated upgrade to the `v7-theta` release candidate before upgrade on the mainnet.
+
+### Chain ID
+`theta-testnet-001`
+
+### Genesis
+
+Zipped genesis file is included [in this repository](public-testnet/genesis.json.gz).
+
+Unzip and verify with shasum:
+```
+shasum -a 256 genesis.json
+522d7e5227ca35ec9bbee5ab3fe9d43b61752c6bdbb9e7996b38307d7362bb7e genesis.json
+```
+### Endpoints
+
+Endpoints are exposed as subdomains for the sentry and snapshot nodes (described below) as follows:
+
+* `rpc.<node-name>.theta-testnet.polypore.xyz`
+* `rest.<node-name>.theta-testnet.polypore.xyz`
+* `grpc.<node-name>.theta-testnet.polypore.xyz`
+* `p2p.<node-name>.theta-testnet.polypore.xyz`
+
+We're running two sentries:
+
+1. `https:\\sentry-01.theta-testnet.polypore.xyz`
+2. `https:\\sentry-02.theta-testnet.polypore.xyz`
+
+And the following nodes also serve snapshots every 1000 blocks:
+
+3. `https:\\state-sync-01.theta-testnet.polypore.xyz`
+4. `https:\\state-sync-02.theta-testnet.polypore.xyz`
+
+### Persistent peers
+
+```
+5c9850dc5ec603b0c97ffd8d67bde3221b877acf@p2p.sentry-01.theta-testnet.polypore.xyz:26656
+208683ee734ba3cec1cfc0c8bcbc326969641952@p2p.sentry-02.theta-testnet.polypore.xyz:26656
+58e9d022962a3875fa22d7146949d0dc34e51ba6@p2p.state-sync-01.theta-testnet.polypore.xyz:26656
+6954e0479cd71fa01aeed15e1a3b87c06433d827@p2p.state-sync-02.theta-testnet.polypore.xyz:26656
+```
+
+### Add to Keplr
+
+Use this [jsfiddle](https://jsfiddle.net/kht96uvo/1/).
+
+## Theta Local testnet
+
+If you'd like to test out the upgrade using our local testnet, please follow the local testnet [instructions](local-testnet/README.md). This will allow you to bring up a single validator blockchain starting from `v6.0.0` and test the upgrade to `v7.0.0`.
 
 We use an [exported genesis file](exported_genesis.json.tar.gz) and made [modifications](local-testnet/modified_genesis.json.tar.gz).
 
 These modifications replace an existing validator (Coinbase Custory) with a new validator accounts that we control. User account [mnemonic](local-testnet/mnemonic.txt) and the [private validator key](local-testnet/priv_validator_key.json) are provided in this repo.
-
-Full list of modifications are as follows:
-
-* Swapping chain id to theta-localnet
-* Increasing balance of cosmos1wvvhhfm387xvfnqshmdaunnpujjrdxznr5d5x9 by 175000000000000 uatom
-* Increasing supply of uatom by 175000000000000
-* Increasing balance of cosmos1wvvhhfm387xvfnqshmdaunnpujjrdxznr5d5x9 by 1000 theta
-* Increasing supply of theta by 1000
-* Creating new coin theta valued at 1000
-* Increasing balance of cosmos1wvvhhfm387xvfnqshmdaunnpujjrdxznr5d5x9 by 1000 rho
-* Increasing supply of rho by 1000
-* Creating new coin rho valued at 1000
-* Increasing balance of cosmos1wvvhhfm387xvfnqshmdaunnpujjrdxznr5d5x9 by 1000 lambda
-* Increasing supply of lambda by 1000
-* Creating new coin lambda valued at 1000
-* Increasing balance of cosmos1wvvhhfm387xvfnqshmdaunnpujjrdxznr5d5x9 by 1000 epsilon
-* Increasing supply of epsilon by 1000
-* Creating new coin epsilon valued at 1000
-* Increasing balance of cosmos1fl48vsnmsdzcv85q5d2q4z5ajdha8yu34mf0eh by 550000000000000 uatom
-* Increasing supply of uatom by 550000000000000
-* Increasing delegator stake of cosmos1wvvhhfm387xvfnqshmdaunnpujjrdxznr5d5x9 by 550000000000000
-* Increasing validator stake of cosmosvaloper1wvvhhfm387xvfnqshmdaunnpujjrdxznxqep2k by 550000000000000
-* Increasing validator power of D5AB5E458FD9F9964EF50A80451B6F3922E6A4AA by 550000000
-* Swapping min governance deposit amount to 1uatom
-* Swapping tally parameter quorum to 0.000000000000000001
-* Swapping tally parameter threshold to 0.000000000000000001
-* Swapping governance voting period to 60s
-* Swapping staking unbonding_time to 1s
-
-Please note that you'll need to set `fast-sync` to false in your `config.toml` file and wait for approximately 10mins for a single node testnet to start. This is due to an [issue](https://github.com/osmosis-labs/osmosis/issues/735) with state export based testnets that can't get to consensus without multiple peered nodes.
