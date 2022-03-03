@@ -1,5 +1,7 @@
 ## How to join
 
+### Quickstart on a fresh machine (e.g., on Digital Ocean droplet)
+
 ```
 #!/bin/bash -i
 
@@ -13,9 +15,9 @@ export NODE_MONIKER=my-node # only really need to change this one
 export BINARY=gaiad
 export PERSISTENT_PEERS="5c9850dc5ec603b0c97ffd8d67bde3221b877acf@p2p.sentry-01.theta-testnet.polypore.xyz:26656,208683ee734ba3cec1cfc0c8bcbc326969641952@p2p.sentry-02.theta-testnet.polypore.xyz:26656,58e9d022962a3875fa22d7146949d0dc34e51ba6@p2p.state-sync-01.theta-testnet.polypore.xyz:26656,6954e0479cd71fa01aeed15e1a3b87c06433d827@p2p.state-sync-02.theta-testnet.polypore.xyz:26656"
 
-##### OPTIONAL STATE SYNC CONFIGURATION ###
+##### TODO STATE SYNC CONFIGURATION ###
 
-export STATE_SYNC=true
+export STATE_SYNC=false
 
 # you shouldn't need to edit anything below this
 
@@ -30,6 +32,11 @@ wget -q -O - https://git.io/vQhTU | bash -s - --version 1.17
 
 echo "Sourcing bashrc to get go in our path..."
 source /root/.bashrc
+
+export GOROOT=$HOME/.go
+export PATH=$GOROOT/bin:$PATH
+export GOPATH=/root/go
+export PATH=$GOPATH/bin:$PATH
 
 echo "Getting gaia..."
 git clone https://github.com/cosmos/gaia.git
@@ -58,16 +65,6 @@ $BINARY config keyring-backend test --home $NODE_HOME
 $BINARY config broadcast-mode block --home $NODE_HOME
 $BINARY init $NODE_MONIKER --home $NODE_HOME --chain-id=$CHAIN_ID
 
-if $STATE_SYNC; then
-    echo "enabling state sync..."
-    sed -i -e '/enable =/ s/= .*/= true/' $NODE_HOME/config/config.toml
-    sed -i -e "/trust_height =/ s/= .*/= $TRUST_HEIGHT/" $NODE_HOME/config/config.toml
-    sed -i -e "/trust_hash =/ s/= .*/= \"$TRUST_HASH\"/" $NODE_HOME/config/config.toml
-    sed -i -e "/rpc_servers =/ s/= .*/= \"$SYNC_RPC\"/" $NODE_HOME/config/config.toml
-else
-    echo "disabling state sync..."
-fi
-
 echo "copying over genesis file..."
 cp genesis.json $NODE_HOME/config/genesis.json
 
@@ -82,7 +79,7 @@ export BINARY=$NODE_HOME/cosmovisor/genesis/bin/gaiad
 
 echo "install cosmovisor"
 export GO111MODULE=on
-go get github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor
+go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@v1.0.0
 
 echo "setup systemctl"
 touch /etc/systemd/system/$NODE_MONIKER.service
@@ -111,6 +108,8 @@ sudo systemctl daemon-reload
 
 echo "starting the daemon..."
 sudo systemctl start $NODE_MONIKER.service
+
+sudo systemctl restart systemd-journald
 
 echo "***********************"
 echo "find logs like this:"
