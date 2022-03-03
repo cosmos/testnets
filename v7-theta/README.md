@@ -60,13 +60,13 @@ Endpoints are exposed as subdomains for the sentry and snapshot nodes (described
 
 We're running two sentries:
 
-1. `https:\\sentry-01.theta-testnet.polypore.xyz`
-2. `https:\\sentry-02.theta-testnet.polypore.xyz`
+1. `https://sentry-01.theta-testnet.polypore.xyz`
+2. `https://sentry-02.theta-testnet.polypore.xyz`
 
 And the following nodes also serve snapshots every 1000 blocks:
 
-3. `https:\\state-sync-01.theta-testnet.polypore.xyz`
-4. `https:\\state-sync-02.theta-testnet.polypore.xyz`
+3. `https://state-sync-01.theta-testnet.polypore.xyz`
+4. `https://state-sync-02.theta-testnet.polypore.xyz`
 
 ### Persistent peers
 
