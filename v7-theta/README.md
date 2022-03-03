@@ -37,6 +37,8 @@ Use this [jsfiddle](https://jsfiddle.net/hba2rxd0/4/).
 
 We're running a public testnet to help validators participated in a simulated upgrade to the `v7-theta` release candidate before upgrade on the mainnet.
 
+You can find quickstart instructions [here](public-testnet/README.md).
+
 ### Chain ID
 `theta-testnet-001`
 
