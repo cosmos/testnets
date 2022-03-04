@@ -14,12 +14,18 @@ We'll be using a [modified genesis file](genesis.json.gz) during this upgrade. T
 Follow the [installation instructions](https://hub.cosmos.network/main/getting-started/installation.html) to understand build requirements. You'll need to install Go 1.17.
 
 ```
-sudo apt-get update
-sudo apt-get install git build-essential
+sudo apt update
+sudo apt upgrade
+sudo apt install git build-essential
 
 curl -OL https://golang.org/dl/go1.17.4.linux-amd64.tar.gz
 sudo tar -C /usr/local -xvf go1.17.4.linux-amd64.tar.gz
-export PATH=$PATH:/usr/local/go/bin
+```
+
+### Modify your paths
+```
+echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> ~/.profile
+source ~/.profile
 ```
 
 ### Build gaia 
@@ -138,7 +144,7 @@ echo "After=network-online.target"          >> /etc/systemd/system/$NODE_MONIKER
 echo ""                                     >> /etc/systemd/system/$NODE_MONIKER.service
 echo "[Service]"                            >> /etc/systemd/system/$NODE_MONIKER.service
 echo "User=root"                        >> /etc/systemd/system/$NODE_MONIKER.service
-echo "ExecStart=/root/go/bin/cosmovisor start --x-crisis-skip-assert-invariants --home \$NODE_HOME" >> /etc/systemd/system/$NODE_MONIKER.service
+echo "ExecStart=/root/go/bin/cosmovisor start --x-crisis-skip-assert-invariants" >> /etc/systemd/system/$NODE_MONIKER.service
 echo "Restart=always"                       >> /etc/systemd/system/$NODE_MONIKER.service
 echo "RestartSec=3"                         >> /etc/systemd/system/$NODE_MONIKER.service
 echo "LimitNOFILE=4096"                     >> /etc/systemd/system/$NODE_MONIKER.service
@@ -164,6 +170,7 @@ sudo systemctl restart systemd-journald
 You are now ready to start your node like this:
 
 ```
+sudo systemctl enable $NODE_MONIKER.service
 sudo systemctl start $NODE_MONIKER.service
 ```
 
