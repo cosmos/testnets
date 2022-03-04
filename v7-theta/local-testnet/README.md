@@ -198,9 +198,9 @@ make install
 
 Copy over the v7-Theta binary into the correct directory.
 ```
-mkdir -p $NODE_HOME/cosmovisor/v7-Theta/bin
-cp $(which gaiad) $NODE_HOME/cosmovisor/v7-Theta/bin
-export BINARY=$NODE_HOME/cosmovisor/v7-Theta/bin/gaiad
+mkdir -p $NODE_HOME/cosmovisor/upgrades/v7-Theta/bin
+cp $(which gaiad) $NODE_HOME/cosmovisor/upgrades/v7-Theta/bin
+export BINARY=$NODE_HOME/cosmovisor/v7-Theta/upgrades/bin/gaiad
 ```
 
 ## Submitting and voting on a software upgrade proposal
@@ -214,12 +214,13 @@ cosmovisor tx gov submit-proposal software-upgrade v7-Theta \
 --upgrade-height 9035600 \
 --upgrade-info "upgrade to v7-Theta" \
 --description "upgrade to v7-Theta" \
---gas 400000 \
+--gas auto \
+--fees 400uatom \
 --from $USER_KEY_NAME \
 --keyring-backend test \
 --chain-id $CHAIN_ID \
 --home $NODE_HOME \
---node tcp://localhost:36657 \
+--node tcp://localhost:26657 \
 --yes
 ```
 
@@ -229,16 +230,18 @@ Vote on it.
 $BINARY tx gov vote 61 yes \
 --from $USER_KEY_NAME \
 --keyring-backend test \
---chain-id test \
---home $NODE_HOME2 \
---node tcp://localhost:36657 \
+--chain-id $CHAIN_ID \
+--home $NODE_HOME \
+--gas auto \
+--fees 400uatom \
+--node tcp://localhost:26657 \
 --yes
 ```
 
 After the voting period ends, you should be able to query the proposal to see if it has passed. Like this:
 
 ```
-$BINARY query gov proposal 61
+$BINARY query gov proposal 61 --home $NODE_HOME
 ```
 
 After `PROPOSAL_STATUS_PASSED`, wait until the upgrade height is reached Cosmovisor will now auto-download the new binary specific to your platform and apply the upgrade. Please note, the upgrade info in method II does not contain the download link of the binary for GOOS=darwin GOARCH=arm64 (for mac M1 users) please use method I to upgrade.
