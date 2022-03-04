@@ -83,7 +83,7 @@ Set minimum gas prices.
 sed -i -e 's/minimum-gas-prices = ""/minimum-gas-prices = "0.0025uatom"/g' $NODE_HOME/config/app.toml
 ```
 
-Set block sync to be false. This allow us to achieve liveness without additional peers.
+Set block sync to be false. This allow us to achieve liveness without additional peers. See this [issue](https://github.com/osmosis-labs/osmosis/issues/735) for details.
 
 ```
 sed -i -e '/fast_sync =/ s/= .*/= false/' $NODE_HOME/config/config.toml
@@ -173,7 +173,13 @@ And view the logs like this:
 sudo journalctl -fu $NODE_MONIKER.service
 ```
 
-### Manually preparing the upgrade binary
+**Please make sure your node is running and producing blocks before you proceed further!** It can take up to 10 minutes for your node to start up. Once it's producing blocks you'll start seeing log messages like the following:
+
+```
+INF committed state app_hash=99D509C03FDDFEACAD90608008942C0B4C801151BDC1B8998EEC69A1772B22DF height=9060257 module=state num_txs=0
+```
+
+### Manually preparing the upgrade binary (if you don't have auto-download enabled on Cosmovisor)
 
 Build the upgrade binary.
 ```
@@ -192,7 +198,7 @@ export BINARY=$NODE_HOME/cosmovisor/v7-Theta/bin/gaiad
 
 ## Submitting and voting on a software upgrade proposal
 
-Submit a software upgrade proposal.
+You can submit a software upgrade proposal without specifiying a binary, but this only works for those nodes who are manually preparing the upgrade binary.
 
 ```
 cosmovisor tx gov submit-proposal software-upgrade v7-Theta \
@@ -226,7 +232,7 @@ After the voting period ends, you should be able to query the proposal to see if
 
 ```
 $BINARY query gov proposal 61
-``
+```
 
 After `PROPOSAL_STATUS_PASSED`, wait until the upgrade height is reached Cosmovisor will now auto-download the new binary specific to your platform and apply the upgrade. Please note, the upgrade info in method II does not contain the download link of the binary for GOOS=darwin GOARCH=arm64 (for mac M1 users) please use method I to upgrade.
 
