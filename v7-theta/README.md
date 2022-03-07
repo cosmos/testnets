@@ -2,7 +2,7 @@
 
 As per the Cosmos Hub [roadmap](https://github.com/cosmos/gaia/blob/main/docs/roadmap/cosmos-hub-roadmap-2.0.md) Gaia v7-theta (v7.0.x) is planned to be released in Q1 2022 and contains the following:
 - Cosmos SDK v0.45.1
-- Gravity DEX: Liquidity v1.4.5
+- Gravity DEX: Liquidity v1.4.6
 - IBC 3.0.0
 - Interchain Account Module
 
