@@ -158,6 +158,13 @@ echo "[Install]"                            >> /etc/systemd/system/$NODE_MONIKER
 echo "WantedBy=multi-user.target"           >> /etc/systemd/system/$NODE_MONIKER.service
 ```
 
+Set the following environment variables for the Cosmovisor service:
+
+```
+export DAEMON_NAME=gaiad
+export DAEMON_HOME=$NODE_HOME
+```
+
 Before running the service, we recommend reloading the systemctl daemon and restarting the journald service.
 
 ```
@@ -193,6 +200,7 @@ Build the upgrade binary.
 cd $HOME/gaia
 git checkout theta-prepare
 git pull
+go get github.com/cosmos/gaia/v7/app
 make install
 ```
 
@@ -200,7 +208,7 @@ Copy over the v7-Theta binary into the correct directory.
 ```
 mkdir -p $NODE_HOME/cosmovisor/upgrades/v7-Theta/bin
 cp $(which gaiad) $NODE_HOME/cosmovisor/upgrades/v7-Theta/bin
-export BINARY=$NODE_HOME/cosmovisor/v7-Theta/upgrades/bin/gaiad
+export BINARY=$NODE_HOME/cosmovisor/upgrades/v7-Theta/bin/gaiad
 ```
 
 ## Submitting and voting on a software upgrade proposal
