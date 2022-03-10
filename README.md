@@ -4,10 +4,34 @@ This repository contains current and archived genesis files, scripts, and config
 
 ## Network Information for Active Testnets
 
+### v7-Theta Upgrade testnet
+
+This testnet targets validators who want to test their uprade readiness with Theta before mainnet launch. It mirrors the state of mainnet before the Theta testnet with modifications to enable liveness and with convenient parameters to simulate a governance permissioned software upgrade.
+
+- **Launch date**: 2022-03-10
+- **Chain-ID**: `theta-testnet-001`
+- **Gaia Version:** `release/v6.0.0`
+- **Genesis File:** `https://github.com/cosmos/testnets/raw/master/v7-Theta/public-testnet/genesis.json.gz`
+- **Genesis sha256sum**: `522d7e5227ca35ec9bbee5ab3fe9d43b61752c6bdbb9e7996b38307d7362bb7e`
+- **Faucet**: Please ask in the `#validator-verified` channel in the Cosmos Developers discord
+- **Endpoints**: We are running nodes named `sentry-01`, `sentry-02`, `state-sync-01`, and `state-sync-02`, with endpoints as follows:
+  - RPC: `https://rpc.<node-name>.theta-testnet.polypore.xyz`
+  - REST:`https://rest.<node-name>.theta-testnet.polypore.xyz`
+  - GRPC: `https://grpc.<node-name>.theta-testnet.polypore.xyz`
+  - P2P: `https://p2p.<node-name>.theta-testnet.polypore.xyz`
+- **Peers**: You can add these in your persistent peer list.
+```
+5c9850dc5ec603b0c97ffd8d67bde3221b877acf@p2p.sentry-01.theta-testnet.polypore.xyz:26656
+208683ee734ba3cec1cfc0c8bcbc326969641952@p2p.sentry-02.theta-testnet.polypore.xyz:26656
+58e9d022962a3875fa22d7146949d0dc34e51ba6@p2p.state-sync-01.theta-testnet.polypore.xyz:26656
+6954e0479cd71fa01aeed15e1a3b87c06433d827@p2p.state-sync-02.theta-testnet.polypore.xyz:26656
+```
+
 ### Vega Upgrade testnet
 
 This testnet targets validators and integrators who want to test their tooling with Vega. It mirrors the state of mainnet before the Vega testnet with modifications to enable liveness and with convenient parameters to simulate a governance permissioned software upgrade.
 
+- **Launch date**: 2021-11-05
 - **Chain-ID**: `vega-test`
 - **Gaia Version:** `release/v6.0.0-rc3`
 - **Genesis File:** `https://github.com/cosmos/vega-test/raw/master/public-testnet/modified_genesis_public_testnet/genesis.json.gz`
@@ -40,9 +64,9 @@ We are expecting the roll out as follows:
 
 ### 1. Rolling testnets for each gaia upgrade.
 
-These testnets aim to help validators set up robust automation around upgrades using Cosmovisor. This phase includes working directly with validators to understand current pain points and develop tools and processes to support their workflows. The `v6-vega` testnet was in Q4 2021 and we are currently working on `v7-theta` testnet for Q1 2022.
+These testnets aim to help validators set up robust automation around upgrades using Cosmovisor. This phase includes working directly with validators to understand current pain points and develop tools and processes to support their workflows. The `v6-vega` testnet was in Q4 2021 and we are currently working on `v7-Theta` testnet for Q1 2022.
 
-Based on learnings from vega, we will configure `v7-theta` so that:
+Based on learnings from vega, we will configure `v7-Theta` so that:
 * Testnet coordinators will operate 4+ validators with combined voting power exceeding 75% total power
 * These validators will require an addition of ~550M bonded test ATOM (current bonded ATOM are ~180M) and a corresponding increase in total supply.
 * Tesnet coordinators control a faucet with >175M liquid tokens
@@ -50,7 +74,7 @@ Based on learnings from vega, we will configure `v7-theta` so that:
 
 ### 2. Persistent testnet.
 
-After the `v7-theta` testnet we will assess whether we can continue using the same testnets on a persistent basis for future upgrades.
+After the `v7-Theta` testnet we will assess whether we can continue using the same testnets on a persistent basis for future upgrades.
 
 
 
