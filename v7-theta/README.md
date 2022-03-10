@@ -89,4 +89,4 @@ If you'd like to test out the upgrade using our local testnet, please follow the
 
 We use an [exported genesis file](exported_genesis.json.tar.gz) and made [modifications](local-testnet/modified_genesis.json.tar.gz).
 
-These modifications replace an existing validator (Coinbase Custory) with a new validator accounts that we control. User account [mnemonic](local-testnet/mnemonic.txt) and the [private validator key](local-testnet/priv_validator_key.json) are provided in this repo.
+These modifications replace an existing validator (Coinbase Custody) with a new validator account that we control. User account [mnemonic](local-testnet/mnemonic.txt) and the [private validator key](local-testnet/priv_validator_key.json) are provided in this repo.
