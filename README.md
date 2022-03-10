@@ -13,6 +13,7 @@ This testnet targets validators who want to test their uprade readiness with The
 - **Gaia Version:** `release/v6.0.0`
 - **Genesis File:** `https://github.com/cosmos/testnets/raw/master/v7-Theta/public-testnet/genesis.json.gz`
 - **Genesis sha256sum**: `522d7e5227ca35ec9bbee5ab3fe9d43b61752c6bdbb9e7996b38307d7362bb7e`
+- **Block Explorer**: https://explorer.theta-testnet.polypore.xyz
 - **Faucet**: Please ask in the `#validator-verified` channel in the Cosmos Developers discord
 - **Endpoints**: We are running nodes named `sentry-01`, `sentry-02`, `state-sync-01`, and `state-sync-02`, with endpoints as follows:
   - RPC: `https://rpc.<node-name>.theta-testnet.polypore.xyz`
@@ -52,9 +53,20 @@ This testnet targets validators and integrators who want to test their tooling w
 - **[Block Explorer](https://vega-explorer.hypha.coop/)**
 - **Faucet**: Please make an issue in the [vega-test](https://github.com/cosmos/vega-test) repsository or ask in the `#validator-verified` channel in the Cosmos Developers discord
 
-### Developer testnet
+### Developer nets
 
-The [developer testnet](https://tutorials.cosmos.network/connecting-to-testnet/testnet-tutorial.html) targets developers who want to test applications against testnet gaia nodes. Unlike the upgrade testnets, this testnet doesn't mirror the state of the mainnet. As of January 2022, it was running gaia version 5.0.8. 
+#### v7-Theta DevNet
+
+- **Launch date:** 2022-03-10
+- **Chain ID**: `theta-devnet`
+- **Software version:** We'll be tracking this branch until an RC has been cut: https://github.com/cosmos/gaia/tree/theta-prepare
+- **Endpoints:**
+  - **RPC:** `https://rpc.one.theta-devnet.polypore.xyz`
+  - **REST:** `https://rest.one.theta-devnet.polypore.xyz`
+
+#### testnet.cosmos.network
+
+This [developer testnet](https://tutorials.cosmos.network/connecting-to-testnet/testnet-tutorial.html) targets developers who want to test applications against testnet gaia nodes. Unlike the upgrade testnets, this testnet doesn't mirror the state of the mainnet. As of January 2022, it was running gaia version 5.0.8. 
 
 ## Cosmos Hub Testnet Plan
 
@@ -75,11 +87,6 @@ Based on learnings from vega, we will configure `v7-Theta` so that:
 ### 2. Persistent testnet.
 
 After the `v7-Theta` testnet we will assess whether we can continue using the same testnets on a persistent basis for future upgrades.
-
-
-
-
-
 
 
 
