@@ -1,3 +1,12 @@
+## Schedule 🗓️ 
+
+| Date                       | Testnet plan                |
+| -------------------------- | --------------------------- |
+| March 10 2022  | ✅ Launch testnet chain with Gaia v6.0.0 (previous version)  |
+| March 16 2022  | Submit software upgrade proposal            |
+| March 16 2022  | Voting ends                 |
+| March 17 2022  | Theta upgrade (Gaia v7.0.0-rc1) is live on the testnet |
+
 ## How to join
 
 ### Quickstart on a fresh machine (e.g., on Digital Ocean droplet)
