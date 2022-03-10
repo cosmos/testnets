@@ -29,7 +29,7 @@ We'll be tracking this branch until an RC has been cut: https://github.com/cosmo
 
 ### Add to Keplr
 
-Use this [jsfiddle](https://jsfiddle.net/hba2rxd0/4/).
+Use https://chain-registry.netlify.app/ or [jsfiddle](https://jsfiddle.net/hba2rxd0/4/).
 
 **NOTE:** We'll be re-running these devnets regularly with fresh state. If you'd like us to add you to our genesis accounts each time, please make a PR with a cosmos address and stating that you'd like to be automatically included in future devnets.
 
