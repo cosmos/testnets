@@ -11,7 +11,7 @@ This testnet targets validators who want to test their uprade readiness with The
 - **Launch date**: 2022-03-10
 - **Chain-ID**: `theta-testnet-001`
 - **Gaia Version:** `release/v6.0.0`
-- **Genesis File:** `https://github.com/cosmos/testnets/raw/master/v7-Theta/public-testnet/genesis.json.gz`
+- **Genesis File:** `https://github.com/cosmos/testnets/raw/master/v7-theta/public-testnet/genesis.json.gz`
 - **Genesis sha256sum**: `522d7e5227ca35ec9bbee5ab3fe9d43b61752c6bdbb9e7996b38307d7362bb7e`
 - **Block Explorer**: https://explorer.theta-testnet.polypore.xyz
 - **Faucet**: Please ask in the `#validator-verified` channel in the Cosmos Developers discord
