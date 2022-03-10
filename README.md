@@ -6,7 +6,7 @@ This repository contains current and archived genesis files, scripts, and config
 
 ### v7-Theta Upgrade testnet
 
-This testnet targets validators who want to test their uprade readiness with Theta before mainnet launch. It mirrors the state of mainnet before the Theta testnet with modifications to enable liveness and with convenient parameters to simulate a governance permissioned software upgrade.
+This testnet targets validators who want to test their uprade readiness with Theta before mainnet launch. It mirrors the state of mainnet before with modifications to an exported genesis to enable liveness and with convenient parameters to simulate a governance permissioned software upgrade.
 
 - **Launch date**: 2022-03-10
 - **Chain-ID**: `theta-testnet-001`
