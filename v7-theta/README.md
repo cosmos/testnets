@@ -1,6 +1,6 @@
-# v7-theta Testnets
+# v7-Theta Testnets
 
-As per the Cosmos Hub [roadmap](https://github.com/cosmos/gaia/blob/main/docs/roadmap/cosmos-hub-roadmap-2.0.md) Gaia v7-theta (v7.0.x) is planned to be released in Q1 2022 and contains the following:
+As per the Cosmos Hub [roadmap](https://github.com/cosmos/gaia/blob/main/docs/roadmap/cosmos-hub-roadmap-2.0.md) Gaia v7-Theta (v7.0.x) is planned to be released in Q1 2022 and contains the following:
 - Cosmos SDK v0.45.1
 - Gravity DEX: Liquidity v1.4.6
 - IBC 3.0.0
@@ -35,7 +35,7 @@ Use this [jsfiddle](https://jsfiddle.net/hba2rxd0/4/).
 
 ## Theta Public testnet
 
-We're running a public testnet to help validators participated in a simulated upgrade to the `v7-theta` release candidate before upgrade on the mainnet.
+We're running a public testnet to help validators participated in a simulated upgrade to the `v7-Theta` release candidate before upgrade on the mainnet.
 
 You can find quickstart instructions [here](public-testnet/README.md).
 
