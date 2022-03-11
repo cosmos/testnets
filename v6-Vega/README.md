@@ -35,8 +35,8 @@ We're inviting the community to participate in a public testnet for the Vega upg
   
 | Node              | Node ID                                    | Public IP      | Ports                                                 |
 | ----------------- | ------------------------------------------ | -------------- | ----------------------------------------------------- |
-| HYPHA "Coinbase"    | `99b04a4efd48846f654da25532c85bd1fa6a6a39` | `134.122.35.247` | p2p: `46656`, rpc: `46657`, api: `4317`, grpc: `4090` |
-| HYPHA "Certus-one"  | `1edc806e29bfb380dc0298ce4fded8e3e8554e2a` | `165.22.235.50` | p2p: `36656`, rpc: `36657`, api: `3327`, grpc: `3080` |
+| HYPHA "Coinbase"    | `99b04a4efd48846f654da25532c85bd1fa6a6a39` | `134.122.35.247` | p2p: `26656`, rpc: `26657`, api: `1317`, grpc: `9090` |
+| HYPHA "Certus-one"  | `1edc806e29bfb380dc0298ce4fded8e3e8554e2a` | `165.22.235.50` | p2p: `26656`, rpc: `26657`, api: `1317`, grpc: `9090` |
 | Interchain "Binance" Sentry | `66a9e52e207c8257b791ff714d29100813e2fa00` | `143.244.151.9` | p2p: `26656 `, rpc: `26657 ` , api: `1317 `, grpc: `9090` |
 
 - **Peers with state-sync snapshots**
