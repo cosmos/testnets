@@ -1,6 +1,6 @@
 ### Vega Upgrade testnet
 
-> Deprecated since March 2022 in favor of [v7-Theta Testnet](../v7-Theta/)
+> Deprecated since March 2022 in favor of [v7-Theta Testnet](../v7-theta/)
 
 This testnet targets validators and integrators who want to test their tooling with Vega. It mirrors the state of mainnet before the Vega testnet with modifications to enable liveness and with convenient parameters to simulate a governance permissioned software upgrade.
 
