@@ -15,11 +15,15 @@ This testnet targets validators who want to test their uprade readiness with The
 - **Genesis sha256sum**: `522d7e5227ca35ec9bbee5ab3fe9d43b61752c6bdbb9e7996b38307d7362bb7e`
 - **Block Explorer**: https://explorer.theta-testnet.polypore.xyz
 - **Faucet**: Please ask in the `#validator-verified` channel in the Cosmos Developers discord
-- **Endpoints**: We are running nodes named `sentry-01`, `sentry-02`, `state-sync-01`, and `state-sync-02`, with endpoints as follows:
-  - RPC: `https://rpc.<node-name>.theta-testnet.polypore.xyz`
-  - REST:`https://rest.<node-name>.theta-testnet.polypore.xyz`
-  - GRPC: `https://grpc.<node-name>.theta-testnet.polypore.xyz`
-  - P2P: `https://p2p.<node-name>.theta-testnet.polypore.xyz`
+- **Endpoints**: 
+  - Hypha endpoints: We are running nodes named `sentry-01`, `sentry-02`, `state-sync-01`, and `state-sync-02`, with endpoints as follows:
+    - RPC: `https://rpc.<node-name>.theta-testnet.polypore.xyz`
+    - REST:`https://rest.<node-name>.theta-testnet.polypore.xyz`
+    - GRPC: `https://grpc.<node-name>.theta-testnet.polypore.xyz`
+    - P2P: `https://p2p.<node-name>.theta-testnet.polypore.xyz`
+  - Interchain endpoints:
+    - RPC: `https://rpc-theta.interchain.io`
+    - P2P: `aac0810723520568eb1d796e5534b74287db0986@161.35.29.241:26656`
 - **Peers**: You can add these in your persistent peer list.
 ```
 5c9850dc5ec603b0c97ffd8d67bde3221b877acf@p2p.sentry-01.theta-testnet.polypore.xyz:26656
@@ -27,6 +31,8 @@ This testnet targets validators who want to test their uprade readiness with The
 58e9d022962a3875fa22d7146949d0dc34e51ba6@p2p.state-sync-01.theta-testnet.polypore.xyz:26656
 6954e0479cd71fa01aeed15e1a3b87c06433d827@p2p.state-sync-02.theta-testnet.polypore.xyz:26656
 ```
+
+
 
 ## Developer nets
 
