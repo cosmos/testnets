@@ -13,6 +13,25 @@
 * Upgrade-info: 
   `'{"binaries": {"linux/amd64": "https://github.com/cosmos/gaia/releases/download/v7.0.0-rc0/gaiad-v7.0.0-rc0-linux-amd64?checksum=sha256:4e95eaca51d6e0ab61b7a759aafc4b4674c270b8ffa764cb953d3808a1f9e264","linux/arm64": "https://github.com/cosmos/gaia/releases/download/v7.0.0-rc0/gaiad-v7.0.0-rc0-linux-arm64?checksum=sha256:574916076c6e0960fa980522ed9a404967a6f4c306448d09649a11e5626cd991","darwin/amd64": "https://github.com/cosmos/gaia/releases/download/v7.0.0-rc0/gaiad-v7.0.0-rc0-darwin-amd64?checksum=sha256:547182dd4456e8d71ff5256484458f0690a865d5c9f2185286dd9ab71dd11b10","windows/amd64": "https://github.com/cosmos/gaia/releases/download/v7.0.0-rc0/gaiad-v7.0.0-rc0-windows-amd64.exe?checksum=sha256:4eea1a32af3ed79632cfc8cca7088a10b3d89f767310e3c24fe31ad99492f6c8"}}'`
 
+## Autodownload vs. Manually preparing your binary
+
+If you're using Cosmovisor's autodownload feature, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=true`
+
+If you're manually preparing your binary, please download v7.0.0-rc0 and move the binary to the v7-Theta upgrade directory in your cosmovisor directory
+
+```
+.
+├── current -> genesis or upgrades/<name>
+├── genesis
+│   └── bin
+│       └── gaiad
+└── upgrades
+    └── v7-Theta
+        ├── bin
+        │   └── gaiad
+        └── upgrade-info.json
+```
+
 ## How to join
 
 ### Quickstart on a fresh machine (e.g., on Digital Ocean droplet)
