@@ -15,9 +15,11 @@
 
 ## Autodownload vs. Manually preparing your binary
 
-If you're using Cosmovisor's autodownload feature, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=true`
+If you're using Cosmovisor's **autodownload** feature, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=true`
 
-If you're manually preparing your binary, please download v7.0.0-rc0 and move the binary to the v7-Theta upgrade directory in your cosmovisor directory
+**IMPORTANT:** In case you're using auto-download, on Gaia v6.0.0 or v6.0.3 Cosmosvisor won't auto-download the binary unfortunately. v6.0.4 will work fine. Please refer to [this issue](https://github.com/cosmos/gaia/issues/1342) for details.
+
+If you're **manually preparing your binary**, please download v7.0.0-rc0 and move the binary to the v7-Theta upgrade directory in your cosmovisor directory
 
 ```
 .
