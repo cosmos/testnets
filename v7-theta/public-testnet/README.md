@@ -39,6 +39,8 @@ Mar 17 12:14:42 earth cosmovisor[13563]: 12:14PM INF finalizing commit of block 
 * Stakely.io
 * WeStaking
 
+Thank you to all participating validators! These validators received `THETA` tokens to their self-delegation addresses as part of our [collectables program](https://interchain-io.medium.com/cosmos-hub-theta-testnet-token-collectables-d08967ba2875)!
+
 #### Upgrade height and binaries
 * Upgrade height: `9283650` 
 * Estimated update time: 16:00 UTC
