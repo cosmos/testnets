@@ -8,12 +8,15 @@ This repository contains current and archived genesis files, scripts, and config
 
 This testnet targets validators who want to test their uprade readiness with Theta before mainnet launch. It mirrors the state of mainnet before with modifications to an exported genesis to enable liveness and with convenient parameters to simulate a governance permissioned software upgrade.
 
-- **Launch date**: 2022-03-10
 - **Chain-ID**: `theta-testnet-001`
-- **Gaia Version:** `release/v6.0.0`
+- **Launch date**: 2022-03-10
+- **Current Gaia Version:** `v7.0.0-rc0` upgraded at height `9283650`
+- **Launch Gaia Version:** `release/v6.0.0`
 - **Genesis File:** `https://github.com/cosmos/testnets/raw/master/v7-theta/public-testnet/genesis.json.gz`
 - **Genesis sha256sum**: `522d7e5227ca35ec9bbee5ab3fe9d43b61752c6bdbb9e7996b38307d7362bb7e`
-- **Block Explorer**: https://explorer.theta-testnet.polypore.xyz
+- **Block Explorer**: 
+  - https://explorer.theta-testnet.polypore.xyz
+  - https://testnet.cosmos.bigdipper.live/
 - **Faucet**: Please ask in the `#validator-verified` channel in the Cosmos Developers discord
 - **Endpoints**: 
   - Hypha endpoints: We are running nodes named `sentry-01`, `sentry-02`, `state-sync-01`, and `state-sync-02`, with endpoints as follows:
@@ -31,9 +34,6 @@ This testnet targets validators who want to test their uprade readiness with The
 58e9d022962a3875fa22d7146949d0dc34e51ba6@p2p.state-sync-01.theta-testnet.polypore.xyz:26656
 6954e0479cd71fa01aeed15e1a3b87c06433d827@p2p.state-sync-02.theta-testnet.polypore.xyz:26656
 ```
-
-
-
 ## Developer nets
 
 #### v7-Theta DevNet
