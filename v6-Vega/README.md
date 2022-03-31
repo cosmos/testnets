@@ -1,4 +1,4 @@
-### Vega Upgrade testnet
+# Vega Upgrade testnet
 
 > Deprecated since March 2022 in favor of [v7-Theta Testnet](../v7-theta/)
 
@@ -45,4 +45,4 @@ We're inviting the community to participate in a public testnet for the Vega upg
 * `b7feb9619bef083e3a3e86925824f023c252745b@143.198.41.219:26656`
 - **[Network statistics](https://monitor.prod.earthball.xyz/d/UJyurCTWz/cosmos-dashboard?orgId=2)**
 - **[Block Explorer](https://vega-explorer.hypha.coop/)**
-- **Faucet**: Please make an issue in the [vega-test](https://github.com/cosmos/vega-test) repsository or ask in the `#validator-verified` channel in the Cosmos Developers discord
+- **Faucet**: Visit the [🚰・testnet-faucet](https://discord.com/channels/669268347736686612/953697793476821092) channel in the Cosmos Developers Discord.

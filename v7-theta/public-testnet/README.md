@@ -1,49 +1,85 @@
-## Schedule 🗓️ 
+# v7-Theta Public Testnet
 
-| Date                       | Testnet plan                |
-| -------------------------- | --------------------------- |
-| March 10 2022  | ✅ Launch testnet chain with Gaia v6.0.0 (previous version)  |
-| March 16 2022  | ✅ Submit software [upgrade proposal](https://testnet.cosmos.bigdipper.live/proposals/66)           |
-| March 16 2022  | ✅ Voting ends                 |
-| March 17 2022  | Theta upgrade ([Gaia v7.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v7.0.0-rc0)) is live on the testnet |
+This testnet helps validators participate in a simulated upgrade to the `v7-Theta` release candidate before the mainnet upgrade. It mirrors the state of mainnet before with modifications to an exported genesis to enable liveness and with convenient parameters to simulate a governance permissioned software upgrade.
 
-## Planned upgrade height and binaries
-* Upgrade height: `9283650` 
-* Estimated update time: 16:00 UTC
-* Upgrade-info: 
-  `'{"binaries": {"linux/amd64": "https://github.com/cosmos/gaia/releases/download/v7.0.0-rc0/gaiad-v7.0.0-rc0-linux-amd64?checksum=sha256:4e95eaca51d6e0ab61b7a759aafc4b4674c270b8ffa764cb953d3808a1f9e264","linux/arm64": "https://github.com/cosmos/gaia/releases/download/v7.0.0-rc0/gaiad-v7.0.0-rc0-linux-arm64?checksum=sha256:574916076c6e0960fa980522ed9a404967a6f4c306448d09649a11e5626cd991","darwin/amd64": "https://github.com/cosmos/gaia/releases/download/v7.0.0-rc0/gaiad-v7.0.0-rc0-darwin-amd64?checksum=sha256:547182dd4456e8d71ff5256484458f0690a865d5c9f2185286dd9ab71dd11b10","windows/amd64": "https://github.com/cosmos/gaia/releases/download/v7.0.0-rc0/gaiad-v7.0.0-rc0-windows-amd64.exe?checksum=sha256:4eea1a32af3ed79632cfc8cca7088a10b3d89f767310e3c24fe31ad99492f6c8"}}'`
+Visit the [Scheduled Upgrades](UPGRADES.md) page for details on current and upcoming versions. 
 
-## Autodownload vs. Manually preparing your binary
+## Testnet Details
 
-If you're using Cosmovisor's **autodownload** feature, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=true`
+- **Chain-ID**: `theta-testnet-001`
+- **Launch date**: 2022-03-10
+- **Current Gaia Version:** `v7.0.0-rc0` upgraded at height `9283650`
+- **Launch Gaia Version:** `release/v6.0.0`
+- **Genesis File:**  Zipped and included [in this repository](public-testnet/genesis.json.gz), unzip and verify with `shasum -a 256 genesis.json`
+- **Genesis sha256sum**: `522d7e5227ca35ec9bbee5ab3fe9d43b61752c6bdbb9e7996b38307d7362bb7e`
 
-**IMPORTANT:** In case you're using auto-download, on Gaia v6.0.0 or v6.0.3 Cosmosvisor won't auto-download the binary unfortunately. v6.0.4 will work fine. Please refer to [this issue](https://github.com/cosmos/gaia/issues/1342) for details.
+### Endpoints
 
-If you're **manually preparing your binary**, please download v7.0.0-rc0 and move the binary to the v7-Theta upgrade directory in your cosmovisor directory
+Endpoints are exposed as subdomains for the sentry and snapshot nodes (described below) as follows:
+
+* `rpc.<node-name>.theta-testnet.polypore.xyz`
+* `rest.<node-name>.theta-testnet.polypore.xyz`
+* `grpc.<node-name>.theta-testnet.polypore.xyz`
+* `p2p.<node-name>.theta-testnet.polypore.xyz`
+
+We are running two sentries:
+
+1. `https://sentry-01.theta-testnet.polypore.xyz`
+2. `https://sentry-02.theta-testnet.polypore.xyz`
+
+And the following nodes also serve snapshots every 1000 blocks:
+
+3. `https://state-sync-01.theta-testnet.polypore.xyz`
+4. `https://state-sync-02.theta-testnet.polypore.xyz`
+
+
+### Persistent peers
+
+You can add these in your persistent peers list.
 
 ```
-.
-├── current -> genesis or upgrades/<name>
-├── genesis
-│   └── bin
-│       └── gaiad
-└── upgrades
-    └── v7-Theta
-        ├── bin
-        │   └── gaiad
-        └── upgrade-info.json
+5c9850dc5ec603b0c97ffd8d67bde3221b877acf@p2p.sentry-01.theta-testnet.polypore.xyz:26656
+208683ee734ba3cec1cfc0c8bcbc326969641952@p2p.sentry-02.theta-testnet.polypore.xyz:26656
+58e9d022962a3875fa22d7146949d0dc34e51ba6@p2p.state-sync-01.theta-testnet.polypore.xyz:26656
+6954e0479cd71fa01aeed15e1a3b87c06433d827@p2p.state-sync-02.theta-testnet.polypore.xyz:26656
 ```
+
+### Block Explorers
+
+  - https://explorer.theta-testnet.polypore.xyz
+  - https://testnet.cosmos.bigdipper.live/
+
+### Faucet
+
+Visit the [🚰・testnet-faucet](https://discord.com/channels/669268347736686612/953697793476821092) channel in the Cosmos Developers Discord.
+
+
+## Add to Keplr
+
+Use this [jsfiddle](https://jsfiddle.net/kht96uvo/1/).
 
 ## How to join
 
-### Quickstart on a fresh machine (e.g., on Digital Ocean droplet)
+
+### Quickstart on a fresh machine (e.g., a Digital Ocean droplet)
+
+The script below will install Gaia and set up a Cosmovisor service with the auto-download feature enabled on your machine.
+
+Modify the script with the Gaia [release branch](https://github.com/cosmos/gaia/branches/all?query=release) you want to test and an appropriate state sync configuration.
+
+* If you do not need to keep all the state locally, use state sync:
+  * Set the trust height to (roughly) the current block height minus 1000 and the corresponding trust hash. Visit a [block explorer](#block-explorers) to find a block's hash and the current block height. 
+
+* If you are syncing from genesis:
+  * Disable state sync: `STATE_SYNC=false`.
+  * Use gaia branch `v6.0.4` and upgrade at the block heights described in the [Scheduled Upgrades](UPGRADES.md) page.
 
 ```
 #!/bin/bash -i
 
 ##### CONFIGURATION ###
 
-export GAIA_BRANCH=release/v6.0.0
+export GAIA_BRANCH=release/v7.0.0
 export GENESIS_ZIPPED_URL=https://github.com/hyphacoop/testnets/raw/add-theta-testnet/v7-theta/public-testnet/genesis.json.gz
 export NODE_HOME=$HOME/.gaia
 export CHAIN_ID=theta-testnet-001
@@ -54,8 +90,8 @@ export PERSISTENT_PEERS="5c9850dc5ec603b0c97ffd8d67bde3221b877acf@p2p.sentry-01.
 ##### OPTIONAL STATE SYNC CONFIGURATION ###
 
 export STATE_SYNC=true # if you set this to true, please have TRUST HEIGHT and TRUST HASH and RPC configured
-export TRUST_HEIGHT=9057300
-export TRUST_HASH="35628D6804C6340CC19BBB49E7ED1AAAA4CF1628B4CBDA903EE142BC0D3B7D0A"
+export TRUST_HEIGHT=9500000
+export TRUST_HASH="92ABB312DFFA04D3439C5A0F74A07F46843ADC4EB391A723EAE00855ADECF5A4"
 export SYNC_RPC="rpc.sentry-01.theta-testnet.polypore.xyz:26657,rpc.sentry-02.theta-testnet.polypore.xyz:26657"
 
 ############## 
@@ -69,7 +105,7 @@ echo "Getting essentials..."
 sudo apt-get install git build-essential
 
 echo "Installing go..."
-wget -q -O - https://git.io/vQhTU | bash -s - --version 1.17
+wget -q -O - https://git.io/vQhTU | bash -s - --version 1.18
 
 echo "Sourcing bashrc to get go in our path..."
 source $HOME/.bashrc
@@ -166,6 +202,27 @@ echo "***********************"
 echo "find logs like this:"
 echo "sudo journalctl -fu $NODE_MONIKER.service"
 echo "***********************"
+```
+
+### Upgrading with autodownload vs. manually preparing your binary
+
+If you are using Cosmovisor's **auto-download** feature, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=true`
+
+**IMPORTANT:** Cosmovisor will **not** auto-download the binary with Gaia v6.0.0 or v6.0.3. Auto-download will work fine with Gaia v6.0.4. Please refer to [this issue](https://github.com/cosmos/gaia/issues/1342) for details.
+
+If you are **manually preparing your binary**, please download v7.0.0-rc0 and move the binary to the v7-Theta upgrade directory in your cosmovisor directory
+
+```
+.
+├── current -> genesis or upgrades/<name>
+├── genesis
+│   └── bin
+│       └── gaiad
+└── upgrades
+    └── v7-Theta
+        ├── bin
+        │   └── gaiad
+        └── upgrade-info.json
 ```
 
 ## Public testnet modifications

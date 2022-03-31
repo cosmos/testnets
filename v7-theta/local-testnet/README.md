@@ -1,13 +1,16 @@
-# Local testnet upgrade instructions
+# v7-Theta Local Testnet
 
-We're providing instructions for simulating the `v7-Theta` upgrade on a single validator node testnet. In this guide, we test the following process:
+These instructions will help you simulate the `v7-Theta` upgrade on a single validator node testnet as follows:
 
-- Start with gaia version: v6.0.3
+- Start with gaia version: `v6.0.4`
 - After the upgrade: gaia branch `theta-prepare`
 
-We'll be using a [modified genesis file](genesis.json.gz) during this upgrade. This modified genesis file is similar to the one we're running on the public testnet. For a full list of modifications, please [see below](#genesis-modifications).
+We will use a [modified genesis file](genesis.json.gz) during this upgrade. This modified genesis file is similar to the one we are running on the public testnet, and has been modified in part to replace an existing validator (Coinbase Custody) with a new validator account that we control. The account's [mnemonic](mnemonic.txt) and [private validator key](priv_validator_key.json) are provided in this repo.  
+For a full list of modifications to the genesis file, please [see below](#genesis-modifications).
 
-## Run your local testnet
+If you are interested in running v7-Theta without going through the upgrade, you can checkout gaia branch `release/v7.0.0` in the [Build gaia](#build-gaia) section and follow the rest of the instructions up until the node is running and producing blocks.
+
+## Run a local testnet
 
 ### Requirements
 
@@ -34,11 +37,11 @@ source ~/.profile
 cd $HOME
 git clone https://github.com/cosmos/gaia.git
 cd gaia
-git checkout release/v6.0.3
+git checkout release/v6.0.4
 make install
 ```
 
-### Configuring the chain
+### Configure the chain
 
 First initialize your chain.
 
@@ -172,7 +175,7 @@ sudo systemctl daemon-reload
 sudo systemctl restart systemd-journald
 ```
 
-### Running your node
+### Run your node
 
 You are now ready to start your node like this:
 
@@ -193,7 +196,7 @@ sudo journalctl -fu $NODE_MONIKER.service
 INF committed state app_hash=99D509C03FDDFEACAD90608008942C0B4C801151BDC1B8998EEC69A1772B22DF height=9060257 module=state num_txs=0
 ```
 
-### Manually preparing the upgrade binary (if you don't have auto-download enabled on Cosmovisor)
+### Manually prepare the upgrade binary (if you do not have auto-download enabled on Cosmovisor)
 
 Build the upgrade binary.
 ```
@@ -211,7 +214,7 @@ cp $(which gaiad) $NODE_HOME/cosmovisor/upgrades/v7-Theta/bin
 export BINARY=$NODE_HOME/cosmovisor/upgrades/v7-Theta/bin/gaiad
 ```
 
-## Submitting and voting on a software upgrade proposal
+## Submit and vote on a software upgrade proposal
 
 You can submit a software upgrade proposal without specifiying a binary, but this only works for those nodes who are manually preparing the upgrade binary.
 
@@ -252,7 +255,9 @@ After the voting period ends, you should be able to query the proposal to see if
 $BINARY query gov proposal 61 --home $NODE_HOME
 ```
 
-After `PROPOSAL_STATUS_PASSED`, wait until the upgrade height is reached Cosmovisor will now auto-download the new binary specific to your platform and apply the upgrade. Please note, the upgrade info in method II does not contain the download link of the binary for GOOS=darwin GOARCH=arm64 (for mac M1 users) please use method I to upgrade.
+After `PROPOSAL_STATUS_PASSED`, wait until the upgrade height is reached Cosmovisor will now auto-download the new binary specific to your platform and apply the upgrade.
+
+Please note, the upgrade info in method II does not contain the download link of the binary for GOOS=darwin GOARCH=arm64 (for Mac M1 users). Please use method I to upgrade.
 
 ## Genesis Modifications
 
@@ -284,4 +289,4 @@ Full list of modifications are as follows:
 * Swapping governance voting period to 60s
 * Swapping staking unbonding_time to 1s
 
-Please note that you'll need to set `fast-sync` to false in your `config.toml` file and wait for approximately 10mins for a single node testnet to start. This is due to an [issue](https://github.com/osmosis-labs/osmosis/issues/735) with state export based testnets that can't get to consensus without multiple peered nodes.
+Please note that you will need to set `fast-sync` to false in your `config.toml` file and wait for approximately 10mins for a single node testnet to start. This is due to an [issue](https://github.com/osmosis-labs/osmosis/issues/735) with state export based testnets that can't get to consensus without multiple peered nodes.
