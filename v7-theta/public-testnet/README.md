@@ -27,21 +27,24 @@ We are running two sentries:
 1. `https://sentry-01.theta-testnet.polypore.xyz`
 2. `https://sentry-02.theta-testnet.polypore.xyz`
 
+We are running two seed nodes:
+
+1. `https://seed-01.theta-testnet.polypore.xyz`
+2. `https://seed-02.theta-testnet.polypore.xyz`
+
 And the following nodes also serve snapshots every 1000 blocks:
 
 3. `https://state-sync-01.theta-testnet.polypore.xyz`
 4. `https://state-sync-02.theta-testnet.polypore.xyz`
 
 
-### Persistent peers
+### Seeds
 
-You can add these in your persistent peers list.
+You can add these in your seeds list.
 
 ```
-5c9850dc5ec603b0c97ffd8d67bde3221b877acf@p2p.sentry-01.theta-testnet.polypore.xyz:26656
-208683ee734ba3cec1cfc0c8bcbc326969641952@p2p.sentry-02.theta-testnet.polypore.xyz:26656
-58e9d022962a3875fa22d7146949d0dc34e51ba6@p2p.state-sync-01.theta-testnet.polypore.xyz:26656
-6954e0479cd71fa01aeed15e1a3b87c06433d827@p2p.state-sync-02.theta-testnet.polypore.xyz:26656
+639d50339d7045436c756a042906b9a69970913f@seed-01.theta-testnet.polypore.xyz:26656
+3e506472683ceb7ed75c1578d092c79785c27857@seed-02.theta-testnet.polypore.xyz:26656
 ```
 
 ### Block Explorers
@@ -79,13 +82,13 @@ Modify the script with the Gaia [release branch](https://github.com/cosmos/gaia/
 
 ##### CONFIGURATION ###
 
-export GAIA_BRANCH=release/v7.0.0
+export GAIA_BRANCH=v7.0.0
 export GENESIS_ZIPPED_URL=https://github.com/hyphacoop/testnets/raw/add-theta-testnet/v7-theta/public-testnet/genesis.json.gz
 export NODE_HOME=$HOME/.gaia
 export CHAIN_ID=theta-testnet-001
 export NODE_MONIKER=my-node # only really need to change this one
 export BINARY=gaiad
-export PERSISTENT_PEERS="5c9850dc5ec603b0c97ffd8d67bde3221b877acf@p2p.sentry-01.theta-testnet.polypore.xyz:26656,208683ee734ba3cec1cfc0c8bcbc326969641952@p2p.sentry-02.theta-testnet.polypore.xyz:26656,58e9d022962a3875fa22d7146949d0dc34e51ba6@p2p.state-sync-01.theta-testnet.polypore.xyz:26656,6954e0479cd71fa01aeed15e1a3b87c06433d827@p2p.state-sync-02.theta-testnet.polypore.xyz:26656"
+export SEEDS="639d50339d7045436c756a042906b9a69970913f@seed-01.theta-testnet.polypore.xyz:26656,3e506472683ceb7ed75c1578d092c79785c27857@seed-02.theta-testnet.polypore.xyz:26656"
 
 ##### OPTIONAL STATE SYNC CONFIGURATION ###
 
@@ -102,7 +105,7 @@ echo "Updating apt-get..."
 sudo apt-get update
 
 echo "Getting essentials..."
-sudo apt-get install git build-essential
+sudo apt-get install git build-essential ntp
 
 echo "Installing go..."
 wget -q -O - https://git.io/vQhTU | bash -s - --version 1.18
@@ -177,7 +180,7 @@ echo "After=network-online.target"          >> /etc/systemd/system/$NODE_MONIKER
 echo ""                                     >> /etc/systemd/system/$NODE_MONIKER.service
 echo "[Service]"                            >> /etc/systemd/system/$NODE_MONIKER.service
 echo "User=root"                        >> /etc/systemd/system/$NODE_MONIKER.service
-echo "ExecStart=/root/go/bin/cosmovisor start --x-crisis-skip-assert-invariants --home \$DAEMON_HOME --p2p.persistent_peers $PERSISTENT_PEERS" >> /etc/systemd/system/$NODE_MONIKER.service
+echo "ExecStart=/root/go/bin/cosmovisor start --x-crisis-skip-assert-invariants --home \$DAEMON_HOME --p2p.seeds $SEEDS" >> /etc/systemd/system/$NODE_MONIKER.service
 echo "Restart=always"                       >> /etc/systemd/system/$NODE_MONIKER.service
 echo "RestartSec=3"                         >> /etc/systemd/system/$NODE_MONIKER.service
 echo "LimitNOFILE=4096"                     >> /etc/systemd/system/$NODE_MONIKER.service
