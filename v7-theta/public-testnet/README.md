@@ -50,6 +50,7 @@ You can add these in your seeds list.
 ### Block Explorers
 
   - https://explorer.theta-testnet.polypore.xyz
+  - https://cosmoshub-testnet.mintscan.io/cosmoshub-testnet
   - https://testnet.cosmos.bigdipper.live/
 
 ### Faucet
