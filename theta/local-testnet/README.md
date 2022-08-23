@@ -12,7 +12,7 @@ If you are interested in running v7-Rho without going through the upgrade, you c
 
 ## Set up with Ansible Playbook
 
-Use the example inventory file from the [cosmos-ansible](https://github.com/hyphacoop/cosmos-ansible) repo to set up a node using state sync:
+Use the example inventory file from the [cosmos-ansible](https://github.com/hyphacoop/cosmos-ansible) repo to set up a local testnet node:
 
 ```
 git clone https://github.com/hyphacoop/cosmos-ansible.git
