@@ -38,7 +38,7 @@ echo $USER_MNEMONIC | gaiad --home $NODE_HOME keys add $USER_KEY_NAME --recover 
 
 ### Requirements
 
-Follow the [installation instructions](https://hub.cosmos.network/main/getting-started/installation.html) to understand build requirements. You'll need to install Go 1.17.
+Follow the [installation instructions](https://hub.cosmos.network/main/getting-started/installation.html) to understand build requirements. You'll need to install Go 1.18.
 
 ```
 sudo apt update
