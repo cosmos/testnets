@@ -84,7 +84,7 @@ $BINARY init $NODE_MONIKER --home $NODE_HOME --chain-id=$CHAIN_ID
 Then replace the genesis file with our modified genesis file.
 
 ```
-wget https://raw.githubusercontent.com/hyphacoop/testnets/master/theta/local-testnet/genesis.json.gz
+wget https://github.com/cosmos/testnets/raw/master/theta/local-testnet/genesis.json.gz
 gunzip genesis.json.gz 
 mv genesis.json $NODE_HOME/config/genesis.json
 ```
@@ -98,7 +98,7 @@ ecfe4f227f5565d2d53f2ad6635b8ca425a76877c85dd2bff035a272777d2b5f
 Also replace the validator key.
 
 ```
-wget https://raw.githubusercontent.com/hyphacoop/testnets/master/theta/local-testnet/priv_validator_key.json
+wget https://raw.githubusercontent.com/cosmos/testnets/master/theta/local-testnet/priv_validator_key.json
 mv priv_validator_key.json $NODE_HOME/config/priv_validator_key.json
 ```
 

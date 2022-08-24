@@ -106,7 +106,7 @@ Modify the script with the Gaia [release branch](https://github.com/cosmos/gaia/
 ##### CONFIGURATION ###
 
 export GAIA_BRANCH=v7.0.0
-export GENESIS_ZIPPED_URL=https://github.com/cosmos/testnets/tree/master/theta/public-testnet/genesis.json.gz
+export GENESIS_ZIPPED_URL=https://github.com/cosmos/testnets/raw/master/theta/public-testnet/genesis.json.gz
 export NODE_HOME=$HOME/.gaia
 export CHAIN_ID=theta-testnet-001
 export NODE_MONIKER=my-node # only really need to change this one

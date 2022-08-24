@@ -5,17 +5,17 @@
 | Date                       | Testnet plan                |
 | -------------------------- | --------------------------- |
 | March 10 2022  | ✅  Launch testnet chain with Gaia v6.0.0 (previous version)  |
-| March 16 2022  | ✅  Submit software [upgrade proposal](https://testnet.cosmos.bigdipper.live/proposals/66)           |
+| March 16 2022  | ✅  Submit v7-Theta software [upgrade proposal](https://testnet.cosmos.bigdipper.live/proposals/66)           |
 | March 16 2022  | ✅  Voting ends                 |
 | March 17 2022  | ✅  Theta upgrade ([Gaia v7.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v7.0.0-rc0)) is live on the testnet |
-| October 2022  |   Submit software [upgrade proposal]()           |
+| October 2022  |   Submit v8-Rho software [upgrade proposal]()           |
 | October 2022  |   Voting ends                 |
 | October 2022  |   Rho upgrade ([Gaia v8.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v8.0.0-rc0)) is live on the testnet |
 
 
 ## 2022-10 v8-Rho upgrade
 
-* **Version before upgrade**: `v7.0.2`
+* **Version before upgrade**: `v7.0.x`
 * **Version after upgrade**: `v8.0.0-rc0`
 
 
