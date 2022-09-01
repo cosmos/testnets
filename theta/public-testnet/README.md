@@ -1,6 +1,6 @@
-# Theta Public Testnet
+# Cosmos Hub Public Testnet
 
-This testnet helps validators participate in simulated upgrades to the next Gaia release candidate before the mainnet upgrade. It mirrors the state of mainnet, aside from a few modifications to the exported genesis file. These adjustments help provide liveness and streamlined governance-permissioned software upgrades.
+The Theta testnet will be used to test Theta, Rho, and Lambda upgrades. It mirrors the state of mainnet, aside from a few modifications to the exported genesis file. These adjustments help provide liveness and streamlined governance-permissioned software upgrades.
 
 Visit the [Scheduled Upgrades](UPGRADES.md) page for details on current and upcoming versions. 
 
@@ -8,7 +8,7 @@ Visit the [Scheduled Upgrades](UPGRADES.md) page for details on current and upco
 
 - **Chain-ID**: `theta-testnet-001`
 - **Launch date**: 2022-03-10
-- **Current Gaia Version:** `v7.0.0-rc0` upgraded at height `9283650`
+- **Current Gaia Version:** `v7.0.2` upgraded at height `9283650`
 - **Launch Gaia Version:** `release/v6.0.0`
 - **Genesis File:**  Zipped and included [in this repository](public-testnet/genesis.json.gz), unzip and verify with `shasum -a 256 genesis.json`
 - **Genesis sha256sum**: `522d7e5227ca35ec9bbee5ab3fe9d43b61752c6bdbb9e7996b38307d7362bb7e`

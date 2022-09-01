@@ -1,4 +1,4 @@
-# Theta Testnets
+# Cosmos Hub Testnets
 
 As per the Cosmos Hub [roadmap](https://github.com/cosmos/gaia/blob/main/docs/roadmap/cosmos-hub-roadmap-2.0.md), Gaia v8-Rho (v8.0.x) is planned to be released in H2 2022 and contains the following:
 - Cosmos SDK v0.46

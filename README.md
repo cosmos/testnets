@@ -1,3 +1,5 @@
+### 📌 Theta testnet will remain the primary Cosmos Hub testnet following the v7-Theta upgrade. It will be used to test v8-Rho, v9-Lambda, and further upgrades.
+
 # Cosmos Hub Testnets
 
 This repository contains current and archived genesis files, scripts, and configurations for Cosmos Hub testnets. Key network information is present here, but please check out the tutorial in the [Cosmos Hub documentation](https://hub.cosmos.network/main/hub-tutorials/join-testnet.html) for step-by-step instructions on how to join whichever testnet is currently running. You can also find legacy network information [here](legacy/README.md).
@@ -14,7 +16,7 @@ Beyond these goals, testnets could also become a site for R&D for new developmen
 
 Up until the `Vega` testnet, our approach was to deploy a testnet for each Gaia upgrade.
 
-**Starting with `Theta`, we have moved to a persistent testnet model, which means the `Theta` testnet will stay online and remain the primary Cosmos Hub testnet after the `v7-Theta` upgrade and beyond.**
+**Starting with `Theta`, we have moved to a persistent testnet model. The `Theta` testnet will stay online and remain the primary Cosmos Hub testnet after the `v7-Theta` upgrade, including for the v8-Rho and v9-Lambda upgrades, and beyond.**
 
 ### Theta
 
