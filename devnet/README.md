@@ -13,7 +13,9 @@ Each chain have 2 nodes a validator and a sentry.
 - **Chain ID**: `rho-chain-1` and `rho-chain-2`
 - **Launch date:** 2022-09-15
 - **Gaia version:** `main-ddfcd1c2f3cd8069f759601320fe53cd38cd66a8` (main branch)
-- **Genesis file:** [rho-devnet-genesis.json.gz](rho-devnet-genesis.json.gz)
+- **Genesis files:** 
+  - rho-chain-1: [rho-chain-1-genesis.json.gz](rho-chain-1-genesis.json.gz)
+  - rho-chain-2: [rho-chain-2-genesis.json.gz](rho-chain-2-genesis.json.gz)
 
 ### Endpoints
 rho-chain-1:
@@ -32,8 +34,8 @@ rho-chain-2:
 The faucet REST API are listed below:
 
 rho-chain-1: http://sentry.chain-1.rho-devnet.polypore.xyz:8000
- - To request tokens: `http://sentry.chain-1.rho-devnet.polypore.xyz:8000/request?chain=rho-chain-2&address=<cosmos address>`
- - Get balance: `http://sentry.chain-1.rho-devnet.polypore.xyz:8000/balance?chain=rho-chain-2&address=<cosmos address>`
+ - To request tokens: `http://sentry.chain-1.rho-devnet.polypore.xyz:8000/request?chain=rho-chain-1&address=<cosmos address>`
+ - Get balance: `http://sentry.chain-1.rho-devnet.polypore.xyz:8000/balance?chain=rho-chain-1&address=<cosmos address>`
 
 rho-chain-2: http://sentry.chain-2.rho-devnet.polypore.xyz:8000
  - To request tokens: `http://sentry.chain-2.rho-devnet.polypore.xyz:8000/request?chain=rho-chain-2&address=<cosmos address>`
