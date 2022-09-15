@@ -6,7 +6,9 @@ Integrators such as exchanges and wallets who want to test against Rho endpoints
 
 ## Testnet Details
 
-This devnet is made up of 2 chains and a relayer.
+This devnet is made up of 2 chains and a relayer in between.
+
+Each chain have 2 nodes a validator and a sentry.
 
 - **Chain ID**: `rho-chain-1` and `rho-chain-2`
 - **Launch date:** 2022-09-15
