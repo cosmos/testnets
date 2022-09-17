@@ -1,4 +1,4 @@
-### 📌 Theta testnet will remain the primary Cosmos Hub testnet following the v7-Theta upgrade. It will be used to test v8-Rho, v9-Lambda, and further upgrades.
+### 📌 The `theta-testnet-001` testnet will remain the primary Cosmos Hub testnet following the v7-Theta upgrade. It will be used to test v8-Rho, v9-Lambda, and further upgrades.
 
 # Cosmos Hub Testnets
 
@@ -14,26 +14,25 @@ The goals of the Cosmos Hub testnet program are to:
 
 Beyond these goals, testnets could also become a site for R&D for new development and governance approaches in a fast-moving and live context.
 
+### [Public Testnet](public/README.md)
+
+The public testnet targets validators who want to participate in a simulated chain upgrade before the mainnet upgrade takes place. Shortly after a new Gaia version is available, we submit a software upgrade proposal, vote on it, and update all nodes with the new binary at the halt height specified in the proposal.
+
 Up until the `Vega` testnet, our approach was to deploy a testnet for each Gaia upgrade.
 
-**Starting with `Theta`, we have moved to a persistent testnet model. The `Theta` testnet will stay online and remain the primary Cosmos Hub testnet after the `v7-Theta` upgrade, including for the v8-Rho and v9-Lambda upgrades, and beyond.**
+**Starting with the `theta-testnet-001` testnet, we have moved to a persistent testnet model. This testnet will stay online and remain the primary Cosmos Hub testnet after the `v7-Theta` upgrade, including for the v8-Rho and v9-Lambda upgrades, and beyond.**
 
-### Theta
-
-* [Public](theta/public-testnet/README.md)
-* [Local](theta/local-testnet/README.md)
-* [Developer](theta/devnet/README.md)
-
-Based on our experience with `Vega`, we have configured `Theta` so that:
+Based on our experience with `Vega`, we have configured the public testnet so that:
 * Testnet coordinators will operate 4+ validators with combined voting power exceeding 75% total power.
 * These validators will require an addition of ~550M bonded test ATOM (current bonded ATOM are ~180M) and a corresponding increase in total supply.
-* Tesnet coordinators control a faucet with >175M liquid tokens.
-* Testnet coordinators can reward validators with limited edition secondary tokens that are named after their release (`Theta`, `Rho`, `Epsilon`, `Lambda`). The testnets will have a fixed supply of 1000 each of such tokens.
+* Tesnet coordinators control a faucet with >100M liquid tokens.
+* Testnet coordinators can reward validators with limited edition secondary tokens that are named after their release (`Theta`, `Rho`, `Epsilon`, `Lambda`). The testnet will have a fixed supply of 1000 each of such tokens.
 
-### Vega (deprecated)
+### [Developer Testnet](devnet/README.md)
 
-* [Public](vega/public-testnet/README.md)
-* [Local](vega/local-testnet/README.md)
-
+The devnet is specially set up for block explorers, wallets, exchanges, and other integrators, to give early endpoints for you to test against. We update the node binaries to the latest branch of the [`cosmos/gaia`](https://github.com/cosmos/gaia) repo to give you the most current software version.
 
 
+### [Local Testnet](local/README.md)
+
+A local testnet can be set up to experiment in a local single-validator environment.
