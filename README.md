@@ -2,7 +2,7 @@
 
 # Cosmos Hub Testnets
 
-This repository contains current and archived genesis files, scripts, and configurations for Cosmos Hub testnets. Key network information is present here, but please check out the tutorial in the [Cosmos Hub documentation](https://hub.cosmos.network/main/hub-tutorials/join-testnet.html) for step-by-step instructions on how to join whichever testnet is currently running. You can also find legacy network information [here](legacy/README.md).
+This repository contains current and archived genesis files, scripts, and configurations for Cosmos Hub testnets. Key network information is present here, but please check out the tutorial in the [Cosmos Hub documentation](https://hub.cosmos.network/main/hub-tutorials/join-testnet.html) for step-by-step instructions on how to join whichever testnet is currently running. You can also find legacy network information [here](legacy/).
 
 ## Cosmos Hub Testnet Plan
 
@@ -14,7 +14,7 @@ The goals of the Cosmos Hub testnet program are to:
 
 Beyond these goals, testnets could also become a site for R&D for new development and governance approaches in a fast-moving and live context.
 
-### [Public Testnet](public/README.md)
+### [Public Testnet](public/)
 
 The public testnet targets validators who want to participate in a simulated chain upgrade before the mainnet upgrade takes place. Shortly after a new Gaia version is available, we submit a software upgrade proposal, vote on it, and update all nodes with the new binary at the halt height specified in the proposal.
 
@@ -28,11 +28,11 @@ Based on our experience with `Vega`, we have configured the public testnet so th
 * Tesnet coordinators control a faucet with >100M liquid tokens.
 * Testnet coordinators can reward validators with limited edition secondary tokens that are named after their release (`Theta`, `Rho`, `Epsilon`, `Lambda`). The testnet will have a fixed supply of 1000 each of such tokens.
 
-### [Developer Testnet](devnet/README.md)
+### [Developer Testnet](devnet/)
 
 The devnet is specially set up for block explorers, wallets, exchanges, and other integrators, to give early endpoints for you to test against. We update the node binaries to the latest branch of the [`cosmos/gaia`](https://github.com/cosmos/gaia) repo to give you the most current software version.
 
 
-### [Local Testnet](local/README.md)
+### [Local Testnet](local/)
 
 A local testnet can be set up to experiment in a local single-validator environment.
