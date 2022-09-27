@@ -2,11 +2,11 @@
 
 Integrators such as exchanges and wallets who want to test against Rho endpoints early may do so using the Rho devnet.
 
+- The devnet consists of two chains with a relayer connecting them over IBC.
+- Each chain has two nodes: a validator and a sentry.
+- The `cosmos-ansible` repo provides inventory files to [join this devnet](https://github.com/hyphacoop/cosmos-ansible/tree/main/examples#join-the-rho-devnet) using Ansible plays.
+
 **NOTE:** This devnet is restarted regularly with a fresh state. If you would like us to add you to our genesis accounts each time, please make a PR with a cosmos address and stating that you would like to be automatically included in future devnets.
-
-This testnet is made up of two chains and a relayer in between them.
-
-Each chain has two nodes: a validator and a sentry.
 
 ## Chain 1
 
