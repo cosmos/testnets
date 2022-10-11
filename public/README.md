@@ -10,7 +10,7 @@ Visit the [Scheduled Upgrades](UPGRADES.md) page for details on current and upco
 - **Launch date**: 2022-03-10
 - **Current Gaia Version:** `v7.0.2` upgraded at height `9283650`
 - **Launch Gaia Version:** `release/v6.0.0`
-- **Genesis File:**  Zipped and included [in this repository](public/genesis.json.gz), unzip and verify with `shasum -a 256 genesis.json`
+- **Genesis File:**  Zipped and included [in this repository](genesis.json.gz), unzip and verify with `shasum -a 256 genesis.json`
 - **Genesis sha256sum**: `522d7e5227ca35ec9bbee5ab3fe9d43b61752c6bdbb9e7996b38307d7362bb7e`
 
 ### Endpoints
