@@ -2,18 +2,18 @@
 
 These instructions will help you simulate the `v8-Rho` upgrade on a single validator node testnet as follows:
 
-- Start with gaia version: `v7.0.3`
-- After the upgrade: gaia branch `TBD`
+- Start with gaia version: `v7.1.0`
+- After the upgrade: gaia release `v8.0.0-rc3`
 
 We will use a modified genesis file during this upgrade. This modified genesis file is similar to the one we are running on the public testnet, and has been modified in part to replace an existing validator (Coinbase Custody) with a new validator account that we control. The account's mnemonic, validator key, and node key are provided in this repo.  
 For a full list of modifications to the genesis file, please [see below](#genesis-modifications).
 
-If you are interested in running v8-Rho without going through the upgrade, you can checkout gaia branch `main` in the [Build gaia](#build-gaia) section and follow the rest of the instructions up until the node is running and producing blocks.
+If you are interested in running v8-Rho without going through the upgrade, you can download one of the binaries in the Gaia [releases](https://github.com/cosmos/gaia/releases) page follow the rest of the instructions up until the node is running and producing blocks.
 
 * **Chain ID**: `local-testnet`
-* **Gaia version:** `v7.0.3`
-* **Modified genesis file:** [tinkered-genesis_2022-09-11T07:43:05.6452382Z_v7.0.3_12010083.json.gz](https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/tinkered-genesis_2022-09-11T07%3A43%3A05.6452382Z_v7.0.3_12010083.json.gz)
-* **Original genesis file:** [mainnet-genesis_2022-09-11T07:43:05.6452382Z_v7.0.3_12010083.json.gz](https://files.polypore.xyz/genesis/mainnet-genesis-export/mainnet-genesis_2022-09-11T07%3A43%3A05.6452382Z_v7.0.3_12010083.json.gz)
+* **Gaia version:** `v7.1.0`
+* **Modified genesis file:** [tinkered-genesis_2023-01-06T20:22:50.460851274Z_v7.1.0_13562370.json.gz](https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/tinkered-genesis_2023-01-06T20%3A22%3A50.460851274Z_v7.1.0_13562370.json.gz)
+* **Original genesis file:** [mainnet-genesis_2023-01-06T20:22:50.460851274Z_v7.1.0_13562370.json.gz](https://files.polypore.xyz/genesis/mainnet-genesis-export/mainnet-genesis_2023-01-06T20%3A22%3A50.460851274Z_v7.1.0_13562370.json.gz)
 * **Validator key:** [priv_validator_key](priv_validator_key.json)
 * **Node key:** [node_key](node_key.json)
 * **Validator mnemonic:** [mnemonic.txt](mnemonic.txt)
@@ -25,8 +25,7 @@ Use the example inventory file from the [cosmos-ansible](https://github.com/hyph
 ```
 git clone https://github.com/hyphacoop/cosmos-ansible.git
 cd cosmos-ansible
-git checkout v0.1.0
-ansible-playbook gaia.yml -i examples/inventory-local-genesis.yml -e 'target=SERVER_IP_OR_DOMAIN'
+ansible-playbook node.yml -i examples/inventory-local-genesis.yml -e 'target=SERVER_IP_OR_DOMAIN'
 ```
 
 For additional information, visit the [examples page](https://github.com/hyphacoop/cosmos-ansible/tree/main/examples#start-a-local-testnet-using-a-modified-genesis-file).
@@ -46,15 +45,15 @@ echo $USER_MNEMONIC | gaiad --home $NODE_HOME keys add $USER_KEY_NAME --recover 
 
 ### Requirements
 
-Follow the [installation instructions](https://hub.cosmos.network/main/getting-started/installation.html) to understand build requirements. You'll need to install Go 1.18.
+Follow the [installation instructions](https://hub.cosmos.network/main/getting-started/installation.html) to understand build requirements. You'll need to install Go 1.19.
 
 ```
 sudo apt update
 sudo apt upgrade
 sudo apt install git build-essential
 
-curl -OL https://golang.org/dl/go1.18.1.linux-amd64.tar.gz
-sudo tar -C /usr/local -xvf go1.18.1.linux-amd64.tar.gz
+curl -OL https://golang.org/dl/go1.19.4.linux-amd64.tar.gz
+sudo tar -C /usr/local -xvf go1.14.4.linux-amd64.tar.gz
 ```
 
 ### Modify your paths
@@ -69,7 +68,7 @@ source ~/.profile
 cd $HOME
 git clone https://github.com/cosmos/gaia.git
 cd gaia
-git checkout v7.0.3
+git checkout v7.1.0
 make install
 ```
 
@@ -92,16 +91,16 @@ $BINARY init $NODE_MONIKER --home $NODE_HOME --chain-id=$CHAIN_ID
 Then replace the genesis file with our modified genesis file.
 
 ```
-wget https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/tinkered-genesis_2022-09-11T07%3A43%3A05.6452382Z_v7.0.3_12010083.json.gz
-gunzip tinkered-genesis_2022-09-11T07:43:05.6452382Z_v7.0.3_12010083.json.gz 
-mv tinkered-genesis_2022-09-11T07:43:05.6452382Z_v7.0.3_12010083.json $NODE_HOME/config/genesis.json
+wget https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/tinkered-genesis_2023-01-06T20%3A22%3A50.460851274Z_v7.1.0_13562370.json.gz
+gunzip tinkered-genesis_2023-01-06T20:22:50.460851274Z_v7.1.0_13562370.json.gz
+mv tinkered-genesis_2023-01-06T20:22:50.460851274Z_v7.1.0_13562370.json $NODE_HOME/config/genesis.json
 ```
 
 Make sure you have the correct genesis file.
 
 ```
 shasum -a 256 $NODE_HOME/config/genesis.json
-f1d17c898df187c99a98f02e84fe9129ab92ab8b1b99bdbf53ca898d6f02fe94
+0aafe5e71241c79d2beb542314de7c7416a77a452231ee1a38378b3c0e04dc38
 ````
 
 Replace the validator and node keys.
@@ -139,12 +138,12 @@ First download Cosmovisor.
 
 ```
 export GO111MODULE=on
-go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@v1.0.0
+go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@v1.3.0
 ```
 
 Setup the Cosmovisor directory structure. There are two methods to use Cosmovisor:
 
-1. **Manual:** Node runners can manually build the old and new binary and put them into the `cosmovisor` folder (as shown below). Cosmovisor will then switch to the new binary upon upgrade height.
+1. **Manual:** Node runners can manually build the old and new binary and put them into the `cosmovisor` folder (as shown below). Cosmovisor will then switch to the new binary upon upgrade height. **If you are using Cosmovisor `v1.0.0`, the version name is not lowercased (use `upgrades/v8-Rho/bin/gaiad`)**.
 
 2. **Auto-download:** Allowing Cosmovisor to [auto-download](https://github.com/cosmos/cosmos-sdk/tree/master/cosmovisor#auto-download) the new binary at the upgrade height automatically.
 
@@ -157,7 +156,7 @@ Setup the Cosmovisor directory structure. There are two methods to use Cosmoviso
 │   └── bin
 │       └── gaiad
 └── upgrades
-    └── v8-Rho
+    └── v8-rho
         ├── bin
         │   └── gaiad
         └── upgrade-info.json
@@ -236,16 +235,16 @@ INF committed state app_hash=99D509C03FDDFEACAD90608008942C0B4C801151BDC1B8998EE
 Build the upgrade binary.
 ```
 cd $HOME/gaia
-git checkout rho-prepare
+git checkout v8.0.0-rc3
 git pull
 make install
 ```
 
-Copy over the v8-Rho binary into the correct directory.
+Copy over the v8-Rho binary into the correct directory. **If you are using Cosmovisor `v1.0.0`, the version name is not lowercased (use `upgrades/v8-Rho/bin/gaiad`)**.
 ```
-mkdir -p $NODE_HOME/cosmovisor/upgrades/v8-Rho/bin
-cp $(which gaiad) $NODE_HOME/cosmovisor/upgrades/v8-Rho/bin
-export BINARY=$NODE_HOME/cosmovisor/upgrades/v8-Rho/bin/gaiad
+mkdir -p $NODE_HOME/cosmovisor/upgrades/v8-rho/bin
+cp $(which gaiad) $NODE_HOME/cosmovisor/upgrades/v8-rho/bin
+export BINARY=$NODE_HOME/cosmovisor/upgrades/v8-rho/bin/gaiad
 ```
 
 ## Submit and vote on a software upgrade proposal
@@ -272,7 +271,7 @@ cosmovisor tx gov submit-proposal software-upgrade v8-Rho \
 Vote on it.
 
 ```
-gaiad tx gov vote 87 yes \
+gaiad tx gov vote 95 yes \
 --from $USER_KEY_NAME \
 --keyring-backend test \
 --chain-id $CHAIN_ID \
@@ -286,7 +285,7 @@ gaiad tx gov vote 87 yes \
 After the voting period ends, you should be able to query the proposal to see if it has passed. Like this:
 
 ```
-$gaiad query gov proposal 87 --home $NODE_HOME
+$gaiad query gov proposal 95 --home $NODE_HOME
 ```
 
 After `PROPOSAL_STATUS_PASSED`, wait until the upgrade height is reached Cosmovisor will now auto-download the new binary specific to your platform and apply the upgrade.
