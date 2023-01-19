@@ -15,7 +15,7 @@ CHAIN_BINARY='gaiad'
 CHAIN_ID=theta-testnet-001
 GENESIS_ZIPPED_URL=https://github.com/cosmos/testnets/raw/master/public/genesis.json.gz
 SEEDS="639d50339d7045436c756a042906b9a69970913f@seed-01.theta-testnet.polypore.xyz:26656,3e506472683ceb7ed75c1578d092c79785c27857@seed-02.theta-testnet.polypore.xyz:26656"
-SYNC_RPC="rpc.state-sync-01.theta-testnet.polypore.xyz:26657,rpc.state-sync-02.theta-testnet.polypore.xyz:26657"
+SYNC_RPC="https://rpc.state-sync-01.theta-testnet.polypore.xyz:443,https://rpc.state-sync-02.theta-testnet.polypore.xyz:443"
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
@@ -57,14 +57,14 @@ $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
 
 if $STATE_SYNC ; then
     echo "Configuring state sync..."
-    CURRENT_BLOCK=$(curl -s http://sentry-01.theta-testnet.polypore.xyz:26657/block | jq -r '.result.block.header.height')
+    CURRENT_BLOCK=$(curl -s https://rpc.sentry-01.theta-testnet.polypore.xyz/block | jq -r '.result.block.header.height')
     TRUST_HEIGHT=$[$CURRENT_BLOCK-1000]
-    TRUST_BLOCK=$(curl -s http://sentry-01.theta-testnet.polypore.xyz:26657/block\?height\=$TRUST_HEIGHT)
+    TRUST_BLOCK=$(curl -s https://rpc.sentry-01.theta-testnet.polypore.xyz/block\?height\=$TRUST_HEIGHT)
     TRUST_HASH=$(echo $TRUST_BLOCK | jq -r '.result.block_id.hash')
     sed -i -e '/enable =/ s/= .*/= true/' $NODE_HOME/config/config.toml
     sed -i -e "/trust_height =/ s/= .*/= $TRUST_HEIGHT/" $NODE_HOME/config/config.toml
     sed -i -e "/trust_hash =/ s/= .*/= \"$TRUST_HASH\"/" $NODE_HOME/config/config.toml
-    sed -i -e "/rpc_servers =/ s/= .*/= \"$SYNC_RPC\"/" $NODE_HOME/config/config.toml
+    sed -i -e "/rpc_servers =/ s^= .*^= \"$SYNC_RPC\"^" $NODE_HOME/config/config.toml
 else
     echo "Skipping state sync..."
 fi

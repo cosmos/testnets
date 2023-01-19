@@ -17,26 +17,25 @@ Visit the [Scheduled Upgrades](UPGRADES.md) page for details on current and upco
 
 Endpoints are exposed as subdomains for the sentry and snapshot nodes (described below) as follows:
 
-* `rpc.<node-name>.theta-testnet.polypore.xyz`
-* `rest.<node-name>.theta-testnet.polypore.xyz`
-* `grpc.<node-name>.theta-testnet.polypore.xyz`
-* `p2p.<node-name>.theta-testnet.polypore.xyz`
+* `https://rpc.<node-name>.theta-testnet.polypore.xyz:443`
+* `https://rest.<node-name>.theta-testnet.polypore.xyz:443`
+* `https://grpc.<node-name>.theta-testnet.polypore.xyz:443`
+* `p2p.<node-name>.theta-testnet.polypore.xyz:26656`
 
 Sentries:
 
-1. `https://sentry-01.theta-testnet.polypore.xyz`
-2. `https://sentry-02.theta-testnet.polypore.xyz`
+1. `sentry-01.theta-testnet.polypore.xyz`
+2. `sentry-02.theta-testnet.polypore.xyz`
 
 Seed nodes:
 
-1. `https://seed-01.theta-testnet.polypore.xyz`
-2. `https://seed-02.theta-testnet.polypore.xyz`
+1. `seed-01.theta-testnet.polypore.xyz`
+2. `seed-02.theta-testnet.polypore.xyz`
 
 The following state sync nodes serve snapshots every 1000 blocks:
 
-1. `https://state-sync-01.theta-testnet.polypore.xyz`
-2. `https://state-sync-02.theta-testnet.polypore.xyz`
-
+1. `state-sync-01.theta-testnet.polypore.xyz`
+2. `state-sync-02.theta-testnet.polypore.xyz`
 
 ### Seeds
 
