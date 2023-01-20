@@ -8,7 +8,7 @@ Visit the [Scheduled Upgrades](UPGRADES.md) page for details on current and upco
 
 - **Chain-ID**: `theta-testnet-001`
 - **Launch date**: 2022-03-10
-- **Current Gaia Version:** `v7.1.0` (upgraded to v7 at height `9283650`)
+- **Current Gaia Version:** `v8.0.0-rc3` (upgraded to v8 at height `14175595`)
 - **Launch Gaia Version:** `release/v6.0.0`
 - **Genesis File:**  Zipped and included [in this repository](genesis.json.gz), unzip and verify with `shasum -a 256 genesis.json`
 - **Genesis sha256sum**: `522d7e5227ca35ec9bbee5ab3fe9d43b61752c6bdbb9e7996b38307d7362bb7e`
@@ -104,7 +104,9 @@ Run either one of the scripts provided in this repo to join the provider chain:
     * To run gaiad v6.0.4, you can download the appropriate binary or build from source.
     * To build from source, uncomment the below the binary download and use `git checkout v6.0.4` prior to `make install`.
 
-### Cosmovisor: upgrading with autodownload vs. manually preparing your binary
+### Cosmovisor
+
+#### Ugrading with auto-download vs. manually preparing your binary
 
 If you want to use Cosmovisor's **auto-download** feature, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=true`
 
@@ -122,6 +124,10 @@ If you are **manually preparing your binary**, please set the environement varia
         │   └── gaiad
         └── upgrade-info.json
 ```
+
+#### Upgrade Backup
+
+Cosmovisor will attempt to make a backup of the home folder before upgrading, which will consume time and considerable disk space. If you want to skip this step, set the environment variable `UNSAFE_SKIP_BACKUP` to `true`.
 
 ## Public testnet modifications
 

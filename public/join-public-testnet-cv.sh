@@ -7,7 +7,7 @@
 NODE_HOME=~/.gaia
 NODE_MONIKER=public-testnet
 SERVICE_NAME=cosmovisor
-CHAIN_BINARY_URL='https://github.com/cosmos/gaia/releases/download/v7.1.0/gaiad-v7.1.0-linux-amd64'
+CHAIN_BINARY_URL='https://github.com/cosmos/gaia/releases/download/v8.0.0-rc3/gaiad-v8.0.0-rc3-linux-amd64'
 STATE_SYNC=true
 # ***
 
@@ -42,7 +42,7 @@ chmod +x $HOME/go/bin/$CHAIN_BINARY
 # rm -rf gaia
 # git clone https://github.com/cosmos/gaia.git
 # cd gaia
-# git checkout v7.1.0
+# git checkout v8.0.0-rc3
 # make install
 
 export PATH=$PATH:$HOME/go/bin
@@ -102,6 +102,7 @@ echo "Environment='DAEMON_HOME=$NODE_HOME'" | sudo tee /etc/systemd/system/$SERV
 echo "Environment='DAEMON_ALLOW_DOWNLOAD_BINARIES=true'" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "Environment='DAEMON_RESTART_AFTER_UPGRADE=true'" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "Environment='DAEMON_LOG_BUFFER_SIZE=512'" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "Environment='UNSAFE_SKIP_BACKUP=true'" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo ""                                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "[Install]"                            | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "WantedBy=multi-user.target"           | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
