@@ -1,7 +1,7 @@
 
 # `consumer-1` Chain Details
 
-> Status: **PROPOSAL PASSED | waiting for spawn time `2023-01-26 15:00 UTC`)**
+> Status: **PROPOSAL PASSED | waiting for spawn time `2023-01-26 15:00 UTC`**
 
 The `consumer-1` chain will be launched as a persistent dummy chain to test basic Interchain Security functionality.
 
