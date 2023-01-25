@@ -1,6 +1,8 @@
 
 # `consumer-1` Chain Details
 
+> Status: **PROPOSAL PASSED | waiting for spawn time `2023-01-26 15:00 UTC`)**
+
 The `consumer-1` chain will be launched as a persistent dummy chain to test basic Interchain Security functionality.
 
 * **Chain-ID**: `consumer-1`
@@ -13,7 +15,7 @@ The `consumer-1` chain will be launched as a persistent dummy chain to test basi
 * **Genesis file _without CCV state_:** [consumer-1-genesis-without-ccv.json](consumer-1-genesis-without-ccv.json), verify with `shasum -a 256 provider-1-genesis.json`
 * **SHA256 for genesis file _without CCV state_**: `d86d756e10118e66e6805e9cc476949da2e750098fcc7634fd0cc77f57a0b2b0`
 
-The following items are included in the consumer addition proposal:
+The following items are included in the consumer addition [proposal](https://explorer.rs-testnet.polypore.xyz/provider-1/gov/5):
 
 * Genesis file hash
   * The SHA256 is used to verify against the genesis file (without CCV state) that the proposer has made available for review.
