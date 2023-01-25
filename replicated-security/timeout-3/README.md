@@ -1,6 +1,8 @@
 
 # `timeout-3` Chain Details
 
+> Status: **STARTED | waiting for `ccv_timeout_period`**
+
 The timeout-3 chain will be launched with the purpose of testing the provider chain `ccv_timeout_period` timeout. The relayer used to first establish the connection between `timeout-3` and `provider-1` will be stopped shortly afterwards. The relayer will then be started again after the `ccv_timeout_period` has elapsed but before the `vsc_timeout_period` is reached.
 
 - **Chain-ID**: `timeout-3`
