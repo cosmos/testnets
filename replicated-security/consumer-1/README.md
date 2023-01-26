@@ -1,7 +1,7 @@
 
 # `consumer-1` Chain Details
 
-> Status: **PROPOSAL PASSED | waiting for spawn time `2023-01-26 15:00 UTC`**
+> Status: **STARTED**
 
 The `consumer-1` chain will be launched as a persistent dummy chain to test basic Interchain Security functionality.
 
@@ -10,6 +10,8 @@ The `consumer-1` chain will be launched as a persistent dummy chain to test basi
 * **Spawn time**: `2023-01-26T15:00:00.000000Z`
 * **GitHub repo**: [cosmos/interchain-security](https://github.com/cosmos/interchain-security)
 * **Release**: [`v1.0.0-rc3`](https://github.com/cosmos/interchain-security/releases/tag/v1.0.0-rc3)
+* **Genesis file with CCV state:** [consumer-1-genesis.json](consumer-1-genesis.json)
+
 * **Reference binary**: [consumer-1-linux-amd64](consumer-1-linux-amd64)
 * **Binary sha256sum**: `376cdbd3a222a3d5c730c9637454cd4dd925e2f9e2e0d0f3702fc922928583f1`
 * **Genesis file _without CCV state_:** [consumer-1-genesis-without-ccv.json](consumer-1-genesis-without-ccv.json), verify with `shasum -a 256 provider-1-genesis.json`
@@ -39,18 +41,18 @@ Endpoints are exposed as subdomains for the sentry and snapshot nodes (described
 
 Sentries:
 
-1. `consumer-1-sentry-01.rs-testnet.polypore.xyz`
-2. `consumer-1-sentry-02.rs-testnet.polypore.xyz`
+1. `consumer1-sentry-01.rs-testnet.polypore.xyz`
+2. `consumer1-sentry-02.rs-testnet.polypore.xyz`
 
 Seed nodes:
 
-1. `08ec17e86dac67b9da70deb20177655495a55407@consumer-1-seed-01.rs-testnet.polypore.xyz:26656`
-2. `4ea6e56300a2f37b90e58de5ee27d1c9065cf871@consumer-1-seed-02.rs-testnet.polypore.xyz:26656`
+1. `08ec17e86dac67b9da70deb20177655495a55407@consumer1-seed-01.rs-testnet.polypore.xyz:26656`
+2. `4ea6e56300a2f37b90e58de5ee27d1c9065cf871@consumer1-seed-02.rs-testnet.polypore.xyz:26656`
 
 The following state sync nodes serve snapshots every 1000 blocks:
 
-1. `consumer-1-state-sync-01.rs-testnet.polypore.xyz`
-1. `consumer-1-state-sync-02.rs-testnet.polypore.xyz`
+1. `consumer1-state-sync-01.rs-testnet.polypore.xyz`
+1. `consumer1-state-sync-02.rs-testnet.polypore.xyz`
 
 ## IBC Information
 
@@ -58,16 +60,9 @@ Connections and channels will be posted here shortly after the chain launches.
 
 ## How to Join
 
-### Before the Spawn Time is Reached
+The scripts provided in this repo will install Gaia and optionally set up a Cosmovisor service with the auto-download feature enabled on your machine.
 
-The CCV state will not be available until the spawn time is reached. If you want to set up your node(s) before then, you can do the following:
-
-1. Run one of the provided bash scripts.
-2. Wait until the genesis file that includes the CCV state is published to this repo, shortly after the spawn time is reached. Alternatively, you can update the genesis file yourself following the commands listed in [this guide](https://github.com/hyphacoop/ics-testnets/blob/main/docs/Consumer-Chain-Start-Process.md).
-3. Replace the genesis.json file in your `consumer-1` node with the one that includes the CCV state.
-4. Enable and start the service created by the script.
-
-#### Bash Scripts
+#### Bash Script
 
 The scripts provided in this repo will install `interchain-security-cd` and optionally set up a Cosmovisor service on your machine. 
 
@@ -77,7 +72,3 @@ Run either one of the scripts provided to set up a `consumer-1` service:
 * Both scripts must be run either as root or from a sudoer account.
 * Both scripts will attempt to build a binary from the [cosmos/interchain-security] repo.
 
-### After the Spawn Time is Reached
-
-* The genesis file that includes the CCV state will be published here.
-* The bash scripts will be updated.

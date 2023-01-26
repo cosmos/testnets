@@ -16,13 +16,13 @@ STATE_SYNC=false
 
 CHAIN_BINARY='interchain-security-cd'
 CHAIN_ID=consumer-1
-SEEDS="08ec17e86dac67b9da70deb20177655495a55407@consumer-1-seed-01.rs-testnet.polypore.xyz:26656,4ea6e56300a2f37b90e58de5ee27d1c9065cf871@consumer-1-seed-02.rs-testnet.polypore.xyz:26656,"
-SYNC_RPC_1=http://consumer-1-state-sync-01.rs-testnet.polypore.xyz:26657
-SYNC_RPC_2=http://consumer-1-state-sync-02.rs-testnet.polypore.xyz:26657
+SEEDS="08ec17e86dac67b9da70deb20177655495a55407@consumer1-seed-01.rs-testnet.polypore.xyz:26656,4ea6e56300a2f37b90e58de5ee27d1c9065cf871@consumer1-seed-02.rs-testnet.polypore.xyz:26656,"
+SYNC_RPC_1=http://consumer1-state-sync-01.rs-testnet.polypore.xyz:26657
+SYNC_RPC_2=http://consumer1-state-sync-02.rs-testnet.polypore.xyz:26657
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_2"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
-# GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/consumer-1/consumer-1-genesis.json
+GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/consumer-1/consumer-1-genesis.json
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
@@ -62,9 +62,9 @@ cp $PRIV_VALIDATOR_KEY_FILE $NODE_HOME/config/priv_validator_key.json
 cp $NODE_KEY_FILE $NODE_HOME/config/node_key.json
 
 # Replace genesis file: only after the spawn time is reached
-# echo "Replacing genesis file..."
-# wget $GENESIS_URL -O genesis.json
-# mv genesis.json $NODE_HOME/config/genesis.json
+echo "Replacing genesis file..."
+wget $GENESIS_URL -O genesis.json
+mv genesis.json $NODE_HOME/config/genesis.json
 
 if $STATE_SYNC ; then
     echo "Configuring state sync..."
@@ -102,9 +102,9 @@ echo "WantedBy=multi-user.target"           | sudo tee /etc/systemd/system/$SERV
 sudo systemctl daemon-reload
 
 # Enable and start the service after the genesis that includes the CCV state is in place
-# sudo systemctl enable $SERVICE_NAME.service
-# sudo systemctl start $SERVICE_NAME.service
-# sudo systemctl restart systemd-journald
+sudo systemctl enable $SERVICE_NAME.service
+sudo systemctl start $SERVICE_NAME.service
+sudo systemctl restart systemd-journald
 
 # Add go and gaiad to the path
 echo "Setting up paths for go and interchain-security-cd bin..."
