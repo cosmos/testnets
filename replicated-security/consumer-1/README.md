@@ -1,7 +1,7 @@
 
 # `consumer-1` Chain Details
 
-> Status: **STARTED**
+> Status: **STOPPED**
 
 The `consumer-1` chain will be launched as a persistent dummy chain to test basic Interchain Security functionality.
 
