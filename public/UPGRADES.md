@@ -6,11 +6,11 @@
 
 | Date | Testnet plan                             |
 |------|------------------------------------------|
-| January 20 2023 | ✅ v8-Rho upgrade ([Gaia v8.0.0-rc5](https://github.com/cosmos/gaia/releases/tag/v8.0.0-rc5)) is live on the testnet       |
+| January 20 2023 | ✅ v8-Rho upgrade ([Gaia v8.0.0-rc3](https://github.com/cosmos/gaia/releases/tag/v8.0.0-rc3)) is live on the testnet       |
 | January 18 2023 | ✅ Submit and pass v8-Rho software upgrade [proposal](https://explorer.theta-testnet.polypore.xyz/proposals/112) |
 
 * **Version before upgrade**: `v7.1.0`
-* **Version after upgrade**: `v8.0.0-rc5`
+* **Version after upgrade**: `v8.0.0-rc3`
 
 ### Upgrade height and binaries
 
