@@ -76,18 +76,13 @@ Run either one of the scripts provided in this repo to join the provider chain:
 
 Once you have some tokens in your self-delegation account, you can submit the `create-validator` transaction.
 
-1. Obtain the validator public key
-```
-gaiad tendermint show-validator
-```
-
-2. Submit the `create-validator` transaction.
+Submit the `create-validator` transaction.
 ```bash
 gaiad tx staking create-validator \
---amount 1000000uprov \
---pubkey '<public key from the previous command>' \
+--amount 1000000uatom \
+--pubkey "$(gaiad tendermint show-validator)" \
 --moniker <your moniker> \
---chain-id provider \
+--chain-id provider-1 \
 --commission-rate 0.10 \
 --commission-max-rate 1.00 \
 --commission-max-change-rate 0.1 \
