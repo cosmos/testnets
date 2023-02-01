@@ -4,7 +4,7 @@ This guide is intended for consumer chain teams that are looking to be onboarded
 
 ## Quick facts about the Replicated Security Testnet
 * The Replicated Security (RS) testnet is to be used to launch and test consumer chains. We recommend consumer chains to launch on the testnet before launching on the mainnet.
-* All information about this testnet is available in this [testnet repository](https://github.com/cosmos/testnets)
+* All information about the RS testnet is available in this [repository](https://github.com/cosmos/testnets/tree/master/replicated-security)
 * The testnet coordinators (Hypha) have majority voting power in the RS testnet. This means we need to work with you to bring your chain live and also to successfully pass any governance proposals you make
 
 ## How to join the RS testnet
