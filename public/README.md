@@ -8,7 +8,7 @@ Visit the [Scheduled Upgrades](UPGRADES.md) page for details on current and upco
 
 - **Chain-ID**: `theta-testnet-001`
 - **Launch date**: 2022-03-10
-- **Current Gaia Version:** `v8.0.0-rc3` (upgraded to v8 at height `14175595`)
+- **Current Gaia Version:** `v8.0.0-rc5` (upgraded to v8 at height `14175595`)
 - **Launch Gaia Version:** `release/v6.0.0`
 - **Genesis File:**  Zipped and included [in this repository](genesis.json.gz), unzip and verify with `shasum -a 256 genesis.json`
 - **Genesis sha256sum**: `522d7e5227ca35ec9bbee5ab3fe9d43b61752c6bdbb9e7996b38307d7362bb7e`
@@ -110,7 +110,7 @@ Run either one of the scripts provided in this repo to join the provider chain:
 
 If you want to use Cosmovisor's **auto-download** feature, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=true`
 
-If you are **manually preparing your binary**, please set the environement variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` and download a copy of the v8.0.0-rc3 binary to the v8-Rho upgrade directory in your cosmovisor directory (`upgrades/v8-rho/bin/gaiad`). **If you are using Cosmovisor `v1.0.0`, the version name is not lowercased (use `upgrades/v8-Rho/bin/gaiad` instead)**.
+If you are **manually preparing your binary**, please set the environement variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` and download a copy of the v8.0.0-rc5 binary to the v8-Rho upgrade directory in your cosmovisor directory (`upgrades/v8-rho/bin/gaiad`). **If you are using Cosmovisor `v1.0.0`, the version name is not lowercased (use `upgrades/v8-Rho/bin/gaiad` instead)**.
 
 ```
 .
