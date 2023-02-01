@@ -11,10 +11,10 @@ This guide is intended for consumer chain teams that are looking to be onboarded
 * All the consumer chains have their own directory, you can use [`consumer-1`](consumer-1/README.md) as an example
 * Feel free to clone the consumer-1 directory, replicate it for your consumer chain, and make a PR with the relevant information
 * Ensure that you include all relevant documentation to build your consumer chain binary from a release or a tag
-* Please include the genesis file in your PR. We’ll be reviewing this genesis file: 
-  - It must include adequate funded accounts (e.g., for supplying gas fees for a relayer, faucet accounts, etc.)
-  - Genesis time must match the spawn time in the proposal
-  - Set slashing parameters so validators have time to join without getting jailed
+* Please include the genesis file in your PR. It should have: 
+  - Properly funded accounts (e.g., gas fees for relayer, faucet, etc.)
+  - Adequate slashing parameters to give validators time to join without getting jailed
+  - A genesis time that matches the spawn time in the proposal
 - We can also provide you a proposal with good defaults for parameters (e.g., unbonding time and ccv timeout)
 * When you make your proposal, please let us know well in advance. We also recommend making the proposal with us on a sync call. Current voting period is 1min to allow for quick iterations; we’ll need to vote right after you submit your proposal. We may change this voting period in the future if this format doesn’t work
 * Please update the [schedule page](SCHEDULE.md) with your testnet launch date
