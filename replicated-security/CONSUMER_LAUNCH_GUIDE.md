@@ -18,7 +18,7 @@ This guide is intended for consumer chain teams that are looking to be onboarded
 - We can also provide you with a sample proposal with adequate parameters (e.g., unbonding time and ccv timeout)
 * When you make your proposal, please let us know well in advance. We also recommend making the proposal with us on a sync call. Current voting period is 1min to allow for quick iterations; we’ll need to vote right after you submit your proposal. We may change this voting period in the future if this format doesn’t work
 * Please update the [schedule page](SCHEDULE.md) with your testnet launch date
-* Please make an `#announcements` in the Interchain Security section of the Cosmos Hub community discord. If you need permissions for posting in the Discord, please reach out to us
+* Please publish a post in the `#announcements` channel in the Interchain Security category of the Cosmos Network Discord server. If you need permissions for posting, please reach out to us
 
 ## Expectations from consumer chains
 We expect you to run the minimum infrastructure required to make your consumer chain usable by testnet participants. This means running:
