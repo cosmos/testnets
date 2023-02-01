@@ -8,7 +8,7 @@ This guide is intended for consumer chain teams that are looking to be onboarded
 * The testnet coordinators (Hypha) have majority voting power in the RS testnet. This means we need to work with you to bring your chain live and also to successfully pass any governance proposals you make
 
 ## How to join the RS testnet
-* All the consumer chains have their own directory, [here’s an example of “consumer-1”](consumer-1/README.md) a dummy chain
+* All the consumer chains have their own directory, you can use [`consumer-1`](consumer-1/README.md) as an example
 * Feel free to clone the consumer-1 directory, replicate it for your consumer chain, and make a PR with the relevant information
 * Ensure that you include all relevant documentation to build your consumer chain binary from a release or a tag
 * Please include the genesis file in your PR. We’ll be reviewing this genesis file: 
