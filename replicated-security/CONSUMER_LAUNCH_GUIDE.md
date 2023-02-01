@@ -27,7 +27,7 @@ We expect you to run the minimum infrastructure required to make your consumer c
    - **IMPORTANT**: If you will be running a relayer, make sure you have funds to pay gas for the relayer. You will likely need to set up a genesis account with funds
 
 Additionally you may want to run:
-- a faucet such as this simple [REST faucet](https://github.com/hyphacoop/cosmos-rest-faucet)
+- a faucet such as this simple [REST faucet](https://github.com/hyphacoop/cosmos-rest-faucet) (it may need a separate funded account in the genesis file as well)
 - a block explorer such as [ping.pub](https://github.com/ping-pub/explorer)
 
 ## Talk to us
