@@ -1,0 +1,18 @@
+{
+    "title": "Create the slasher chain",
+    "description": "This is the proposal to create the \"slasher\" consumer chain. It will help us test the slash rate limiter of the provider chain by attempting to jail all validators.**",
+    "chain_id": "slasher",
+    "initial_height": {
+        "revision_height": 1
+    },
+    "genesis_hash": "f2bcaeec812058d761399d355124ceb8945b79168a2848c46c4455bebebe7d00",
+    "binary_hash": "c6660834e0786c3032369de6d7798bb411993c741d0c7c2709fc4cbc9cfa1864",
+    "spawn_time": "2023-02-03T15:00:00.000000Z",
+    "blocks_per_distribution_transmission": 1000,
+    "consumer_redistribution_fraction": "0.75",
+    "historical_entries": 10000,
+    "transfer_timeout_period": 1800000000000,
+    "ccv_timeout_period": 2419200000000000,
+    "unbonding_period": 1728000000000000,
+    "deposit": "10000000uatom"
+}
