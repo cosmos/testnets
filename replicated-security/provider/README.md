@@ -1,14 +1,14 @@
 
-# `provider-1` Chain Details
+# `provider` Chain Details
 
 The provider chain functions as an analogue of the Cosmos Hub. Its governance parameters will provide short voting periods to accelerate the creation of consumer chains.
 
-* **Chain-ID**: `provider-1`
+* **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Launch date**: 2023-01-23
-* **Launch Gaia Version:** [`v9.0.0-rc1`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc1)
-* **Genesis File:**  [provider-1-genesis.json](provider-1-genesis.json), verify with `shasum -a 256 provider-1-genesis.json`
-* **Genesis sha256sum**: `4cdd90af813df8655c9bdc9bd33cd18bf93dd1ab50ba3a76794947bef86dd487`
+* **Launch date**: 2023-02-02
+* **Launch Gaia Version:** [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
+* **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
+* **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 
 ## Endpoints
 
@@ -44,9 +44,7 @@ Connections and channels will be posted here shortly after a consumer chain laun
 
 ### Clients
 
-* timeout-1: 07-tendermint-0
-* timeout-2: 07-tendermint-1
-* timeout-3: 07-tendermint-2
+### Channels
 
 ## Faucet
 
@@ -68,7 +66,7 @@ Run either one of the scripts provided in this repo to join the provider chain:
 
 #### State Sync Option
 
-* By default, the scripts will attempt to use state sync to catch up quickly to the current height. To turn off state sync, set `STATE_SYNC` to `false`.
+* By default, the scripts will attempt to use state sync to catch up quickly to the current height. To turn off state sync, set `STATE_SYNC` to `false` (you should set this to false if the chain has less than 1000 blocks).
 
 ## Creating a Validator
 
@@ -82,7 +80,7 @@ gaiad tx staking create-validator \
 --amount 1000000uatom \
 --pubkey "$(gaiad tendermint show-validator)" \
 --moniker <your moniker> \
---chain-id provider-1 \
+--chain-id provider \
 --commission-rate 0.10 \
 --commission-max-rate 1.00 \
 --commission-max-change-rate 0.1 \

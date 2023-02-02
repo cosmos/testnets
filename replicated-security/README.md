@@ -13,7 +13,7 @@ This testnet includes the following:
 
 ### Live Chains
 
-* Provider: [`provider-1`](/replicated-security/provider-1/README.md)
+* Provider: [`provider`](/replicated-security/provider/README.md)
 
 ### Stopped Chains
 
@@ -24,7 +24,6 @@ This testnet includes the following:
 
 ## Upcoming Events
 
-* `provider-1` chain binary update
-* `slasher-1` chain launch
+* `slasher` chain launch
 
 See the [RS testnet schedule](SCHEDULE.md) for consumer chain launches and other planned events.

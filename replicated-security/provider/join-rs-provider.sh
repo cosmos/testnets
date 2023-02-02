@@ -14,15 +14,15 @@
 PRIV_VALIDATOR_KEY_FILE=~/priv_validator_key.json
 NODE_KEY_FILE=~/node_key.json
 NODE_HOME=~/.gaia
-NODE_MONIKER=provider-1
-SERVICE_NAME=provider-1
-CHAIN_BINARY_URL='https://github.com/cosmos/gaia/releases/download/v9.0.0-rc0/gaiad-v9.0.0-rc0-linux-amd64'
+NODE_MONIKER=provider
+SERVICE_NAME=provider
+CHAIN_BINARY_URL='https://github.com/cosmos/gaia/releases/download/v9.0.0-rc2/gaiad-v9.0.0-rc2-linux-amd64'
 STATE_SYNC=true
 # ***
 
 CHAIN_BINARY='gaiad'
-CHAIN_ID=provider-1
-GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/provider-1/provider-1-genesis.json
+CHAIN_ID=provider
+GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/provider/provider-genesis.json
 SEEDS="08ec17e86dac67b9da70deb20177655495a55407@provider-seed-01.rs-testnet.polypore.xyz:26656,4ea6e56300a2f37b90e58de5ee27d1c9065cf871@provider-seed-02.rs-testnet.polypore.xyz:26656"
 SYNC_RPC_1=https://rpc.provider-state-sync-01.rs-testnet.polypore.xyz:443
 SYNC_RPC_2=https://rpc.provider-state-sync-02.rs-testnet.polypore.xyz:443
@@ -31,11 +31,11 @@ SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_2"
 # Install wget and jq
 sudo apt-get install curl jq wget -y
 
-# Install go 1.19.4
+# Install go 1.18.5
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
-wget https://go.dev/dl/go1.19.4.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.19.4.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.18.5.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.18.5.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
 # Install Gaia binary
@@ -54,7 +54,7 @@ chmod +x $HOME/go/bin/$CHAIN_BINARY
 # rm -rf gaia
 # git clone https://github.com/cosmos/gaia.git
 # cd gaia
-# git checkout v9.0.0-rc0
+# git checkout v9.0.0-rc2
 # make install
 
 export PATH=$PATH:$HOME/go/bin

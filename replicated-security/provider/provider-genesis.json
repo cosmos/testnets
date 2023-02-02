@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2023-01-23T15:30:48.965545433Z",
-  "chain_id": "provider-1",
+  "genesis_time": "2023-02-02T20:31:48.773794586Z",
+  "chain_id": "provider",
   "initial_height": "1",
   "consensus_params": {
     "block": {
@@ -198,7 +198,7 @@
                 }
               }
             ],
-            "memo": "b7d0bd260fca7a5a19c7631b15f6068891faa60e@137.184.164.234:26656",
+            "memo": "b7d0bd260fca7a5a19c7631b15f6068891faa60e@143.198.45.216:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -226,7 +226,7 @@
             }
           },
           "signatures": [
-            "NNPNHS4OkMmu+MvXaNszbF4GykOJeWZJdBAM8gVyx9cdlwcMfLg0v4ycWNg6t9j8PUrKrMjIb2qk/sDw//vtVQ=="
+            "LuHSyjeuCLF8VLvu4yyEkzfh49Is/MXrhxEtliMTzuRLi7ZIa7jGp+skWLYMS1HcwVGx8amtKyif7EQf7EcIKQ=="
           ]
         }
       ]
@@ -251,7 +251,7 @@
         "max_deposit_period": "172800s"
       },
       "voting_params": {
-        "voting_period": "60s"
+        "voting_period": "300s"
       },
       "tally_params": {
         "quorum": "0.334000000000000000",
@@ -440,9 +440,9 @@
           "allow_update_after_misbehaviour": true
         },
         "trusting_period_fraction": "0.66",
-        "ccv_timeout_period": "259200s",
-        "init_timeout_period": "86400s",
-        "vsc_timeout_period": "172800s",
+        "ccv_timeout_period": "2419200s",
+        "init_timeout_period": "604800s",
+        "vsc_timeout_period": "3024000s",
         "slash_meter_replenish_period": "3600s",
         "slash_meter_replenish_fraction": "0.05",
         "max_throttled_packets": "100000"
@@ -464,7 +464,7 @@
     },
     "staking": {
       "params": {
-        "unbonding_time": "172800s",
+        "unbonding_time": "1814400s",
         "max_validators": 175,
         "max_entries": 7,
         "historical_entries": 10000,
