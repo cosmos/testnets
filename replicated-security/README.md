@@ -24,6 +24,6 @@ This testnet includes the following:
 
 ## Upcoming Events
 
-* `slasher` chain launch
+* [`slasher`](/replicated-security/slasher/README.md) chain launch
 
 See the [RS testnet schedule](SCHEDULE.md) for consumer chain launches and other planned events.

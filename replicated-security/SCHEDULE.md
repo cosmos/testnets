@@ -3,7 +3,7 @@
 | Date            | Type   | Description                                                                           |
 |-----------------|--------|---------------------------------------------------------------------------------------|
 | February 3 2023 | Test   | Consumer chain `slasher` is created and relayer started                               |
-| February 2 2023 | Launch | `provider-1` chain is re-started as `provider` with Gaia `v9.0.0-rc2`                 |
+| February 2 2023 | Launch | ✅ `provider-1` chain is re-started as `provider` with Gaia `v9.0.0-rc2`                 |
 | January 27 2023 | Test   | ✅ Consumer chains `timeout-1`, `timeout-2`, `timeout-3`, and `consumer-1` are stopped |
 | January 27 2023 | Test   | ✅ Consumer chain `consumer-1` IBC client expires                                      |
 | January 26 2023 | Launch | ✅ Consumer chain `consumer-1` is created                                              |
