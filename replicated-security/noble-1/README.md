@@ -9,7 +9,7 @@ The `noble-1` chain will be launched as a persistent dummy chain to test basic I
 * **denom**: `unoble`
 * **Spawn time**: `2023-02-08T16:00:00.000000Z`
 * **GitHub repo**: [cosmos/interchain-security](https://github.com/strangelove-ventures/noble)
-* **Release**: [`v0.1.1`](https://github.com/strangelove-ventures/noble/releases/tag/v0.1.1)
+* **Release**: [`v0.1.1`](https://github.com/strangelove-ventures/noble/releases/tag/v0.1.1) 
 * **Genesis file with CCV state:** [TBD after spawntime](noble-1-genesis.json)
 
 * **Reference binary**: [nobled-linux-amd64](nobled-linux-amd64)
@@ -24,7 +24,7 @@ The following items are included in the noble addition [proposal](https://explor
   * The `noble-1-genesis-without-ccv.json` file cannot be used to run the chain: it must be updated with the CCV (Cross Chain Validation) state after the spawn time is reached.
   * The genesis file includes funds for a relayer and a faucet account, and `signed_blocks_window` has been set to `10000`.
 * Binary hash
-  * The `nobled-linux-amd64` binary is only provided to verify the SHA256. It was built with Interchain Security release [`v1.0.0-rc3`](https://github.com/cosmos/interchain-security/releases/tag/v1.0.0-rc3). You can generate the binary following the build instructions in that repo or using one of the scripts provided here.
+  * The `nobled-linux-amd64` binary is only provided to verify the SHA256. It was built with Interchain Security release [`v1.0.0-rc1`](https://github.com/cosmos/interchain-security/releases/tag/v1.0.0-rc1). You can generate the binary following the build instructions in that repo or using one of the scripts provided here.
 * Spawn time
   * Even if a proposal passes, the CCV state will not be available from the provider chain until after the spawn time is reached.
 
