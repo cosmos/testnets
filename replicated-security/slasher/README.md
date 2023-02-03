@@ -1,7 +1,7 @@
 
 # `slasher` Chain Details
 
-> Status: **WAITING FOR SPAWN TIME**
+> Status: **SPAWN TIME REACHED**
 
 The `slasher` chain will be launched to test the slash rate limiter feature of the provider chain. As soon as it receives the first packet, the `slasher` chain will attempt to jail all validators.
 
@@ -10,7 +10,7 @@ The `slasher` chain will be launched to test the slash rate limiter feature of t
 * **Spawn time**: `2023-02-03T15:00:00.000000Z`
 * **GitHub repo**: [cosmos/interchain-security](https://github.com/cosmos/interchain-security)
 * **Commit**: [`e6bd5b72650e107ff0ce613af5d2e17310f7e984`](https://github.com/cosmos/interchain-security/commit/e6bd5b72650e107ff0ce613af5d2e17310f7e984)
-* **Genesis file with CCV state:** **Pending spawn time**
+* **Genesis file with CCV state:** [slasher-genesis.json](slasher-genesis.json)
 
 * **Reference binary**: `slasher-linux-amd64`
 * **Binary sha256sum**: `c6660834e0786c3032369de6d7798bb411993c741d0c7c2709fc4cbc9cfa1864`
@@ -44,15 +44,6 @@ Connections and channels will be posted here shortly after the chain launches.
 
 ## How to Join
 
-### Before the Spawn Time is Reached
-
-The CCV state will not be available until the spawn time is reached. If you want to set up your node(s) before then, you can do the following:
-
-1. Run one of the provided bash scripts.
-2. Wait until the genesis file that includes the CCV state is published to this repo, shortly after the spawn time is reached. Alternatively, you can update the genesis file yourself following the commands listed in [this guide](https://github.com/hyphacoop/ics-testnets/blob/main/docs/Consumer-Chain-Start-Process.md).
-3. Replace the genesis.json file in your `slasher` node with the one that includes the CCV state.
-4. Enable and start the service created by the script.
-
 #### Bash Scripts
 
 The scripts provided in this repo will install a malicious branch of `interchain-security-cd` and optionally set up a Cosmovisor service on your machine. 
@@ -62,8 +53,3 @@ Run either one of the scripts provided to set up a `slasher` service:
 * `join-rs-slasher-cv.sh` will create a `cosmovisor` service.
 * Both scripts must be run either as root or from a sudoer account.
 * Both scripts will attempt to build a binary from the [cosmos/interchain-security] repo.
-
-### After the Spawn Time is Reached
-
-* The genesis file that includes the CCV state will be published here.
-* The bash scripts will be updated.
