@@ -18,7 +18,7 @@ CHAIN_ID=slasher
 PERSISTENT_PEERS="b7d0bd260fca7a5a19c7631b15f6068891faa60e@slasher-apple.rs-testnet.polypore.xyz:26656,49d75c6094c006b6f2758e45457c1f3d6002ce7a@slasher-banana.rs-testnet.polypore.xyz:26656,f2520026fb9086f1b2f09e132d209cbe88064ec1@slasher-cherry.rs-testnet.polypore.xyz:26656"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
-# GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/slasher/slasher-genesis.json
+GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/slasher/slasher-genesis.json
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
@@ -58,9 +58,9 @@ cp $PRIV_VALIDATOR_KEY_FILE $NODE_HOME/config/priv_validator_key.json
 cp $NODE_KEY_FILE $NODE_HOME/config/node_key.json
 
 # Replace genesis file: only after the spawn time is reached
-# echo "Replacing genesis file..."
-# wget $GENESIS_URL -O genesis.json
-# mv genesis.json $NODE_HOME/config/genesis.json
+echo "Replacing genesis file..."
+wget $GENESIS_URL -O genesis.json
+mv genesis.json $NODE_HOME/config/genesis.json
 
 echo "Creating $SERVICE_NAME.service..."
 sudo rm /etc/systemd/system/$SERVICE_NAME.service
