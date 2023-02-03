@@ -14,6 +14,7 @@ This testnet includes the following:
 ### Live Chains
 
 * Provider: [`provider`](/replicated-security/provider/README.md)
+* Consumer: [`slasher`](/replicated-security/slasher/README.md)
 
 ### Stopped Chains
 
@@ -23,7 +24,5 @@ This testnet includes the following:
 * Consumer: [`consumer-1`](/replicated-security/consumer-1/README.md)
 
 ## Upcoming Events
-
-* [`slasher`](/replicated-security/slasher/README.md) chain launch
 
 See the [RS testnet schedule](SCHEDULE.md) for consumer chain launches and other planned events.

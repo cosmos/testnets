@@ -1,7 +1,7 @@
 
 # `slasher` Chain Details
 
-> Status: **SPAWN TIME REACHED**
+> Status: **STARTED**
 
 The `slasher` chain will be launched to test the slash rate limiter feature of the provider chain. As soon as it receives the first packet, the `slasher` chain will attempt to jail all validators.
 
