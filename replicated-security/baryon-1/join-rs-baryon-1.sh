@@ -54,6 +54,8 @@ $CHAIN_BINARY config keyring-backend test --home $NODE_HOME
 $CHAIN_BINARY config broadcast-mode block --home $NODE_HOME
 $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
 sed -i -e "/seeds =/ s^= .*^= \"$SEEDS\"^" $NODE_HOME/config/config.toml
+sed -i -e "/timeout_commit =/ s^= .*^= \"2s\"^" $NODE_HOME/config/config.toml
+sed -i -e "/minimum-gas-prices =/ s^= .*^= \"0untrn\"^" $NODE_HOME/config/app.toml
 
 # Replace keys
 echo "Replacing keys..."

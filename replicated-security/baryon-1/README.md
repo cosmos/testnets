@@ -5,6 +5,8 @@ The `baryon-1` chain will be launched as a Neutron persistent chain to test Inte
 
 * **Chain-ID**: `baryon-1`
 * **denom**: `untrn`
+* **minimum-gas-prices**: `0untrn`
+* **timeout_commit**: `2s`
 * **Spawn time**: `2023-02-07T15:00:00.000000Z`
 * **GitHub repo**: [neutron-org/neutron](https://github.com/neutron-org/neutron.git)
 * **Release**: [`v0.2.0`](https://github.com/neutron-org/neutron/releases/tag/v0.2.0)
