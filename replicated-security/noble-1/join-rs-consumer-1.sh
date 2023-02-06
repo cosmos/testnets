@@ -11,15 +11,11 @@ NODE_KEY_FILE=~/node_key.json
 NODE_HOME=~/.nobled
 NODE_MONIKER=noble-1
 SERVICE_NAME=noble-1
-STATE_SYNC=false
 # ***
 
-CHAIN_BINARY='interchain-security-cd'
+CHAIN_BINARY='nobled'
 CHAIN_ID=noble-1
-SEEDS="TBD"
-SYNC_RPC_1=http://noble1-state-sync-01.noble.ics-testnet.strange.love:26657
-SYNC_RPC_2=http://noble1-state-sync-02.noble.ics-testnet.strange.love:26657
-SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_2"
+SEEDS="233598946a15427b9541376e7cfc30dab07c4327@35.247.60.27:26656,359d63178736911e3e4c716f2491cafaa687351a@34.168.48.1:26656,3d2516052fd8b134428971d1218a149bba6e44be@35.247.10.56:26656"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
 GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/noble-1/noble-1-genesis.json
@@ -34,16 +30,16 @@ wget https://go.dev/dl/go1.19.4.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.19.4.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
-# Install interchain-security-cd binary
+# Install nobled binary
 echo "Installing build-essential..."
 sudo apt install build-essential -y
-echo "Installing interchain-security-cd..."
+echo "Installing nobled..."
 cd $HOME
 mkdir -p $HOME/go/bin
-rm -rf interchain-security
-git clone https://github.com/cosmos/interchain-security.git
-cd interchain-security
-git checkout v1.0.0-rc3
+rm -rf noble
+git clone https://github.com/strangelove-ventures/noble.git
+cd noble
+git checkout v0.1.1
 make install
 export PATH=$PATH:$HOME/go/bin
 
@@ -65,20 +61,6 @@ cp $NODE_KEY_FILE $NODE_HOME/config/node_key.json
 echo "Replacing genesis file..."
 wget $GENESIS_URL -O genesis.json
 mv genesis.json $NODE_HOME/config/genesis.json
-
-if $STATE_SYNC ; then
-    echo "Configuring state sync..."
-    CURRENT_BLOCK=$(curl -s $SYNC_RPC_1/block | jq -r '.result.block.header.height')
-    TRUST_HEIGHT=$[$CURRENT_BLOCK-1000]
-    TRUST_BLOCK=$(curl -s $SYNC_RPC_1/block\?height\=$TRUST_HEIGHT)
-    TRUST_HASH=$(echo $TRUST_BLOCK | jq -r '.result.block_id.hash')
-    sed -i -e '/enable =/ s/= .*/= true/' $NODE_HOME/config/config.toml
-    sed -i -e "/trust_height =/ s/= .*/= $TRUST_HEIGHT/" $NODE_HOME/config/config.toml
-    sed -i -e "/trust_hash =/ s/= .*/= \"$TRUST_HASH\"/" $NODE_HOME/config/config.toml
-    sed -i -e "/rpc_servers =/ s^= .*^= \"$SYNC_RPC_SERVERS\"^" $NODE_HOME/config/config.toml
-else
-    echo "Skipping state sync..."
-fi
 
 echo "Creating $SERVICE_NAME.service..."
 sudo rm /etc/systemd/system/$SERVICE_NAME.service
@@ -107,7 +89,7 @@ sudo systemctl start $SERVICE_NAME.service
 sudo systemctl restart systemd-journald
 
 # Add go and gaiad to the path
-echo "Setting up paths for go and interchain-security-cd bin..."
+echo "Setting up paths for go and nobled bin..."
 echo "export PATH=$PATH:/usr/local/go/bin" >> .profile
 
 echo "***********************"
