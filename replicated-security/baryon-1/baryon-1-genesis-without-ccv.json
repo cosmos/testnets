@@ -89,7 +89,7 @@
           "coins": [
             {
               "denom": "untrn",
-              "amount": "1000000000000"
+              "amount": "10000000000000"
             }
           ]
         }
@@ -97,7 +97,7 @@
       "supply": [
         {
           "denom": "untrn",
-          "amount": "1020000000000"
+          "amount": "10200000000000"
         }
       ],
       "denom_metadata": []
