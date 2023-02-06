@@ -15,13 +15,13 @@ The `baryon-1` chain will be launched as a Neutron persistent chain to test Inte
 * **Reference binary**: [neutrond-linux-amd64](./neutrond-linux-amd64)
 * **Binary sha256sum**: `16a5fe8860b8c15eb11057b622e8749704c18d0e1dedae2e100ab397e732a708`
 * **Genesis file _without CCV state_:** [baryon-1-genesis-without-ccv.json](baryon-1-genesis-without-ccv.json), verify with `shasum -a 256 baryon-1-genesis-without-ccv.json`
-* **SHA256 for genesis file _without CCV state_**: `237b0cb1d2a4e160fe6b5e22664c75f8cc119ad7486e2bdb0d8dd523e0b075cb`
+* **SHA256 for genesis file _without CCV state_**: `ca0b10dcf187a8fbf936a7df212106136e96b1918f60be3bc658e0e77135fb9a`
 
 
 * Genesis file hash
   * The SHA256 is used to verify against the genesis file (without CCV state) that the proposer has made available for review.
   * The `baryon-1-genesis-without-ccv.json` file cannot be used to run the chain: it must be updated with the CCV (Cross Chain Validation) state after the spawn time is reached.
-  * The genesis file includes funds for a relayer and a faucet account as well as account with funds for different internal needs, `signed_blocks_window` has been set to `10000`, and `min_signed_per_window` has been set to `5%`.
+  * The genesis file includes funds for a relayer and a faucet account as well as account with funds for different internal needs, `signed_blocks_window` has been set to `864000`, and `min_signed_per_window` has been set to `5%`.
 * Binary hash
   * The `neutrond-linux-amd64` binary is only provided to verify the SHA256. It was built with Interchain Security release [`v0.2.0`](https://github.com/neutron-org/neutron/releases/tag/v0.2.0). You can generate the binary following the build instructions in that repo or using one of the scripts provided here.
 * Spawn time
@@ -39,7 +39,7 @@ Endpoints are exposed as subdomains for the sentry and snapshot nodes (described
 
 Seed nodes:
 
-1. `08ec17e86dac67b9da70deb20177655495a55407@consumer1-seed-01.rs-testnet.polypore.xyz:26656`
+1. `e2c07e8e6e808fb36cca0fc580e31216772841df@rpc.baryon.ntrn.info:443`
 
 The following state sync node serve snapshots every 1000 blocks:
 

@@ -1,19 +1,19 @@
 {
     "title": "Neutron baryonr-1 Chain",
-    "description": "# Launching the baryonr-1 Chain\r\n\r\nThis is the proposal to create the first persistent consumer chain, \"baryon-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/cosmos/testnets/tree/master/replicated-security) repo for additional details.",
-    "chain_id": "consumer-1",
+    "description": "# Launching the baryon-1 Chain\r\n\r\nThis is the proposal to create the first persistent consumer chain, \"baryon-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/cosmos/testnets/tree/master/replicated-security) repo for additional details.",
+    "chain_id": "baryon-1",
     "initial_height": {
         "revision_height": 1,
         "revision_number": 1
     },
-    "genesis_hash": "d86d756e10118e66e6805e9cc476949da2e750098fcc7634fd0cc77f57a0b2b0",
-    "binary_hash": "376cdbd3a222a3d5c730c9637454cd4dd925e2f9e2e0d0f3702fc922928583f1",
-    "spawn_time": "2023-01-26T15:00:00.000000Z",
+    "genesis_hash": "ca0b10dcf187a8fbf936a7df212106136e96b1918f60be3bc658e0e77135fb9a",
+    "binary_hash": "16a5fe8860b8c15eb11057b622e8749704c18d0e1dedae2e100ab397e732a708",
+    "spawn_time": "2023-02-07T15:00:00.000000Z",
     "blocks_per_distribution_transmission": 1000,
     "consumer_redistribution_fraction": "0.75",
     "historical_entries": 10000,
     "transfer_timeout_period": 1800000000000,
-    "ccv_timeout_period": 259200000000000,
-    "unbonding_period": 86400000000000,
+    "ccv_timeout_period": 2419200000000000,
+    "unbonding_period": 1728000000000000,
     "deposit": "10000000uatom"
 }
