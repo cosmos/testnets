@@ -25,4 +25,6 @@ This testnet includes the following:
 
 ## Upcoming Events
 
+* 2023-02-07: [`baryon-1`](/replicated-security/baryon-1/README.md) consumer chain launch
+
 See the [RS testnet schedule](SCHEDULE.md) for consumer chain launches and other planned events.
