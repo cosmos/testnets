@@ -1,7 +1,7 @@
 {
-    "title": "Neutron baryonr-1 Chain",
-    "description": "# Launching the baryonr-1 Chain\r\n\r\nThis is the proposal to create the first persistent consumer chain, \"baryon-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/cosmos/testnets/tree/master/replicated-security) repo for additional details.",
-    "chain_id": "consumer-1",
+    "title": "Neutron baryon-1 Chain",
+    "description": "# Launching the baryon-1 Chain\r\n\r\nThis is the proposal to create the first persistent consumer chain, \"baryon-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/cosmos/testnets/tree/master/replicated-security) repo for additional details.",
+    "chain_id": "baryon-1",
     "initial_height": {
         "revision_height": 1,
         "revision_number": 1
