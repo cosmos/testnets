@@ -7,7 +7,7 @@ The `noble-1` chain will be launched as a persistent dummy chain to test basic I
 
 * **Chain-ID**: `noble-1`
 * **denom**: `unoble`
-* **Spawn time**: `2023-02-08T16:00:00.000000Z`
+* **Spawn time**: `2023-02-09T16:00:00.000000Z`
 * **GitHub repo**: [cosmos/interchain-security](https://github.com/strangelove-ventures/noble)
 * **Release**: [`v0.1.1`](https://github.com/strangelove-ventures/noble/releases/tag/v0.1.1) 
 * **Genesis file with CCV state:** [TBD after spawntime](noble-1-genesis.json)

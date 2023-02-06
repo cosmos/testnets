@@ -14,9 +14,7 @@
       "max_bytes": "1048576"
     },
     "validator": {
-      "pub_key_types": [
-        "ed25519"
-      ]
+      "pub_key_types": ["ed25519"]
     },
     "version": {}
   },
@@ -30,50 +28,7 @@
         "sig_verify_cost_ed25519": "590",
         "sig_verify_cost_secp256k1": "1000"
       },
-      "accounts": [
-        {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "account_number": "0",
-          "address": "noble1lwklzs6ejglapp6eccxtfmajwykt8nrdh8fjp8",
-          "pub_key": null,
-          "sequence": "0"
-        },
-        {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "account_number": "0",
-          "address": "noble1hrmxjjw7egcccvgrwq6seh2x3wh5curew9d268",
-          "pub_key": null,
-          "sequence": "0"
-        },
-        {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "account_number": "0",
-          "address": "noble13fzugw54k8h3qne8v7v5ex995rejzv8h8v9fu4",
-          "pub_key": null,
-          "sequence": "0"
-        },
-        {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "account_number": "0",
-          "address": "noble17krs6fx6vtzpampnemmdmuw5y8m2thmtsyxk90",
-          "pub_key": null,
-          "sequence": "0"
-        },
-        {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "account_number": "0",
-          "address": "noble17ln5m096wnj9dtvj3wyj0xl98yz53ptkaj7u66",
-          "pub_key": null,
-          "sequence": "0"
-        },
-        {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "account_number": "0",
-          "address": "noble1cymmn6xh0nns7uwlwwl2jtemn3haa7w5hkr64x",
-          "pub_key": null,
-          "sequence": "0"
-        }
-      ]
+      "accounts": []
     },
     "authz": {
       "authorization": []
@@ -90,16 +45,12 @@
           "base": "uusdc",
           "denom_units": [
             {
-              "aliases": [
-                "microusdc"
-              ],
+              "aliases": ["microusdc"],
               "denom": "uusdc",
               "exponent": 0
             },
             {
-              "aliases": [
-                "milliusdc"
-              ],
+              "aliases": ["milliusdc"],
               "denom": "musdc",
               "exponent": 3
             },
@@ -139,10 +90,7 @@
         "clients_consensus": [],
         "clients_metadata": [],
         "params": {
-          "allowed_clients": [
-            "06-solomachine",
-            "07-tendermint"
-          ]
+          "allowed_clients": ["06-solomachine", "07-tendermint"]
         },
         "create_localhost": false,
         "next_client_sequence": "0"
