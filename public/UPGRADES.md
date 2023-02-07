@@ -1,5 +1,27 @@
 # Scheduled Upgrades 🗓️ 
 
+## v9-Lambda
+
+### Schedule
+
+| Date | Testnet plan                             |
+|------|------------------------------------------|
+| February 08 2023 | ✅ v9-Lambda upgrade ([Gaia v9.0.0-rc3](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc3)) is live on the testnet       |
+| February 07 2023 | ✅ Submit and pass v9-Lambda software upgrade [proposal](https://explorer.theta-testnet.polypore.xyz/proposals/115) |
+
+* **Version before upgrade**: `v8.0.0`
+* **Version after upgrade**: `v9.0.0-rc3`
+
+### Upgrade height and binaries
+
+* Upgrade height: `14475940` 
+* Upgrade time: `2023-01-20 15:00:00 UTC`
+* Unsigned proposal:
+
+```json=
+{"body":{"messages":[{"@type":"/cosmos.gov.v1beta1.MsgSubmitProposal","content":{"@type":"/cosmos.upgrade.v1beta1.SoftwareUpgradeProposal","title":"v9-Lambda","description":"placeholder","plan":{"name":"v9-Lambda","time":"0001-01-01T00:00:00Z","height":"10085397","info":"{\"binaries\":{\"linux/amd64\":\"https://github.com/cosmos/gaia/releases/download/v9.0.0-rc3/gaiad-v9.0.0-rc3-linux-amd64?checksum=sha256:b54e122e6d4cb996c9f2b736436bde569d22535e8006b132e0575968667be5ca\",\"linux/arm64\":\"https://github.com/cosmos/gaia/releases/download/v9.0.0-rc3/gaiad-v9.0.0-rc3-linux-arm64?checksum=sha256:1c91c96740dbce946786878ce7ac90f5b51b5dd72bb7ea0d20ba789664af8b9d\",\"darwin/amd64\":\"https://github.com/cosmos/gaia/releases/download/v9.0.0-rc3/gaiad-v9.0.0-rc3-darwin-amd64?checksum=sha256:9713b917ac7d2c428ae6e2c57d45fb0b7074e9aa3d57a98915f32887bc8817fa\",\"windows/amd64\":\"https://github.com/cosmos/gaia/releases/download/v9.0.0-rc3/gaiad-v9.0.0-rc3-windows-amd64.exe?checksum=sha256:2e4b352793091e3855e27e7c1e4a80c1d6f22b4bb45ee5f6630a0456008d2ace\"}}","upgraded_client_state":null}},"initial_deposit":[{"denom":"uatom","amount":"50000"}],"proposer":"cosmos10v6wvdenee8r9l6wlsphcgur2ltl8ztkvhc8fw"}],"memo":"","timeout_height":"0","extension_options":[],"non_critical_extension_options":[]},"auth_info":{"signer_infos":[],"fee":{"amount":[],"gas_limit":"200000","payer":"","granter":""}},"signatures":[]}
+```
+
 ## v8-Rho
 
 ### Schedule
