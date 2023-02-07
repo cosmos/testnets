@@ -110,7 +110,7 @@ Run either one of the scripts provided in this repo to join the provider chain:
 
 If you want to use Cosmovisor's **auto-download** feature, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=true`
 
-If you are **manually preparing your binary**, please set the environement variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` and download a copy of the v8.0.0 binary to the v8-Rho upgrade directory in your cosmovisor directory (`upgrades/v8-rho/bin/gaiad`). **If you are using Cosmovisor `v1.0.0`, the version name is not lowercased (use `upgrades/v8-Rho/bin/gaiad` instead)**.
+If you are **manually preparing your binary**, please set the environement variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` and download a copy of the v9.0.0-rc3 binary to the v9-Lambda upgrade directory in your cosmovisor directory (`upgrades/v9-lambda/bin/gaiad`). **If you are using Cosmovisor `v1.0.0`, the version name is not lowercased (use `upgrades/v9-Lambda/bin/gaiad` instead)**.
 
 ```
 .
@@ -119,7 +119,7 @@ If you are **manually preparing your binary**, please set the environement varia
 │   └── bin
 │       └── gaiad
 └── upgrades
-    └── v8-rho
+    └── v9-lambda
         ├── bin
         │   └── gaiad
         └── upgrade-info.json
