@@ -15,7 +15,7 @@ The `baryon-1` chain will be launched as a Neutron persistent chain to test Inte
 * **Reference binary**: [neutrond-linux-amd64](./neutrond-linux-amd64)
 * **Binary sha256sum**: `16a5fe8860b8c15eb11057b622e8749704c18d0e1dedae2e100ab397e732a708`
 * **Genesis file _without CCV state_:** [baryon-1-genesis-without-ccv.json](baryon-1-genesis-without-ccv.json), verify with `shasum -a 256 baryon-1-genesis-without-ccv.json`
-* **SHA256 for genesis file _without CCV state_**: `ca0b10dcf187a8fbf936a7df212106136e96b1918f60be3bc658e0e77135fb9a`
+* **SHA256 for genesis file _without CCV state_**: `3a3bf846787b5c1f624a3ab1aca155375852d10d4108e9617aeba52744fa1980`
 
 
 * Genesis file hash
