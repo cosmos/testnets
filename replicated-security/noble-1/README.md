@@ -15,7 +15,7 @@ The `noble-1` chain will be launched as a persistent dummy chain to test basic I
 * **Reference binary**: [nobled-linux-amd64](nobled-linux-amd64)
 * **Binary sha256sum**: `3348e12f79e4119324fc139121cd2b09ec292cf3e2b2c49c8763830d9ac060bc`
 * **Genesis file _without CCV state_:** (noble-1-genesis-without-ccv.json), verify with `shasum -a 256 noble-1-genesis-without-ccv.json`
-* **SHA256 for genesis file _without CCV state_**: `421e9c997d5b9daf1af8a2043146e0d3b92c5bde67578b7376f0a3eb5c7f126b`
+* **SHA256 for genesis file _without CCV state_**: `74f1aa802e267ad0d98b65ed3d34cd271c074e9ff5cbc34ecd5ccfd9f69f2818`
 
 The following items are included in the noble addition [proposal](https://explorer.noble.ics-testnet.strange.love/provider-1/gov/15):
 
