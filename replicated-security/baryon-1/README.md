@@ -39,11 +39,11 @@ Endpoints are exposed as subdomains for the sentry and snapshot nodes (described
 
 Seed nodes:
 
-1. `e2c07e8e6e808fb36cca0fc580e31216772841df@rpc.baryon.ntrn.info:443`
+1. `e2c07e8e6e808fb36cca0fc580e31216772841df@p2p.baryon.ntrn.info:26656`
 
 The following state sync node serve snapshots every 1000 blocks:
 
-1. ``https://rpc.baryon.ntrn.info:443`
+1. `https://rpc.baryon.ntrn.info:443`
 
 ## IBC Information
 
