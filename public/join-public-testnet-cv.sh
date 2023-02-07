@@ -7,7 +7,7 @@
 NODE_HOME=~/.gaia
 NODE_MONIKER=public-testnet
 SERVICE_NAME=cosmovisor
-CHAIN_BINARY_URL='https://github.com/cosmos/gaia/releases/download/v8.0.0/gaiad-8.0.0-linux-amd64'
+CHAIN_BINARY_URL='https://github.com/cosmos/gaia/releases/download/v8.0.0/gaiad-v8.0.0-linux-amd64'
 STATE_SYNC=true
 # ***
 

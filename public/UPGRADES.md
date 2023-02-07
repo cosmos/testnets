@@ -15,7 +15,7 @@
 ### Upgrade height and binaries
 
 * Upgrade height: `14476206` 
-* Upgrade time: `2023-01-20 15:15:00 UTC`
+* Upgrade time: `2023-02-08 15:15:00 UTC`
 * Unsigned proposal:
 
 ```json=
