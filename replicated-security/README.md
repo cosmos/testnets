@@ -14,7 +14,6 @@ This testnet includes the following:
 ### Live Chains
 
 * Provider: [`provider`](/replicated-security/provider/README.md)
-* Consumer: [`slasher`](/replicated-security/slasher/README.md)
 
 ### Stopped Chains
 
@@ -22,6 +21,7 @@ This testnet includes the following:
 * Consumer: [`timeout-2`](/replicated-security/timeout-2/README.md)
 * Consumer: [`timeout-3`](/replicated-security/timeout-3/README.md)
 * Consumer: [`consumer-1`](/replicated-security/consumer-1/README.md)
+* Consumer: [`slasher`](/replicated-security/slasher/README.md)
 
 ## Upcoming Events
 
