@@ -7,7 +7,7 @@
 NODE_HOME=~/.gaia
 NODE_MONIKER=public-testnet
 SERVICE_NAME=cosmovisor
-CHAIN_BINARY_URL='https://github.com/cosmos/gaia/releases/download/v9.0.0-rc3/gaiad-v9.0.0-rc3-linux-amd64'
+CHAIN_BINARY_URL='https://github.com/cosmos/gaia/releases/download/v8.0.0/gaiad-8.0.0-linux-amd64'
 STATE_SYNC=true
 # ***
 
@@ -42,7 +42,7 @@ chmod +x $HOME/go/bin/$CHAIN_BINARY
 # rm -rf gaia
 # git clone https://github.com/cosmos/gaia.git
 # cd gaia
-# git checkout v9.0.0-rc3
+# git checkout v8.0.0
 # make install
 
 export PATH=$PATH:$HOME/go/bin
