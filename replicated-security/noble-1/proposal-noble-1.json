@@ -10,7 +10,7 @@
     "binary_hash": "ed9e62a09b0dbac58e722ccc28b64c9925dfde6efe0c77552ae45b2092cd2dfa",
     "spawn_time": "2023-02-09T16:00:00.000000Z",
     "blocks_per_distribution_transmission": 1000,
-    "noble_redistribution_fraction": "0.75",
+    "consumer_redistribution_fraction": "0.75",
     "historical_entries": 10000,
     "transfer_timeout_period": 1800000000000,
     "ccv_timeout_period": 2419200000000000,
