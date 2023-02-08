@@ -32,8 +32,8 @@ Binary checksums can differ based on many things to include go, libc, and make v
 
   * [Linux amd64 build](nobled-linux-amd64)
   * Version: `v0.2.0`
-  * SHA256: `452c80a1982fba815450db1de2b02471db3756e59a1ce57a0f30a7ecf3f26364`
-  * The `nobled-linux-amd64` binary is only provided to verify the SHA256. It was built with Interchain Security release [`v1.0.0-rc1`](https://github.com/cosmos/noble-1/releases/tag/v1.0.0-rc1). You can generate the binary following the build instructions in this repo.
+  * SHA256: `ed9e62a09b0dbac58e722ccc28b64c9925dfde6efe0c77552ae45b2092cd2dfa`
+  * The `nobled-linux-amd64` binary is only provided to verify the SHA256. It was built with Interchain Security release [`v1.0.0-rc1`](https://github.com/strangelove-ventures/noble/blob/9cb79bde70dd1144e2d760930af27a6127ecc2ef/go.mod#L9). You can generate the binary following the build instructions in this repo.
 
   Example of using a volume mount to get the binary outside of the container onto your ubuntu server.
   ```
@@ -50,14 +50,14 @@ Binary checksums can differ based on many things to include go, libc, and make v
   make install
   sha256sum ~/go/bin/nobled
   ```
-  expected return `452c80a1982fba815450db1de2b02471db3756e59a1ce57a0f30a7ecf3f26364`  
+  expected return `ed9e62a09b0dbac58e722ccc28b64c9925dfde6efe0c77552ae45b2092cd2dfa`  
   
   Now, verify the checksum on your local ubuntu server  
   ```
   #run on your ubuntu server
   sha256sum /home/ubuntu/go/bin/nobled
   ```
-  expected return `452c80a1982fba815450db1de2b02471db3756e59a1ce57a0f30a7ecf3f26364` 
+  expected return `ed9e62a09b0dbac58e722ccc28b64c9925dfde6efe0c77552ae45b2092cd2dfa` 
 
 ## Endpoints
 
