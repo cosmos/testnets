@@ -1,0 +1,233 @@
+{
+    "genesis_time": "2023-02-09T15:00:00.000000000Z",
+    "chain_id": "noble-1",
+    "initial_height": "1",
+    "consensus_params": {
+      "block": {
+        "max_bytes": "22020096",
+        "max_gas": "-1",
+        "time_iota_ms": "1000"
+      },
+      "evidence": {
+        "max_age_num_blocks": "100000",
+        "max_age_duration": "172800000000000",
+        "max_bytes": "1048576"
+      },
+      "validator": {
+        "pub_key_types": ["ed25519"]
+      },
+      "version": {}
+    },
+    "app_hash": "",
+    "app_state": {
+      "auth": {
+        "params": {
+          "max_memo_characters": "256",
+          "tx_sig_limit": "7",
+          "tx_size_cost_per_byte": "10",
+          "sig_verify_cost_ed25519": "590",
+          "sig_verify_cost_secp256k1": "1000"
+        },
+        "accounts": [
+            {
+                "@type": "/cosmos.auth.v1beta1.BaseAccount",
+                "account_number": "0",
+                "address": "noble1lwklzs6ejglapp6eccxtfmajwykt8nrdh8fjp8",
+                "pub_key": null,
+                "sequence": "0"
+            },
+            {
+                "@type": "/cosmos.auth.v1beta1.BaseAccount",
+                "account_number": "0",
+                "address": "noble1hrmxjjw7egcccvgrwq6seh2x3wh5curew9d268",
+                "pub_key": null,
+                "sequence": "0"
+            },
+            {
+                "@type": "/cosmos.auth.v1beta1.BaseAccount",
+                "account_number": "0",
+                "address": "noble17krs6fx6vtzpampnemmdmuw5y8m2thmtsyxk90",
+                "pub_key": null,
+                "sequence": "0"
+            },
+            {
+                "@type": "/cosmos.auth.v1beta1.BaseAccount",
+                "account_number": "0",
+                "address": "noble17ln5m096wnj9dtvj3wyj0xl98yz53ptkaj7u66",
+                "pub_key": null,
+                "sequence": "0"
+            },
+            {
+                "@type": "/cosmos.auth.v1beta1.BaseAccount",
+                "account_number": "0",
+                "address": "noble13fzugw54k8h3qne8v7v5ex995rejzv8h8v9fu4",
+                "pub_key": null,
+                "sequence": "0"
+            }
+        ]
+      },
+      "authz": {
+        "authorization": []
+      },
+      "bank": {
+        "params": {
+          "send_enabled": [],
+          "default_send_enabled": true
+        },
+        "balances": [],
+        "supply": [],
+        "denom_metadata": [
+          {
+            "base": "uusdc",
+            "denom_units": [
+              {
+                "aliases": ["microusdc"],
+                "denom": "uusdc",
+                "exponent": 0
+              },
+              {
+                "aliases": ["milliusdc"],
+                "denom": "musdc",
+                "exponent": 3
+              },
+              {
+                "aliases": [],
+                "denom": "usdc",
+                "exponent": 6
+              }
+            ],
+            "description": "",
+            "display": "usdc",
+            "name": "USDC",
+            "symbol": "USDC"
+          }
+        ]
+      },
+      "capability": {
+        "index": "1",
+        "owners": []
+      },
+      "ccvconsumer": {},
+      "crisis": {
+        "constant_fee": {
+          "denom": "stake",
+          "amount": "1000"
+        }
+      },
+      "evidence": {
+        "evidence": []
+      },
+      "feegrant": {
+        "allowances": []
+      },
+      "ibc": {
+        "client_genesis": {
+          "clients": [],
+          "clients_consensus": [],
+          "clients_metadata": [],
+          "params": {
+            "allowed_clients": ["06-solomachine", "07-tendermint"]
+          },
+          "create_localhost": false,
+          "next_client_sequence": "0"
+        },
+        "connection_genesis": {
+          "connections": [],
+          "client_connection_paths": [],
+          "next_connection_sequence": "0",
+          "params": {
+            "max_expected_time_per_block": "30000000000"
+          }
+        },
+        "channel_genesis": {
+          "channels": [],
+          "acknowledgements": [],
+          "commitments": [],
+          "receipts": [],
+          "send_sequences": [],
+          "recv_sequences": [],
+          "ack_sequences": [],
+          "next_channel_sequence": "0"
+        }
+      },
+      "interchainaccounts": {
+        "controller_genesis_state": {
+          "active_channels": [],
+          "interchain_accounts": [],
+          "ports": [],
+          "params": {
+            "controller_enabled": true
+          }
+        },
+        "host_genesis_state": {
+          "active_channels": [],
+          "interchain_accounts": [],
+          "port": "icahost",
+          "params": {
+            "host_enabled": true,
+            "allow_messages": []
+          }
+        }
+      },
+      "packetfowardmiddleware": {
+        "params": {
+          "fee_percentage": "0.000000000000000000"
+        },
+        "in_flight_packets": {}
+      },
+      "params": {
+        "params": {
+          "authority": "noble1lwklzs6ejglapp6eccxtfmajwykt8nrdh8fjp8"
+        }
+      },
+      "slashing": {
+        "params": {
+          "signed_blocks_window": "10000",
+          "min_signed_per_window": "0.500000000000000000",
+          "downtime_jail_duration": "600s",
+          "slash_fraction_double_sign": "0.050000000000000000",
+          "slash_fraction_downtime": "0.010000000000000000"
+        },
+        "signing_infos": [],
+        "missed_blocks": []
+      },
+      "tokenfactory": {
+        "params": {},
+        "blacklistedList": [],
+        "paused": {
+          "paused": false
+        },
+        "masterMinter": {
+          "address": "noble13fzugw54k8h3qne8v7v5ex995rejzv8h8v9fu4"
+        },
+        "mintersList": [],
+        "pauser": {
+          "address": "noble17ln5m096wnj9dtvj3wyj0xl98yz53ptkaj7u66"
+        },
+        "blacklister": {
+          "address": "noble17krs6fx6vtzpampnemmdmuw5y8m2thmtsyxk90"
+        },
+        "owner": {
+          "address": "noble1hrmxjjw7egcccvgrwq6seh2x3wh5curew9d268"
+        },
+        "minterControllerList": [],
+        "mintingDenom": {
+          "denom": "uusdc"
+        }
+      },
+      "transfer": {
+        "port_id": "transfer",
+        "denom_traces": [],
+        "params": {
+          "send_enabled": true,
+          "receive_enabled": true
+        }
+      },
+      "upgrade": {
+        "params": {
+          "authority": "noble1lwklzs6ejglapp6eccxtfmajwykt8nrdh8fjp8"
+        }
+      },
+      "vesting": {}
+    }
+  }
