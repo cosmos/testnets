@@ -6,7 +6,7 @@
 
 | Date | Testnet plan                             |
 |------|------------------------------------------|
-| February 08 2023 | v9-Lambda upgrade ([Gaia v9.0.0-rc3](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc3)) is live on the testnet       |
+| February 08 2023 | ✅ v9-Lambda upgrade ([Gaia v9.0.0-rc3](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc3)) is live on the testnet       |
 | February 07 2023 | ✅ Submit and pass v9-Lambda software upgrade [proposal](https://explorer.theta-testnet.polypore.xyz/proposals/115) |
 
 * **Version before upgrade**: `v8.0.0`
@@ -16,6 +16,7 @@
 
 * Upgrade height: `14476206` 
 * Upgrade time: `2023-02-08 15:15:00 UTC`
+  * The upgrade took under a minute, and block `14476207` was indexed at `15:35:54 UTC`.
 * Unsigned proposal:
 
 ```json=
