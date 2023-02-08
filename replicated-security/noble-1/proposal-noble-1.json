@@ -7,7 +7,7 @@
         "revision_number": 1
     },
     "genesis_hash": "74f1aa802e267ad0d98b65ed3d34cd271c074e9ff5cbc34ecd5ccfd9f69f2818",
-    "binary_hash": "3348e12f79e4119324fc139121cd2b09ec292cf3e2b2c49c8763830d9ac060bc",
+    "binary_hash": "ed9e62a09b0dbac58e722ccc28b64c9925dfde6efe0c77552ae45b2092cd2dfa",
     "spawn_time": "2023-02-09T16:00:00.000000Z",
     "blocks_per_distribution_transmission": 1000,
     "noble_redistribution_fraction": "0.75",

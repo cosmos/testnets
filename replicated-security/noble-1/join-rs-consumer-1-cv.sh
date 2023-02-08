@@ -40,7 +40,7 @@ mkdir -p $HOME/go/bin
 rm -rf nobled
 git clone https://github.com/strangelove-ventures/noble.git
 cd nobled
-git checkout v0.1.1
+git checkout v0.2.0
 make install
 export PATH=$PATH:$HOME/go/bin
 
