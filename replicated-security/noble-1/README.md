@@ -13,7 +13,7 @@ The `noble-1` chain will be launched as a persistent dummy chain to test basic I
 * **Genesis file with CCV state:** [TBD after spawntime](noble-1-genesis.json)
 
 * **Genesis file _without CCV state_:** (noble-1-genesis-without-ccv.json), verify with `shasum -a 256 noble-1-genesis-without-ccv.json`
-* **SHA256 for genesis file _without CCV state_**: `74f1aa802e267ad0d98b65ed3d34cd271c074e9ff5cbc34ecd5ccfd9f69f2818`
+* **SHA256 for genesis file _without CCV state_**: `54be5eb26d18d6927914db5971c925eedc5f91112beb0529ae4d1450334de282`
 
 The following items are included in the noble addition [proposal](https://explorer.noble.ics-testnet.strange.love/provider-1/gov/15):
 
