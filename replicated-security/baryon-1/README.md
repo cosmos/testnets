@@ -1,6 +1,8 @@
 
 # `baryon-1` Chain Details
 
+> Status: **[LIVE](https://explorer.rs-testnet.polypore.xyz/baryon-1/blocks)**
+
 The `baryon-1` chain will be launched as a Neutron persistent chain to test Interchain Security functionality.
 
 * **Chain-ID**: `baryon-1`
@@ -48,6 +50,18 @@ The following state sync node serve snapshots every 1000 blocks:
 ## IBC Information
 
 Connections and channels will be posted here shortly after the chain launches.
+
+### Clients
+
+* `07-tendermint-0`
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `07-tendermint-1`
+
+### Channels
+
+* `channel-0`: consumer port
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-2`
+* `channel-1`: transfer port
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-3`
 
 ## How to Join
 
