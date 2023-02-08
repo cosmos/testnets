@@ -55,7 +55,7 @@ Binary checksums can differ based on many things to include go, libc, and make v
   Now, verify the checksum on your local ubuntu server  
   ```
   #run on your ubuntu server
-  sha256sum /home/ubuntu/go/bin/stranged
+  sha256sum /home/ubuntu/go/bin/nobled
   ```
   expected return `452c80a1982fba815450db1de2b02471db3756e59a1ce57a0f30a7ecf3f26364` 
 
