@@ -30,8 +30,8 @@ For more information regarding the noble chain creation process, see [CCV: Overv
 ## Verify Binary Checksum.
 Binary checksums can differ based on many things to include go, libc, and make versions. To get a consistent checksum you can use something like docker to verify.
 
-  * [Linux amd64 build](stranged)
-  * Version: `v0.1.0`
+  * [Linux amd64 build](nobled-linux-amd64)
+  * Version: `v0.2.0`
   * SHA256: `452c80a1982fba815450db1de2b02471db3756e59a1ce57a0f30a7ecf3f26364`
   * The `nobled-linux-amd64` binary is only provided to verify the SHA256. It was built with Interchain Security release [`v1.0.0-rc1`](https://github.com/cosmos/noble-1/releases/tag/v1.0.0-rc1). You can generate the binary following the build instructions in this repo.
 
