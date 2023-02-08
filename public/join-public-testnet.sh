@@ -7,8 +7,9 @@
 NODE_HOME=~/.gaia
 NODE_MONIKER=public-testnet
 SERVICE_NAME=gaiad
-CHAIN_BINARY_URL='https://github.com/cosmos/gaia/releases/download/v8.0.0/gaiad-v8.0.0-linux-amd64'
+CHAIN_BINARY_URL='https://github.com/cosmos/gaia/releases/download/v9.0.0-rc3/gaiad-v9.0.0-rc3-linux-amd64'
 STATE_SYNC=true
+GAS_PRICE=0.0025uatom
 # ***
 
 CHAIN_BINARY='gaiad'
@@ -20,11 +21,11 @@ SYNC_RPC="https://rpc.state-sync-01.theta-testnet.polypore.xyz:443,https://rpc.s
 # Install wget and jq
 sudo apt-get install curl jq wget -y
 
-# Install go 1.19.4
+# Install go 1.18.5
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
-wget https://go.dev/dl/go1.19.4.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.19.4.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.18.5.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.18.5.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
 # Install Gaia binary
@@ -42,7 +43,7 @@ chmod +x $HOME/go/bin/$CHAIN_BINARY
 # rm -rf gaia
 # git clone https://github.com/cosmos/gaia.git
 # cd gaia
-# git checkout v8.0.0
+# git checkout v9.0.0-rc3
 # make install
 
 export PATH=$PATH:$HOME/go/bin
@@ -65,6 +66,7 @@ if $STATE_SYNC ; then
     sed -i -e "/trust_height =/ s/= .*/= $TRUST_HEIGHT/" $NODE_HOME/config/config.toml
     sed -i -e "/trust_hash =/ s/= .*/= \"$TRUST_HASH\"/" $NODE_HOME/config/config.toml
     sed -i -e "/rpc_servers =/ s^= .*^= \"$SYNC_RPC\"^" $NODE_HOME/config/config.toml
+    sed -i -e "/minimum-gas-prices =/ s^= .*^= \"$GAS_PRICE\"^" $NODE_HOME/config/app.toml
 else
     echo "Skipping state sync..."
 fi
