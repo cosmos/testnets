@@ -14,6 +14,7 @@ This testnet includes the following:
 ### Live Chains
 
 * Provider: [`provider`](/replicated-security/provider/README.md)
+* Consumer: [`baryon-1`](/replicated-security/baryon-1/README.md)
 
 ### Stopped Chains
 
@@ -25,6 +26,6 @@ This testnet includes the following:
 
 ## Upcoming Events
 
-* 2023-02-07: [`baryon-1`](/replicated-security/baryon-1/README.md) consumer chain launch
+* 2023-02-09: [`noble-1`](/replicated-security/noble-1/README.md) consumer chain launch
 
 See the [RS testnet schedule](SCHEDULE.md) for consumer chain launches and other planned events.
