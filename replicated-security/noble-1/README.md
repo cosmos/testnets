@@ -2,6 +2,7 @@
 ![Strangelove logo](https://raw.githubusercontent.com/strangelove-ventures/goc-public/main/sl.png)
 # Noble Chain Information
 
+> Status: **[LIVE](https://explorer.rs-testnet.polypore.xyz/noble-1/blocks)**
 
 The `noble-1` chain will be launched as a persistent dummy chain to test basic Interchain Security functionality.
 
