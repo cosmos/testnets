@@ -2,7 +2,7 @@
 
 | Date            | Type   | Description                                                                           |
 |-----------------|--------|---------------------------------------------------------------------------------------|
-| February 9 2023 | Launch | Consumer chain `noble-1` is created and relayer started                              |
+| February 9 2023 | Launch | ✅ Consumer chain `noble-1` is created and relayer started                              |
 | February 7 2023 | Launch | ✅ Consumer chain `baryon-1` is created and relayer started                              |
 | February 6 2023 | Test   | ✅ Consumer chain `slasher` is stopped via governance proposal                         |
 | February 3 2023 | Test   | ✅ Consumer chain `slasher` is created and relayer started                             |
