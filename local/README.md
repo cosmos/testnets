@@ -143,7 +143,21 @@ go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@v1.3.0
 
 Setup the Cosmovisor directory structure. There are two methods to use Cosmovisor:
 
-1. **Manual:** Node runners can manually build the old and new binary and put them into the `cosmovisor` folder (as shown below). Cosmovisor will then switch to the new binary upon upgrade height. **If you are using Cosmovisor `v1.0.0`, the version name is not lowercased (use `upgrades/v8-Rho/bin/gaiad`)**.
+1. **Manual:** Node runners can manually build the old and new binary and put them into the `cosmovisor` folder (as shown below). Cosmovisor will then switch to the new binary upon upgrade height.
+
+> **Warning**  <span style="color:red">**Please Read Before Proceeding**</span><br>
+> **Using Cosmovisor 1.2.0 and higher requires a lowercase naming convention for the upgrade version directory. For Cosmovisor 1.1.0 and earlier, the upgrade version is not lowercased.**       
+> 
+> **For Example:** <br>
+> **Cosmovisor <= `v1.1.0`: `/upgrades/v8-Rho/bin/gaiad`**<br>
+> **Cosmovisor >= `v1.2.0`: `/upgrades/v8-rho/bin/gaiad`**<br>
+
+| Cosmovisor Version | Upgrade Folder Name |
+|:------------------:|---------------------|
+|      `v1.3.0`      | v8-rho           |
+|      `v1.2.0`      | v8-rho           |
+|      `v1.1.0`      | v8-Rho           |
+|      `v1.0.0`      | v8-Rho           |
 
 2. **Auto-download:** Allowing Cosmovisor to [auto-download](https://github.com/cosmos/cosmos-sdk/tree/master/cosmovisor#auto-download) the new binary at the upgrade height automatically.
 
@@ -240,7 +254,7 @@ git pull
 make install
 ```
 
-Copy over the v8-Rho binary into the correct directory. **If you are using Cosmovisor `v1.0.0`, the version name is not lowercased (use `upgrades/v8-Rho/bin/gaiad`)**.
+Copy over the v8-Rho binary into the correct directory.
 ```
 mkdir -p $NODE_HOME/cosmovisor/upgrades/v8-rho/bin
 cp $(which gaiad) $NODE_HOME/cosmovisor/upgrades/v8-rho/bin
