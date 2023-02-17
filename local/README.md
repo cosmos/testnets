@@ -1,19 +1,19 @@
-# v8-Rho Local Testnet
+# v9-Lambda Local Testnet
 
-These instructions will help you simulate the `v8-Rho` upgrade on a single validator node testnet as follows:
+These instructions will help you simulate the `v9-Lambda` upgrade on a single validator node testnet as follows:
 
-- Start with gaia version: `v7.1.0`
-- After the upgrade: gaia release `v8.0.0-rc3`
+- Start with gaia version: `v8.0.0`
+- After the upgrade: gaia release `v9.0.0-rc7`
 
 We will use a modified genesis file during this upgrade. This modified genesis file is similar to the one we are running on the public testnet, and has been modified in part to replace an existing validator (Coinbase Custody) with a new validator account that we control. The account's mnemonic, validator key, and node key are provided in this repo.  
 For a full list of modifications to the genesis file, please [see below](#genesis-modifications).
 
-If you are interested in running v8-Rho without going through the upgrade, you can download one of the binaries in the Gaia [releases](https://github.com/cosmos/gaia/releases) page follow the rest of the instructions up until the node is running and producing blocks.
+If you are interested in running v9-Lambda without going through the upgrade, you can download one of the binaries in the Gaia [releases](https://github.com/cosmos/gaia/releases) page follow the rest of the instructions up until the node is running and producing blocks.
 
 * **Chain ID**: `local-testnet`
-* **Gaia version:** `v7.1.0`
-* **Modified genesis file:** [tinkered-genesis_2023-01-06T20:22:50.460851274Z_v7.1.0_13562370.json.gz](https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/tinkered-genesis_2023-01-06T20%3A22%3A50.460851274Z_v7.1.0_13562370.json.gz)
-* **Original genesis file:** [mainnet-genesis_2023-01-06T20:22:50.460851274Z_v7.1.0_13562370.json.gz](https://files.polypore.xyz/genesis/mainnet-genesis-export/mainnet-genesis_2023-01-06T20%3A22%3A50.460851274Z_v7.1.0_13562370.json.gz)
+* **Gaia version:** `v8.0.0`
+* **Modified genesis file:** [here](https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/latest_v8.json.gz)
+* **Original genesis file:** [here](https://files.polypore.xyz/genesis/mainnet-genesis-export/latest_v8.json.gz)
 * **Validator key:** [priv_validator_key](priv_validator_key.json)
 * **Node key:** [node_key](node_key.json)
 * **Validator mnemonic:** [mnemonic.txt](mnemonic.txt)
@@ -52,8 +52,8 @@ sudo apt update
 sudo apt upgrade
 sudo apt install git build-essential
 
-curl -OL https://golang.org/dl/go1.19.4.linux-amd64.tar.gz
-sudo tar -C /usr/local -xvf go1.14.4.linux-amd64.tar.gz
+curl -OL https://golang.org/dl/go1.18.5.linux-amd64.tar.gz
+sudo tar -C /usr/local -xvf go1.18.5.linux-amd64.tar.gz
 ```
 
 ### Modify your paths
@@ -68,7 +68,7 @@ source ~/.profile
 cd $HOME
 git clone https://github.com/cosmos/gaia.git
 cd gaia
-git checkout v7.1.0
+git checkout v8.0.0
 make install
 ```
 
@@ -149,15 +149,15 @@ Setup the Cosmovisor directory structure. There are two methods to use Cosmoviso
 > **Using Cosmovisor 1.2.0 and higher requires a lowercase naming convention for the upgrade version directory. For Cosmovisor 1.1.0 and earlier, the upgrade version is not lowercased.**       
 > 
 > **For Example:** <br>
-> **Cosmovisor <= `v1.1.0`: `/upgrades/v8-Rho/bin/gaiad`**<br>
-> **Cosmovisor >= `v1.2.0`: `/upgrades/v8-rho/bin/gaiad`**<br>
+> **Cosmovisor <= `v1.1.0`: `/upgrades/v9-Lambda/bin/gaiad`**<br>
+> **Cosmovisor >= `v1.2.0`: `/upgrades/v9-lambda/bin/gaiad`**<br>
 
 | Cosmovisor Version | Upgrade Folder Name |
 |:------------------:|---------------------|
-|      `v1.3.0`      | v8-rho           |
-|      `v1.2.0`      | v8-rho           |
-|      `v1.1.0`      | v8-Rho           |
-|      `v1.0.0`      | v8-Rho           |
+|      `v1.3.0`      | v9-lambda           |
+|      `v1.2.0`      | v9-lambda           |
+|      `v1.1.0`      | v9-Lambda           |
+|      `v1.0.0`      | v9-Lambda           |
 
 2. **Auto-download:** Allowing Cosmovisor to [auto-download](https://github.com/cosmos/cosmos-sdk/tree/master/cosmovisor#auto-download) the new binary at the upgrade height automatically.
 
@@ -170,7 +170,7 @@ Setup the Cosmovisor directory structure. There are two methods to use Cosmoviso
 │   └── bin
 │       └── gaiad
 └── upgrades
-    └── v8-rho
+    └── v9-lambda
         ├── bin
         │   └── gaiad
         └── upgrade-info.json
@@ -249,16 +249,16 @@ INF committed state app_hash=99D509C03FDDFEACAD90608008942C0B4C801151BDC1B8998EE
 Build the upgrade binary.
 ```
 cd $HOME/gaia
-git checkout v8.0.0-rc3
+git checkout v9.0.0-rc7
 git pull
 make install
 ```
 
-Copy over the v8-Rho binary into the correct directory.
+Copy over the v9-Lambda binary into the correct directory.
 ```
-mkdir -p $NODE_HOME/cosmovisor/upgrades/v8-rho/bin
-cp $(which gaiad) $NODE_HOME/cosmovisor/upgrades/v8-rho/bin
-export BINARY=$NODE_HOME/cosmovisor/upgrades/v8-rho/bin/gaiad
+mkdir -p $NODE_HOME/cosmovisor/upgrades/v9-lambda/bin
+cp $(which gaiad) $NODE_HOME/cosmovisor/upgrades/v9-lambda/bin
+export BINARY=$NODE_HOME/cosmovisor/upgrades/v9-lambda/bin/gaiad
 ```
 
 ## Submit and vote on a software upgrade proposal
@@ -266,12 +266,12 @@ export BINARY=$NODE_HOME/cosmovisor/upgrades/v8-rho/bin/gaiad
 You can submit a software upgrade proposal without specifiying a binary, but this only works for those nodes who are manually preparing the upgrade binary.
 
 ```
-cosmovisor tx gov submit-proposal software-upgrade v8-Rho \
---title v8-Rho \
+cosmovisor tx gov submit-proposal software-upgrade v9-Lambda \
+--title v9-Lambda \
 --deposit 100uatom \
 --upgrade-height TBD \
---upgrade-info "upgrade to v8-Rho" \
---description "upgrade to v8-Rho" \
+--upgrade-info "upgrade to v9-Lambda" \
+--description "upgrade to v9-Lambda" \
 --gas auto \
 --fees 400uatom \
 --from $USER_KEY_NAME \
