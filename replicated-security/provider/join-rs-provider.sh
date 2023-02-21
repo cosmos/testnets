@@ -101,8 +101,7 @@ echo ""                                     | sudo tee /etc/systemd/system/$SERV
 echo "[Service]"                            | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "User=$USER"                            | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "ExecStart=$HOME/go/bin/$CHAIN_BINARY start --x-crisis-skip-assert-invariants --home $NODE_HOME" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "Restart=always"                       | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "RestartSec=3"                         | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "Restart=no"                       | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "LimitNOFILE=4096"                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo ""                                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "[Install]"                            | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
