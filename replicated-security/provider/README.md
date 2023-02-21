@@ -73,9 +73,31 @@ Run either one of the scripts provided in this repo to join the provider chain:
 * Both scripts must be run either as root or from a sudoer account.
 * Both scripts will attempt to download the amd64 binary from the Gaia [releases](https://github.com/cosmos/gaia/releases) page. You can modify the `CHAIN_BINARY_URL` to match your target architecture if needed.
 
-#### State Sync Option
+#### State Sync
 
-* By default, the scripts will attempt to use state sync to catch up quickly to the current height. To turn off state sync, set `STATE_SYNC` to `false` (you should set this to false if the chain has less than 1000 blocks).
+* By default, the scripts will attempt to use state sync to catch up quickly to the current height.
+
+#### Sync from Genesis
+
+To sync from genesis, you will need to start with Gaia `v9.0.0-rc2`. First, modify the bash script as follows:
+* Turn off state sync by setting `STATE_SYNC` to `false`.
+* Set `CHAIN_BINARY_URL` to `'https://github.com/cosmos/gaia/releases/download/v9.0.0-rc2/gaiad-v9.0.0-rc2-linux-amd64'`, or run `git checkout v9.0.0-rc2` if you are building from source.
+
+Run the script, and then follow the procedure below to upgrade to the latest version:
+
+* Stop the service
+  * `systemctl stop provider`, or `systemctl stop cv-provider` if you are using Cosmovisor.
+* Set `halt-height = 168100` in `~/.gaia/config/app.toml`.
+* Start the service.
+  * `systemctl start provider`, or `systemctl start cv-provider` if you are using Cosmovisor.
+* When the node reaches height `168100`, stop the service.
+* Set `halt-height = 228100` in `~/.gaia/config/app.toml`.
+* Replace the `v9.0.0-rc2` binary with the `v9.0.0-rc6` one in `~/go/bin`, or `~/.gaia/cosmovisor/current/bin` if you are using Cosmovisor.
+* Start the service.
+* When the node reaches height `228100`, stop the service.
+* Set `halt-height = 0` in `~/.gaia/config/app.toml`.
+* Replace the `v9.0.0-rc6` binary with the `v9.0.0-rc7` one.
+* Start the service.
 
 ## Creating a Validator
 
