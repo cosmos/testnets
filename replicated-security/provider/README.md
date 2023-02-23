@@ -47,6 +47,8 @@ Connections and channels will be posted here shortly after a consumer chain laun
 
 * `07-tendermint-1`
   * Counterparty: [`baryon-1`](/replicated-security/baryon-1/README.md) `07-tendermint-0`
+* `07-tendermint-2`
+  * Counterparty: [`noble-1`](/replicated-security/noble-1/README.md) `07-tendermint-0`
 
 ### Channels
 
@@ -54,6 +56,10 @@ Connections and channels will be posted here shortly after a consumer chain laun
   * Counterparty: [`baryon-1`](/replicated-security/baryon-1/README.md) `channel-0`
 * `channel-3`: transfer port
   * Counterparty: [`baryon-1`](/replicated-security/baryon-1/README.md) `channel-1`
+* `channel-5`: provider port
+  * Counterparty: [`noble-1`](/replicated-security/noble-1/README.md) `channel-1`
+* `channel-6`: transfer port
+  * Counterparty: [`noble-1`](/replicated-security/noble-1/README.md) `channel-2`
 
 ## Faucet
 
