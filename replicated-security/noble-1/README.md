@@ -74,7 +74,17 @@ Seed nodes:
 
 ## IBC Information
 
-Connections and channels will be posted here shortly after the chain launches.
+### Clients
+
+* `07-tendermint-0`
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `07-tendermint-2`
+
+### Channels
+
+* `channel-1`: consumer port
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-5`
+* `channel-2`: transfer port
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-6`
 
 ## How to Join
 
