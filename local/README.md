@@ -2,8 +2,8 @@
 
 These instructions will help you simulate the `v9-Lambda` upgrade on a single validator node testnet as follows:
 
-- Start with gaia version: `v8.0.0`
-- After the upgrade: gaia release `v9.0.0-rc7`
+- Start with gaia version: `v8.0.1`
+- After the upgrade: gaia release `v9.0.0`
 
 We will use a modified genesis file during this upgrade. This modified genesis file is similar to the one we are running on the public testnet, and has been modified in part to replace an existing validator (Coinbase Custody) with a new validator account that we control. The account's mnemonic, validator key, and node key are provided in this repo.  
 For a full list of modifications to the genesis file, please [see below](#genesis-modifications).
@@ -11,7 +11,7 @@ For a full list of modifications to the genesis file, please [see below](#genesi
 If you are interested in running v9-Lambda without going through the upgrade, you can download one of the binaries in the Gaia [releases](https://github.com/cosmos/gaia/releases) page follow the rest of the instructions up until the node is running and producing blocks.
 
 * **Chain ID**: `local-testnet`
-* **Gaia version:** `v8.0.0`
+* **Gaia version:** `v8.0.1`
 * **Modified genesis file:** [here](https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/latest_v8.json.gz)
 * **Original genesis file:** [here](https://files.polypore.xyz/genesis/mainnet-genesis-export/latest_v8.json.gz)
 * **Validator key:** [priv_validator_key](priv_validator_key.json)
@@ -68,7 +68,7 @@ source ~/.profile
 cd $HOME
 git clone https://github.com/cosmos/gaia.git
 cd gaia
-git checkout v8.0.0
+git checkout v8.0.1
 make install
 ```
 
@@ -91,17 +91,10 @@ $BINARY init $NODE_MONIKER --home $NODE_HOME --chain-id=$CHAIN_ID
 Then replace the genesis file with our modified genesis file.
 
 ```
-wget https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/tinkered-genesis_2023-01-06T20%3A22%3A50.460851274Z_v7.1.0_13562370.json.gz
-gunzip tinkered-genesis_2023-01-06T20:22:50.460851274Z_v7.1.0_13562370.json.gz
-mv tinkered-genesis_2023-01-06T20:22:50.460851274Z_v7.1.0_13562370.json $NODE_HOME/config/genesis.json
+wget https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/latest_v8.json.gz
+gunzip latest_v8.json.gz
+mv latest_v8.json $NODE_HOME/config/genesis.json
 ```
-
-Make sure you have the correct genesis file.
-
-```
-shasum -a 256 $NODE_HOME/config/genesis.json
-0aafe5e71241c79d2beb542314de7c7416a77a452231ee1a38378b3c0e04dc38
-````
 
 Replace the validator and node keys.
 
@@ -159,7 +152,7 @@ Setup the Cosmovisor directory structure. There are two methods to use Cosmoviso
 |      `v1.1.0`      | v9-Lambda           |
 |      `v1.0.0`      | v9-Lambda           |
 
-2. **Auto-download:** Allowing Cosmovisor to [auto-download](https://github.com/cosmos/cosmos-sdk/tree/master/cosmovisor#auto-download) the new binary at the upgrade height automatically.
+2. **Auto-download:** Allowing Cosmovisor to [auto-download](https://github.com/cosmos/cosmos-sdk/tree/main/tools/cosmovisor#auto-download) the new binary at the upgrade height automatically.
 
 **Cosmovisor directory structure**
 
@@ -195,7 +188,7 @@ echo "After=network-online.target"          >> /etc/systemd/system/$NODE_MONIKER
 echo ""                                     >> /etc/systemd/system/$NODE_MONIKER.service
 echo "[Service]"                            >> /etc/systemd/system/$NODE_MONIKER.service
 echo "User=root"                        >> /etc/systemd/system/$NODE_MONIKER.service
-echo "ExecStart=/root/go/bin/cosmovisor start --x-crisis-skip-assert-invariants" >> /etc/systemd/system/$NODE_MONIKER.service
+echo "ExecStart=/root/go/bin/cosmovisor run start --x-crisis-skip-assert-invariants" >> /etc/systemd/system/$NODE_MONIKER.service
 echo "Restart=always"                       >> /etc/systemd/system/$NODE_MONIKER.service
 echo "RestartSec=3"                         >> /etc/systemd/system/$NODE_MONIKER.service
 echo "LimitNOFILE=4096"                     >> /etc/systemd/system/$NODE_MONIKER.service
@@ -228,8 +221,7 @@ sudo systemctl restart systemd-journald
 You are now ready to start your node like this:
 
 ```
-sudo systemctl enable $NODE_MONIKER.service
-sudo systemctl start $NODE_MONIKER.service
+sudo systemctl enable --now $NODE_MONIKER.service
 ```
 
 And view the logs like this:
@@ -249,7 +241,7 @@ INF committed state app_hash=99D509C03FDDFEACAD90608008942C0B4C801151BDC1B8998EE
 Build the upgrade binary.
 ```
 cd $HOME/gaia
-git checkout v9.0.0-rc7
+git checkout v9.0.0
 git pull
 make install
 ```
@@ -266,7 +258,7 @@ export BINARY=$NODE_HOME/cosmovisor/upgrades/v9-lambda/bin/gaiad
 You can submit a software upgrade proposal without specifiying a binary, but this only works for those nodes who are manually preparing the upgrade binary.
 
 ```
-cosmovisor tx gov submit-proposal software-upgrade v9-Lambda \
+gaiad tx gov submit-proposal software-upgrade v9-Lambda \
 --title v9-Lambda \
 --deposit 100uatom \
 --upgrade-height TBD \
@@ -279,13 +271,17 @@ cosmovisor tx gov submit-proposal software-upgrade v9-Lambda \
 --chain-id $CHAIN_ID \
 --home $NODE_HOME \
 --node tcp://localhost:26657 \
---yes
+--yes \
+-b block
 ```
+
+Get the proposal ID from the TX hash
+`$NODE_HOME/cosmovisor/current/bin/gaiad q tx DB297FDA1DAE700B0155388220703A4074E0C48595635C6A91BBEAF2FF266412`
 
 Vote on it.
 
 ```
-gaiad tx gov vote 95 yes \
+gaiad tx gov vote 235 yes \
 --from $USER_KEY_NAME \
 --keyring-backend test \
 --chain-id $CHAIN_ID \
@@ -293,13 +289,13 @@ gaiad tx gov vote 95 yes \
 --gas auto \
 --fees 400uatom \
 --node tcp://localhost:26657 \
---yes
+--yes -b block
 ```
 
 After the voting period ends, you should be able to query the proposal to see if it has passed. Like this:
 
 ```
-$gaiad query gov proposal 95 --home $NODE_HOME
+gaiad query gov proposal 235 --home $NODE_HOME
 ```
 
 After `PROPOSAL_STATUS_PASSED`, wait until the upgrade height is reached Cosmovisor will now auto-download the new binary specific to your platform and apply the upgrade.
