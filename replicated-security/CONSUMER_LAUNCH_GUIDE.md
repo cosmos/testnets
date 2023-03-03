@@ -17,7 +17,7 @@ For teams looking to join the RS testnet, the onboarding process can be broken d
 * Proposal Submission
 * Chain Launch
 
-### Testing and Integration
+### Local Testing and Integration
 
 During this phase, your team will run integration tests with the following elements of a replicated security testnet:
 * Gaia provider chain
