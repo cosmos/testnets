@@ -7,7 +7,7 @@
 NODE_HOME=~/.gaia
 NODE_MONIKER=public-testnet
 SERVICE_NAME=gaiad
-CHAIN_BINARY_URL='https://github.com/cosmos/gaia/releases/download/v9.0.0/gaiad-v9.0.0-linux-amd64'
+CHAIN_BINARY_URL='https://github.com/cosmos/gaia/releases/download/v9.0.1-rc0/gaiad-v9.0.1-rc0-linux-amd64'
 STATE_SYNC=true
 GAS_PRICE=0.0025uatom
 # ***
@@ -43,7 +43,7 @@ chmod +x $HOME/go/bin/$CHAIN_BINARY
 # rm -rf gaia
 # git clone https://github.com/cosmos/gaia.git
 # cd gaia
-# git checkout v9.0.0
+# git checkout v9.0.1-rc0
 # make install
 
 export PATH=$PATH:$HOME/go/bin
@@ -63,6 +63,7 @@ if $STATE_SYNC ; then
     TRUST_BLOCK=$(curl -s https://rpc.sentry-01.theta-testnet.polypore.xyz/block\?height\=$TRUST_HEIGHT)
     TRUST_HASH=$(echo $TRUST_BLOCK | jq -r '.result.block_id.hash')
     sed -i -e '/enable =/ s/= .*/= true/' $NODE_HOME/config/config.toml
+    sed -i -e '/trust_period =/ s/= .*/= "8h0m0s"/' $NODE_HOME/config/config.toml
     sed -i -e "/trust_height =/ s/= .*/= $TRUST_HEIGHT/" $NODE_HOME/config/config.toml
     sed -i -e "/trust_hash =/ s/= .*/= \"$TRUST_HASH\"/" $NODE_HOME/config/config.toml
     sed -i -e "/rpc_servers =/ s^= .*^= \"$SYNC_RPC\"^" $NODE_HOME/config/config.toml
