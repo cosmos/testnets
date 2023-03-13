@@ -5,7 +5,7 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v9.0.0`](https://github.com/cosmos/gaia/releases/tag/v9.0.0)
+* **Current Gaia Version**: [`v9.0.1-rc0`](https://github.com/cosmos/gaia/releases/tag/v9.0.1-rc0)
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
@@ -102,7 +102,7 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Start the service.
 * When the node reaches height `228100`, stop the service.
 * Set `halt-height = 0` in `~/.gaia/config/app.toml`.
-* Replace the `v9.0.0-rc6` binary with the `v9.0.0-rc7` one.
+* Replace the `v9.0.0-rc6` binary with the `v9.0.1-rc0` one.
 * Start the service.
 
 ## Creating a Validator
