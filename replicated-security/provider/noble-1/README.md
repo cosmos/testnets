@@ -1,9 +1,15 @@
 
-![Strangelove logo](https://raw.githubusercontent.com/strangelove-ventures/goc-public/main/sl.png)
+![Noble banner](https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/Twitter_Banner.png)
 # Noble Chain Information
 
-> Status: **[LIVE](https://explorer.rs-testnet.polypore.xyz/noble-1/blocks)**
+> Status: **[MOVED](https://github.com/strangelove-ventures/noble-networks/tree/main/mainnet/noble-1#noble-chain-information)**
 
+## Noble has moved
+
+On `2023-03-22` a stop consumer-chain proposal was submitted to removed noble from replicated security testnet.  You can find out more information [here](https://github.com/strangelove-ventures/noble-networks/tree/main/mainnet/noble-1#noble-chain-information)
+
+
+## Historical Info
 The `noble-1` chain will be launched as a persistent dummy chain to test basic Interchain Security functionality.
 
 * **Chain-ID**: `noble-1`
