@@ -6,7 +6,7 @@
 
 ## Noble has moved
 
-On `2023-03-23` a stop consumer-chain proposal was submitted to remove noble from the replicated security testnet.  You can find out more information [here](https://github.com/strangelove-ventures/noble-networks/tree/main/mainnet/noble-1#noble-chain-information)
+On `2023-03-23` a [consumer-removal proposal](https://explorer.rs-testnet.polypore.xyz/provider/gov/13) was submitted to remove noble from the replicated security testnet.  You can find out more information [here](https://github.com/strangelove-ventures/noble-networks/tree/main/mainnet/noble-1#noble-chain-information)
 
 
 ## Historical Info
