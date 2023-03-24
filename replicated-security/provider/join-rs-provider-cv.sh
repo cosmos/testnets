@@ -16,7 +16,7 @@ NODE_KEY_FILE=~/node_key.json
 NODE_HOME=~/.gaia
 NODE_MONIKER=provider
 SERVICE_NAME=cv-provider
-CHAIN_BINARY_URL='https://github.com/cosmos/gaia/releases/download/v9.0.1-rc0/gaiad-v9.0.1-rc0-linux-amd64'
+CHAIN_BINARY_URL='https://github.com/cosmos/gaia/releases/download/v9.0.1/gaiad-v9.0.1-linux-amd64'
 STATE_SYNC=true
 # ***
 
@@ -54,7 +54,7 @@ chmod +x $HOME/go/bin/$CHAIN_BINARY
 # rm -rf gaia
 # git clone https://github.com/cosmos/gaia.git
 # cd gaia
-# git checkout v9.0.1-rc0
+# git checkout v9.0.1
 # make install
 
 export PATH=$PATH:$HOME/go/bin
