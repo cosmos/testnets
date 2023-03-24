@@ -110,7 +110,7 @@ Run either one of the scripts provided in this repo to join the provider chain:
 
 If you want to use Cosmovisor's **auto-download** feature, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=true`
 
-If you are **manually preparing your binary**, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` and download a copy of the v9.0.1 binary to the v9-Lambda upgrade directory in your cosmovisor directory (`upgrades/v9-lambda/bin/gaiad`). 
+If you are **manually preparing your binary**, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` and download a copy of the v9.0.0-rc3 binary to the v9-Lambda upgrade directory in your cosmovisor directory (`upgrades/v9-lambda/bin/gaiad`). 
 
 > **Warning**  <span style="color:red">**Please Read Before Proceeding**</span><br>
 > **Using Cosmovisor 1.2.0 and higher requires a lowercase naming convention for the upgrade version directory. For Cosmovisor 1.1.0 and earlier, the upgrade version is not lowercased.**       
