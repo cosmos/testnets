@@ -8,7 +8,7 @@ Visit the [Scheduled Upgrades](UPGRADES.md) page for details on current and upco
 
 - **Chain-ID**: `theta-testnet-001`
 - **Launch date**: 2022-03-10
-- **Current Gaia Version:** `v9.0.1-rc0` (upgraded to v9 at height `14476207`)
+- **Current Gaia Version:** `v9.0.1` (upgraded to v9 at height `14476207`)
 - **Launch Gaia Version:** `release/v6.0.0`
 - **Genesis File:**  Zipped and included [in this repository](genesis.json.gz), unzip and verify with `shasum -a 256 genesis.json`
 - **Genesis sha256sum**: `522d7e5227ca35ec9bbee5ab3fe9d43b61752c6bdbb9e7996b38307d7362bb7e`
@@ -110,7 +110,7 @@ Run either one of the scripts provided in this repo to join the provider chain:
 
 If you want to use Cosmovisor's **auto-download** feature, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=true`
 
-If you are **manually preparing your binary**, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` and download a copy of the v9.0.0-rc3 binary to the v9-Lambda upgrade directory in your cosmovisor directory (`upgrades/v9-lambda/bin/gaiad`). 
+If you are **manually preparing your binary**, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` and download a copy of the v9.0.1 binary to the v9-Lambda upgrade directory in your cosmovisor directory (`upgrades/v9-lambda/bin/gaiad`). 
 
 > **Warning**  <span style="color:red">**Please Read Before Proceeding**</span><br>
 > **Using Cosmovisor 1.2.0 and higher requires a lowercase naming convention for the upgrade version directory. For Cosmovisor 1.1.0 and earlier, the upgrade version is not lowercased.**       
