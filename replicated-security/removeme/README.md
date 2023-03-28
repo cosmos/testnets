@@ -10,7 +10,7 @@ The `removeme` chain will be launched to test the a bug fix on the provider chai
 * **Spawn time**: `2023-03-28T19:00:00.000000Z`
 * **GitHub repo**: [cosmos/interchain-security](https://github.com/cosmos/interchain-security)
 * **Version**: [`v1.1.0`](https://github.com/cosmos/interchain-security/releases/tag/v1.1.0)
-* **Genesis file with CCV state:** TBD
+* **Genesis file with CCV state:** `removeme-genesis.json`
 
 * **Reference binary**: `removeme-linux-amd64`
 * **Binary sha256sum**: `ec1848bd0018732f1ae771c2b0f857c5def9a5fb7736001d640e1da337b41d9e`
