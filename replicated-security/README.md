@@ -15,6 +15,7 @@ This testnet includes the following:
 
 * Provider: [`provider`](/replicated-security/provider/README.md)
 * Consumer: [`baryon-1`](/replicated-security/baryon-1/README.md)
+* Consumer: [`removeme`](/replicated-security/removeme/README.md)
 
 ### Stopped Chains
 
