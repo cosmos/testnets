@@ -58,9 +58,9 @@ cp $PRIV_VALIDATOR_KEY_FILE $NODE_HOME/config/priv_validator_key.json
 cp $NODE_KEY_FILE $NODE_HOME/config/node_key.json
 
 # Replace genesis file: only after the spawn time is reached
-# echo "Replacing genesis file..."
-# wget $GENESIS_URL -O genesis.json
-# mv genesis.json $NODE_HOME/config/genesis.json
+echo "Replacing genesis file..."
+wget $GENESIS_URL -O genesis.json
+mv genesis.json $NODE_HOME/config/genesis.json
 
 # Set up cosmovisor
 echo "Setting up cosmovisor..."
@@ -97,9 +97,9 @@ echo "WantedBy=multi-user.target"           | sudo tee /etc/systemd/system/$SERV
 sudo systemctl daemon-reload
 
 # Enable and start the service after the genesis that includes the CCV state is in place
-# sudo systemctl enable $SERVICE_NAME.service
-# sudo systemctl start $SERVICE_NAME.service
-# sudo systemctl restart systemd-journald
+sudo systemctl enable $SERVICE_NAME.service
+sudo systemctl start $SERVICE_NAME.service
+sudo systemctl restart systemd-journald
 
 # Add go and gaiad to the path
 echo "Setting up paths for go and cosmovisor current bin..."
