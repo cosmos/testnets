@@ -26,7 +26,7 @@ The following items will be included in the consumer addition proposal:
     * Funds for a relayer account
     * `signed_blocks_window` has been set to `100 000`
 * Binary hash
-  * The `remover-linux-amd64` binary is only provided to verify the SHA256. It was built with commit [`6a856d183cd6fc6f24e856e0080989ab53752102`](https://github.com/cosmos/interchain-security/commit/6a856d183cd6fc6f24e856e0080989ab53752102) of the Interchain Security repo (v1.1.0). You can generate the binary following the build instructions in that repo or using one of the scripts provided here.
+  * The `removeme-linux-amd64` binary is only provided to verify the SHA256. It was built with commit [`6a856d183cd6fc6f24e856e0080989ab53752102`](https://github.com/cosmos/interchain-security/commit/6a856d183cd6fc6f24e856e0080989ab53752102) of the Interchain Security repo (v1.1.0). You can generate the binary following the build instructions in that repo or using one of the scripts provided here.
 * Spawn time
   * Even if a proposal passes, the CCV state will not be available from the provider chain until after the spawn time is reached.
 
