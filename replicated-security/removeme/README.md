@@ -1,13 +1,14 @@
 
 # `removeme` Chain Details
 
-> Status: **SCHEDULED**
+> Status: **LIVE; [REMOVAL SCHEDULED](https://explorer.rs-testnet.polypore.xyz/provider/gov/15)**
 
 The `removeme` chain will be launched to test the a bug fix on the provider chain: a `consumer-removal` proposal that passes should result in the consumer chain stopping at the specified `stop_time` and not before.
 
 * **Chain-ID**: `removeme`
 * **denom**: `urem`
 * **Spawn time**: `2023-03-28T19:00:00.000000Z`
+* **Stop time**: `2023-03-29T14:00:00.000000Z`
 * **GitHub repo**: [cosmos/interchain-security](https://github.com/cosmos/interchain-security)
 * **Version**: [`v1.1.0`](https://github.com/cosmos/interchain-security/releases/tag/v1.1.0)
 * **Genesis file with CCV state:** `removeme-genesis.json`
@@ -42,7 +43,22 @@ Persistent nodes:
 
 ## IBC Information
 
-Connections and channels will be posted here shortly after the chain launches.
+### Clients
+
+* `07-tendermint-0`
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `07-tendermint-8`
+
+### Connections
+
+* `connection-0`
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `connection-4`
+
+### Channels
+
+* `channel-0`: consumer port
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-8`
+* `channel-1`: transfer port
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-9`
 
 ## How to Join
 
