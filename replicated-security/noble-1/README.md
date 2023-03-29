@@ -2,7 +2,7 @@
 ![Noble banner](https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/Twitter_Banner.png)
 # Noble Chain Information
 
-> Status: **[MOVED](https://github.com/strangelove-ventures/noble-networks/tree/main/mainnet/noble-1#noble-chain-information)**
+> Status: **STOPPED**
 
 ## Noble has moved
 

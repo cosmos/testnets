@@ -1,14 +1,14 @@
 
 # `removeme` Chain Details
 
-> Status: **LIVE; [REMOVAL SCHEDULED](https://explorer.rs-testnet.polypore.xyz/provider/gov/15)**
+> Status: **STOPPED**
 
-The `removeme` chain will be launched to test the a bug fix on the provider chain: a `consumer-removal` proposal that passes should result in the consumer chain stopping at the specified `stop_time` and not before.
+The `removeme` chain was launched to test a bug fix on the provider chain: a `consumer-removal` proposal that passes should result in the consumer chain stopping at the specified `stop_time` and not before. The test was successful.
 
 * **Chain-ID**: `removeme`
 * **denom**: `urem`
 * **Spawn time**: `2023-03-28T19:00:00.000000Z`
-* **Stop time**: `2023-03-29T14:00:00.000000Z`
+* **Stop time**: `2023-03-29T14:00:00.000000Z` - [Proposal 15](https://explorer.rs-testnet.polypore.xyz/provider/gov/15)
 * **GitHub repo**: [cosmos/interchain-security](https://github.com/cosmos/interchain-security)
 * **Version**: [`v1.1.0`](https://github.com/cosmos/interchain-security/releases/tag/v1.1.0)
 * **Genesis file with CCV state:** `removeme-genesis.json`
