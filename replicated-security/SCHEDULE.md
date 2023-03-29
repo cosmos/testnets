@@ -2,7 +2,7 @@
 
 | Date            | Type              | Description                                                                           |
 | --------------- | ----------------- | ------------------------------------------------------------------------------------- |
-| March 29 2023   | Consumer removal  | Consumer chain `removeme` is removed via governance proposal                          |
+| March 29 2023   | Consumer removal  | ✅ Consumer chain `removeme` is removed via governance proposal                          |
 | March 28 2023   | Consumer addition | ✅ Consumer chain `removeme` is created and relayer started                            |
 | March 27 2023   | Patch upgrade     | ✅ Provider chain upgraded to v9.0.2-rc0                                               |
 | March 23 2023   | Consumer removal  | ✅ Consumer chain `noble-1` is removed via governance proposal                         |
