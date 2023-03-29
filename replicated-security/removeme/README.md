@@ -3,7 +3,7 @@
 
 > Status: **STOPPED**
 
-The `removeme` chain was launched to test a bug fix on the provider chain: a `consumer-removal` proposal that passes should result in the consumer chain stopping at the specified `stop_time` and not before.
+The `removeme` chain was launched to test a bug fix on the provider chain: a `consumer-removal` proposal that passes should result in the consumer chain stopping at the specified `stop_time` and not before. The test was successful.
 
 * **Chain-ID**: `removeme`
 * **denom**: `urem`
