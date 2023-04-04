@@ -35,6 +35,10 @@ The following state sync nodes serve snapshots every 1000 blocks:
 1. `provider-state-sync-01.rs-testnet.polypore.xyz`
 2. `provider-state-sync-02.rs-testnet.polypore.xyz`
 
+## Add to Keplr
+
+Use this [jsfiddle](https://jsfiddle.net/uw4ar8qt/2/).
+
 ## Block Explorer
 
 * https://explorer.rs-testnet.polypore.xyz
