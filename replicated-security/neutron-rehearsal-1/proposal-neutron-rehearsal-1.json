@@ -1,0 +1,19 @@
+{
+    "title": "Neutron neutron-rehearsal-1 Chain",
+    "description": "# Launching the neutron-rehearsal-1 Chain\r\n\r\nThis is the proposal to create the first persistent consumer chain, \"neutron-rehearsal-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/cosmos/testnets/tree/master/replicated-security) repo for additional details.",
+    "chain_id": "neutron-rehearsal-1",
+    "initial_height": {
+        "revision_height": 1,
+        "revision_number": 1
+    },
+    "genesis_hash": "e5a5e9f8ba69a846d18737c2d2a6a6de0250f45c53c07df274dc80ab9bda2ba0",
+    "binary_hash": "394736d71f5798d0de3427aac96fba27f8df07c23d8d47eedd837774f4e4cb48",
+    "spawn_time": "2023-04-11T18:30:00Z",
+    "blocks_per_distribution_transmission": 1000,
+    "consumer_redistribution_fraction": "0.75",
+    "historical_entries": 10000,
+    "transfer_timeout_period": 1800000000000,
+    "ccv_timeout_period": 2419200000000000,
+    "unbonding_period": 1728000000000000,
+    "deposit": "10000000uatom"
+}
