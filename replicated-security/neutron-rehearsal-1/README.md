@@ -1,8 +1,6 @@
 
 # `neuntron-rehearsal-1` Chain Details
 
-> Status: **[LIVE](https://explorer.rs-testnet.polypore.xyz/baryon-1/blocks)**
-
 The `neuntron-rehearsal-1` chain will be launched as a Neutron persistent chain to test Interchain Security functionality.
 
 * **Chain-ID**: `neuntron-rehearsal-1`
