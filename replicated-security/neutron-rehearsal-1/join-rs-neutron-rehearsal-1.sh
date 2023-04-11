@@ -16,8 +16,8 @@ STATE_SYNC=false
 
 CHAIN_BINARY='neutrond'
 CHAIN_ID=neutron-rehearsal-1
-SEEDS="e2c07e8e6e808fb36cca0fc580e31216772841df@p2p.baryon.ntrn.info:26656"
-SYNC_RPC_1=https://rpc.baryon.ntrn.info:443
+SEEDS="de7da754a6287dd60d15ccebcb9ad010cfa5a483@p2p.rehearsal.ntrn.tech:26656"
+SYNC_RPC_1=https://rpc.rehearsal.ntrn.tech:443
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_1"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
