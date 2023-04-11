@@ -1,9 +1,9 @@
 
-# `neuntron-rehearsal-1` Chain Details
+# `neutron-rehearsal-1` Chain Details
 
-The `neuntron-rehearsal-1` chain will be launched as a Neutron persistent chain to test Interchain Security functionality.
+The `neutron-rehearsal-1` chain will be launched as a Neutron persistent chain to test Interchain Security functionality.
 
-* **Chain-ID**: `neuntron-rehearsal-1`
+* **Chain-ID**: `neutron-rehearsal-1`
 * **denom**: `untrn`
 * **minimum-gas-prices**: `0untrn`
 * **timeout_commit**: `2s`
@@ -84,8 +84,8 @@ The scripts provided in this repo will install Neutron and set up a Cosmovisor s
 
 The script provided in this repo will install `neutrond` and set up a Cosmovisor service on your machine. 
 
-Run script provided to set up a `neuntron-rehearsal-1` service:
-* `join-rs-neuntron-rehearsal-1.sh` will create a `neuntron-rehearsal-1` service with `cosmovisor` support.
+Run script provided to set up a `neutron-rehearsal-1` service:
+* `join-rs-neutron-rehearsal-1.sh` will create a `neutron-rehearsal-1` service with `cosmovisor` support.
 * Script must be run either as root or from a sudoer account.
 * Script will attempt to build a binary from the [neutron-org/neutron] repo.
 
