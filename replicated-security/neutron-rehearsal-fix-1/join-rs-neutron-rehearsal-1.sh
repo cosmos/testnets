@@ -16,7 +16,7 @@ STATE_SYNC=false
 
 CHAIN_BINARY='neutrond'
 CHAIN_ID=neutron-rehearsal-fix-1
-SEEDS="de7da754a6287dd60d15ccebcb9ad010cfa5a483@p2p.rehearsal.ntrn.tech:26656"
+SEEDS="4336ea0b53080b0e50860417ab9a8a86d3eaecca@p2p.rehearsal.ntrn.tech:26656"
 SYNC_RPC_1=https://rpc.rehearsal.ntrn.tech:443
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_1"
 
