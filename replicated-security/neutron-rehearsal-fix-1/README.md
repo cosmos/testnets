@@ -41,7 +41,12 @@ Endpoints are exposed as subdomains for the sentry and snapshot nodes (described
 
 Seed nodes:
 
-1. `de7da754a6287dd60d15ccebcb9ad010cfa5a483@p2p.rehearsal.ntrn.tech:26656`
+1. `4336ea0b53080b0e50860417ab9a8a86d3eaecca@p2p.rehearsal.ntrn.tech:26656`
+
+Persistent nodes:
+
+1. `49d75c6094c006b6f2758e45457c1f3d6002ce7a@rehearsal2-banana.rs-testnet.polypore.xyz:26656`
+2. `f2520026fb9086f1b2f09e132d209cbe88064ec1@rehearsal2-cherry.rs-testnet.polypore.xyz:26656`
 
 The following state sync node serve snapshots every 1000 blocks:
 
