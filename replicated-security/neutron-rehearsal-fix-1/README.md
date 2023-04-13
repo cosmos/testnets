@@ -15,7 +15,7 @@ The `neutron-rehearsal-fix-1` chain will be launched as a Neutron persistent cha
 * **Reference binary**: [neutrond-linux-amd64](./neutrond-linux-amd64)
 * **Binary sha256sum**: `892cd246188228981960c35ef3896c4bf2e0bcad11a3fd57dec436167e60e9d1`
 * **Genesis file _without CCV state_:** [neutron-rehearsal-fix-1-genesis-without-ccv.json](neutron-rehearsal-fix-1-genesis-without-ccv.json), verify with `shasum -a 256 neutron-rehearsal-fix-1-genesis-without-ccv.json`
-* **SHA256 for genesis file _without CCV state_**: `e226abbe966af78916cc16c64f1a4b32cbdb9db0816d2b1f030a4f96e99daa62`
+* **SHA256 for genesis file _without CCV state_**: `50951aa1f83a535988a6f58538e2ae05385ab038289c0c961ed88dc106091573`
 
 
 * Genesis file hash
