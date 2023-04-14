@@ -3,6 +3,8 @@
 
 > Status: **[LIVE](https://explorer.rs-testnet.polypore.xyz/baryon-1/blocks)**
 
+> Please be aware that state sync is not working at the time (new nodes must sync from genesis). This will be fixed in an upcoming `baryon-1` upgrade.
+
 The `baryon-1` chain will be launched as a Neutron persistent chain to test Interchain Security functionality.
 
 * **Chain-ID**: `baryon-1`
@@ -64,6 +66,8 @@ Connections and channels will be posted here shortly after the chain launches.
   * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-3`
 
 ## How to Join
+
+> Please be aware that state sync is not working at the time (new nodes must sync from genesis). This will be fixed in an upcoming `baryon-1` upgrade.
 
 ### Hardware Requirements
 
