@@ -11,7 +11,7 @@ This testnet includes the following:
 
 ## Status
 
-> There are three directories for separate Neutron rehearsal chains at this time:
+> Note that there will be three directories for different Neutron rehearsal chains:
 > * `neutron-rehearsal-1` (stopped)
 > * [`neutron-rehearsal-fix-1`](/replicated-security/neutron-rehearsal-fix-1/) (live)
 > * `neutron-rehearsal-final-1` (scheduled, chain ID subject to change)
