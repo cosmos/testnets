@@ -43,37 +43,70 @@ Additionally, you may want to run:
 - a faucet such as this simple [REST faucet](https://github.com/hyphacoop/cosmos-rest-faucet) (it may need a separate funded account in the genesis file as well)
 - a block explorer such as [ping.pub](https://github.com/ping-pub/explorer)
 
-Each consumer chain has its own directory. You can use the [`slasher`](./slasher/) chain as reference- feel free to clone the slasher directory, modify it for your consumer chain, and make a PR with the relevant information:
+## ✍️ Submitting a PR for a new chain
 
-#### Binary and endpoints information
+Each consumer chain gets its own directory. You can use the [`slasher`](./slasher/) chain as reference. Feel free to clone the slasher directory, modify it for your consumer chain, and make a PR with the relevant information.
 
-  * Consumer chain repo and release or tag name.
-  * Build instructions for chain binary.
-  * Genesis file without CCV state and checksum.
-  * Reference binary and checksum.
-  * Support node information: persistent peers and/or seeds must be provided.
-  * Bash scripts for joining the chain are recommended.
-  * See the `slasher` chain [page](./slasher) for reference.
+Hypha will be reviewing the PR to ensure it meets the following criteria:
+
+#### README includes:
+- [ ] Consumer chain repo and release or tag name.
+- [ ] Build instructions for chain binary.
+- [ ] Checksum of genesis file without CCV.
+- [ ] Checksum of reference binary.
+- [ ] Instructions on to join
+- [ ] Installation steps 
+- Endpoints
+  - [ ] Seeds OR persistent peers
+  - [ ] State sync nodes (if any)
+
+See the `slasher` chain [page](./slasher) for reference.
+
+#### `chain_id` must be identical in the following places:
+ - [ ] `README`
+ - [ ] genesis file
+ - [ ] consumer addition proposal
+ - [ ] bash script
+
+We recommend choosing a `chain_id` with the prefix `-1`, even if it's a subsequent test of the same chain, e.g. `testchain-second-rehearsal-1`.
+
+#### Binary checksum validation
+ - [ ] `shasum -a 256 <binary>` matches the checksum in the proposal
+ - [ ] `shasum -a 256 <binary>` matches `README`
+
+#### Bash script
+  - [ ] version built in script must match `README`
+  - [ ] seeds or persistent peers must match `README`
 
 #### Genesis file
+- [ ] Genesis time must match spawn time in the `consumer-addition` proposal
+- [ ] Accounts and balances: Properly funded accounts (e.g., gas fees for relayer, faucet, etc.)
+- [ ] Bank balance denom matches denom in `README`
+- [ ] Slashing parameters: Set `signed_blocks_window` and `min_signed_per_window` adequately to ensure validators have at least 12 hours to join the chain after launch without getting jailed
+- [ ] `shasum -a 256 <genesis file without CCV>` matches the checksum in the proposal
+- [ ] `shasum -a 256 <genesis file without CCV>` matches the checksum in the `README`
 
-  * Genesis time: Set to the spawn time in the `consumer-addition` proposal.
-  * Accounts and balances: Properly funded accounts (e.g., gas fees for relayer, faucet, etc.).
-  * Slashing parameters: Set `signed_blocks_window` and `min_signed_per_window` adequately to ensure validators have at least 12 hours to join the chain after launch without getting jailed.
-  * See the `slasher` chain [genesis](./slasher/slasher-genesis-without-ccv.json) for reference.
-
-#### Launch date and time
-  * This time will be listed as the spawn time in the `consumer-addition` proposal and will gate the launch (the chain cannot be started prior to the spawn time).
+See the `slasher` chain [genesis](./slasher/slasher-genesis-without-ccv.json) for reference.
 
 #### `consumer-addition` proposal
 
-  * Spawn time: Must match the genesis time
-  * Unbonding period: `1728000000000000`. This value should be smaller than the provider unbonding period (21 days vs 20 days in the provider chain).
-  * Transfer timeout period: `1800000000000`. This value should be smaller than `blocks per distribution transmission * average block time`.
-  * CCV timeout period: `2419200000000000`. This value must be larger than the unbonding period, the default is 28 days. 
-  * See the `slasher` chain consumer-addition [proposal](./slasher/proposal-slasher.json) and [Interchain Security time-based parameters](https://github.com/cosmos/interchain-security/blob/main/docs/params.md#time-based-parameters) for reference.
+  - [ ] Spawn time must match genesis time
+  - [ ] Spawn time must be later than voting period
+  - [ ] `revision_height: 1`
+  - [ ] `revision_number: 1` (only if the `chain_id` ends in `-1`)
+  - [ ] `transfer_timeout_period: 1800000000000`. This value should be smaller than `blocks_per_distribution_transmission * block_time`.
+  - [ ] `ccv_timeout_period: 2419200000000000`. This value must be larger than the unbonding period, the default is 28 days. 
+  - [ ] `unbonding_period: 1728000000000000` (given current provider params)
 
-### Proposal Submission
+See the `slasher` chain consumer-addition [proposal](./slasher/proposal-slasher.json) and [Interchain Security time-based parameters](https://github.com/cosmos/interchain-security/blob/main/docs/params.md#time-based-parameters) for reference.
+
+#### Node configurations
+  - [ ] `minimum_gas_prices`
+  - [ ] Check with Hypha about any other chain-specific params
+
+--------------
+
+### On-chain Proposal Submission
 
 When you make your proposal, please let us know well in advance. The current voting period is five minutes, which means we’ll need to vote right after you submit your proposal. We recommend submitting the proposal together with us on a call.
 
