@@ -4,8 +4,11 @@
 | --------------- | ----------------- | ------------------------------------------------------------------------------------- |
 | ~May     2023   | Consumer addition | Consumer chain `stride-1` transitions from sovereign to RS-secured                     |
 | ~May     2023   | Consumer addition | Consumer chain `duality-1` is created and relayer started                              |
-| April 12 2023   | Consumer removal  | Consumer chain `Rehearsal-1` is removed via governance proposal                        |
-| April 11 2023   | Consumer addition | Consumer chain `Rehearsal-1` is created and relayer started                            |
+| April 18 2023   | Consumer addition | Consumer chain `neutron-rehearsal-final-1` is created and relayer started              |
+| April 2023      | Consumer removal  | Consumer chain `neutron-rehearsal-fix-1` is removed via governance proposal            |
+| April 14 2023   | Consumer removal  | ✅ Consumer chain `neutron-rehearsal-1` is removed via governance proposal             |
+| April 13 2023   | Consumer addition | ✅ Consumer chain `neutron-rehearsal-fix-1` is created and relayer started             |
+| April 11 2023   | Consumer addition | ✅ Consumer chain `neutron-rehearsal-1` is created and relayer started                 |
 | April 4  2023   | Consumer upgrade  | ✅ Consumer chain `baryon-1` is upgraded via consumer chain governance                 |
 | March 29 2023   | Consumer removal  | ✅ Consumer chain `removeme` is removed via governance proposal                        |
 | March 28 2023   | Consumer addition | ✅ Consumer chain `removeme` is created and relayer started                            |
