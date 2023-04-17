@@ -19,7 +19,7 @@ This testnet includes the following:
 ### Live Chains
 
 * Provider: [`provider`](/replicated-security/provider/README.md)
-* Consumer: [`baryon-1`](/replicated-security/baryon-1/README.md)
+* Consumer: [`neutron-rehearsal-fix-1`](/replicated-security/neutron-rehearsal-fix-1/README.md)
 
 ### Stopped Chains
 
@@ -31,7 +31,7 @@ This testnet includes the following:
 * Consumer: [`noble-1`](/replicated-security/noble-1/README.md)
 * Consumer: [`removeme`](/replicated-security/removeme/README.md)
 * Consumer: [`neutron-rehearsal-1`](/replicated-security/neutron-rehearsal-1/README.md)
-* Consumer: [`neutron-rehearsal-fix-1`](/replicated-security/neutron-rehearsal-fix-1/README.md)
+* Consumer: [`baryon-1`](/replicated-security/baryon-1/README.md)
 
 ## Upcoming Events
 
