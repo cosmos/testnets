@@ -1,9 +1,7 @@
 
 # `baryon-1` Chain Details
 
-> Status: **[LIVE](https://explorer.rs-testnet.polypore.xyz/baryon-1/blocks)**
-
-> Please be aware that state sync is not working at the time (new nodes must sync from genesis). This will be fixed in an upcoming `baryon-1` upgrade.
+> Status: **STOPPED**
 
 The `baryon-1` chain will be launched as a Neutron persistent chain to test Interchain Security functionality.
 
