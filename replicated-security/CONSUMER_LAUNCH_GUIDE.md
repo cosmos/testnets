@@ -68,7 +68,7 @@ See the `slasher` chain [page](./slasher) for reference.
  - [ ] consumer addition proposal
  - [ ] bash script
 
-We recommend choosing a `chain_id` with the prefix `-1`, even if it's a subsequent test of the same chain, e.g. `testchain-second-rehearsal-1`.
+We recommend choosing a `chain_id` with the suffix `-1`, even if it's a subsequent test of the same chain, e.g. `testchain-second-rehearsal-1`.
 
 #### Binary checksum validation
  - [ ] `shasum -a 256 <binary>` matches the checksum in the proposal
