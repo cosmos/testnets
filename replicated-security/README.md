@@ -11,15 +11,19 @@ This testnet includes the following:
 
 ## Status
 
+#### Next consumer chain launch: Neutron
+
 > Note that there will be three directories for different Neutron rehearsal chains:
 > * `neutron-rehearsal-1` (stopped)
 > * [`neutron-rehearsal-fix-1`](/replicated-security/neutron-rehearsal-fix-1/) (live)
-> * `neutron-rehearsal-final-1` (scheduled, chain ID subject to change)
+> * [`pion-1`](/replicated-security/pion-1) (live)
+>   * This is Neutron's final rehearsal chain which will replace baryon-1 as new persistent chain.
 
 ### Live Chains
 
 * Provider: [`provider`](/replicated-security/provider/README.md)
 * Consumer: [`neutron-rehearsal-fix-1`](/replicated-security/neutron-rehearsal-fix-1/README.md)
+* Consumer: [`pion-1`](/replicated-security/pion-1/README.md)
 
 ### Stopped Chains
 
