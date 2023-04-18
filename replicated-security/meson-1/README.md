@@ -97,6 +97,6 @@ You should see the following:
 name: neutron
 server_name: neutrond
 version: 0.4.2
-commit: 38f81fa3c3a6664daa82c4b321240f2e9c6d9251
+commit: 8e8096053db83555495e07302cd951c60c6144d3
 
 ``` 
