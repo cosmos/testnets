@@ -27,11 +27,11 @@ GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/me
 # Install wget and jq
 sudo apt-get install curl jq wget -y
 
-# Install go 1.19.4
+# Install go 1.19.8
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
-wget https://go.dev/dl/go1.19.4.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.19.4.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.19.8.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.19.8.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
 # Install neutrond binary

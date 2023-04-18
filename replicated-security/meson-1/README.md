@@ -65,7 +65,7 @@ The following state sync node serve snapshots every 1000 blocks:
 | Name               | Version  |
 |--------------------|----------|
 | Neutron            | v0.4.2   |
-| Go                 | > 1.18   |
+| Go                 | 1.19.8   |
 
 The scripts provided in this repo will install Neutron and set up a Cosmovisor service with the auto-download feature enabled on your machine.
 
