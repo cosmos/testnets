@@ -92,5 +92,5 @@ Look for the bytes string among the validator signatures in the "Last Commit" se
 You can also run this command to query the latest block for your signature:
 
 ```sh
-<consumer binary> q block | jq '.block.last_commit_signatures' | grep <your byte string>
+<consumer binary> q block | jq '.block.last_commit.signatures' | grep <your byte string>
 ```
