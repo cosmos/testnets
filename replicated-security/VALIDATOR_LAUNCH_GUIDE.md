@@ -10,12 +10,12 @@ To join the Replicated Security testnet as a validator, you will have to run a b
 1. Request funds from the provider chain [faucet](https://faucet.rs-testnet.polypore.xyz).
 1. Join all the live consumer chains currently listed in the [status section](https://github.com/hyphacoop/testnets/tree/split-out-validator-docs/replicated-security#status) contains up-to-date information on live consumer chains and their slashing parameters.
 
-Once you have some tokens in your self-delegation account, you can submit the `create-validator` transaction.
-
 ## Creating a Validator on the Provider Chain
 
+Once you have some tokens in your self-delegation account, you can submit the `create-validator` transaction.
 
 Submit the `create-validator` transaction.
+
 ```bash
 gaiad tx staking create-validator \
 --amount 1000000uatom \
@@ -30,7 +30,8 @@ gaiad tx staking create-validator \
 --from <self-delegation-account>
 ```
 
-You can verify the validator was created in the block explorer, or in the command line:
+You can verify the validator was created in the [block explorer](https://explorer.rs-testnet.polypore.xyz/provider/staking), or in the command line:
+
 ```
 gaiad q staking validators -o json | jq '.validators[].description.moniker'
 ```
