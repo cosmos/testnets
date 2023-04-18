@@ -13,7 +13,7 @@ The `meson-1` chain will be launched as a Neutron persistent chain to test Inter
 * **Genesis file with CCV state:** [meson-1-genesis.json](meson-1-genesis.json)
 
 * **Reference binary**: [neutrond-linux-amd64](./neutrond-linux-amd64)
-* **Binary sha256sum**: `892cd246188228981960c35ef3896c4bf2e0bcad11a3fd57dec436167e60e9d1`
+* **Binary sha256sum**: `c463557529511436c6d865de1a13fd071fac4727d422f7194ddd5f22360821bf`
 * **Genesis file _without CCV state_:** [meson-1-genesis-without-ccv.json](meson-1-genesis-without-ccv.json), verify with `shasum -a 256 meson-1-genesis-without-ccv.json`
 * **SHA256 for genesis file _without CCV state_**: `25f5f1afcfaf26ccbf9b5df674a55ee8c55cc4a8363e648e4f1acac7c7e9f053`
 
