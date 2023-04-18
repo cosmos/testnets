@@ -1,0 +1,19 @@
+{
+    "title": "Neutron meson-1 Chain",
+    "description": "# Launching the meson-1 Chain\r\n\r\nThis is the proposal to create the first persistent consumer chain, \"meson-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/cosmos/testnets/tree/master/replicated-security) repo for additional details.",
+    "chain_id": "meson-1",
+    "initial_height": {
+        "revision_height": 1,
+        "revision_number": 1
+    },
+    "genesis_hash": "50951aa1f83a535988a6f58538e2ae05385ab038289c0c961ed88dc106091573",
+    "binary_hash": "892cd246188228981960c35ef3896c4bf2e0bcad11a3fd57dec436167e60e9d1",
+    "spawn_time": "2023-04-18T16:00:00Z",
+    "blocks_per_distribution_transmission": 1000,
+    "consumer_redistribution_fraction": "0.75",
+    "historical_entries": 10000,
+    "transfer_timeout_period": 1800000000000,
+    "ccv_timeout_period": 2419200000000000,
+    "unbonding_period": 1728000000000000,
+    "deposit": "10000000uatom"
+}
