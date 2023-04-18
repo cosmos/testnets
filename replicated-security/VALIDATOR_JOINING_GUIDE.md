@@ -68,7 +68,7 @@ If you do not wish to reuse the private validator key from your provider chain, 
 
 Read up on how to use [Key Assignment](https://github.com/cosmos/interchain-security/blob/main/docs/docs/features/key-assignment.md).
 
-## Verify that your validator is signing blocks
+## Verify that your validator is signing blocks in the consumer chain
 
 In the [block explorer](https://explorer.rs-testnet.polypore.xyz/provider/staking), you can compare the signatures on a recently-produced block with your validator's signature.
 
