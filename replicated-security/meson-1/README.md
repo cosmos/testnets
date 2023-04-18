@@ -15,13 +15,13 @@ The `meson-1` chain will be launched as a Neutron persistent chain to test Inter
 * **Reference binary**: [neutrond-linux-amd64](./neutrond-linux-amd64)
 * **Binary sha256sum**: `892cd246188228981960c35ef3896c4bf2e0bcad11a3fd57dec436167e60e9d1`
 * **Genesis file _without CCV state_:** [meson-1-genesis-without-ccv.json](meson-1-genesis-without-ccv.json), verify with `shasum -a 256 meson-1-genesis-without-ccv.json`
-* **SHA256 for genesis file _without CCV state_**: `50951aa1f83a535988a6f58538e2ae05385ab038289c0c961ed88dc106091573`
+* **SHA256 for genesis file _without CCV state_**: `25f5f1afcfaf26ccbf9b5df674a55ee8c55cc4a8363e648e4f1acac7c7e9f053`
 
 
 * Genesis file hash
   * The SHA256 is used to verify against the genesis file (without CCV state) that the proposer has made available for review.
   * The `meson-1-genesis-without-ccv.json` file cannot be used to run the chain: it must be updated with the CCV (Cross Chain Validation) state after the spawn time is reached.
-  * The genesis file includes funds for a relayer and a faucet account as well as account with funds for different internal needs, `signed_blocks_window` has been set to `864000`, and `min_signed_per_window` has been set to `5%`.
+  * The genesis file includes funds for a relayer and a faucet account as well as account with funds for different internal needs, `signed_blocks_window` has been set to `2304000`, and `min_signed_per_window` has been set to `5%`.
 * Binary hash
   * The `neutrond-linux-amd64` binary is only provided to verify the SHA256. It was built with Interchain Security release [`v0.4.2`](https://github.com/neutron-org/neutron/releases/tag/v0.4.2). You can generate the binary following the build instructions in that repo or using one of the scripts provided here.
 * Spawn time
