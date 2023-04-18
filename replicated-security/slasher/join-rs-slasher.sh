@@ -1,4 +1,7 @@
 #!/bin/bash
+
+set -ex
+
 # Set up a service to join the slasher chain.
 
 # Configuration
