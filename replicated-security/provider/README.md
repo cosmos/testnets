@@ -115,29 +115,3 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Set `halt-height = 0` in `~/.gaia/config/app.toml`.
 * Replace the `v9.0.0-rc6` binary with the `v9.0.1-rc0` one.
 * Start the service.
-
-## Creating a Validator
-
-> If there are any consumer chains on the testnet, you must be running a node in those as well, or your validator will get jailed due to downtime depending on each consumer chain's `slashing` paramentes.
-
-Once you have some tokens in your self-delegation account, you can submit the `create-validator` transaction.
-
-Submit the `create-validator` transaction.
-```bash
-gaiad tx staking create-validator \
---amount 1000000uatom \
---pubkey "$(gaiad tendermint show-validator)" \
---moniker <your moniker> \
---chain-id provider \
---commission-rate 0.10 \
---commission-max-rate 1.00 \
---commission-max-change-rate 0.1 \
---min-self-delegation 1000000 \
---gas auto \
---from <self-delegation-account>
-```
-
-You can verify the validator was created in the block explorer, or in the command line:
-```
-gaiad q staking validators -o json | jq '.validators[].description.moniker'
-```

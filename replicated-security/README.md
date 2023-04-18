@@ -39,12 +39,7 @@ See the [RS testnet schedule](SCHEDULE.md) for consumer chain launches and other
 
 ## How to Join
 
-To join the Replicated Security testnet, you can run the reference bash script for each of the chains that are currently live.
+See linked documentation to join:
 
-If you want to run a validator, you will need to run a binary for the provider as well as all live consumer chains. One way to do this is as follows:
-
-1. Join the [provider chain](https://github.com/cosmos/testnets/tree/master/replicated-security/provider#how-to-join).
-2. Join all the consumer chains currently online using the same key files as your provider chain node:
-   * [neutron-rehearsal-fix-1](https://github.com/cosmos/testnets/tree/master/replicated-security/neutron-rehearsal-fix-1#how-to-join)
-3. Request funds from the provider chain [faucet](https://faucet.rs-testnet.polypore.xyz).
-4. Create a [validator](https://github.com/cosmos/testnets/tree/master/replicated-security/provider#creating-a-validator).
+* As a [validator](https://github.com/cosmos/testnets/tree/master/replicated-security/VALIDATOR_JOINING_GUIDE.md)
+* As a [new consumer chain](https://github.com/cosmos/testnets/tree/master/replicated-security/CONSUMER_LAUNCH_GUIDE.md)
