@@ -44,6 +44,8 @@ node, granted that the recommended hardware requirements are met. In some cases,
 Port configuration settings can typically be found in the consumer chain's system configuration files, at `~/.<consumer>/config/app.toml` and `~/.<consumer>/config/config.toml`, which are
 initialized as part of installation.
 
+⚠️ Before starting the consumer chain binary, download the updated genesis file from the consumer chain's directory (ex. neutron-rehearsal-fix-1/neutron-rehearsal-fix-1-genesis.json) and overwrite the genesis file in the consumer binary home directory at `~/.<consumer binary>/config/genesis.json`. Ensure you have the genesis file with CCV, which will be uploaded by the consumer chain team after spawn time.
+
 ## Associate the Consumer Chain with your Provider Chain's Validator
 
 You may notice that some consumer chains do not implement the `staking` module, which means there is no way to set up a validator in the conventional way on the consumer chain.
