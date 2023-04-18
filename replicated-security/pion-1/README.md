@@ -16,7 +16,7 @@ The `pion-1` chain will be launched as a Neutron persistent chain to test Interc
 * **Reference binary**: [neutrond-linux-amd64](./neutrond-linux-amd64)
 * **Binary sha256sum**: `c463557529511436c6d865de1a13fd071fac4727d422f7194ddd5f22360821bf`
 * **Genesis file _without CCV state_:** [pion-1-genesis-without-ccv.json](pion-1-genesis-without-ccv.json), verify with `shasum -a 256 pion-1-genesis-without-ccv.json`
-* **SHA256 for genesis file _without CCV state_**: `25f5f1afcfaf26ccbf9b5df674a55ee8c55cc4a8363e648e4f1acac7c7e9f053`
+* **SHA256 for genesis file _without CCV state_**: `052b4dcc4bd95eda99c5c926835a1e5537cd6e61ee5e0e6d825be5d2f90f14f4`
 
 
 * Genesis file hash
