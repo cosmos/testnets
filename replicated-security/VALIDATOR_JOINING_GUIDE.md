@@ -44,7 +44,7 @@ node, granted that the recommended hardware requirements are met. In some cases,
 Port configuration settings can typically be found in the consumer chain's system configuration files, at `~/.<consumer>/config/app.toml` and `~/.<consumer>/config/config.toml`, which are
 initialized as part of installation.
 
-## Associating the Consumer Chain with your Provider Chain's Validator
+## Associate the Consumer Chain with your Provider Chain's Validator
 
 You may notice that some consumer chains do not implement the `staking` module, which means there is no way to set up a validator in the conventional way on the consumer chain.
 
@@ -56,7 +56,7 @@ Within the machine running the provider node, this key is found at `~/.gaia/conf
 
 Copy the contents of this file into a new file on the machine hosting the consumer chain, at `~/.<consumer>/config/priv_validator_key.json`. Upon start, the consumer chain should begin signing blocks with the same validator key as present on the provider.
 
-You can verify that consumer blocks are correctly associated to your validator key by running:
+Your validator is ready to sign blocks when you can see it returned in:
 
 ```sh
 <consumer binary> query tendermint-validator-set | grep "$(<consumer binary> tendermint show-address)"
@@ -67,3 +67,28 @@ You can verify that consumer blocks are correctly associated to your validator k
 If you do not wish to reuse the private validator key from your provider chain, an alternative method is to use multiple keys managed by the Key Assignment feature.
 
 Read up on how to use [Key Assignment](https://github.com/cosmos/interchain-security/blob/main/docs/docs/features/key-assignment.md).
+
+## Verify that your validator is signing blocks
+
+In the [block explorer](https://explorer.rs-testnet.polypore.xyz/provider/staking), you can compare the signatures on a recently-produced block with your validator's signature.
+
+Parse your signature:
+
+```sh
+<consumer binary> keys parse <your validator address>
+```
+
+Example output:
+
+```sh
+human: neutronvalcons
+bytes: AE84D29EC8E3BBCF123B48C702DAA982EEC2830B
+```
+
+Look for the bytes string among the validator signatures in the "Last Commit" section.
+
+You can also run this command to query the latest block for your signature:
+
+```sh
+<consumer binary> q block | jq '.block.last_commit_signatures' | grep <your byte string>
+```
