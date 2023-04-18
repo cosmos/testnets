@@ -2,13 +2,18 @@
 
 This guide is intended for validators that are looking to join the Replicated Security testnet.
 
-## Creating a Validator on the Provider Chain
+## Joining the Provider Chain
 
 To join the Replicated Security testnet as a validator, you will have to run a binary for the provider chain as well as all live consumer chains.
 
-> The [status section](https://github.com/hyphacoop/testnets/tree/split-out-validator-docs/replicated-security#status) contains up-to-date information on live consumer chains and their slashing parameters.
+1. [Join the provider chain](https://github.com/cosmos/testnets/tree/master/replicated-security/provider#how-to-join).
+1. Request funds from the provider chain [faucet](https://faucet.rs-testnet.polypore.xyz).
+1. Join all the live consumer chains currently listed in the [status section](https://github.com/hyphacoop/testnets/tree/split-out-validator-docs/replicated-security#status) contains up-to-date information on live consumer chains and their slashing parameters.
 
 Once you have some tokens in your self-delegation account, you can submit the `create-validator` transaction.
+
+## Creating a Validator on the Provider Chain
+
 
 Submit the `create-validator` transaction.
 ```bash
@@ -36,7 +41,7 @@ Follow the instructions contained in the consumer chain's directory in this repo
 node, granted that the recommended hardware requirements are met. In some cases, if running on the same machine, you may have to override default port configurations to prevent port clashing.
 
 Port configuration settings can typically be found in the consumer chain's system configuration files, at `~/.<consumer>/config/app.toml` and `~/.<consumer>/config/config.toml`, which are
-initialized as part of installation, after running the consumer chain's `join-rs-*.sh` script.
+initialized as part of installation.
 
 ## Associating the Consumer Chain with your Provider Chain's Validator
 
@@ -58,6 +63,6 @@ You can verify that consumer blocks are correctly associated to your validator k
 
 #### Option Two: Use key delegation
 
-If you do not wish to reuse the private validator key from your provider chain, an alternative method is to use the Key Assignment feature.
+If you do not wish to reuse the private validator key from your provider chain, an alternative method is to use multiple keys managed by the Key Assignment feature.
 
 Read up on how to use [Key Assignment](https://github.com/cosmos/interchain-security/blob/main/docs/docs/features/key-assignment.md).
