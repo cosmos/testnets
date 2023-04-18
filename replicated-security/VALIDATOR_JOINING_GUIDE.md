@@ -1,4 +1,4 @@
-# Validator Launch Process
+# Validator Joining Process
 
 This guide is intended for validators that are looking to join the Replicated Security testnet.
 
@@ -8,7 +8,7 @@ To join the Replicated Security testnet as a validator, you will have to run a b
 
 1. [Join the provider chain](https://github.com/cosmos/testnets/tree/master/replicated-security/provider#how-to-join).
 1. Request funds from the provider chain [faucet](https://faucet.rs-testnet.polypore.xyz).
-1. Join all the live consumer chains currently listed in the [status section](https://github.com/hyphacoop/testnets/tree/split-out-validator-docs/replicated-security#status) contains up-to-date information on live consumer chains and their slashing parameters.
+1. Join all the live consumer chains currently listed in the [status section](https://github.com/hyphacoop/testnets/tree/split-out-validator-docs/replicated-security#status).
 
 ## Creating a Validator on the Provider Chain
 

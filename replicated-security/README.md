@@ -41,5 +41,5 @@ See the [RS testnet schedule](SCHEDULE.md) for consumer chain launches and other
 
 See linked documentation to join:
 
-* As a [validator](https://github.com/cosmos/testnets/tree/master/replicated-security/VALIDATOR_LAUNCH_GUIDE.md)
+* As a [validator](https://github.com/cosmos/testnets/tree/master/replicated-security/VALIDATOR_JOINING_GUIDE.md)
 * As a [new consumer chain](https://github.com/cosmos/testnets/tree/master/replicated-security/CONSUMER_LAUNCH_GUIDE.md)
