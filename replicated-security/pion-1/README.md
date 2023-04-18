@@ -46,8 +46,8 @@ Seed nodes:
 
 Persistent nodes:
 
-1. `49d75c6094c006b6f2758e45457c1f3d6002ce7a@meson-banana.rs-testnet.polypore.xyz:26656`
-2. `f2520026fb9086f1b2f09e132d209cbe88064ec1@meson-cherry.rs-testnet.polypore.xyz:26656`
+1. `49d75c6094c006b6f2758e45457c1f3d6002ce7a@pion-banana.rs-testnet.polypore.xyz:26656`
+2. `f2520026fb9086f1b2f09e132d209cbe88064ec1@pion-cherry.rs-testnet.polypore.xyz:26656`
 
 The following state sync node serve snapshots every 1000 blocks:
 
