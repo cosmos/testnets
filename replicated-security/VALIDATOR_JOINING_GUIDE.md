@@ -8,7 +8,7 @@ To join the Replicated Security testnet as a validator, you will have to run a b
 
 1. [Join the provider chain](https://github.com/cosmos/testnets/tree/master/replicated-security/provider#how-to-join).
 1. Request funds from the provider chain [faucet](https://faucet.rs-testnet.polypore.xyz).
-1. Join all the live consumer chains currently listed in the [status section](https://github.com/hyphacoop/testnets/tree/split-out-validator-docs/replicated-security#status).
+1. Join all the live consumer chains currently listed in the [status section](https://github.com/cosmos/testnets/tree/master/replicated-security#status).
 
 ## Creating a Validator on the Provider Chain
 
@@ -41,10 +41,10 @@ gaiad q staking validators -o json | jq '.validators[].description.moniker'
 Follow the instructions contained in the consumer chain's directory in this repository. You can choose to run the consumer chain on a different machine, or on the same machine as your provider
 node, granted that the recommended hardware requirements are met. In some cases, if running on the same machine, you may have to override default port configurations to prevent port clashing.
 
-Port configuration settings can typically be found in the consumer chain's system configuration files, at `~/.<consumer>/config/app.toml` and `~/.<consumer>/config/config.toml`, which are
+Port configuration settings can typically be found in the consumer chain's system configuration files, at `~/.$CONSUMER_BINARY/config/app.toml` and `~/.$CONSUMER_BINARY/config/config.toml`, which are
 initialized as part of installation.
 
-⚠️ Before starting the consumer chain binary, download the updated genesis file from the consumer chain's directory (ex. neutron-rehearsal-fix-1/neutron-rehearsal-fix-1-genesis.json) and overwrite the genesis file in the consumer binary home directory at `~/.<consumer binary>/config/genesis.json`. Ensure you have the genesis file with CCV, which will be uploaded by the consumer chain team after spawn time.
+⚠️ Before starting the consumer chain binary, download the updated genesis file from the consumer chain's directory (ex. neutron-rehearsal-fix-1/neutron-rehearsal-fix-1-genesis.json) and overwrite the genesis file in the consumer binary home directory at `~/.$CONSUMER_BINARY/config/genesis.json`. Ensure you have the genesis file with CCV, which will be uploaded by the consumer chain team after spawn time.
 
 ## Associate the Consumer Chain with your Provider Chain's Validator
 
@@ -52,23 +52,29 @@ You may notice that some consumer chains do not implement the `staking` module, 
 
 On the consumer chain, a validator's activity is identified by the private validator key used to sign blocks. There are two mutually exclusive methods for connecting activity on a consumer chain back to a provider.
 
-#### Option One: Reuse your private validator key
+### Option One: Reuse your private validator key
 
 Within the machine running the provider node, this key is found at `~/.gaia/config/priv_validator_key.json`.
 
-Copy the contents of this file into a new file on the machine hosting the consumer chain, at `~/.<consumer>/config/priv_validator_key.json`. Upon start, the consumer chain should begin signing blocks with the same validator key as present on the provider.
+Copy the contents of this file into a new file on the machine hosting the consumer chain, at `~/.$CONSUMER_BINARY/config/priv_validator_key.json`. Upon start, the consumer chain should begin signing blocks with the same validator key as present on the provider.
 
 Your validator is ready to sign blocks when you can see it returned in:
 
 ```sh
-<consumer binary> query tendermint-validator-set | grep "$(<consumer binary> tendermint show-address)"
+$CONSUMER_BINARY query tendermint-validator-set | grep "$($CONSUMER_BINARY tendermint show-address)"
 ```
 
-#### Option Two: Use key delegation
+### Option Two: Use key delegation
 
 If you do not wish to reuse the private validator key from your provider chain, an alternative method is to use multiple keys managed by the Key Assignment feature.
 
 Read up on how to use [Key Assignment](https://github.com/cosmos/interchain-security/blob/main/docs/docs/features/key-assignment.md).
+
+⚠️ The `AssignConsumerKey` transaction **must be sent to the provider chain before the consumer chain's spawn time**. This ensures that the keys to be used by the consumer chains are recorded as part of the state in the genesis file. If the consumer chain ID is known prior to the on-chain proposal, this transaction can be sent before the proposal goes on-chain.
+
+⚠️ If the `AssignConsumerKey` transaction is not sent before spawn time, the next best time to send it is **after the relayer between the consumer chain and provider chain is established**, i.e. when interchain security is reached. If consumer keys are assigned before the relayer is online, there is a risk that unsigned blocks will be produced; in other words, your validator may miss blocks.
+
+⚠️ Ensure that the `priv_validator_key.json` on the consumer node is different from the key that exists on the provider node.
 
 ## Verify that your validator is signing blocks in the consumer chain
 
@@ -77,7 +83,7 @@ In the [block explorer](https://explorer.rs-testnet.polypore.xyz/provider/stakin
 Parse your signature:
 
 ```sh
-<consumer binary> keys parse <your validator address>
+$CONSUMER_BINARY keys parse $($CONSUMER_BINARY tendermint show-address)
 ```
 
 Example output:
@@ -87,10 +93,14 @@ human: neutronvalcons
 bytes: AE84D29EC8E3BBCF123B48C702DAA982EEC2830B
 ```
 
-Look for the bytes string among the validator signatures in the "Last Commit" section.
-
-You can also run this command to query the latest block for your signature:
+To just grab the byte string:
 
 ```sh
-<consumer binary> q block | jq '.block.last_commit.signatures' | grep <your byte string>
+$CONSUMER_BINARY keys parse $($CONSUMER_BINARY tendermint show-address) --output json | jq '.bytes'
+```
+
+Query the latest block for your signature:
+
+```sh
+$CONSUMER_BINARY q block | jq '.block.last_commit.signatures' | grep <your byte string>
 ```
