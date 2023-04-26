@@ -70,9 +70,11 @@ If you do not wish to reuse the private validator key from your provider chain, 
 
 Read up on how to use [Key Assignment](https://github.com/cosmos/interchain-security/blob/main/docs/docs/features/key-assignment.md).
 
-⚠️ The `AssignConsumerKey` transaction **must be sent to the provider chain before the consumer chain's spawn time**. This ensures that the keys to be used by the consumer chains are recorded as part of the state in the genesis file. If the consumer chain ID is known prior to the on-chain proposal, this transaction can be sent before the proposal goes on-chain.
+⚠️ The `AssignConsumerKey` transaction **must be sent to the provider chain before the consumer chain's spawn time** if you want to start signing blocks as soon as the chain starts. This ensures that the key to be used by that consumer chain is recorded as part of the state in the genesis file. If the consumer chain ID is known prior to the on-chain proposal, this transaction can be sent before the proposal goes on-chain.
 
-⚠️ If the `AssignConsumerKey` transaction is not sent before spawn time, the next best time to send it is **after the relayer between the consumer chain and provider chain is established**, i.e. when interchain security is reached. If consumer keys are assigned before the relayer is online, there is a risk that unsigned blocks will be produced; in other words, your validator may miss blocks.
+⚠️ If the `AssignConsumerKey` transaction is sent after spawn time, the key will not be assigned until the consumer chain is interchain secured (i.e., after the chain starts and the relayer sets up a Cross-Chain Validation channel). This means your validator may miss all blocks produced before then.
+
+⚠️ The `AssignConsumerKey` transaction can be sent after the consumer chain is interchain secured.
 
 ⚠️ Ensure that the `priv_validator_key.json` on the consumer node is different from the key that exists on the provider node.
 
