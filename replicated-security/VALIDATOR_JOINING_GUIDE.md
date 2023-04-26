@@ -72,9 +72,7 @@ Read up on how to use [Key Assignment](https://github.com/cosmos/interchain-secu
 
 ⚠️ The `AssignConsumerKey` transaction **must be sent to the provider chain before the consumer chain's spawn time** if you want to start signing blocks as soon as the chain starts. This ensures that the key to be used by that consumer chain is recorded as part of the state in the genesis file. If the consumer chain ID is known prior to the on-chain proposal, this transaction can be sent before the proposal goes on-chain.
 
-⚠️ If the `AssignConsumerKey` transaction is sent after spawn time, the key will not be assigned until the consumer chain is interchain secured (i.e., after the chain starts and the relayer sets up a Cross-Chain Validation channel). This means your validator may miss all blocks produced before then.
-
-⚠️ The `AssignConsumerKey` transaction can be sent after the consumer chain is interchain secured.
+⚠️ If the `AssignConsumerKey` transaction is sent after spawn time, it will not take effect until the consumer chain is interchain secured (after the chain starts and the relayer sets up a Cross-Chain Validation channel).
 
 ⚠️ Ensure that the `priv_validator_key.json` on the consumer node is different from the key that exists on the provider node.
 
@@ -95,7 +93,7 @@ human: neutronvalcons
 bytes: AE84D29EC8E3BBCF123B48C702DAA982EEC2830B
 ```
 
-To just grab the byte string:
+To grab only the byte string:
 
 ```sh
 $CONSUMER_BINARY keys parse $($CONSUMER_BINARY tendermint show-address) --output json | jq '.bytes'
