@@ -36,9 +36,9 @@ For more information regarding the consumer chain creation process, see [CCV: Ov
 
 Endpoints are exposed as subdomains for the sentry and snapshot nodes (described below) as follows:
 
-* `https://rest-palvus.pion-1.ntrn.tech`
-* `https://rpc-palvus.pion-1.ntrn.tech`
-* `http://grpc-palvus.pion-1.ntrn.tech`
+* `https://rest-palvus.pion-1.ntrn.tech:443`
+* `https://rpc-palvus.pion-1.ntrn.tech:443`
+* `http://grpc-palvus.pion-1.ntrn.tech:80`
 
 Seed nodes:
 
