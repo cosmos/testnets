@@ -36,9 +36,9 @@ For more information regarding the consumer chain creation process, see [CCV: Ov
 
 Endpoints are exposed as subdomains for the sentry and snapshot nodes (described below) as follows:
 
-* `https://rest-lb.pion-1.ntrn.tech`
-* `https://rpc-lb.pion-1.ntrn.tech`
-* `http://grpc-lb.pion-1.ntrn.tech`
+* `https://rest-palvus.pion-1.ntrn.tech:443`
+* `https://rpc-palvus.pion-1.ntrn.tech:443`
+* `http://grpc-palvus.pion-1.ntrn.tech:80`
 
 Seed nodes:
 
@@ -51,7 +51,7 @@ Persistent nodes:
 
 The following state sync node serve snapshots every 1000 blocks:
 
-1. `https://rpc-lb.pion-1.ntrn.tech:443`
+1. `https://rpc-palvus.pion-1.ntrn.tech:443`
 
 ## How to Join
 
@@ -66,7 +66,7 @@ The following state sync node serve snapshots every 1000 blocks:
 | Name               | Version  |
 |--------------------|----------|
 | Neutron            | v0.4.2   |
-| Go                 | 1.19.8   |
+| Go                 | > v1.20  |
 
 The scripts provided in this repo will install Neutron and set up a Cosmovisor service with the auto-download feature enabled on your machine.
 
