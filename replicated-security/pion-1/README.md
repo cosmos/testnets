@@ -1,4 +1,4 @@
-# Please use go version 1.19.8 to compile binaries!!
+# Please use go version >1.20 to compile binaries!!
 
 # `pion-1` Chain Details
 
@@ -51,7 +51,7 @@ Persistent nodes:
 
 The following state sync node serve snapshots every 1000 blocks:
 
-1. `https://rpc-palvus.pion-1.ntrn.tech:443`
+1. `http://pion.rs-testnet.polypore.xyz:26657`
 
 ## How to Join
 
@@ -66,7 +66,7 @@ The following state sync node serve snapshots every 1000 blocks:
 | Name               | Version  |
 |--------------------|----------|
 | Neutron            | v0.4.2   |
-| Go                 | > v1.20  |
+| Go                 | >1.20    |
 
 The scripts provided in this repo will install Neutron and set up a Cosmovisor service with the auto-download feature enabled on your machine.
 
