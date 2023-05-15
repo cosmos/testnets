@@ -16,5 +16,5 @@ Here is a tentative schedule of events for each week:
 | --- | ---------------- |
 | Week prior | <li>Development team makes target binary available for testing</li> <li>Hypha runs the target binary on local testnets and runs some exploratory tests</li> |
 | Monday | By 16:00 UTC Hypha announces scope of the week’s tests |
-| Wednesday | 14:00 UTC Rehearsal takes place on testnet |
+| Wednesday | 15:00 UTC Rehearsal takes place on testnet |
 | Thursday | <li>Optional retrospective with development teams</li> <li>Hypha publishes rehearsal summary document</li> |
