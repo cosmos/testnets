@@ -46,4 +46,3 @@ Support
 Please don’t hesitate to ask for help.  Key to doing this well, is for as many validators as possible to halt at the same time.  We’re on standby to help with the halt height setup. 
 
 Before the time of the upgrade, please monitor the Interchain Security `#announcements` channel on Cosmos Discord, and be sure to be in`#replicated-security` channel where you can get support for the upgrade. 
-Please reach out to the Discord admins if you’re not already in the #cosmos-hub-validators-verified channel.
