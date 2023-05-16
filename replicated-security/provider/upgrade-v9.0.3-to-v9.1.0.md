@@ -2,7 +2,7 @@
 
 We will be upgrading the provider chain on **Wednesday, May 17 2023**. This upgrade has already been applied on mainnet as an emergency upgrade.
 
-* Block height: 1538100
+* Block height: 1534600
 * Golang version: 1.18.x
 
 ## ❗Halt height settings
@@ -20,7 +20,7 @@ If you use this method, you MUST restart the node for the halt-height to be acti
 
 halt and shutdown that can be used to assist upgrades and testing.
 ```
-halt-height = 1538100
+halt-height = 1534600
 ```
 
 #### Option 2: gaiad start
@@ -28,7 +28,7 @@ halt-height = 1538100
 Gaiad start example:
 
 ```
-gaiad start --halt-height 1538100
+gaiad start --halt-height 1534600
 ```
 ## ❗Avoiding double signing errors
 
