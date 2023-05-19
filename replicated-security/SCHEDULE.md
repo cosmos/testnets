@@ -4,7 +4,7 @@
 | --------------- | ----------------- | -------------------------------------------------------------------------------------- |
 | ~May     2023   | Consumer addition | Consumer chain `stride-1` transitions from sovereign to RS-secured                     |
 | May 2023        | Consumer upgrade  | Consumer chain `pion-1` to be upgraded to v1.0.1                                       |
-| May 24 2023     | Consumer addition | Consumer chain `duality-rehearsal-1` is created and relayer started                    |
+| May 31 2023     | Consumer addition | Consumer chain `duality-rehearsal-1` is created and relayer started                    |
 | May 24 2023     | Major upgrade     | Provider chain upgraded to v10 via governance proposal                                 |
 | May 17 2023     | Minor upgrade     | ✅ Provider chain upgraded to v9.1.0                                                   |
 | May 3    2023   | Consumer upgrade  | ✅ Consumer chain `pion-1` upgraded to v1.0.0-rc1                                      |
