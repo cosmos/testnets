@@ -6,7 +6,7 @@
 
 | Date        | Testnet plan                                                                                                                       |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| May 24 2023 | ~14:00 UTC: v10 upgrade ([Gaia v10.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v10.0.0-rc0)) is live on the testnet |
+| May 24 2023 | ✅ [Gaia v10.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v10.0.0-rc0) is live on the testnet |
 | May 24 2023 | ✅ Submit and pass v10 software upgrade [proposal](https://explorer.theta-testnet.polypore.xyz/proposals/167)                                                                          |
 
 * **Version before upgrade**: `v9.0.3`
@@ -15,7 +15,8 @@
 ### Upgrade details
 
 * Upgrade height: `16117530` 
-* Upgrade time: `~14:00 UTC`
+* Upgrade time: `2023-05-24 13:59:49 UTC`
+  * The upgrade took three minutes, and block `16117532` was indexed at `14:03:19 UTC`
 
 ## v9-Lambda
 
