@@ -1,13 +1,30 @@
 # Scheduled Upgrades 🗓️ 
 
+## v10
+
+### Schedule
+
+| Date        | Testnet plan                                                                                                                       |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| May 24 2023 | ~14:00 UTC: v9-Lambda upgrade ([Gaia v10.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v10.0.0-rc0)) is live on the testnet |
+| May 24 2023 | ✅ Submit and pass v10 software upgrade [proposal](https://explorer.theta-testnet.polypore.xyz/proposals/167)                                                                          |
+
+* **Version before upgrade**: `v9.0.3`
+* **Version after upgrade**: `v10.0.0-rc0`
+
+### Upgrade details
+
+* Upgrade height: `16117530` 
+* Upgrade time: `~14:00 UTC`
+
 ## v9-Lambda
 
 ### Schedule
 
-| Date | Testnet plan                             |
-|------|------------------------------------------|
-| February 08 2023 | ✅ v9-Lambda upgrade ([Gaia v9.0.0-rc3](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc3)) is live on the testnet       |
-| February 07 2023 | ✅ Submit and pass v9-Lambda software upgrade [proposal](https://explorer.theta-testnet.polypore.xyz/proposals/115) |
+| Date             | Testnet plan                                                                                                           |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| February 08 2023 | ✅ v9-Lambda upgrade ([Gaia v9.0.0-rc3](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc3)) is live on the testnet |
+| February 07 2023 | ✅ Submit and pass v9-Lambda software upgrade [proposal](https://explorer.theta-testnet.polypore.xyz/proposals/115)     |
 
 * **Version before upgrade**: `v8.0.0`
 * **Version after upgrade**: `v9.0.0-rc3`
@@ -27,10 +44,10 @@
 
 ### Schedule
 
-| Date | Testnet plan                             |
-|------|------------------------------------------|
-| January 20 2023 | ✅ v8-Rho upgrade ([Gaia v8.0.0-rc3](https://github.com/cosmos/gaia/releases/tag/v8.0.0-rc3)) is live on the testnet       |
-| January 18 2023 | ✅ Submit and pass v8-Rho software upgrade [proposal](https://explorer.theta-testnet.polypore.xyz/proposals/112) |
+| Date            | Testnet plan                                                                                                        |
+| --------------- | ------------------------------------------------------------------------------------------------------------------- |
+| January 20 2023 | ✅ v8-Rho upgrade ([Gaia v8.0.0-rc3](https://github.com/cosmos/gaia/releases/tag/v8.0.0-rc3)) is live on the testnet |
+| January 18 2023 | ✅ Submit and pass v8-Rho software upgrade [proposal](https://explorer.theta-testnet.polypore.xyz/proposals/112)     |
 
 * **Version before upgrade**: `v7.1.0`
 * **Version after upgrade**: `v8.0.0-rc3`
@@ -51,7 +68,7 @@
 ### Schedule
 
 | Date          | Testnet plan                                                                                                        |
-|---------------|---------------------------------------------------------------------------------------------------------------------|
+| ------------- | ------------------------------------------------------------------------------------------------------------------- |
 | March 17 2022 | ✅  Theta upgrade ([Gaia v7.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v7.0.0-rc0)) is live on the testnet |
 | March 16 2022 | ✅  Voting ends                                                                                                      |
 | March 16 2022 | ✅  Submit v7-Theta software [upgrade proposal](https://testnet.cosmos.bigdipper.live/proposals/66)                  |
