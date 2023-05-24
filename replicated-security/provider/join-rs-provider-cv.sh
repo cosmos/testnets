@@ -16,7 +16,8 @@ NODE_KEY_FILE=~/node_key.json
 NODE_HOME=~/.gaia
 NODE_MONIKER=provider
 SERVICE_NAME=cv-provider
-CHAIN_BINARY_URL='https://github.com/cosmos/gaia/releases/download/v9.0.3/gaiad-v9.0.3-linux-amd64'
+GAIA_VERSION=v10.0.0
+CHAIN_BINARY_URL=https://github.com/cosmos/gaia/releases/download/$GAIA_VERSION/gaiad-$GAIA_VERSION-linux-amd64
 STATE_SYNC=true
 # ***
 
@@ -31,11 +32,11 @@ SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_2"
 # Install wget and jq
 sudo apt-get install curl jq wget -y
 
-# Install go 1.18.5
+# Install go 1.20
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
-wget https://go.dev/dl/go1.18.5.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.18.5.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.20.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
 # Install Gaia binary
@@ -54,7 +55,7 @@ chmod +x $HOME/go/bin/$CHAIN_BINARY
 # rm -rf gaia
 # git clone https://github.com/cosmos/gaia.git
 # cd gaia
-# git checkout v9.0.3
+# git checkout $GAIA_VERSION
 # make install
 
 export PATH=$PATH:$HOME/go/bin
