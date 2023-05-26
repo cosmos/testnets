@@ -1,7 +1,7 @@
 {
     "title": "Create the duality chain",
-    "description": "# Launching the duality-1 Chain\r\n\r\nThis is the proposal to create the first persistent duality chain, \"duality-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/cosmos/testnets/tree/master/replicated-security/duality-1/) repo for additional details.",
-    "chain_id": "duality-1",
+    "description": "# Launching the duality-rehearsal-1 Chain\r\n\r\nThis is the proposal to create the first persistent duality chain, \"duality-rehearsal-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/cosmos/testnets/tree/master/replicated-security/duality-rehearsal-1/) repo for additional details.",
+    "chain_id": "duality-rehearsal-1",
     "initial_height": {
         "revision_height": 1,
         "revision_number": 1

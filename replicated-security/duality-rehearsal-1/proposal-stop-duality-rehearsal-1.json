@@ -1,0 +1,7 @@
+{
+    "title": "Stop the duality chain",
+    "description": "We have successfully tested the duality chain on the provider chain, we will stop the \"duality-rehearsal-1\" chain now.",
+    "chain_id": "duality-rehearsal-1",
+    "stop_time": "2023-06-7T18:30.000000Z",
+    "deposit": "10000000uatom"
+}

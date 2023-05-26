@@ -12,12 +12,12 @@ set -ex
 PRIV_VALIDATOR_KEY_FILE=~/priv_validator_key.json
 NODE_KEY_FILE=~/node_key.json
 NODE_HOME=~/.duality
-NODE_MONIKER=duality-1
+NODE_MONIKER=duality-rehearsal-1
 SERVICE_NAME=cv-duality
 # ***
 
 CHAIN_BINARY='dualityd'
-CHAIN_ID=duality-1
+CHAIN_ID=duality-rehearsal-1
 PERSISTENT_PEERS="b7d0bd260fca7a5a19c7631b15f6068891faa60e@duality-apple.rs-testnet.polypore.xyz:26656"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.

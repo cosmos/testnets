@@ -1,6 +1,6 @@
 {
   "genesis_time": "2023-05-31T18:30:00Z",
-  "chain_id": "duality-1",
+  "chain_id": "duality-rehearsal-1",
   "initial_height": "1",
   "consensus_params": {
     "block": {

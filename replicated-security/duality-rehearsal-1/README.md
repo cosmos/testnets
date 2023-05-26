@@ -1,25 +1,25 @@
 
 # `duality` Chain Details
 
-The `duality-1` chain will be launched as a Neutron persistent chain to test Interchain Security functionality.
+The `duality-rehearsal-1` chain will be launched as a Neutron persistent chain to test Interchain Security functionality.
 
-* **Chain-ID**: `duality-1`
+* **Chain-ID**: `duality-rehearsal-1`
 * **minimum-gas-prices**: ``
 * **timeout_commit**: `2s`
 * **Spawn time**: `2023-05-31T18:30:00Z`
 * **GitHub repo**: [duality-labs/duality](https://github.com/duality-labs/duality.git)
 * **Release**: [`v0.2.2`](https://github.com/duality-labs/duality/releases/tag/v0.2.2)
-<!-- * **Genesis file with CCV state:** [duality-1-genesis.json](duality-1-genesis.json) -->
+<!-- * **Genesis file with CCV state:** [duality-rehearsal-1-genesis.json](duality-rehearsal-1-genesis.json) -->
 
 * **Reference binary**: [dualityd-linux-amd64](./dualityd-linux-amd64)
 * **Binary sha256sum**: `054b8cf641d7e9877048896ebe08343c1e95f6a8e7c3a0be044b91401f558099`
-* **Genesis file _without CCV state_:** [duality-1-genesis-without-ccv.json](duality-1-genesis-without-ccv.json), verify with `shasum -a 256 duality-1-genesis-without-ccv.json`
+* **Genesis file _without CCV state_:** [duality-rehearsal-1-genesis-without-ccv.json](duality-rehearsal-1-genesis-without-ccv.json), verify with `shasum -a 256 duality-rehearsal-1-genesis-without-ccv.json`
 * **SHA256 for genesis file _without CCV state_**: `f11efd315b7ef51ec9b28dc65e65c7d48280811823f718f4c13f5512a40ce99f`
 
 
 * Genesis file hash
   * The SHA256 is used to verify against the genesis file (without CCV state) that the proposer has made available for review.
-  * The `duality-1-genesis-without-ccv.json` file cannot be used to run the chain: it must be updated with the CCV (Cross Chain Validation) state after the spawn time is reached.
+  * The `duality-rehearsal-1-genesis-without-ccv.json` file cannot be used to run the chain: it must be updated with the CCV (Cross Chain Validation) state after the spawn time is reached.
   * The genesis file includes funds for a relayer and a faucet account as well as account with funds for different internal needs, `signed_blocks_window` has been set to `864000`, and `min_signed_per_window` has been set to `5%`.
 * Binary hash
   * The `dualityd-linux-amd64` binary is only provided to verify the SHA256. It was built with Interchain Security release [`v1.2.0-multiden`](https://github.com/cosmos/interchain-security/releases/tag/v1.2.0-multiden). You can generate the binary following the build instructions in that repo or using one of the scripts provided here.
@@ -65,8 +65,8 @@ The scripts provided in this repo will install Duality and set up a Cosmovisor s
 
 The script provided in this repo will install `dualityd` and set up a Cosmovisor service on your machine. 
 
-Run script provided to set up a `duality-1` service:
-* `join-rs-duality-1.sh` will create a `duality-1` service with `cosmovisor` support.
+Run script provided to set up a `duality-rehearsal-1` service:
+* `join-rs-duality-rehearsal-1.sh` will create a `duality-rehearsal-1` service with `cosmovisor` support.
 * Script must be run either as root or from a sudoer account.
 * Script will attempt to build a binary from the [duality-labs/duality] repo.
 
