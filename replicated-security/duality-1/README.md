@@ -11,7 +11,7 @@ The `duality-1` chain will be launched as a Neutron persistent chain to test Int
 * **Release**: [`v0.2.2`](https://github.com/duality-labs/duality/releases/tag/v0.2.2)
 <!-- * **Genesis file with CCV state:** [duality-1-genesis.json](duality-1-genesis.json) -->
 
-* **Reference binary**: [dualitydd-linux-amd64](./dualityd-linux-amd64)
+* **Reference binary**: [dualityd-linux-amd64](./dualityd-linux-amd64)
 * **Binary sha256sum**: `054b8cf641d7e9877048896ebe08343c1e95f6a8e7c3a0be044b91401f558099`
 * **Genesis file _without CCV state_:** [duality-1-genesis-without-ccv.json](duality-1-genesis-without-ccv.json), verify with `shasum -a 256 duality-1-genesis-without-ccv.json`
 * **SHA256 for genesis file _without CCV state_**: `f11efd315b7ef51ec9b28dc65e65c7d48280811823f718f4c13f5512a40ce99f`
