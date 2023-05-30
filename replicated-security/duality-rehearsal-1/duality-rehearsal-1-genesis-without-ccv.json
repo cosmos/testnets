@@ -64,7 +64,7 @@
         "unbonding_period": "1728000s",
         "soft_opt_out_threshold": "0.05",
         "reward_denoms": [],
-        "provider_reward_denoms": []
+        "provider_reward_denoms": ["uatom"]
       },
       "provider_client_id": "",
       "provider_channel_id": "",

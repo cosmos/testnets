@@ -14,7 +14,7 @@ The `duality-rehearsal-1` chain will be launched as a Neutron persistent chain t
 * **Reference binary**: [dualityd-linux-amd64](./dualityd-linux-amd64)
 * **Binary sha256sum**: `054b8cf641d7e9877048896ebe08343c1e95f6a8e7c3a0be044b91401f558099`
 * **Genesis file _without CCV state_:** [duality-rehearsal-1-genesis-without-ccv.json](duality-rehearsal-1-genesis-without-ccv.json), verify with `shasum -a 256 duality-rehearsal-1-genesis-without-ccv.json`
-* **SHA256 for genesis file _without CCV state_**: `f11efd315b7ef51ec9b28dc65e65c7d48280811823f718f4c13f5512a40ce99f`
+* **SHA256 for genesis file _without CCV state_**: `2d4e4764bdde8b0215c265c4602e60617f4baaaf7621129e8e455cdd8b13a1c1`
 
 
 * Genesis file hash
@@ -57,7 +57,7 @@ The following state sync node serve snapshots every 1000 blocks:
 | Name               | Version  |
 |--------------------|----------|
 | Duality            | v0.2.2   |
-| Go                 | > 1.18   |
+| Go                 | v1.18.5  |
 
 The scripts provided in this repo will install Duality and set up a Cosmovisor service with the auto-download feature enabled on your machine.
 
