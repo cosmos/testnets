@@ -6,7 +6,7 @@ The `duality-rehearsal-1` chain will be launched as a Neutron persistent chain t
 * **Chain-ID**: `duality-rehearsal-1`
 * **minimum-gas-prices**: ``
 * **timeout_commit**: `2s`
-* **Spawn time**: `2023-05-31T18:30:00Z`
+* **Spawn time**: `2023-05-31T15:00:00Z`
 * **GitHub repo**: [duality-labs/duality](https://github.com/duality-labs/duality.git)
 * **Release**: [`v0.2.2`](https://github.com/duality-labs/duality/releases/tag/v0.2.2)
 <!-- * **Genesis file with CCV state:** [duality-rehearsal-1-genesis.json](duality-rehearsal-1-genesis.json) -->
@@ -14,7 +14,7 @@ The `duality-rehearsal-1` chain will be launched as a Neutron persistent chain t
 * **Reference binary**: [dualityd-linux-amd64](./dualityd-linux-amd64)
 * **Binary sha256sum**: `054b8cf641d7e9877048896ebe08343c1e95f6a8e7c3a0be044b91401f558099`
 * **Genesis file _without CCV state_:** [duality-rehearsal-1-genesis-without-ccv.json](duality-rehearsal-1-genesis-without-ccv.json), verify with `shasum -a 256 duality-rehearsal-1-genesis-without-ccv.json`
-* **SHA256 for genesis file _without CCV state_**: `2d4e4764bdde8b0215c265c4602e60617f4baaaf7621129e8e455cdd8b13a1c1`
+* **SHA256 for genesis file _without CCV state_**: `43e2ff09f4047b99109968c87f064761308b191b4d8ff40ae9928fb1b6ab0d6a`
 
 
 * Genesis file hash
@@ -72,7 +72,7 @@ Run script provided to set up a `duality-rehearsal-1` service:
 
 ### Node manual installation
 
-Build and install neutron binary. 
+Build and install the `dualityd` binary. 
 
 ```
 $ git clone -b v0.2.2 https://github.com/duality-labs/duality.git
