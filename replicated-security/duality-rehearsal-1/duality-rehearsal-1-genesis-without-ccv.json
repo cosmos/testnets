@@ -187,7 +187,7 @@
     "slashing": {
       "params": {
         "signed_blocks_window": "864000",
-        "min_signed_per_window": "0.0500000000000000000",
+        "min_signed_per_window": "0.050000000000000000",
         "downtime_jail_duration": "600s",
         "slash_fraction_double_sign": "0.050000000000000000",
         "slash_fraction_downtime": "0.010000000000000000"
