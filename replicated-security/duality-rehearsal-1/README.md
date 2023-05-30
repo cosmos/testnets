@@ -14,7 +14,7 @@ The `duality-rehearsal-1` chain will be launched as a Neutron persistent chain t
 * **Reference binary**: [dualityd-linux-amd64](./dualityd-linux-amd64)
 * **Binary sha256sum**: `054b8cf641d7e9877048896ebe08343c1e95f6a8e7c3a0be044b91401f558099`
 * **Genesis file _without CCV state_:** [duality-rehearsal-1-genesis-without-ccv.json](duality-rehearsal-1-genesis-without-ccv.json), verify with `shasum -a 256 duality-rehearsal-1-genesis-without-ccv.json`
-* **SHA256 for genesis file _without CCV state_**: `43e2ff09f4047b99109968c87f064761308b191b4d8ff40ae9928fb1b6ab0d6a`
+* **SHA256 for genesis file _without CCV state_**: `f689c1e3ca2b28dc1b38547500b452f00ff8a3898d61cc1ac38f7ef13b323970`
 
 
 * Genesis file hash
