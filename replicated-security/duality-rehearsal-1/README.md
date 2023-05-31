@@ -32,13 +32,9 @@ For more information regarding the consumer chain creation process, see [CCV: Ov
 
 ## Endpoints
 
-Endpoints are exposed as subdomains for the sentry and snapshot nodes (described below) as follows:
-
-* TBD
-
 Seed nodes:
 
-1. TBD
+1. `08ec17e86dac67b9da70deb20177655495a55407@duality-seed.rs-testnet.polypore.xyz:26656`
 
 The following state sync node serve snapshots every 1000 blocks:
 
