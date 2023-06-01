@@ -32,8 +32,14 @@ For more information regarding the consumer chain creation process, see [CCV: Ov
 
 ## Endpoints
 
-Seed nodes:
+Endpoints are exposed as subdomains for the sentry and snapshot nodes (described below) as follows:
 
+- `https://rpc.testnet-1.duality.xyz`
+- `https://grpc.testnet-1.duality.xyz`
+- `https://rest.testnet-1.duality.xyz` (or `https://lcd.testnet-1.duality.xyz`)
+
+Seed nodes:
+1. `cebd80328abca02408d1b7199f9b1a835a14aa31@p2p.testnet-1.duality.xyz:26656`
 1. `08ec17e86dac67b9da70deb20177655495a55407@duality-seed.rs-testnet.polypore.xyz:26656`
 
 ## IBC Data
