@@ -18,10 +18,10 @@ SERVICE_NAME=cv-duality
 
 CHAIN_BINARY='dualityd'
 CHAIN_ID=duality-rehearsal-1
-PERSISTENT_PEERS="f2520026fb9086f1b2f09e132d209cbe88064ec1@duality-cherry.rs-testnet.polypore.xyz:26656"
+SEEDS="08ec17e86dac67b9da70deb20177655495a55407@duality-seed.rs-testnet.polypore.xyz:26656"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
-GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/duality/duality-genesis.json
+GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/duality-rehearsal-1/duality-rehearsal-1-genesis.json
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
@@ -53,7 +53,7 @@ $CHAIN_BINARY config chain-id $CHAIN_ID --home $NODE_HOME
 $CHAIN_BINARY config keyring-backend test --home $NODE_HOME
 $CHAIN_BINARY config broadcast-mode block --home $NODE_HOME
 $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
-sed -i -e "/persistent_peers =/ s^= .*^= \"$PERSISTENT_PEERS\"^" $NODE_HOME/config/config.toml
+sed -i -e "/seeds =/ s^= .*^= \"$SEEDS\"^" $NODE_HOME/config/config.toml
 
 # Replace keys
 echo "Replacing keys..."
