@@ -36,9 +36,24 @@ Seed nodes:
 
 1. `08ec17e86dac67b9da70deb20177655495a55407@duality-seed.rs-testnet.polypore.xyz:26656`
 
-The following state sync node serve snapshots every 1000 blocks:
+## IBC Data
 
-1. TBD
+### Clients
+
+* `07-tendermint-0`
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `07-tendermint-14`
+
+### Connections
+
+* `connection-0`
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `connection-10`
+
+### Channels
+
+* `channel-0`: consumer port
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-17`
+* `channel-1`: transfer port
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-18`
 
 ## How to Join
 
