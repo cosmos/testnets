@@ -25,7 +25,8 @@ Otherwise you may manually join stride-ics-testnet-1 using these notes:
 * Persistent Peers = `"cd34b9f506a4840d5ea69095403029056862a2e1@stride-direct.testnet-2.stridenet.co:26656"`
 
 * Chain ID: stride-ics-testnet-1
-* Post-upgrade stride binary commit (run with this binary after the upgrade): 17fa2fd7802005a7af09e6d2d0f5126b4bf1e10f
+* Post-upgrade stride binary commit (run with this binary after the upgrade): [`17fa2fd7802005a7af09e6d2d0f5126b4bf1e10f`](https://github.com/Stride-Labs/stride/commit/17fa2fd7802005a7af09e6d2d0f5126b4bf1e10f)
+  * You can also build with [this Docker image](https://hub.docker.com/layers/stridelabs/ics-testnet/stride-17fa/images/sha256-22dbec2b61e6745f0c80b48bebf23a80a8bd279da5b4dd943cbfed8a8d7f5c11?context=repo)
 
 # Launch Sequence
 
