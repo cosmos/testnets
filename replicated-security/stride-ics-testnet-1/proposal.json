@@ -1,0 +1,19 @@
+{
+    "title": "Stride testnet on ICS",
+    "description": "Migrate Stride as a sovereign chain to Stride as a consumer chain.",
+    "chain_id": "stride-ics-testnet-1",
+    "initial_height": {
+        "revision_number": 1,
+        "revision_height": 4903
+    },
+    "genesis_hash": "af79ec5ba3bef6b8525c46ef6a80c4b79ccf41f29c5e3ce304bf94c61a75db39",
+    "binary_hash": "adf9aedd6353801115c1fe77689838ee414793344bd03b4d5caeeb64be1314d1",
+    "spawn_time": "2023-06-07T11:00:00-04:00", 
+    "deposit": "10000001uatom",
+    "consumer_redistribution_fraction": "0.85",
+    "blocks_per_distribution_transmission": 1000,
+    "ccv_timeout_period": 2419200000000000,
+    "transfer_timeout_period": 3600000000000,
+    "historical_entries": 10000,
+    "unbonding_period": 1209600000000000
+}
