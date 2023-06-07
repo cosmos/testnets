@@ -1,10 +1,14 @@
-How will the sovereign -> consumer chain transition work on the Replicated Security testnet?
+# `stride-ics-testnet-1`
+
+Stride's launch on the Replicated Security Testnet will be a little different from previous consumer chain launches. Previous chain launches spawned a new chain from a fresh genesis state, but Stride already exists as a sovereign chain.
+
+### How will the sovereign -> consumer chain transition work on the Replicated Security testnet?
 
 * Stride side: The Stride team is running their own testnet (chain-id: stride-ics-testnet-1). That testnet will perform a software upgrade and at the upgrade height (shortly after the spawn time) it will transition to the provider chain’s validator set.
 * Provider side: There will be a consumer-addition proposal for the stride chain. Shortly after the spawn time, we will receive the CCV state. This CCV state will be used to patch the original stride chain’s genesis file.
 
-What do you need to do to participate in the launch on Wednesday?
-See the attached image for a breakdown of steps you'll need to follow throughout the process. 
+### What do you need to do to participate in the launch on Wednesday?
+See the table below for a breakdown of steps you'll need to follow throughout the process. 
 
 ## ⚠️  Complete STEP 1 (join Stride testnet with a full node) ASAP ⚠️
 Follow along with Stride's block explorer here: https://ics-explorer.stride.zone/stride 
@@ -14,17 +18,16 @@ For step 1, you can try using Stride’s joining script here: https://github.com
 Otherwise you may manually join stride-ics-testnet-1 using these notes:
 * Joining instructions: https://github.com/Stride-Labs/mainnet/tree/ics-testnet/ics-testnet
 * Genesis file: https://raw.githubusercontent.com/Stride-Labs/mainnet/ics-testnet/ics-testnet/genesis.json
-* Pre-transition stride binary commit: 3aeb075f36cb12711201a7f17e8b8d856bd99a01
+* Pre-transition stride binary commit: `3aeb075f36cb12711201a7f17e8b8d856bd99a01`
 * Stride’s GitHub repository: https://github.com/stride-Labs/stride
 * Building instructions for stride’s binary: `make install`
-
-
 * Go version: 1.19
+* Persistent Peers = `"cd34b9f506a4840d5ea69095403029056862a2e1@stride-direct.testnet-2.stridenet.co:26656"`
+
 * Chain ID: stride-ics-testnet-1
-* Persistent Peers ="cd34b9f506a4840d5ea69095403029056862a2e1@stride-direct.testnet-2.stridenet.co:26656"
 * Post-upgrade stride binary commit (run with this binary after the upgrade): 17fa2fd7802005a7af09e6d2d0f5126b4bf1e10f
 
-
+# Launch Sequence
 
 | # | When? | Provider side | Stride side |
 | -- | --- | ----- | ---- |
