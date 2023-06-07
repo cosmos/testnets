@@ -1,6 +1,3 @@
-// 20230607111815
-// https://raw.githubusercontent.com/cosmos/testnets/3dea977777dcc427f17cf8dc305a25703dca5aff/replicated-security/stride-ics-testnet-1/genesis-without-ccv.json
-
 {
   "genesis_time": "2023-06-07T08:10:37.610797129Z",
   "chain_id": "stride-ics-testnet-1",
