@@ -436,9 +436,7 @@
         "transfer_timeout_period": "360s",
         "consumer_redistribution_fraction": "0.85",
         "historical_entries": "10000",
-        "unbonding_period": "86400s",
-        "reward_denoms": [],
-        "provider_reward_denoms": []
+        "unbonding_period": "86400s"
       },
       "provider_client_id": "",
       "provider_channel_id": "",
