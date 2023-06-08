@@ -40,3 +40,72 @@ Otherwise you may manually join stride-ics-testnet-1 using these notes:
 | 6 | After spawn time | | Place the newly generated “genesis” file (containing only the ccv state) in the ⚠️ `$HOME/.sovereign/config directory` ⚠️ Stride will provide this.<br><br>Do NOT replace the existing genesis file. |
 | 7 | When the software upgrade height is reached | | At the halt height, your node will halt.<br><br>Please upgrade to the  binary and ensure your genesis file has the CCV state from the provider chain |
 
+# Join Stride Testnet `stride-ics-testnet-1`
+
+Courtesy of Stakecito
+
+```sh
+git clone https://github.com/Stride-Labs/stride.git
+cd stride
+git checkout 3aeb075f36cb12711201a7f17e8b8d856bd99a01
+make install
+strided init stride-node --chain-id stride-ics-testnet-1
+
+# Grab the genesis file
+curl -L https://raw.githubusercontent.com/Stride-Labs/mainnet/ics-testnet/ics-testnet/genesis.json -o $HOME/.stride/config/genesis.json
+```
+
+add 0b3e01c43f733e85b3d3f1a012256c5e19be796c@seed.testnet-2.stridenet.co:26656 as seed in config.toml
+
+start stride node
+node should start catching up.
+Node will panic at block 4899
+stop the node
+
+```sh
+cd $HOME/stride
+
+git checkout 17fa2fd7802005a7af09e6d2d0f5126b4bf1e10f
+
+make install
+```
+
+replace the binary
+
+```sh
+mkdir -p $HOME/.sovereign/config
+
+curl -L https://github.com/cosmos/testnets/raw/master/replicated-security/stride-ics-testnet-1/genesis.json -o $HOME/.sovereign/config/genesis.json
+```
+
+# Transitioning Stride node from non-validator on Stride testnet to validator on consumer chain
+
+Credit to Bosco from Silk Nodes
+
+Download v10 Binary
+```sh
+cd stride
+git pull
+git checkout 17fa2fd7802005a7af09e6d2d0f5126b4bf1e10f
+make install
+
+#Should be v10
+strided version
+```
+
+Make directories in cosmovisor and copy binaries
+```
+mkdir -p $HOME/.stride/cosmovisor/upgrades/v10/bin/
+cp $HOME/go/bin/strided $HOME/.stride/cosmovisor/upgrades/v10/bin/
+```
+
+Download new Sovereign genesis
+```
+mkdir -p $HOME/.sovereign/config/
+wget -O $HOME/.sovereign/config/genesis.json https://cdn.discordapp.com/attachments/1064857924402413600/1116022613966336041/genesis_new.json
+```
+
+Restart the Service
+```
+sudo service stride restart && journalctl -u stride -f -o cat
+```
