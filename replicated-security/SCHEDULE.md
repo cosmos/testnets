@@ -2,6 +2,7 @@
 
 | Date            | Type              | Description                                                                                                                  |
 |-----------------|-------------------|------------------------------------------------------------------------------------------------------------------------------|
+| June 28 2023    | Consumer upgrade  | Consumer chain `duality-rehearsal-1` to be upgraded (version TBC)                                                            |
 | June 21 2023    | Consumer upgrade  | Stride testnet transitions to consumer chain (rehearsal 2)                                                                   |
 | June 14 2023    | Consumer upgrade  | Consumer chain `pion-1` to be upgraded (version TBC)                                                                         |
 | June 7 2023     | Consumer addition | ✅ Stride testnet transitions to consumer chain                                                                               |
