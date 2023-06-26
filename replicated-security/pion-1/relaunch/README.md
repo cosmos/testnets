@@ -54,23 +54,7 @@ The following state sync node serve snapshots every 1000 blocks:
 1. `http://pion.rs-testnet.polypore.xyz:26657`
 
 ## IBC Data
-
-### Clients
-
-* `07-tendermint-0`
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `07-tendermint-13`
-
-### Connections
-
-* `connection-0`
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `connection-8`
-
-### Channels
-
-* `channel-0`: consumer port
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-14`
-* `channel-1`: transfer port
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-16`
+TODO
 
 ## How to Join
 
@@ -119,4 +103,12 @@ server_name: neutrond
 version: 1.0.2-pion-1-upgrade
 commit: bb9d1c2d58dba07620b9ec0a4e32d36b59ef6cb2
 
-``` 
+```
+
+### Troubleshooting
+
+If you see error like this during startup
+
+`Error: maximum number of retries exceeded, last error: rpc error: code = Unknown desc = failed to load state at height 0; version mismatch on immutable IAVL tree; version does not exist. Version has either been pruned, or is for a future block height (latest height: 0): invalid request`
+
+everything you can do is to stop node, reset state (`neutrond tendermint unsafe-reset-all --home ~/.neutrond --keep-addr-book`  ) and start node again.
