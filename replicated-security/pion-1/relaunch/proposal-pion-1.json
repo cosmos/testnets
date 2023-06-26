@@ -1,0 +1,19 @@
+{
+    "title": "Neutron pion-1 Chain",
+    "description": "# Relaunching the pion-1 Chain\r\n\r\nThis is the proposal to relaunch the Neutron consumer chain, \"pion-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/cosmos/testnets/tree/master/replicated-security) repo for additional details.",
+    "chain_id": "pion-1",
+    "initial_height": {
+        "revision_height": 1912979,
+        "revision_number": 1
+    },
+    "genesis_hash": "02a239f8c32829901de97100bfe573518a1193b8923133a43590ff974974989b",
+    "binary_hash": "a1331685f656cca2d7a94283959678a5a3c846aa4a6fa0cd6c4da1534c324ea7",
+    "spawn_time": "2023-06-29T14:30:00Z",
+    "blocks_per_distribution_transmission": 1000,
+    "consumer_redistribution_fraction": "0.75",
+    "historical_entries": 10000,
+    "transfer_timeout_period": 1800000000000,
+    "ccv_timeout_period": 2419200000000000,
+    "unbonding_period": 1728000000000000,
+    "deposit": "10000000uatom"
+}
