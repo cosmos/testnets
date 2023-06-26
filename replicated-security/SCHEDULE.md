@@ -10,7 +10,7 @@
 | June 28 2023    | Consumer addition | Stride testnet transitions to consumer chain (rehearsal 2)                                                                    |
 | June 21 2023    | No testnet event  |                                                                                                                               |
 | June 14 2023    | Consumer upgrade  | ✅ Consumer chain `pion-1` to upgraded to `v1.0.2`                                                                            |
-| June 7 2023     | Consumer addition | ✅ Stride testnet transitions to consumer chain                                                                               |
+| June 7 2023     | Consumer addition | ✅ Stride testnet transitions to consumer chain `stride-ics-testnet-two-1`                                                    |
 | May 31 2023     | Consumer addition | ✅ Consumer chain `duality-rehearsal-1` is created and relayer started                                                        |
 | May 30 2023     | Patch upgrade     | ✅ Provider chain upgraded to v10.0.1                                                                                         |
 | May 24 2023     | Major upgrade     | ✅ Provider chain upgraded to v10.0.0-rc0 via governance [proposal](https://explorer.rs-testnet.polypore.xyz/provider/gov/30) |
