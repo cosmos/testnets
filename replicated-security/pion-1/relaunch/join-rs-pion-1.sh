@@ -22,7 +22,7 @@ SYNC_RPC_1=http://pion.rs-testnet.polypore.xyz:26657
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_1"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
-GENESIS_URL=https://storage.cloud.google.com/neutron-data/pion-1-genesis-without-ccv.json.gz
+GENESIS_URL=https://github.com/neutron-org/cosmos-testnets/raw/feat/pion-1-relaunch/replicated-security/pion-1/relaunch/pion-1-genesis-without-ccv.json.gz
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y

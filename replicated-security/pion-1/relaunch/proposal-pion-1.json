@@ -6,7 +6,7 @@
         "revision_height": 1912979,
         "revision_number": 1
     },
-    "genesis_hash": "02a239f8c32829901de97100bfe573518a1193b8923133a43590ff974974989b",
+    "genesis_hash": "6291227072026b46830a7bcdd6180dca727f10d92fd612cedc07b6d377b0eeea",
     "binary_hash": "a1331685f656cca2d7a94283959678a5a3c846aa4a6fa0cd6c4da1534c324ea7",
     "spawn_time": "2023-06-29T14:30:00Z",
     "blocks_per_distribution_transmission": 1000,
