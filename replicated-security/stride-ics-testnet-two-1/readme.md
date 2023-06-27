@@ -4,7 +4,7 @@ Stride's launch on the Replicated Security Testnet will be a little different fr
 
 ### How will the sovereign -> consumer chain transition work on the Replicated Security testnet?
 
-* Stride side: The Stride team is running their own testnet (chain-id: stride-ics-testnet-two-1). That testnet will perform a software upgrade and at the upgrade height (shortly after the spawn time) it will transition to the provider chain’s validator set.
+* Stride side: The Stride team is running their own testnet (chain-id: `stride-ics-testnet-two-1`). That testnet will perform a software upgrade and at the upgrade height (shortly after the spawn time) it will transition to the provider chain’s validator set.
 * Provider side: There will be a consumer-addition proposal for the stride chain. Shortly after the spawn time, we will receive the CCV state. This CCV state will be used to patch the original stride chain’s genesis file.
 
 ### What do you need to do to participate in the launch on Wednesday?
@@ -15,7 +15,7 @@ Follow along with Stride's block explorer here: https://ics-explorer.stride.zone
 
 For step 1, you can try using Stride’s joining script here: https://github.com/Stride-Labs/mainnet/blob/ics-testnet/ics-testnet/join_ics_testnet.sh 
 
-Otherwise you may manually join stride-ics-testnet-two-1 using these notes:
+Otherwise you may manually join `stride-ics-testnet-two-1` using these notes:
 * Joining instructions: https://github.com/Stride-Labs/mainnet/tree/ics-testnet/ics-testnet
 * Genesis file: https://raw.githubusercontent.com/Stride-Labs/mainnet/ics-testnet/ics-testnet/genesis.json
 * Pre-transition stride binary commit: `a3eff2dc`
@@ -28,7 +28,7 @@ Otherwise you may manually join stride-ics-testnet-two-1 using these notes:
 * Post-upgrade stride binary commit (run with this binary after the upgrade): [`e7a01bcdb0f192cb028638ccd25f02f9f8b73ad4`](https://github.com/Stride-Labs/stride/commit/e7a01bcdb0f192cb028638ccd25f02f9f8b73ad4)
   * You can also build with [this Docker image](https://hub.docker.com/layers/stridelabs/ics-testnet/stride/images/sha256-3268198b39fa9e3b6107f352f49d28c5c78939e1147370b166f848dbd112186e?context=repo)
  
-<details><summary>Detailed steps for joining Stride Testnet</summary>
+<details><summary>Detailed steps for manually joining Stride Testnet</summary>
 <br>
  
  _Courtesy of Stakecito_
@@ -48,24 +48,9 @@ curl -L https://raw.githubusercontent.com/Stride-Labs/mainnet/ics-testnet/ics-te
 * Node will panic at UPGRADE_HEIGHT_TBD
 * Stop the node
 
-```sh
-cd $HOME/stride
-
-git checkout e7a01bcdb0f192cb028638ccd25f02f9f8b73ad4
-
-make install
-```
-
-replace the binary
-
-```sh
-mkdir -p $HOME/.sovereign/config
-
-curl -L https://github.com/cosmos/testnets/raw/master/replicated-security/stride-ics-testnet-two-1/genesis.json -o $HOME/.sovereign/config/genesis.json
-```
 </details>
 
-<details><summary>Detailed steps for transitioning Stride node from non-validator on Stride testnet to validator on consumer chain</summary>
+<details><summary>Detailed steps for transitioning Stride node from Stride testnet to validator on consumer chain</summary>
 <br>
 
 _Thanks to Bosco from Silk Nodes_
