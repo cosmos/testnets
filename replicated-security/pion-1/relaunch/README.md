@@ -32,6 +32,10 @@ The `pion-1` chain will be launched as a Neutron persistent chain to test Interc
 
 For more information regarding the consumer chain creation process, see [CCV: Overview and Basic Concepts](https://github.com/cosmos/ibc/blob/main/spec/app/ics-028-cross-chain-validation/overview_and_basic_concepts.md).
 
+## Configuration
+
+Update app.toml and set `iavl-disable-fastnode = false`. Also you need to disable Rosetta service in the same configuration file.
+
 ## Endpoints
 
 Endpoints are exposed as subdomains for the sentry and snapshot nodes (described below) as follows:
@@ -116,4 +120,4 @@ If you see error like this during startup
 
 `Error: maximum number of retries exceeded, last error: rpc error: code = Unknown desc = failed to load state at height 0; version mismatch on immutable IAVL tree; version does not exist. Version has either been pruned, or is for a future block height (latest height: 0): invalid request`
 
-everything you can do is to stop node, reset state (`neutrond tendermint unsafe-reset-all --home ~/.neutrond --keep-addr-book`  ) and start node again.
+disable Rosetta service in the `app.toml`, reset state (`neutrond tendermint unsafe-reset-all --home ~/.neutrond --keep-addr-book`  ) and start node again.
