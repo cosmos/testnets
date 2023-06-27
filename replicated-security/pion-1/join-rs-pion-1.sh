@@ -11,7 +11,7 @@ NODE_KEY_FILE=${2:-"~/node_key.json"}
 NODE_HOME=~/.neutrond
 NODE_MONIKER=node
 SERVICE_NAME=neutrond
-SERVICE_VERSION="v0.4.2"
+SERVICE_VERSION="v1.0.2-pion-1-upgrade"
 STATE_SYNC=false
 # ***
 
@@ -22,7 +22,7 @@ SYNC_RPC_1=http://pion.rs-testnet.polypore.xyz:26657
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_1"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
-GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/pion-1/pion-1-genesis.json
+GENESIS_URL=https://github.com/neutron-org/cosmos-testnets/raw/feat/pion-1-relaunch/replicated-security/pion-1/relaunch/pion-1-genesis-without-ccv.json.gz
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
@@ -65,7 +65,8 @@ cp $NODE_KEY_FILE $NODE_HOME/config/node_key.json
 
 # Replace genesis file: only after the spawn time is reached
 echo "Replacing genesis file..."
-wget $GENESIS_URL -O genesis.json
+wget $GENESIS_URL -O genesis.json.gz
+gzip -d genesis.json -c > genesis.json
 mv genesis.json $NODE_HOME/config/genesis.json
 
 if $STATE_SYNC ; then
