@@ -23,8 +23,7 @@ Otherwise you may manually join `stride-ics-testnet-two-1` using these notes:
 * Building instructions for stride’s binary: `make install`
 * Go version: 1.19
 * Persistent Peers = `"d747545dbab1eb86caff7ec64fca3b7f2ace07fd@stride-direct.testnet-2.stridenet.co:26656"`
-
-* Chain ID: stride-ics-testnet-two-1
+* Chain ID: `stride-ics-testnet-two-1`
 * Post-upgrade stride binary commit (run with this binary after the upgrade): [`e7a01bcdb0f192cb028638ccd25f02f9f8b73ad4`](https://github.com/Stride-Labs/stride/commit/e7a01bcdb0f192cb028638ccd25f02f9f8b73ad4)
   * You can also build with [this Docker image](https://hub.docker.com/layers/stridelabs/ics-testnet/stride/images/sha256-3268198b39fa9e3b6107f352f49d28c5c78939e1147370b166f848dbd112186e?context=repo)
  
@@ -86,13 +85,14 @@ sudo service stride restart && journalctl -u stride -f -o cat
 </details>
 
 # Launch Sequence
-
-| # | When? | Provider side | Stride side |
-| -- | --- | ----- | ---- |
-| 1 | Now | | Join the Stride testnet `stride-ics-testnet-two-1` with the pre-transition binary (commit hash `a3eff2dc`) as a full node (not validator) and sync to the tip of the chain (link to instructions below). |
-| 2 | Now until software upgrade proposal passes on Stride | | Build (or download) the target (post-transition) Stride binary. <br><br>If you are using Cosmovisor, place place it in Cosmovisor `/upgrades/<upgrade-name>/bin` directory.<br><br>If you are not using Cosmovisor, be ready to manually switch your binary at the upgrade halt height. |
-| 3 | Now until spawn time (15:00 UTC) | Submit assign-consensus-key for stride-ics-testnet-two-1 with the keys on your full node (**note: make sure to do this before spawn time!)** | |
-| 4 | During voting period for  consumer-addition proposal on provider | You don’t have to do anything. Optionally, you may vote for the consumer-addition proposal | |
-| 5 | During voting period for software upgrade on Stride | | You don’t have to do anything. |
-| 6 | After spawn time | | Place the newly generated “genesis” file (containing only the ccv state) in the ⚠️ `$NODE_HOME/config directory` ⚠️ Stride will provide this.<br><br>Do NOT replace the existing genesis file. |
-| 7 | When the software upgrade height is reached | | At the halt height, your node will halt.<br><br>Please upgrade to the  binary and ensure your genesis file has the CCV state from the provider chain |
+|Step|When?                                             |What do you need to do?                                                                       |What is happening?                                                                                                                              |
+|----|--------------------------------------------------|----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+|1   |ASAP                                              |Join the Stride testnet `stride-ics-testnet-two-1` with the pre-transition binary as a full node (not validator) and sync to the tip of the chain.|Validator machines getting caught up on existing Stride chain's history                                                                         |
+|2   |Before software upgrade proposal passes on Stride |Build (or download) the target (post-transition) Stride binary. If you are using Cosmovisor, place place it in Cosmovisor `/upgrades/v11/bin` directory. If you are not using Cosmovisor, be ready to manually switch your binary at the upgrade halt height.|Setup for machines to switch from being a full node to a validator when the chain transitions.                                                  |
+|3   |Before spawn time                                 |[PROVIDER] If using key assignment, submit assign-consensus-key for `stride-ics-testnet-two-1` with the keys on your full node. You can also just run with the same consensus key as your provider node.|Key assignment (optional) to link provider and consumer validators.                                                                             |
+|4   |Voting period for consumer-addition proposal.     |[PROVIDER] Optional: Vote for the consumer-addition proposal.                                 |Passing the consumer-addition proposal on the provider side.                                                                                    |
+|5   |Voting period for software upgrade                |Nothing                                                                                       |Passing the software upgrade proposal on the Stride side.                                                                                       |
+|6   |Spawn time                                        |Nothing                                                                                       |ccv state becomes available                                                                                                                     |
+|7   |After spawn time                                  |The `ccv.json` file will be provided in the testnets repo. Place the newly generated `ccv.json` in the `$NODE_HOME/config` directory.   Do NOT replace the existing genesis file.|Adding the ccv state to the genesis file for the new consumer chain.                                                                            |
+|8   |Upgrade height                                    |Restart your node with the post-transition binary. The upgrade handler will automatically read the existing genesis file and the new `ccv.json` file if they are correctly placed.|Stride chain halts to transition to being a consumer chain.                                                                                     |
+|9   |3 blocks after upgrade height                     |Celebrate! :tada: 🥂                                                |Stride blocks are now produced by the provider validator set                                                                                    |
