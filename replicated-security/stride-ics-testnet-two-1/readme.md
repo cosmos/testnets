@@ -25,7 +25,7 @@ Otherwise you may manually join stride-ics-testnet-two-1 using these notes:
 * Persistent Peers = `"d747545dbab1eb86caff7ec64fca3b7f2ace07fd@stride-direct.testnet-2.stridenet.co:26656"`
 
 * Chain ID: stride-ics-testnet-two-1
-* Post-upgrade stride binary commit (run with this binary after the upgrade): [`5a45a4cfaef54aa0e875eb4e618bfae882d278a2`](https://github.com/Stride-Labs/stride/commit/5a45a4cfaef54aa0e875eb4e618bfae882d278a2)
+* Post-upgrade stride binary commit (run with this binary after the upgrade): [`e7a01bcdb0f192cb028638ccd25f02f9f8b73ad4`](https://github.com/Stride-Labs/stride/commit/e7a01bcdb0f192cb028638ccd25f02f9f8b73ad4)
   * You can also build with [this Docker image](https://hub.docker.com/layers/stridelabs/ics-testnet/stride/images/sha256-3268198b39fa9e3b6107f352f49d28c5c78939e1147370b166f848dbd112186e?context=repo)
  
 <details><summary>Detailed steps for joining Stride Testnet</summary>
@@ -51,7 +51,7 @@ curl -L https://raw.githubusercontent.com/Stride-Labs/mainnet/ics-testnet/ics-te
 ```sh
 cd $HOME/stride
 
-git checkout 5a45a4cfaef54aa0e875eb4e618bfae882d278a2
+git checkout e7a01bcdb0f192cb028638ccd25f02f9f8b73ad4
 
 make install
 ```
@@ -74,7 +74,7 @@ Download v11 Binary
 ```sh
 cd stride
 git pull
-git checkout 5a45a4cfaef54aa0e875eb4e618bfae882d278a2
+git checkout e7a01bcdb0f192cb028638ccd25f02f9f8b73ad4
 make install
 
 #Should be v11
@@ -89,8 +89,8 @@ cp $HOME/go/bin/strided $HOME/.stride/cosmovisor/upgrades/v11/bin/
 
 Download new Sovereign genesis
 ```
-mkdir -p $HOME/.sovereign/config/
-wget -O $HOME/.sovereign/config/genesis.json https://cdn.discordapp.com/attachments/1064857924402413600/1116022613966336041/genesis_new.json
+mkdir -p $NODE_HOME/config/
+wget -O $NODE_HOME/config/ccv.json URL_TBD_PENDING_SPAWN_TIME
 ```
 
 Restart the Service
