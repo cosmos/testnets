@@ -66,7 +66,7 @@ cp $NODE_KEY_FILE $NODE_HOME/config/node_key.json
 # Replace genesis file: only after the spawn time is reached
 echo "Replacing genesis file..."
 wget $GENESIS_URL -O genesis.json.gz
-gzip -d genesis.json -c > genesis.json
+gzip -d genesis.json.gz -c > genesis.json
 mv genesis.json $NODE_HOME/config/genesis.json
 
 if $STATE_SYNC ; then

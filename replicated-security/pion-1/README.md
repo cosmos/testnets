@@ -77,7 +77,7 @@ The scripts provided in this repo will install Neutron and set up a Cosmovisor s
 
 ##### Before the relaunch make sure you removed the previous state of the chain!
 ```bash
-neutrond tendermint unsafe-reset-all --keep-addr-book --home <YOUR_PREVIOUS_NEUTROND_HOME_DIR>
+neutrond tendermint unsafe-reset-all --home <YOUR_PREVIOUS_NEUTROND_HOME_DIR>
 ```
 
 The script provided in this repo will install `neutrond` and set up a Cosmovisor service on your machine. 
