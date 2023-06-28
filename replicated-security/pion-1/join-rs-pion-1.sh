@@ -57,6 +57,7 @@ $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
 sed -i -e "/seeds =/ s^= .*^= \"$SEEDS\"^" $NODE_HOME/config/config.toml
 sed -i -e 's/^timeout_commit =.*/timeout_commit = "1s"/g' $NODE_HOME/config/config.toml
 sed -i -e "/minimum-gas-prices =/ s^= .*^= \"0untrn\"^" $NODE_HOME/config/app.toml
+sed -i -e "/iavl-disable-fastnode =/ s^= true^= false^" $NODE_HOME/config/app.toml
 
 # Replace keys
 echo "Replacing keys..."
