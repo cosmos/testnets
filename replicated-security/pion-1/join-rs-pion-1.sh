@@ -22,16 +22,16 @@ SYNC_RPC_1=http://pion.rs-testnet.polypore.xyz:26657
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_1"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
-GENESIS_URL=https://github.com/neutron-org/cosmos-testnets/raw/feat/pion-1-relaunch/replicated-security/pion-1/pion-1-genesis-without-ccv.json.gz
+GENESIS_URL=https://github.com/hyphacoop/testnets/raw/master/replicated-security/pion-1/pion-1-genesis-without-ccv.json.gz
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
 
-# Install go 1.19.8
+# Install go 1.20
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
-wget https://go.dev/dl/go1.19.8.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.19.8.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.20.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
 # Install neutrond binary
