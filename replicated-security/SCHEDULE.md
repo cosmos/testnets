@@ -5,9 +5,9 @@
 | July 26  2023   |                   |                                                                                                                               |
 | July 19  2023   | No testnet event  |  Stride launching on mainnet                                                                                                  |
 | July 12  2023   |                   |                                                                                                                               |
-| July 5  2023    | Consumer addition | Consumer chain `duality-rehearsal-1` upgrade (version TBA)                                                                    |
+| July 5  2023    | Consumer upgrade and addition | Consumer chain `duality-rehearsal-1` upgrade (version TBA). Stride testnet transitions to consumer chain (rehearsal 2)                                                                    |
 | June 29 2023    | Consumer addition | Consumer chain `pion-1` relaunched from stateful genesis
-| June 28 2023    | Consumer addition | Stride testnet transitions to consumer chain (rehearsal 2)                                                                    |
+| ~~June 28 2023~~    | ~~Consumer addition~~ | ~~Stride testnet transitions to consumer chain (rehearsal 2)~~ rescheduled due to bug found in automated tests                                                                    |
 | June 21 2023    | No testnet event  |                                                                                                                               |
 | June 14 2023    | Consumer upgrade  | ✅ Consumer chain `pion-1` to upgraded to `v1.0.2`                                                                            |
 | June 7 2023     | Consumer addition | ✅ Stride testnet transitions to consumer chain `stride-ics-testnet-two-1`                                                    |
