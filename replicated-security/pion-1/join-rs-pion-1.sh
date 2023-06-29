@@ -27,11 +27,11 @@ GENESIS_URL=https://github.com/neutron-org/cosmos-testnets/raw/feat/pion-1-relau
 # Install wget and jq
 sudo apt-get install curl jq wget -y
 
-# Install go 1.19.8
+# Install go 1.20
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
-wget https://go.dev/dl/go1.19.8.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.19.8.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.20.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
 # Install neutrond binary
@@ -57,6 +57,7 @@ $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
 sed -i -e "/seeds =/ s^= .*^= \"$SEEDS\"^" $NODE_HOME/config/config.toml
 sed -i -e 's/^timeout_commit =.*/timeout_commit = "1s"/g' $NODE_HOME/config/config.toml
 sed -i -e "/minimum-gas-prices =/ s^= .*^= \"0untrn\"^" $NODE_HOME/config/app.toml
+sed -i -e "/iavl-disable-fastnode =/ s^= true^= false^" $NODE_HOME/config/app.toml
 
 # Replace keys
 echo "Replacing keys..."
