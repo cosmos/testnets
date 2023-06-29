@@ -1,3 +1,4 @@
 v6-Vega/exported_unmodified_genesis.json.gz filter=lfs diff=lfs merge=lfs -text
 v6-Vega/local-testnet/modified_genesis_local_testnet/genesis.json.gz filter=lfs diff=lfs merge=lfs -text
 v6-Vega/public-testnet/modified_genesis_public_testnet/genesis.json.gz filter=lfs diff=lfs merge=lfs -text
+replicated-security/pion-1/pion-1-genesis-without-ccv.json.gz filter=lfs diff=lfs merge=lfs -text

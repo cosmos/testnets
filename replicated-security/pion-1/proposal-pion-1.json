@@ -1,14 +1,14 @@
 {
     "title": "Neutron pion-1 Chain",
-    "description": "# Launching the pion-1 Chain\r\n\r\nThis is the proposal to create the first persistent consumer chain, \"pion-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/cosmos/testnets/tree/master/replicated-security) repo for additional details.",
+    "description": "# Relaunching the pion-1 Chain\r\n\r\nThis is the proposal to relaunch the Neutron consumer chain, \"pion-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/cosmos/testnets/tree/master/replicated-security) repo for additional details.",
     "chain_id": "pion-1",
     "initial_height": {
-        "revision_height": 1,
+        "revision_height": 1912979,
         "revision_number": 1
     },
-    "genesis_hash": "052b4dcc4bd95eda99c5c926835a1e5537cd6e61ee5e0e6d825be5d2f90f14f4",
-    "binary_hash": "c463557529511436c6d865de1a13fd071fac4727d422f7194ddd5f22360821bf",
-    "spawn_time": "2023-04-18T17:45:00Z",
+    "genesis_hash": "6291227072026b46830a7bcdd6180dca727f10d92fd612cedc07b6d377b0eeea",
+    "binary_hash": "a1331685f656cca2d7a94283959678a5a3c846aa4a6fa0cd6c4da1534c324ea7",
+    "spawn_time": "2023-06-29T14:30:00Z",
     "blocks_per_distribution_transmission": 1000,
     "consumer_redistribution_fraction": "0.75",
     "historical_entries": 10000,

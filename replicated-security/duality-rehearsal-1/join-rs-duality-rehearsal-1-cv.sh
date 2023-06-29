@@ -18,7 +18,7 @@ SERVICE_NAME=cv-duality
 
 CHAIN_BINARY='dualityd'
 CHAIN_ID=duality-rehearsal-1
-SEEDS="08ec17e86dac67b9da70deb20177655495a55407@duality-seed.rs-testnet.polypore.xyz:26656"
+SEEDS="cebd80328abca02408d1b7199f9b1a835a14aa31@p2p.testnet-1.duality.xyz:26656"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
 GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/duality-rehearsal-1/duality-rehearsal-1-genesis.json

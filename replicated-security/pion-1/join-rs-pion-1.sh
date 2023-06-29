@@ -11,7 +11,7 @@ NODE_KEY_FILE=${2:-"~/node_key.json"}
 NODE_HOME=~/.neutrond
 NODE_MONIKER=node
 SERVICE_NAME=neutrond
-SERVICE_VERSION="v0.4.2"
+SERVICE_VERSION="v1.0.2-pion-1-upgrade"
 STATE_SYNC=false
 # ***
 
@@ -22,16 +22,16 @@ SYNC_RPC_1=http://pion.rs-testnet.polypore.xyz:26657
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_1"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
-GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/pion-1/pion-1-genesis.json
+GENESIS_URL=https://github.com/hyphacoop/testnets/raw/master/replicated-security/pion-1/pion-1-genesis-without-ccv.json.gz
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
 
-# Install go 1.19.8
+# Install go 1.20
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
-wget https://go.dev/dl/go1.19.8.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.19.8.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.20.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
 # Install neutrond binary
@@ -57,6 +57,7 @@ $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
 sed -i -e "/seeds =/ s^= .*^= \"$SEEDS\"^" $NODE_HOME/config/config.toml
 sed -i -e 's/^timeout_commit =.*/timeout_commit = "1s"/g' $NODE_HOME/config/config.toml
 sed -i -e "/minimum-gas-prices =/ s^= .*^= \"0untrn\"^" $NODE_HOME/config/app.toml
+sed -i -e "/iavl-disable-fastnode =/ s^= true^= false^" $NODE_HOME/config/app.toml
 
 # Replace keys
 echo "Replacing keys..."
@@ -65,7 +66,8 @@ cp $NODE_KEY_FILE $NODE_HOME/config/node_key.json
 
 # Replace genesis file: only after the spawn time is reached
 echo "Replacing genesis file..."
-wget $GENESIS_URL -O genesis.json
+wget $GENESIS_URL -O genesis.json.gz
+gzip -d genesis.json.gz -c > genesis.json
 mv genesis.json $NODE_HOME/config/genesis.json
 
 if $STATE_SYNC ; then
