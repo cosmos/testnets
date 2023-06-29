@@ -56,7 +56,21 @@ Persistent nodes:
 2. `6e7c0583e6e18fccedcceaffc1ac5a33ab898fa8@pion-cherry.rs-testnet.polypore.xyz:26656`
 
 ## IBC Data
-TODO
+
+### Clients
+
+* `07-tendermint-68`
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `07-tendermint-28`
+
+### Connections
+
+* `connection-42`
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `connection-19`
+
+### Channels
+
+* `channel-95`: consumer port
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-31`
 
 ## How to Join
 

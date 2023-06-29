@@ -49,29 +49,26 @@ Connections and channels will be posted here shortly after a consumer chain laun
 
 ### Clients
 
-* `07-tendermint-13`
-  * Counterparty: [`pion-1`](/replicated-security/pion-1/README.md) `07-tendermint-0`
 * `07-tendermint-14`
   * Counterparty: [`duality-rehearsal-1`](/replicated-security/duality-rehearsal-1/README.md) `07-tendermint-0`
-
+* `07-tendermint-28`
+  * Counterparty: [`pion-1`](/replicated-security/pion-1/README.md) `07-tendermint-68`
 
 ### Connections
 
-* `connection-8`
-  * Counterparty: [`pion-1`](/replicated-security/pion-1/README.md) `connection-0`
 * `connection-10`
   * Counterparty: [`duality-rehearsal-1`](/replicated-security/duality-rehearsal-1/README.md) `connection-0`
+* `connection-19`
+  * Counterparty: [`pion-1`](/replicated-security/pion-1/README.md) `connection-42`
 
 ### Channels
 
-* `channel-14`: provider port
-  * Counterparty: [`pion-1`](/replicated-security/pion-1/README.md) `channel-0`
-* `channel-16`: transfer port
-  * Counterparty: [`pion-1`](/replicated-security/pion-1/README.md) `channel-1`
 * `channel-17`: provider port
   * Counterparty: [`duality-rehearsal-1`](/replicated-security/duality-rehearsal-1/README.md) `channel-0`
 * `channel-18`: transfer port
   * Counterparty: [`duality-rehearsal-1`](/replicated-security/duality-rehearsal-1/README.md) `channel-1`
+* `channel-31`: provider port
+  * Counterparty: [`pion-1`](/replicated-security/pion-1/README.md) `channel-95`
 
 ## Faucet
 
