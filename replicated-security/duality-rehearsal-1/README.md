@@ -39,7 +39,7 @@ Endpoints are exposed as subdomains for the sentry and snapshot nodes (described
 - `https://rest.testnet-1.duality.xyz` (or `https://lcd.testnet-1.duality.xyz`)
 
 Seed nodes:
-1. `cebd80328abca02408d1b7199f9b1a835a14aa31@p2p.testnet-1.duality.xyz:26656`
+1. `75546756a3d3189594ebce101700605c1e956053@p2p.testnet-1.duality.xyz:26656`
 
 ## IBC Data
 
