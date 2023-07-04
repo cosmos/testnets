@@ -42,7 +42,7 @@ mkdir -p $HOME/go/bin
 rm -rf duality
 git clone --depth 1 https://github.com/duality-labs/duality.git
 cd duality
-git checkout v0.3.0
+git checkout v0.3.3
 make install
 export PATH=$PATH:$HOME/go/bin
 

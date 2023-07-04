@@ -8,11 +8,11 @@ The `duality-second-rehearsal-1` chain will be launched as a persistent chain to
 * **timeout_commit**: `2s`
 * **Spawn time**: `2023-07-05T15:00:00Z`
 * **GitHub repo**: [duality-labs/duality](https://github.com/duality-labs/duality.git)
-* **Release**: [`v0.3.0`](https://github.com/duality-labs/duality/releases/tag/v0.3.0)
+* **Release**: [`v0.3.3`](https://github.com/duality-labs/duality/releases/tag/v0.3.3)
 <!-- * **Genesis file with CCV state:** [duality-second-rehearsal-1-genesis.json](duality-second-rehearsal-1-genesis.json) -->
 
 * **Reference binary**: [dualityd-linux-amd64](./dualityd-linux-amd64.tar.gz)
-* **Binary sha256sum**: `d42f09d0af91b921f4a1e4635e55270fe0a7a3383ec185e2bee92bdc7cf6df82`
+* **Binary sha256sum**: `2d809e1c249529222ed535d6fe160e91598f93e2e9d80c79fcaf92b44baa921d`
 * **Genesis file _without CCV state_:** [duality-second-rehearsal-1-genesis-without-ccv.json](duality-second-rehearsal-1-genesis-without-ccv.json), verify with `shasum -a 256 duality-second-rehearsal-1-genesis-without-ccv.json`
 * **SHA256 for genesis file _without CCV state_**: `e095ed2c8226b88d73776f268b1bdfe74cd455a0fc2a598f26035e64fde39d2d`
 
@@ -75,7 +75,7 @@ Seed nodes:
 
 | Name               | Version  |
 |--------------------|----------|
-| Duality            | v0.3.0   |
+| Duality            | v0.3.3   |
 | Go                 | v1.18.5  |
 
 The scripts provided in this repo will install Duality and set up a Cosmovisor service with the auto-download feature enabled on your machine.
@@ -95,7 +95,7 @@ Run script provided to set up a `duality-second-rehearsal-1` service:
 Build and install the `dualityd` binary.
 
 ```
-git clone -b v0.3.0 https://github.com/duality-labs/duality.git
+git clone -b v0.3.3 https://github.com/duality-labs/duality.git
 cd duality
 make install
 ```
