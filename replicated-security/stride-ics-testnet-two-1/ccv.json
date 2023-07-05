@@ -1,0 +1,832 @@
+{
+  "genesis_time": "2023-06-22T15:50:32.52230532Z",
+  "chain_id": "stride-ics-testnet-two-1",
+  "initial_height": "1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000",
+      "max_bytes": "1048576"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    },
+    "version": {
+      "app": "0"
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "07-tendermint": null,
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "stride169j7dl42up0x6akamjvwtrd3khczthva68k5eh",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "stride1gmqp293g968dyemvk9j640e0xqeghravjjwpms",
+          "pub_key": null,
+          "account_number": "1",
+          "sequence": "0"
+        }
+      ]
+    },
+    "autopilot": {
+      "params": {
+        "stakeibc_active": true,
+        "claim_active": true
+      }
+    },
+    "bank": {
+      "params": {
+        "send_enabled": [],
+        "default_send_enabled": true
+      },
+      "balances": [
+        {
+          "address": "stride1gmqp293g968dyemvk9j640e0xqeghravjjwpms",
+          "coins": [
+            {
+              "denom": "ustrd",
+              "amount": "1000000000"
+            }
+          ]
+        },
+        {
+          "address": "stride169j7dl42up0x6akamjvwtrd3khczthva68k5eh",
+          "coins": [
+            {
+              "denom": "ustrd",
+              "amount": "10000000000000000"
+            }
+          ]
+        }
+      ],
+      "supply": [],
+      "denom_metadata": [],
+      "send_enabled": []
+    },
+    "capability": {
+      "index": "1",
+      "owners": []
+    },
+    "claim": {
+      "params": {
+        "airdrops": []
+      },
+      "claim_records": []
+    },
+    "consensus": null,
+    "crisis": {
+      "constant_fee": {
+        "denom": "ustrd",
+        "amount": "1000"
+      }
+    },
+    "distribution": {
+      "params": {
+        "community_tax": "0.020000000000000000",
+        "base_proposer_reward": "0.000000000000000000",
+        "bonus_proposer_reward": "0.000000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": []
+      },
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "epochs": {
+      "epochs": [
+        {
+          "identifier": "week",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "604800s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "day",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "86400s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "stride_epoch",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "900s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "mint",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "3600s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "hour",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "3600s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        }
+      ]
+    },
+    "evidence": {
+      "evidence": []
+    },
+    "feegrant": {
+      "allowances": []
+    },
+    "genutil": {
+      "gen_txs": [
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "STRIDE-VAL",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "stride169j7dl42up0x6akamjvwtrd3khczthva68k5eh",
+                "validator_address": "stridevaloper169j7dl42up0x6akamjvwtrd3khczthvaejjg4j",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "jmiwQmaql7V58FSPWD/jkYiuLxzQvx3RQyas5+bNUWI="
+                },
+                "value": {
+                  "denom": "ustrd",
+                  "amount": "3000000000000"
+                }
+              }
+            ],
+            "memo": "9b31135814da2c897ae3f2212617d2307b9db3f7@10.68.0.55:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AmdKG/ers84X8alC9H5qbNKATnfY573kvv4K8lUzUd0x"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "Z81OGIZCq4qJ/R/5Z2eSq0R9jPXwb3bDevP/OefYUCoWiit3JhUcrNfH0gZ9AaVyqPOLOKe9K4RrhCCn1mrLpQ=="
+          ]
+        }
+      ]
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": [],
+      "votes": [],
+      "proposals": [],
+      "deposit_params": null,
+      "voting_params": null,
+      "tally_params": null,
+      "params": {
+        "min_deposit": [
+          {
+            "denom": "ustrd",
+            "amount": "10000000"
+          }
+        ],
+        "max_deposit_period": "3600s",
+        "voting_period": "300s",
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000",
+        "min_initial_deposit_ratio": "0.000000000000000000",
+        "burn_vote_quorum": false,
+        "burn_proposal_deposit_prevote": false,
+        "burn_vote_veto": true
+      }
+    },
+    "ibc": {
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "clients_metadata": [],
+        "params": {
+          "allowed_clients": [
+            "06-solomachine",
+            "07-tendermint",
+            "09-localhost"
+          ]
+        },
+        "create_localhost": false,
+        "next_client_sequence": "0"
+      },
+      "connection_genesis": {
+        "connections": [],
+        "client_connection_paths": [],
+        "next_connection_sequence": "0",
+        "params": {
+          "max_expected_time_per_block": "30000000000"
+        }
+      },
+      "channel_genesis": {
+        "channels": [],
+        "acknowledgements": [],
+        "commitments": [],
+        "receipts": [],
+        "send_sequences": [],
+        "recv_sequences": [],
+        "ack_sequences": [],
+        "next_channel_sequence": "0"
+      }
+    },
+    "icacallbacks": {
+      "params": {},
+      "port_id": "icacallbacks",
+      "callback_data_list": []
+    },
+    "interchainaccounts": {
+      "controller_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "ports": [],
+        "params": {
+          "controller_enabled": true
+        }
+      },
+      "host_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "port": "icahost",
+        "params": {
+          "host_enabled": true,
+          "allow_messages": [
+            "*"
+          ]
+        }
+      }
+    },
+    "interchainquery": null,
+    "mint": {
+      "minter": {
+        "epoch_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "ustrd",
+        "genesis_epoch_provisions": "285388127.853881278538812785",
+        "epoch_identifier": "mint",
+        "reduction_period_in_epochs": "8760",
+        "reduction_factor": "0.500000000000000000",
+        "distribution_proportions": {
+          "staking": "0.276400000000000000",
+          "community_pool_growth": "0.186000000000000000",
+          "community_pool_security_budget": "0.117100000000000000",
+          "strategic_reserve": "0.420500000000000000"
+        },
+        "minting_rewards_distribution_start_epoch": "0"
+      },
+      "reduction_started_epoch": "0"
+    },
+    "params": null,
+    "ratelimit": {
+      "params": {},
+      "rate_limits": [],
+      "whitelisted_address_pairs": [],
+      "blacklisted_denoms": [],
+      "pending_send_packet_sequence_numbers": []
+    },
+    "records": {
+      "params": {},
+      "port_id": "records",
+      "user_redemption_record_list": [],
+      "user_redemption_record_count": "0",
+      "epoch_unbonding_record_list": [],
+      "deposit_record_list": [],
+      "deposit_record_count": "0"
+    },
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "300000",
+        "min_signed_per_window": "0.050000000000000000",
+        "downtime_jail_duration": "600s",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.001000000000000000"
+      },
+      "signing_infos": [],
+      "missed_blocks": []
+    },
+    "stakeibc": {
+      "params": {
+        "rewards_interval": "1",
+        "delegate_interval": "1",
+        "deposit_interval": "1",
+        "redemption_rate_interval": "1",
+        "stride_commission": "10",
+        "reinvest_interval": "1",
+        "ica_timeout_nanos": "600000000000",
+        "buffer_size": "5",
+        "ibc_timeout_blocks": "300",
+        "fee_transfer_timeout_nanos": "1800000000000",
+        "max_stake_ica_calls_per_epoch": "100",
+        "default_min_redemption_rate_threshold": "90",
+        "default_max_redemption_rate_threshold": "150",
+        "ibc_transfer_timeout_nanos": "1800000000000",
+        "safety_num_validators": "35",
+        "safety_max_slash_percent": "10"
+      },
+      "port_id": "stakeibc",
+      "host_zone_list": [],
+      "epoch_tracker_list": []
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "86400s",
+        "max_validators": 100,
+        "max_entries": 7,
+        "historical_entries": 10000,
+        "bond_denom": "ustrd",
+        "min_commission_rate": "0.000000000000000000"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": [],
+      "validators": [],
+      "delegations": [],
+      "unbonding_delegations": [],
+      "redelegations": [],
+      "exported": false
+    },
+    "stridevesting": {},
+    "transfer": {
+      "port_id": "transfer",
+      "denom_traces": [],
+      "params": {
+        "send_enabled": true,
+        "receive_enabled": true
+      },
+      "total_escrowed": []
+    },
+    "upgrade": {},
+    "vesting": {},
+    "ccvconsumer": {
+      "params": {
+        "enabled": true,
+        "blocks_per_distribution_transmission": "100",
+        "distribution_transmission_channel": "",
+        "provider_fee_pool_addr_str": "",
+        "ccv_timeout_period": "2419200s",
+        "transfer_timeout_period": "360s",
+        "consumer_redistribution_fraction": "0.85",
+        "historical_entries": "10000",
+        "unbonding_period": "86400s",
+        "reward_denoms": [],
+        "provider_reward_denoms": []
+      },
+      "provider_client_id": "",
+      "provider_channel_id": "",
+      "new_chain": true,
+      "provider_client_state": {
+        "chain_id": "provider",
+        "trust_level": {
+          "numerator": "1",
+          "denominator": "3"
+        },
+        "trusting_period": "453600s",
+        "unbonding_period": "1814400s",
+        "max_clock_drift": "10s",
+        "frozen_height": {
+          "revision_number": "0",
+          "revision_height": "0"
+        },
+        "latest_height": {
+          "revision_number": "0",
+          "revision_height": "2235097"
+        },
+        "proof_specs": [
+          {
+            "leaf_spec": {
+              "hash": "SHA256",
+              "prehash_key": "NO_HASH",
+              "prehash_value": "SHA256",
+              "length": "VAR_PROTO",
+              "prefix": "AA=="
+            },
+            "inner_spec": {
+              "child_order": [
+                0,
+                1
+              ],
+              "child_size": 33,
+              "min_prefix_length": 4,
+              "max_prefix_length": 12,
+              "empty_child": null,
+              "hash": "SHA256"
+            },
+            "max_depth": 0,
+            "min_depth": 0
+          },
+          {
+            "leaf_spec": {
+              "hash": "SHA256",
+              "prehash_key": "NO_HASH",
+              "prehash_value": "SHA256",
+              "length": "VAR_PROTO",
+              "prefix": "AA=="
+            },
+            "inner_spec": {
+              "child_order": [
+                0,
+                1
+              ],
+              "child_size": 32,
+              "min_prefix_length": 1,
+              "max_prefix_length": 1,
+              "empty_child": null,
+              "hash": "SHA256"
+            },
+            "max_depth": 0,
+            "min_depth": 0
+          }
+        ],
+        "upgrade_path": [
+          "upgrade",
+          "upgradedIBCState"
+        ],
+        "allow_update_after_expiry": true,
+        "allow_update_after_misbehaviour": true
+      },
+      "provider_consensus_state": {
+        "timestamp": "2023-07-05T15:30:00.956163523Z",
+        "root": {
+          "hash": "apqLQf8963UsnTmHWZqt5Z6EeiO+5Qv4zofZLVBITME="
+        },
+        "next_validators_hash": "2AF55B553721664019A6F5A3B0FDDF4B402441E1FF558E503E66D14BB55058F0"
+      },
+      "maturing_packets": [],
+      "initial_val_set": [
+        {
+          "pub_key": {
+            "ed25519": "d1pL2k+uAuK++sumfQ/d0LQrvdn+gtFwbgcuhURj5ds="
+          },
+          "power": "13607427"
+        },
+        {
+          "pub_key": {
+            "ed25519": "dWGs9y2BodKKs8rjpWk9oQvEwzzPXPbAPAN59kztduE="
+          },
+          "power": "5985330"
+        },
+        {
+          "pub_key": {
+            "ed25519": "5PNFbJSp/JI3OPCCtm3LMVZthJPlmZiWMnj/lQUlyOI="
+          },
+          "power": "11510002"
+        },
+        {
+          "pub_key": {
+            "ed25519": "2RyHNvJ62kISNvd0cXhGcJQ4DCuA0TZkSoLGoAhQzSI="
+          },
+          "power": "8277585"
+        },
+        {
+          "pub_key": {
+            "ed25519": "6UQmknlWV64eScgiyyxDVdfRbgoBNhI+l7XKWkNnVUI="
+          },
+          "power": "9"
+        },
+        {
+          "pub_key": {
+            "ed25519": "S6N8Q1n204UwyPR16TYpOm4jbgg+9cDWiYrs3HvnBa0="
+          },
+          "power": "33994"
+        },
+        {
+          "pub_key": {
+            "ed25519": "LKwKvQPVTwxwW4UDpyIvGW8Sa9sUdaxhhhVdOigrEyA="
+          },
+          "power": "9492225"
+        },
+        {
+          "pub_key": {
+            "ed25519": "iTif8WGSm1keuRCyPMVMK0ueXXzRRXNSm3nllLZImig="
+          },
+          "power": "12336052"
+        },
+        {
+          "pub_key": {
+            "ed25519": "eguEFMFLTf31h29PoiMhBTn9fZZafEJx/t6AA9KmYSU="
+          },
+          "power": "8872000"
+        },
+        {
+          "pub_key": {
+            "ed25519": "yjKCxj8Gq49YyR0OwkIA84NsRnZsQxzbSCi+KqcwaBQ="
+          },
+          "power": "12680109"
+        },
+        {
+          "pub_key": {
+            "ed25519": "L8S1/fzYyGO7EXjrBhllib39RRm9UKti9V7PpWl8qQQ="
+          },
+          "power": "14506810"
+        },
+        {
+          "pub_key": {
+            "ed25519": "QiRWtc9EQK9h8EuzkQaX5TsXqMjWnP/SRsK/Ken6T2Y="
+          },
+          "power": "10844446"
+        },
+        {
+          "pub_key": {
+            "ed25519": "eRgVcO73ikUF3mhXLVZ36/ZkQS3cIYeOMMvow0OhoEE="
+          },
+          "power": "1"
+        },
+        {
+          "pub_key": {
+            "ed25519": "R0EvAcNXzLnSgU5QXUCG2OMr1imOnEQjciujWy68OR0="
+          },
+          "power": "1"
+        },
+        {
+          "pub_key": {
+            "ed25519": "GxgPypyLM29IO6n2UBEHm/VlW8HCTx8EERQVKBP2J5U="
+          },
+          "power": "11486741"
+        },
+        {
+          "pub_key": {
+            "ed25519": "ptPkdYI1OIxrC4wJ1Limjr68sZKDvWm66jkaEG+ZEqg="
+          },
+          "power": "9"
+        },
+        {
+          "pub_key": {
+            "ed25519": "pss1JOG0uaY+6HNJD8N78Dqp4tT/jVVvGubR2v4CHwk="
+          },
+          "power": "10008221"
+        },
+        {
+          "pub_key": {
+            "ed25519": "a0Mk+ZbJr+xIPCgq9LjAh2aOM9fiTxS0rUKJw9WAcRo="
+          },
+          "power": "12080001"
+        },
+        {
+          "pub_key": {
+            "ed25519": "qWuaZYOOBdfqGFE07n67dt1bBFpGzJZiYQZtOJkTwnw="
+          },
+          "power": "14"
+        },
+        {
+          "pub_key": {
+            "ed25519": "YBaukC86rQS6d5TXIanVvoOwJcmbmDI8h4j44Pd/oI0="
+          },
+          "power": "10799065"
+        },
+        {
+          "pub_key": {
+            "ed25519": "HVuZ5JAmAcI3q3QwDn4jLB84bZT6TCo+kofaOGj/Xig="
+          },
+          "power": "12000009"
+        },
+        {
+          "pub_key": {
+            "ed25519": "1CVArS1W5fn2b7yLdzoIHyglnAij1dP0Wwn2kATL7YY="
+          },
+          "power": "2446589"
+        },
+        {
+          "pub_key": {
+            "ed25519": "M39sW5aeRTlEpy4tXXuktCK9Ke/50KBe5eboN9IHwtY="
+          },
+          "power": "5000001"
+        },
+        {
+          "pub_key": {
+            "ed25519": "kS4CaF6ek03+VGkxmGGY/efXT3Y1L0WtKxrvHMJMk80="
+          },
+          "power": "8965261"
+        },
+        {
+          "pub_key": {
+            "ed25519": "yzbnoQv2v/+lgyHFs90mvuQP58xP0lDlFbhPgcmQWds="
+          },
+          "power": "12166155"
+        },
+        {
+          "pub_key": {
+            "ed25519": "iRfZsPMxIM3votG1wKm5HhOG0lx4MSORW/2XBl8MVbc="
+          },
+          "power": "1"
+        },
+        {
+          "pub_key": {
+            "ed25519": "OfJT5pdlclxmBwOKtPP9VB9bvp98Ns1PD9BvzCw1mRs="
+          },
+          "power": "1"
+        },
+        {
+          "pub_key": {
+            "ed25519": "zognVrkvlus0DgBi1ZndRQge0n3lX0ywvK2vCCAlmXw="
+          },
+          "power": "4839203"
+        },
+        {
+          "pub_key": {
+            "ed25519": "avuKy6M8g8eUPZHqd3J1/vCrAT8SWAtucxFpRfQrtL4="
+          },
+          "power": "8"
+        },
+        {
+          "pub_key": {
+            "ed25519": "s2ssopV2TLMTTd0Ae4KeB1P7/jrdeYIocSmPsocXHnc="
+          },
+          "power": "2067614"
+        },
+        {
+          "pub_key": {
+            "ed25519": "zUD04Ga6ry1iOHZvMUqdXPYSnnUi+wTUv1Tw5Yfez1g="
+          },
+          "power": "1"
+        },
+        {
+          "pub_key": {
+            "ed25519": "komHSGMVa+Sf5VN8IH5M2HfulNVD6FeSiXp2nqTjLKc="
+          },
+          "power": "8648675"
+        },
+        {
+          "pub_key": {
+            "ed25519": "bWrAk+lQXsCsJetqCoz+rYudttUyRkiaU7wz1gV1vR0="
+          },
+          "power": "1"
+        },
+        {
+          "pub_key": {
+            "ed25519": "KQofNMS6N1JWLvxujlQuHZcsxZEqIeoWbP9Gd8HxMZw="
+          },
+          "power": "5042545"
+        },
+        {
+          "pub_key": {
+            "ed25519": "qZec3uklAq51vVCr0/ulEeRBL3HNbLMvYbImn7fiV+8="
+          },
+          "power": "10408810"
+        },
+        {
+          "pub_key": {
+            "ed25519": "oMNTaPQRD3mxYzARLw4wVTsbTEkNj/NFsnAgR24WMPY="
+          },
+          "power": "6673007"
+        },
+        {
+          "pub_key": {
+            "ed25519": "uu1FpuT2YeSfPGdoRcthkech+BVnW2YwKSb2R5PpMeo="
+          },
+          "power": "9329475"
+        },
+        {
+          "pub_key": {
+            "ed25519": "jSBe1G9QvvNEIuDoTWQF4BpPFBdFxqJhNsmxqWzww08="
+          },
+          "power": "118307516"
+        },
+        {
+          "pub_key": {
+            "ed25519": "WrOWbDg+JCZ8m/BFaqLQjPF/fz4xxmAE8QT1nh9uwOg="
+          },
+          "power": "13320544"
+        },
+        {
+          "pub_key": {
+            "ed25519": "LY5kYhS4ZjQBdMtP7fgZSdpLn54GGBashLVtFe4YsLg="
+          },
+          "power": "9079302"
+        },
+        {
+          "pub_key": {
+            "ed25519": "9OqYVsN/2KjWHMSVz5TfsKoQJxrZJGhMw5hBTuiG1gE="
+          },
+          "power": "1"
+        },
+        {
+          "pub_key": {
+            "ed25519": "g+D8+Q89301N8FX6zNxfMJoi2UZ17erBiNEgKMxMtNw="
+          },
+          "power": "7"
+        },
+        {
+          "pub_key": {
+            "ed25519": "arn47pf8JHFENdOIGHxxmB5QCWgupJyXjy3i2l2UFn8="
+          },
+          "power": "4405016"
+        },
+        {
+          "pub_key": {
+            "ed25519": "EWmXWgrac34cl/uDZiRiyljqEtikCNf96NSksBxYA5M="
+          },
+          "power": "119901263"
+        },
+        {
+          "pub_key": {
+            "ed25519": "xam+hxBw5XfWSnymFb7DtQ9kQsG4w0QSAga2ESC2uvs="
+          },
+          "power": "153157428"
+        },
+        {
+          "pub_key": {
+            "ed25519": "9LDJ8ZOJ55+hZ8NbAY5kc7Ne1YP/+mwT8VAqcdTwfz8="
+          },
+          "power": "15"
+        },
+        {
+          "pub_key": {
+            "ed25519": "iyXbB3X6HAAHIFAtbt7EZ0clPChMWpnnlY6HT+JLhTQ="
+          },
+          "power": "8425"
+        },
+        {
+          "pub_key": {
+            "ed25519": "w72G0WEhxUJ4NN75WkYubJSSDMpxCkAbshgg31vSqvE="
+          },
+          "power": "1"
+        },
+        {
+          "pub_key": {
+            "ed25519": "NiKRUXQ5+jR16WeULbg9hvtk+sWtc1ky5ukxjvK+hm4="
+          },
+          "power": "19"
+        }
+      ],
+      "height_to_valset_update_id": [],
+      "outstanding_downtime_slashing": [],
+      "pending_consumer_packets": {
+        "list": []
+      },
+      "last_transmission_block_height": {
+        "height": "0"
+      }
+    }
+  }
+}
