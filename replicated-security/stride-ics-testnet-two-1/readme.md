@@ -24,8 +24,8 @@ Otherwise you may manually join `stride-ics-testnet-two-1` using these notes:
 * Go version: 1.19
 * Persistent Peers = `"d747545dbab1eb86caff7ec64fca3b7f2ace07fd@stride-direct.testnet-2.stridenet.co:26656"`
 * Chain ID: `stride-ics-testnet-two-1`
-* Post-upgrade stride binary commit (run with this binary after the upgrade): [`e7a01bcdb0f192cb028638ccd25f02f9f8b73ad4`](https://github.com/Stride-Labs/stride/commit/e7a01bcdb0f192cb028638ccd25f02f9f8b73ad4)
-  * You can also build with [this Docker image](https://hub.docker.com/layers/stridelabs/ics-testnet/stride/images/sha256-3268198b39fa9e3b6107f352f49d28c5c78939e1147370b166f848dbd112186e?context=repo)
+* Post-upgrade stride binary commit (run with this binary after the upgrade): [`ed3fcf9512ee136a03b58a7cd1d21b0e002de06f`](https://github.com/Stride-Labs/stride/commit/ed3fcf9512ee136a03b58a7cd1d21b0e002de06f)
+  * You can use [this](https://storage.cloud.google.com/strided-binaries/strided) pre-build linux binary
  
 <details><summary>Detailed steps for manually joining Stride Testnet</summary>
 <br>
@@ -58,7 +58,7 @@ Download v11 Binary
 ```sh
 cd stride
 git pull
-git checkout e7a01bcdb0f192cb028638ccd25f02f9f8b73ad4
+git checkout ed3fcf9512ee136a03b58a7cd1d21b0e002de06f
 make install
 
 #Should be v11
