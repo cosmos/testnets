@@ -25,7 +25,7 @@ Otherwise you may manually join `stride-ics-testnet-two-1` using these notes:
 * Persistent Peers = `"d747545dbab1eb86caff7ec64fca3b7f2ace07fd@stride-direct.testnet-2.stridenet.co:26656"`
 * Chain ID: `stride-ics-testnet-two-1`
 * Post-upgrade stride binary commit (run with this binary after the upgrade): [`ed3fcf9512ee136a03b58a7cd1d21b0e002de06f`](https://github.com/Stride-Labs/stride/commit/ed3fcf9512ee136a03b58a7cd1d21b0e002de06f)
-  * You can use [this](https://storage.googleapis.com/strided-binaries/strided) pre-build linux binary
+  * You can use [this](https://storage.googleapis.com/strided-binaries/strided) pre-build linux binary. E.g. `wget -O strided 'https://storage.googleapis.com/strided-binaries/strided'`
  
 <details><summary>Detailed steps for manually joining Stride Testnet</summary>
 <br>
