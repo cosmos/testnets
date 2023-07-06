@@ -6,7 +6,7 @@ The `duality-second-rehearsal-1` chain will be launched as a persistent chain to
 * **Chain-ID**: `duality-second-rehearsal-1`
 * **minimum-gas-prices**: ``
 * **timeout_commit**: `2s`
-* **Spawn time**: `2023-07-05T15:00:00Z`
+* **Spawn time**: `2023-07-12T15:00:00Z`
 * **GitHub repo**: [duality-labs/duality](https://github.com/duality-labs/duality.git)
 * **Release**: [`v0.3.3`](https://github.com/duality-labs/duality/releases/tag/v0.3.3)
 <!-- * **Genesis file with CCV state:** [duality-second-rehearsal-1-genesis.json](duality-second-rehearsal-1-genesis.json) -->
