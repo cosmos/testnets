@@ -1,0 +1,19 @@
+{
+    "title": "Create the duality chain",
+    "description": "# Launching the duality-second-rehearsal-1 Chain\r\n\r\nThis is the proposal to create the first persistent duality chain, \"duality-second-rehearsal-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/cosmos/testnets/tree/master/replicated-security/duality-second-rehearsal-1/) repo for additional details.",
+    "chain_id": "duality-second-rehearsal-1",
+    "initial_height": {
+        "revision_height": 1,
+        "revision_number": 1
+    },
+    "genesis_hash": "e095ed2c8226b88d73776f268b1bdfe74cd455a0fc2a598f26035e64fde39d2d",
+    "binary_hash": "2d809e1c249529222ed535d6fe160e91598f93e2e9d80c79fcaf92b44baa921d",
+    "spawn_time": "2023-07-05T15:00:00Z",
+    "blocks_per_distribution_transmission": 1000,
+    "consumer_redistribution_fraction": "0.75",
+    "historical_entries": 10000,
+    "transfer_timeout_period": 1800000000000,
+    "ccv_timeout_period": 2419200000000000,
+    "unbonding_period": 1728000000000000,
+    "deposit": "10000000uatom"
+}
