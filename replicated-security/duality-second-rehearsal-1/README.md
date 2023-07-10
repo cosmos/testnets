@@ -76,7 +76,7 @@ Seed nodes:
 | Name               | Version  |
 |--------------------|----------|
 | Duality            | v0.3.3   |
-| Go                 | v1.18.5  |
+| Go                 | v1.19.10  |
 
 The scripts provided in this repo will install Duality and set up a Cosmovisor service with the auto-download feature enabled on your machine.
 
