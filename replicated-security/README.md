@@ -23,17 +23,17 @@ Stay tuned!
 
 ### Stopped Chains
 
-* Consumer: [`timeout-1`](/replicated-security/timeout-1/README.md)
-* Consumer: [`timeout-2`](/replicated-security/timeout-2/README.md)
-* Consumer: [`timeout-3`](/replicated-security/timeout-3/README.md)
-* Consumer: [`consumer-1`](/replicated-security/consumer-1/README.md)
-* Consumer: [`slasher`](/replicated-security/slasher/README.md)
-* Consumer: [`noble-1`](/replicated-security/noble-1/README.md)
-* Consumer: [`removeme`](/replicated-security/removeme/README.md)
-* Consumer: [`neutron-rehearsal-1`](/replicated-security/neutron-rehearsal-1/README.md)
-* Consumer: [`baryon-1`](/replicated-security/baryon-1/README.md)
-* Consumer: [`neutron-rehearsal-fix-1`](/replicated-security/neutron-rehearsal-fix-1/README.md)
-* Consumer: [`stride-ics-testnet-1`](/replicated-security/stride-ics-testnet-1/readme.md)
+* Consumer: [`timeout-1`](/replicated-security/stopped/timeout-1/README.md)
+* Consumer: [`timeout-2`](/replicated-security/stopped/timeout-2/README.md)
+* Consumer: [`timeout-3`](/replicated-security/stopped/timeout-3/README.md)
+* Consumer: [`consumer-1`](/replicated-security/stopped/consumer-1/README.md)
+* Consumer: [`slasher`](/replicated-security/stopped/slasher/README.md)
+* Consumer: [`noble-1`](/replicated-security/stopped/noble-1/README.md)
+* Consumer: [`removeme`](/replicated-security/stopped/removeme/README.md)
+* Consumer: [`neutron-rehearsal-1`](/replicated-security/stopped/neutron-rehearsal-1/README.md)
+* Consumer: [`baryon-1`](/replicated-security/stopped/baryon-1/README.md)
+* Consumer: [`neutron-rehearsal-fix-1`](/replicated-security/stopped/neutron-rehearsal-fix-1/README.md)
+* Consumer: [`stride-ics-testnet-1`](/replicated-security/stopped/stride-ics-testnet-1/readme.md)
 
 ## Upcoming Events
 
