@@ -26,11 +26,11 @@ GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/du
 # Install wget and jq
 sudo apt-get install curl jq wget -y
 
-# Install go 1.18.5
+# Install go 1.19.10
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
-wget https://go.dev/dl/go1.18.5.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.18.5.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.19.10.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.19.10.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
 # Install duality binary
