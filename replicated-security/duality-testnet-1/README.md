@@ -13,7 +13,7 @@ The `duality-testnet-1` chain will be launched as a persistent chain to test Int
 * **Reference binary**: [dualityd-linux-amd64](./dualityd-linux-amd64.tar.gz)
 * **Binary sha256sum**: `39f3d1cc943a70df579285053732fcf357a5dc241124a44a2e549333433509c2`
 * **Genesis file _without CCV state_:** [duality-testnet-1-genesis-without-ccv.json](duality-testnet-1-genesis-without-ccv.json), verify with `shasum -a 256 duality-testnet-1-genesis-without-ccv.json`
-* **SHA256 for genesis file _without CCV state_**: `43e71dd896f0e1e227da7ce7108af986ece053503abf92ec72ad05b45167f7e7`
+* **SHA256 for genesis file _without CCV state_**: `c8f52491ade11a69907712e5d257e63a1a55ac47236c7259714ce8aa767b3640`
 
 * Genesis file hash
   * The SHA256 is used to verify against the genesis file (without CCV state) that the proposer has made available for review.
