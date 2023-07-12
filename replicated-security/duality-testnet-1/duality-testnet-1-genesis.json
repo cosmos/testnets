@@ -1,0 +1,681 @@
+{
+  "genesis_time": "2023-07-12T15:00:00Z",
+  "chain_id": "duality-testnet-1",
+  "initial_height": "1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000",
+      "max_bytes": "1048576"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    },
+    "version": {
+      "app": "0"
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "07-tendermint": null,
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "cosmos1ugfvmwydvmvvjkzxjt4nduaj5p42kkednxkppv",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "cosmos1t0v4244t7nd8h4vq29vv6ufmhr5w8gcjqyxqty",
+          "pub_key": null,
+          "account_number": "1",
+          "sequence": "0"
+        }
+      ]
+    },
+    "authz": {
+      "authorization": []
+    },
+    "bank": {
+      "params": {
+        "send_enabled": [],
+        "default_send_enabled": true
+      },
+      "balances": [],
+      "supply": [],
+      "denom_metadata": [],
+      "send_enabled": []
+    },
+    "capability": {
+      "index": "1",
+      "owners": []
+    },
+    "ccvconsumer": {
+      "params": {
+        "enabled": true,
+        "blocks_per_distribution_transmission": "1000",
+        "distribution_transmission_channel": "",
+        "provider_fee_pool_addr_str": "",
+        "ccv_timeout_period": "2419200s",
+        "transfer_timeout_period": "1800s",
+        "consumer_redistribution_fraction": "0.75",
+        "historical_entries": "10000",
+        "unbonding_period": "1728000s",
+        "soft_opt_out_threshold": "0.05",
+        "reward_denoms": [],
+        "provider_reward_denoms": [
+          "uatom"
+        ]
+      },
+      "provider_client_id": "",
+      "provider_channel_id": "",
+      "new_chain": true,
+      "provider_client_state": {
+        "chain_id": "provider",
+        "trust_level": {
+          "numerator": "1",
+          "denominator": "3"
+        },
+        "trusting_period": "453600s",
+        "unbonding_period": "1814400s",
+        "max_clock_drift": "10s",
+        "frozen_height": {
+          "revision_number": "0",
+          "revision_height": "0"
+        },
+        "latest_height": {
+          "revision_number": "0",
+          "revision_height": "2334883"
+        },
+        "proof_specs": [
+          {
+            "leaf_spec": {
+              "hash": "SHA256",
+              "prehash_key": "NO_HASH",
+              "prehash_value": "SHA256",
+              "length": "VAR_PROTO",
+              "prefix": "AA=="
+            },
+            "inner_spec": {
+              "child_order": [
+                0,
+                1
+              ],
+              "child_size": 33,
+              "min_prefix_length": 4,
+              "max_prefix_length": 12,
+              "empty_child": null,
+              "hash": "SHA256"
+            },
+            "max_depth": 0,
+            "min_depth": 0
+          },
+          {
+            "leaf_spec": {
+              "hash": "SHA256",
+              "prehash_key": "NO_HASH",
+              "prehash_value": "SHA256",
+              "length": "VAR_PROTO",
+              "prefix": "AA=="
+            },
+            "inner_spec": {
+              "child_order": [
+                0,
+                1
+              ],
+              "child_size": 32,
+              "min_prefix_length": 1,
+              "max_prefix_length": 1,
+              "empty_child": null,
+              "hash": "SHA256"
+            },
+            "max_depth": 0,
+            "min_depth": 0
+          }
+        ],
+        "upgrade_path": [
+          "upgrade",
+          "upgradedIBCState"
+        ],
+        "allow_update_after_expiry": true,
+        "allow_update_after_misbehaviour": true
+      },
+      "provider_consensus_state": {
+        "timestamp": "2023-07-12T15:00:01.609703064Z",
+        "root": {
+          "hash": "wK0t0ZOnSTc96ac6mFQP7wHxurl2lUD2mby9vVerono="
+        },
+        "next_validators_hash": "8B06882876BBFFF70E62E3BE0B6B4368B353DC6545634762F8782780063084A3"
+      },
+      "maturing_packets": [],
+      "initial_val_set": [
+        {
+          "pub_key": {
+            "ed25519": "d1pL2k+uAuK++sumfQ/d0LQrvdn+gtFwbgcuhURj5ds="
+          },
+          "power": "13607427"
+        },
+        {
+          "pub_key": {
+            "ed25519": "dWGs9y2BodKKs8rjpWk9oQvEwzzPXPbAPAN59kztduE="
+          },
+          "power": "5985330"
+        },
+        {
+          "pub_key": {
+            "ed25519": "vbZ8XQCZPwvim4pme5PAXjF4Y/dw7jRef7KMPtxI0+0="
+          },
+          "power": "11510002"
+        },
+        {
+          "pub_key": {
+            "ed25519": "2RyHNvJ62kISNvd0cXhGcJQ4DCuA0TZkSoLGoAhQzSI="
+          },
+          "power": "8277585"
+        },
+        {
+          "pub_key": {
+            "ed25519": "S6N8Q1n204UwyPR16TYpOm4jbgg+9cDWiYrs3HvnBa0="
+          },
+          "power": "33994"
+        },
+        {
+          "pub_key": {
+            "ed25519": "LKwKvQPVTwxwW4UDpyIvGW8Sa9sUdaxhhhVdOigrEyA="
+          },
+          "power": "9492225"
+        },
+        {
+          "pub_key": {
+            "ed25519": "iTif8WGSm1keuRCyPMVMK0ueXXzRRXNSm3nllLZImig="
+          },
+          "power": "12336052"
+        },
+        {
+          "pub_key": {
+            "ed25519": "eguEFMFLTf31h29PoiMhBTn9fZZafEJx/t6AA9KmYSU="
+          },
+          "power": "8878000"
+        },
+        {
+          "pub_key": {
+            "ed25519": "yjKCxj8Gq49YyR0OwkIA84NsRnZsQxzbSCi+KqcwaBQ="
+          },
+          "power": "12680109"
+        },
+        {
+          "pub_key": {
+            "ed25519": "L8S1/fzYyGO7EXjrBhllib39RRm9UKti9V7PpWl8qQQ="
+          },
+          "power": "14506810"
+        },
+        {
+          "pub_key": {
+            "ed25519": "je1SxFkQ7PDF2Dvm+ePsU8Hu+6eFz0CI7vUz7xEy8po="
+          },
+          "power": "12279607"
+        },
+        {
+          "pub_key": {
+            "ed25519": "rjlnCtaMLGYb8HE0vvR3uFoAbMQzJEy1aJtPZSrwDaA="
+          },
+          "power": "10844446"
+        },
+        {
+          "pub_key": {
+            "ed25519": "eRgVcO73ikUF3mhXLVZ36/ZkQS3cIYeOMMvow0OhoEE="
+          },
+          "power": "1"
+        },
+        {
+          "pub_key": {
+            "ed25519": "R0EvAcNXzLnSgU5QXUCG2OMr1imOnEQjciujWy68OR0="
+          },
+          "power": "1"
+        },
+        {
+          "pub_key": {
+            "ed25519": "iJIqFb/77Mx0u6Xjb/HCtoe5/6ikq8qPkdMW+VvgMPI="
+          },
+          "power": "11486741"
+        },
+        {
+          "pub_key": {
+            "ed25519": "ptPkdYI1OIxrC4wJ1Limjr68sZKDvWm66jkaEG+ZEqg="
+          },
+          "power": "9"
+        },
+        {
+          "pub_key": {
+            "ed25519": "pss1JOG0uaY+6HNJD8N78Dqp4tT/jVVvGubR2v4CHwk="
+          },
+          "power": "10008221"
+        },
+        {
+          "pub_key": {
+            "ed25519": "Aeb1tEEvH9xCjd8OwiedKxbaGor95zMQS/8lfNeh3sc="
+          },
+          "power": "12080001"
+        },
+        {
+          "pub_key": {
+            "ed25519": "qWuaZYOOBdfqGFE07n67dt1bBFpGzJZiYQZtOJkTwnw="
+          },
+          "power": "14"
+        },
+        {
+          "pub_key": {
+            "ed25519": "YBaukC86rQS6d5TXIanVvoOwJcmbmDI8h4j44Pd/oI0="
+          },
+          "power": "10799065"
+        },
+        {
+          "pub_key": {
+            "ed25519": "mCBqRPeAco1/auRtqN/kmquIWXc5aUU6+JkM67OSNs4="
+          },
+          "power": "12000009"
+        },
+        {
+          "pub_key": {
+            "ed25519": "1CVArS1W5fn2b7yLdzoIHyglnAij1dP0Wwn2kATL7YY="
+          },
+          "power": "2446589"
+        },
+        {
+          "pub_key": {
+            "ed25519": "M39sW5aeRTlEpy4tXXuktCK9Ke/50KBe5eboN9IHwtY="
+          },
+          "power": "5000001"
+        },
+        {
+          "pub_key": {
+            "ed25519": "kS4CaF6ek03+VGkxmGGY/efXT3Y1L0WtKxrvHMJMk80="
+          },
+          "power": "8965261"
+        },
+        {
+          "pub_key": {
+            "ed25519": "yzbnoQv2v/+lgyHFs90mvuQP58xP0lDlFbhPgcmQWds="
+          },
+          "power": "12166155"
+        },
+        {
+          "pub_key": {
+            "ed25519": "iRfZsPMxIM3votG1wKm5HhOG0lx4MSORW/2XBl8MVbc="
+          },
+          "power": "1"
+        },
+        {
+          "pub_key": {
+            "ed25519": "jN6WqAc3ghIAuZQFkQNPSqYCz0h/N7hH5EsFea31UT4="
+          },
+          "power": "5"
+        },
+        {
+          "pub_key": {
+            "ed25519": "XLnR/GJ2Hmw+I0M3RLOi7HQJJryGs9jPq4l7W25v3H4="
+          },
+          "power": "4839203"
+        },
+        {
+          "pub_key": {
+            "ed25519": "2C4p/SeZLhaDlW1lNwp7ZCzQ36uWdLS0VevM/K5+2H8="
+          },
+          "power": "8"
+        },
+        {
+          "pub_key": {
+            "ed25519": "s2ssopV2TLMTTd0Ae4KeB1P7/jrdeYIocSmPsocXHnc="
+          },
+          "power": "2067614"
+        },
+        {
+          "pub_key": {
+            "ed25519": "KTFabU4Q5TxOK3l1DXdE1hWQqcrlXS3aZmMVxKMYfIE="
+          },
+          "power": "5"
+        },
+        {
+          "pub_key": {
+            "ed25519": "zUD04Ga6ry1iOHZvMUqdXPYSnnUi+wTUv1Tw5Yfez1g="
+          },
+          "power": "1"
+        },
+        {
+          "pub_key": {
+            "ed25519": "komHSGMVa+Sf5VN8IH5M2HfulNVD6FeSiXp2nqTjLKc="
+          },
+          "power": "8648675"
+        },
+        {
+          "pub_key": {
+            "ed25519": "bWrAk+lQXsCsJetqCoz+rYudttUyRkiaU7wz1gV1vR0="
+          },
+          "power": "1"
+        },
+        {
+          "pub_key": {
+            "ed25519": "KQofNMS6N1JWLvxujlQuHZcsxZEqIeoWbP9Gd8HxMZw="
+          },
+          "power": "5042545"
+        },
+        {
+          "pub_key": {
+            "ed25519": "2hl2MUsU1LNcIdxhWOz5mTziNja9i/tZ7aoGyCrcMMo="
+          },
+          "power": "10408810"
+        },
+        {
+          "pub_key": {
+            "ed25519": "31TXpBm8cVfCIRzhkmP6qCGEu7GXvL+KVW4KODI4PDI="
+          },
+          "power": "11873164"
+        },
+        {
+          "pub_key": {
+            "ed25519": "oMNTaPQRD3mxYzARLw4wVTsbTEkNj/NFsnAgR24WMPY="
+          },
+          "power": "6673007"
+        },
+        {
+          "pub_key": {
+            "ed25519": "uu1FpuT2YeSfPGdoRcthkech+BVnW2YwKSb2R5PpMeo="
+          },
+          "power": "9329475"
+        },
+        {
+          "pub_key": {
+            "ed25519": "94a+PDtlIzEzfZmCjaM79aJDda2fBeLQxPEumfaX8Qw="
+          },
+          "power": "118307516"
+        },
+        {
+          "pub_key": {
+            "ed25519": "wOI6HVs02UKDtHkQhfe5YJWJUW6P5dZ35o1KF+e70jg="
+          },
+          "power": "13320544"
+        },
+        {
+          "pub_key": {
+            "ed25519": "LY5kYhS4ZjQBdMtP7fgZSdpLn54GGBashLVtFe4YsLg="
+          },
+          "power": "9079302"
+        },
+        {
+          "pub_key": {
+            "ed25519": "9OqYVsN/2KjWHMSVz5TfsKoQJxrZJGhMw5hBTuiG1gE="
+          },
+          "power": "1"
+        },
+        {
+          "pub_key": {
+            "ed25519": "g+D8+Q89301N8FX6zNxfMJoi2UZ17erBiNEgKMxMtNw="
+          },
+          "power": "7"
+        },
+        {
+          "pub_key": {
+            "ed25519": "arn47pf8JHFENdOIGHxxmB5QCWgupJyXjy3i2l2UFn8="
+          },
+          "power": "4405016"
+        },
+        {
+          "pub_key": {
+            "ed25519": "2MceFeI3tWD0++JA9aPJFrsh2la0sZeT8JQbonaf+fI="
+          },
+          "power": "2"
+        },
+        {
+          "pub_key": {
+            "ed25519": "rG/4Q6bH4yf0C6ZPUk5eB7bqBGLL6BR9ctuy/6orB68="
+          },
+          "power": "119901263"
+        },
+        {
+          "pub_key": {
+            "ed25519": "nf/eeNMIb4XdOuBMfG5mF43KtzL+41lXV+2pDGcNeNM="
+          },
+          "power": "153157430"
+        },
+        {
+          "pub_key": {
+            "ed25519": "9LDJ8ZOJ55+hZ8NbAY5kc7Ne1YP/+mwT8VAqcdTwfz8="
+          },
+          "power": "15"
+        },
+        {
+          "pub_key": {
+            "ed25519": "iyXbB3X6HAAHIFAtbt7EZ0clPChMWpnnlY6HT+JLhTQ="
+          },
+          "power": "8425"
+        },
+        {
+          "pub_key": {
+            "ed25519": "w72G0WEhxUJ4NN75WkYubJSSDMpxCkAbshgg31vSqvE="
+          },
+          "power": "1"
+        },
+        {
+          "pub_key": {
+            "ed25519": "NiKRUXQ5+jR16WeULbg9hvtk+sWtc1ky5ukxjvK+hm4="
+          },
+          "power": "19"
+        }
+      ],
+      "height_to_valset_update_id": [],
+      "outstanding_downtime_slashing": [],
+      "pending_consumer_packets": {
+        "list": []
+      },
+      "last_transmission_block_height": {
+        "height": "0"
+      }
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "stake",
+        "amount": "1000"
+      }
+    },
+    "dex": {
+      "params": {},
+      "tickLiquidityList": [],
+      "inactiveLimitOrderTrancheList": [],
+      "limitOrderTrancheUserList": []
+    },
+    "epochs": {
+      "epochs": [
+        {
+          "identifier": "day",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "86400s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "hour",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "3600s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "week",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "604800s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        }
+      ]
+    },
+    "evidence": {
+      "evidence": []
+    },
+    "feegrant": {
+      "allowances": []
+    },
+    "genutil": {
+      "gen_txs": []
+    },
+    "group": [
+      {
+        "group_members": [
+          {
+            "group_id": "1",
+            "member": {
+              "added_at": "2023-07-12T15:00:00Z",
+              "address": "cosmos1ugfvmwydvmvvjkzxjt4nduaj5p42kkednxkppv",
+              "metadata": "",
+              "weight": "1"
+            }
+          }
+        ],
+        "group_policies": [
+          {
+            "address": "cosmos1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzsfwkgpd",
+            "admin": "cosmos1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzsfwkgpd",
+            "created_at": "2023-07-12T15:00:00Z",
+            "decision_policy": {
+              "@type": "/cosmos.group.v1.PercentageDecisionPolicy",
+              "percentage": "0.50",
+              "windows": {
+                "min_execution_period": "0s",
+                "voting_period": "432000s"
+              }
+            },
+            "group_id": "1",
+            "metadata": "",
+            "version": "2"
+          }
+        ],
+        "group_policy_seq": "1",
+        "group_seq": "1",
+        "groups": [
+          {
+            "admin": "cosmos1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzsfwkgpd",
+            "created_at": "2023-07-12T15:00:00Z",
+            "id": "1",
+            "metadata": "",
+            "total_weight": "1",
+            "version": "2"
+          }
+        ],
+        "proposal_seq": "0",
+        "proposals": [],
+        "votes": []
+      },
+      0
+    ],
+    "ibc": {
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "clients_metadata": [],
+        "params": {
+          "allowed_clients": [
+            "06-solomachine",
+            "07-tendermint",
+            "09-localhost"
+          ]
+        },
+        "create_localhost": false,
+        "next_client_sequence": "0"
+      },
+      "connection_genesis": {
+        "connections": [],
+        "client_connection_paths": [],
+        "next_connection_sequence": "0",
+        "params": {
+          "max_expected_time_per_block": "30000000000"
+        }
+      },
+      "channel_genesis": {
+        "channels": [],
+        "acknowledgements": [],
+        "commitments": [],
+        "receipts": [],
+        "send_sequences": [],
+        "recv_sequences": [],
+        "ack_sequences": [],
+        "next_channel_sequence": "0"
+      }
+    },
+    "ibchooks": {},
+    "incentives": {
+      "params": {
+        "distr_epoch_identifier": "day",
+        "max_gauges": "20"
+      },
+      "gauges": [],
+      "last_gauge_id": "0",
+      "last_stake_id": "0",
+      "stakes": [],
+      "accountHistories": []
+    },
+    "packetfowardmiddleware": {
+      "params": {
+        "fee_percentage": "0.000000000000000000"
+      },
+      "in_flight_packets": {}
+    },
+    "params": null,
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "864000",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600s",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": [],
+      "missed_blocks": []
+    },
+    "swap-middleware": null,
+    "transfer": {
+      "port_id": "transfer",
+      "denom_traces": [],
+      "params": {
+        "send_enabled": true,
+        "receive_enabled": true
+      },
+      "total_escrowed": []
+    },
+    "upgrade": {},
+    "vesting": {},
+    "wasm": {
+      "params": {
+        "code_upload_access": {
+          "permission": "Nobody",
+          "address": "",
+          "addresses": []
+        },
+        "instantiate_default_permission": "Nobody"
+      },
+      "codes": [],
+      "contracts": [],
+      "sequences": []
+    }
+  }
+}
