@@ -539,55 +539,52 @@
     "genutil": {
       "gen_txs": []
     },
-    "group": [
-      {
-        "group_members": [
-          {
-            "group_id": "1",
-            "member": {
-              "added_at": "2023-07-12T15:00:00Z",
-              "address": "cosmos1ugfvmwydvmvvjkzxjt4nduaj5p42kkednxkppv",
-              "metadata": "",
-              "weight": "1"
+    "group": {
+      "group_members": [
+        {
+          "group_id": "1",
+          "member": {
+            "added_at": "2023-07-12T15:00:00Z",
+            "address": "cosmos1ugfvmwydvmvvjkzxjt4nduaj5p42kkednxkppv",
+            "metadata": "",
+            "weight": "1"
+          }
+        }
+      ],
+      "group_policies": [
+        {
+          "address": "cosmos1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzsfwkgpd",
+          "admin": "cosmos1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzsfwkgpd",
+          "created_at": "2023-07-12T15:00:00Z",
+          "decision_policy": {
+            "@type": "/cosmos.group.v1.PercentageDecisionPolicy",
+            "percentage": "0.50",
+            "windows": {
+              "min_execution_period": "0s",
+              "voting_period": "432000s"
             }
-          }
-        ],
-        "group_policies": [
-          {
-            "address": "cosmos1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzsfwkgpd",
-            "admin": "cosmos1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzsfwkgpd",
-            "created_at": "2023-07-12T15:00:00Z",
-            "decision_policy": {
-              "@type": "/cosmos.group.v1.PercentageDecisionPolicy",
-              "percentage": "0.50",
-              "windows": {
-                "min_execution_period": "0s",
-                "voting_period": "432000s"
-              }
-            },
-            "group_id": "1",
-            "metadata": "",
-            "version": "2"
-          }
-        ],
-        "group_policy_seq": "1",
-        "group_seq": "1",
-        "groups": [
-          {
-            "admin": "cosmos1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzsfwkgpd",
-            "created_at": "2023-07-12T15:00:00Z",
-            "id": "1",
-            "metadata": "",
-            "total_weight": "1",
-            "version": "2"
-          }
-        ],
-        "proposal_seq": "0",
-        "proposals": [],
-        "votes": []
-      },
-      0
-    ],
+          },
+          "group_id": "1",
+          "metadata": "",
+          "version": "2"
+        }
+      ],
+      "group_policy_seq": "1",
+      "group_seq": "1",
+      "groups": [
+        {
+          "admin": "cosmos1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzsfwkgpd",
+          "created_at": "2023-07-12T15:00:00Z",
+          "id": "1",
+          "metadata": "",
+          "total_weight": "1",
+          "version": "2"
+        }
+      ],
+      "proposal_seq": "0",
+      "proposals": [],
+      "votes": []
+    },
     "ibc": {
       "client_genesis": {
         "clients": [],
