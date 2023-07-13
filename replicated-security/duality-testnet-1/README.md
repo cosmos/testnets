@@ -106,8 +106,8 @@ after installation please check installed version by running:
 You should see the following:
 
 ```
-name: Duality
+name: duality
 server_name: dualityd
-version: 0.3.0
-commit: 98fc9734cfe79bf56015d630219d4ed30b02ae72
+version: 0.3.4
+commit: 15cb02ba6b8c87723c7fd4bd4ce0c3bf660d6aff
 ```
