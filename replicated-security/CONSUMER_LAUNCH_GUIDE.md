@@ -85,6 +85,7 @@ We recommend choosing a `chain_id` with the suffix `-1`, even if it's a subseque
 - [ ] Slashing parameters: Set `signed_blocks_window` and `min_signed_per_window` adequately to ensure validators have at least 12 hours to join the chain after launch without getting jailed
 - [ ] `shasum -a 256 <genesis file without CCV>` matches the checksum in the proposal
 - [ ] `shasum -a 256 <genesis file without CCV>` matches the checksum in the `README`
+- [ ] The genesis file is correctly formed: `<consumer binary or gaiad> validate-genesis /path/to/genesis-without-ccv.json` returns without error
 
 See the `slasher` chain [genesis](./stopped/slasher/slasher-genesis-without-ccv.json) for reference.
 
