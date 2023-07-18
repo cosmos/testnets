@@ -38,7 +38,7 @@ Endpoints are exposed as subdomains for the sentry and snapshot nodes (described
 
 Seed nodes:
 
-1. `2b92aec80bbac6f559a2444b3f14f54b12afcab1@p2p.testnet-1.duality.xyz:26656`
+1. `df5b21498dd5594a609e2e2af41434bbd9297ffd@p2p.testnet-1.duality.xyz:26656`
 
 ## IBC Data
 
@@ -106,8 +106,8 @@ after installation please check installed version by running:
 You should see the following:
 
 ```
-name: Duality
+name: duality
 server_name: dualityd
-version: 0.3.0
-commit: 98fc9734cfe79bf56015d630219d4ed30b02ae72
+version: 0.3.4
+commit: 15cb02ba6b8c87723c7fd4bd4ce0c3bf660d6aff
 ```
