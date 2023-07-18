@@ -5,6 +5,7 @@
 | August 16  2023   |   |                                                                          |
 | August 9  2023   |   |                                                                           |
 | August 2 2023   |   |                                                                           |
+| July 26  2023   | Major upgrade  |  Provider chain to be upgraded to `v11` (rc TBD)                                                                           |
 | July 26  2023   | Consumer upgrade  |  Consumer chain `pion-1` to be upgraded to `v1.0.3`                                                                           |
 | July 19  2023   | No testnet event  |  Stride launching on mainnet                                                                                                  |
 | July 12  2023   | Consumer addition | ✅ Consumer chain `duality-testnet-1` is created and relayer started                                                          |
