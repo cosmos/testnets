@@ -1,13 +1,30 @@
 # Scheduled Upgrades 🗓️ 
 
+## v11
+
+### Schedule
+
+| Date         | Testnet plan                                                                                       |
+| ------------ | -------------------------------------------------------------------------------------------------- |
+| July 26 2023 | [Gaia v11.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v11.0.0-rc0) is live on the testnet |
+| July 25 2023 | Submit and pass v11 software upgrade proposal                                                      |
+
+* **Version before upgrade**: `v10.0.2`
+* **Version after upgrade**: `v11.0.0-rc0`
+
+### Upgrade details
+
+* **Upgrade height: `TBD`**
+  * Target upgrade time: `2023-07-26 13:30:00 UTC`
+
 ## v10
 
 ### Schedule
 
-| Date        | Testnet plan                                                                                                                       |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| May 24 2023 | ✅ [Gaia v10.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v10.0.0-rc0) is live on the testnet |
-| May 24 2023 | ✅ Submit and pass v10 software upgrade [proposal](https://explorer.theta-testnet.polypore.xyz/proposals/167)                                                                          |
+| Date        | Testnet plan                                                                                                 |
+| ----------- | ------------------------------------------------------------------------------------------------------------ |
+| May 24 2023 | ✅ [Gaia v10.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v10.0.0-rc0) is live on the testnet         |
+| May 24 2023 | ✅ Submit and pass v10 software upgrade [proposal](https://explorer.theta-testnet.polypore.xyz/proposals/167) |
 
 * **Version before upgrade**: `v9.0.3`
 * **Version after upgrade**: `v10.0.0-rc0`
