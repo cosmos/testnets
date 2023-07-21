@@ -8,7 +8,7 @@ Visit the [Scheduled Upgrades](UPGRADES.md) page for details on current and upco
 
 - **Chain-ID**: `theta-testnet-001`
 - **Launch date**: 2022-03-10
-- **Current Gaia Version:** `v10.0.1` (upgraded to v10 at height `16117530`)
+- **Current Gaia Version:** `v10.0.2` (upgraded to v10 at height `16117530`)
 - **Launch Gaia Version:** `release/v6.0.0`
 - **Genesis File:**  Zipped and included [in this repository](genesis.json.gz), unzip and verify with `shasum -a 256 genesis.json`
 - **Genesis sha256sum**: `522d7e5227ca35ec9bbee5ab3fe9d43b61752c6bdbb9e7996b38307d7362bb7e`
@@ -110,7 +110,7 @@ Run either one of the scripts provided in this repo to join the provider chain:
 
 If you want to use Cosmovisor's **auto-download** feature, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=true`
 
-If you are **manually preparing your binary**, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` and download a copy of the v10.0.0-rc0 binary to the v10 upgrade directory in your cosmovisor directory (`upgrades/v10/bin/gaiad`). 
+If you are **manually preparing your binary**, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` and download a copy of the v11.0.0-rc0 binary to the v11 upgrade directory in your cosmovisor directory (`upgrades/v10/bin/gaiad`). 
 
 ```
 .
@@ -119,7 +119,7 @@ If you are **manually preparing your binary**, please set the environment variab
 │   └── bin
 │       └── gaiad
 └── upgrades
-    └── v10
+    └── v11
         ├── bin
         │   └── gaiad
         └── upgrade-info.json
