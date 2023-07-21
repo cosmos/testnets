@@ -225,7 +225,7 @@ sudo journalctl -fu $NODE_MONIKER.service
 **Please make sure your node is running and producing blocks before you proceed further!** It can take up to 10 minutes for your node to start up. Once it's producing blocks you'll start seeing log messages like the following:
 
 ```
-INF committed state app_hash=99D509C03FDDFEACAD90608008942C0B4C801151BDC1B8998EEC69A1772B22DF height=9060257 module=state num_txs=0
+INF committed state app_hash=99D509C03FDDFEACAD90608008942C0B4C801151BDC1B8998EEC69A1772B22DF height=16188740 module=state num_txs=0
 ```
 
 ## Manually prepare the upgrade binary (if you do not have auto-download enabled on Cosmovisor)
