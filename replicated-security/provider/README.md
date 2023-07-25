@@ -15,8 +15,9 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 The provider chain will upgrade to [v11.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v11.0.0-rc0) on **Wednesday, July 26 2023**.
 
-* **Block height: `TBD`**
+* **Block height: `2532935`**
   * Target upgrade time: `2023-07-26 14:00:00 UTC`
+* [Proposal #45](https://explorer.rs-testnet.polypore.xyz/provider/gov/45)
 * Golang version: 1.20
 
 ## Endpoints
