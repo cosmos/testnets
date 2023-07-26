@@ -5,20 +5,11 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v10.0.2`](https://github.com/cosmos/gaia/releases/tag/v10.0.2)
+* **Current Gaia Version**: [`v11.0.0-rc0`](https://github.com/cosmos/gaia/releases/tag/v11.0.0-rc0), upgraded from v10 at block height `2532935`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
-
-## v11 Upgrade
-
-The provider chain will upgrade to [v11.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v11.0.0-rc0) on **Wednesday, July 26 2023**.
-
-* **Block height: `2532935`**
-  * Target upgrade time: `2023-07-26 14:00:00 UTC`
-* [Proposal #45](https://explorer.rs-testnet.polypore.xyz/provider/gov/45)
-* Golang version: 1.20
 
 ## Endpoints
 
@@ -119,6 +110,10 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Replace the `v9.0.0-rc2` binary with the `v9.0.0-rc6` one in `~/go/bin`, or `~/.gaia/cosmovisor/current/bin` if you are using Cosmovisor.
 * Start the service.
 * When the node reaches height `228100`, stop the service.
-* Set `halt-height = 0` in `~/.gaia/config/app.toml`.
+* Set `halt-height = 1534600` in `~/.gaia/config/app.toml`.
 * Replace the `v9.0.0-rc6` binary with the `v9.0.1-rc0` one.
 * Start the service.
+* When the node reaches height `1534600`, stop the service.
+* Replace the `v9.0.0-rc6` binary with the `v9.1.0` one in `~/go/bin`, or `~/.gaia/cosmovisor/current/bin` if you are using Cosmovisor.
+* When the node reaches height `1634770`, it will attempt to upgrade to Gaia `v10`. You can use Cosmovisor's auto-download feature or install the `v10.0.0-rc0` release binary.
+* When the node reaches height `2532935`, it will attempt to upgrade to Gaia `v11`. You can use Cosmovisor's auto-download feature or install the `v11.0.0-rc0` release binary
