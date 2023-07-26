@@ -9,8 +9,8 @@
 | August 16  2023    |                       |                                                                                                                              |
 | August 9  2023     | Consumer addition     | Consumer chain for Noble (name tbd) is created and relayer started                                                           |
 | August 2 2023      |                       |
-| July 26  2023      | Consumer upgrade      | Consumer chain `pion-1` to be upgraded to Neutron `v1.0.4`                                                                   |
-| July 26  2023      | Major upgrade         | Provider chain upgrades to Gaia `v11.0.0-rc0`                                                                                |
+| July 26  2023      | Consumer upgrade      | ✅ Consumer chain `pion-1` to be upgraded to Neutron `v1.0.4`                                                                   |
+| July 26  2023      | Major upgrade         | ✅ Provider chain upgrades to Gaia `v11.0.0-rc0`                                                                                |
 | July 25  2023      | Major upgrade         | ✅ [Proposal](https://explorer.rs-testnet.polypore.xyz/provider/gov/45) to upgrade provider chain to Gaia v11 passes          |
 | July 19  2023      | No testnet event      | ✅ Stride launches on mainnet                                                                                                 |
 | July 12  2023      | Consumer addition     | ✅ Consumer chain `duality-testnet-1` is created and relayer started                                                          |
