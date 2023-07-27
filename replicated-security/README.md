@@ -20,6 +20,7 @@ Stay tuned!
 * Provider: [`provider`](/replicated-security/provider/README.md)
 * Consumer: [`pion-1`](/replicated-security/pion-1/README.md) (Neutron persistent chain)
 * Consumer: [`duality-rehearsal-1`](/replicated-security/duality-rehearsal-1/README.md)
+* Consumer: [`stride-ics-testnet-two-1`](/replicated-security/stride-ics-testnet-two-1/README.md)
 
 ### Stopped Chains
 
