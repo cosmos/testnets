@@ -7,7 +7,7 @@
 | August 30  2023    |                       |                                                                                                                              |
 | August 23  2023    |                       |                                                                                                                              |
 | August 16  2023    |                       |                                                                                                                              |
-| August 9  2023     | Consumer addition     | Consumer chain for Noble (name tbd) is created and relayer started                                                           |
+| August 9  2023     |    |                                                           |
 | August 2 2023      |                       |
 | July 26  2023      | Consumer upgrade      | ✅ Consumer chain `pion-1` to be upgraded to Neutron `v1.0.4`                                                                   |
 | July 26  2023      | Major upgrade         | ✅ Provider chain upgrades to Gaia `v11.0.0-rc0`                                                                                |
