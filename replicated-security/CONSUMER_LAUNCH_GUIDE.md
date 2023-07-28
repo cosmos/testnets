@@ -45,7 +45,7 @@ Additionally, you may want to run:
 
 ## ✍️ Submitting a PR for a new chain
 
-Each consumer chain gets its own directory. You can use the [`slasher`](./slasher/) chain as reference. Feel free to clone the slasher directory, modify it for your consumer chain, and make a PR with the relevant information.
+Each consumer chain gets its own directory. You can use the [`slasher`](./stopped/slasher/) chain as reference. Feel free to clone the slasher directory, modify it for your consumer chain, and make a PR with the relevant information.
 
 Hypha will be reviewing the PR to ensure it meets the following criteria:
 
@@ -60,7 +60,7 @@ Hypha will be reviewing the PR to ensure it meets the following criteria:
   - [ ] Seeds OR persistent peers
   - [ ] State sync nodes (if any)
 
-See the `slasher` chain [page](./slasher) for reference.
+See the `slasher` chain [page](./stopped/slasher) for reference.
 
 #### `chain_id` must be identical in the following places:
  - [ ] `README`
@@ -85,8 +85,9 @@ We recommend choosing a `chain_id` with the suffix `-1`, even if it's a subseque
 - [ ] Slashing parameters: Set `signed_blocks_window` and `min_signed_per_window` adequately to ensure validators have at least 12 hours to join the chain after launch without getting jailed
 - [ ] `shasum -a 256 <genesis file without CCV>` matches the checksum in the proposal
 - [ ] `shasum -a 256 <genesis file without CCV>` matches the checksum in the `README`
+- [ ] The genesis file is correctly formed: `<consumer binary or gaiad> validate-genesis /path/to/genesis-without-ccv.json` returns without error
 
-See the `slasher` chain [genesis](./slasher/slasher-genesis-without-ccv.json) for reference.
+See the `slasher` chain [genesis](./stopped/slasher/slasher-genesis-without-ccv.json) for reference.
 
 #### `consumer-addition` proposal
 
@@ -98,7 +99,7 @@ See the `slasher` chain [genesis](./slasher/slasher-genesis-without-ccv.json) fo
   - [ ] `ccv_timeout_period: 2419200000000000`. This value must be larger than the unbonding period, the default is 28 days. 
   - [ ] `unbonding_period: 1728000000000000` (given current provider params)
 
-See the `slasher` chain consumer-addition [proposal](./slasher/proposal-slasher.json) and [Interchain Security time-based parameters](https://github.com/cosmos/interchain-security/blob/main/docs/params.md#time-based-parameters) for reference.
+See the `slasher` chain consumer-addition [proposal](./stopped/slasher/proposal-slasher.json) and [Interchain Security time-based parameters](https://github.com/cosmos/interchain-security/blob/main/docs/params.md#time-based-parameters) for reference.
 
 #### Node configurations
   - [ ] `minimum_gas_prices`

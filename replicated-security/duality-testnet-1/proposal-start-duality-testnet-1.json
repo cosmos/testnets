@@ -1,0 +1,19 @@
+{
+    "title": "Create the duality chain",
+    "description": "# Launching the duality-testnet-1 Chain\r\n\r\nThis is the proposal to create the first persistent duality chain, \"duality-testnet-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/cosmos/testnets/tree/master/replicated-security/duality-testnet-1/) repo for additional details.",
+    "chain_id": "duality-testnet-1",
+    "initial_height": {
+        "revision_height": 1,
+        "revision_number": 1
+    },
+    "genesis_hash": "c8f52491ade11a69907712e5d257e63a1a55ac47236c7259714ce8aa767b3640",
+    "binary_hash": "39f3d1cc943a70df579285053732fcf357a5dc241124a44a2e549333433509c2",
+    "spawn_time": "2023-07-12T15:00:00Z",
+    "blocks_per_distribution_transmission": 1000,
+    "consumer_redistribution_fraction": "0.75",
+    "historical_entries": 10000,
+    "transfer_timeout_period": 1800000000000,
+    "ccv_timeout_period": 2419200000000000,
+    "unbonding_period": 1728000000000000,
+    "deposit": "10000000uatom"
+}

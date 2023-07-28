@@ -1,9 +1,9 @@
-# v10 Local Testnet
+# v11 Local Testnet
 
-These instructions will help you simulate the `v10` upgrade on a single validator node testnet as follows:
+These instructions will help you simulate the `v11` upgrade on a single validator node testnet as follows:
 
-- Start with gaia version: `v9.1.0`
-- After the upgrade: gaia release `v10.0.0-rc0`
+- Start with gaia version: `v10.0.2`
+- After the upgrade: gaia release `v11.0.0-rc0`
 
 We will use a modified genesis file during this upgrade. This modified genesis file is similar to the one we are running on the public testnet, and has been modified in part to replace an existing validator (Coinbase Custody) with a new validator account that we control. The account's mnemonic, validator key, and node key are provided in this repo.  
 For a full list of modifications to the genesis file, please [see below](#genesis-modifications).
@@ -11,9 +11,9 @@ For a full list of modifications to the genesis file, please [see below](#genesi
 If you are interested in running v10 without going through the upgrade, you can download one of the binaries in the Gaia [releases](https://github.com/cosmos/gaia/releases) page follow the rest of the instructions up until the node is running and producing blocks.
 
 * **Chain ID**: `local-testnet`
-* **Gaia version:** `v9.1.0`
-* **Modified genesis file:** [here](https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/latest_v9.json.gz)
-* **Original genesis file:** [here](https://files.polypore.xyz/genesis/mainnet-genesis-export/latest_v9.json.gz)
+* **Gaia version:** `v10.0.2`
+* **Modified genesis file:** [here](https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/latest_v10.json.gz)
+* **Original genesis file:** [here](https://files.polypore.xyz/genesis/mainnet-genesis-export/latest_v10.json.gz)
 * **Validator key:** [priv_validator_key](priv_validator_key.json)
 * **Node key:** [node_key](node_key.json)
 * **Validator mnemonic:** [mnemonic.txt](mnemonic.txt)
@@ -28,6 +28,8 @@ cd cosmos-ansible
 ansible-playbook node.yml -i examples/inventory-local-genesis.yml -e 'target=SERVER_IP_OR_DOMAIN'
 ```
 
+The playbook will set up Cosmovisor with auto-download enabled.
+
 For additional information, visit the [examples page](https://github.com/hyphacoop/cosmos-ansible/tree/main/examples#start-a-local-testnet-using-a-modified-genesis-file).
 
 ### Upgrade proposal requirements
@@ -35,6 +37,7 @@ For additional information, visit the [examples page](https://github.com/hyphaco
 Log into the target machine and switch to the `gaia` user with `su gaia`.
 
 ```
+export CHAIN_ID=local-testnet
 export NODE_HOME=$HOME/.gaia
 export USER_MNEMONIC="abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon art"
 export USER_KEY_NAME=my-validator-account
@@ -45,15 +48,15 @@ echo $USER_MNEMONIC | gaiad --home $NODE_HOME keys add $USER_KEY_NAME --recover 
 
 ### Requirements
 
-Follow the [installation instructions](https://hub.cosmos.network/main/getting-started/installation.html) to understand build requirements. You'll need to install Go 1.18.
+Follow the [installation instructions](https://hub.cosmos.network/main/getting-started/installation.html) to understand build requirements. You'll need to install Go 1.20.
 
 ```
 sudo apt update
 sudo apt upgrade
 sudo apt install git build-essential
 
-curl -OL https://golang.org/dl/go1.18.5.linux-amd64.tar.gz
-sudo tar -C /usr/local -xvf go1.18.5.linux-amd64.tar.gz
+curl -OL https://golang.org/dl/go1.20.linux-amd64.tar.gz
+sudo tar -C /usr/local -xvf go1.20.linux-amd64.tar.gz
 ```
 
 ### Modify your paths
@@ -68,7 +71,7 @@ source ~/.profile
 cd $HOME
 git clone https://github.com/cosmos/gaia.git
 cd gaia
-git checkout v9.1.0
+git checkout v10.0.2
 make install
 ```
 
@@ -91,9 +94,9 @@ $BINARY init $NODE_MONIKER --home $NODE_HOME --chain-id=$CHAIN_ID
 Then replace the genesis file with our modified genesis file.
 
 ```
-wget https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/latest_v9.json.gz
-gunzip latest_v9.json.gz
-mv latest_v9.json $NODE_HOME/config/genesis.json
+wget https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/latest_v10.json.gz
+gunzip latest_v10.json.gz
+mv latest_v10.json $NODE_HOME/config/genesis.json
 ```
 
 Replace the validator and node keys.
@@ -139,7 +142,7 @@ Setup the Cosmovisor directory structure. There are two methods to use Cosmoviso
 1. **Manual:** Node runners can manually build the old and new binary and put them into the `cosmovisor` folder (as shown below). Cosmovisor will then switch to the new binary upon upgrade height.
 
 ```
-cosmovisor/upgrades/v10/bin/gaiad
+cosmovisor/upgrades/v11/bin/gaiad
 ```
 
 1. **Auto-download:** Allowing Cosmovisor to [auto-download](https://github.com/cosmos/cosmos-sdk/tree/main/tools/cosmovisor#auto-download) the new binary at the upgrade height automatically.
@@ -153,7 +156,7 @@ cosmovisor/upgrades/v10/bin/gaiad
 │   └── bin
 │       └── gaiad
 └── upgrades
-    └── v10
+    └── v11
         ├── bin
         │   └── gaiad
         └── upgrade-info.json
@@ -222,27 +225,27 @@ sudo journalctl -fu $NODE_MONIKER.service
 **Please make sure your node is running and producing blocks before you proceed further!** It can take up to 10 minutes for your node to start up. Once it's producing blocks you'll start seeing log messages like the following:
 
 ```
-INF committed state app_hash=99D509C03FDDFEACAD90608008942C0B4C801151BDC1B8998EEC69A1772B22DF height=9060257 module=state num_txs=0
+INF committed state app_hash=99D509C03FDDFEACAD90608008942C0B4C801151BDC1B8998EEC69A1772B22DF height=16188740 module=state num_txs=0
 ```
 
 ## Manually prepare the upgrade binary (if you do not have auto-download enabled on Cosmovisor)
 
-Build the upgrade binary: v10 requires GO v1.20.
+Build the upgrade binary: v11 requires GO v1.20.
 ```
 wget -q https://go.dev/dl/go1.20.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.20.linux-amd64.tar.gz
 
 cd $HOME/gaia
-git checkout v10.0.0-rc0
+git checkout v11.0.0-rc0
 git pull
 make install
 ```
 
-Copy over the v10 binary into the correct directory.
+Copy over the v11 binary into the correct directory.
 ```
-mkdir -p $NODE_HOME/cosmovisor/upgrades/v10/bin
-cp $(which gaiad) $NODE_HOME/cosmovisor/upgrades/v10/bin
-export BINARY=$NODE_HOME/cosmovisor/upgrades/v10/bin/gaiad
+mkdir -p $NODE_HOME/cosmovisor/upgrades/v11/bin
+cp $(which gaiad) $NODE_HOME/cosmovisor/upgrades/v11/bin
+export BINARY=$NODE_HOME/cosmovisor/upgrades/v11/bin/gaiad
 ```
 
 ## Submit and vote on a software upgrade proposal
@@ -250,14 +253,14 @@ export BINARY=$NODE_HOME/cosmovisor/upgrades/v10/bin/gaiad
 You can submit a software upgrade proposal without specifiying a binary, but this only works for those nodes who are manually preparing the upgrade binary.
 
 ```
-gaiad tx gov submit-proposal software-upgrade v10 \
---title v10 Upgrade \
+gaiad tx gov submit-proposal software-upgrade v11 \
+--title "v11 Upgrade" \
 --deposit 100uatom \
 --upgrade-height TBD \
---upgrade-info "upgrade to v10" \
---description "upgrade to v10" \
+--upgrade-info '{"binaries":{"darwin/amd64":"https://github.com/cosmos/gaia/releases/download/v11.0.0-rc0/gaiad-v11.0.0-rc0-darwin-amd64?checksum=sha256:4e7fd38a658c5787bb7692c5d7cb4e04ba74bccd1e401c3f578a36a09ca49d69","darwin/arm64":"https://github.com/cosmos/gaia/releases/download/v11.0.0-rc0/gaiad-v11.0.0-rc0-darwin-arm64?checksum=sha256:809ea9e4a30a924826ead20276a377a8d9a58e6c0e46502856e162ba5e942301","linux/amd64":"https://github.com/cosmos/gaia/releases/download/v11.0.0-rc0/gaiad-v11.0.0-rc0-linux-amd64?checksum=sha256:afd87056ddbac0a2824edbf0ec1e4e6d51a6110b1e7eae715bd02862ab936d15","linux/arm64":"https://github.com/cosmos/gaia/releases/download/v11.0.0-rc0/gaiad-v11.0.0-rc0-linux-arm64?checksum=sha256:ded660916d54183269de5a4e573553d4c1c24f6a91d2e38db95775b81f455b64","windows/amd64":"https://github.com/cosmos/gaia/releases/download/v11.0.0-rc0/gaiad-v11.0.0-rc0-windows-amd64.exe?checksum=sha256:cb89674c5e2a6f59a13a8531b6c57dda111ec4b5454089afcc7d51eb8612fcaa","windows/arm64":"https://github.com/cosmos/gaia/releases/download/v11.0.0-rc0/gaiad-v11.0.0-rc0-windows-arm64.exe?checksum=sha256:53fcd957c9b71c3f011e5f04298e8a9a3466e67a90a4aca6ab855f39fed98f85"}}' \
+--description "Upgrade Gaia to v11" \
 --gas auto \
---fees 400uatom \
+--fees 1000uatom \
 --from $USER_KEY_NAME \
 --keyring-backend test \
 --chain-id $CHAIN_ID \
@@ -279,7 +282,7 @@ gaiad tx gov vote <proposal ID> yes \
 --chain-id $CHAIN_ID \
 --home $NODE_HOME \
 --gas auto \
---fees 400uatom \
+--fees 500uatom \
 --node tcp://localhost:26657 \
 --yes -b block
 ```
@@ -291,8 +294,6 @@ gaiad query gov proposal <proposal ID> --home $NODE_HOME
 ```
 
 After `PROPOSAL_STATUS_PASSED`, wait until the upgrade height is reached Cosmovisor will now auto-download the new binary specific to your platform and apply the upgrade.
-
-Please note, the upgrade info in method II does not contain the download link of the binary for GOOS=darwin GOARCH=arm64 (for Mac M1 users). Please use method I to upgrade.
 
 ## Genesis Modifications
 

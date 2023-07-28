@@ -1,7 +1,0 @@
-{
-    "title": "Remove the noble-1 Chain",
-    "description": "# Removing the noble-1 Chain\r\n\r\nThis is the proposal to remove the noble chain, \"noble-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/strangelove-ventures/noble-networks/tree/main/mainnet/noble-1#noble-has-moved) repo for additional details.",
-    "chain_id": "noble-1",
-    "stop_time": "2023-03-27T14:00:00.000000Z",
-    "deposit": "10000000uatom"
-}

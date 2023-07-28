@@ -15,8 +15,10 @@ The `pion-1` chain will be launched as a Neutron persistent chain to test Interc
 
 * **Reference binary**: [neutrond-linux-amd64](neutrond-linux-amd64)
 * **Binary sha256sum**: `a1331685f656cca2d7a94283959678a5a3c846aa4a6fa0cd6c4da1534c324ea7`
-* **Genesis file _without CCV state_:** [pion-1-genesis-without-ccv.json](https://github.com/hyphacoop/testnets/raw/master/replicated-security/pion-1/pion-1-genesis-without-ccv.json.gz), verify with `gzip -d pion-1-genesis-without-ccv.json.gz -c | shasum -a 256`
+* **Genesis file _without CCV state_:** [pion-1-genesis-without-ccv.json](https://github.com/cosmos/testnets/raw/master/replicated-security/pion-1/pion-1-genesis-without-ccv.json.gz ), verify with `gzip -d pion-1-genesis-without-ccv.json.gz -c | shasum -a 256`
+* * **Genesis file _with CCV state_:** [pion-1-genesis-with-ccv.json](https://github.com/cosmos/testnets/raw/master/replicated-security/pion-1/pion-1-genesis-with-ccv.json.gz ), verify with `gzip -d pion-1-genesis-with-ccv.json.gz -c | jq -S -c -M '.' | shasum -a 256`
 * **SHA256 for genesis file _without CCV state_**: `6291227072026b46830a7bcdd6180dca727f10d92fd612cedc07b6d377b0eeea`
+* * **SHA256 for genesis file _with CCV state_**: `2cbb264125915270e5f2fccf3c8ef9578f432c4a5ba7c9b0c536ba80922678be`
 
 
 * Genesis file hash
@@ -54,7 +56,21 @@ Persistent nodes:
 2. `6e7c0583e6e18fccedcceaffc1ac5a33ab898fa8@pion-cherry.rs-testnet.polypore.xyz:26656`
 
 ## IBC Data
-TODO
+
+### Clients
+
+* `07-tendermint-68`
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `07-tendermint-28`
+
+### Connections
+
+* `connection-42`
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `connection-19`
+
+### Channels
+
+* `channel-95`: consumer port
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-31`
 
 ## How to Join
 

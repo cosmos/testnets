@@ -1,0 +1,19 @@
+{
+    "title": "noble-1 Chain",
+    "description": "# Launching the noble-1 Chain\r\n\r\nThis is the proposal to create the first persistent noble chain, \"noble-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/cosmos/testnets/tree/master/replicated-security/noble-1/) repo for additional details.",
+    "chain_id": "noble-1",
+    "initial_height": {
+        "revision_height": 1,
+        "revision_number": 1
+    },
+    "genesis_hash": "54be5eb26d18d6927914db5971c925eedc5f91112beb0529ae4d1450334de282",
+    "binary_hash": "ed9e62a09b0dbac58e722ccc28b64c9925dfde6efe0c77552ae45b2092cd2dfa",
+    "spawn_time": "2023-02-09T16:00:00.000000Z",
+    "blocks_per_distribution_transmission": 1000,
+    "consumer_redistribution_fraction": "0.75",
+    "historical_entries": 10000,
+    "transfer_timeout_period": 1800000000000,
+    "ccv_timeout_period": 2419200000000000,
+    "unbonding_period": 1728000000000000,
+    "deposit": "10000000uatom"
+}

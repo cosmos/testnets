@@ -1,0 +1,7 @@
+{
+    "title": "Remove the removeme chain",
+    "description": "This proposal will test the Gaia v9.0.2-rc0 bugfix on the consumer-removal proposal: the \"removeme\" chain should stay online until the stop time is reached.",
+    "chain_id": "removeme",
+    "stop_time": "2023-03-29T14:00:00.000000Z",
+    "deposit": "10000000uatom"
+}
