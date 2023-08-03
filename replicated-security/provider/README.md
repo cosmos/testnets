@@ -43,6 +43,10 @@ Use this [jsfiddle](https://jsfiddle.net/uw4ar8qt/2/).
 
 * https://explorer.rs-testnet.polypore.xyz
 
+## Faucet
+
+* Visit `faucet.polypore.xyz` to request tokens and check your address balance.
+
 ## Consumer Chains IBC Data
 
 Connections and channels will be posted here shortly after a consumer chain launches.
@@ -69,10 +73,6 @@ Connections and channels will be posted here shortly after a consumer chain laun
   * Counterparty: [`duality-rehearsal-1`](/replicated-security/duality-rehearsal-1/README.md) `channel-1`
 * `channel-31`: provider port
   * Counterparty: [`pion-1`](/replicated-security/pion-1/README.md) `channel-95`
-
-## Faucet
-
-* Visit `faucet.rs-testnet.polypore.xyz` to request tokens and check your address balance.
 
 ## How to Join
 
