@@ -3,7 +3,7 @@
 These instructions will help you simulate the `v11` upgrade on a single validator node testnet as follows:
 
 - Start with gaia version: `v10.0.2`
-- After the upgrade: gaia release `v11.0.0-rc0`
+- After the upgrade: gaia release `v11.0.0`
 
 We will use a modified genesis file during this upgrade. This modified genesis file is similar to the one we are running on the public testnet, and has been modified in part to replace an existing validator (Coinbase Custody) with a new validator account that we control. The account's mnemonic, validator key, and node key are provided in this repo.  
 For a full list of modifications to the genesis file, please [see below](#genesis-modifications).
@@ -236,7 +236,7 @@ wget -q https://go.dev/dl/go1.20.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.20.linux-amd64.tar.gz
 
 cd $HOME/gaia
-git checkout v11.0.0-rc0
+git checkout v11.0.0
 git pull
 make install
 ```
@@ -257,7 +257,7 @@ gaiad tx gov submit-proposal software-upgrade v11 \
 --title "v11 Upgrade" \
 --deposit 100uatom \
 --upgrade-height TBD \
---upgrade-info '{"binaries":{"darwin/amd64":"https://github.com/cosmos/gaia/releases/download/v11.0.0-rc0/gaiad-v11.0.0-rc0-darwin-amd64?checksum=sha256:4e7fd38a658c5787bb7692c5d7cb4e04ba74bccd1e401c3f578a36a09ca49d69","darwin/arm64":"https://github.com/cosmos/gaia/releases/download/v11.0.0-rc0/gaiad-v11.0.0-rc0-darwin-arm64?checksum=sha256:809ea9e4a30a924826ead20276a377a8d9a58e6c0e46502856e162ba5e942301","linux/amd64":"https://github.com/cosmos/gaia/releases/download/v11.0.0-rc0/gaiad-v11.0.0-rc0-linux-amd64?checksum=sha256:afd87056ddbac0a2824edbf0ec1e4e6d51a6110b1e7eae715bd02862ab936d15","linux/arm64":"https://github.com/cosmos/gaia/releases/download/v11.0.0-rc0/gaiad-v11.0.0-rc0-linux-arm64?checksum=sha256:ded660916d54183269de5a4e573553d4c1c24f6a91d2e38db95775b81f455b64","windows/amd64":"https://github.com/cosmos/gaia/releases/download/v11.0.0-rc0/gaiad-v11.0.0-rc0-windows-amd64.exe?checksum=sha256:cb89674c5e2a6f59a13a8531b6c57dda111ec4b5454089afcc7d51eb8612fcaa","windows/arm64":"https://github.com/cosmos/gaia/releases/download/v11.0.0-rc0/gaiad-v11.0.0-rc0-windows-arm64.exe?checksum=sha256:53fcd957c9b71c3f011e5f04298e8a9a3466e67a90a4aca6ab855f39fed98f85"}}' \
+--upgrade-info '{"binaries":{"darwin/amd64":"https://github.com/cosmos/gaia/releases/download/v11.0.0/gaiad-v11.0.0-darwin-amd64?checksum=sha256:f115875122386496254905a1de0c0cb45f1b731536281586f77a41be55458505","darwin/arm64":"https://github.com/cosmos/gaia/releases/download/v11.0.0/gaiad-v11.0.0-darwin-arm64?checksum=sha256:53d0ffe4d8353e51d0be543edf764de033e24d703d4c408244a141e635b27628","linux/amd64":"https://github.com/cosmos/gaia/releases/download/v11.0.0/gaiad-v11.0.0-linux-amd64?checksum=sha256:258df2eec5b22f8baadc988e184fbfd2ae6f9f888e9f4461a110cc365fe86300","linux/arm64":"https://github.com/cosmos/gaia/releases/download/v11.0.0/gaiad-v11.0.0-linux-arm64?checksum=sha256:688e3ae4aa5ed91978f537798e012322336c7309fe5ee9169fdd607ab6c348b8","windows/amd64":"https://github.com/cosmos/gaia/releases/download/v11.0.0/gaiad-v11.0.0-windows-amd64.exe?checksum=sha256:24a1de7579673c77e1be1a7d2085a8d39a21611ed5d8329f1df0619f875e32c6","windows/arm64":"https://github.com/cosmos/gaia/releases/download/v11.0.0/gaiad-v11.0.0-windows-arm64.exe?checksum=sha256:122c25e7291158293f1b1f0a7272184e556ebe01292257a1d4b9987077d0d61a"}}' \
 --description "Upgrade Gaia to v11" \
 --gas auto \
 --fees 1000uatom \
