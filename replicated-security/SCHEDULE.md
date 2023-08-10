@@ -3,8 +3,8 @@
 | Date               | Type                  | Description                                                                                                                  |
 | ------------------ | --------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | September 13  2023 |                       |                                                                                                                              |
-| September 6  2023  |                       |                                                                                                                              |
-| August 30  2023    | Consumer addition     | Consumer chain `grand-rehearsal-1` to be created                                                                             |
+| September 6  2023  |  Consumer addition                      |   Consumer chain `grand-rehearsal-1` to be created                                                                                                                             |
+| August 30  2023    |     |                                                                            |
 | August 23  2023    |                       |                                                                                                                              |
 | August 16  2023    |                       |                                                                                                                              |
 | August 9  2023     |    |                                                           |
