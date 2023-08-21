@@ -15,7 +15,7 @@
 ### Upgrade details
 
 * **Upgrade height: `17550150`**
-* Estimated upgrade time: `2023-08-23 13:30:40 UTC`
+* Estimated upgrade time: `2023-08-23 13:30:00 UTC`
 
 ## v11
 
