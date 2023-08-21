@@ -7,7 +7,7 @@
 | Date         | Testnet plan                                                                                                 |
 | ------------ | ------------------------------------------------------------------------------------------------------------ |
 | August 23 2023 | [Gaia v12.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v12.0.0-rc0) is live on the testnet           |
-| August 21 2023 | ✅ Submit and pass v11 software upgrade [proposal](https://explorer.theta-testnet.polypore.xyz/proposals/176) |
+| August 21 2023 | ✅ Submit and pass v12 software upgrade [proposal](https://explorer.theta-testnet.polypore.xyz/proposals/176) |
 
 * **Version before upgrade**: `v11.0.0`
 * **Version after upgrade**: `v12.0.0-rc0`
