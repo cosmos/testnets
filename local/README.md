@@ -3,7 +3,7 @@
 These instructions will help you simulate the `v12` upgrade on a single validator node testnet as follows:
 
 - Start with gaia version: `v11.0.0`
-- After the upgrade: Gaia release `v12.0.0-rc0`
+- After the upgrade: Gaia release `v12.0.0`
 
 We will use a modified genesis file during this upgrade. This modified genesis file is similar to the one we are running on the public testnet, and has been modified in part to replace an existing validator (Coinbase Custody) with a new validator account that we control. The account's mnemonic, validator key, and node key are provided in this repo.  
 For a full list of modifications to the genesis file, please [see below](#genesis-modifications).
@@ -236,7 +236,7 @@ wget -q https://go.dev/dl/go1.20.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.20.linux-amd64.tar.gz
 
 cd $HOME/gaia
-git checkout v12.0.0-rc0
+git checkout v12.0.0
 git pull
 make install
 ```
@@ -257,7 +257,7 @@ gaiad tx gov submit-proposal software-upgrade v12 \
 --title "v12 Upgrade" \
 --deposit 100uatom \
 --upgrade-height TBD \
---upgrade-info '{"binaries":{"darwin/amd64":"https://github.com/cosmos/gaia/releases/download/v12.0.0-rc0/gaiad-v12.0.0-rc0-darwin-amd64?checksum=sha256:583512ae5615fab0c704ab35a7afbe7a57d0ea49aaf5aa98862f77bdb25bd4d5","darwin/arm64":"https://github.com/cosmos/gaia/releases/download/v12.0.0-rc0/gaiad-v12.0.0-rc0-darwin-arm64?checksum=sha256:51a499905fcb9b6db29d7be280e71fee256e8d7ca226304bae407202bce000c0","linux/amd64":"https://github.com/cosmos/gaia/releases/download/v12.0.0-rc0/gaiad-v12.0.0-rc0-linux-amd64?checksum=sha256:b7e1a3a0c5f1d528fa7a823900e47d2b91a7752f9264422f3883dc3394a20d90","linux/arm64":"https://github.com/cosmos/gaia/releases/download/v12.0.0-rc0/gaiad-v12.0.0-rc0-linux-arm64?checksum=sha256:d905a8cae5792ab7ed43fe897fcbd6b083d72be9106024f787e03529ee794d68","windows/amd64":"https://github.com/cosmos/gaia/releases/download/v12.0.0-rc0/gaiad-v12.0.0-rc0-windows-amd64.exe?checksum=sha256:242c047356dc882973e82e934d40cf04bd82d6ac698ecfb3f6c0532f8bea6943","windows/arm64":"https://github.com/cosmos/gaia/releases/download/v12.0.0-rc0/gaiad-v12.0.0-rc0-windows-arm64.exe?checksum=sha256:833361b453a6ce9e51b964b756bdff4a7a640df40459c6b7cb843937421d327a"}}' \
+--upgrade-info '{"binaries":{"darwin/amd64":"https://github.com/cosmos/gaia/releases/download/v12.0.0/gaiad-v12.0.0-darwin-amd64?checksum=sha256:1b76a7b2ee9bd739cd28de6e380248f276c678d8f9cab1fc2fe17fce07389693","darwin/arm64":"https://github.com/cosmos/gaia/releases/download/v12.0.0/gaiad-v12.0.0-darwin-arm64?checksum=sha256:20e81d813f942ed3114c6953016b9e24f0946b08e34f0da9c13bcb7276719130","linux/amd64":"https://github.com/cosmos/gaia/releases/download/v12.0.0/gaiad-v12.0.0-linux-amd64?checksum=sha256:d67e91bda37c94f2efacba0f97bcbdb8931e9dbc457d1ce3f1e60a71d1b1b7dd","linux/arm64":"https://github.com/cosmos/gaia/releases/download/v12.0.0/gaiad-v12.0.0-linux-arm64?checksum=sha256:aee279a6aedf8e83e59487c2006e72e496f73c36a882c44b3cc20969c3d237fb","windows/amd64":"https://github.com/cosmos/gaia/releases/download/v12.0.0/gaiad-v12.0.0-windows-amd64.exe?checksum=sha256:7d970cd3f138b5ce8fe78a8209a5907fcfec6fb717434244010381cdd6b4cd32","windows/arm64":"https://github.com/cosmos/gaia/releases/download/v12.0.0/gaiad-v12.0.0-windows-arm64.exe?checksum=sha256:b54c9c7e1c7bb36fc78cac294d86f8836e2dc02d747abc84d68062615a0512df"}}' \
 --description "Upgrade Gaia to v12" \
 --gas auto \
 --fees 1000uatom \
