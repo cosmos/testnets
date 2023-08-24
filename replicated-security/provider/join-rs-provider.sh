@@ -16,7 +16,7 @@ NODE_KEY_FILE=~/node_key.json
 NODE_HOME=~/.gaia
 NODE_MONIKER=provider
 SERVICE_NAME=provider
-GAIA_VERSION=v11.0.0
+GAIA_VERSION=v12.0.0-rc0
 CHAIN_BINARY_URL=https://github.com/cosmos/gaia/releases/download/$GAIA_VERSION/gaiad-$GAIA_VERSION-linux-amd64
 STATE_SYNC=true
 # ***
@@ -97,13 +97,13 @@ sudo rm /etc/systemd/system/$SERVICE_NAME.service
 sudo touch /etc/systemd/system/$SERVICE_NAME.service
 
 echo "[Unit]"                               | sudo tee /etc/systemd/system/$SERVICE_NAME.service
-echo "Description=Gaia service"       | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "Description=Gaia service"             | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "After=network-online.target"          | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo ""                                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "[Service]"                            | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "User=$USER"                            | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "User=$USER"                           | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "ExecStart=$HOME/go/bin/$CHAIN_BINARY start --x-crisis-skip-assert-invariants --home $NODE_HOME" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "Restart=no"                       | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "Restart=no"                           | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "LimitNOFILE=4096"                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo ""                                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "[Install]"                            | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
