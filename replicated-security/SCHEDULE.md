@@ -5,7 +5,7 @@
 | September 13  2023 |                       |                                                                                                                              |
 | September 6  2023  | Consumer addition     | Consumer chain `grand-rehearsal-1` to be created                                                                             |
 | August 30  2023    |                       |                                                                                                                              |
-| August 23  2023    | Major upgrade         | Provider chain upgrades to Gaia `v12.0.0-rc0`                                                                                |
+| August 23  2023    | Major upgrade         | ✅ Provider chain upgraded to Gaia `v12.0.0-rc0`                                                                              |
 | August 21  2023    | Major upgrade         | ✅ [Proposal](https://explorer.rs-testnet.polypore.xyz/provider/gov/48) to upgrade provider chain to Gaia v12 passes          |
 | August 16  2023    |                       |                                                                                                                              |
 | August 9  2023     |                       |                                                                                                                              |
