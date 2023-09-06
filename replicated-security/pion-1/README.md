@@ -71,6 +71,8 @@ Persistent nodes:
 
 * `channel-95`: consumer port
   * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-31`
+* `channel-96`: transfer port
+  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-32`
 
 ## How to Join
 
