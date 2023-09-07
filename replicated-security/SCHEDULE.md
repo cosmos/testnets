@@ -2,10 +2,11 @@
 
 | Date               | Type                  | Description                                                                                                                                |
 | ------------------ | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| September 27  2023  | Consumer addition     | Consumer chain `grand-rehearsal-1` to be created                                                                |
-| September 20  2023  |     |                                                        |
-| September 13  2023 |  No testnet event   |   Mainnet upgrades to v12                                                                                                                                         |
-| September 6  2023  |      |                                                                |
+| September 27  2023 | Consumer addition     | Consumer chain `grand-rehearsal-1` to be created                                                                                           |
+| September 20  2023 |                       |                                                                                                                                            |
+| September 13  2023 | No testnet event      | Mainnet upgrades to v12                                                                                                                    |
+| September 6  2023  |                       |                                                                                                                                            |
+| September 4  2023  | Consumer removal      | ✅ Consumer chain `duality-testnet-1` is removed after reaching the `VSCTimeoutPeriod`                                                      |
 | August 30  2023    | Consumer removal      | ✅ Consumer chain `stride-ics-testnet-two-1` is removed via governance [proposal](https://explorer.rs-testnet.polypore.xyz/provider/gov/49) |
 | August 23  2023    | Major upgrade         | ✅ Provider chain upgraded to Gaia `v12.0.0-rc0`                                                                                            |
 | August 21  2023    | Major upgrade         | ✅ [Proposal](https://explorer.rs-testnet.polypore.xyz/provider/gov/48) to upgrade provider chain to Gaia v12 passes                        |
