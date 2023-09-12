@@ -2,7 +2,7 @@
 
 | Date               | Type                  | Description                                                                                                                                |
 | ------------------ | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| September 27  2023 | Consumer addition     | Consumer chain `grand-rehearsal-1` to be created                                                                                           |
+| Octoberw  2023 | Consumer addition     | Consumer chain `grand-rehearsal-1` (Noble testnet) to be created                                                                                           |
 | September 20  2023 |                       |                                                                                                                                            |
 | September 13  2023 | No testnet event      | Mainnet upgrades to v12                                                                                                                    |
 | September 6  2023  |                       |                                                                                                                                            |
