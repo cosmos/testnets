@@ -6,8 +6,8 @@
 
 | Date         | Testnet plan                                                                                                 |
 | ------------ | ------------------------------------------------------------------------------------------------------------ |
-| September 20 2023 | ✅ Gaia v13.0.0-rc0 is live on the testnet           |
-| September 18 2023 | ✅ Submit and pass v13 software upgrade proposal |
+| September 20 2023 | Gaia v13.0.0-rc0 is live on the testnet           |
+| September 18 2023 | Submit and pass v13 software upgrade proposal |
 
 * **Version before upgrade**: `v12.0.0`
 * **Version after upgrade**: `v13.0.0-rc0`
