@@ -2,7 +2,8 @@
 
 | Date               | Type                  | Description                                                                                                                                |
 | ------------------ | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Octoberw  2023 | Consumer addition     | Consumer chain `grand-rehearsal-1` (Noble testnet) to be created                                                                               |
+| October  2023      | Consumer addition     | Consumer chain `grand-rehearsal-1` (Noble testnet) to be created                                                                           |
+| September 27 2023  | Consumer addition     | Composable testnet transitions to consumer chain                                                                                           |
 | September 20 2023  | Major upgrade         | Provider chain upgraded to Gaia `v13.0.0-rc0`                                                                                              |
 | September 13  2023 | No testnet event      | Mainnet upgrades to v12                                                                                                                    |
 | September 6  2023  |                       |                                                                                                                                            |
