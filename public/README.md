@@ -1,6 +1,6 @@
 # Cosmos Hub Public Testnet
 
-The public testnet will be used to test Theta, Rho, and Lambda upgrades. It mirrors the state of mainnet, aside from a few modifications to the exported genesis file. These adjustments help provide liveness and streamlined governance-permissioned software upgrades.
+The public testnet will be used to test all Gaia upgrades. It was created to mirror the state of mainnet, aside from a few modifications to the exported genesis file. These adjustments help provide liveness and streamlined governance-permissioned software upgrades.
 
 Visit the [Scheduled Upgrades](UPGRADES.md) page for details on current and upcoming versions. 
 
