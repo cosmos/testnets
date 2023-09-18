@@ -1,9 +1,9 @@
-# v13 Local Testnet Upgrade
+# v12 Local Testnet Upgrade
 
-These instructions will help you simulate the `v13` upgrade on a single validator node testnet as follows:
+These instructions will help you simulate the `v12` upgrade on a single validator node testnet as follows:
 
-- Start with gaia version: `v12.0.0`
-- After the upgrade: Gaia release `v13.0.0`
+- Start with gaia version: `v11.0.0`
+- After the upgrade: Gaia release `v12.0.0`
 
 We will use a modified genesis file during this upgrade. This modified genesis file is similar to the one we are running on the public testnet, and has been modified in part to replace an existing validator (Coinbase Custody) with a new validator account that we control. The account's mnemonic, validator key, and node key are provided in this repo.  
 For a full list of modifications to the genesis file, please [see below](#genesis-modifications).
@@ -11,9 +11,9 @@ For a full list of modifications to the genesis file, please [see below](#genesi
 If you are interested in running v10 without going through the upgrade, you can download one of the binaries in the Gaia [releases](https://github.com/cosmos/gaia/releases) page follow the rest of the instructions up until the node is running and producing blocks.
 
 * **Chain ID**: `local-testnet`
-* **Gaia version:** `v12.0.0`
-* **Modified genesis file:** [here](https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/latest_v12.json.gz)
-* **Original genesis file:** [here](https://files.polypore.xyz/genesis/mainnet-genesis-export/latest_v12.json.gz)
+* **Gaia version:** `v11.0.0`
+* **Modified genesis file:** [here](https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/latest_v11.json.gz)
+* **Original genesis file:** [here](https://files.polypore.xyz/genesis/mainnet-genesis-export/latest_v11.json.gz)
 * **Validator key:** [priv_validator_key](priv_validator_key.json)
 * **Node key:** [node_key](node_key.json)
 * **Validator mnemonic:** [mnemonic.txt](mnemonic.txt)
@@ -71,7 +71,7 @@ source ~/.profile
 cd $HOME
 git clone https://github.com/cosmos/gaia.git
 cd gaia
-git checkout v12.0.0
+git checkout v11.0.0
 make install
 ```
 
@@ -94,9 +94,9 @@ $BINARY init $NODE_MONIKER --home $NODE_HOME --chain-id=$CHAIN_ID
 Then replace the genesis file with our modified genesis file.
 
 ```
-wget https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/latest_v12.json.gz
-gunzip latest_v12.json.gz
-mv latest_v12.json $NODE_HOME/config/genesis.json
+wget https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/latest_v11.json.gz
+gunzip latest_v11.json.gz
+mv latest_v11.json $NODE_HOME/config/genesis.json
 ```
 
 Replace the validator and node keys.
@@ -142,7 +142,7 @@ Setup the Cosmovisor directory structure. There are two methods to use Cosmoviso
 1. **Manual:** Node runners can manually build the old and new binary and put them into the `cosmovisor` folder (as shown below). Cosmovisor will then switch to the new binary upon upgrade height.
 
 ```
-cosmovisor/upgrades/v13/bin/gaiad
+cosmovisor/upgrades/v12/bin/gaiad
 ```
 
 1. **Auto-download:** Allowing Cosmovisor to [auto-download](https://github.com/cosmos/cosmos-sdk/tree/main/tools/cosmovisor#auto-download) the new binary at the upgrade height automatically.
@@ -156,7 +156,7 @@ cosmovisor/upgrades/v13/bin/gaiad
 │   └── bin
 │       └── gaiad
 └── upgrades
-    └── v13
+    └── v12
         ├── bin
         │   └── gaiad
         └── upgrade-info.json
@@ -230,22 +230,22 @@ INF committed state app_hash=99D509C03FDDFEACAD90608008942C0B4C801151BDC1B8998EE
 
 ## Manually prepare the upgrade binary (if you do not have auto-download enabled on Cosmovisor)
 
-Build the upgrade binary: v13 requires GO v1.20.
+Build the upgrade binary: v12 requires GO v1.20.
 ```
 wget -q https://go.dev/dl/go1.20.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.20.linux-amd64.tar.gz
 
 cd $HOME/gaia
-git checkout v13.0.0-rc0
+git checkout v12.0.0
 git pull
 make install
 ```
 
-Copy over the v13 binary into the correct directory.
+Copy over the v12 binary into the correct directory.
 ```
-mkdir -p $NODE_HOME/cosmovisor/upgrades/v13/bin
-cp $(which gaiad) $NODE_HOME/cosmovisor/upgrades/v13/bin
-export BINARY=$NODE_HOME/cosmovisor/upgrades/v13/bin/gaiad
+mkdir -p $NODE_HOME/cosmovisor/upgrades/v12/bin
+cp $(which gaiad) $NODE_HOME/cosmovisor/upgrades/v12/bin
+export BINARY=$NODE_HOME/cosmovisor/upgrades/v12/bin/gaiad
 ```
 
 ## Submit and vote on a software upgrade proposal
@@ -253,12 +253,12 @@ export BINARY=$NODE_HOME/cosmovisor/upgrades/v13/bin/gaiad
 You can submit a software upgrade proposal without specifiying a binary, but this only works for those nodes who are manually preparing the upgrade binary.
 
 ```
-gaiad tx gov submit-proposal software-upgrade v13 \
---title "v13 Upgrade" \
+gaiad tx gov submit-proposal software-upgrade v12 \
+--title "v12 Upgrade" \
 --deposit 100uatom \
 --upgrade-height TBD \
---upgrade-info '{"binaries":{"darwin/amd64":"https://github.com/cosmos/gaia/releases/download/v13.0.0-rc0/gaiad-v13.0.0-rc0-darwin-amd64?checksum=sha256:465955ec12be056dbca57483a6e9ae069361b477f0f6f7361ba6d4b4a10c4dc0","darwin/arm64":"https://github.com/cosmos/gaia/releases/download/v13.0.0-rc0/gaiad-v13.0.0-rc0-darwin-arm64?checksum=sha256:989d22c297b5c8f85225d7de98043d8a7ce1ba6ad1a33a0a05f5416e92d5e54b","linux/amd64":"https://github.com/cosmos/gaia/releases/download/v13.0.0-rc0/gaiad-v13.0.0-rc0-linux-amd64?checksum=sha256:f5e94fd858485d9c782f4f3018b0e3c76de7b6e2d4ca0b1121e254e9fe63a8a2","linux/arm64":"https://github.com/cosmos/gaia/releases/download/v13.0.0-rc0/gaiad-v13.0.0-rc0-linux-arm64?checksum=sha256:42a89c204e7bc0242f9db68e6eff08ec47b0456f64d0dc4b42b3295265325045","windows/amd64":"https://github.com/cosmos/gaia/releases/download/v13.0.0-rc0/gaiad-v13.0.0-rc0-windows-amd64.exe?checksum=sha256:6930d371c50ffde27f090280cc7bca73a281889c3a9c3472f64139f1593db60e","windows/arm64":"https://github.com/cosmos/gaia/releases/download/v13.0.0-rc0/gaiad-v13.0.0-rc0-windows-arm64.exe?checksum=sha256:42c982110e8be713f758dcbc01527245eb08ab02ab8752e8f0d97ebe8862541a"}}' \
---description "Upgrade Gaia to v13" \
+--upgrade-info '{"binaries":{"darwin/amd64":"https://github.com/cosmos/gaia/releases/download/v12.0.0/gaiad-v12.0.0-darwin-amd64?checksum=sha256:1b76a7b2ee9bd739cd28de6e380248f276c678d8f9cab1fc2fe17fce07389693","darwin/arm64":"https://github.com/cosmos/gaia/releases/download/v12.0.0/gaiad-v12.0.0-darwin-arm64?checksum=sha256:20e81d813f942ed3114c6953016b9e24f0946b08e34f0da9c13bcb7276719130","linux/amd64":"https://github.com/cosmos/gaia/releases/download/v12.0.0/gaiad-v12.0.0-linux-amd64?checksum=sha256:d67e91bda37c94f2efacba0f97bcbdb8931e9dbc457d1ce3f1e60a71d1b1b7dd","linux/arm64":"https://github.com/cosmos/gaia/releases/download/v12.0.0/gaiad-v12.0.0-linux-arm64?checksum=sha256:aee279a6aedf8e83e59487c2006e72e496f73c36a882c44b3cc20969c3d237fb","windows/amd64":"https://github.com/cosmos/gaia/releases/download/v12.0.0/gaiad-v12.0.0-windows-amd64.exe?checksum=sha256:7d970cd3f138b5ce8fe78a8209a5907fcfec6fb717434244010381cdd6b4cd32","windows/arm64":"https://github.com/cosmos/gaia/releases/download/v12.0.0/gaiad-v12.0.0-windows-arm64.exe?checksum=sha256:b54c9c7e1c7bb36fc78cac294d86f8836e2dc02d747abc84d68062615a0512df"}}' \
+--description "Upgrade Gaia to v12" \
 --gas auto \
 --fees 1000uatom \
 --from $USER_KEY_NAME \
