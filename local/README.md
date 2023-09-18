@@ -3,7 +3,7 @@
 These instructions will help you simulate the `v13` upgrade on a single validator node testnet as follows:
 
 - Start with gaia version: `v12.0.0`
-- After the upgrade: Gaia release `v13.0.0`
+- After the upgrade: Gaia release `v13.0.0-rc0`
 
 We will use a modified genesis file during this upgrade. This modified genesis file is similar to the one we are running on the public testnet, and has been modified in part to replace an existing validator (Coinbase Custody) with a new validator account that we control. The account's mnemonic, validator key, and node key are provided in this repo.  
 For a full list of modifications to the genesis file, please [see below](#genesis-modifications).
