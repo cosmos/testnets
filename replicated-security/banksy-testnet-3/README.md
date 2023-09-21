@@ -5,27 +5,21 @@
 ### How will the sovereign -> consumer chain transition work on the Replicated Security testnet?
 
 * Composable side: The Composable team is running their own testnet (chain-id: `banksy-testnet-3`). That testnet will perform a software upgrade and at the upgrade height (shortly after the spawn time) it will transition to the provider chain’s validator set.
+
 * Provider side: There will be a consumer-addition proposal for the Composable chain. Shortly after the spawn time, we will receive the CCV state. This CCV state will be used to patch the original Composable chain’s genesis file.
 
-### What do you need to do to participate in the launch on Wednesday?
-See the table below for a breakdown of steps you'll need to follow throughout the process. 
-
 ## ⚠️  Complete STEP 1 (join Composable testnet with a full node) ASAP ⚠️
-Follow along with Composable's block explorer here: https://ics-explorer.Composable.zone/Composable 
-
-For step 1, you can try using Composable’s joining script here: https://github.com/Composable-Labs/mainnet/blob/ics-testnet/ics-testnet/join_ics_testnet.sh 
+Follow along with Composable's block explorer here: https://explorer.nodexcapital.com/banksy-testnet
 
 Otherwise you may manually join `banksy-testnet-3` using these notes:
-* Joining instructions: https://github.com/Composable-Labs/mainnet/tree/ics-testnet/ics-testnet
-* Genesis file: https://raw.githubusercontent.com/Composable-Labs/mainnet/ics-testnet/ics-testnet/genesis.json
-* Pre-transition Composable binary commit: `a3eff2dc`
-* Composable’s GitHub repository: https://github.com/Composable-Labs/Composable
-* Building instructions for Composable’s binary: `make install`
-* Go version: 1.19
-* Persistent Peers = `"d747545dbab1eb86caff7ec64fca3b7f2ace07fd@Composable-direct.testnet-2.Composablenet.co:26656"`
+* Joining instructions: https://github.com/notional-labs/Composable-ICS-tesnet
+* Genesis file: https://raw.githubusercontent.com/notional-labs/Composable-ICS-tesnet/main/genesis.json
+* Pre-transition Composable binary commit: ``
+* Composable’s GitHub repository: https://github.com/notional-labs/composable-centauri
+* Go version: 1.20
+* Persistent Peers = 
 * Chain ID: `banksy-testnet-3`
-* Post-upgrade Composable binary commit (run with this binary after the upgrade): [`ed3fcf9512ee136a03b58a7cd1d21b0e002de06f`](https://github.com/Composable-Labs/Composable/commit/ed3fcf9512ee136a03b58a7cd1d21b0e002de06f)
-  * You can use [this](https://storage.googleapis.com/Composabled-binaries/Composabled) pre-build linux binary. E.g. `wget -O Composabled 'https://storage.googleapis.com/Composabled-binaries/Composabled'`
+* Post-upgrade Composable binary commit (run with this binary after the upgrade): 
  
 <details><summary>Detailed steps for manually joining Composable Testnet</summary>
 <br>
