@@ -4,9 +4,9 @@
 
 ### Schedule
 
-| Date                | Testnet plan                                  |
-| ------------------- | --------------------------------------------- |
-| September 20 2023   | Gaia v13.0.0-rc0 is live on the testnet       |
+| Date                 | Testnet plan                                  |
+| -------------------  | --------------------------------------------- |
+| ✅ September 20 2023 | Gaia v13.0.0-rc0 is live on the testnet       |
 | ✅ September 18 2023 | Submit and pass v13 software upgrade proposal |
 
 * **Version before upgrade**: `v12.0.0`
@@ -15,8 +15,8 @@
 ### Upgrade details
 
 * **Upgrade height: `17996550`**
-  * Mintscan countdown: https://testnet.mintscan.io/cosmoshub-testnet/blocks/17996550
-* Estimated upgrade time: `2023-09-20 13:30:00 UTC`
+* Upgrade time: `2023-09-20 13:42:06 UTC`
+  * The upgrade took one minute, and block `17996552` was indexed at `13:42:59 UTC`
   
 ## v12
 
