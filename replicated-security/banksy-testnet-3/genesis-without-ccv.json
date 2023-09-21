@@ -1,0 +1,2918 @@
+{
+  "genesis_time": "2023-05-29T16:51:41.628919Z",
+  "chain_id": "banksy-testnet-3",
+  "initial_height": "1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000",
+      "max_bytes": "1048576"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    },
+    "version": {
+      "app": "0"
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "07-tendermint": null,
+    "08-wasm": {
+      "contracts": []
+    },
+    "alliance": {
+      "params": {
+        "reward_delay_time": "604800s",
+        "take_rate_claim_interval": "300s",
+        "last_take_rate_claim_time": "0001-01-01T00:00:00Z"
+      },
+      "assets": [],
+      "validator_infos": [],
+      "reward_weight_change_snaphots": [],
+      "delegations": [],
+      "redelegations": [],
+      "undelegations": []
+    },
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1qk7uvv8yax872jn4tztmqksxf00pds98m6quv0",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy10kxq68xj8hnnjlm34fq797fvs6mh78y40zdz84",
+          "pub_key": null,
+          "account_number": "1",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1e5cam6dtljuh4qdx8r75sg2fhvusc3g07jznan",
+          "pub_key": null,
+          "account_number": "2",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1jkn4snxtnck6tzwwsk6kmsx6edswlg5euze88l",
+          "pub_key": null,
+          "account_number": "3",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1wwgrl05jkk3a3m9gm0wwmvq3r0fd93p8hvzay0",
+          "pub_key": null,
+          "account_number": "4",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1wjsg82nqazta5zjq7wn2luctr68spzxs3ld66f",
+          "pub_key": null,
+          "account_number": "5",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1gz2c6rkwf9quztvwynwr2hsa9lmldnjl20u2rr",
+          "pub_key": null,
+          "account_number": "6",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1htwqqqm46rmjmgnrgqjxqaxcsehhu5h3y75d3e",
+          "pub_key": null,
+          "account_number": "7",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1m55p00fjqzxw0px93dw0cpzll93202apsn3he0",
+          "pub_key": null,
+          "account_number": "8",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1lm4vrumtak6f30rgthtvt0k2wvrdnvg32jdx78",
+          "pub_key": null,
+          "account_number": "9",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy148rtlazyqjs3yfkcu8zm5w35avgfzexk0v6j94",
+          "pub_key": null,
+          "account_number": "10",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1etx55kw7tkmnjqz0k0mups4ewxlr324tlj26yd",
+          "pub_key": null,
+          "account_number": "11",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy10d39w928p6hzq6wltg0xt9rxw4al2l50v0jp4z",
+          "pub_key": null,
+          "account_number": "12",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy15nte7en6nntre7h2y2wxek5zesy9rn2vnpuc5d",
+          "pub_key": null,
+          "account_number": "13",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1zzwlugqkt2r8z5gl6e875p22gpc48wfazqvzgq",
+          "pub_key": null,
+          "account_number": "14",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1c7muuzp5dgd3kwadrhp5dg2uswpzvwlj4t4sqy",
+          "pub_key": null,
+          "account_number": "15",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy14fr0slyjutp7kndpqz4puj97f8rmy4fx8lkdlv",
+          "pub_key": null,
+          "account_number": "16",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1c34uvz45vtmd0k5eh750jagswgps80a7hn52cn",
+          "pub_key": null,
+          "account_number": "17",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1uexawhvfzgfwlqlzyk407s3uyvxjvuj6yt6jk7",
+          "pub_key": null,
+          "account_number": "18",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1e0n0mmq54u47tzeddrhm43z6m7kj3gaddzs559",
+          "pub_key": null,
+          "account_number": "19",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1avj54vrlcdnje922s4prcra6y6csd0eqec9nrc",
+          "pub_key": null,
+          "account_number": "20",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1dz7mw5uhz28t9wylqngf8ydfwqqj8tkam8n9z6",
+          "pub_key": null,
+          "account_number": "21",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy199lhy65zaywf29467jtcm6kvfldaqe77gt2uch",
+          "pub_key": null,
+          "account_number": "22",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1eclj83cdslzkyln2nnlmyajl0yajr9jsn8e2a4",
+          "pub_key": null,
+          "account_number": "23",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1xp6n38h3zh75pk874tkxt7w7jdslul0vae3fsa",
+          "pub_key": null,
+          "account_number": "24",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy19w2488ntfgpduzqq3sk4j5x387zynwknek0ymx",
+          "pub_key": null,
+          "account_number": "25",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy10ayzjdqrn6ku55wyw3mrt7mrw8e3la9wxusaqg",
+          "pub_key": null,
+          "account_number": "26",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1y3uqpev4ksgvpdcfyheyuqydpwxxzca7qgp2gk",
+          "pub_key": null,
+          "account_number": "27",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1q5f6pup4kzt37n2yxw75qyanr69mwdgaxprzg6",
+          "pub_key": null,
+          "account_number": "28",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy18gqfj973hc0wfrgnmgwq9c9z5hkdzpewye6d3a",
+          "pub_key": null,
+          "account_number": "29",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1jt9w26mpxxjsk63mvd4m2ynj0af09cslfxpnn6",
+          "pub_key": null,
+          "account_number": "30",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1sdw0hnaz0cktn3kllxdlzjxce63kpr0yznkpzj",
+          "pub_key": null,
+          "account_number": "31",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1nsf3rzyt58ktvpljmdjcurysayucd7gwch9g2p",
+          "pub_key": null,
+          "account_number": "32",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy16fxpvh0xp5fset0exn766m7lmyucaarawggpfd",
+          "pub_key": null,
+          "account_number": "33",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "banksy1wxl09qwpwe94c5702ttw5hj8h4lr4k5cleakh6",
+          "pub_key": null,
+          "account_number": "34",
+          "sequence": "0"
+        }
+      ]
+    },
+    "bank": {
+      "params": {
+        "send_enabled": [],
+        "default_send_enabled": true
+      },
+      "balances": [
+        {
+          "address": "banksy1q5f6pup4kzt37n2yxw75qyanr69mwdgaxprzg6",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1qk7uvv8yax872jn4tztmqksxf00pds98m6quv0",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1zzwlugqkt2r8z5gl6e875p22gpc48wfazqvzgq",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1y3uqpev4ksgvpdcfyheyuqydpwxxzca7qgp2gk",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy199lhy65zaywf29467jtcm6kvfldaqe77gt2uch",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy19w2488ntfgpduzqq3sk4j5x387zynwknek0ymx",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1xp6n38h3zh75pk874tkxt7w7jdslul0vae3fsa",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy18gqfj973hc0wfrgnmgwq9c9z5hkdzpewye6d3a",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1gz2c6rkwf9quztvwynwr2hsa9lmldnjl20u2rr",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1dz7mw5uhz28t9wylqngf8ydfwqqj8tkam8n9z6",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1wxl09qwpwe94c5702ttw5hj8h4lr4k5cleakh6",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "1000000000000000000215"
+            }
+          ]
+        },
+        {
+          "address": "banksy1wwgrl05jkk3a3m9gm0wwmvq3r0fd93p8hvzay0",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1wjsg82nqazta5zjq7wn2luctr68spzxs3ld66f",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy10d39w928p6hzq6wltg0xt9rxw4al2l50v0jp4z",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy10kxq68xj8hnnjlm34fq797fvs6mh78y40zdz84",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy10ayzjdqrn6ku55wyw3mrt7mrw8e3la9wxusaqg",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1sdw0hnaz0cktn3kllxdlzjxce63kpr0yznkpzj",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1jt9w26mpxxjsk63mvd4m2ynj0af09cslfxpnn6",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1jkn4snxtnck6tzwwsk6kmsx6edswlg5euze88l",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1nsf3rzyt58ktvpljmdjcurysayucd7gwch9g2p",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy15nte7en6nntre7h2y2wxek5zesy9rn2vnpuc5d",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy148rtlazyqjs3yfkcu8zm5w35avgfzexk0v6j94",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy14fr0slyjutp7kndpqz4puj97f8rmy4fx8lkdlv",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1htwqqqm46rmjmgnrgqjxqaxcsehhu5h3y75d3e",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1c34uvz45vtmd0k5eh750jagswgps80a7hn52cn",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1c7muuzp5dgd3kwadrhp5dg2uswpzvwlj4t4sqy",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1etx55kw7tkmnjqz0k0mups4ewxlr324tlj26yd",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1e0n0mmq54u47tzeddrhm43z6m7kj3gaddzs559",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1e5cam6dtljuh4qdx8r75sg2fhvusc3g07jznan",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1eclj83cdslzkyln2nnlmyajl0yajr9jsn8e2a4",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy16fxpvh0xp5fset0exn766m7lmyucaarawggpfd",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1m55p00fjqzxw0px93dw0cpzll93202apsn3he0",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1uexawhvfzgfwlqlzyk407s3uyvxjvuj6yt6jk7",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1avj54vrlcdnje922s4prcra6y6csd0eqec9nrc",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        },
+        {
+          "address": "banksy1lm4vrumtak6f30rgthtvt0k2wvrdnvg32jdx78",
+          "coins": [
+            {
+              "denom": "ppica",
+              "amount": "10001000000000000"
+            }
+          ]
+        }
+      ],
+      "supply": [],
+      "denom_metadata": [],
+      "send_enabled": []
+    },
+    "capability": {
+      "index": "1",
+      "owners": []
+    },
+    "consensus": null,
+    "crisis": {
+      "constant_fee": {
+        "denom": "ppica",
+        "amount": "1000"
+      }
+    },
+    "distribution": {
+      "params": {
+        "community_tax": "0.020000000000000000",
+        "base_proposer_reward": "0.000000000000000000",
+        "bonus_proposer_reward": "0.000000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": []
+      },
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "evidence": {
+      "evidence": []
+    },
+    "feegrant": {
+      "allowances": []
+    },
+    "genutil": {
+      "gen_txs": [
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "AlxVoy ⚡ ANODE.TEAM",
+                  "identity": "ABE84D0AB09AB589",
+                  "website": "https://anode.team",
+                  "security_contact": "alxvoy@anode.team",
+                  "details": "The AlxVoy Validator Team"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.100000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1qk7uvv8yax872jn4tztmqksxf00pds98m6quv0",
+                "validator_address": "banksyvaloper1qk7uvv8yax872jn4tztmqksxf00pds9899u0ph",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "AGpM56mO26vzkB2XYI27o5bEJtqynbBZvgM28c+fXiU="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "aa679f4f160f5ad84faf4b9baae11b6149379363@161.97.108.208:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A75AshZnmMreouoDBGgWIsBs+/GEVMk0/vY1KZkZbhvo"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "CmNJbmDBgCgQQEm9AQbe2ThFnk5ew7divaeVDIsOP18kV4E9TMNKH+fYSAqtZw4K7M1R8PmPs5Q7pzk+vi883A=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": " AutoStake 🛡️ Slash Protected",
+                  "identity": "4D3303E20A4D2C32",
+                  "website": "https://autostake.com",
+                  "security_contact": "support@autostake.com",
+                  "details": "Earn extra Rewards on AutoStake.com 🛡️ 100% Refund on ALL forms of slashing backed by a SAFU fund 🛡️💸Auto-REStake: wallet.autostake.com/composable 💸 \u0026 twitter.com/AutoStake_ \u0026 telegram.me/AutoStake_com"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.100000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy10kxq68xj8hnnjlm34fq797fvs6mh78y40zdz84",
+                "validator_address": "banksyvaloper10kxq68xj8hnnjlm34fq797fvs6mh78y43a332d",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "g69SB50mkkWd6Ojx6fq/zUYK3KjtQ6cu9ERhfG0e4ck="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "5e92561c065dca36b0eb1f76fe7d0563de688be3@192.168.3.156:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "Airt0UhPVylhYsn4aOXQMz0a7yuihyx38IAyg8pYJaxo"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "rFwSDkSERG2YkIMe2mg4VCkIBV6vcUlfss6J/xbSpFoJyiBxIRtB1l6m3O7s9C9c69s/Q0/r6xOmO4eahX2WZg=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "DECALI.io",
+                  "identity": "9A28197CB604F17A",
+                  "website": "https://decali.io",
+                  "security_contact": "admin@decali.io",
+                  "details": "Powered by Decentralization"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1e5cam6dtljuh4qdx8r75sg2fhvusc3g07jznan",
+                "validator_address": "banksyvaloper1e5cam6dtljuh4qdx8r75sg2fhvusc3g0qd7qst",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "9N5rtT5jZcCtxiX0q73xdga74FBYqthhlsSnLPZU6ww="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "8bc61c9c1901a7f35adabaaf29fe05215bb77298@172.16.10.222:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "ApGVlkr1mk8UpGx4u2AwShtcMEbbVapVXTlEVzvlxZlK"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "3Syqa/k6xEU4m8v24jnvBCCnNAha15VGJocva2gcm6xtOJZJoB8fQajbSnzncyXnDfWHfw/KmiChACgjwSD0NQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Enigma",
+                  "identity": "6223697ACA24A4FF",
+                  "website": "https://enigma-validator.com/",
+                  "security_contact": "contact@enigma-validator.com",
+                  "details": "Proof of Stake Validator on different projects -- Passionate about Data Science and Technology"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1jkn4snxtnck6tzwwsk6kmsx6edswlg5euze88l",
+                "validator_address": "banksyvaloper1jkn4snxtnck6tzwwsk6kmsx6edswlg5eza9528",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "dXtvKrGXCfdbx4Lp15YYfBvxnoUYJC+wGNMdKE4O4FE="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "e6a21ccb5175df638723eec2bc4f6ed95717acd3@135.181.216.54:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AuyhCHu5UeLLg0cdwlEsa5u0S1xPLf4R6BxqWAvx8tMT"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "O4k0FfNVyQXfslobolciKNSd0hosIaAresVEQz+8rRcIDoFQUUzaYvXKefef8djboK82/Quz8WotUsM/SBU1lQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Hexnodes",
+                  "identity": "5CD9816C37D32C5B",
+                  "website": "https://hexnodes.co",
+                  "security_contact": "hexnodesvalidator@gmail.com",
+                  "details": "Service Staking Provider | 24/7 Monitored"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1wwgrl05jkk3a3m9gm0wwmvq3r0fd93p8hvzay0",
+                "validator_address": "banksyvaloper1wwgrl05jkk3a3m9gm0wwmvq3r0fd93p8fn7wfh",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "QTNi8UpEgvVSICEDa+njsV3PPwmCrkncie/tKJ42tOc="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "b45a1cd6a374bc3ad4f8c2160ffb88460a67ce36@185.202.239.161:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AxrusurPR4hyXyMtJPzQ/VjVyot4LB/hRDMuEtEFWo/y"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "RnwJrK0D42o7hG63xy3uN0NL4YOKPijpsgXJ50iCLf4LY/jb7KYoAhUc4S6eJxVK5Ojhr+Ud0CeZP49hmTPQAA=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Indonode",
+                  "identity": "58527185D1DD91F8",
+                  "website": "https://indonode.net/",
+                  "security_contact": "contact@indonode.net",
+                  "details": "Staking Provider \u0026 Relayer"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.200000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1wjsg82nqazta5zjq7wn2luctr68spzxs3ld66f",
+                "validator_address": "banksyvaloper1wjsg82nqazta5zjq7wn2luctr68spzxs0q3fh3",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "2EYvx2K7fUoYOJrXsWv4dUWHpX32Y5eTcR5x43mOpGI="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "488f98949ba03931c433aaf12d799bb1cd6f3942@65.21.225.10:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "Ak1kNkSRNHsB0zruE7M8jD5ueBWRH6hJy3L8bYkfct/P"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "QRdx3A4/ig2fyx1shcDa81zdVD+7LCUcFxExI6gpYbxDqHnatCrx30VRVq2m21htVu5wyu6L5P0AIlFzHJQvDw=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Kleomedes",
+                  "identity": "AD6C05DA12E42B70",
+                  "website": "https://www.kleomed.es",
+                  "security_contact": "marco@kleomed.es",
+                  "details": "The First Community Governed Validator in the Cosmos 🪐"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1gz2c6rkwf9quztvwynwr2hsa9lmldnjl20u2rr",
+                "validator_address": "banksyvaloper1gz2c6rkwf9quztvwynwr2hsa9lmldnjl5sqewm",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "BbEZ5hDoWMW7pd0LiubfvtyDZm4Ap+iuQ/boSp+CeZo="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "76bf57000f08fd334a2f013bd956d50d3ad0db9a@10.10.10.65:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A1MpTE9K5vwJuvtdlh/veiuIsL2f6B4koP4Q9Bm4qfoD"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "dwTrdwX9K0kgSiSLmv0J+q27bbObunmArPgUroA8ZVJOZGePTGMk8IAQRBFXBnxEox6EVDhLvMUgrfMmBga9Mw=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "KonsorTech",
+                  "identity": "2DA657BCEA9489C2",
+                  "website": "https://konsortech.xyz",
+                  "security_contact": "konsortech@gmail.com",
+                  "details": "Stake With Us ! Become Professional Stake Provider"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.100000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1htwqqqm46rmjmgnrgqjxqaxcsehhu5h3y75d3e",
+                "validator_address": "banksyvaloper1htwqqqm46rmjmgnrgqjxqaxcsehhu5h36pg7up",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "l/HIhm0AHBwwYjQLHX15UmNdiv23Yy1fogJT+Zutt14="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "df49f4fee2fe62bc0ca8c27ee0dbae3f0abec98f@46.38.232.86:24656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AyNbcR9sQ9wbNF5ATeY0/UPE4cmlz+PCZW4Kjik09fww"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "DWU8TH9xw/s0d6LKHUlQU/0KEh/TdT3wMoanSKmsWcoKvUAacKS2efE47FdWKErsjzp57xkDid8206aC42LsIg=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "L0vd.com",
+                  "identity": "A7F72AB704FC64AB",
+                  "website": "https://l0vd.com",
+                  "security_contact": "https://t.me/L0vd_staking",
+                  "details": "Professional validating and staking services provider. More than 50 networks contributed. With L0ve."
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.050000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1m55p00fjqzxw0px93dw0cpzll93202apsn3he0",
+                "validator_address": "banksyvaloper1m55p00fjqzxw0px93dw0cpzll93202apwvdy5h",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "5UfhAor9GweqxHUfuxLyOhHl+EX6dy2Okyr3yuBrovc="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "1c0a6d67873396b1322a84916907fc6bbb50010b@65.109.70.45:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A5QTk+olJq2zoSt+nQf1z56e8zYIwB0ADlk0sD3wGSQd"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "TrTzF4wHUBjTkZpsXvBDefStatwLBbpxJpzMCrFH1Bl5YqUBhIa9TyoPyd/zDUsUIm7eznXckBYdZKoreyp0dw=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Mandragora",
+                  "identity": "DFEAAB98E8D0975B",
+                  "website": "https://mandragora.io",
+                  "security_contact": "https://t.me/dann96",
+                  "details": "Stake 'n Chill Out!"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1lm4vrumtak6f30rgthtvt0k2wvrdnvg32jdx78",
+                "validator_address": "banksyvaloper1lm4vrumtak6f30rgthtvt0k2wvrdnvg35d34nl",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "N5/W2v4al4A+ePkj6p2IRnRJ51NxIrsQQBWqx318Lfs="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "56956a7f57985ed26172b917c45c5c82143583a4@142.132.135.125:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AvIiPcGBR4+kXAMBFSzsfNApLDt/I1e0hIsPHtqqv+8j"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "AOoaWTAdf0mnUnQ703qI90Je/oNUYvQHTExKA+UJ9sAwphmUzK1DcQfvmQwqF/UtFmbZme3b9/qgsF/2Tj9Gag=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Moonbridge",
+                  "identity": "6F7C6C0637B4BD6F",
+                  "website": "https://moonbridge.team",
+                  "security_contact": "moonbridge.inc@gmail.com",
+                  "details": "Build your bridge to the future of decentralized finance"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy148rtlazyqjs3yfkcu8zm5w35avgfzexk0v6j94",
+                "validator_address": "banksyvaloper148rtlazyqjs3yfkcu8zm5w35avgfzexk3nxpgd",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "Dwg1QoabMzVL3Km/tDyksZiJyToHANGVoW1r1EuACYY="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "99004e3251209542b30c7502a7c35b1d574cd3ae@195.3.221.16:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "Av+x5h0kwqLh+Ls7wBot7qCSuG2trtlVHPhAqi5M7U72"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "5RH4ECVn3cFA1vxYa1ugSbTWOYZLvrjZCX/cSJl9odsk+dOBqO8aq9UnNVF4c+yXh52u611d5rBqCq16WSfgIw=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "NodeStake",
+                  "identity": "94EFE192B2C52424",
+                  "website": "https://nodestake.top",
+                  "security_contact": "info@nodestake.top",
+                  "details": "NodeStake is the professional validator, node service provider and IBC relayer.⚛️7*24h | https://twitter.com/Nodestake_top"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.200000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1etx55kw7tkmnjqz0k0mups4ewxlr324tlj26yd",
+                "validator_address": "banksyvaloper1etx55kw7tkmnjqz0k0mups4ewxlr324tpdkff4",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "IakIXAFp5Wz4Cu+MtfGTFhfAcLJ8H857bzqf63MLrO0="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "b2a5b6c11e7d71c2a43d88a73b9dcff3352f4302@57.128.86.7:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AxLZ/h5VnOodWIfYfP2+Iu8+yASiqFQdktMiIFeUNnXt"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "c1w/BJz3ps+6GtX2eMp/gLoZx6zfAq4ky3OEGpOu9qlneN9PWmV5nPpXTLQ1Dn/ouRETqj/ePOZ4JBd4QcYtCQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "PathrockNetwork",
+                  "identity": "8E9797A900A7A429",
+                  "website": "https://pathrocknetwork.org/",
+                  "security_contact": "pathrocknetwork@protonmail.com",
+                  "details": "StakeBikeLove"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy10d39w928p6hzq6wltg0xt9rxw4al2l50v0jp4z",
+                "validator_address": "banksyvaloper10d39w928p6hzq6wltg0xt9rxw4al2l50jswjc6",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "L7lwz2jO+KR9jWu5MGe4b0/fJHK/Vbb2crdf4zApwrc="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "3f0727b11da4dc792fe2dfb34214cf45fadd4a15@95.216.67.178:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A+aJygzUuNZNON5l/ggGd4MnXAJfAHTeFF+LgmchRfSK"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "9TBhZFgMwIaXMYKSXId1iqcP4C2j6jWxqNqARrJSJqkKSQUUTgX4ZUyBRTsAnOyUOdDZX3sX7YN5CRrrsY46sg=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Pro-Nodes75",
+                  "identity": "3666DD45EF3157F1",
+                  "website": "https://node75.org/",
+                  "security_contact": "",
+                  "details": "Professional validator service🤝 Providing IBC as service for Cosmos-SDK based blockchains."
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy15nte7en6nntre7h2y2wxek5zesy9rn2vnpuc5d",
+                "validator_address": "banksyvaloper15nte7en6nntre7h2y2wxek5zesy9rn2vd7qte4",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "hjcHSpcnLh/R8DuMnJqaf6N7gzhb5oI2rHukmj/TVCA="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "f27a2800d6d8c257afb40c6495b810c8e32ce99f@0.0.0.0:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AncHCLE9302h4n3NiI816+38ZqMiMdNnGkLL0maWN6j0"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "BPg/Yt6RlQHqZndQtZdDJAsv/VDfTPTs+0uNGSxMuoN2QqGBmJwH5qKub2p4JckbvAyuAaTZbYQoKUawu3uxIQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "🔥STAVR🔥",
+                  "identity": "F2F91999ECCC092F",
+                  "website": "https://github.com/obajay",
+                  "security_contact": "t0themo0onn@gmail.com",
+                  "details": "A team of professional and reliable validators. Safety first.Stake with us and profit with the mark of quality. Monitoring 25\\7"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.100000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1zzwlugqkt2r8z5gl6e875p22gpc48wfazqvzgq",
+                "validator_address": "banksyvaloper1zzwlugqkt2r8z5gl6e875p22gpc48wfauls39c",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "qiOjaRX0Fy+Qm5nEtDXSV3ka3DWgQFBr7lubqQYmLSk="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "4b689b965366ea2d9aad4bd1343ca37d6f18186a@65.109.92.240:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "Apd8l30ciyRfjTtnKiT8nLHVnsT/eMOUeEVHVMvZc6H4"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "lMvOeEaLT0giiJYhmIhh1FjSd3eyt/SAoLqbhCu2K3tJdG91mKbLx/k+VQuvURpMrvLsVf2oIBvYprQk3t0SXQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "StakeTown",
+                  "identity": "FE38D8D1E0E5011F",
+                  "website": "",
+                  "security_contact": "staketown@gmail.com",
+                  "details": "Professional PoS validator team"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1c7muuzp5dgd3kwadrhp5dg2uswpzvwlj4t4sqy",
+                "validator_address": "banksyvaloper1c7muuzp5dgd3kwadrhp5dg2uswpzvwljt5frdu",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "ItKIRpdDn+TijqHzgjBPW2Fbjr9/AqUszoqC9+wgxJc="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "9fc2b9e402fa30ed140a0dbd7391af5d4b4b424d@65.109.90.171:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A1cNGuUgkDJe+wZvz+zNA9BJYi13zkXfnii87FZ2SAJ1"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "w1JXN8SpcHpmndIMAL+xCTqQzXoObb0TCU7F7EHagCJfRGUFRJbWivLYe0gXxt3peMswRm5m32t70h29Duh7bg=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Tecnodes",
+                  "identity": "9E7A59BBDC93CC32",
+                  "website": "www.tecnodes.network",
+                  "security_contact": "tecnodes.network@gmail.com",
+                  "details": "We offer highly reliable \u0026 secure Proof of Stake services, running on rock-solid hardware"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy14fr0slyjutp7kndpqz4puj97f8rmy4fx8lkdlv",
+                "validator_address": "banksyvaloper14fr0slyjutp7kndpqz4puj97f8rmy4fxeq27j5",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "1/q716HiWQ4hh1Y4xaSwtQsgmAQ4TC2aGm8uF9OjoCE="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "8020b85930cf42ca1dc3ed71e12c1620a3a8ce2e@65.108.129.94:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AhKzC0jk5CwtxrqAEQm3COFEI0O02jGDL9QsbZ7HSQ0e"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "49hdDTEcb5uQ8oa40ajrRZdAHCI2K02ck2856oUHMTN0zECLNYKwk3mHphNO7P371a4H1xRHON/iFm4u6S9JxQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "WhisperNode🤐",
+                  "identity": "9C7571030BEF5157",
+                  "website": "https://REStake.WhisperNode.com",
+                  "security_contact": "security@whispernode.com",
+                  "details": "WhisperNode operates robust, high up-time validators across the Cosmos ecosystem. Auto-compound your rewards with our REStake app. Join our Discord: https://discord.gg/4E5KZsRtjE / tweet @ https://twitter.com/WhisperNode 🐦"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1c34uvz45vtmd0k5eh750jagswgps80a7hn52cn",
+                "validator_address": "banksyvaloper1c34uvz45vtmd0k5eh750jagswgps80a7fvge4t",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "kt380CwExiVZtPVRmznoT2dE2klmdXZlrHO/AbbuMgM="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "154ca7686d9e503736292778901b0ebcadfcaea6@88.99.3.158:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A1kzWKd++Y1HcaHihRqFNxCdqyAvxKI562ZG1zoUqaGh"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "yJOnwajRzMcYz01LEQJCcOIc/1e/vFr30llOy1W9JZwGS+1QTvahBR/UzOv5wteGw0dflMsURmGHptZlkdXovA=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "bitszn",
+                  "identity": "7905858131F4FBE7",
+                  "website": "https://bitszn.com",
+                  "security_contact": "bitszn.com@gmail.com",
+                  "details": "Analytics and monitoring tool for projects. Endpoints and snapshots provider. C# dev."
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1uexawhvfzgfwlqlzyk407s3uyvxjvuj6yt6jk7",
+                "validator_address": "banksyvaloper1uexawhvfzgfwlqlzyk407s3uyvxjvuj665xpmx",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "WTgeolRJcBItqmDXIpMHfQA9RPJvF4kG1HoW+7FUvSE="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "7710cb6adc23d34eb26408cba62f7c1bf3ae1e2f@65.109.61.113:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A3sFQwh1VLsHlh9CHWniZNc6czBSlcALAU11IyR7G7Qu"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "1L6mQiOEfn3QPR20rwwMPIrfd3rZDiQbUnvlzObaoNVQXAm35FZlYjIl+SJMG6gqru66J5NW2StHgW1uuutxYg=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Citadel.one",
+                  "identity": "EBB03EB4BB4CFCA7",
+                  "website": "https://citadel.one",
+                  "security_contact": "nikita@citadel.one",
+                  "details": "Citadel.one is a multi-asset non-custodial staking platform that lets anyone become a part of decentralized infrastructure and earn passive income. Stake with our nodes or any other validator across multiple networks in a few clicks"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.030000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1e0n0mmq54u47tzeddrhm43z6m7kj3gaddzs559",
+                "validator_address": "banksyvaloper1e0n0mmq54u47tzeddrhm43z6m7kj3gadnav8ea",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "vODTV41oZPrqvldzzpXTmYYfPWVf1n+eqEBWsL62Nms="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "211bebc24e286a973d3038f2fbbf5f673badc190@10.128.0.74:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A69/to+UhbcXMjwKVvTEuM2lRebFKPHP19+FCMuzDhKv"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "qflCYA1ciVfsbsglbecNW9UacYuld3LRiA3uUHt/u3Y3iUd55oZ43I5IAH7ivMHcBfNP80A+4N7Qm95dfIr0wg=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Cogwheel | cogwheel.digital",
+                  "identity": "713ED73C7B012BD0",
+                  "website": "cogwheel.digital",
+                  "security_contact": "info@cogwheel.digital",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1avj54vrlcdnje922s4prcra6y6csd0eqec9nrc",
+                "validator_address": "banksyvaloper1avj54vrlcdnje922s4prcra6y6csd0eq88eqwq",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "VRZA/kma5CMZCQWRz0Csofu2UXaXQE7jUIBXUlDSKE8="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "9bbbcb11861c2fe3c6459529af76f78cca32079e@93.115.28.169:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A9M8UEwMDcup4HYToyJlcTAR92n0PypmfHDrQLfBAt6h"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "F5Y89MQT0r+/2pvpBbbx18bYcaOHSs0tvwrNF8ToueUB3Hws/ISacjrf3GVO/oKfTKJs30k3HXJ7PXIjD2ak+Q=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "cryptobtcbuyer",
+                  "identity": "E1A5712F01E07357",
+                  "website": "https://github.com/cryptobtcbuyer",
+                  "security_contact": "cryptobtcbuyer@gmail.com",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.100000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1dz7mw5uhz28t9wylqngf8ydfwqqj8tkam8n9z6",
+                "validator_address": "banksyvaloper1dz7mw5uhz28t9wylqngf8ydfwqqj8tka9c0k0z",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "mltdK8g5Eel5yPG/zaNl7eSrN+n0zKQRh+ylF1bFq+Y="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "20e6ecaaadd8cad474b8312d935042811513f6ff@207.244.253.244:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A2Vd8FiqshwTy/Fp8BUASm8pzSOG3psJPpiSLWqlYMCo"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "1J7qiMsKwoWDJA0iw3/bsJCGlZ5zn2WRYF1sf1WjHDY/uKdnQnm0iPot7BC+bAQbIQfdxhcubVxXTYsn6sKOvA=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "cyberG",
+                  "identity": "1DA7F229F22EA5D6",
+                  "website": "https://www.cyberg.digital/",
+                  "security_contact": "cyberG#4889",
+                  "details": "IBC"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy199lhy65zaywf29467jtcm6kvfldaqe77gt2uch",
+                "validator_address": "banksyvaloper199lhy65zaywf29467jtcm6kvfldaqe77k5k040",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "KLzjpSkJ/tjn+N8hJsqE97GIiXzOTalnKAaGjUUV+0o="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "a449e4845d136b0cda524a7e0354030a77da2c37@135.181.138.160:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A1wZj3oq5W5u2yXV7/Rs2W4oFm9F6UMPCjes4tnUM7i6"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "haLpDB9hXDJErG0oi91Uo/MNu4q0/gcUxuK9qKb5fi9iCUfuXTT7Yw73kL0ftYkA1N0ncVEi4YuT+dwnamR8CA=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "genznodes",
+                  "identity": "86D0A9427E51D239",
+                  "website": "https://genznodes.dev",
+                  "security_contact": "genzbit@genznodes.dev",
+                  "details": "IBC Relayers \u0026 Non-Custodial Staking Service Provider with 24/7 monitoring | Stake and Earn Rewards"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.020000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1eclj83cdslzkyln2nnlmyajl0yajr9jsn8e2a4",
+                "validator_address": "banksyvaloper1eclj83cdslzkyln2nnlmyajl0yajr9jsdc9esd",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "zRdVVC2JCWiYHa2Ns54PadfJW3PZ1XJAMCyFtPrjKMg="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "a23813e00918920e8b183c02c7505a0f6b8fc524@185.197.250.151:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A196PeL5R+4+f/Epq5Y7M5hIBsw/AajAtfOEoijJS34x"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "ecqGIHMx1uYJ1eYZ9chZWEBBueBA6F+jzcE6zBDsAUNoM7bGZsKPKBdGt4MqtKwOPgcPHXFwPzJXymkArBhZXA=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "heisenbug",
+                  "identity": "367960C067E253A4",
+                  "website": "https://heisenbug.one",
+                  "security_contact": "",
+                  "details": "reliable \u0026\u0026 secure staking"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1xp6n38h3zh75pk874tkxt7w7jdslul0vae3fsa",
+                "validator_address": "banksyvaloper1xp6n38h3zh75pk874tkxt7w7jdslul0vrxd6a9",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "Jm4GklfZ6kNDszGz4hZPxUd8rGsxf3bAiFpNCoIJnV4="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "0a68e21ab47c15f634a97019c2a0b8d3bea09622@185.190.142.177:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "Al9yfSogQ+RM6I92Z7RWvoOhYPhN0DCnyn9qsBC5D23R"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "/SSk70O2ggDxJTK5zQRaW1qcVH7VxV4ZOxc8t6NKMEBpjZquMvcH2UVp8rMMoXL8jbqWC9hnY121f66d5tlW3Q=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "kingnodes 👑",
+                  "identity": "30E6CD38D9721222",
+                  "website": "https://kingnodes.com",
+                  "security_contact": "security@kingnodes.com",
+                  "details": "Professional PoS validator securing only the best interchain networks. Join our community of delegators Telegram: https://t.me/kingnodes Twitter: https://twitter.com/kingnodes"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "1.000000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy19w2488ntfgpduzqq3sk4j5x387zynwknek0ymx",
+                "validator_address": "banksyvaloper19w2488ntfgpduzqq3sk4j5x387zynwkn8fnhk7",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "Aq7Ug+p4HcRnNKEvsmmS9dKZZKgUj1H7pkvekpsoY9o="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "b66243af1e8df4250f2cc50ba272d7e43c935a22@162.19.95.239:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AhHs+4Sx10vIdWyHU0GU7Xn+ukDtNy0UeHdQ01jtOkKJ"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "/u6pTkhmOkTi46hSq22L7rlrkTcDvDHh73GNx9G/UiRkkSMxc9KdrVj+9cpdeTyy7zZ2snTREhUvzzPM5FeSjg=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "kjnodes",
+                  "identity": "1C5ACD2EEF363C3A",
+                  "website": "http://kjnodes.com",
+                  "security_contact": "admin@kjnodes.com",
+                  "details": "Trusted and reliable Proof-of-Stake validator across Cosmoverse. Slash protected with 100% refund in case of slashing."
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy10ayzjdqrn6ku55wyw3mrt7mrw8e3la9wxusaqg",
+                "validator_address": "banksyvaloper10ayzjdqrn6ku55wyw3mrt7mrw8e3la9wcrvwds",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "m4tilGQztC/y3K7062qT2Pll2GKg6iQRNX/x/0rVNo8="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "ffec53891af4ccfaccef244cc29165c3b359c1bb@65.108.244.5:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AhlTj/vaOtL0DggAdhe4aKmm8Wiof6gLLr+FhM7NqwmR"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "pxnYgTSQd0MFpKmLgNdnK1OFkaSq5mBQF2GYxCgRq9J6R3dV8emEiVbgYP6WwtJaBwoijuebtt0rquTqkVG67A=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "⚡NodeX Validator⚡",
+                  "identity": "D47444F2EF3D9308",
+                  "website": "https://nodexcapital.com",
+                  "security_contact": "hello@nodexcapital.com",
+                  "details": "Hi, NodeX Capital is here! secure and reliable nodes validator. Discord : https://discord.gg/nodexcapital"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1y3uqpev4ksgvpdcfyheyuqydpwxxzca7qgp2gk",
+                "validator_address": "banksyvaloper1y3uqpev4ksgvpdcfyheyuqydpwxxzca77hae9w",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "sb6DaxDNdLKOIgV9RswSiP2F8YwXIUcpILpx/PCTyxA="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "b1b5122ed4112a71ea4370f5adf2197bc424aa36@65.109.116.204:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A/bCCNWzYi1XzTmQqRh/eHUAZzX3D/Vbc1D09uO+AHjh"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "YTr7foyuWxvA6L+q7UnQWR6aB4nm+O+NbtXfucUefNw+E1j6hT7yGZsMTpDRPCm7doBRnvfKF81QzANr6jqRNQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "openbitlab",
+                  "identity": "0C293487659F3386",
+                  "website": "https://openbitlab.com/",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1q5f6pup4kzt37n2yxw75qyanr69mwdgaxprzg6",
+                "validator_address": "banksyvaloper1q5f6pup4kzt37n2yxw75qyanr69mwdgac7l39z",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "2MmITUjI66YghUlPAVMvzqQcEWItCiOlBhOIEFf3qbc="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "0851c005dd9aed50db962998989718987099f834@94.130.94.180:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AuOmB+eJB3AGYXDm7QGLTkoW/N5nNx7d5HnbzW64a7iT"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "50FwDQSa21DZqpWyVrgIoTWhC+sYF3npqpsrcyMt0FlD6sbS8P1YWr9H5T98d5KkVjIFDOdvb36yLEVOuWLPeg=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "P2P.ORG - P2P Validator",
+                  "identity": "E12F4695036D8072",
+                  "website": "https://p2p.org",
+                  "security_contact": "security@p2p.org",
+                  "details": "One of the winners of Cosmos Game of Stakes. We provide a simple, secure and intelligent staking service to help you generate rewards on your blockchain assets across 9+ networks within a single interface. Let's stake together - p2p.org."
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy18gqfj973hc0wfrgnmgwq9c9z5hkdzpewye6d3a",
+                "validator_address": "banksyvaloper18gqfj973hc0wfrgnmgwq9c9z5hkdzpew6xx7u9",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "PZALGX5WCHDHISGzrENWJRF16mU9tSVENaD3aHW860k="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "63a0e6bcd7045a2e3d21762bec9d70f399e886ab@198.244.175.102:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AuwI9kEYvha+vVzox2a7ccbYuDZ+ZpzGIxHwbKbSNh0y"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "X7J4LujkYjGk2wWNUj1dBFWxoOQ799bPF+XKUM96ULISmCLKo02JYDpM30Xa95eNnhNU1ObGqvBjyLhQ8rju6Q=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "polkachu.com",
+                  "identity": "0A6AF02D1557E5B4",
+                  "website": "https://polkachu.com",
+                  "security_contact": "hello@polkachu.com",
+                  "details": "Polkachu is the trusted staking service provider for blockchain projects. 100% refund for downtime slash. Contact us at hello@polkachu.com"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.100000000000000000",
+                  "max_change_rate": "0.050000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1jt9w26mpxxjsk63mvd4m2ynj0af09cslfxpnn6",
+                "validator_address": "banksyvaloper1jt9w26mpxxjsk63mvd4m2ynj0af09cslheaq7z",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "mtxKuNrkSzLdkYbo1e32XqqjPnmk+b0rECdo62r+scs="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "74c7dd0de85fa1f84e5721eaa10db88b64fa0749@65.108.226.183:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "As1WcJsvf1NQgRlS8a2PHuueKhHlCYrFe3VooMxQdflR"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "vJ3oU4aAAB/m7hV/qBHV+YUUw/DHa0PX5PXLlm38R2t9YQTwNk7u+rVp5Zm1O5c/3BjhWNCq65v4NdFTwFk8/g=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "silent",
+                  "identity": "A47522A5527DB39F",
+                  "website": "https://silentvalidator.com",
+                  "security_contact": "",
+                  "details": "Silent is a professional validator who wanna bring value to cosmos community"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1sdw0hnaz0cktn3kllxdlzjxce63kpr0yznkpzj",
+                "validator_address": "banksyvaloper1sdw0hnaz0cktn3kllxdlzjxce63kpr0yuv2j02",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "aOoWEGVOWQrdmQZOfHoUq8SlhsIuAZOGp6uEUGhMkuA="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "42c6370c3608fcfc49b95d411efd4db34a7ad838@65.108.75.107:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A9uNSw2xbWZd5/vX2nRANgwRKaiyBpfqW76x3djTNWqX"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "S4+/yuUKnjD7mF7R0GLBfDAGCmQ0pvPIgyIe8VcgmEIVb+LJ560ELdtLXpsquNssbMfzSwLZ7NOOhcB9TbkunQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Stake Village",
+                  "identity": "D666B7424568E07C",
+                  "website": "https://stakevillage.net",
+                  "security_contact": "",
+                  "details": "A team of professional and reliable validators."
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy1nsf3rzyt58ktvpljmdjcurysayucd7gwch9g2p",
+                "validator_address": "banksyvaloper1nsf3rzyt58ktvpljmdjcurysayucd7gwxgem8e",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "hh+hto9l/wKsT2TBbq5LQr+PUHrmwxsW+cR1q5LOqxQ="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "764fed363ddaa588c5bfaa43d5ef3177738bbc23@192.168.100.24:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AyE3pHQrqbr7O4BvHKv7nZuWT4WJ6rgTnwPwDIofL3NM"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "gYnsgZKlJ9J3W6Le1aeaark1o6GLBBW8INRXVMZBwjw3qITU47SDG67EGSk/RZAiz8g9a6FoavNF00R33cDOfw=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "kokos",
+                  "identity": "48538AB01354DF44",
+                  "website": "https://sbgid.com/",
+                  "security_contact": "",
+                  "details": "Secure and reliable PoS/PoW validator"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "banksy16fxpvh0xp5fset0exn766m7lmyucaarawggpfd",
+                "validator_address": "banksyvaloper16fxpvh0xp5fset0exn766m7lmyucaarash5jy4",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "5pZuH+r3FHCYtVi8LtG+lM1zfjrl/T1ssKZ16fADzds="
+                },
+                "value": {
+                  "denom": "ppica",
+                  "amount": "10000000000000000"
+                }
+              }
+            ],
+            "memo": "7896ea8e66643e26f57756f10150283a29f8bf5d@148.251.91.185:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A7kMT1EBIp+fOTwWoPZsDXJxytPh7iRBbTjmqKipD0Em"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "aB+IzEcLIS8Ekeow2gVgtln5VR7DFbpTY5ce8SPWw0gXWoAXTiTja9G86/vB6HLsxhlzfwpECzSkB5yBUqCzxQ=="
+          ]
+        }
+      ]
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": [],
+      "votes": [],
+      "proposals": [],
+      "deposit_params": null,
+      "voting_params": null,
+      "tally_params": null,
+      "params": {
+        "min_deposit": [
+          {
+            "denom": "ppica",
+            "amount": "100000000000000"
+          }
+        ],
+        "max_deposit_period": "172800s",
+        "voting_period": "21600s",
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000",
+        "min_initial_deposit_ratio": "0.000000000000000000",
+        "burn_vote_quorum": false,
+        "burn_proposal_deposit_prevote": false,
+        "burn_vote_veto": true
+      }
+    },
+    "group": {
+      "group_seq": "0",
+      "groups": [],
+      "group_members": [],
+      "group_policy_seq": "0",
+      "group_policies": [],
+      "proposal_seq": "0",
+      "proposals": [],
+      "votes": []
+    },
+    "ibc": {
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "clients_metadata": [],
+        "params": {
+          "allowed_clients": [
+            "06-solomachine",
+            "07-tendermint",
+            "08-wasm",
+            "09-localhost"
+          ]
+        },
+        "create_localhost": false,
+        "next_client_sequence": "0"
+      },
+      "connection_genesis": {
+        "connections": [],
+        "client_connection_paths": [],
+        "next_connection_sequence": "0",
+        "params": {
+          "max_expected_time_per_block": "30000000000"
+        }
+      },
+      "channel_genesis": {
+        "channels": [],
+        "acknowledgements": [],
+        "commitments": [],
+        "receipts": [],
+        "send_sequences": [],
+        "recv_sequences": [],
+        "ack_sequences": [],
+        "next_channel_sequence": "0"
+      }
+    },
+    "interchainquery": {
+      "host_port": "icqhost",
+      "params": {
+        "host_enabled": true,
+        "allow_queries": []
+      }
+    },
+    "mint": {
+      "minter": {
+        "inflation": "0.130000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "ppica",
+        "inflation_rate_change": "0.130000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520",
+        "max_token_per_year": "99999999000000000000",
+        "min_token_per_year": "99999999000000000000"
+      },
+      "incentives_supply": {
+        "denom": "ppica",
+        "amount": "66666666000000000000"
+      }
+    },
+    "packetfowardmiddleware": {
+      "params": {
+        "fee_percentage": "0.000000000000000000"
+      },
+      "in_flight_packets": {}
+    },
+    "params": null,
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "10000",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "6000s",
+        "slash_fraction_double_sign": "0.100000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": [],
+      "missed_blocks": []
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400s",
+        "max_validators": 150,
+        "max_entries": 7,
+        "historical_entries": 10000,
+        "bond_denom": "ppica",
+        "min_commission_rate": "0.050000000000000000"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": [],
+      "validators": [],
+      "delegations": [],
+      "unbonding_delegations": [],
+      "redelegations": [],
+      "exported": false
+    },
+    "transfer": {
+      "port_id": "transfer",
+      "denom_traces": [],
+      "params": {
+        "send_enabled": true,
+        "receive_enabled": true
+      }
+    },
+    "transmiddleware": {
+      "token_infos": []
+    },
+    "upgrade": {},
+    "vesting": {}
+  }
+}
