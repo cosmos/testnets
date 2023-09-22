@@ -11,6 +11,7 @@ Follow along with Composable's block explorer here: https://explorer.nodexcapita
 
 Otherwise you may manually join `banksy-testnet-3` using these notes:
 * Joining instructions: https://github.com/notional-labs/Composable-ICS-tesnet
+* Spawn time: `Available soon`
 * Genesis file (without CCV): https://raw.githubusercontent.com/notional-labs/Composable-ICS-tesnet/main/genesis.json
 * Genesis file (with CCV): `Available soon`
 * Pre-transition Composable binary: 
@@ -28,6 +29,9 @@ Otherwise you may manually join `banksy-testnet-3` using these notes:
     - API: `https://api-banksy.notional.ventures:443`
     - gRPC: `https://grpc-banksy.notional.ventures:443`
 - Block Explorer: `https://explorer.nodexcapital.com/banksy-testnet`
+
+### IBC data
+Available soon
 
 ### Joining berfore transition
 All provider validators must join `banksy-testnet-3` before the upgrade and `spawn_time`, using released binary:
