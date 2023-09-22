@@ -15,14 +15,14 @@ Otherwise you may manually join `banksy-testnet-3` using these notes:
 * Genesis file (with CCV): `Available soon`
 * Pre-transition Composable binary: 
    * Version: [v5.0.0](https://github.com/notional-labs/Composable-ICS-tesnet/raw/main/binaries/v5.0.0/centaurid)
-   * Commit: `ef92568fed75492cee9b634ba368ed17e7c82737433e6918bc96f20e51a2b089`
+   * SHA256: `ef92568fed75492cee9b634ba368ed17e7c82737433e6918bc96f20e51a2b089`
 * Composable’s GitHub repository: https://github.com/notional-labs/composable-centauri
 * Go version: `1.19`
 * Persistent Peers = `c0f197bdf6c4a4a16eb9db112d1ec9545336fd43@168.119.91.22:2250`
 * Chain ID: `banksy-testnet-3`
 * Post-upgrade Composable binary commit (run with this binary after the upgrade):
    * Version: [v6.0.0-ics](https://github.com/notional-labs/composable-centauri/releases/download/v6.0.0-ics/centaurid)
-   * Commit: `43045ea6208cf11409ce1a2e37fc7a9723f7199f4c34c3c371a39ed3bdce376b`
+   * SHA256: `43045ea6208cf11409ce1a2e37fc7a9723f7199f4c34c3c371a39ed3bdce376b`
 - Public Notional endpoints: 
     - RPC: `https://rpc-banksy.notional.ventures:443`
     - API: `https://api-banksy.notional.ventures:443`
