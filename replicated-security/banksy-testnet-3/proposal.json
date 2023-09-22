@@ -8,7 +8,7 @@
     },
     "genesis_hash": "1ff7de58f849f954b32bf3f565baf2548a3169a77111ba3c69cba25d020ce589",
     "binary_hash": "",
-    "spawn_time": "2023-06-27T11:00:00-04:00", /* example*/ 
+    "spawn_time": "2023-06-27T11:00:00-04:00", /* example, after upgrade height*/ 
     "deposit": "1uatom",
     "consumer_redistribution_fraction": "0.85",
     "blocks_per_distribution_transmission": 100,
