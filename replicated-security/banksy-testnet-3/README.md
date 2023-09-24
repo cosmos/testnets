@@ -33,7 +33,7 @@ Otherwise you may manually join `banksy-testnet-3` using these notes:
 ### IBC data
 Available soon
 
-### Joining berfore transition
+### Joining before transition
 All provider validators must join `banksy-testnet-3` before the upgrade and `spawn_time`, using released binary:
 
 ```bash
