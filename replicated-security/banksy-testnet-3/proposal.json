@@ -4,7 +4,7 @@
     "chain_id": "banksy-testnet-3",
     "initial_height": {
         "revision_number": 1,
-        "revision_height": UPGRADE_HEIGHT_TBD
+        "revision_height": UPGRADE_HEIGHT_TBD + 1
     },
     "genesis_hash": "1ff7de58f849f954b32bf3f565baf2548a3169a77111ba3c69cba25d020ce589",
     "binary_hash": "",

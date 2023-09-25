@@ -13,7 +13,7 @@ Otherwise you may manually join `banksy-testnet-3` using these notes:
 * Joining instructions: https://github.com/notional-labs/Composable-ICS-tesnet
 * Spawn time: `Available soon`
 * Genesis file (without CCV): https://raw.githubusercontent.com/notional-labs/Composable-ICS-tesnet/main/genesis.json
-* Genesis file (with CCV): `Available soon`
+* CCV file: `Available soon`
 * Pre-transition Composable binary: 
    * Version: [v5.0.0](https://github.com/notional-labs/Composable-ICS-tesnet/raw/main/binaries/v5.0.0/centaurid)
    * SHA256: `ef92568fed75492cee9b634ba368ed17e7c82737433e6918bc96f20e51a2b089`
@@ -62,10 +62,10 @@ centaurid version # v5.0.0
 ```
 
 ### Upgrade and apply new genesis file
-The node will start running until the upgrade height, at which the node will halt. Detail about timeline and instruction can be seen at **Launch Stages** section. To download new genesis file at `spawn_time`, and apply new version after upgrade height, see following commands:
+The node will start running until the upgrade height, at which the node will halt. Detail about timeline and instruction can be seen at **Launch Stages** section. To download new ccv file at `spawn_time`, and apply new version after upgrade height, see following commands:
 ```bash
 # Download new genesis-ccv at `spawn_time`
-wget -O $HOME/.banksy/config/genesis-ccv.json https://raw.githubusercontent.com/cosmos/testnets/master/replicated-security/banksy-testnet-3/genesis-ccv.json
+wget -O $HOME/.banksy/config/genesis-ccv.json https://raw.githubusercontent.com/cosmos/testnets/master/replicated-security/banksy-testnet-3/ccv.json
 ```
 
 ```bash
