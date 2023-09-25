@@ -1,0 +1,19 @@
+{
+    "title": "Composable testnet on ICS",
+    "description": "Migrate banksy-testnet-3 as a sovereign chain to banksy-testnet-3 as a consumer chain.",
+    "chain_id": "banksy-testnet-3",
+    "initial_height": {
+        "revision_number": 1,
+        "revision_height": UPGRADE_HEIGHT_TBD + 1
+    },
+    "genesis_hash": "1ff7de58f849f954b32bf3f565baf2548a3169a77111ba3c69cba25d020ce589",
+    "binary_hash": "",
+    "spawn_time": "2023-06-27T11:00:00-04:00", /* example, before upgrade height*/ 
+    "deposit": "1000000uatom",
+    "consumer_redistribution_fraction": "0.85",
+    "blocks_per_distribution_transmission": 100,
+    "ccv_timeout_period": 2419200000000000,
+    "transfer_timeout_period": 360000000000,
+    "historical_entries": 10000,
+    "unbonding_period": 1728000000000000
+}
