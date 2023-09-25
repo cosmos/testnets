@@ -22,8 +22,8 @@ Otherwise you may manually join `banksy-testnet-3` using these notes:
 * Persistent Peers = `c0f197bdf6c4a4a16eb9db112d1ec9545336fd43@168.119.91.22:2250`
 * Chain ID: `banksy-testnet-3`
 * Post-upgrade Composable binary commit (run with this binary after the upgrade):
-   * Version: [v6.0.0-ics](https://github.com/notional-labs/composable-centauri/releases/download/v6.0.0-ics/centaurid)
-   * SHA256: `43045ea6208cf11409ce1a2e37fc7a9723f7199f4c34c3c371a39ed3bdce376b`
+   * Version: [v6.0.1-ics](https://github.com/notional-labs/composable-centauri/releases/tag/v6.0.1-ics)
+   * SHA256: `1b85b1423ec2af8a43c7a74f9d0a32209b6f023189cbfb9338180e3a0f9bd889`
 - Public Notional endpoints: 
     - RPC: `https://rpc-banksy.notional.ventures:443`
     - API: `https://api-banksy.notional.ventures:443`
@@ -31,7 +31,11 @@ Otherwise you may manually join `banksy-testnet-3` using these notes:
 - Block Explorer: `https://explorer.nodexcapital.com/banksy-testnet`
 
 ### IBC data
-Available soon
+| | banksy-testnet-3|provider|
+|-------------|---------------------|-----------------|
+|Client |`Available soon`| `Available soon`|
+|Connections | `Available soon` | `Available soon` |
+|Channels | `transfer`: `Available soon` <br/><br/> `consumer`: `Available soon` | `transfer`: `Available soon` <br/><br/> `consumer`: `Available soon` |
 
 ### Joining before transition
 All provider validators must join `banksy-testnet-3` before the upgrade and `spawn_time`, using released binary:
@@ -83,7 +87,7 @@ centaurid start --p2p.seeds c0f197bdf6c4a4a16eb9db112d1ec9545336fd43@168.119.91.
 ```
 
 # Launch Stages
-|Step|When?                                             |What do you need to do?                                                                       |What is happening?                                                                                                                              |
+|Step|When?|What do you need to do?|What is happening?|
 |----|--------------------------------------------------|----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 |1   |ASAP                                              |Join the Composable testnet `banksy-testnet-3` with the pre-transition binary as a full node (not validator) and sync to the tip of the chain.|Validator machines getting caught up on existing Composable chain's history                                                                         |
 |2   |Upgrade in Composable testnet and Consumer Addition on provider chain proposals voting period time | [PROVIDER] Optional: Vote for the consumer-addition proposal.  | The proposals that provide new binary for the transition, and passing Composable testnet from sovereign to consumer chain.                                 |
