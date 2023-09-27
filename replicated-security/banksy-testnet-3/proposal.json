@@ -3,12 +3,12 @@
     "description": "Migrate banksy-testnet-3 as a sovereign chain to banksy-testnet-3 as a consumer chain.",
     "chain_id": "banksy-testnet-3",
     "initial_height": {
-        "revision_number": 1,
-        "revision_height": 1795803
+        "revision_number": 3,
+        "revision_height": 1795203
     },
     "genesis_hash": "1ff7de58f849f954b32bf3f565baf2548a3169a77111ba3c69cba25d020ce589",
     "binary_hash": "1ff7de58f849f954b32bf3f565baf2548a3169a77111ba3c69cba25d020ce589",
-    "spawn_time": "2023-09-27T16:30:00Z",
+    "spawn_time": "2023-09-27T16:27:00Z",
     "deposit": "1000000uatom",
     "consumer_redistribution_fraction": "0.85",
     "blocks_per_distribution_transmission": 100,
