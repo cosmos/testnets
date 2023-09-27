@@ -33,7 +33,7 @@ Otherwise you may manually join `banksy-testnet-3` using these notes:
 ### IBC data
 | | banksy-testnet-3|provider|
 |-------------|---------------------|-----------------|
-|Client |`Available soon`| `Available soon`|
+|Client |`07-tendermint-35`| `07-tendermint-50`|
 |Connections | `Available soon` | `Available soon` |
 |Channels | `transfer`: `Available soon` <br/><br/> `consumer`: `Available soon` | `transfer`: `Available soon` <br/><br/> `consumer`: `Available soon` |
 
