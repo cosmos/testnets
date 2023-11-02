@@ -1,5 +1,23 @@
 # Scheduled Upgrades 🗓️ 
 
+## v14
+
+### Schedule
+
+| Date                 | Testnet plan                                  |
+| -------------------  | --------------------------------------------- |
+| ✅ November 8 2023 | Gaia v14.0.0-rc0 is live on the testnet       |
+| ✅ November 8 2023 | Submit and pass v14 software upgrade proposal |
+
+* **Version before upgrade**: `v13.0.0`
+* **Version after upgrade**: `v14.0.0-rc0`
+
+### Upgrade details
+
+* **Upgrade height: `TBD`**
+* Upgrade time: `2023-11-08 TBD UTC`
+  * The upgrade took ___ minute, and block `TBD` was indexed at `TBD UTC`
+
 ## v13
 
 ### Schedule
