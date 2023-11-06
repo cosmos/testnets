@@ -15,7 +15,7 @@
 ### Upgrade details
 
 * **Upgrade height: `TBD`**
-* Upgrade time: `2023-11-08 TBD UTC`
+* Upgrade time: `2023-11-08 ~14:30 UTC`
   * The upgrade took ___ minute, and block `TBD` was indexed at `TBD UTC`
 
 ## v13
