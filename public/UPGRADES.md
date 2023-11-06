@@ -9,7 +9,7 @@
 | ✅ November 8 2023 | Gaia v14.0.0-rc0 is live on the testnet       |
 | ✅ November 8 2023 | Submit and pass v14 software upgrade proposal |
 
-* **Version before upgrade**: `v13.0.0`
+* **Version before upgrade**: `v13.0.1`
 * **Version after upgrade**: `v14.0.0-rc0`
 
 ### Upgrade details
