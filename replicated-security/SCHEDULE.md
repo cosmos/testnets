@@ -3,6 +3,7 @@
 | Date               | Type                  | Description                                                                                                                                |
 | ------------------ | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | November 2023       | Consumer addition     | Consumer chain `grand-rehearsal-1` (Noble testnet) to be created                                                                           |
+| November 8 2023  | Major upgrade     | Provider chain upgraded to Gaia `v14.0.0-rc0`                                                                      |
 | September 27 2023  | Consumer addition     | ✅ Composable testnet `banksy-testnet-3` transitions to consumer chain                                                                      |
 | September 20 2023  | Major upgrade         | ✅ Provider chain upgraded to Gaia `v13.0.0-rc0`                                                                                            |
 | September 18 2023  | Major upgrade         | ✅ [Proposal](https://explorer.rs-testnet.polypore.xyz/provider/gov/50) to upgrade provider chain to Gaia v13 passes                        |
