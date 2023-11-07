@@ -7,16 +7,15 @@
 | Date                 | Testnet plan                                  |
 | -------------------  | --------------------------------------------- |
 | ✅ November 8 2023 | Gaia v14.0.0-rc0 is live on the testnet       |
-| ✅ November 8 2023 | Submit and pass v14 software upgrade proposal |
+| ✅ November 7 2023 | ✅ Submit and pass v14 software upgrade [proposal](https://explorer.theta-testnet.polypore.xyz/proposals/187) |
 
 * **Version before upgrade**: `v13.0.1`
 * **Version after upgrade**: `v14.0.0-rc0`
 
 ### Upgrade details
 
-* **Upgrade height: `TBD`**
-* Upgrade time: `2023-11-08 ~14:30 UTC`
-  * The upgrade took ___ minute, and block `TBD` was indexed at `TBD UTC`
+* **Upgrade height: `18766800`**
+* Estimated upgrade time: `2023-11-08 ~14:30 UTC`
 
 ## v13
 
@@ -24,8 +23,8 @@
 
 | Date                 | Testnet plan                                  |
 | -------------------  | --------------------------------------------- |
-| ✅ September 20 2023 | Gaia v13.0.0-rc0 is live on the testnet       |
-| ✅ September 18 2023 | Submit and pass v13 software upgrade proposal |
+| ✅ September 20 2023 | ✅ Gaia v13.0.0-rc0 is live on the testnet       |
+| ✅ September 18 2023 | ✅ Submit and pass v13 software upgrade proposal |
 
 * **Version before upgrade**: `v12.0.0`
 * **Version after upgrade**: `v13.0.0-rc0`
