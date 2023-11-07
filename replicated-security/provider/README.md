@@ -11,6 +11,14 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
+## v14 Upgrade
+
+The provider chain will upgrade to Gaia [v14.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v14.0.0-rc0) on **Wednesday, November 8 2023**.
+
+* **Block height: `3891450`**
+  * Target upgrade time: `2023-11-08 15:00 UTC`
+* [Proposal #88](https://explorer.rs-testnet.polypore.xyz/provider/gov/88)
+
 ## Endpoints
 
 Endpoints are exposed as subdomains for the sentry and snapshot nodes (described below) as follows:
