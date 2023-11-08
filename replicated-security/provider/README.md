@@ -27,6 +27,9 @@ Endpoints are exposed as subdomains for the sentry and snapshot nodes (described
 * `https://rest.<node-name>.rs-testnet.polypore.xyz:443`
 * `https://grpc.<node-name>.rs-testnet.polypore.xyz:443`
 * `p2p.<node-name>.rs-testnet.polypore.xyz:26656`
+* `https://rpc-rs.cosmos.nodestake.top`
+* `https://api-rs.cosmos.nodestake.top`
+* `https://grpc-rs.cosmos.nodestake.top`
 
 Sentries:
 
@@ -50,6 +53,11 @@ Use this [jsfiddle](https://jsfiddle.net/uw4ar8qt/2/).
 ## Block Explorer
 
 * https://explorer.rs-testnet.polypore.xyz
+* https://explorer.nodestake.top/cosmos-rs/
+
+## Snapshot
+
+* https://nodestake.top/cosmos
 
 ## Faucet
 
