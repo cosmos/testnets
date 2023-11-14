@@ -15,6 +15,7 @@
 ### Upgrade details
 
 * **Upgrade height: `18876500`**
+* Estimated upgrade time: `2023-11-15 ~14:30 UTC`
 * ⚠️ This is **not** a governance-gated upgrade, you must set the upgrade height in your node(s) `app.toml` ahead of time:
   ```
   halt-height = 18876500
