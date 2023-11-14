@@ -8,7 +8,7 @@ Visit the [Scheduled Upgrades](UPGRADES.md) page for details on current and upco
 
 - **Chain-ID**: `theta-testnet-001`
 - **Launch date**: 2022-03-10
-- **Current Gaia Version:** `v13.0.0-rc0` (upgraded from v11 at height `17550150`)
+- **Current Gaia Version:** `v14.0.0-rc0` (upgraded from v13 at height `18766800`)
 - **Launch Gaia Version:** `release/v6.0.0`
 - **Genesis File:**  Zipped and included [in this repository](genesis.json.gz), unzip and verify with `shasum -a 256 genesis.json`
 - **Genesis sha256sum**: `522d7e5227ca35ec9bbee5ab3fe9d43b61752c6bdbb9e7996b38307d7362bb7e`
