@@ -3,7 +3,7 @@
 These instructions will help you simulate the `v14` upgrade on a single validator node testnet as follows:
 
 - Start with gaia version: `v13.0.1`
-- After the upgrade: Gaia release `v14.0.0-rc0`
+- After the upgrade: Gaia release `v14.1.0-rc0`
 
 We will use a modified genesis file during this upgrade. This modified genesis file is similar to the one we are running on the public testnet, and has been modified in part to replace an existing validator (Coinbase Custody) with a new validator account that we control. The account's mnemonic, validator key, and node key are provided in this repo.  
 For a full list of modifications to the genesis file, please [see below](#genesis-modifications).
@@ -236,7 +236,7 @@ wget -q https://go.dev/dl/go1.20.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.20.linux-amd64.tar.gz
 
 cd $HOME/gaia
-git checkout v14.0.0-rc0
+git checkout v14.1.0-rc0
 git pull
 make install
 ```
@@ -257,7 +257,7 @@ gaiad tx gov submit-proposal software-upgrade v14 \
 --title "v14 Upgrade" \
 --deposit 100uatom \
 --upgrade-height TBD \
---upgrade-info '{"binaries": {"darwin/amd64": "https://github.com/cosmos/gaia/releases/download/v14.0.0-rc0/gaiad-v14.0.0-rc0-darwin-amd64?checksum=sha256:9feff5df27af88cff03520ad308c8b1de9238daf2afde5d7a8328b514887d528", "darwin/arm64": "https://github.com/cosmos/gaia/releases/download/v14.0.0-rc0/gaiad-v14.0.0-rc0-darwin-arm64?checksum=sha256:cc8116e640222b2bff273bcbe2fe8f474c83650efbbca7d16b53f3e79921d79e", "linux/amd64": "https://github.com/cosmos/gaia/releases/download/v14.0.0-rc0/gaiad-v14.0.0-rc0-linux-amd64?checksum=sha256:4ea4b4a71508f5b74c62a4368b318f128991049836110c3bf07773011b483156", "linux/arm64": "https://github.com/cosmos/gaia/releases/download/v14.0.0-rc0/gaiad-v14.0.0-rc0-linux-arm64?checksum=sha256:4f86c1ec3b6d629ae0d43d111839d81241e61241cf56d02511b4635bcc34e6d8", "windows/amd64": "https://github.com/cosmos/gaia/releases/download/v14.0.0-rc0/gaiad-v14.0.0-rc0-windows-amd64.exe?checksum=sha256:3c3dab3a618f5fdf27a519233f9160d7e3416f155928e78adb1a713e7ed1cb40", "windows/arm64": "https://github.com/cosmos/gaia/releases/download/v14.0.0-rc0/gaiad-v14.0.0-rc0-windows-arm64.exe?checksum=sha256:c0d853407843aa8ee3d1fe5ff85c9f6e8312f7febe569097a6c4551442357485"}}' \
+--upgrade-info '{"binaries": {"darwin/amd64": "https://github.com/cosmos/gaia/releases/download/v14.1.0-rc0/gaiad-v14.1.0-rc0-darwin-amd64?checksum=sha256:327734cc8a1fb24cce6d66358c139b959d9826ccacd61d0d0c7ba79a6149883d", "darwin/arm64": "https://github.com/cosmos/gaia/releases/download/v14.1.0-rc0/gaiad-v14.1.0-rc0-darwin-arm64?checksum=sha256:6a9f355010699fff872a5e0f4c026eb618a46f9906c3ba583200ac8bd4df5779", "linux/amd64": "https://github.com/cosmos/gaia/releases/download/v14.1.0-rc0/gaiad-v14.1.0-rc0-linux-amd64?checksum=sha256:f95f7c9d46e4d83cd34e0ab551912582db1d3d98749bb20e01830586d54f4f3a", "linux/arm64": "https://github.com/cosmos/gaia/releases/download/v14.1.0-rc0/gaiad-v14.1.0-rc0-linux-arm64?checksum=sha256:eca9fe8696980fa411793e3900ebc2fe51c8d449970f240c44192271513c03d8", "windows/amd64": "https://github.com/cosmos/gaia/releases/download/v14.1.0-rc0/gaiad-v14.1.0-rc0-windows-amd64.exe?checksum=sha256:76af690ed4bf87be737374c9153918dc64101a60d8f6365367ac63f6ace95487", "windows/arm64": "https://github.com/cosmos/gaia/releases/download/v14.1.0-rc0/gaiad-v14.1.0-rc0-windows-arm64.exe?checksum=sha256:9d5f904dc68f752382007023ec84c0a2930ed2932f4d152b26ac3d2ee7593274"}}' \
 --description "Upgrade Gaia to v14" \
 --gas auto \
 --fees 1000uatom \
