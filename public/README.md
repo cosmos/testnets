@@ -21,6 +21,9 @@ Endpoints are exposed as subdomains for the sentry and snapshot nodes (described
 * `https://rest.<node-name>.theta-testnet.polypore.xyz:443`
 * `https://grpc.<node-name>.theta-testnet.polypore.xyz:443`
 * `p2p.<node-name>.theta-testnet.polypore.xyz:26656`
+* `https://rpc-t.cosmos.nodestake.top`
+* `https://api-t.cosmos.nodestake.top`
+* `https://grpc-t.cosmos.nodestake.top`
 
 Sentries:
 
@@ -51,6 +54,11 @@ You can add these in your seeds list.
   - https://explorer.theta-testnet.polypore.xyz
   - https://cosmoshub-testnet.mintscan.io/cosmoshub-testnet
   - https://testnet.cosmos.bigdipper.live/
+  - https://explorer.nodestake.top/cosmos-testnet/
+
+### Snapshot
+
+  - https://nodestake.top/cosmos
 
 ### Faucet
 
