@@ -5,23 +5,25 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v14.0.0-rc0`](https://github.com/cosmos/gaia/releases/tag/v13.0.0-rc0), upgraded from v11 at block height `3313600`.
+* **Current Gaia Version**: [`v14.0.0-rc1`](https://github.com/cosmos/gaia/releases/tag/v14.0.0-rc1), upgraded from v13 at block height `3891450`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v14.0.0-rc1 Upgrade
+## v14.1.0-rc0 Upgrade
 
-The provider chain will upgrade to Gaia [v14.0.0-rc1](https://github.com/cosmos/gaia/releases/tag/v14.0.0-rc1) on **Wednesday, November 15 2023**.
+The provider chain will upgrade to Gaia [v14.1.0-rc0](https://github.com/cosmos/gaia/releases/tag/v14.1.0-rc0) on **Wednesday, November 22 2023**.
 
-* **Block height: `3977100`**
-* Estimated upgrade time: `2023-11-15 ~15:00 UTC`
+* **Block height: `4064550`**
+* Estimated upgrade time: `2023-11-22 ~15:00 UTC`
 * ⚠️ This is **not** a governance-gated upgrade, you must set the upgrade height in your node(s) `app.toml` ahead of time:
   ```
-  halt-height = 3977100
+  halt-height = "4064550"
   ```
-  * After the halt height is reached and your node is stopped, replace the `gaiad` binary with the new one before starting the node again.
+  * After the halt height is reached and your node is stopped, replace the `gaiad` binary with the new one, set `halt-height = "0"`, and start the node again.
+  * If you are using a service file, set `Restart=No` to keep the node from restarting before you have replaced the binary.
+
 
 ## Endpoints
 
@@ -133,3 +135,4 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * When the node reaches height `2532935`, it will attempt to upgrade to Gaia `v11`. You can use Cosmovisor's auto-download feature or install the `v11.0.0-rc0` release binary.
 * When the node reaches height `2929050`, it will attempt to upgrade to Gaia `v12`. You can use Cosmovisor's auto-download feature or install the `v12.0.0-rc0` release binary.
 * When the node reaches height `3313600`, it will attempt to upgrade to Gaia `v13`. You can use Cosmovisor's auto-download feature or install the `v13.0.0-rc0` release binary.
+* When the node reaches height `3891450`, it will attempt to upgrade to Gaia `v14`. You can use Cosmovisor's auto-download feature or install the `v14.0.0-rc0` release binary.
