@@ -1,5 +1,29 @@
 # Scheduled Upgrades 🗓️ 
 
+## v14.1.0-rc0
+
+### Schedule
+
+| Date                 | Testnet plan                                  |
+| -------------------  | --------------------------------------------- |
+| November 22 2023 | Gaia v14.1.0-rc0 is live on the testnet       |
+| November 21 2023 | Set upgrade halt height: `18986400` |
+
+* **Version before upgrade**: `v14.0.0-rc1`
+* **Version after upgrade**: `v14.1.0-rc0`
+
+### Upgrade details
+
+* **Upgrade height: `18986400`**
+* Estimated upgrade time: `2023-11-22 ~14:30 UTC`
+* ⚠️ This is **not** a governance-gated upgrade, you must set the upgrade height in your node(s) `app.toml` ahead of time:
+  ```
+  halt-height = "18986400"
+  ```
+  * After the halt height is reached and your node is stopped, replace the `gaiad` binary with the new one, set `halt-height = "0"`, and start the node again.
+  * If you are using a service file, set `Restart=No` to keep the node from restarting before you have replaced the binary.
+
+
 ## v14.0.0-rc1
 
 ### Schedule
