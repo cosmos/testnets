@@ -6,8 +6,8 @@
 
 | Date                 | Testnet plan                                  |
 | -------------------  | --------------------------------------------- |
-| November 22 2023 | Gaia v14.1.0-rc0 is live on the testnet       |
-| November 21 2023 | Set upgrade halt height: `18986400` |
+| November 22 2023 | ✅ Gaia v14.1.0-rc0 is live on the testnet       |
+| November 21 2023 | ✅ Set upgrade halt height: `18986400` |
 
 * **Version before upgrade**: `v14.0.0-rc1`
 * **Version after upgrade**: `v14.1.0-rc0`
@@ -30,8 +30,8 @@
 
 | Date                 | Testnet plan                                  |
 | -------------------  | --------------------------------------------- |
-| November 15 2023 | Gaia v14.0.0-rc1 is live on the testnet       |
-| November 14 2023 | Set upgrade halt height: `18876500` |
+| November 15 2023 | ✅ Gaia v14.0.0-rc1 is live on the testnet       |
+| November 14 2023 | ✅Set upgrade halt height: `18876500` |
 
 * **Version before upgrade**: `v14.0.0-rc0`
 * **Version after upgrade**: `v14.0.0-rc1`
@@ -52,7 +52,7 @@
 
 | Date                 | Testnet plan                                  |
 | -------------------  | --------------------------------------------- |
-| ✅ November 8 2023 | Gaia v14.0.0-rc0 is live on the testnet       |
+| ✅ November 8 2023 | ✅ Gaia v14.0.0-rc0 is live on the testnet       |
 | ✅ November 7 2023 | ✅ Submit and pass v14 software upgrade [proposal](https://explorer.theta-testnet.polypore.xyz/proposals/187) |
 
 * **Version before upgrade**: `v13.0.1`
