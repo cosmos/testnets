@@ -11,7 +11,7 @@ The `pion-1` chain will be launched as a Neutron persistent chain to test Interc
 * **Spawn time**: `2023-06-29T14:30:00Z`
 * **GitHub repo**: [neutron-org/neutron](https://github.com/neutron-org/neutron.git)
 * **Release**: [`v1.0.2-pion-1-upgrade`](https://github.com/neutron-org/neutron/releases/tag/v1.0.2-pion-1-upgrade)
-* **Genesis file with CCV state:** [pion-1-genesis.json](TODO)
+* **Genesis file with CCV state:** [pion-1-genesis.json]([TODO](https://github.com/cosmos/testnets/blob/master/replicated-security/pion-1/pion-1-genesis-with-ccv.json.gz))
 
 * **Reference binary**: [neutrond-linux-amd64](neutrond-linux-amd64)
 * **Binary sha256sum**: `a1331685f656cca2d7a94283959678a5a3c846aa4a6fa0cd6c4da1534c324ea7`
