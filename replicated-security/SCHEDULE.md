@@ -2,7 +2,7 @@
 
 | Date              | Testnet Incentives Program Period | Type              | Description                                                                                                |
 |-------------------|-----------------------------------|-------------------|------------------------------------------------------------------------------------------------------------|
-| November 29 2023  | 1                                 | Consumer addition | Consumer chain grand-rehearsal-1 (Noble testnet) to be created                                             |
+| TBD  | 1                                 | Consumer addition | Consumer chain grand-rehearsal-1 (Noble testnet) to be created                                             |
 | November 29 2023  | 1                                 | Consumer upgrade  | Consumer chain pion-1 to be upgraded                                                                       |
 | November 22 2023  | 1                                  | Minor upgrade     | ✅ Provider chain upgraded to Gaia v14.1.0-rc0                                                                |
 | November 15 2023  |                                   | Patch upgrade     | ✅ Provider chain upgraded to Gaia v14.0.0-rc1                                                                |
