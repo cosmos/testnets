@@ -11,13 +11,13 @@ NODE_KEY_FILE=${2:-"~/node_key.json"}
 NODE_HOME=~/.neutrond
 NODE_MONIKER=node
 SERVICE_NAME=neutrond
-SERVICE_VERSION="v1.0.2-pion-1-upgrade"
-STATE_SYNC=false
+SERVICE_VERSION="v2.0.0"
+STATE_SYNC=true
 # ***
 
 CHAIN_BINARY='neutrond'
 CHAIN_ID=pion-1
-SEEDS="e2c07e8e6e808fb36cca0fc580e31216772841df@p2p-palvus.pion-1.ntrn.tech:26656"
+SEEDS="0de4d730b5341d3a83721e1cbb5ce7772e26a400@p2p-palvus.pion-1.ntrn.tech:26656"
 SYNC_RPC_1=http://pion.rs-testnet.polypore.xyz:26657
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_1"
 
@@ -56,7 +56,7 @@ $CHAIN_BINARY config broadcast-mode block --home $NODE_HOME
 $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
 sed -i -e "/seeds =/ s^= .*^= \"$SEEDS\"^" $NODE_HOME/config/config.toml
 sed -i -e 's/^timeout_commit =.*/timeout_commit = "1s"/g' $NODE_HOME/config/config.toml
-sed -i -e "/minimum-gas-prices =/ s^= .*^= \"0untrn\"^" $NODE_HOME/config/app.toml
+sed -i -e "/minimum-gas-prices =/ s^= .*^= \"0.02untrn\"^" $NODE_HOME/config/app.toml
 sed -i -e "/iavl-disable-fastnode =/ s^= true^= false^" $NODE_HOME/config/app.toml
 
 # Replace keys

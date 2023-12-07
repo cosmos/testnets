@@ -6,11 +6,12 @@ The `pion-1` chain will be launched as a Neutron persistent chain to test Interc
 
 * **Chain-ID**: `pion-1`
 * **denom**: `untrn`
-* **minimum-gas-prices**: `0untrn`
+* **minimum-gas-prices**: `0.02untrn`
 * **timeout_commit**: `1s`
 * **Spawn time**: `2023-06-29T14:30:00Z`
 * **GitHub repo**: [neutron-org/neutron](https://github.com/neutron-org/neutron.git)
-* **Release**: [`v1.0.2-pion-1-upgrade`](https://github.com/neutron-org/neutron/releases/tag/v1.0.2-pion-1-upgrade)
+* **Current version**: [`v2.0.0`](https://github.com/neutron-org/neutron/releases/tag/v2.0.0)
+  * Launch version: [`v1.0.2-pion-1-upgrade`](https://github.com/neutron-org/neutron/releases/tag/v1.0.2-pion-1-upgrade)
 * **Genesis file with CCV state:** [pion-1-genesis.json]([TODO](https://github.com/cosmos/testnets/blob/master/replicated-security/pion-1/pion-1-genesis-with-ccv.json.gz))
 
 * **Reference binary**: [neutrond-linux-amd64](neutrond-linux-amd64)
@@ -48,7 +49,11 @@ Endpoints are exposed as subdomains for the sentry and snapshot nodes (described
 
 Seed nodes:
 
-1. `e2c07e8e6e808fb36cca0fc580e31216772841df@p2p-palvus.pion-1.ntrn.tech:26656`
+1. `0de4d730b5341d3a83721e1cbb5ce7772e26a400@p2p-palvus.pion-1.ntrn.tech:26656`
+
+State sync nodes:
+
+1. `pion.rs-testnet.polypore.xyz:26657`
 
 Persistent nodes:
 
@@ -79,14 +84,14 @@ Persistent nodes:
 ### Hardware Requirements
 
 * 4 Cores
-* 32 GB RAM
+* 64 GB RAM
 * 2x512 GB SSD
 
 ### Software Versions
 
 | Name    | Version               |
 |---------|-----------------------|
-| Neutron | v1.0.2-pion-1-upgrade |
+| Neutron | v2.0.0 |
 | Go      | >1.20                 |
 
 The scripts provided in this repo will install Neutron and set up a Cosmovisor service with the auto-download feature enabled on your machine.
@@ -110,7 +115,7 @@ Run script provided to set up a `pion-1` service:
 Build and install neutron binary. 
 
 ```
-$ git clone -b v1.0.2-pion-1-upgrade https://github.com/neutron-org/neutron.git
+$ git clone -b v2.0.0 https://github.com/neutron-org/neutron.git
 $ cd neutron
 $ make install
 ```
@@ -123,8 +128,8 @@ You should see the following:
 ```
 name: neutron
 server_name: neutrond
-version: 1.0.2-pion-1-upgrade
-commit: bb9d1c2d58dba07620b9ec0a4e32d36b59ef6cb2
+version: v2.0.0
+commit: e605ed3db4381994ee8185ba4a0ff0877d34e67f
 
 ```
 
