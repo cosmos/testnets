@@ -7,7 +7,7 @@
 NODE_HOME=~/.gaia
 NODE_MONIKER=public-testnet
 SERVICE_NAME=cosmovisor
-GAIA_VERSION=v14.1.0-rc0
+GAIA_VERSION=v14.1.0
 CHAIN_BINARY_URL=https://github.com/cosmos/gaia/releases/download/$GAIA_VERSION/gaiad-$GAIA_VERSION-linux-amd64
 STATE_SYNC=true
 GAS_PRICE=0.0025uatom
