@@ -6,11 +6,11 @@ The `pion-1` chain will be launched as a Neutron persistent chain to test Interc
 
 * **Chain-ID**: `pion-1`
 * **denom**: `untrn`
-* **minimum-gas-prices**: `0.02untrn`
+* **minimum-gas-prices**: `0untrn`
 * **timeout_commit**: `1s`
 * **Spawn time**: `2023-06-29T14:30:00Z`
 * **GitHub repo**: [neutron-org/neutron](https://github.com/neutron-org/neutron.git)
-* **Current version**: [`v2.0.0`](https://github.com/neutron-org/neutron/releases/tag/v2.0.0)
+* **Current version**: [`v2.0.1`](https://github.com/neutron-org/neutron/releases/tag/v2.0.1)
   * Launch version: [`v1.0.2-pion-1-upgrade`](https://github.com/neutron-org/neutron/releases/tag/v1.0.2-pion-1-upgrade)
 * **Genesis file with CCV state:** [pion-1-genesis.json]([TODO](https://github.com/cosmos/testnets/blob/master/replicated-security/pion-1/pion-1-genesis-with-ccv.json.gz))
 
@@ -115,7 +115,7 @@ Run script provided to set up a `pion-1` service:
 Build and install neutron binary. 
 
 ```
-$ git clone -b v2.0.0 https://github.com/neutron-org/neutron.git
+$ git clone -b v2.0.1 https://github.com/neutron-org/neutron.git
 $ cd neutron
 $ make install
 ```
@@ -128,9 +128,7 @@ You should see the following:
 ```
 name: neutron
 server_name: neutrond
-version: v2.0.0
-commit: e605ed3db4381994ee8185ba4a0ff0877d34e67f
-
+version: v2.0.1
 ```
 
 ### Troubleshooting
