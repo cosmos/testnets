@@ -3,7 +3,7 @@
 | Date              | Testnet Incentives Program Period | Type              | Description                                                                                                |
 | ----------------- | --------------------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------- |
 | January 17 2024   | 2                                 | Consumer addition | Temporary Aether testnet to be launched                                                                    |
-| January 10 2023   | 2                                 | Consumer upgrade  | Consumer chain pion-1 to be upgraded: vote YES on signaling proposal to confirm upgrade                    |
+| January 10 2023   | 2                                 | Consumer upgrade  | Consumer chain pion-1 to be upgraded: vote YES on signaling proposal [93](https://explorer.rs-testnet.polypore.xyz/provider/gov/93) to confirm upgrade                    |
 | November 29 2023  | 1                                 | Consumer upgrade  | ✅ Consumer chain pion-1 to be upgraded                                                                     |
 | November 22 2023  | 1                                 | Minor upgrade     | ✅ Provider chain upgraded to Gaia v14.1.0-rc0                                                              |
 | November 15 2023  |                                   | Patch upgrade     | ✅ Provider chain upgraded to Gaia v14.0.0-rc1                                                              |
