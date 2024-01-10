@@ -11,7 +11,7 @@ NODE_KEY_FILE=${2:-"~/node_key.json"}
 NODE_HOME=~/.neutrond
 NODE_MONIKER=node
 SERVICE_NAME=neutrond
-SERVICE_VERSION="v2.0.0"
+SERVICE_VERSION="v2.0.1"
 STATE_SYNC=true
 # ***
 
@@ -56,7 +56,7 @@ $CHAIN_BINARY config broadcast-mode block --home $NODE_HOME
 $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
 sed -i -e "/seeds =/ s^= .*^= \"$SEEDS\"^" $NODE_HOME/config/config.toml
 sed -i -e 's/^timeout_commit =.*/timeout_commit = "1s"/g' $NODE_HOME/config/config.toml
-sed -i -e "/minimum-gas-prices =/ s^= .*^= \"0.02untrn\"^" $NODE_HOME/config/app.toml
+sed -i -e "/minimum-gas-prices =/ s^= .*^= \"0untrn\"^" $NODE_HOME/config/app.toml
 sed -i -e "/iavl-disable-fastnode =/ s^= true^= false^" $NODE_HOME/config/app.toml
 
 # Replace keys
