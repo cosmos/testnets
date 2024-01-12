@@ -17,7 +17,12 @@ The `ethera_9000-1` chain will be launched as an Aether persistent chain to test
   - The [ethera_9000-1-genesis-without-ccv.json](./ethera_9000-1-genesis-without-ccv.json) file cannot be used to run the chain: it must be updated with the CCV (Cross Chain Validation) state after the spawn time is reached.
   - The genesis file includes funds for two relayers and faucet accounts as well as account with funds for different internal needs, `signed_blocks_window` has been set to `864000`, and `min_signed_per_window` has been set to `5%`.
 - Binary hash
-  - It was built with Interchain Security release [`v3.1.0`](https://github.com/cosmos/interchain-security/releases/tag/v3.1.0).
+  - Built with Interchain Security release [`v3.1.0`](https://github.com/cosmos/interchain-security/releases/tag/v3.1.0).
+  - aetherd-darwin-amd64: `dd3beaa1963414e3dcae38f47239e7e43f4d3a1bd72d8c75107400758b5c558d`
+  - aetherd-darwin-arm64: `4a90f636f27188b29f9ac9a7ea1b3a63a18b1bf946f5a3b89b1d2876a04e868c`
+  - aetherd-linux-amd64: `810bb1172a64a59084171a16f1558b76addd556d5d1de7c130514f636d793dc9`
+  - aetherd-linux-arm64: `277854d05a1093fa4d8e041830679c42281bd1ebe7c022b3a481f1e8ae31b3c1`
+  - aetherd-windows-amd64.exe: `63e41262c7f50f6f1a9329f9b914539746f549eca03bf180f35bb019c84726d8`
 - Spawn time
   - Even if a proposal passes, the CCV state will not be available from the provider chain until after the spawn time is reached.
 
