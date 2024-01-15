@@ -4,7 +4,7 @@ The `ethera_9000-1` chain will be launched as an Aether persistent chain to test
 
 - **Chain-ID**: `ethera_9000-1`
 - **denom**: `ataeth`
-- **Spawn time**: `2024-01-17T15:00:00.000000000Z`
+- **Spawn time**: `2024-01-17T14:00:00.000000000Z`
 - **Genesis file with CCV state:** [ethera_9000-1-genesis.json](./ethera_9000-1-genesis.json) (available after chain spawn time)
 - **Reference binary**: [aetherd-linux-amd64](./aetherd-linux-amd64)
 - **Binary sha256sum**: `810bb1172a64a59084171a16f1558b76addd556d5d1de7c130514f636d793dc9`
