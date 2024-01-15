@@ -15,7 +15,7 @@ The `ethera_9000-1` chain will be launched as an Aether persistent chain to test
 - Genesis file hash
   - The SHA256 is used to verify against the genesis file (without CCV state) that the proposer has made available for review.
   - The [ethera_9000-1-genesis-without-ccv.json](./ethera_9000-1-genesis-without-ccv.json) file cannot be used to run the chain: it must be updated with the CCV (Cross Chain Validation) state after the spawn time is reached.
-  - The genesis file includes funds for two relayers and faucet accounts as well as account with funds for different internal needs, `signed_blocks_window` has been set to `864000`, and `min_signed_per_window` has been set to `5%`.
+  - The genesis file includes funds for two relayers and faucet accounts as well as account with funds for different internal needs, `signed_blocks_window` has been set to `10000`, and `min_signed_per_window` has been set to `5%`.
 - Binary hash
   - Built with Interchain Security release [`v3.1.0`](https://github.com/cosmos/interchain-security/releases/tag/v3.1.0).
   - aetherd-darwin-amd64: `dd3beaa1963414e3dcae38f47239e7e43f4d3a1bd72d8c75107400758b5c558d`
