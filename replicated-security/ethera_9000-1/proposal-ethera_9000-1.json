@@ -1,0 +1,19 @@
+{
+  "title": "ethera_9000-1 Chain",
+  "description": "# Launching the ethera_9000-1 Chain\r\n\r\nThis is the proposal to create the first persistent consumer chain, \"ethera_9000-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/cosmos/testnets/tree/master/replicated-security) repo for additional details.",
+  "chain_id": "ethera_9000-1",
+  "initial_height": {
+    "revision_height": 1,
+    "revision_number": 1
+  },
+  "genesis_hash": "9f271f7e9d4aa791e9df5bf6a0c0557d7f805fb62ffce7ac3e1c49b0c124857f",
+  "binary_hash": "810bb1172a64a59084171a16f1558b76addd556d5d1de7c130514f636d793dc9",
+  "spawn_time": "2024-01-17T14:00:00.000000000Z",
+  "blocks_per_distribution_transmission": 1000,
+  "consumer_redistribution_fraction": "0",
+  "historical_entries": 10000,
+  "transfer_timeout_period": 3600000000000,
+  "ccv_timeout_period": 2419200000000000,
+  "unbonding_period": 1728000000000000,
+  "deposit": "10000000uatom"
+}
