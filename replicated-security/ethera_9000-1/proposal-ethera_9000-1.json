@@ -1,6 +1,6 @@
 {
   "title": "ethera_9000-1 Chain",
-  "description": "# Launching the ethera_9000-1 Chain\r\n\r\nThis is the proposal to create the first persistent consumer chain, \"ethera_9000-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/cosmos/testnets/tree/master/replicated-security) repo for additional details.",
+  "description": "# Launching the ethera_9000-1 Chain\r\n\r\nThis is the proposal to create the first consumer chain, \"ethera_9000-1\".\r\n\r\nPlease visit the [cosmos/testnets](https://github.com/cosmos/testnets/tree/master/replicated-security) repo for additional details.",
   "chain_id": "ethera_9000-1",
   "initial_height": {
     "revision_height": 1,
