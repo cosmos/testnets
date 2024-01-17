@@ -1,0 +1,982 @@
+{
+  "genesis_time": "2024-01-08T22:00:25.113032457Z",
+  "chain_id": "ethera_9000-1",
+  "initial_height": "1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "40000000"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000",
+      "max_bytes": "1048576"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    },
+    "version": {
+      "app": "0"
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "07-tendermint": null,
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "aether1rl6kmtzzk5dka9arznxk2cvvrj3qvzp25z92tr",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "aether1kwadh2ra8hy9lh4nlujh6u7fdzwljsf4gftsv6",
+            "pub_key": null,
+            "account_number": "1",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "aether1rvcckvx36z654ynllvcyprf4v79kv3hxt63l3x",
+            "pub_key": null,
+            "account_number": "2",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "aether18j2dn8eqm6gxjj4jtke82m8eaqvcuzw74fj8vq",
+            "pub_key": null,
+            "account_number": "3",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "aether1uhqsx0jzvvkcwt7rxu9f4xswa8cnr6640vy92x",
+            "pub_key": null,
+            "account_number": "4",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "aether1a4mjag80fzh2xg0k7ptvvwrdg2w49c7xw42xqx",
+            "pub_key": null,
+            "account_number": "5",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "aether1ah0p4qwf2gpxtkqj37ejqdlc4teprkj5wp4vsz",
+            "pub_key": null,
+            "account_number": "6",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        }
+      ]
+    },
+    "authz": {
+      "authorization": []
+    },
+    "bank": {
+      "params": {
+        "send_enabled": [],
+        "default_send_enabled": true
+      },
+      "balances": [
+        {
+          "address": "aether1rvcckvx36z654ynllvcyprf4v79kv3hxt63l3x",
+          "coins": [
+            {
+              "denom": "ataeth",
+              "amount": "5000000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "aether1rl6kmtzzk5dka9arznxk2cvvrj3qvzp25z92tr",
+          "coins": [
+            {
+              "denom": "ataeth",
+              "amount": "5000000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "aether18j2dn8eqm6gxjj4jtke82m8eaqvcuzw74fj8vq",
+          "coins": [
+            {
+              "denom": "ataeth",
+              "amount": "5000000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "aether1kwadh2ra8hy9lh4nlujh6u7fdzwljsf4gftsv6",
+          "coins": [
+            {
+              "denom": "ataeth",
+              "amount": "5000000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "aether1uhqsx0jzvvkcwt7rxu9f4xswa8cnr6640vy92x",
+          "coins": [
+            {
+              "denom": "ataeth",
+              "amount": "5000000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "aether1a4mjag80fzh2xg0k7ptvvwrdg2w49c7xw42xqx",
+          "coins": [
+            {
+              "denom": "ataeth",
+              "amount": "1000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "aether1ah0p4qwf2gpxtkqj37ejqdlc4teprkj5wp4vsz",
+          "coins": [
+            {
+              "denom": "ataeth",
+              "amount": "1000000000000000000000"
+            }
+          ]
+        }
+      ],
+      "supply": [
+        {
+          "denom": "ataeth",
+          "amount": "25000002000000000000000000000"
+        }
+      ],
+      "denom_metadata": [],
+      "send_enabled": []
+    },
+    "capability": {
+      "index": "1",
+      "owners": []
+    },
+    "ccvconsumer": {
+      "params": {
+        "enabled": true,
+        "blocks_per_distribution_transmission": "1000",
+        "distribution_transmission_channel": "",
+        "provider_fee_pool_addr_str": "",
+        "ccv_timeout_period": "2419200s",
+        "transfer_timeout_period": "3600s",
+        "consumer_redistribution_fraction": "0",
+        "historical_entries": "10000",
+        "unbonding_period": "1728000s",
+        "soft_opt_out_threshold": "0.05",
+        "reward_denoms": [],
+        "provider_reward_denoms": []
+      },
+      "provider_client_id": "",
+      "provider_channel_id": "",
+      "new_chain": true,
+      "provider_client_state": {
+        "chain_id": "provider",
+        "trust_level": {
+          "numerator": "1",
+          "denominator": "3"
+        },
+        "trusting_period": "453600s",
+        "unbonding_period": "1814400s",
+        "max_clock_drift": "10s",
+        "frozen_height": {
+          "revision_number": "0",
+          "revision_height": "0"
+        },
+        "latest_height": {
+          "revision_number": "0",
+          "revision_height": "4806737"
+        },
+        "proof_specs": [
+          {
+            "leaf_spec": {
+              "hash": "SHA256",
+              "prehash_key": "NO_HASH",
+              "prehash_value": "SHA256",
+              "length": "VAR_PROTO",
+              "prefix": "AA=="
+            },
+            "inner_spec": {
+              "child_order": [
+                0,
+                1
+              ],
+              "child_size": 33,
+              "min_prefix_length": 4,
+              "max_prefix_length": 12,
+              "empty_child": null,
+              "hash": "SHA256"
+            },
+            "max_depth": 0,
+            "min_depth": 0
+          },
+          {
+            "leaf_spec": {
+              "hash": "SHA256",
+              "prehash_key": "NO_HASH",
+              "prehash_value": "SHA256",
+              "length": "VAR_PROTO",
+              "prefix": "AA=="
+            },
+            "inner_spec": {
+              "child_order": [
+                0,
+                1
+              ],
+              "child_size": 32,
+              "min_prefix_length": 1,
+              "max_prefix_length": 1,
+              "empty_child": null,
+              "hash": "SHA256"
+            },
+            "max_depth": 0,
+            "min_depth": 0
+          }
+        ],
+        "upgrade_path": [
+          "upgrade",
+          "upgradedIBCState"
+        ],
+        "allow_update_after_expiry": true,
+        "allow_update_after_misbehaviour": true
+      },
+      "provider_consensus_state": {
+        "timestamp": "2024-01-17T14:00:04.231601563Z",
+        "root": {
+          "hash": "0Oyq2Au64UZWd/iZH/66RsUB24GyVIxFpTayIT+V3vs="
+        },
+        "next_validators_hash": "DC7A24D854A52D88B125F5D7D133EEF6C0041808F9F69B8129B55B95744CB8CD"
+      },
+      "maturing_packets": [],
+      "initial_val_set": [
+        {
+          "pub_key": {
+            "ed25519": "goAyTrHPgBBEhay6FISMzTObWBHQab93kabC2s4HRRA="
+          },
+          "power": "1500005"
+        },
+        {
+          "pub_key": {
+            "ed25519": "d1pL2k+uAuK++sumfQ/d0LQrvdn+gtFwbgcuhURj5ds="
+          },
+          "power": "13607429"
+        },
+        {
+          "pub_key": {
+            "ed25519": "gy3xVprcUW39A5EMlY/7epC8y0geFCH13Qy5LRuAP7Q="
+          },
+          "power": "1800010"
+        },
+        {
+          "pub_key": {
+            "ed25519": "dWGs9y2BodKKs8rjpWk9oQvEwzzPXPbAPAN59kztduE="
+          },
+          "power": "5925478"
+        },
+        {
+          "pub_key": {
+            "ed25519": "/ROXLgMLnMxlqr47lmBEDgdwJtjmkHDkfO+52CCi6QM="
+          },
+          "power": "11510006"
+        },
+        {
+          "pub_key": {
+            "ed25519": "2RyHNvJ62kISNvd0cXhGcJQ4DCuA0TZkSoLGoAhQzSI="
+          },
+          "power": "8193990"
+        },
+        {
+          "pub_key": {
+            "ed25519": "FYZh60ybk4uM/lEH0RDaaun4xLk3mAryBodnyslDNeI="
+          },
+          "power": "3533655"
+        },
+        {
+          "pub_key": {
+            "ed25519": "LKwKvQPVTwxwW4UDpyIvGW8Sa9sUdaxhhhVdOigrEyA="
+          },
+          "power": "8932274"
+        },
+        {
+          "pub_key": {
+            "ed25519": "iTif8WGSm1keuRCyPMVMK0ueXXzRRXNSm3nllLZImig="
+          },
+          "power": "12212691"
+        },
+        {
+          "pub_key": {
+            "ed25519": "eguEFMFLTf31h29PoiMhBTn9fZZafEJx/t6AA9KmYSU="
+          },
+          "power": "8900000"
+        },
+        {
+          "pub_key": {
+            "ed25519": "WQ/5wDt6ldOHvnX5C10o8F2s86Ba7ac2N+MXyHkr4gU="
+          },
+          "power": "13680109"
+        },
+        {
+          "pub_key": {
+            "ed25519": "L8S1/fzYyGO7EXjrBhllib39RRm9UKti9V7PpWl8qQQ="
+          },
+          "power": "14507801"
+        },
+        {
+          "pub_key": {
+            "ed25519": "u6DhjEs90wiHAFGo1bhTxI+nZHialVuA+GT3XmBPCt8="
+          },
+          "power": "2400009"
+        },
+        {
+          "pub_key": {
+            "ed25519": "je1SxFkQ7PDF2Dvm+ePsU8Hu+6eFz0CI7vUz7xEy8po="
+          },
+          "power": "2700003"
+        },
+        {
+          "pub_key": {
+            "ed25519": "t0Yoals7uv2cJJugTF8e1f/2pA/vasY37LbBG79n2xY="
+          },
+          "power": "2100003"
+        },
+        {
+          "pub_key": {
+            "ed25519": "0Riufmw0gHUn3TnmhfFMMxHelvosJi5NY4Ad06r4XiE="
+          },
+          "power": "2900001"
+        },
+        {
+          "pub_key": {
+            "ed25519": "Vgbch75TIvVMFHlvJ8zF29Sjddc6wF2I2z3hGzSX4FI="
+          },
+          "power": "10626517"
+        },
+        {
+          "pub_key": {
+            "ed25519": "VVqzrNL2fdkhnJunntTuGQ1yeS7HIdtEsO0DxENR7tg="
+          },
+          "power": "2200002"
+        },
+        {
+          "pub_key": {
+            "ed25519": "Pt/YNy1gHwu+wO3jjOd100YKcs/Cl8LPmNQ0Bs3Gezc="
+          },
+          "power": "1600001"
+        },
+        {
+          "pub_key": {
+            "ed25519": "t2AN9fSAU6d9keHZaHzTcmMkY9mLKhh5tfRPVrX+USs="
+          },
+          "power": "9"
+        },
+        {
+          "pub_key": {
+            "ed25519": "3W35vA3EajepxpKnJ0FqmSupKNoTzM/EG4lUkLAYw2Q="
+          },
+          "power": "11486757"
+        },
+        {
+          "pub_key": {
+            "ed25519": "ptPkdYI1OIxrC4wJ1Limjr68sZKDvWm66jkaEG+ZEqg="
+          },
+          "power": "12000009"
+        },
+        {
+          "pub_key": {
+            "ed25519": "DREWHgTWBZnU02c57w+IJOss2cwlcrZmchKxoSQ99Tw="
+          },
+          "power": "8"
+        },
+        {
+          "pub_key": {
+            "ed25519": "KvWAPqCwf+1/a2Lnk+F1aD0b1SpMpoZXmrf2figWNV8="
+          },
+          "power": "2800010"
+        },
+        {
+          "pub_key": {
+            "ed25519": "lBNej0NgjVoi89vMy+mFojbjgFAjVqO1Rx6wWWZ3cc0="
+          },
+          "power": "11959202"
+        },
+        {
+          "pub_key": {
+            "ed25519": "YBaukC86rQS6d5TXIanVvoOwJcmbmDI8h4j44Pd/oI0="
+          },
+          "power": "10799065"
+        },
+        {
+          "pub_key": {
+            "ed25519": "Wwg/SQY8sxYxtR7mClkjVWzND7NAcYYzMNA/EZn4wSU="
+          },
+          "power": "3000027"
+        },
+        {
+          "pub_key": {
+            "ed25519": "pQsGUgWJItgLXLy8BBvtCgGHzfl37bOran9T4q3UR80="
+          },
+          "power": "12000680"
+        },
+        {
+          "pub_key": {
+            "ed25519": "M39sW5aeRTlEpy4tXXuktCK9Ke/50KBe5eboN9IHwtY="
+          },
+          "power": "5000001"
+        },
+        {
+          "pub_key": {
+            "ed25519": "kS4CaF6ek03+VGkxmGGY/efXT3Y1L0WtKxrvHMJMk80="
+          },
+          "power": "8965261"
+        },
+        {
+          "pub_key": {
+            "ed25519": "4dtq4rZa9/wQXrdX1Qv30SkfWWkiUlam93ZYHGnveEU="
+          },
+          "power": "7"
+        },
+        {
+          "pub_key": {
+            "ed25519": "yzbnoQv2v/+lgyHFs90mvuQP58xP0lDlFbhPgcmQWds="
+          },
+          "power": "14043098"
+        },
+        {
+          "pub_key": {
+            "ed25519": "iRfZsPMxIM3votG1wKm5HhOG0lx4MSORW/2XBl8MVbc="
+          },
+          "power": "1500006"
+        },
+        {
+          "pub_key": {
+            "ed25519": "LRLvTTVNWIrjZ5xefoewMpoVnVkU8ilVi9ubhbtcUk4="
+          },
+          "power": "4849203"
+        },
+        {
+          "pub_key": {
+            "ed25519": "2C4p/SeZLhaDlW1lNwp7ZCzQ36uWdLS0VevM/K5+2H8="
+          },
+          "power": "14009017"
+        },
+        {
+          "pub_key": {
+            "ed25519": "xF4yaS3jz4Qw5g0wSci+IamKmNndAsgnJZF6yMaWRF4="
+          },
+          "power": "1900016"
+        },
+        {
+          "pub_key": {
+            "ed25519": "s2ssopV2TLMTTd0Ae4KeB1P7/jrdeYIocSmPsocXHnc="
+          },
+          "power": "13067615"
+        },
+        {
+          "pub_key": {
+            "ed25519": "5z1R82Ysnx9fVb+tnZycK6OAL5Iy45SY3Ou/ad0K5Kw="
+          },
+          "power": "2300018"
+        },
+        {
+          "pub_key": {
+            "ed25519": "zUD04Ga6ry1iOHZvMUqdXPYSnnUi+wTUv1Tw5Yfez1g="
+          },
+          "power": "2500002"
+        },
+        {
+          "pub_key": {
+            "ed25519": "komHSGMVa+Sf5VN8IH5M2HfulNVD6FeSiXp2nqTjLKc="
+          },
+          "power": "8560481"
+        },
+        {
+          "pub_key": {
+            "ed25519": "RmlVhTb6FGkbqXiDI+8oLQ/Qerwqo7CmXLFHgBwL8s0="
+          },
+          "power": "1"
+        },
+        {
+          "pub_key": {
+            "ed25519": "VQNzbt0fsqxuw4RbcGGr4poFlJL/XfON823ZomHMJVg="
+          },
+          "power": "5042545"
+        },
+        {
+          "pub_key": {
+            "ed25519": "7XAuOZNLCs8307dU4WPtyihIG9VXqyANxbebD9KGOXY="
+          },
+          "power": "1500001"
+        },
+        {
+          "pub_key": {
+            "ed25519": "2hl2MUsU1LNcIdxhWOz5mTziNja9i/tZ7aoGyCrcMMo="
+          },
+          "power": "10408810"
+        },
+        {
+          "pub_key": {
+            "ed25519": "31TXpBm8cVfCIRzhkmP6qCGEu7GXvL+KVW4KODI4PDI="
+          },
+          "power": "11405314"
+        },
+        {
+          "pub_key": {
+            "ed25519": "ncgkBctuv05zS6qU86bS4vxRPWwUJqfVw+tnBS4Hvvg="
+          },
+          "power": "4000008"
+        },
+        {
+          "pub_key": {
+            "ed25519": "uu1FpuT2YeSfPGdoRcthkech+BVnW2YwKSb2R5PpMeo="
+          },
+          "power": "9052444"
+        },
+        {
+          "pub_key": {
+            "ed25519": "tFN6v6jrFSQlTMgOnajOhC8nE4ZWyx2HfNkdIGqYhm4="
+          },
+          "power": "128307795"
+        },
+        {
+          "pub_key": {
+            "ed25519": "kS3QmKFGB7J7dXp8cvLNKoSVipncGY80/3isQlEfik8="
+          },
+          "power": "2"
+        },
+        {
+          "pub_key": {
+            "ed25519": "mlH0qZg3B2kPQHXoBjK27ZwYVgyb1/sXBMGbtdUC9rQ="
+          },
+          "power": "13320544"
+        },
+        {
+          "pub_key": {
+            "ed25519": "555Hy/aIFyZjD47NZtcE1ed4RHFu2kKmpS0/+1KDnes="
+          },
+          "power": "9079302"
+        },
+        {
+          "pub_key": {
+            "ed25519": "9OqYVsN/2KjWHMSVz5TfsKoQJxrZJGhMw5hBTuiG1gE="
+          },
+          "power": "1500006"
+        },
+        {
+          "pub_key": {
+            "ed25519": "MuRuoGtNd89j+b5OGGqPf3vXwkOqK2B6tUNWBtRPtL4="
+          },
+          "power": "7"
+        },
+        {
+          "pub_key": {
+            "ed25519": "arn47pf8JHFENdOIGHxxmB5QCWgupJyXjy3i2l2UFn8="
+          },
+          "power": "4360531"
+        },
+        {
+          "pub_key": {
+            "ed25519": "mFCmdNFDZ2e7K2823pW+ilBt+AiPJM7YxPpWGDT88nM="
+          },
+          "power": "1500001"
+        },
+        {
+          "pub_key": {
+            "ed25519": "CiMcs95f7CeGwyIn9TOm1v0fYyjyxvF5ZKT2+PdevBs="
+          },
+          "power": "129901264"
+        },
+        {
+          "pub_key": {
+            "ed25519": "4Gs5lQju58JqPSJFXkXhITD1TtK6gg2k0qfM3+Xk30g="
+          },
+          "power": "133157448"
+        },
+        {
+          "pub_key": {
+            "ed25519": "iyXbB3X6HAAHIFAtbt7EZ0clPChMWpnnlY6HT+JLhTQ="
+          },
+          "power": "2008425"
+        },
+        {
+          "pub_key": {
+            "ed25519": "NiKRUXQ5+jR16WeULbg9hvtk+sWtc1ky5ukxjvK+hm4="
+          },
+          "power": "2600028"
+        },
+        {
+          "pub_key": {
+            "ed25519": "BPf4Zs0o5A89tI/2y9CM/ocUS5Gek0uiRi2hV22ecXU="
+          },
+          "power": "1500008"
+        },
+        {
+          "pub_key": {
+            "ed25519": "SYLCSKj+sF4pmq+4q7My1LgQQPXUkPFhT2sKOc2WvJ0="
+          },
+          "power": "1700004"
+        }
+      ],
+      "height_to_valset_update_id": [],
+      "outstanding_downtime_slashing": [],
+      "pending_consumer_packets": {
+        "list": []
+      },
+      "last_transmission_block_height": {
+        "height": "0"
+      },
+      "preCCV": false
+    },
+    "claim": {
+      "module_account_balance": {
+        "denom": "ataeth",
+        "amount": "0"
+      },
+      "params": {
+        "airdrop_enabled": false,
+        "airdrop_start_time": "2024-01-08T22:00:25.091707842Z",
+        "airdrop_duration": "7776000s",
+        "claim_denom": "ataeth",
+        "escrow_address": ""
+      },
+      "claim_records": [],
+      "total_claimed": "0"
+    },
+    "consensus": null,
+    "crisis": {
+      "constant_fee": {
+        "denom": "ataeth",
+        "amount": "1000"
+      }
+    },
+    "distribution": {
+      "params": {
+        "community_tax": "0.000000000000000000",
+        "base_proposer_reward": "0.000000000000000000",
+        "bonus_proposer_reward": "0.000000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": []
+      },
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "epochs": {
+      "epochs": [
+        {
+          "identifier": "week",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "604800s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "day",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "86400s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        }
+      ]
+    },
+    "erc20": {
+      "params": {
+        "enable_erc20": true,
+        "enable_evm_hook": true
+      },
+      "token_pairs": [],
+      "mintable_erc20": []
+    },
+    "evidence": {
+      "evidence": []
+    },
+    "evm": {
+      "accounts": [],
+      "params": {
+        "evm_denom": "ataeth",
+        "enable_create": true,
+        "enable_call": true,
+        "extra_eips": [],
+        "chain_config": {
+          "homestead_block": "0",
+          "dao_fork_block": "0",
+          "dao_fork_support": true,
+          "eip150_block": "0",
+          "eip150_hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "eip155_block": "0",
+          "eip158_block": "0",
+          "byzantium_block": "0",
+          "constantinople_block": "0",
+          "petersburg_block": "0",
+          "istanbul_block": "0",
+          "muir_glacier_block": "0",
+          "berlin_block": "0",
+          "london_block": "0",
+          "arrow_glacier_block": "0",
+          "gray_glacier_block": "0",
+          "merge_netsplit_block": "0",
+          "shanghai_block": "0",
+          "cancun_block": "0"
+        },
+        "allow_unprotected_txs": false,
+        "enable_gas_refunds": false
+      }
+    },
+    "feegrant": {
+      "allowances": []
+    },
+    "feemarket": {
+      "params": {
+        "no_base_fee": false,
+        "base_fee_change_denominator": 8,
+        "elasticity_multiplier": 2,
+        "enable_height": "0",
+        "base_fee": "20000000000",
+        "min_gas_price": "20000000000",
+        "min_gas_multiplier": "0.500000000000000000",
+        "non_native_min_gas_prices": []
+      },
+      "block_gas": "0"
+    },
+    "genutil": {
+      "gen_txs": []
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": [],
+      "votes": [],
+      "proposals": [],
+      "deposit_params": null,
+      "voting_params": null,
+      "tally_params": null,
+      "params": {
+        "min_deposit": [
+          {
+            "denom": "ataeth",
+            "amount": "3500000000000000000000"
+          }
+        ],
+        "max_deposit_period": "86400s",
+        "voting_period": "86400s",
+        "quorum": "0.100000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000",
+        "min_initial_deposit_ratio": "0.000000000000000000",
+        "burn_vote_quorum": false,
+        "burn_proposal_deposit_prevote": false,
+        "burn_vote_veto": true
+      }
+    },
+    "ibc": {
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "clients_metadata": [],
+        "params": {
+          "allowed_clients": [
+            "06-solomachine",
+            "07-tendermint",
+            "09-localhost"
+          ]
+        },
+        "create_localhost": false,
+        "next_client_sequence": "0"
+      },
+      "connection_genesis": {
+        "connections": [],
+        "client_connection_paths": [],
+        "next_connection_sequence": "0",
+        "params": {
+          "max_expected_time_per_block": "30000000000"
+        }
+      },
+      "channel_genesis": {
+        "channels": [],
+        "acknowledgements": [],
+        "commitments": [],
+        "receipts": [],
+        "send_sequences": [],
+        "recv_sequences": [],
+        "ack_sequences": [],
+        "next_channel_sequence": "0"
+      }
+    },
+    "inflation": {
+      "params": {
+        "mint_denom": "ataeth",
+        "exponential_calculation": {
+          "a": "300000000.000000000000000000",
+          "r": "0.500000000000000000",
+          "c": "9375000.000000000000000000",
+          "bonding_target": "0.660000000000000000",
+          "max_variance": "0.000000000000000000"
+        },
+        "inflation_distribution": {
+          "staking_rewards": "0.830000000000000000",
+          "provider_rewards": "0.100000000000000000",
+          "community_pool": "0.070000000000000000"
+        },
+        "enable_inflation": true
+      },
+      "period": "0",
+      "epoch_identifier": "day",
+      "epochs_per_period": "365",
+      "skipped_epochs": "0"
+    },
+    "interchainaccounts": {
+      "controller_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "ports": [],
+        "params": {
+          "controller_enabled": true
+        }
+      },
+      "host_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "port": "icahost",
+        "params": {
+          "host_enabled": true,
+          "allow_messages": [
+            "*"
+          ]
+        }
+      }
+    },
+    "locking": {
+      "params": {
+        "max_entries": 100,
+        "rates": [
+          {
+            "duration": "691200s",
+            "rate": "2.200000000000000000"
+          },
+          {
+            "duration": "1382400s",
+            "rate": "3.300000000000000000"
+          },
+          {
+            "duration": "2073600s",
+            "rate": "4.400000000000000000"
+          },
+          {
+            "duration": "2764800s",
+            "rate": "5.500000000000000000"
+          }
+        ]
+      },
+      "locked_delegations": []
+    },
+    "params": null,
+    "recovery": {
+      "params": {
+        "enable_recovery": true,
+        "packet_timeout_duration": "14400s",
+        "authorized_channels": [],
+        "evm_channels": []
+      }
+    },
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "10000",
+        "min_signed_per_window": "0.050000000000000000",
+        "downtime_jail_duration": "600s",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": [],
+      "missed_blocks": []
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400s",
+        "max_validators": 100,
+        "max_entries": 7,
+        "historical_entries": 10000,
+        "bond_denom": "ataeth",
+        "min_commission_rate": "0.010000000000000000"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": [],
+      "validators": [],
+      "delegations": [],
+      "unbonding_delegations": [],
+      "redelegations": [],
+      "exported": false
+    },
+    "stakinghelper": {
+      "params": {
+        "next_validator_seat_period": "2592000s",
+        "next_validator_seat_on": "2024-07-06T22:00:25.092407312Z",
+        "validators_limit": 100,
+        "validators_max_creation_delegation": "0",
+        "enabled": false
+      },
+      "global_commission": {
+        "rate": "0.020000000000000000",
+        "max_rate": "0.200000000000000000",
+        "max_change_rate": "0.010000000000000000"
+      }
+    },
+    "transfer": {
+      "port_id": "transfer",
+      "denom_traces": [],
+      "params": {
+        "send_enabled": true,
+        "receive_enabled": true
+      },
+      "total_escrowed": []
+    },
+    "upgrade": {}
+  }
+}
