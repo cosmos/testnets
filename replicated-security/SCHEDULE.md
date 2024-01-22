@@ -2,7 +2,7 @@
 
 | Date              | Testnet Incentives Program Period | Type              | Description                                                                                                                                              |
 | ----------------- | --------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| January 22 2024   | -                                 | Consumer addition | ✅ Temporary Aether testnet offboarded                                                                                                                      |
+| January 22 2024   | -                                 | Consumer removal  | ✅ Temporary Aether testnet is removed via governance proposal                                                                                            |
 | January 17 2024   | 2                                 | Consumer upgrade  | ✅ Consumer chain pion-1 to be upgraded to Neutron v2.0.2                                                                                                 |
 | January 17 2024   | 2                                 | Consumer addition | ✅ Temporary Aether testnet to be launched                                                                                                                |
 | January 10 2023   | 2                                 | Consumer upgrade  | ✅ Consumer chain pion-1 to be upgraded: vote YES on signaling proposal [93](https://explorer.rs-testnet.polypore.xyz/provider/gov/93) to confirm upgrade |
