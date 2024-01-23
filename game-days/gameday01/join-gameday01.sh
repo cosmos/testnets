@@ -1,5 +1,5 @@
 #!/bin/bash
-# Set up a Gaia service to join the Cosmos Hub public testnet.
+# Set up a Gaia service to join the gameday01 testnet.
 
 # Configuration
 # You should only have to modify the values in this block
@@ -11,11 +11,15 @@ GAIA_VERSION=v13.0.2
 CHAIN_BINARY_URL=https://github.com/cosmos/gaia/releases/download/$GAIA_VERSION/gaiad-$GAIA_VERSION-linux-amd64
 GENESIS_URL=https://github.com/cosmos/testnets/raw/master/game-days/gameday01/genesis.json
 GAS_PRICE=0.005uatom
+STATE_SYNC=true
 # ***
 
 CHAIN_BINARY='gaiad'
 CHAIN_ID=gameday01
 SEEDS="1518a1e5168b2fd73926c83d092b945d13ddcc98@gameday01.rs-testnet.polypore.xyz:26656"
+SYNC_RPC_1=http://gameday01-sync.rs-testnet.polypore.xyz:26657
+SYNC_RPC_2=http://gameday01-sync.rs-testnet.polypore.xyz:26657
+SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_2"
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
@@ -54,6 +58,21 @@ $CHAIN_BINARY config chain-id $CHAIN_ID --home $NODE_HOME
 $CHAIN_BINARY config keyring-backend test --home $NODE_HOME
 $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
 sed -i -e "/minimum-gas-prices =/ s^= .*^= \"$GAS_PRICE\"^" $NODE_HOME/config/app.toml
+
+if $STATE_SYNC ; then
+    echo "Configuring state sync..."
+    CURRENT_BLOCK=$(curl -s $SYNC_RPC_1/block | jq -r '.result.block.header.height')
+    TRUST_HEIGHT=$[$CURRENT_BLOCK-1000]
+    TRUST_BLOCK=$(curl -s $SYNC_RPC_1/block\?height\=$TRUST_HEIGHT)
+    TRUST_HASH=$(echo $TRUST_BLOCK | jq -r '.result.block_id.hash')
+    sed -i -e '/enable =/ s/= .*/= true/' $NODE_HOME/config/config.toml
+    sed -i -e '/trust_period =/ s/= .*/= "8h0m0s"/' $NODE_HOME/config/config.toml
+    sed -i -e "/trust_height =/ s/= .*/= $TRUST_HEIGHT/" $NODE_HOME/config/config.toml
+    sed -i -e "/trust_hash =/ s/= .*/= \"$TRUST_HASH\"/" $NODE_HOME/config/config.toml
+    sed -i -e "/rpc_servers =/ s^= .*^= \"$SYNC_RPC_SERVERS\"^" $NODE_HOME/config/config.toml
+else
+    echo "Skipping state sync..."
+fi
 
 # Replace genesis file
 echo "Downloading genesis file..."

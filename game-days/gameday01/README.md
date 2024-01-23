@@ -30,6 +30,10 @@ Seeds
 
 - 1518a1e5168b2fd73926c83d092b945d13ddcc98@gameday01.rs-testnet.polypore.xyz:26656
 
+State sync servers
+
+- http://gameday01-sync.rs-testnet.polypore.xyz:26657
+
 ### Block Explorers
 
 - https://explorer.rs-testnet.polypore.xyz/gameday01
