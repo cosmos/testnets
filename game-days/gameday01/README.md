@@ -6,6 +6,10 @@ We will post announcements in the `testnet-announcements` channel in Discord to 
 * Start time: `2023-01-24 14:30 UTC`
 * Estimated end time: `2023-01-24 15:30 UTC`
 
+## Tasks
+
+* [Task 1](/game-days/gameday01/tasks/1-vote-yes.md): Vote YES on upgrade
+
 ## Testnet Incentives Program (TIP) Eligibility
 
 * Once your `gameday01` validator is running, send a tx from your provider wallet to `cosmos15vnglkkrgwp454rsjka6gtlnh9kp50dxgmdw34` in the `provider` chain with the `gameday01` cosmovaloper address in the memo. This is **required** for tracking TIP eligibility.
