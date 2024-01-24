@@ -8,7 +8,10 @@ We will post announcements in the `testnet-announcements` channel in Discord to 
 
 ## Tasks
 
-* [Task 1](/game-days/gameday01/tasks/1-vote-yes.md): Vote YES on upgrade
+* [Task 1](/game-days/gameday01/tasks/1-vote-yes.md): Vote YES on software upgrade proposal
+* [Task 2](/game-days/gameday01/tasks/2-vote-yes.md): Vote YES on cancel upgrade proposal
+* [Task 3](/game-days/gameday01/tasks/3-vote-yes.md): Vote YES on software upgrade proposal
+* [Task 4](/game-days/gameday01/tasks/4-skip-upgrade.md): Skip upgrade
 
 ## Testnet Incentives Program (TIP) Eligibility
 
