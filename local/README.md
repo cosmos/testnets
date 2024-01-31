@@ -8,7 +8,7 @@ These instructions will help you simulate the `v14` upgrade on a single validato
 We will use a modified genesis file during this upgrade. This modified genesis file is similar to the one we are running on the public testnet, and has been modified in part to replace an existing validator (Coinbase Custody) with a new validator account that we control. The account's mnemonic, validator key, and node key are provided in this repo.  
 For a full list of modifications to the genesis file, please [see below](#genesis-modifications).
 
-If you are interested in running v10 without going through the upgrade, you can download one of the binaries in the Gaia [releases](https://github.com/cosmos/gaia/releases) page follow the rest of the instructions up until the node is running and producing blocks.
+If you are interested in running v10 without going through the upgrade, you can download one of the binaries in the Gaia [releases](https://github.com/cosmos/gaia/releases) page and follow the rest of the instructions up until the node is running and producing blocks.
 
 * **Chain ID**: `local-testnet`
 * **Gaia version:** `v13.0.1`
@@ -122,7 +122,7 @@ Set minimum gas prices.
 sed -i -e 's/minimum-gas-prices = ""/minimum-gas-prices = "0.0025uatom"/g' $NODE_HOME/config/app.toml
 ```
 
-Set block sync to be false. This allow us to achieve liveness without additional peers. See this [issue](https://github.com/osmosis-labs/osmosis/issues/735) for details.
+Set block sync to be false. This allows us to achieve liveness without additional peers. See this [issue](https://github.com/osmosis-labs/osmosis/issues/735) for details.
 
 ```
 sed -i -e '/fast_sync =/ s/= .*/= false/' $NODE_HOME/config/config.toml
@@ -250,7 +250,7 @@ export BINARY=$NODE_HOME/cosmovisor/upgrades/v14/bin/gaiad
 
 ## Submit and vote on a software upgrade proposal
 
-You can submit a software upgrade proposal without specifiying a binary, but this only works for those nodes who are manually preparing the upgrade binary.
+You can submit a software upgrade proposal without specifying a binary, but this only works for those nodes who are manually preparing the upgrade binary.
 
 ```
 gaiad tx gov submit-proposal software-upgrade v14 \
