@@ -19,6 +19,7 @@ SERVICE_NAME=provider
 GAIA_VERSION=v14.1.0
 CHAIN_BINARY_URL=https://github.com/cosmos/gaia/releases/download/$GAIA_VERSION/gaiad-$GAIA_VERSION-linux-amd64
 STATE_SYNC=true
+GAS_PRICE=0.005uatom
 # ***
 
 CHAIN_BINARY='gaiad'
@@ -31,6 +32,8 @@ SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_2"
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
+mkdir -p $HOME/go/bin
+export PATH=$PATH:$HOME/go/bin
 
 # Install go 1.20
 echo "Installing go..."
@@ -41,7 +44,6 @@ export PATH=$PATH:/usr/local/go/bin
 
 # Install Gaia binary
 echo "Installing Gaia..."
-mkdir -p $HOME/go/bin
 
 # Download Linux amd64,
 wget $CHAIN_BINARY_URL -O $HOME/go/bin/$CHAIN_BINARY
@@ -58,15 +60,13 @@ chmod +x $HOME/go/bin/$CHAIN_BINARY
 # git checkout $GAIA_VERSION
 # make install
 
-export PATH=$PATH:$HOME/go/bin
-
 # Initialize home directory
 echo "Initializing $NODE_HOME..."
 rm -rf $NODE_HOME
 $CHAIN_BINARY config chain-id $CHAIN_ID --home $NODE_HOME
 $CHAIN_BINARY config keyring-backend test --home $NODE_HOME
-$CHAIN_BINARY config broadcast-mode block --home $NODE_HOME
 $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
+sed -i -e "/minimum-gas-prices =/ s^= .*^= \"$GAS_PRICE\"^" $NODE_HOME/config/app.toml
 sed -i -e "/seeds =/ s^= .*^= \"$SEEDS\"^" $NODE_HOME/config/config.toml
 
 # Replace keys
