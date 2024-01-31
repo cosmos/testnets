@@ -32,6 +32,8 @@ SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_2"
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
+mkdir -p $HOME/go/bin
+export PATH=$PATH:$HOME/go/bin
 
 # Install go 1.20
 echo "Installing go..."
@@ -42,8 +44,6 @@ export PATH=$PATH:/usr/local/go/bin
 
 # Install Gaia binary
 echo "Installing Gaia..."
-mkdir -p $HOME/go/bin
-export PATH=$PATH:$HOME/go/bin
 
 # Download Linux amd64,
 wget $CHAIN_BINARY_URL -O $HOME/go/bin/$CHAIN_BINARY
