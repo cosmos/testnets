@@ -35,13 +35,6 @@ sudo apt-get install curl jq wget -y
 mkdir -p $HOME/go/bin
 export PATH=$PATH:$HOME/go/bin
 
-# Install go 1.20
-echo "Installing go..."
-rm go*linux-amd64.tar.gz
-wget https://go.dev/dl/go1.20.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.linux-amd64.tar.gz
-export PATH=$PATH:/usr/local/go/bin
-
 # Install Gaia binary
 echo "Installing Gaia..."
 
@@ -50,6 +43,12 @@ wget $CHAIN_BINARY_URL -O $HOME/go/bin/$CHAIN_BINARY
 chmod +x $HOME/go/bin/$CHAIN_BINARY
 
 # or install from source
+## Install go 1.20
+# echo "Installing go..."
+# rm go*linux-amd64.tar.gz
+# wget https://go.dev/dl/go1.20.linux-amd64.tar.gz
+# sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.linux-amd64.tar.gz
+# export PATH=$PATH:/usr/local/go/bin
 # echo "Installing build-essential..."
 # sudo apt install build-essential -y
 # echo "Installing Gaia..."
