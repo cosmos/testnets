@@ -6,6 +6,22 @@ We will post announcements in the `testnet-announcements` channel in Discord to 
 * Start time: `2023-01-24 14:30 UTC`
 * Estimated end time: `2023-01-24 15:30 UTC`
 
+## Recap
+
+* 39 validators participated
+* The event runtime was exactly 1 hour
+* Two software upgrades were scheduled
+  * One upgrade was canceled via governance with a `cancel-software-upgrade` proposal
+  * One upgrade was skipped via the `unsafe-skip-upgrades` flag
+
+### Lessons learned & findings
+
+* Votes for past proposals can be obtained by querying a block height when the proposal was still active.
+  * REST API: `curl “<API URL>/cosmos/gov/v1beta1/proposals/<proposal id>/votes?pagination.limit=1000” -H “x-cosmos-block-height:<height>”`
+  * Gaia CLI: `gaiad q gov votes <proposal id> --height <height>`
+* The `--unsafe-skip-upgrades <block height>` flag can be seen as a last-resort mechanism for skipping an upgrade that is deemed unacceptable, but coordination is critical to make sure the chain does not halt when the upgrade height is reached.
+* A [Cosmovisor bug](https://github.com/cosmos/cosmos-sdk/issues/19227) was found and reported by a validator when attempting to use the `add-upgrade` command.
+
 ## Tasks
 
 * [Task 1](/game-days/gameday01/tasks/1-vote-yes.md): Vote YES on software upgrade proposal
