@@ -114,7 +114,7 @@ Run either one of the scripts provided in this repo to join the provider chain:
 
 ### Cosmovisor
 
-#### Ugrading with auto-download vs. manually preparing your binary
+#### Upgrading with auto-download vs. manually preparing your binary
 
 If you want to use Cosmovisor's **auto-download** feature, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=true`
 
