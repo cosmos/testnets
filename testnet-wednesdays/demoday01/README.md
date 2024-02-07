@@ -8,7 +8,7 @@ We will post announcements in the `testnet-announcements` channel in Discord to 
 
 ## Recap
 
-* 39 validators participated
+* 37 validators participated
 * The event runtime was exactly 2 hours
 * Five proposals were submitted and voted on to reach a specific outcome:
   * Prop 101: Pass by voting YES
