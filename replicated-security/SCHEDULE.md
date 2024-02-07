@@ -2,7 +2,7 @@
 
 | Date              | Testnet Incentives Program Period | Type              | Description                                                                                                                                              |
 | ----------------- | --------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| February 7 2024   | 3                                 | Demo Day          | Demo day # 1: Proposal outcomes                                                                                                                          |
+| February 7 2024   | 3                                 | Demo Day          | ✅ Demo day # 1: Proposal outcomes                                                                                                                          |
 | January 24 2024   | 2                                 | Game Day          | ✅ Game day # 1: Software Upgrades                                                                                                                        |
 | January 22 2024   | -                                 | Consumer removal  | ✅ Temporary Aether testnet is removed via governance proposal                                                                                            |
 | January 17 2024   | 2                                 | Consumer upgrade  | ✅ Consumer chain pion-1 to be upgraded to Neutron v2.0.2                                                                                                 |
