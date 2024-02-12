@@ -1,5 +1,22 @@
 # Scheduled Upgrades 🗓️ 
 
+## v15.0.0-rc0
+
+### Schedule
+
+| Date                 | Testnet plan                                  |
+| -------------------  | --------------------------------------------- |
+| February 13 2024 |  Gaia v15.0.0-rc0 is live on the testnet       |
+| February 12 2024 | ✅ Submit and pass v15 software upgrade [proposal](https://explorer.theta-testnet.polypore.xyz/proposals/216) |
+
+* **Version before upgrade**: `v14.1.0`
+* **Version after upgrade**: `v15.0.0-rc0`
+
+### Upgrade details
+
+* **Upgrade height: `20269900`**
+* Estimated upgrade time: `2024-02-13 ~15:00 UTC`
+
 ## v14.1.0-rc0
 
 ### Schedule
