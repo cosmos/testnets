@@ -1,19 +1,19 @@
-# v15 Local Testnet Upgrade
+# v14 Local Testnet Upgrade
 
-These instructions will help you simulate the `v15` upgrade on a single validator node testnet as follows:
+These instructions will help you simulate the `v14` upgrade on a single validator node testnet as follows:
 
-- Start with gaia version: `v14.1.0`
-- After the upgrade: Gaia release `v15.0.0-rc0`
+- Start with gaia version: `v13.0.1`
+- After the upgrade: Gaia release `v14.1.0-rc0`
 
 We will use a modified genesis file during this upgrade. This modified genesis file is similar to the one we are running on the public testnet, and has been modified in part to replace an existing validator (Coinbase Custody) with a new validator account that we control. The account's mnemonic, validator key, and node key are provided in this repo.  
 For a full list of modifications to the genesis file, please [see below](#genesis-modifications).
 
-If you are interested in running v15 without going through the upgrade, you can download one of the binaries in the Gaia [releases](https://github.com/cosmos/gaia/releases) page and follow the rest of the instructions up until the node is running and producing blocks.
+If you are interested in running v10 without going through the upgrade, you can download one of the binaries in the Gaia [releases](https://github.com/cosmos/gaia/releases) page and follow the rest of the instructions up until the node is running and producing blocks.
 
 * **Chain ID**: `local-testnet`
-* **Gaia version:** `v14.1.0`
-* **Modified genesis file:** [here](https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/latest_v14.json.gz)
-* **Original genesis file:** [here](https://files.polypore.xyz/genesis/mainnet-genesis-export/latest_v14.json.gz)
+* **Gaia version:** `v13.0.1`
+* **Modified genesis file:** [here](https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/latest_v13.json.gz)
+* **Original genesis file:** [here](https://files.polypore.xyz/genesis/mainnet-genesis-export/latest_v13.json.gz)
 * **Validator key:** [priv_validator_key](priv_validator_key.json)
 * **Node key:** [node_key](node_key.json)
 * **Validator mnemonic:** [mnemonic.txt](mnemonic.txt)
@@ -71,7 +71,7 @@ source ~/.profile
 cd $HOME
 git clone https://github.com/cosmos/gaia.git
 cd gaia
-git checkout v14.1.0
+git checkout v13.0.1
 make install
 ```
 
@@ -94,9 +94,9 @@ $BINARY init $NODE_MONIKER --home $NODE_HOME --chain-id=$CHAIN_ID
 Then replace the genesis file with our modified genesis file.
 
 ```
-wget https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/latest_v14.json.gz
-gunzip latest_v14.json.gz
-mv latest_v14.json $NODE_HOME/config/genesis.json
+wget https://files.polypore.xyz/genesis/mainnet-genesis-tinkered/latest_v13.json.gz
+gunzip latest_v13.json.gz
+mv latest_v13.json $NODE_HOME/config/genesis.json
 ```
 
 Replace the validator and node keys.
@@ -128,11 +128,6 @@ Set block sync to be false. This allows us to achieve liveness without additiona
 sed -i -e '/fast_sync =/ s/= .*/= false/' $NODE_HOME/config/config.toml
 ```
 
-Add the following line under the `fast_sync` one in config.toml:
-```
-block_sync = false
-```
-
 ### Cosmovisor
 
 First download Cosmovisor.
@@ -147,7 +142,7 @@ Setup the Cosmovisor directory structure. There are two methods to use Cosmoviso
 1. **Manual:** Node runners can manually build the old and new binary and put them into the `cosmovisor` folder (as shown below). Cosmovisor will then switch to the new binary upon upgrade height.
 
 ```
-cosmovisor/upgrades/v15/bin/gaiad
+cosmovisor/upgrades/v14/bin/gaiad
 ```
 
 1. **Auto-download:** Allowing Cosmovisor to [auto-download](https://github.com/cosmos/cosmos-sdk/tree/main/tools/cosmovisor#auto-download) the new binary at the upgrade height automatically.
@@ -161,7 +156,7 @@ cosmovisor/upgrades/v15/bin/gaiad
 │   └── bin
 │       └── gaiad
 └── upgrades
-    └── v15
+    └── v14
         ├── bin
         │   └── gaiad
         └── upgrade-info.json
@@ -235,22 +230,22 @@ INF committed state app_hash=99D509C03FDDFEACAD90608008942C0B4C801151BDC1B8998EE
 
 ## Manually prepare the upgrade binary (if you do not have auto-download enabled on Cosmovisor)
 
-Build the upgrade binary: v15 requires GO v1.20.
+Build the upgrade binary: v14 requires GO v1.20.
 ```
 wget -q https://go.dev/dl/go1.20.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.20.linux-amd64.tar.gz
 
 cd $HOME/gaia
-git checkout v15.0.0-rc0
+git checkout v14.1.0-rc0
 git pull
 make install
 ```
 
-Copy over the v15 binary into the correct directory.
+Copy over the v14 binary into the correct directory.
 ```
-mkdir -p $NODE_HOME/cosmovisor/upgrades/v15/bin
-cp $(which gaiad) $NODE_HOME/cosmovisor/upgrades/v15/bin
-export BINARY=$NODE_HOME/cosmovisor/upgrades/v15/bin/gaiad
+mkdir -p $NODE_HOME/cosmovisor/upgrades/v14/bin
+cp $(which gaiad) $NODE_HOME/cosmovisor/upgrades/v14/bin
+export BINARY=$NODE_HOME/cosmovisor/upgrades/v14/bin/gaiad
 ```
 
 ## Submit and vote on a software upgrade proposal
@@ -258,12 +253,12 @@ export BINARY=$NODE_HOME/cosmovisor/upgrades/v15/bin/gaiad
 You can submit a software upgrade proposal without specifying a binary, but this only works for those nodes who are manually preparing the upgrade binary.
 
 ```
-gaiad tx gov submit-proposal software-upgrade v15 \
---title "v15 Upgrade" \
+gaiad tx gov submit-proposal software-upgrade v14 \
+--title "v14 Upgrade" \
 --deposit 100uatom \
 --upgrade-height TBD \
---upgrade-info '{"binaries": {"darwin/amd64": "https://github.com/cosmos/gaia/releases/download/v15.0.0-rc0/gaiad-v15.0.0-rc0-darwin-amd64?checksum=sha256:22e704a35300eb1aa70d437414d54e2ff303afa7d4ce09ef620b7e60d15cff99", "darwin/arm64": "https://github.com/cosmos/gaia/releases/download/v15.0.0-rc0/gaiad-v15.0.0-rc0-darwin-arm64?checksum=sha256:ca58d7d0f5081ce8b1fbfb59275d8eb274620aab67b59cd97cdb2d33ab93c44c", "linux/amd64": "https://github.com/cosmos/gaia/releases/download/v15.0.0-rc0/gaiad-v15.0.0-rc0-linux-amd64?checksum=sha256:30e9f0042196126e199ca97c1f03ff5a733e4528b226f820777cf43dfbe143e7", "linux/arm64": "https://github.com/cosmos/gaia/releases/download/v15.0.0-rc0/gaiad-v15.0.0-rc0-linux-arm64?checksum=sha256:4f3101d842f41dfb5055314eeb8f3d6900e310a0c7ff947f7621430a028ef677", "windows/amd64": "https://github.com/cosmos/gaia/releases/download/v15.0.0-rc0/gaiad-v15.0.0-rc0-windows-amd64.exe?checksum=sha256:45a1d76de1c57f889a29bae9f0d65eb7baad65de83dee87d4f87455b25a32980", "windows/arm64": "https://github.com/cosmos/gaia/releases/download/v15.0.0-rc0/gaiad-v15.0.0-rc0-windows-arm64.exe?checksum=sha256:820f6a5b414595964ea855364e09ba07aab4fb4ec84173ea543000c013d2a8c9"}}' \
---description "Upgrade Gaia to v15" \
+--upgrade-info '{"binaries": {"darwin/amd64": "https://github.com/cosmos/gaia/releases/download/v14.1.0-rc0/gaiad-v14.1.0-rc0-darwin-amd64?checksum=sha256:327734cc8a1fb24cce6d66358c139b959d9826ccacd61d0d0c7ba79a6149883d", "darwin/arm64": "https://github.com/cosmos/gaia/releases/download/v14.1.0-rc0/gaiad-v14.1.0-rc0-darwin-arm64?checksum=sha256:6a9f355010699fff872a5e0f4c026eb618a46f9906c3ba583200ac8bd4df5779", "linux/amd64": "https://github.com/cosmos/gaia/releases/download/v14.1.0-rc0/gaiad-v14.1.0-rc0-linux-amd64?checksum=sha256:f95f7c9d46e4d83cd34e0ab551912582db1d3d98749bb20e01830586d54f4f3a", "linux/arm64": "https://github.com/cosmos/gaia/releases/download/v14.1.0-rc0/gaiad-v14.1.0-rc0-linux-arm64?checksum=sha256:eca9fe8696980fa411793e3900ebc2fe51c8d449970f240c44192271513c03d8", "windows/amd64": "https://github.com/cosmos/gaia/releases/download/v14.1.0-rc0/gaiad-v14.1.0-rc0-windows-amd64.exe?checksum=sha256:76af690ed4bf87be737374c9153918dc64101a60d8f6365367ac63f6ace95487", "windows/arm64": "https://github.com/cosmos/gaia/releases/download/v14.1.0-rc0/gaiad-v14.1.0-rc0-windows-arm64.exe?checksum=sha256:9d5f904dc68f752382007023ec84c0a2930ed2932f4d152b26ac3d2ee7593274"}}' \
+--description "Upgrade Gaia to v14" \
 --gas auto \
 --fees 1000uatom \
 --from $USER_KEY_NAME \
@@ -271,10 +266,11 @@ gaiad tx gov submit-proposal software-upgrade v15 \
 --chain-id $CHAIN_ID \
 --home $NODE_HOME \
 --node tcp://localhost:26657 \
---yes
+--yes \
+-b block
 ```
 
-Get the proposal ID from the TX hash (you will get a different hash):
+Get the proposal ID from the TX hash
 `$NODE_HOME/cosmovisor/current/bin/gaiad q tx DB297FDA1DAE700B0155388220703A4074E0C48595635C6A91BBEAF2FF266412`
 
 Vote on it.
@@ -288,7 +284,7 @@ gaiad tx gov vote <proposal ID> yes \
 --gas auto \
 --fees 500uatom \
 --node tcp://localhost:26657 \
---yes
+--yes -b block
 ```
 
 After the voting period ends, you should be able to query the proposal to see if it has passed. Like this:
