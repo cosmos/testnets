@@ -8,7 +8,7 @@ Visit the [Scheduled Upgrades](UPGRADES.md) page for details on current and upco
 
 - **Chain-ID**: `theta-testnet-001`
 - **Launch date**: 2022-03-10
-- **Current Gaia Version:** `v14.1.0` (upgraded from v13 at height `18766800`)
+- **Current Gaia Version:** `v15.0.0-rc0` (upgraded from v13 at height `20269900`)
 - **Launch Gaia Version:** `release/v6.0.0`
 - **Genesis File:**  Zipped and included [in this repository](genesis.json.gz), unzip and verify with `shasum -a 256 genesis.json`
 - **Genesis sha256sum**: `522d7e5227ca35ec9bbee5ab3fe9d43b61752c6bdbb9e7996b38307d7362bb7e`
@@ -118,7 +118,7 @@ Run either one of the scripts provided in this repo to join the provider chain:
 
 If you want to use Cosmovisor's **auto-download** feature, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=true`
 
-If you are **manually preparing your binary**, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` and download a copy of the v15.0.0 binary to the v15 upgrade directory in your cosmovisor directory (`upgrades/v14/bin/gaiad`). 
+If you are **manually preparing your binary**, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` and download a copy of the v16.0.0 binary to the v16 upgrade directory in your cosmovisor directory (`upgrades/v16/bin/gaiad`). 
 
 ```
 .
@@ -127,7 +127,7 @@ If you are **manually preparing your binary**, please set the environment variab
 │   └── bin
 │       └── gaiad
 └── upgrades
-    └── v15
+    └── v16
         ├── bin
         │   └── gaiad
         └── upgrade-info.json
