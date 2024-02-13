@@ -11,6 +11,15 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
+## v15 Upgrade
+
+The provider chain will upgrade to Gaia [v15.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v15.0.0-rc0) on **Wednesday, February 14 2024**.
+
+* **Block height: `5208900`**
+  * Target upgrade time: `2024-02-14 15:00:00 UTC`
+* [Proposal #107](https://explorer.rs-testnet.polypore.xyz/provider/gov/107)
+* Golang version: 1.20
+
 ## Endpoints
 
 Endpoints are exposed as subdomains for the sentry and snapshot nodes (described below) as follows:
@@ -129,3 +138,4 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Replace the `v14.0.0-rc0` binary with the `v14.1.0-rc0` one.
 * Set `halt-height = 0` in `~/.gaia/config/app.toml`.
 * Start the service.
+* When the node reaches height `5208900`, it will attempt to upgrade to Gaia `v15`. You can use Cosmovisor's auto-download feature or install the `v15.0.0-rc0` release binary.
