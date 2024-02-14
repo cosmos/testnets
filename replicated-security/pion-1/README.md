@@ -60,6 +60,11 @@ Persistent nodes:
 1. `5f0604c2b8161004866c954c1d877f565b2fc69c@pion-banana.rs-testnet.polypore.xyz:26656`
 2. `6e7c0583e6e18fccedcceaffc1ac5a33ab898fa8@pion-cherry.rs-testnet.polypore.xyz:26656`
 
+## Block Explorers
+
+* https://explorer.polypore.xyz/pion-1/
+* https://testnet.mintscan.io/neutron-testnet
+
 ## IBC Data
 
 ### Clients

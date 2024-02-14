@@ -51,10 +51,10 @@ You can add these in your seeds list.
 
 ### Block Explorers
 
-  - https://explorer.theta-testnet.polypore.xyz
+  - https://explorer.polypore.xyz/theta-testnet-001/
   - https://cosmoshub-testnet.mintscan.io/cosmoshub-testnet
-  - https://testnet.cosmos.bigdipper.live/
   - https://explorer.nodestake.top/cosmos-testnet/
+  - https://testnet.cosmos.bigdipper.live/
 
 ### Snapshot
 
