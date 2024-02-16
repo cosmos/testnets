@@ -11,14 +11,14 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v16 Upgrade
+## v15.0.0-rc1 Upgrade
 
-The provider chain will upgrade to Gaia [v16.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v16.0.0-rc0) on **TBD**.
+The provider chain will upgrade to Gaia [v15.0.0-rc1](https://github.com/cosmos/gaia/releases/tag/v15.0.0-rc1) on **Wednesday, February 21**.
 
 * **Block height: `TBD`**
-  * Target upgrade time: `TBD`
-* Proposal #TBD
-* Golang version: 1.20
+  * Target upgrade time: `2024-02-21 15:00 UTC`
+* No proposal
+* Golang version: 1.21
 
 ## Endpoints
 
