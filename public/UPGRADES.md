@@ -7,18 +7,18 @@
 | Date             | Testnet plan                            |
 | ---------------- | --------------------------------------- |
 | February 20 2024 | Gaia v15.0.0-rc1 is live on the testnet |
-| February 19 2024 | Set upgrade halt height: `TBD`          |
+| February 19 2024 | ✅ Set upgrade halt height: `20378500`   |
 
 * **Version before upgrade**: `v15.0.0-rc0`
 * **Version after upgrade**: `v15.0.0-rc1`
 
 ### Upgrade details
 
-* **Upgrade height: `TBD`**
+* **Upgrade height: `20378500`**
 * Estimated upgrade time: `2024-02-20 ~15:00 UTC`
 * ⚠️ This is **not** a governance-gated upgrade, you must set the upgrade height in your node(s) `app.toml` ahead of time:
   ```
-  halt-height = TBD
+  halt-height = 20378500
   ```
   * After the halt height is reached and your node is stopped, replace the `gaiad` binary with the new one before starting the node again.
 
