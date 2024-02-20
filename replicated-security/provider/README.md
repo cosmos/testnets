@@ -11,9 +11,9 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v15.0.0-rc1 Upgrade
+## v15.0.0-rc2 Upgrade
 
-The provider chain will upgrade to Gaia [v15.0.0-rc1](https://github.com/cosmos/gaia/releases/tag/v15.0.0-rc1) on **Wednesday, February 21**.
+The provider chain will upgrade to Gaia [v15.0.0-rc2](https://github.com/cosmos/gaia/releases/tag/v15.0.0-rc2) on **Wednesday, February 21**.
 
 * **Block height: `5309400`**
   * Target upgrade time: `2024-02-21 15:00 UTC`
@@ -140,3 +140,8 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Set `halt-height = 0` in `~/.gaia/config/app.toml`.
 * Start the service.
 * When the node reaches height `5208900`, it will attempt to upgrade to Gaia `v15`. You can use Cosmovisor's auto-download feature or install the `v15.0.0-rc0` release binary.
+* Before the node reaches height `5309400`, stop the service.
+* Set `halt-height = 5309400` in `~/.gaia/config/app.toml`.
+* When the node reaches height `5309400`, stop the service.
+* Replace the `v15.0.0-rc0` binary with the `v15.0.0-rc2` one.
+* Start the service.
