@@ -6,7 +6,7 @@
 
 | Date             | Testnet plan                            |
 | ---------------- | --------------------------------------- |
-| February 20 2024 | Gaia v15.0.0-rc1 is live on the testnet |
+| February 20 2024 | ✅ Gaia v15.0.0-rc1 is live on the testnet |
 | February 19 2024 | ✅ Set upgrade halt height: `20378500`   |
 
 * **Version before upgrade**: `v15.0.0-rc0`
