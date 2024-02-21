@@ -13,7 +13,7 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 ## v15.0.0-rc3 Upgrade
 
-The provider chain will upgrade to Gaia v15.0.0-rc3 the **week of February 26, 2024**. More details will be posted ahead of time.
+The provider chain will upgrade to Gaia v15.0.0-rc3 the **week of February 26, 2024**. Details will be posted below when an upgrade height is assigned.
 
 ## Endpoints
 
