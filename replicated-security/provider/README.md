@@ -5,19 +5,23 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v15.0.0-rc0`](https://github.com/cosmos/gaia/releases/tag/v15.0.0-rc0), upgraded from v14 at block height `5208900`.
+* **Current Gaia Version**: [`v15.0.0-rc1`](https://github.com/cosmos/gaia/releases/tag/v15.0.0-rc0), upgraded from v14 at block height `5208900`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v15.0.0-rc1 Upgrade
+## v15.0.0-rc2 Upgrade
 
-The provider chain will upgrade to Gaia [v15.0.0-rc1](https://github.com/cosmos/gaia/releases/tag/v15.0.0-rc1) on **Wednesday, February 21**.
+The provider chain will upgrade to Gaia [v15.0.0-rc2](https://github.com/cosmos/gaia/releases/tag/v15.0.0-rc2) on **Thursday, February 22**.
 
-* **Block height: `5309400`**
-  * Target upgrade time: `2024-02-21 15:00 UTC`
+* **Block height: `5323800`**
+* Target upgrade time: `2024-02-22 15:00 UTC`
 * No proposal
+* ⚠️ This is **not** a governance-gated upgrade, you must set the upgrade height in your node(s) `app.toml` ahead of time:
+  ```
+  halt-height = 5323800
+  ```
 * Golang version: 1.21
 
 ## Endpoints
@@ -140,3 +144,13 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Set `halt-height = 0` in `~/.gaia/config/app.toml`.
 * Start the service.
 * When the node reaches height `5208900`, it will attempt to upgrade to Gaia `v15`. You can use Cosmovisor's auto-download feature or install the `v15.0.0-rc0` release binary.
+* Before the node reaches height `5309400`, stop the service.
+* Set `halt-height = 5309400` in `~/.gaia/config/app.toml`.
+* When the node reaches height `5309400`, stop the service.
+* Replace the `v15.0.0-rc0` binary with the `v15.0.0-rc1` one.
+* Set `halt-height = 5323800` in `~/.gaia/config/app.toml`.
+* Start the service.
+* When the node reaches height `5323800`, stop the service.
+* Replace the `v15.0.0-rc1` binary with the `v15.0.0-rc2` one.
+* Set `halt-height = 0` in `~/.gaia/config/app.toml`.
+* Start the service.

@@ -2,8 +2,9 @@
 
 | Date              | Testnet Incentives Program Period | Type              | Description                                                                                                                                              |
 | ----------------- | --------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| February 20 2024  | 3                                 | Demo Day          | Demo day # 2: Gaia v15 changes                                                                                                                           |
-| February 20 2024  | -                                 | Patch upgrade     | Provider chain upgraded to Gaia v15.0.0-rc1                                                                                                              |
+| February 22 2024  | -                                 | Patch upgrade     | Provider chain upgraded to Gaia v15.0.0-rc2                                                                                                             |
+| February 21 2024  | 3                                 | Demo Day          | ✅ Demo day # 2: Gaia v15 changes                                                                                                                           |
+| February 21 2024  | -                                 | Patch upgrade     | ✅ Provider chain upgraded to Gaia v15.0.0-rc1                                                                                                             |
 | February 14 2024  | 3                                 | Major upgrade     | ✅ Provider chain upgraded to Gaia v15.0.0-rc0                                                                                                            |
 | February 13 2024  | -                                 | Major upgrade     | ✅ Proposal to upgrade provider chain to Gaia v15 passes                                                                                                  |
 | February 7 2024   | 3                                 | Demo Day          | ✅ Demo day # 1: Proposal outcomes                                                                                                                        |
