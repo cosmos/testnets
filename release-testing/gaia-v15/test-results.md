@@ -12,27 +12,32 @@
 
 ## Test Summary
 
+Upgrade workflows use two starting points: fresh and stateful genesis.
+
+* Fresh genesis: A genesis file is initialized with three validators and the chain starts at height 1.
+* Stafeul genesis: A genesis file is periodically exported from a Cosmos Hub node and modified to provide a single validator with a majority voting power so it can start producing blocks on its own.
+
 ### Baseline
 
-| Test                      | Fresh state | Stateful |
-| ------------------------- | ----------- | -------- |
-| Transactions              | PASS        | PASS     |
-| API endpoints             | PASS        | PASS     |
-| RPC endpoints             | PASS        | PASS     |
-| globalfee                 | PASS        | N/A      |
-| Consumer chain launches   | PASS        | N/A      |
-| packet-forward-middleware | PASS        | N/A      |
-| Liquid Staking Module     | PASS        | N/A      |
-| Mainnet consumer chains   | PASS        | N/A      |
+| Test                      | Fresh | Stateful |
+| ------------------------- | ----- | -------- |
+| Transactions              | PASS  | PASS     |
+| API endpoints             | PASS  | PASS     |
+| RPC endpoints             | PASS  | PASS     |
+| globalfee                 | PASS  | N/A      |
+| Consumer chain launches   | PASS  | N/A      |
+| packet-forward-middleware | PASS  | N/A      |
+| Liquid Staking Module     | PASS  | N/A      |
+| Mainnet consumer chains   | PASS  | N/A      |
 
 ### v15-specific
 
-| Test                    | Fresh state | Stateful |
-| ----------------------- | ----------- | -------- |
-| Minimum commission      | PASS        | N/A      |
-| Minimum deposit         | PASS        | N/A      |
-| Voting requirements     | PASS        | N/A      |
-| Unvested funds transfer | PASS        | PASS     |
+| Test                    | Fresh | Stateful |
+| ----------------------- | ----- | -------- |
+| Minimum commission      | PASS  | N/A      |
+| Minimum deposit         | PASS  | N/A      |
+| Voting requirements     | PASS  | N/A      |
+| Unvested funds transfer | PASS  | PASS     |
 
 ## Baseline test details
 
