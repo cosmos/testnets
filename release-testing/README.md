@@ -28,7 +28,7 @@ GitHub Actions workflows are used to run baseline and version-specific tests for
 
 Testnet upgrades are scheduled once a release candidate has passed all tests and is identified as having a 90% chance of reaching the Cosmos Hub as-is by the Gaia integration team. Testnet upgrades are done through governance proposals.
 
-The Release testnet (`theta-testnet-001`) is upgraded to the release candidate, and after it is confirmed as successful, the Replicated Security testnet (`provider`) is upgraded next.
+The Release testnet (`theta-testnet-001`) is upgraded to the release candidate firs; and after it is confirmed as successful, the Replicated Security testnet (`provider`) is upgraded next.
 
 Validators participating in the testnets will be given advance notice that a software upgrade is happening via Discord, at least three days in advance, so they can prepare their nodes accordingly. This repo will be updated with the relevant information so anyone willing to participate in the upgrade can join the testnet ahead of time.
 
