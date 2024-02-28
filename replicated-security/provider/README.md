@@ -13,7 +13,16 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 ## v15.0.0-rc3 Upgrade
 
-The provider chain will upgrade to Gaia v15.0.0-rc3 the **week of February 26, 2024**. Details will be posted below when an upgrade height is assigned.
+The provider chain will upgrade to Gaia [v15.0.0-rc3](https://github.com/cosmos/gaia/releases/tag/v15.0.0-rc3) on **February 29, 2024 at 15:00 UTC**. Details will be posted below when an upgrade height is assigned.
+
+* **Block height: `5425200`**
+* Target upgrade time: `2024-02-29 15:00 UTC`
+* No proposal
+* ⚠️ This is **not** a governance-gated upgrade, you must set the upgrade height in your node(s) `app.toml` ahead of time:
+  ```
+  halt-height = 5425200
+  ```
+* Golang version: 1.21
 
 ## Endpoints
 
