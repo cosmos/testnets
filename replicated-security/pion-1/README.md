@@ -10,12 +10,12 @@ The `pion-1` chain will be launched as a Neutron persistent chain to test Interc
 * **timeout_commit**: `1s`
 * **Spawn time**: `2023-06-29T14:30:00Z`
 * **GitHub repo**: [neutron-org/neutron](https://github.com/neutron-org/neutron.git)
-* **Current version**: [`v2.0.1`](https://github.com/neutron-org/neutron/releases/tag/v2.0.1)
+* **Current version**: [`v3.0.0`](https://github.com/neutron-org/neutron/releases/tag/v3.0.0)
   * Launch version: [`v1.0.2-pion-1-upgrade`](https://github.com/neutron-org/neutron/releases/tag/v1.0.2-pion-1-upgrade)
 * **Genesis file with CCV state:** [pion-1-genesis.json]([TODO](https://github.com/cosmos/testnets/blob/master/replicated-security/pion-1/pion-1-genesis-with-ccv.json.gz))
 
 * **Reference binary**: [neutrond-linux-amd64](neutrond-linux-amd64)
-* **Binary sha256sum**: `a1331685f656cca2d7a94283959678a5a3c846aa4a6fa0cd6c4da1534c324ea7`
+* **Binary sha256sum**: `<TODO:neutronv3.0.0 binary release hash>`
 * **Genesis file _without CCV state_:** [pion-1-genesis-without-ccv.json](https://github.com/cosmos/testnets/raw/master/replicated-security/pion-1/pion-1-genesis-without-ccv.json.gz ), verify with `gzip -d pion-1-genesis-without-ccv.json.gz -c | shasum -a 256`
 * * **Genesis file _with CCV state_:** [pion-1-genesis-with-ccv.json](https://github.com/cosmos/testnets/raw/master/replicated-security/pion-1/pion-1-genesis-with-ccv.json.gz ), verify with `gzip -d pion-1-genesis-with-ccv.json.gz -c | jq -S -c -M '.' | shasum -a 256`
 * **SHA256 for genesis file _without CCV state_**: `6291227072026b46830a7bcdd6180dca727f10d92fd612cedc07b6d377b0eeea`
@@ -91,8 +91,8 @@ Persistent nodes:
 
 | Name    | Version               |
 |---------|-----------------------|
-| Neutron | v2.0.0 |
-| Go      | >1.20                 |
+| Neutron | v3.0.0 |
+| Go      | >1.21                 |
 
 The scripts provided in this repo will install Neutron and set up a Cosmovisor service with the auto-download feature enabled on your machine.
 
@@ -115,7 +115,7 @@ Run script provided to set up a `pion-1` service:
 Build and install neutron binary. 
 
 ```
-$ git clone -b v2.0.1 https://github.com/neutron-org/neutron.git
+$ git clone -b v3.0.0 https://github.com/neutron-org/neutron.git
 $ cd neutron
 $ make install
 ```
@@ -128,7 +128,7 @@ You should see the following:
 ```
 name: neutron
 server_name: neutrond
-version: v2.0.1
+version: v3.0.0
 ```
 
 ### Troubleshooting
