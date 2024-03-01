@@ -1,4 +1,4 @@
-# Please use go version >1.20 to compile binaries!!
+# Please use go version [>=1.21](https://go.dev/doc/install) to compile binaries!!
 
 # `pion-1` Chain Details
 
