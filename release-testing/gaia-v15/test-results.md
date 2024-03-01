@@ -1,6 +1,6 @@
 # Gaia v15 Upgrade Test Results
 
-* **Target version:** `v15.0.0-rc2`
+* **Target version:** `v15.0.0`
 * **Starting version:** `v14.1.0`
 * **Minimum hardware requirements for stateful upgrade**
   * 8 cores
@@ -15,6 +15,8 @@
 Upgrade workflows use two starting points: fresh and stateful genesis.
 
 * Fresh genesis: A genesis file is initialized with three validators and the chain starts at height 1.
+  * [GitHub Actions workflow](https://github.com/hyphacoop/cosmos-release-testing/actions/runs/8117108241)
+  * [Log Archive](./fresh-state-logs.zip)
 * Stafeul genesis: A genesis file is periodically exported from a Cosmos Hub node and modified to provide a single validator with a majority voting power so it can start producing blocks on its own.
 
 ### Baseline
