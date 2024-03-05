@@ -2,7 +2,8 @@
 
 | Date              | Testnet Incentives Program Period | Type              | Description                                                                                                                                              |
 | ----------------- | --------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| February 29 2024  | -                                 | Patch upgrade     | Provider chain upgraded to Gaia v15.0.0-rc3                                                                                                              |
+| March 6 2024  | 4                                 | Consumer upgrade     | Consumer chain pion-1 to be upgraded to Neutron v3.0.0                                                                                                         |
+| February 29 2024  | -                                 | Patch upgrade     | ✅ Provider chain upgraded to Gaia v15.0.0-rc3                                                                                                              |
 | February 21 2024  | 3                                 | Demo Day          | ✅ Demo day # 2: Gaia v15 changes                                                                                                                         |
 | February 21 2024  | -                                 | Patch upgrade     | ✅ Provider chain upgraded to Gaia v15.0.0-rc1                                                                                                            |
 | February 14 2024  | 3                                 | Major upgrade     | ✅ Provider chain upgraded to Gaia v15.0.0-rc0                                                                                                            |
