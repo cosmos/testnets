@@ -3,8 +3,8 @@
 In this demo day, we will demonstrate some of the changes introduced in Gaia v15.
 We will post announcements in the `testnet-announcements` channel in Discord to coordinate activities during the event.
 
-* Start time: `2023-02-07 15:30 UTC`
-* Estimated end time: `2023-02-07 17:00 UTC`
+* Start time: `2023-02-21 15:30 UTC`
+* Estimated end time: `2023-02-21 17:00 UTC`
 
 ## Tasks
 
