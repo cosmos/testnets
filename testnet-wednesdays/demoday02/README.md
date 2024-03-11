@@ -20,3 +20,4 @@ All tasks will be performed in the `provider` chain of the [Replicated Security 
 ## Testnet Incentives Program (TIP) Eligibility
 
 * You must deposit and vote according to the tasks listed above to remain eligible for TIP period 3.
+  * **Tasks 4 and 5 will not be counted**.
