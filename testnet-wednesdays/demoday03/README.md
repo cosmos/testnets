@@ -97,7 +97,12 @@ bytes: B2931DD76A1C080A43E977593F73ADF8C39CC7D9
 human: neutronvalcons
 ```
 
-Start the neutron service again. The log should display the "This node is a validator" line during startup.
+Start the neutron service again.
+```
+systemctl start neutrond.service
+```
+
+The log should display the "This node is a validator" line during startup.
 
 #### 5. Check the validator is signing blocks in pion-1
 
