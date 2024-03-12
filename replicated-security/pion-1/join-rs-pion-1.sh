@@ -11,7 +11,7 @@ NODE_KEY_FILE=${2:-"~/node_key.json"}
 NODE_HOME=~/.neutrond
 NODE_MONIKER=node
 SERVICE_NAME=neutrond
-SERVICE_VERSION="v2.0.2"
+SERVICE_VERSION="v3.0.0"
 STATE_SYNC=true
 # ***
 
@@ -30,8 +30,8 @@ sudo apt-get install curl jq wget -y
 # Install go 1.20
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
-wget https://go.dev/dl/go1.20.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.21.8.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.21.8.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
 # Install neutrond binary
