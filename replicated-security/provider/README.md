@@ -11,9 +11,9 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v16.0.0-rc0 Upgrade
+## v15.1.0 Upgrade
 
-The provider chain will upgrade to Gaia [v16.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v16.0.0-rc0) on **TBD**. Details will be posted below when an upgrade height is assigned.
+The provider chain will upgrade to Gaia [v15.1.0](https://github.com/cosmos/gaia/releases/tag/v15.1.0) on **TBD**. Details will be posted below when an upgrade height is assigned.
 
 * **Block height: `TBD`**
 * Target upgrade time: `TBD`
