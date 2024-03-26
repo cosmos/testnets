@@ -3,8 +3,8 @@
 For our first-ever game day, we will experiment with how we respond to changes during software upgrades.
 We will post announcements in the `testnet-announcements` channel in Discord to coordinate activities during the event.
 
-* Start time: `2023-01-24 14:30 UTC`
-* Estimated end time: `2023-01-24 15:30 UTC`
+* Start time: `2024-01-24 14:30 UTC`
+* Estimated end time: `2024-01-24 15:30 UTC`
 
 ## Recap
 
