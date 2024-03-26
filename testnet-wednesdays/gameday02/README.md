@@ -3,8 +3,8 @@
 For our second game day, we will explore the features of the Liquid Staking Module.
 We will post announcements in the `testnet-announcements` channel in Discord to coordinate activities during the event.
 
-* Start time: `2023-03-27 14:30 UTC`
-* End time: `2023-03-27 16:00 UTC`
+* Start time: `2024-03-27 14:30 UTC`
+* End time: `2024-03-27 16:00 UTC`
 
 ## Tasks
 
