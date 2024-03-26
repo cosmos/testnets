@@ -2,6 +2,8 @@
 
 | Date              | Testnet Incentives Program Period | Type              | Description                                                                                                                                              |
 | ----------------- | --------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| March 27 2024     | 4                                 | Game Day          | Game day # 2: Liquid Staking Module                                                                                                                      |
+| March 27 2024     | -                                 | Minor upgrade     | Provider chain upgrades to Gaia v15.1.0                                                                                                                  |
 | March 13 2024     | 4                                 | Demo Day          | ✅ Demo day # 3: Consumer key assignment and updating security contacts                                                                                   |
 | March 6 2024      | 4                                 | Consumer upgrade  | ✅ Consumer chain pion-1 to be upgraded to Neutron v3.0.0                                                                                                 |
 | February 29 2024  | -                                 | Patch upgrade     | ✅ Provider chain upgraded to Gaia v15.0.0-rc3                                                                                                            |
