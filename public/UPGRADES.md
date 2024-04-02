@@ -1,12 +1,38 @@
 # Scheduled Upgrades 🗓️ 
 
+## v15.2.0-rc0
+
+### Schedule
+
+| Date             | Testnet plan                              |
+| ---------------- | ----------------------------------------- |
+| April 3 2024 | Gaia v15.2.0-rc0 is live on the testnet |
+| April 2 2024 | ✅ Set upgrade halt height: `21040550`     |
+
+* **Version before upgrade**: `v15.1.0`
+* **Version after upgrade**: `v15.2.0-rc0`
+
+### Upgrade details
+
+* **Upgrade height: `21040550`**
+* Estimated upgrade time: `2024-04-03 ~13:30 UTC`
+* Release page: https://github.com/cosmos/gaia/releases/tag/v15.2.0-rc0
+* ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
+  * Set the upgrade height in your node(s) `app.toml` and restart the node(s).
+    ```
+    halt-height = 21040550
+    ```
+  * Restart your node(s) with the `--halt-height 21040550` flag.
+* After the halt height is reached and your node is stopped:
+  * Replace the `gaiad` binary with the new one and restart the node after reverting to `halt-height = 0` in `app.toml` (or restart the node without the `--halt-height` flag).
+
 ## v15.1.0
 
 ### Schedule
 
 | Date             | Testnet plan                              |
 | ---------------- | ----------------------------------------- |
-| March 27 2024 | Gaia v15.1.0 is live on the testnet |
+| March 27 2024 | ✅Gaia v15.1.0 is live on the testnet |
 | March 26 2024 | ✅ Set upgrade halt height: `20933250`     |
 
 * **Version before upgrade**: `v15.0.0-rc3`
