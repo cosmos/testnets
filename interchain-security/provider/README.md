@@ -71,19 +71,19 @@ Connections and channels will be posted here shortly after a consumer chain laun
 ### Clients
 
 * `07-tendermint-28`
-  * Counterparty: [`pion-1`](/replicated-security/pion-1/README.md) `07-tendermint-68`
+  * Counterparty: [`pion-1`](/interchain-security/pion-1/README.md) `07-tendermint-68`
 
 ### Connections
 
 * `connection-19`
-  * Counterparty: [`pion-1`](/replicated-security/pion-1/README.md) `connection-42`
+  * Counterparty: [`pion-1`](/interchain-security/pion-1/README.md) `connection-42`
 
 ### Channels
 
 * `channel-31`: provider port
-  * Counterparty: [`pion-1`](/replicated-security/pion-1/README.md) `channel-95`
+  * Counterparty: [`pion-1`](/interchain-security/pion-1/README.md) `channel-95`
 * `channel-32`: transfer port
-  * Counterparty: [`pion-1`](/replicated-security/pion-1/README.md) `channel-96`
+  * Counterparty: [`pion-1`](/interchain-security/pion-1/README.md) `channel-96`
 
 ## How to Join
 
