@@ -54,7 +54,7 @@ Use this [jsfiddle](https://jsfiddle.net/uw4ar8qt/2/).
 
 * https://explorer.polypore.xyz/provider/
 * https://explorer.nodestake.top/cosmos-rs/
-* https://testnet.mintscan.io/ics-testnet-provider
+* https://www.mintscan.io/ics-testnet-provider
 
 ## Snapshot
 
