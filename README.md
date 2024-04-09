@@ -14,23 +14,23 @@ The goals of the Cosmos Hub testnet program are to:
 
 Beyond these goals, testnets could also become a site for R&D for new development and governance approaches in a fast-moving and live context.
 
-### [Public Testnet](public/)
+### [Release Testnet](release/)
 
-The public testnet targets validators who want to participate in a simulated chain upgrade before the mainnet upgrade takes place. Shortly after a new Gaia version is available, we submit a software upgrade proposal, vote on it, and update all nodes with the new binary at the halt height specified in the proposal.
+The release testnet targets validators who want to participate in a simulated chain upgrade before the mainnet upgrade takes place. Shortly after a new Gaia version is available, we submit a software upgrade proposal, vote on it, and update all nodes with the new binary at the halt height specified in the proposal.
 
 Up until the `Vega` testnet, our approach was to deploy a testnet for each Gaia upgrade.
 
 **Starting with the `theta-testnet-001` testnet, we have moved to a persistent testnet model. This testnet will stay online and remain the primary Cosmos Hub testnet after the `v7-Theta` upgrade, including for the v8-Rho and v9-Lambda upgrades, and beyond.**
 
-Based on our experience with `Vega`, we have configured the public testnet so that:
+Based on our experience with `Vega`, we have configured the release testnet so that:
 * Testnet coordinators will operate 4+ validators with combined voting power exceeding 75% total power.
 * These validators will require an addition of ~550M bonded test ATOM (current bonded ATOM are ~180M) and a corresponding increase in total supply.
-* Tesnet coordinators control a faucet with >100M liquid tokens.
+* Testnet coordinators control a faucet with >100M liquid tokens.
 * Testnet coordinators can reward validators with limited edition secondary tokens that are named after their release (`Theta`, `Rho`, `Epsilon`, `Lambda`). The testnet will have a fixed supply of 1000 each of such tokens.
 
-### [Replicated Security Persistent Testnet](replicated-security/)
+### [Interchain Security Persistent Testnet](interchain-security/)
 
-The Replicated Security testnet provides a public platform to explore:
+The Interchain Security testnet provides a public platform to explore:
 - Launching and stopping consumer chains
 - Interchain Security features
 - Relayer operations

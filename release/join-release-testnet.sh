@@ -1,11 +1,11 @@
 #!/bin/bash
-# Set up a Gaia service to join the Cosmos Hub public testnet.
+# Set up a Gaia service to join the Cosmos Hub Release testnet.
 
 # Configuration
 # You should only have to modify the values in this block
 # ***
 NODE_HOME=~/.gaia
-NODE_MONIKER=public-testnet
+NODE_MONIKER=release-testnet
 SERVICE_NAME=gaiad
 GAIA_VERSION=v15.2.0
 CHAIN_BINARY_URL=https://github.com/cosmos/gaia/releases/download/$GAIA_VERSION/gaiad-$GAIA_VERSION-linux-amd64
@@ -15,7 +15,7 @@ GAS_PRICE=0.005uatom
 
 CHAIN_BINARY='gaiad'
 CHAIN_ID=theta-testnet-001
-GENESIS_ZIPPED_URL=https://github.com/cosmos/testnets/raw/master/public/genesis.json.gz
+GENESIS_ZIPPED_URL=https://github.com/cosmos/testnets/raw/master/release/genesis.json.gz
 SEEDS="639d50339d7045436c756a042906b9a69970913f@seed-01.theta-testnet.polypore.xyz:26656,3e506472683ceb7ed75c1578d092c79785c27857@seed-02.theta-testnet.polypore.xyz:26656"
 SYNC_RPC_1=https://rpc.state-sync-01.theta-testnet.polypore.xyz:443
 SYNC_RPC_2=https://rpc.state-sync-02.theta-testnet.polypore.xyz:443

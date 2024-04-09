@@ -1,16 +1,16 @@
 # Consumer Chain Launch Process
 
-This guide is intended for consumer chain teams that are looking to be onboarded on to the Replicated Security testnet.
+This guide is intended for consumer chain teams that are looking to be onboarded on to the Interchain Security testnet.
 
-## Replicated Security Testnet Overview
+## Interchain Security Testnet Overview
 
-* The Replicated Security (RS) testnet is to be used to launch and test consumer chains. We recommend consumer chains to launch on the testnet before launching on the mainnet.
-* All information about the RS testnet is available in this [repository](https://github.com/cosmos/testnets/tree/master/replicated-security).
-* The testnet coordinators (Hypha) have majority voting power in the RS testnet. This means we need to work with you to bring your chain live and also to successfully pass any governance proposals you make.
+* The Interchain Security (ICS) testnet is to be used to launch and test consumer chains. We recommend consumer chains to launch on the testnet before launching on the mainnet.
+* All information about the ICS testnet is available in this [repository](https://github.com/cosmos/testnets/tree/master/interchain-security).
+* The testnet coordinators (Hypha) have majority voting power in the ICS testnet. This means we need to work with you to bring your chain live and also to successfully pass any governance proposals you make.
 
 ## Chain Onboarding Process
 
-For teams looking to join the RS testnet, the onboarding process can be broken down in four phases:
+For teams looking to join the ICS testnet, the onboarding process can be broken down in four phases:
 
 * Testing and Integration 
 * Planning with Testnet Coordinators
@@ -19,7 +19,7 @@ For teams looking to join the RS testnet, the onboarding process can be broken d
 
 ### Local Testing and Integration
 
-During this phase, your team will run integration tests with the following elements of a replicated security testnet:
+During this phase, your team will run integration tests with the following elements of an Interchain Security testnet:
 * Gaia provider chain
   * Visit the provider chain [page](./provider/) for details on which Gaia version is currently being used.
 * Relayers
@@ -133,7 +133,7 @@ After the spawn time is reached, the Cross-Chain Validation (CCV) state will be 
   jq -s '.[0].app_state.ccvconsumer = .[1] | .[0]' <consumer genesis without CCV state> ccv-state.json > <consumer genesis file with CCV state>
   ```
 * Publish the genesis file with CCV state to the testnets repo.
-* Post the link to the genesis file and the SHA256 hash to the Interchain Security `replicated-security-testnet` channel of the Cosmos Network Discord Server.
+* Post the link to the genesis file and the SHA256 hash to the Interchain Security `interchain-security-testnet` channel of the Cosmos Network Discord Server.
 * Ensure the required peers are online for people to connect to.
 
 The consumer chain will start producing blocks as soon as 66.67% of the provider chain's voting power comes online. You will be able to start the relayer afterwards:

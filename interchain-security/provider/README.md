@@ -5,7 +5,7 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v15.2.0`](https://github.com/cosmos/gaia/releases/tag/v15.0.0-rc0), upgraded from v14 at block height `5208900`.
+* **Current Gaia Version**: [`v15.2.0`](https://github.com/cosmos/gaia/releases/tag/v15.2.0), upgraded from v14 at block height `5208900`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
@@ -54,7 +54,7 @@ Use this [jsfiddle](https://jsfiddle.net/uw4ar8qt/2/).
 
 * https://explorer.polypore.xyz/provider/
 * https://explorer.nodestake.top/cosmos-rs/
-* https://testnet.mintscan.io/ics-testnet-provider
+* https://www.mintscan.io/ics-testnet-provider
 
 ## Snapshot
 
@@ -94,8 +94,8 @@ You can choose to (not) use state sync. Your node will sync much faster if you u
 ### Bash Script
 
 Run either one of the scripts provided in this repo to join the provider chain:
-* `join-rs-provider.sh` will create a `gaiad` service.
-* `join-rs-provider-cv.sh` will create a `cosmovisor` service.
+* `join-ics-provider.sh` will create a `gaiad` service.
+* `join-ics-provider-cv.sh` will create a `cosmovisor` service.
 * Both scripts must be run either as root or from a sudoer account.
 * Both scripts will attempt to download the amd64 binary from the Gaia [releases](https://github.com/cosmos/gaia/releases) page. You can modify the `CHAIN_BINARY_URL` to match your target architecture if needed.
 

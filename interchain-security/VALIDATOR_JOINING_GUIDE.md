@@ -1,14 +1,14 @@
 # Validator Joining Process
 
-This guide is intended for validators that are looking to join the Replicated Security testnet.
+This guide is intended for validators that are looking to join the Interchain Security testnet.
 
 ## Joining the Provider Chain
 
-To join the Replicated Security testnet as a validator, you will have to run a binary for the provider chain as well as all live consumer chains.
+To join the Interchain Security testnet as a validator, you will have to run a binary for the provider chain as well as all live consumer chains.
 
-1. [Join the provider chain](https://github.com/cosmos/testnets/tree/master/replicated-security/provider#how-to-join).
+1. [Join the provider chain](https://github.com/cosmos/testnets/tree/master/interchain-security/provider#how-to-join).
 1. Request funds from the provider chain [faucet](https://faucet.polypore.xyz).
-1. Join all the live consumer chains currently listed in the [status section](https://github.com/cosmos/testnets/tree/master/replicated-security#status).
+1. Join all the live consumer chains currently listed in the [status section](https://github.com/cosmos/testnets/tree/master/interchain-security#status).
 
 ## Creating a Validator on the Provider Chain
 

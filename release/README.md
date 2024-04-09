@@ -1,6 +1,6 @@
-# Cosmos Hub Public Testnet
+# Cosmos Hub Release Testnet
 
-The public testnet will be used to test all Gaia upgrades. It was created to mirror the state of mainnet, aside from a few modifications to the exported genesis file. These adjustments help provide liveness and streamlined governance-permissioned software upgrades.
+The release testnet will be used to test all Gaia upgrades. It was created to mirror the state of mainnet, aside from a few modifications to the exported genesis file. These adjustments help provide liveness and streamlined governance-permissioned software upgrades.
 
 Visit the [Scheduled Upgrades](UPGRADES.md) page for details on current and upcoming versions. 
 
@@ -8,7 +8,7 @@ Visit the [Scheduled Upgrades](UPGRADES.md) page for details on current and upco
 
 - **Chain-ID**: `theta-testnet-001`
 - **Launch date**: 2022-03-10
-- **Current Gaia Version:** `v15.2.0` (upgraded from v14 at height `20269900`)
+- **Current Gaia Version:** [`v15.2.0`](https://github.com/cosmos/gaia/releases/tag/v15.2.0) (upgraded from v14 at height `20269900`)
 - **Launch Gaia Version:** `release/v6.0.0`
 - **Genesis File:**  Zipped and included [in this repository](genesis.json.gz), unzip and verify with `shasum -a 256 genesis.json`
 - **Genesis sha256sum**: `522d7e5227ca35ec9bbee5ab3fe9d43b61752c6bdbb9e7996b38307d7362bb7e`
@@ -52,9 +52,8 @@ You can add these in your seeds list.
 ### Block Explorers
 
   - https://explorer.polypore.xyz/theta-testnet-001/
-  - https://cosmoshub-testnet.mintscan.io/cosmoshub-testnet
+  - https://www.mintscan.io/cosmoshub-testnet
   - https://explorer.nodestake.top/cosmos-testnet/
-  - https://testnet.cosmos.bigdipper.live/
 
 ### Snapshot
 
@@ -137,7 +136,7 @@ If you are **manually preparing your binary**, please set the environment variab
 
 Cosmovisor will attempt to make a backup of the home folder before upgrading, which will consume time and considerable disk space. If you want to skip this step, set the environment variable `UNSAFE_SKIP_BACKUP` to `true`.
 
-## Public testnet modifications
+## Release testnet modifications
 
 The following modifications were made using the [cosmos-genesis-tinker script](https://github.com/hyphacoop/cosmos-genesis-tinkerer/blob/main/example_stateful_genesis.py):
 
