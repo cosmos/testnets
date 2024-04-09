@@ -12,12 +12,12 @@ The `pion-1` chain will be launched as a Neutron persistent chain to test Interc
 * **GitHub repo**: [neutron-org/neutron](https://github.com/neutron-org/neutron.git)
 * **Current version**: [`v3.0.0`](https://github.com/neutron-org/neutron/releases/tag/v3.0.0)
   * Launch version: [`v1.0.2-pion-1-upgrade`](https://github.com/neutron-org/neutron/releases/tag/v1.0.2-pion-1-upgrade)
-* **Genesis file with CCV state:** [pion-1-genesis.json]([TODO](https://github.com/cosmos/testnets/blob/master/replicated-security/pion-1/pion-1-genesis-with-ccv.json.gz))
+* **Genesis file with CCV state:** [pion-1-genesis.json](https://github.com/cosmos/testnets/blob/master/interchain-security/pion-1/pion-1-genesis-with-ccv.json.gz)
 
 * **Reference binary**: [neutrond-linux-amd64](neutrond-linux-amd64)
 * **Binary sha256sum**: `c1d22728005bdd6d01971600f9fa495f31d141a920a3c831566a79cb5b239d1f`
-* **Genesis file _without CCV state_:** [pion-1-genesis-without-ccv.json](https://github.com/cosmos/testnets/raw/master/replicated-security/pion-1/pion-1-genesis-without-ccv.json.gz ), verify with `gzip -d pion-1-genesis-without-ccv.json.gz -c | shasum -a 256`
-* * **Genesis file _with CCV state_:** [pion-1-genesis-with-ccv.json](https://github.com/cosmos/testnets/raw/master/replicated-security/pion-1/pion-1-genesis-with-ccv.json.gz ), verify with `gzip -d pion-1-genesis-with-ccv.json.gz -c | jq -S -c -M '.' | shasum -a 256`
+* **Genesis file _without CCV state_:** [pion-1-genesis-without-ccv.json](https://github.com/cosmos/testnets/raw/master/interchain-security/pion-1/pion-1-genesis-without-ccv.json.gz ), verify with `gzip -d pion-1-genesis-without-ccv.json.gz -c | shasum -a 256`
+* * **Genesis file _with CCV state_:** [pion-1-genesis-with-ccv.json](https://github.com/cosmos/testnets/raw/master/interchain-security/pion-1/pion-1-genesis-with-ccv.json.gz ), verify with `gzip -d pion-1-genesis-with-ccv.json.gz -c | jq -S -c -M '.' | shasum -a 256`
 * **SHA256 for genesis file _without CCV state_**: `6291227072026b46830a7bcdd6180dca727f10d92fd612cedc07b6d377b0eeea`
 * * **SHA256 for genesis file _with CCV state_**: `2cbb264125915270e5f2fccf3c8ef9578f432c4a5ba7c9b0c536ba80922678be`
 
@@ -70,19 +70,19 @@ Persistent nodes:
 ### Clients
 
 * `07-tendermint-68`
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `07-tendermint-28`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `07-tendermint-28`
 
 ### Connections
 
 * `connection-42`
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `connection-19`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `connection-19`
 
 ### Channels
 
 * `channel-95`: consumer port
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-31`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `channel-31`
 * `channel-96`: transfer port
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-32`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `channel-32`
 
 ## How to Join
 
