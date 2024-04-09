@@ -1,21 +1,12 @@
 #!/bin/bash
-# Set up a Gaia service to join the provider chain.
+# Set up a Gaia service to join the Cosmos Hub Release testnet.
 
 # Configuration
 # You should only have to modify the values in this block
-# * Keys
-#    The private validator key and node key operations are provided in case you have a pre-existing set of keys.
-#    If you want to generate these keys as part of the setup, comment out the "Replace keys" section.
-# * Binary
-#    The binary for the amd64 architecture is set by default.
-#    If you are using a different architecture, visit the gaia releases page for an adequate link.
-#    If you want to build from source, uncomment the "or install from source" section
 # ***
-PRIV_VALIDATOR_KEY_FILE=~/priv_validator_key.json
-NODE_KEY_FILE=~/node_key.json
 NODE_HOME=~/.gaia
-NODE_MONIKER=provider
-SERVICE_NAME=provider
+NODE_MONIKER=release-testnet
+SERVICE_NAME=gaiad
 GAIA_VERSION=v15.2.0
 CHAIN_BINARY_URL=https://github.com/cosmos/gaia/releases/download/$GAIA_VERSION/gaiad-$GAIA_VERSION-linux-amd64
 STATE_SYNC=true
@@ -23,11 +14,11 @@ GAS_PRICE=0.005uatom
 # ***
 
 CHAIN_BINARY='gaiad'
-CHAIN_ID=provider
-GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/provider/provider-genesis.json
-SEEDS="08ec17e86dac67b9da70deb20177655495a55407@provider-seed-01.rs-testnet.polypore.xyz:26656,4ea6e56300a2f37b90e58de5ee27d1c9065cf871@provider-seed-02.rs-testnet.polypore.xyz:26656"
-SYNC_RPC_1=https://rpc.provider-state-sync-01.rs-testnet.polypore.xyz:443
-SYNC_RPC_2=https://rpc.provider-state-sync-02.rs-testnet.polypore.xyz:443
+CHAIN_ID=theta-testnet-001
+GENESIS_ZIPPED_URL=https://github.com/cosmos/testnets/raw/master/release/genesis.json.gz
+SEEDS="639d50339d7045436c756a042906b9a69970913f@seed-01.theta-testnet.polypore.xyz:26656,3e506472683ceb7ed75c1578d092c79785c27857@seed-02.theta-testnet.polypore.xyz:26656"
+SYNC_RPC_1=https://rpc.state-sync-01.theta-testnet.polypore.xyz:443
+SYNC_RPC_2=https://rpc.state-sync-02.theta-testnet.polypore.xyz:443
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_2"
 
 # Install wget and jq
@@ -42,8 +33,8 @@ echo "Installing Gaia..."
 wget $CHAIN_BINARY_URL -O $HOME/go/bin/$CHAIN_BINARY
 chmod +x $HOME/go/bin/$CHAIN_BINARY
 
-# or install from source
-## Install go 1.21
+# or build from source
+# Install go 1.21
 # echo "Installing go..."
 # rm go*linux-amd64.tar.gz
 # wget https://go.dev/dl/go1.21.6.linux-amd64.tar.gz
@@ -52,7 +43,6 @@ chmod +x $HOME/go/bin/$CHAIN_BINARY
 # echo "Installing build-essential..."
 # sudo apt install build-essential -y
 # echo "Installing Gaia..."
-# cd $HOME
 # rm -rf gaia
 # git clone https://github.com/cosmos/gaia.git
 # cd gaia
@@ -67,11 +57,6 @@ $CHAIN_BINARY config keyring-backend test --home $NODE_HOME
 $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
 sed -i -e "/minimum-gas-prices =/ s^= .*^= \"$GAS_PRICE\"^" $NODE_HOME/config/app.toml
 sed -i -e "/seeds =/ s^= .*^= \"$SEEDS\"^" $NODE_HOME/config/config.toml
-
-# Replace keys
-echo "Replacing keys and genesis file..."
-cp $PRIV_VALIDATOR_KEY_FILE $NODE_HOME/config/priv_validator_key.json
-cp $NODE_KEY_FILE $NODE_HOME/config/node_key.json
 
 if $STATE_SYNC ; then
     echo "Configuring state sync..."
@@ -89,8 +74,10 @@ else
 fi
 
 # Replace genesis file
-wget $GENESIS_URL -O genesis.json
-mv genesis.json $NODE_HOME/config/genesis.json
+echo "Downloading genesis file..."
+wget $GENESIS_ZIPPED_URL
+gunzip genesis.json.gz -f
+cp genesis.json $NODE_HOME/config/genesis.json
 
 sudo rm /etc/systemd/system/$SERVICE_NAME.service
 sudo touch /etc/systemd/system/$SERVICE_NAME.service
@@ -116,8 +103,8 @@ sudo systemctl start $SERVICE_NAME.service
 sudo systemctl restart systemd-journald
 
 # Add go and gaiad to the path
-echo "Setting up paths for go and cosmovisor current bin..."
-echo "export PATH=$PATH:/usr/local/go/bin" >> .profile
+echo "Setting up paths for go and gaiad bin..."
+echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> .profile
 
 echo "***********************"
 echo "To see the Gaia log enter:"

@@ -1,4 +1,4 @@
-## Replicated Security Testnet Schedule
+## Interchain Security Testnet Schedule
 
 | Date              | Testnet Incentives Program Period | Type              | Description                                                                                                                                              |
 | ----------------- | --------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |

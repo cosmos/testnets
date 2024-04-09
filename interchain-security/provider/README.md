@@ -94,8 +94,8 @@ You can choose to (not) use state sync. Your node will sync much faster if you u
 ### Bash Script
 
 Run either one of the scripts provided in this repo to join the provider chain:
-* `join-rs-provider.sh` will create a `gaiad` service.
-* `join-rs-provider-cv.sh` will create a `cosmovisor` service.
+* `join-ics-provider.sh` will create a `gaiad` service.
+* `join-ics-provider-cv.sh` will create a `cosmovisor` service.
 * Both scripts must be run either as root or from a sudoer account.
 * Both scripts will attempt to download the amd64 binary from the Gaia [releases](https://github.com/cosmos/gaia/releases) page. You can modify the `CHAIN_BINARY_URL` to match your target architecture if needed.
 

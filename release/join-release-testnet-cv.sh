@@ -1,12 +1,12 @@
 #!/bin/bash
-# Set up a Gaia service to join the Cosmos Hub public testnet.
+# Set up a Gaia service to join the Cosmos Hub release testnet.
 
 # Configuration
 # You should only have to modify the values in this block
 # ***
 NODE_HOME=~/.gaia
-NODE_MONIKER=public-testnet
-SERVICE_NAME=gaiad
+NODE_MONIKER=release-testnet
+SERVICE_NAME=cosmovisor
 GAIA_VERSION=v15.2.0
 CHAIN_BINARY_URL=https://github.com/cosmos/gaia/releases/download/$GAIA_VERSION/gaiad-$GAIA_VERSION-linux-amd64
 STATE_SYNC=true
@@ -15,7 +15,7 @@ GAS_PRICE=0.005uatom
 
 CHAIN_BINARY='gaiad'
 CHAIN_ID=theta-testnet-001
-GENESIS_ZIPPED_URL=https://github.com/cosmos/testnets/raw/master/public/genesis.json.gz
+GENESIS_ZIPPED_URL=https://github.com/cosmos/testnets/raw/master/release/genesis.json.gz
 SEEDS="639d50339d7045436c756a042906b9a69970913f@seed-01.theta-testnet.polypore.xyz:26656,3e506472683ceb7ed75c1578d092c79785c27857@seed-02.theta-testnet.polypore.xyz:26656"
 SYNC_RPC_1=https://rpc.state-sync-01.theta-testnet.polypore.xyz:443
 SYNC_RPC_2=https://rpc.state-sync-02.theta-testnet.polypore.xyz:443
@@ -26,6 +26,13 @@ sudo apt-get install curl jq wget -y
 mkdir -p $HOME/go/bin
 export PATH=$PATH:$HOME/go/bin
 
+# Install go 1.21
+echo "Installing go..."
+rm go*linux-amd64.tar.gz
+wget https://go.dev/dl/go1.21.6.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.21.6.linux-amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
+
 # Install Gaia binary
 echo "Installing Gaia..."
 
@@ -34,12 +41,6 @@ wget $CHAIN_BINARY_URL -O $HOME/go/bin/$CHAIN_BINARY
 chmod +x $HOME/go/bin/$CHAIN_BINARY
 
 # or build from source
-# Install go 1.21
-# echo "Installing go..."
-# rm go*linux-amd64.tar.gz
-# wget https://go.dev/dl/go1.21.6.linux-amd64.tar.gz
-# sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.21.6.linux-amd64.tar.gz
-# export PATH=$PATH:/usr/local/go/bin
 # echo "Installing build-essential..."
 # sudo apt install build-essential -y
 # echo "Installing Gaia..."
@@ -79,18 +80,33 @@ wget $GENESIS_ZIPPED_URL
 gunzip genesis.json.gz -f
 cp genesis.json $NODE_HOME/config/genesis.json
 
+# Set up cosmovisor
+echo "Setting up cosmovisor..."
+mkdir -p $NODE_HOME/cosmovisor/genesis/bin
+cp $(which $CHAIN_BINARY) $NODE_HOME/cosmovisor/genesis/bin
+
+echo "Installing cosmovisor..."
+BINARY=$NODE_HOME/cosmovisor/genesis/bin/$CHAIN_BINARY
+go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.5.0
+
 sudo rm /etc/systemd/system/$SERVICE_NAME.service
 sudo touch /etc/systemd/system/$SERVICE_NAME.service
 
 echo "[Unit]"                               | sudo tee /etc/systemd/system/$SERVICE_NAME.service
-echo "Description=Gaia service"             | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "Description=Cosmovisor service"       | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "After=network-online.target"          | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo ""                                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "[Service]"                            | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "User=$USER"                           | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "ExecStart=$HOME/go/bin/$CHAIN_BINARY start --x-crisis-skip-assert-invariants --home $NODE_HOME" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "ExecStart=$HOME/go/bin/cosmovisor run start --x-crisis-skip-assert-invariants --home $NODE_HOME" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "Restart=no"                           | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "LimitNOFILE=4096"                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "Environment='DAEMON_NAME=$CHAIN_BINARY'"      | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "Environment='DAEMON_HOME=$NODE_HOME'" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "Environment='DAEMON_ALLOW_DOWNLOAD_BINARIES=true'" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "Environment='DAEMON_RESTART_AFTER_UPGRADE=true'" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "Environment='DAEMON_LOG_BUFFER_SIZE=512'" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "Environment='UNSAFE_SKIP_BACKUP=true'" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo ""                                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "[Install]"                            | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "WantedBy=multi-user.target"           | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
@@ -103,10 +119,10 @@ sudo systemctl start $SERVICE_NAME.service
 sudo systemctl restart systemd-journald
 
 # Add go and gaiad to the path
-echo "Setting up paths for go and gaiad bin..."
-echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> .profile
+echo "Setting up paths for go and cosmovisor current bin..."
+echo "export PATH=$PATH:/usr/local/go/bin:$NODE_HOME/cosmovisor/current/bin" >> .profile
 
 echo "***********************"
-echo "To see the Gaia log enter:"
+echo "To see the Cosmovisor log enter:"
 echo "journalctl -fu $SERVICE_NAME.service"
 echo "***********************"
