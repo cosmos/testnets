@@ -2,6 +2,7 @@
 
 | Date              | Testnet Incentives Program Period | Type              | Description                                                                                                                                              |
 | ----------------- | --------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| April 17 2024      | 5                                 | Consumer upgrade     | Consumer chain pion-1 to be upgraded                                                                                                             |
 | April 3 2024      | -                                 | Minor upgrade     | ✅ Provider chain upgrades to Gaia v15.2.0-rc0                                                                                                            |
 | March 27 2024     | 4                                 | Game Day          | ✅ Game day # 2: Liquid Staking Module                                                                                                                    |
 | March 27 2024     | -                                 | Minor upgrade     | ✅ Provider chain upgrades to Gaia v15.1.0                                                                                                                |
