@@ -53,12 +53,12 @@ Seed nodes:
 
 State sync nodes:
 
-1. `pion.rs-testnet.polypore.xyz:26657`
+1. `pion.ics-testnet.polypore.xyz:26657`
 
 Persistent nodes:
 
-1. `5f0604c2b8161004866c954c1d877f565b2fc69c@pion-banana.rs-testnet.polypore.xyz:26656`
-2. `6e7c0583e6e18fccedcceaffc1ac5a33ab898fa8@pion-cherry.rs-testnet.polypore.xyz:26656`
+1. `5f0604c2b8161004866c954c1d877f565b2fc69c@pion-banana.ics-testnet.polypore.xyz:26656`
+2. `6e7c0583e6e18fccedcceaffc1ac5a33ab898fa8@pion-cherry.ics-testnet.polypore.xyz:26656`
 
 ## Block Explorers
 

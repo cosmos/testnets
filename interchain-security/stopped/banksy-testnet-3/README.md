@@ -13,7 +13,7 @@ Otherwise you may manually join `banksy-testnet-3` using these notes:
 * Joining instructions: https://github.com/notional-labs/Composable-ICS-tesnet
 * Spawn time: `Available soon`
 * Genesis file (without CCV): https://raw.githubusercontent.com/notional-labs/Composable-ICS-tesnet/main/genesis.json
-* CCV file: https://raw.githubusercontent.com/cosmos/testnets/master/replicated-security/banksy-testnet-3/ccv.json
+* CCV file: https://raw.githubusercontent.com/cosmos/testnets/master/interchain-security/banksy-testnet-3/ccv.json
 * Pre-transition Composable binary: 
    * Version: [v5.0.0](https://github.com/notional-labs/Composable-ICS-tesnet/raw/main/binaries/v5.0.0/centaurid)
    * SHA256: `ef92568fed75492cee9b634ba368ed17e7c82737433e6918bc96f20e51a2b089`
@@ -75,7 +75,7 @@ centaurid version # v5.0.0
 The node will start running until the upgrade height, at which the node will halt. Detail about timeline and instruction can be seen at **Launch Stages** section. To download new ccv file at `spawn_time`, and apply new version after upgrade height, see following commands:
 ```bash
 # Download new genesis-ccv at `spawn_time`
-wget -O $HOME/.banksy/config/ccv.json https://raw.githubusercontent.com/cosmos/testnets/master/replicated-security/banksy-testnet-3/ccv.json
+wget -O $HOME/.banksy/config/ccv.json https://raw.githubusercontent.com/cosmos/testnets/master/interchain-security/banksy-testnet-3/ccv.json
 ```
 
 ```bash
@@ -99,6 +99,6 @@ centaurid start --p2p.seeds c0f197bdf6c4a4a16eb9db112d1ec9545336fd43@168.119.91.
 |2   |Upgrade in Composable testnet and Consumer Addition on provider chain proposals voting period time | [PROVIDER] Optional: Vote for the consumer-addition proposal.  | The proposals that provide new binary for the transition, and passing Composable testnet from sovereign to consumer chain.                                 |
 |3   |The proposals passed                                 |Nothing                                                                           | The proposals passed, `spawn_time` is set. After `spawn_time` is reached, the `ccv.json` file containing `ccv` state will be provided from provider chain.
 |4   |Voting period for consumer-addition proposal.     |[PROVIDER] Optional: Vote for the consumer-addition proposal.                                 |Passing the consumer-addition proposal on the provider side.|
-|5   |`spawn_time` reached                                  |The `ccv.json` file will be provided in the testnets repo. Place the newly generated `ccv.json` in the `$HOME/.banksy/config` directory. <br/><br/>NOTE: Do NOT replace the existing genesis file.|`ccv` state is provided from provider chain. The new `ccv.json` file with ccv data will be published in `https://github.com/cosmos/testnets/tree/master/replicated-security/banksy-testnet-3`|
+|5   |`spawn_time` reached                                  |The `ccv.json` file will be provided in the testnets repo. Place the newly generated `ccv.json` in the `$HOME/.banksy/config` directory. <br/><br/>NOTE: Do NOT replace the existing genesis file.|`ccv` state is provided from provider chain. The new `ccv.json` file with ccv data will be published in `https://github.com/cosmos/testnets/tree/master/interchain-security/banksy-testnet-3`|
 |6   |Upgrade height reached     | Restart your node with the post-transition binary `v6.0.1-ics`. The upgrade handler will automatically read the existing genesis file and new `ccv.json` file. | Composable chain halts to transition to being a consumer chain.                                                                                     |
 |7   |3 blocks after upgrade height                     |Celebrate! :tada: 🥂                                                |Composable blocks are now produced by the provider validator set|

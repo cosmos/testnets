@@ -54,14 +54,14 @@ Connections and channels will be posted here shortly after the chain launches.
 ### Clients
 
 * `07-tendermint-0`
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `07-tendermint-1`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `07-tendermint-1`
 
 ### Channels
 
 * `channel-0`: consumer port
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-2`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `channel-2`
 * `channel-1`: transfer port
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-3`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `channel-3`
 
 ## How to Join
 

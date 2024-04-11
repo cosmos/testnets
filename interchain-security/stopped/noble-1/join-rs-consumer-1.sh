@@ -18,7 +18,7 @@ CHAIN_ID=noble-1
 SEEDS="233598946a15427b9541376e7cfc30dab07c4327@35.247.60.27:26656,359d63178736911e3e4c716f2491cafaa687351a@34.168.48.1:26656,3d2516052fd8b134428971d1218a149bba6e44be@35.247.10.56:26656"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
-GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/noble-1/noble-1-genesis.json
+GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/noble-1/noble-1-genesis.json
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y

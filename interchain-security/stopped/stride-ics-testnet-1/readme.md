@@ -63,7 +63,7 @@ replace the binary
 ```sh
 mkdir -p $HOME/.sovereign/config
 
-curl -L https://github.com/cosmos/testnets/raw/master/replicated-security/stride-ics-testnet-1/genesis.json -o $HOME/.sovereign/config/genesis.json
+curl -L https://github.com/cosmos/testnets/raw/master/interchain-security/stride-ics-testnet-1/genesis.json -o $HOME/.sovereign/config/genesis.json
 ```
 </details>
 

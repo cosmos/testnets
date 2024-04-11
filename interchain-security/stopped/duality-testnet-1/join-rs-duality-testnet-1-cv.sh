@@ -21,7 +21,7 @@ CHAIN_ID=duality-testnet-1
 SEEDS="df5b21498dd5594a609e2e2af41434bbd9297ffd@p2p.testnet-1.duality.xyz:26656"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
-GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/duality-testnet-1/duality-testnet-1-genesis.json
+GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/duality-testnet-1/duality-testnet-1-genesis.json
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y

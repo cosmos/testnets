@@ -25,9 +25,9 @@ GAS_PRICE=0.005uatom
 CHAIN_BINARY='gaiad'
 CHAIN_ID=provider
 GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/provider/provider-genesis.json
-SEEDS="08ec17e86dac67b9da70deb20177655495a55407@provider-seed-01.rs-testnet.polypore.xyz:26656,4ea6e56300a2f37b90e58de5ee27d1c9065cf871@provider-seed-02.rs-testnet.polypore.xyz:26656"
-SYNC_RPC_1=https://rpc.provider-state-sync-01.rs-testnet.polypore.xyz:443
-SYNC_RPC_2=https://rpc.provider-state-sync-02.rs-testnet.polypore.xyz:443
+SEEDS="08ec17e86dac67b9da70deb20177655495a55407@provider-seed-01.ics-testnet.polypore.xyz:26656,4ea6e56300a2f37b90e58de5ee27d1c9065cf871@provider-seed-02.ics-testnet.polypore.xyz:26656"
+SYNC_RPC_1=https://rpc.provider-state-sync-01.ics-testnet.polypore.xyz:443
+SYNC_RPC_2=https://rpc.provider-state-sync-02.ics-testnet.polypore.xyz:443
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_2"
 
 # Install wget and jq

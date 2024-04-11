@@ -18,7 +18,7 @@ STATE_SYNC=true
 CHAIN_BINARY='neutrond'
 CHAIN_ID=pion-1
 SEEDS="0de4d730b5341d3a83721e1cbb5ce7772e26a400@p2p-palvus.pion-1.ntrn.tech:26656"
-SYNC_RPC_1=http://pion.rs-testnet.polypore.xyz:26657
+SYNC_RPC_1=https://rpc.pion.ics-testnet.polypore.xyz:443
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_1"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.

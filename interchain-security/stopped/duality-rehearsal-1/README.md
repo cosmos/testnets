@@ -46,19 +46,19 @@ Seed nodes:
 ### Clients
 
 * `07-tendermint-0`
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `07-tendermint-14`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `07-tendermint-14`
 
 ### Connections
 
 * `connection-0`
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `connection-10`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `connection-10`
 
 ### Channels
 
 * `channel-0`: consumer port
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-17`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `channel-17`
 * `channel-1`: transfer port
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-18`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `channel-18`
 
 ## How to Join
 

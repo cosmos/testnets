@@ -8,7 +8,7 @@ We will post announcements in the `testnet-announcements` channel in Discord to 
 
 ## Tasks
 
-All tasks will be performed in the `provider` chain of the [Replicated Security Testnet](/replicated-security/provider/README.md).
+All tasks will be performed in the `provider` chain of the [Interchain Security Testnet](/interchain-security/provider/README.md).
 
 * Task 1: Make a deposit on proposal [109](https://explorer.polypore.xyz/provider/gov/109)
 * Task 2: Vote YES on proposal [110](https://explorer.polypore.xyz/provider/gov/110)

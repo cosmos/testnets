@@ -21,7 +21,7 @@ SYNC_RPC_1=https://rpc.rehearsal.ntrn.tech:443
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_1"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
-GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/neutron-rehearsal-1/neutron-rehearsal-1-genesis.json
+GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/neutron-rehearsal-1/neutron-rehearsal-1-genesis.json
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
