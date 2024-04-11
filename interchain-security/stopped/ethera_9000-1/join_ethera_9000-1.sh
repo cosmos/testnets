@@ -22,8 +22,8 @@ CHAIN_ID=ethera_9000-1
 SEEDS="e6830209e30448357e64a77279c5784b0d0232ee@p2p1.ethera.aetherevm.com:26656,88266f83878399bffd8c3d627a1f401cc389b81f@p2p2.ethera.aetherevm.com:26656"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
-GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/ethera_9000-1/ethera_9000-1-genesis.json
-BINARY_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/ethera_9000-1/aetherd-linux-amd64
+GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/ethera_9000-1/ethera_9000-1-genesis.json
+BINARY_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/ethera_9000-1/aetherd-linux-amd64
 
 # Install wget and jq
 sudo apt-get install jq wget -y

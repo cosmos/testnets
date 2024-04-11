@@ -21,7 +21,7 @@ SYNC_RPC_1=https://rpc.baryon.ntrn.info:443
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_1"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
-GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/baryon-1/baryon-1-genesis.json
+GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/baryon-1/baryon-1-genesis.json
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y

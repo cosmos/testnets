@@ -80,7 +80,7 @@ Or run the second script provided to set up a `aetherd` service with `Cosmovisor
 Install Aether binary.
 
 ```
-$ wget https://github.com/cosmos/testnets/raw/master/replicated-security/ethera_9000-1/aetherd-linux-amd64 -O aetherd
+$ wget https://github.com/cosmos/testnets/raw/master/interchain-security/ethera_9000-1/aetherd-linux-amd64 -O aetherd
 ```
 
 After installation please check installed version by running:

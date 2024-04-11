@@ -23,28 +23,28 @@ The provider chain will upgrade to Gaia [v16.0.0-rc0](https://github.com/cosmos/
 
 Endpoints are exposed as subdomains for the sentry and snapshot nodes (described below) as follows:
 
-* `https://rpc.<node-name>.rs-testnet.polypore.xyz:443`
-* `https://rest.<node-name>.rs-testnet.polypore.xyz:443`
-* `https://grpc.<node-name>.rs-testnet.polypore.xyz:443`
-* `p2p.<node-name>.rs-testnet.polypore.xyz:26656`
+* `https://rpc.<node-name>.ics-testnet.polypore.xyz:443`
+* `https://rest.<node-name>.ics-testnet.polypore.xyz:443`
+* `https://grpc.<node-name>.ics-testnet.polypore.xyz:443`
+* `p2p.<node-name>.ics-testnet.polypore.xyz:26656`
 * `https://rpc-rs.cosmos.nodestake.top`
 * `https://api-rs.cosmos.nodestake.top`
 * `https://grpc-rs.cosmos.nodestake.top`
 
 Sentries:
 
-1. `provider-sentry-01.rs-testnet.polypore.xyz`
-2. `provider-sentry-02.rs-testnet.polypore.xyz`
+1. `provider-sentry-01.ics-testnet.polypore.xyz`
+2. `provider-sentry-02.ics-testnet.polypore.xyz`
 
 Seed nodes:
 
-1. `08ec17e86dac67b9da70deb20177655495a55407@provider-seed-01.rs-testnet.polypore.xyz:26656`
-2. `4ea6e56300a2f37b90e58de5ee27d1c9065cf871@provider-seed-02.rs-testnet.polypore.xyz:26656`
+1. `08ec17e86dac67b9da70deb20177655495a55407@provider-seed-01.ics-testnet.polypore.xyz:26656`
+2. `4ea6e56300a2f37b90e58de5ee27d1c9065cf871@provider-seed-02.ics-testnet.polypore.xyz:26656`
 
 The following state sync nodes serve snapshots every 1000 blocks:
 
-1. `provider-state-sync-01.rs-testnet.polypore.xyz`
-2. `provider-state-sync-02.rs-testnet.polypore.xyz`
+1. `provider-state-sync-01.ics-testnet.polypore.xyz`
+2. `provider-state-sync-02.ics-testnet.polypore.xyz`
 
 ## Add to Keplr
 

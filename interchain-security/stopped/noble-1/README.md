@@ -17,7 +17,7 @@ The `noble-1` chain will be launched as a persistent dummy chain to test basic I
 * **Spawn time**: `2023-02-09T16:00:00.000000Z`
 * **GitHub repo**: [strangelove-ventures/noble-1](https://github.com/strangelove-ventures/noble)
 * **Release**: [`v0.2.0`](https://github.com/strangelove-ventures/noble/releases/tag/v0.2.0) 
-* **Genesis file with CCV state:** [noble-1-genesis.json](https://raw.githubusercontent.com/strangelove-ventures/cosmos-testnets/master/replicated-security/noble-1/noble-1-genesis.json)
+* **Genesis file with CCV state:** [noble-1-genesis.json](https://raw.githubusercontent.com/strangelove-ventures/cosmos-testnets/master/interchain-security/noble-1/noble-1-genesis.json)
 
 * **Genesis file _without CCV state_:** (noble-1-genesis-without-ccv.json), verify with `shasum -a 256 noble-1-genesis-without-ccv.json`
 * **SHA256 for genesis file _without CCV state_**: `54be5eb26d18d6927914db5971c925eedc5f91112beb0529ae4d1450334de282`
@@ -83,14 +83,14 @@ Seed nodes:
 ### Clients
 
 * `07-tendermint-0`
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `07-tendermint-2`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `07-tendermint-2`
 
 ### Channels
 
 * `channel-1`: consumer port
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-5`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `channel-5`
 * `channel-2`: transfer port
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-6`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `channel-6`
 
 ## How to Join
 

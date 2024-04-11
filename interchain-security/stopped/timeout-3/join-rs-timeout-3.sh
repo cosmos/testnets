@@ -15,7 +15,7 @@ SERVICE_NAME=timeout-3
 
 CHAIN_BINARY='interchain-security-cd'
 CHAIN_ID=timeout-3
-GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/timeout-3/timeout-3-genesis.json
+GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/timeout-3/timeout-3-genesis.json
 SEEDS="08ec17e86dac67b9da70deb20177655495a55407@timeout-3-seed.rs-testnet.polypore.xyz:26656"
 
 # Install wget and jq

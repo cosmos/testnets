@@ -19,7 +19,7 @@ SEEDS="233598946a15427b9541376e7cfc30dab07c4327@35.247.60.27:26656,359d631787369
 
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
-GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/noble-1/noble-1-genesis.json
+GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/noble-1/noble-1-genesis.json
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y

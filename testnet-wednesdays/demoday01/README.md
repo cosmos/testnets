@@ -28,13 +28,13 @@ We will post announcements in the `testnet-announcements` channel in Discord to 
 
 ## Tasks
 
-All tasks will be performed in the `provider` chain of the [Replicated Security Testnet](/replicated-security/provider/README.md).
+All tasks will be performed in the `provider` chain of the [Interchain Security Testnet](/interchain-security/provider/README.md).
 
-* Task 1: Vote YES on proposal [101](https://explorer.rs-testnet.polypore.xyz/provider/gov/101)
-* Task 2: Vote NO on proposal [102](https://explorer.rs-testnet.polypore.xyz/provider/gov/102)
-* Task 3: Vote NOWITHVETO on proposal [103](https://explorer.rs-testnet.polypore.xyz/provider/gov/103)
-* Task 4: Vote ABSTAIN on proposal [104](https://explorer.rs-testnet.polypore.xyz/provider/gov/104)
-* Task 5: DO NOT VOTE on proposal [105](https://explorer.rs-testnet.polypore.xyz/provider/gov/105)
+* Task 1: Vote YES on proposal [101](https://explorer.ics-testnet.polypore.xyz/provider/gov/101)
+* Task 2: Vote NO on proposal [102](https://explorer.ics-testnet.polypore.xyz/provider/gov/102)
+* Task 3: Vote NOWITHVETO on proposal [103](https://explorer.ics-testnet.polypore.xyz/provider/gov/103)
+* Task 4: Vote ABSTAIN on proposal [104](https://explorer.ics-testnet.polypore.xyz/provider/gov/104)
+* Task 5: DO NOT VOTE on proposal [105](https://explorer.ics-testnet.polypore.xyz/provider/gov/105)
 
 ## Testnet Incentives Program (TIP) Eligibility
 

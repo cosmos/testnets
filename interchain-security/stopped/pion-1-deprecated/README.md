@@ -58,19 +58,19 @@ The following state sync node serve snapshots every 1000 blocks:
 ### Clients
 
 * `07-tendermint-0`
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `07-tendermint-13`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `07-tendermint-13`
 
 ### Connections
 
 * `connection-0`
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `connection-8`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `connection-8`
 
 ### Channels
 
 * `channel-0`: consumer port
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-14`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `channel-14`
 * `channel-1`: transfer port
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-16`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `channel-16`
 
 ## How to Join
 

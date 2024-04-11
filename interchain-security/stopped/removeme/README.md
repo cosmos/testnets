@@ -46,19 +46,19 @@ Persistent nodes:
 ### Clients
 
 * `07-tendermint-0`
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `07-tendermint-8`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `07-tendermint-8`
 
 ### Connections
 
 * `connection-0`
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `connection-4`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `connection-4`
 
 ### Channels
 
 * `channel-0`: consumer port
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-8`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `channel-8`
 * `channel-1`: transfer port
-  * Counterparty: [`provider`](/replicated-security/provider/README.md) `channel-9`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `channel-9`
 
 ## How to Join
 

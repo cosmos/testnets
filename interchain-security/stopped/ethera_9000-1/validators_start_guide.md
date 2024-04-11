@@ -14,10 +14,10 @@ This is a small guide to help validators to join Ethera:
 
 Once we pass the spawn time, Ethera can be started.
 The best way of starting Ethera is to use our scripts provided on [Testnets](https://github.com/cosmos/testnets):
-- [join_ethera_9000-1_cv.sh](https://github.com/cosmos/testnets/blob/master/replicated-security/ethera_9000-1/join_ethera_9000-1_cv.sh)
+- [join_ethera_9000-1_cv.sh](https://github.com/cosmos/testnets/blob/master/interchain-security/ethera_9000-1/join_ethera_9000-1_cv.sh)
   - Binaries are targeting Linux AMD64
   - This starts the chain with Cosmos Visor as a service
-- [join_ethera_9000-1.sh](https://github.com/cosmos/testnets/blob/master/replicated-security/ethera_9000-1/join_ethera_9000-1.sh)
+- [join_ethera_9000-1.sh](https://github.com/cosmos/testnets/blob/master/interchain-security/ethera_9000-1/join_ethera_9000-1.sh)
   - Binaries are targeting Linux AMD64
   - This starts the chain without Cosmos Visor as a service
 
@@ -28,8 +28,8 @@ To start Ethera manually, you can run this command:
 
 ```sh
 # Download the genesis with ccv
-GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/ethera_9000-1/ethera_9000-1-genesis.json
-BINARY_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/ethera_9000-1/aetherd-linux-amd64
+GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/ethera_9000-1/ethera_9000-1-genesis.json
+BINARY_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/ethera_9000-1/aetherd-linux-amd64
 SEEDS="e6830209e30448357e64a77279c5784b0d0232ee@p2p1.ethera.aetherevm.com:26656,88266f83878399bffd8c3d627a1f401cc389b81f@p2p2.ethera.aetherevm.com:26656"
 NODE_HOME=~/.aetherd
 NODE_MONIKER=ethera_9000-1

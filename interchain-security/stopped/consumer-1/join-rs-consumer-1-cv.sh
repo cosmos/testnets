@@ -22,7 +22,7 @@ SYNC_RPC_2=http://consumer1-state-sync-02.rs-testnet.polypore.xyz:26657
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_2"
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
-GENESIS_URL=https://github.com/cosmos/testnets/raw/master/replicated-security/consumer-1/consumer-1-genesis.json
+GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/consumer-1/consumer-1-genesis.json
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
