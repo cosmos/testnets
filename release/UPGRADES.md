@@ -1,11 +1,28 @@
 # Scheduled Upgrades 🗓️ 
 
+## v16.0.0-rc0
+
+### Schedule
+
+| Date          | Testnet plan                                  |
+| ------------- | --------------------------------------------- |
+| April 24 2024 | Gaia `v16.0.0-rc0` is live on the testnet     |
+| April 23 2024 | Submit and pass v16 software upgrade proposal |
+
+* **Version before upgrade**: `v15.2.0`
+* **Version after upgrade**: `v16.0.0-rc0`
+
+### Upgrade details
+
+* **Upgrade height: `TBD`**
+* Estimated upgrade time: `2024-04-24 13:30 UTC`
+
 ## v15.2.0-rc0
 
 ### Schedule
 
-| Date             | Testnet plan                              |
-| ---------------- | ----------------------------------------- |
+| Date         | Testnet plan                              |
+| ------------ | ----------------------------------------- |
 | April 3 2024 | ✅ Gaia v15.2.0-rc0 is live on the testnet |
 | April 2 2024 | ✅ Set upgrade halt height: `21040550`     |
 
@@ -30,10 +47,10 @@
 
 ### Schedule
 
-| Date             | Testnet plan                              |
-| ---------------- | ----------------------------------------- |
+| Date          | Testnet plan                          |
+| ------------- | ------------------------------------- |
 | March 27 2024 | ✅ Gaia v15.1.0 is live on the testnet |
-| March 26 2024 | ✅ Set upgrade halt height: `20933250`     |
+| March 26 2024 | ✅ Set upgrade halt height: `20933250` |
 
 * **Version before upgrade**: `v15.0.0-rc3`
 * **Version after upgrade**: `v15.1.0`
