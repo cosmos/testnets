@@ -13,10 +13,10 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 ## v16.0.0-rc0 Upgrade
 
-The provider chain will upgrade to Gaia [v16.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v16.0.0-rc0) on **TBA**.
+The provider chain will upgrade to Gaia [v16.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v16.0.0-rc0) on **April 24, 2024**.
 
 * **Block height: `TBA`**
-* Target upgrade time: `TBA`
+* Target upgrade time: `2024-04-24 14:00 UTC`
 * Golang version: 1.21
 
 ## Endpoints
