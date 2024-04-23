@@ -1,20 +1,20 @@
 # Scheduled Upgrades 🗓️ 
 
-## v16.0.0-rc0
+## v16.0.0-rc2
 
 ### Schedule
 
 | Date          | Testnet plan                                  |
 | ------------- | --------------------------------------------- |
-| April 24 2024 | Gaia `v16.0.0-rc0` is live on the testnet     |
-| April 23 2024 | Submit and pass v16 software upgrade proposal |
+| April 24 2024 | Gaia `v16.0.0-rc2` is live on the testnet     |
+| April 23 2024 | ✅ Submit and pass v16 software upgrade [proposal](https://explorer.polypore.xyz/theta-testnet-001/gov/246) |
 
 * **Version before upgrade**: `v15.2.0`
-* **Version after upgrade**: `v16.0.0-rc0`
+* **Version after upgrade**: `v16.0.0-rc2`
 
 ### Upgrade details
 
-* **Upgrade height: `TBD`**
+* **Upgrade height: `21356800`**
 * Estimated upgrade time: `2024-04-24 13:30 UTC`
 
 ## v15.2.0-rc0
