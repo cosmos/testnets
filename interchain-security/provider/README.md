@@ -137,31 +137,26 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Start the service.
 * When the node reaches height `4064550`, stop the service.
 * Replace the `v14.0.0-rc0` binary with the `v14.1.0-rc0` one.
-* Set `halt-height = 0` in `~/.gaia/config/app.toml`.
-* Start the service.
+* Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `5208900`, it will attempt to upgrade to Gaia `v15`. You can use Cosmovisor's auto-download feature or install the `v15.0.0-rc0` release binary.
 * Before the node reaches height `5309400`, stop the service.
-* Set `halt-height = 5309400` in `~/.gaia/config/app.toml`.
+* Set `halt-height = 5309400` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `5309400`, stop the service.
 * Replace the `v15.0.0-rc0` binary with the `v15.0.0-rc1` one.
-* Set `halt-height = 0` in `~/.gaia/config/app.toml`.
-* Start the service.
+* Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
 * Before the node reaches height `5425200`, stop the service.
-* Set `halt-height = 5425200` in `~/.gaia/config/app.toml`.
+* Set `halt-height = 5425200` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `5425200`, stop the service.
 * Replace the `v15.0.0-rc1` binary with the `v15.0.0-rc3` one.
-* Set `halt-height = 0` in `~/.gaia/config/app.toml`.
-* Start the service.
+* Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
 * Before the node reaches height `5793400`, stop the service.
-* Set `halt-height = 5793400` in `~/.gaia/config/app.toml`.
+* Set `halt-height = 5793400` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `5793400`, stop the service.
 * Replace the `v15.0.0-rc3` binary with the `v15.1.0` one.
-* Set `halt-height = 0` in `~/.gaia/config/app.toml`.
-* Start the service.
+* Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
 * Before the node reaches height `5887600`, stop the service.
-* Set `halt-height = 5887600` in `~/.gaia/config/app.toml`.
+* Set `halt-height = 5887600` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `5887600`, stop the service.
 * Replace the `v15.1.0` binary with the `v15.2.0` one.
-* Set `halt-height = 6183000` in `~/.gaia/config/app.toml`.
-* Start the service.
+* Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `6183000`, it will attempt to upgrade to Gaia `v16`. You can use Cosmovisor's auto-download feature or install the `v16.0.0-rc2` release binary.
