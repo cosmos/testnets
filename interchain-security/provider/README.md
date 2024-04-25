@@ -5,19 +5,19 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v15.2.0`](https://github.com/cosmos/gaia/releases/tag/v15.2.0), upgraded from v14 at block height `5208900`.
+* **Current Gaia Version**: [`v16.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v16.0.0-rc2), upgraded from v15 at block height `6183000`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v16.0.0-rc2 Upgrade
+## v17.0.0-rc0 Upgrade
 
-The provider chain will upgrade to Gaia [v16.0.0-rc2](https://github.com/cosmos/gaia/releases/tag/v16.0.0-rc2) on **April 24, 2024**.
+The provider chain will upgrade to Gaia [v17.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v17.0.0-rc0) on **TBA**.
 
-* **Block height: `6183000`**
-* Target upgrade time: `2024-04-24 14:00 UTC`
-* Proposal [118](https://explorer.polypore.xyz/provider/gov/118)
+* **Block height: `TBA`**
+* Target upgrade time: `TBA`
+* Proposal [TBA](https://explorer.polypore.xyz/provider/gov/)
 * Golang version: 1.21
 
 ## Endpoints
@@ -137,30 +137,26 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Start the service.
 * When the node reaches height `4064550`, stop the service.
 * Replace the `v14.0.0-rc0` binary with the `v14.1.0-rc0` one.
-* Set `halt-height = 0` in `~/.gaia/config/app.toml`.
-* Start the service.
+* Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `5208900`, it will attempt to upgrade to Gaia `v15`. You can use Cosmovisor's auto-download feature or install the `v15.0.0-rc0` release binary.
 * Before the node reaches height `5309400`, stop the service.
-* Set `halt-height = 5309400` in `~/.gaia/config/app.toml`.
+* Set `halt-height = 5309400` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `5309400`, stop the service.
 * Replace the `v15.0.0-rc0` binary with the `v15.0.0-rc1` one.
-* Set `halt-height = 0` in `~/.gaia/config/app.toml`.
-* Start the service.
+* Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
 * Before the node reaches height `5425200`, stop the service.
-* Set `halt-height = 5425200` in `~/.gaia/config/app.toml`.
+* Set `halt-height = 5425200` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `5425200`, stop the service.
 * Replace the `v15.0.0-rc1` binary with the `v15.0.0-rc3` one.
-* Set `halt-height = 0` in `~/.gaia/config/app.toml`.
-* Start the service.
+* Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
 * Before the node reaches height `5793400`, stop the service.
-* Set `halt-height = 5793400` in `~/.gaia/config/app.toml`.
+* Set `halt-height = 5793400` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `5793400`, stop the service.
 * Replace the `v15.0.0-rc3` binary with the `v15.1.0` one.
-* Set `halt-height = 0` in `~/.gaia/config/app.toml`.
-* Start the service.
+* Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
 * Before the node reaches height `5887600`, stop the service.
-* Set `halt-height = 5887600` in `~/.gaia/config/app.toml`.
+* Set `halt-height = 5887600` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `5887600`, stop the service.
 * Replace the `v15.1.0` binary with the `v15.2.0` one.
-* Set `halt-height = 0` in `~/.gaia/config/app.toml`.
-* Start the service.
+* Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
+* When the node reaches height `6183000`, it will attempt to upgrade to Gaia `v16`. You can use Cosmovisor's auto-download feature or install the `v16.0.0-rc2` release binary.

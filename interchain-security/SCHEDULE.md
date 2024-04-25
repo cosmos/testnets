@@ -2,7 +2,7 @@
 
 | Date              | Testnet Incentives Program Period | Type              | Description                                                                                                                                              |
 | ----------------- | --------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| April 24 2024     | 5                                 | Major upgrade     | Provider chain upgraded to Gaia v16.0.0-rc2                                                                                                              |
+| April 24 2024     | 5                                 | Major upgrade     | ✅ Provider chain upgraded to Gaia v16.0.0-rc2                                                                                                              |
 | April 23 2024     | -                                 | Major upgrade     | ✅ Proposal to upgrade provider chain to Gaia v16 passes                                                                                                    |
 | April 17 2024     | 5                                 | Consumer upgrade  | ✅ Consumer chain pion-1 upgraded to v3.0.4                                                                                                               |
 | April 3 2024      | -                                 | Minor upgrade     | ✅ Provider chain upgrades to Gaia v15.2.0-rc0                                                                                                            |
