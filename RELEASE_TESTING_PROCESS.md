@@ -38,6 +38,12 @@ Validators participating in the testnets will be given advance notice that a sof
 
 ## Test Results
 
+### Gaia v16
+
+* [Automated testing report](https://github.com/hyphacoop/cosmos-release-testing/blob/main/test-results/gaia-v16/automated-tests.md)
+* [Testnet upgrades](https://github.com/hyphacoop/cosmos-release-testing/blob/main/test-results/gaia-v16/testnet-upgrades.md)
+
+
 ### Gaia v15
 
 * [Automated testing report](https://github.com/hyphacoop/cosmos-release-testing/blob/main/test-results/gaia-v15/automated-tests.md)
