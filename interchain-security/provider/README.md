@@ -164,7 +164,4 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Replace the `v15.1.0` binary with the `v15.2.0` one.
 * Set `halt-height = 6183000` in `~/.gaia/config/app.toml`.
 * Start the service.
-* When the node reaches height `6183000`, stop the service.
-* Replace the `v15.2.0` binary with the `v16.0.0-rc2` one.
-* Set `halt-height = 0` in `~/.gaia/config/app.toml`.
-* Start the service.
+* When the node reaches height `6183000`, it will attempt to upgrade to Gaia `v16`. You can use Cosmovisor's auto-download feature or install the `v16.0.0-rc2` release binary.
