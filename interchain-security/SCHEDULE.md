@@ -2,8 +2,10 @@
 
 | Date              | Testnet Incentives Program Period | Type              | Description                                                                                                                                              |
 | ----------------- | --------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| April 24 2024     | 5                                 | Major upgrade     | ✅ Provider chain upgraded to Gaia v16.0.0-rc2                                                                                                              |
-| April 23 2024     | -                                 | Major upgrade     | ✅ Proposal to upgrade provider chain to Gaia v16 passes                                                                                                    |
+| May 17 2024       | -                                 | Testnet           | ISLE Testnet ends                                                                                                                                        |
+| May 13 2024       | -                                 | Testnet           | [ISLE Testnet](/isle/README.md) begins  ⚡                                                                                                                |
+| April 24 2024     | 5                                 | Major upgrade     | ✅ Provider chain upgraded to Gaia v16.0.0-rc2                                                                                                            |
+| April 23 2024     | -                                 | Major upgrade     | ✅ Proposal to upgrade provider chain to Gaia v16 passes                                                                                                  |
 | April 17 2024     | 5                                 | Consumer upgrade  | ✅ Consumer chain pion-1 upgraded to v3.0.4                                                                                                               |
 | April 3 2024      | -                                 | Minor upgrade     | ✅ Provider chain upgrades to Gaia v15.2.0-rc0                                                                                                            |
 | March 27 2024     | 4                                 | Game Day          | ✅ Game day # 2: Liquid Staking Module                                                                                                                    |
