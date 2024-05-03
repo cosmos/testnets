@@ -7,7 +7,7 @@
 | Date          | Testnet plan                                  |
 | ------------- | --------------------------------------------- |
 | May 8 2024 | Gaia `v17.0.0-rc0` is live on the testnet     |
-| May 7 2024 | Submit and pass v16 software upgrade |
+| May 7 2024 | Submit and pass v17 software upgrade |
 
 * **Version before upgrade**: `v16.0.0`
 * **Version after upgrade**: `v17.0.0-rc0`
