@@ -25,7 +25,7 @@ For day 2, we will launch a top-N chain and an opt-in one.
 * Set up a node for your validator before the spawn time
   * **`test-faroe-1` chain details will be posted the week of May 6**
 * [Vote](./instructions.md#vote-on-a-proposal) YES to the `consumer-addition` proposal
-* [Opt-in](./instructions.md#opt-in-to-a-consumer-chain) using a unique key before the spawn time
+* [Opt-in](./instructions.md#opt-in-to-a-consumer-chain) using a unique pubkey before the spawn time
 * Start your validator node after the spawn time
   * The genesis file will be posted to this repo within three minutes after the spawn time
   * Hypha nodes will start 15 minutes after the spawn time
@@ -53,11 +53,11 @@ For day 2, we will launch a top-N chain and an opt-in one.
 * Set up a node for your validator before the spawn time
   * **`test-galapagos-1` chain details will be posted the week of May 6**
 * [Vote](./instructions.md#vote-on-a-proposal) YES to the `consumer-addition` proposal
-* [Opt-in](./instructions.md#opt-in-to-a-consumer-chain) using a unique key before the spawn time
+* [Opt-in](./instructions.md#opt-in-to-a-consumer-chain) using a unique pubkey before the spawn time
 * Start your validator node after the spawn time
   * The genesis file will be posted to this repo within three minutes after the spawn time
   * Hypha nodes will start 15 minutes after the spawn time
 * [Opt-out](./instructions.md#opt-out-from-a-consumer-chain) after the CCV channel is established
-* [Opt back in](./instructions.md#opt-in-to-a-consumer-chain) using a unique key after opting out
+* [Opt back in](./instructions.md#opt-in-to-a-consumer-chain) using a unique pubkey after opting out
   * You can re-use the same key you used for this chain before launch
 * [Set a commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain) before the consumer chain is offboarded
