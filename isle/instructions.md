@@ -37,9 +37,14 @@ interchain-security-pd keys parse <consumer cosmosvalcons address>
 
 ## Opt-in to a consumer chain
 
-Opt-in transaction
+Opt-in transaction when a consensus key has been assigned already
 ```
-gaiadd tx provider opt-in <consumer-chain-id> <consumer public key>
+gaiad tx provider opt-in <consumer-chain-id>
+```
+
+Opt-in transaction when a consensus key has not been assigned yet
+```
+gaiad tx provider opt-in <consumer-chain-id> <consumer public key>
 ```
 * The public key can be obtained by running the following in the consumer node
   ```
