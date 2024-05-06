@@ -18,7 +18,7 @@ For day 2, we will launch a top-N chain and an opt-in one.
 * 15:00: Chain expected to be producing blocks
 * 15:30: CCV channel expected to be established
 * 16:30: Validators start being rotated in and out of top N
-* 14:30 (Day 3): Consumer chain is offboarded
+* 11:30 (Day 3): Consumer chain is offboarded
 
 ### Instructions
 
@@ -46,7 +46,7 @@ For day 2, we will launch a top-N chain and an opt-in one.
 * 15:45: Hypha nodes start
 * 16:00: Chain expected to be producing blocks
 * 16:30: CCV channel expected to be established
-* 15:30 (Day 3): Consumer chain is offboarded
+* 12:30 (Day 3): Consumer chain is offboarded
 
 ### Instructions
 

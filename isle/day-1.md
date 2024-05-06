@@ -17,7 +17,7 @@ Day 1 will involve launching a single top-N chain to introduce Partial Set Secur
 * 15:30: Chain expected to be producing blocks
 * 16:00: CCV channel expected to be established
 * 17:00: Validators start being rotated in and out of top N
-* 15:00 (Day 2): Consumer chain is offboarded via consumer-removal proposal
+* 12:00 (Day 2): Consumer chain is offboarded via consumer-removal proposal
 
 ### Instructions
 
