@@ -15,9 +15,10 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 The provider chain will upgrade to Gaia [v17.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v17.0.0-rc0) on **May 8, 2024**.
 
-* **Block height: `TBA`**
+* **Block height: `6380200`**
 * Target upgrade time: `2024-05-08 14:00 UTC`
-* Proposal [TBA](https://explorer.polypore.xyz/provider/gov/)
+  * [Mintscan countdown](https://www.mintscan.io/ics-testnet-provider/block/6380200)
+* Proposal [122](https://explorer.polypore.xyz/provider/gov/122)
 * Golang version: 1.21
 
 ## Endpoints
@@ -160,3 +161,4 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Replace the `v15.1.0` binary with the `v15.2.0` one.
 * Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `6183000`, it will attempt to upgrade to Gaia `v16`. You can use Cosmovisor's auto-download feature or install the `v16.0.0-rc2` release binary.
+* When the node reaches height `6380200`, it will attempt to upgrade to Gaia `v17`. You can use Cosmovisor's auto-download feature or install the `v17.0.0-rc0` release binary.
