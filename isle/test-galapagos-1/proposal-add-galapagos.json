@@ -1,0 +1,20 @@
+{
+    "title": "ISLE: Add the test-galapagos-1 consumer chain",
+    "summary": "ISLE Day 2: Launch an opt-in chain. It will have the \"test-galapagos-1\" chain ID.",
+    "chain_id": "test-galapagos-1",
+    "initial_height": {
+      "revision_height": 1,
+      "revision_number": 1
+    },
+    "genesis_hash": "90c8b62134d360a44d208f4f30a4bda219eab6a6a4a100285eb6217a0bec8dfa",
+    "binary_hash": "f6fdb7f98c15915779d0493eb102ce44bdccda2a68f2abd262c4c88ce23e38b3",
+    "spawn_time": "2024-05-14T15:30:00.000000000Z",
+    "top_N": 0,
+    "blocks_per_distribution_transmission": 100,
+    "consumer_redistribution_fraction": "0.75",
+    "historical_entries": 10000,
+    "transfer_timeout_period": 3600000000000,
+    "ccv_timeout_period": 2419200000000000,
+    "unbonding_period": 1728000000000000,
+    "deposit": "900000000uatom"
+  }
