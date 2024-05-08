@@ -67,7 +67,7 @@ These are the commands we will use to generate the launch genesis file after the
 gaiad q provider consumer-genesis test-gala-1 -o json --node https://rpc.provider-sentry-01.ics-testnet.polypore.xyz:443 > ccv.json
 jq '.params.reward_denoms |= ["ugala"]' ccv.json > ccv-denom.json
 jq '.params.provider_reward_denoms |= ["uatom"]' ccv-denom.json > ccv-provider-denom.json
-jq -s '.[0].app_state.ccvconsumer = .[1] | .[0]' galapagos-genesis-pre-spawn.json ccv-provider-denom.json > gala-genesis.json
+jq -s '.[0].app_state.ccvconsumer = .[1] | .[0]' galapagos-genesis-pre-spawn.json ccv-provider-denom.json > galapagos-genesis.json
 ```
 
 ### Joining the Consumer Chain Validator Set After Launch
