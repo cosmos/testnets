@@ -1,4 +1,4 @@
-# test-faroe-1
+# test-galapagos-1
 
 ## Chain information
 
@@ -41,11 +41,11 @@ The `setup-galapagos.sh` script provided in this repo will install the chain bin
 * It must be run either as root or from a sudoer account.
 * The script will build the `interchain-security-cd` binary using Go 1.21.8.
 
-### Assign a Consensus Key Before Launch
+### Opt in Before Launch
 
-* You must submit your assign-consensus-key transaction before the spawn time is reached.
+* You must submit your opt-in transaction before the spawn time is reached.
   ```
-  gaiad tx provider assign-consensus-key test-galapagos-1 <consumer node public key>
+  gaiad tx provider opt-in test-galapagos-1 <consumer node public key>
   ```
 
 
