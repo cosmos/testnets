@@ -8,7 +8,7 @@ Visit the [Scheduled Upgrades](UPGRADES.md) page for details on current and upco
 
 - **Chain-ID**: `theta-testnet-001`
 - **Launch date**: 2022-03-10
-- **Current Gaia Version:** [`v16.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v16.0.0-rc2 (upgraded from v15 at height `21356800`)
+- **Current Gaia Version:** [`v17.0.0-rc0`](https://github.com/cosmos/gaia/releases/tag/v17.0.0-rc0 (upgraded from v16 at height `21572600`)
 - **Launch Gaia Version:** `release/v6.0.0`
 - **Genesis File:**  Zipped and included [in this repository](genesis.json.gz), unzip and verify with `shasum -a 256 genesis.json`
 - **Genesis sha256sum**: `522d7e5227ca35ec9bbee5ab3fe9d43b61752c6bdbb9e7996b38307d7362bb7e`
@@ -117,7 +117,7 @@ Run either one of the scripts provided in this repo to join the provider chain:
 
 If you want to use Cosmovisor's **auto-download** feature, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=true`
 
-If you are **manually preparing your binary**, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` and download a copy of the v16.0.0 binary to the v16 upgrade directory in your cosmovisor directory (`upgrades/v16/bin/gaiad`). 
+If you are **manually preparing your binary**, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` and download a copy of the v17.0.0-rc0 binary to the v16 upgrade directory in your cosmovisor directory (`upgrades/v16/bin/gaiad`). 
 
 ```
 .
