@@ -39,7 +39,7 @@ This file is only posted for verifying the hash from the consumer-addition propo
 
 The `setup-easter.sh` script provided in this repo will install the chain binary.
 * It must be run either as root or from a sudoer account.
-* The script will build the `interchain-security-cd` binary using Go 1.21.8.
+* The script will build the `interchain-security-cd` binary using Go 1.21.6.
 
 ### Assign a Consensus Key Before Launch
 
@@ -47,7 +47,6 @@ The `setup-easter.sh` script provided in this repo will install the chain binary
   ```
   gaiad tx provider assign-consensus-key test-easter-1 <consumer node public key>
   ```
-
 
 ## Launch Instructions
 

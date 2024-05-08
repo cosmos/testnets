@@ -12,7 +12,7 @@
     * Verify with `shasum -a 256 interchain-security-cd-linux-v4.0.0`
   * Repo: [interchain-security](https://github.com/cosmos/interchain-security/)
   * Version: [`v4.0.0`](https://github.com/cosmos/interchain-security/releases/tag/v4.0.0)
-  * Built with Go 1.21.8
+  * Built with Go 1.21.6
 * Spawn time: `2024-05-14T15:30:00Z`
 * Genesis file: **this file will be posted after the spawn time**
   * [`galapagos-genesis.json`](./galapagos-genesis.json)
@@ -39,7 +39,7 @@ This file is only posted for verifying the hash from the consumer-addition propo
 
 The `setup-galapagos.sh` script provided in this repo will install the chain binary.
 * It must be run either as root or from a sudoer account.
-* The script will build the `interchain-security-cd` binary using Go 1.21.8.
+* The script will build the `interchain-security-cd` binary using Go 1.21.6.
 
 ### Opt in Before Launch
 
@@ -47,7 +47,6 @@ The `setup-galapagos.sh` script provided in this repo will install the chain bin
   ```
   gaiad tx provider opt-in test-galapagos-1 <consumer node public key>
   ```
-
 
 ## Launch Instructions
 
