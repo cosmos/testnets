@@ -23,7 +23,7 @@ For day 2, we will launch a top-N chain and an opt-in one.
 ### Instructions
 
 * Set up a node for your validator before the spawn time
-  * **`test-faroe-1` chain details will be posted the week of May 6**
+  * [**`test-faroe-1`**](./test-faroe-1/README.md)
 * [Vote](./instructions.md#vote-on-a-proposal) YES to the `consumer-addition` proposal
 * [Assign a consensus key](./instructions.md#assign-a-consensus-key-for-a-consumer-chain) using a unique pubkey before the spawn time
 * Start your validator node after the spawn time
@@ -51,7 +51,7 @@ For day 2, we will launch a top-N chain and an opt-in one.
 ### Instructions
 
 * Set up a node for your validator before the spawn time
-  * **`test-galapagos-1` chain details will be posted the week of May 6**
+  * [**`test-galapagos-1`**](./test-galapagos-1/README.md)
 * [Vote](./instructions.md#vote-on-a-proposal) YES to the `consumer-addition` proposal
 * [Opt-in](./instructions.md#opt-in-to-a-consumer-chain) using a unique pubkey before the spawn time
 * Start your validator node after the spawn time

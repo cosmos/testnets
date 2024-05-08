@@ -1,0 +1,20 @@
+{
+    "title": "ISLE: Add the test-faroe-1 consumer chain",
+    "summary": "ISLE Day 2: Launch a top N = 67 chain. It will have the \"test-faroe-1\" chain ID.",
+    "chain_id": "test-faroe-1",
+    "initial_height": {
+      "revision_height": 1,
+      "revision_number": 1
+    },
+    "genesis_hash": "8df26a4753a7b6defa7b0e489c2b058ecde58a530764064a5a692a64207bc401",
+    "binary_hash": "f6fdb7f98c15915779d0493eb102ce44bdccda2a68f2abd262c4c88ce23e38b3",
+    "spawn_time": "2024-05-14T14:30:00.000000000Z",
+    "top_N": 67,
+    "blocks_per_distribution_transmission": 100,
+    "consumer_redistribution_fraction": "0.75",
+    "historical_entries": 10000,
+    "transfer_timeout_period": 3600000000000,
+    "ccv_timeout_period": 2419200000000000,
+    "unbonding_period": 1728000000000000,
+    "deposit": "900000000uatom"
+  }

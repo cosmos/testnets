@@ -22,7 +22,7 @@ Day 1 will involve launching a single top-N chain to introduce Partial Set Secur
 ### Instructions
 
 * Set up a node for your validator before the spawn time
-  * **`test-easter-1` chain details will be posted the week of May 6**
+  * [**`test-easter-1`**](./test-easter-1/README.md)
 * [Vote](./instructions.md#vote-on-a-proposal) YES to the `consumer-addition` proposal
 * [Assign a consensus key](./instructions.md#assign-a-consensus-key-for-a-consumer-chain) using a unique pubkey before the spawn time
 * Start your validator node after the spawn time
