@@ -10,6 +10,8 @@ Day 1 will involve launching a single top-N chain to introduce Partial Set Secur
 
 ### Schedule
 
+**All times posted below are in UTC**
+
 * 13:30: Voting period begins for consumer-addition proposal
 * 14:30: Voting period ends for consumer-addition proposal
 * **15:00: Spawn time**

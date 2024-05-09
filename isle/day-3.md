@@ -9,7 +9,9 @@ Day 3 will only feature a voting task.
 
 * Opt-in chain
 
-### Schedule 
+### Schedule
+
+**All times posted below are in UTC**
 
 * 13:00: Voting period begins
 * 14:00: Voting period ends
