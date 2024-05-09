@@ -11,6 +11,8 @@ For day 2, we will launch a top-N chain and an opt-in one.
 
 ### Schedule
 
+**All times posted below are in UTC**
+
 * 13:00: Voting period begins
 * 14:00: Voting period ends
 * **14:30: Spawn time**
@@ -39,6 +41,8 @@ For day 2, we will launch a top-N chain and an opt-in one.
 * Opt-in chain
 
 ### Schedule
+
+**All times posted below are in UTC**
 
 * 13:00: Voting period begins
 * 14:00: Voting period ends

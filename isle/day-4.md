@@ -11,6 +11,8 @@ For day 4, we will launch two consumer chains that we expect to arrive in mainne
 
 ### Schedule
 
+**All times posted below are in UTC**
+
 * 13:00: Voting period begins
 * 14:00: Voting period ends
 * **14:30: Spawn time**
@@ -37,6 +39,8 @@ For day 4, we will launch two consumer chains that we expect to arrive in mainne
 * Opt-in chain
 
 ### Schedule
+
+**All times posted below are in UTC**
 
 * 13:00: Voting period begins
 * 14:00: Voting period ends
