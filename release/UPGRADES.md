@@ -1,12 +1,29 @@
 # Scheduled Upgrades 🗓️ 
 
+## v18.0.0-rc0
+
+### Schedule
+
+| Date | Testnet plan                                  |
+| ---- | --------------------------------------------- |
+| TBA  | Gaia `v18.0.0-rc0` is live on the testnet     |
+| TBA  | Submit and pass v18 software upgrade proposal |
+
+* **Version before upgrade**: `v17.0.0`
+* **Version after upgrade**: `v18.0.0-rc0`
+
+### Upgrade details
+
+* **Upgrade height: `TBA`**
+* Estimated upgrade time: `TBA`
+
 ## v17.0.0-rc0
 
 ### Schedule
 
 | Date       | Testnet plan                                                                                               |
 | ---------- | ---------------------------------------------------------------------------------------------------------- |
-| May 8 2024 | Gaia `v17.0.0-rc0` is live on the testnet                                                                  |
+| May 8 2024 | ✅ Gaia `v17.0.0-rc0` is live on the testnet                                                                |
 | May 7 2024 | ✅ Submit and pass v17 software upgrade [proposal](https://explorer.polypore.xyz/theta-testnet-001/gov/249) |
 
 * **Version before upgrade**: `v16.0.0`
