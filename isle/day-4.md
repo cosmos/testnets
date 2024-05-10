@@ -1,5 +1,4 @@
-
-# ISLE Day 4: Mainnet chains preview
+# May 16. ISLE Day 4: Mainnet chains preview
 
 For day 4, we will launch two consumer chains that we expect to arrive in mainnet shortly after PSS becomes available in mainnet.
 
@@ -44,11 +43,11 @@ For day 4, we will launch two consumer chains that we expect to arrive in mainne
 
 * 13:00: Voting period begins
 * 14:00: Voting period ends
-* **15:30: Spawn time**
-* 15:45: Hypha nodes start
-* 16:00: Chain expected to be producing blocks
-* 16:30: CCV channel expected to be established
-* 15:30 (Day 5): Consumer chain is offboarded
+* **16:30: Spawn time**
+* 16:45: Hypha nodes start
+* 17:00: Chain expected to be producing blocks
+* 17:30: CCV channel expected to be established
+* 16:30 (Day 5): Consumer chain is offboarded
 
 ### Instructions
 

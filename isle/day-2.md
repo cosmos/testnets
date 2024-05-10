@@ -1,5 +1,4 @@
-
-# ISLE Day 2: Two chain launches
+# May 14. ISLE Day 2: Two chain launches
 
 For day 2, we will launch a top-N chain and an opt-in one.
 
