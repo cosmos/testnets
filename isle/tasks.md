@@ -5,7 +5,7 @@
 * 35 tasks available
 * Maximum score: 137 points
 
-## Day 1
+## Day 1: May 13, 2024
 
 * **20 points available**
 
@@ -19,7 +19,7 @@
 | 4       | Sign within first 600 blocks                                                                          | CCV channel is established | Block 600              |   10   |
 | 5       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)                    | Voting period start        | Chain is offboarded    |   2    |
 
-## Day 2
+## Day 2: May 14, 2024
 
 * **58 points available**
 
@@ -50,7 +50,7 @@
 
 \* Tasks 15 and 16 are mutually exclusive
 
-## Day 3
+## Day 3: May 15, 2024
 
 * **3 points available**
 
@@ -61,7 +61,7 @@
 | 20       | [Vote](./instructions.md#vote-on-a-proposal) YES on consumer-addition proposal | Voting period start      | Voting period end      |   1    |
 | 21       | Do NOT opt in                                                                  | Voting period start      | Voting period end      |   2    |
 
-## Day 4
+## Day 4: May 16, 2024
 
 * **36 points available**
 
@@ -94,7 +94,7 @@
 \* Tasks 30 and 31 are mutually exclusive
 
 
-## Day 5
+## Day 5: May 17, 2024
 
 * **20 points available**
 
