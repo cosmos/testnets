@@ -1,5 +1,4 @@
-
-# ISLE Day 3: No-show chain launch
+# May 15. ISLE Day 3: No-show chain launch
 
 Day 3 will only feature a voting task.
 

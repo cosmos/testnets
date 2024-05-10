@@ -1,4 +1,4 @@
-# ISLE Day 1: Warm-up
+# May 13. ISLE Day 1: Warm-up
 
 Day 1 will involve launching a single top-N chain to introduce Partial Set Security to the testnet.
 
