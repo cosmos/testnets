@@ -76,7 +76,7 @@ consumer_chain_ids:
 
 Set consumer commission rate transaction
 ```
-gaiad tx provider set-consumer-commission-rate test-easter-1  <commission rate>
+gaiad tx provider set-consumer-commission-rate <consumer chain id>  <commission rate>
 ```
 
 To verify the rate has been set:
