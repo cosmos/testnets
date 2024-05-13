@@ -16,7 +16,7 @@
 * Spawn time: `2024-05-13T15:00:00Z`
 * Genesis file: **this file will be posted after the spawn time**
   * [`easter-genesis.json`](./easter-genesis.json)
-  * SHASUM: `TBD` (verify with `shasum -a 256 easter-genesis.json`)
+  * SHASUM: `6585f1daad5cad92b1e15a42fce2e96bd87d9ec2d426158e5d92edd8ba182288` (verify with `shasum -a 256 easter-genesis.json`)
 
 ### Pre-spawn genesis file
 
