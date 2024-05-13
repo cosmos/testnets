@@ -11,13 +11,13 @@
 
 ### `test-easter-1`
 
-| Task ID | Task                                                                                                  | Completion window starts   | Completion window ends | Points |
-| :------ | :---------------------------------------------------------------------------------------------------- | :------------------------- | :--------------------- | :----: |
-| 1       | [Vote](./instructions.md#vote-on-a-proposal) YES on consumer-addition proposal                        | Voting period start        | Voting period end      |   1    |
-| 2       | [Assign](./instructions.md#assign-a-consensus-key-for-a-consumer-chain) a unique pubkey before launch | Voting period start        | Spawn time             |   2    |
-| 3       | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) after launch                                   | CCV channel is established | Chain is offboarded    |   5    |
-| 4       | Sign within first 600 blocks                                                                          | CCV channel is established | Block 600              |   10   |
-| 5       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)                    | Voting period start        | Chain is offboarded    |   2    |
+| Task ID | Task                                                                                                  | Completion window starts   | Completion window ends               | Points |
+| :------ | :---------------------------------------------------------------------------------------------------- | :------------------------- | :----------------------------------- | :----: |
+| 1       | [Vote](./instructions.md#vote-on-a-proposal) YES on consumer-addition proposal                        | Voting period start        | Voting period end                    |   1    |
+| 2       | [Assign](./instructions.md#assign-a-consensus-key-for-a-consumer-chain) a unique pubkey before launch | Voting period start        | Spawn time                           |   2    |
+| 3       | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) after launch                                   | CCV channel is established | Chain is offboarded                  |   5    |
+| 4       | Sign within 600 blocks after the CCV channel is established                                           | CCV channel is established | CCV channel established + 600 blocks |   10   |
+| 5       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)                    | Voting period start        | Chain is offboarded                  |   2    |
 
 ## Day 2: May 14, 2024
 
@@ -25,15 +25,15 @@
 
 ### `test-faroe-1`
 
-| Task IDs | Task                                                                                                  | Completion window starts   | Completion window ends | Points |
-| :------- | :---------------------------------------------------------------------------------------------------- | :------------------------- | :--------------------- | :----: |
-| 6        | [Vote](./instructions.md#vote-on-a-proposal) YES on consumer-addition proposal                        | Voting period start        | Voting period end      |   1    |
-| 7        | [Assign](./instructions.md#assign-a-consensus-key-for-a-consumer-chain) a unique pubkey before launch | Voting period start        | Spawn time             |   2    |
-| 8        | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) after launch                                   | CCV channel is established | Chain is offboarded    |   5    |
-| 9        | Sign within first 600 blocks                                                                          | CCV channel is established | Block 600              |   10   |
-| 10       | [Opt out](./instructions.md#opt-out-from-a-consumer-chain) after launch                               | CCV channel is established | Chain is offboarded    |   5    |
-| 11       | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after launch              | CCV channel is established | Chain is offboarded    |   5    |
-| 12       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)                    | CCV channel is established | Chain is offboarded    |   2    |
+| Task IDs | Task                                                                                                  | Completion window starts   | Completion window ends               | Points |
+| :------- | :---------------------------------------------------------------------------------------------------- | :------------------------- | :----------------------------------- | :----: |
+| 6        | [Vote](./instructions.md#vote-on-a-proposal) YES on consumer-addition proposal                        | Voting period start        | Voting period end                    |   1    |
+| 7        | [Assign](./instructions.md#assign-a-consensus-key-for-a-consumer-chain) a unique pubkey before launch | Voting period start        | Spawn time                           |   2    |
+| 8        | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) after launch                                   | CCV channel is established | Chain is offboarded                  |   5    |
+| 9        | Sign within 600 blocks after the CCV channel is established                                           | CCV channel is established | CCV channel established + 600 blocks |   10   |
+| 10       | [Opt out](./instructions.md#opt-out-from-a-consumer-chain) after launch                               | CCV channel is established | Chain is offboarded                  |   5    |
+| 11       | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after launch              | CCV channel is established | Chain is offboarded                  |   5    |
+| 12       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)                    | CCV channel is established | Chain is offboarded                  |   2    |
 
 
 ### `test-galapagos-1`
