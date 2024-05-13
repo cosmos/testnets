@@ -19,8 +19,8 @@ The logic for setting the N parameter for a consumer chain occurs on the provide
 
 ### What different ways are there to opt-in to a consumer chain with an assigned key?
 There are two ways to opt-in to a consumer chain using an assigned key:
-Submit the assign-consensus-key transaction and the opt-in transaction separately, without specifying a pubkey in the opt-in transaction.
-Submit the opt-in transaction using the pubkey as an argument.
+* Submit the assign-consensus-key transaction and the opt-in transaction separately, without specifying a pubkey in the opt-in transaction.
+* Submit the opt-in transaction using the pubkey as an argument.
 
 
 ### Do I have to opt-in before I can sign blocks?
