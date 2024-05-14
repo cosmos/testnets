@@ -1,5 +1,16 @@
 # Frequently Asked Questions
 
+## Day 2: launching `test-faroe-1` and `test-galapagos-1`
+## What would happen if you’re validating an opt-in chain and assign a new pubkey without opting out?
+You would continue validating that chain with the new pubkey as soon as the next valset update is sent over the CCV channel.
+
+## When does the change take effect when a validator opts out?
+Valset updates are communicated via the CCV channel, and the epoch on which they are communicated is set on the provider side. For the ICS testnet, our epoch is 50 blocks (or ~5min) so changes in voting power are only communicated every 5 min.
+
+## What happens to the chain and valset if a Top N consumer chain is offboarded by the Hub?
+hope we won't have to face it on mainnet, but let's say if a governance decides they don't want this chain as a consumer one, wonder if it'll continue producing blocks or just halt (considering that my faroe node was producing blocks even after offboarding, I guess it's the former), and with which validator set, if it's the formet
+
+
 ## Day 1: launching `test-easter-1`
 
 ### What does ‘Top N’ mean?
