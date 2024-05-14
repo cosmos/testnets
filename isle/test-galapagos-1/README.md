@@ -16,7 +16,7 @@
 * Spawn time: `2024-05-14T15:30:00Z`
 * Genesis file: **this file will be posted after the spawn time**
   * [`galapagos-genesis.json`](./galapagos-genesis.json)
-  * SHASUM: `TBD` (verify with `shasum -a 256 galapagos-genesis.json`)
+  * SHASUM: `ab34ab311d2ef4435931bc43a8d6293bbdeeed5a643ffb52d1b4ce221ac85893` (verify with `shasum -a 256 galapagos-genesis.json`)
 
 ### Pre-spawn genesis file
 
