@@ -33,7 +33,7 @@
 | 9        | Sign within 600 blocks after the CCV channel is established                                           | CCV channel is established | CCV channel established + 600 blocks |   10   |
 | 10       | [Opt out](./instructions.md#opt-out-from-a-consumer-chain) after launch                               | CCV channel is established | Chain is offboarded                  |   5    |
 | 11       | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after launch              | CCV channel is established | Chain is offboarded                  |   5    |
-| 12       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)                    | CCV channel is established | Chain is offboarded                  |   2    |
+| 12       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)                    | Voting period start        | Chain is offboarded                  |   2    |
 
 
 ### `test-galapagos-1`
@@ -46,7 +46,7 @@
 | 16*      | Sign within first 100 blocks                                                              | Spawn time                 | Block 100              |   5    |
 | 17       | [Opt out](./instructions.md#opt-out-from-a-consumer-chain) after launch                   | CCV channel is established | Chain is offboarded    |   5    |
 | 18       | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after launch  | CCV channel is established | Chain is offboarded    |   5    |
-| 19       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)        | CCV channel is established | Chain is offboarded    |   2    |
+| 19       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)        | Voting period start        | Chain is offboarded    |   2    |
 
 \* Tasks 15 and 16 are mutually exclusive
 
@@ -74,7 +74,7 @@
 | 24*      | Sign within first 10 blocks                                                               | Spawn time                 | Block 10               |   10   |
 | 25*      | Sign within first 100 blocks                                                              | Spawn time                 | Block 100              |   5    |
 | 26+      | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after launch  | CCV channel is established | Chain is offboarded    |   2    |
-| 27       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)        | CCV channel is established | Chain is offboarded    |   2    |
+| 27       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)        | Voting period start        | Chain is offboarded    |   2    |
 
 \+ Tasks 23 and 36 are mutually exclusive: only one opt-in transaction will be counted  
 \* Tasks 24 and 26 are mutually exclusive
@@ -88,7 +88,7 @@
 | 30*      | Sign within first 10 blocks                                                              | Spawn time                 | Block 10               |   10   |
 | 31*      | Sign within first 100 blocks                                                             | Spawn time                 | Block 100              |   5    |
 | 32+      | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after launch | CCV channel is established | Chain is offboarded    |   2    |
-| 33       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)       | CCV channel is established | Chain is offboarded    |   2    |
+| 33       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)       | Voting period start        | Chain is offboarded    |   2    |
 
 \+ Tasks 29 and 32 are mutually exclusive: only one opt-in transaction will be counted  
 \* Tasks 30 and 31 are mutually exclusive
