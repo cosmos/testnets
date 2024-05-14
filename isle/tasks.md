@@ -16,7 +16,7 @@
 | :------ | :---------------------------------------------------------------------------------------------------- | :------------------------- | :----------------------------------- | :----: |
 | 1       | [Vote](./instructions.md#vote-on-a-proposal) YES on consumer-addition proposal                        | Voting period start        | Voting period end                    |   1    |
 | 2       | [Assign](./instructions.md#assign-a-consensus-key-for-a-consumer-chain) a unique pubkey before launch | Voting period start        | Spawn time                           |   2    |
-| 3       | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) after launch                                   | CCV channel is established | Chain is offboarded                  |   5    |
+| 3       | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) before or after launch                         | Voting period start | Chain is offboarded                  |   5    |
 | 4       | Sign within 600 blocks after the CCV channel is established                                           | CCV channel is established | CCV channel established + 600 blocks |   10   |
 | 5       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)                    | Voting period start        | Chain is offboarded                  |   2    |
 
@@ -27,15 +27,15 @@
 
 ### `test-faroe-1`
 
-| Task IDs | Task                                                                                                  | Completion window starts   | Completion window ends               | Points |
-| :------- | :---------------------------------------------------------------------------------------------------- | :------------------------- | :----------------------------------- | :----: |
-| 6        | [Vote](./instructions.md#vote-on-a-proposal) YES on consumer-addition proposal                        | Voting period start        | Voting period end                    |   1    |
-| 7        | [Assign](./instructions.md#assign-a-consensus-key-for-a-consumer-chain) a unique pubkey before launch | Voting period start        | Spawn time                           |   2    |
-| 8        | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) after launch                                   | CCV channel is established | Chain is offboarded                  |   5    |
-| 9        | Sign within 600 blocks after the CCV channel is established                                           | CCV channel is established | CCV channel established + 600 blocks |   10   |
-| 10       | [Opt out](./instructions.md#opt-out-from-a-consumer-chain) after launch                               | CCV channel is established | Chain is offboarded                  |   5    |
-| 11       | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after launch              | CCV channel is established | Chain is offboarded                  |   5    |
-| 12       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)                    | Voting period start        | Chain is offboarded                  |   2    |
+| Task IDs | Task                                                                                                      | Completion window starts   | Completion window ends               | Points |
+| :------- | :-------------------------------------------------------------------------------------------------------- | :------------------------- | :----------------------------------- | :----: |
+| 6        | [Vote](./instructions.md#vote-on-a-proposal) YES on consumer-addition proposal                            | Voting period start        | Voting period end                    |   1    |
+| 7        | [Assign](./instructions.md#assign-a-consensus-key-for-a-consumer-chain) a unique pubkey before launch     | Voting period start        | Spawn time                           |   2    |
+| 8        | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) for the first time before or after launch          | Voting period start | Chain is offboarded                  |   5    |
+| 9        | Sign within 600 blocks after the CCV channel is established                                               | CCV channel is established | CCV channel established + 600 blocks |   10   |
+| 10       | [Opt out](./instructions.md#opt-out-from-a-consumer-chain) after launch                                   | CCV channel is established | Chain is offboarded                  |   5    |
+| 11       | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after opting out after launch | CCV channel is established | Chain is offboarded                  |   5    |
+| 12       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)                        | Voting period start        | Chain is offboarded                  |   2    |
 
 
 ### `test-galapagos-1`
@@ -59,10 +59,10 @@
 
 ### `test-hans-1`
 
-| Task IDs | Task                                                                           | Completion window starts | Completion window ends | Points |
-| :------- | :----------------------------------------------------------------------------- | :----------------------- | :--------------------- | :----: |
-| 20       | [Vote](./instructions.md#vote-on-a-proposal) YES on consumer-addition proposal | Voting period start      | Voting period end      |   1    |
-| 21       | Do NOT opt in                                                                  | Voting period start      | Voting period end      |   2    |
+| Task IDs | Task                                                                           | Completion window starts         | Completion window ends         | Points |
+| :------- | :----------------------------------------------------------------------------- | :------------------------------- | :----------------------------- | :----: |
+| 20       | [Vote](./instructions.md#vote-on-a-proposal) YES on consumer-addition proposal | Voting period start / ~13:00 UTC | Voting period end / ~14:00 UTC |   1    |
+| 21       | Do NOT opt in                                                                  | Voting period start / ~13:00 UTC | Voting period end / ~14:00 UTC |   2    |
 
 ## Day 4
 
