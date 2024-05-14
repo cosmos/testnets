@@ -16,7 +16,7 @@
 * Spawn time: `2024-05-14T14:30:00Z`
 * Genesis file: **this file will be posted after the spawn time**
   * [`faroe-genesis.json`](./faroe-genesis.json)
-  * SHASUM: `TBD` (verify with `shasum -a 256 faroe-genesis.json`)
+  * SHASUM: `a470d7a97a247cfed0b254b14517d264c4821e02e0f7074f4e936554df10f1a7` (verify with `shasum -a 256 faroe-genesis.json`)
 
 ### Pre-spawn genesis file
 
