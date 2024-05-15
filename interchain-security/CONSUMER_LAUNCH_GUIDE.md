@@ -115,7 +115,7 @@ The following will take place during the proposal submission phase:
 
 * Your team will submit the `consumer-addition` proposal with a command that looks like this:
   ```
-  gaiad tx gov submit-proposal consumer-addition proposal.json --from <account name> --chain-id provider --gas auto --fees 500uatom -b block -y
+  gaiad tx gov submit-legacy-proposal consumer-addition proposal.json --from <account name> --chain-id provider --gas auto --fees 500uatom -b block -y
   ```
 * Testnet coordinators will vote on it shortly afterwards to make sure it passes.
 * You will open a pull request to add the new consumer chain entry to this repo and update the [schedule page](SCHEDULE.md) with the launch date.
