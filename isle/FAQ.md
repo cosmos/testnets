@@ -8,7 +8,19 @@ You would continue validating that chain with the new pubkey as soon as the next
 Valset updates are communicated via the CCV channel, and the epoch on which they are communicated is set on the provider side. For the ICS testnet, our epoch is 50 blocks (or ~5min) so changes in voting power are only communicated every 5 min.
 
 ## What happens to the chain and valset if a Top N consumer chain is offboarded by the Hub?
-hope we won't have to face it on mainnet, but let's say if a governance decides they don't want this chain as a consumer one, wonder if it'll continue producing blocks or just halt (considering that my faroe node was producing blocks even after offboarding, I guess it's the former), and with which validator set, if it's the formet
+If a consumer-removal governance proposal passes, the following will happen:
+
+On the provider side
+* The CCV channel will be closed.
+* The consumer chain will no longer be listed as a consumer chain.
+
+On the consumer side
+* The CCV channel will be closed.    The chain will continue producing blocks until it loses enough voting power.
+* The chain will stop receiving validator set updates.
+* The log will output the following line on every block:
+
+    `ERR CCV channel "channel-0" was closed - shutdown consumer chain since it is not secured anymore module=x/host-ccvconsumer`
+
 
 
 ## Day 1: launching `test-easter-1`
