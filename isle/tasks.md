@@ -30,11 +30,11 @@
 | Task IDs | Task                                                                                                      | Completion window starts   | Completion window ends               | Points |
 | :------- | :-------------------------------------------------------------------------------------------------------- | :------------------------- | :----------------------------------- | :----: |
 | 6        | [Vote](./instructions.md#vote-on-a-proposal) YES on consumer-addition proposal                            | Voting period start        | Voting period end                    |   1    |
-| 7        | [Assign](./instructions.md#assign-a-consensus-key-for-a-consumer-chain) a unique pubkey before launch     | Voting period start        | Spawn time                           |   2    |
-| 8        | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) for the first time before or after launch          | Voting period start | Chain is offboarded                  |   5    |
+| 7        | [Assign](./instructions.md#assign-a-consensus-key-for-a-consumer-chain) a unique pubkey before launch   | Voting period start        | Spawn time                           |   2    |
+| 8        | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) for the first time before or after launch         | Voting period start | Chain is offboarded                  |   5    |
 | 9        | Sign within 600 blocks after the CCV channel is established                                               | CCV channel is established | CCV channel established + 600 blocks |   10   |
 | 10       | [Opt out](./instructions.md#opt-out-from-a-consumer-chain) after launch                                   | CCV channel is established | Chain is offboarded                  |   5    |
-| 11       | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after opting out after launch | CCV channel is established | Chain is offboarded                  |   5    |
+| 11       | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after opting out after launch in a single tx | CCV channel is established | Chain is offboarded                  |   5    |
 | 12       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)                        | Voting period start        | Chain is offboarded                  |   2    |
 
 
@@ -43,11 +43,11 @@
 | Task IDs | Task                                                                                      | Completion window starts   | Completion window ends | Points |
 | :------- | :---------------------------------------------------------------------------------------- | :------------------------- | :--------------------- | :----: |
 | 13       | [Vote](./instructions.md#vote-on-a-proposal) YES on consumer-addition proposal            | Voting period start        | Voting period end      |   1    |
-| 14       | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey before launch | Voting period start        | Spawn time             |   5    |
-| 15*      | Sign within first 10 blocks                                                               | Spawn time                 | Block 10               |   10   |
-| 16*      | Sign within first 100 blocks                                                              | Spawn time                 | Block 100              |   5    |
+| 14       | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey before launch in a single tx| Voting period start        | Spawn time             |   5    |
+| 15*      | Sign within 10 blocks after the CCV channel is established                                                              | Spawn time                 | CCV channel established + 10 blocks               |   10   |
+| 16*      | Sign within 100 blocks after the CCV channel is established                                                              | Spawn time                 | CCV channel established + 100 blocks            |   5    |
 | 17       | [Opt out](./instructions.md#opt-out-from-a-consumer-chain) after launch                   | CCV channel is established | Chain is offboarded    |   5    |
-| 18       | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after launch  | CCV channel is established | Chain is offboarded    |   5    |
+| 18       | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after launch in a single tx  | CCV channel is established | Chain is offboarded    |   5    |
 | 19       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)        | Voting period start        | Chain is offboarded    |   2    |
 
 \* Tasks 15 and 16 are mutually exclusive
@@ -74,10 +74,10 @@
 | Task IDs | Task                                                                                      | Completion window starts   | Completion window ends | Points |
 | :------- | :---------------------------------------------------------------------------------------- | :------------------------- | :--------------------- | :----: |
 | 22       | [Vote](./instructions.md#vote-on-a-proposal) YES on consumer-addition proposal            | Voting period start        | Voting period end      |   1    |
-| 23+      | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey before launch | Voting period start        | Spawn time             |   5    |
-| 24*      | Sign within first 10 blocks                                                               | Spawn time                 | Block 10               |   10   |
-| 25*      | Sign within first 100 blocks                                                              | Spawn time                 | Block 100              |   5    |
-| 26+      | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after launch  | CCV channel is established | Chain is offboarded    |   2    |
+| 23+      | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey before launch in a single tx | Voting period start        | Spawn time             |   5    |
+| 24*      | Sign within 10 blocks after the CCV channel is established                                                                | Spawn time                 | CCV channel established + 10 blocks               |   10   |
+| 25*      | Sign within 100 blocks after the CCV channel is established                                                             | Spawn time                 | CCV channel established + 100 blocks              |   5    |
+| 26+      | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after launch in a single tx  | CCV channel is established | Chain is offboarded    |   2    |
 | 27       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)        | Voting period start        | Chain is offboarded    |   2    |
 
 \+ Tasks 23 and 36 are mutually exclusive: only one opt-in transaction will be counted  
@@ -93,9 +93,9 @@
 | Task IDs | Task                                                                                     | Completion window starts   | Completion window ends | Points |
 | :------- | :--------------------------------------------------------------------------------------- | :------------------------- | :--------------------- | :----: |
 | 28       | [Vote](./instructions.md#vote-on-a-proposal) YES on consumer-addition proposal           | Voting period start        | Voting period end      |   1    |
-| 29+      | Opt in with a unique pubkey before launch                                                | Voting period start        | Spawn time             |   5    |
-| 30*      | Sign within first 10 blocks                                                              | Spawn time                 | Block 10               |   10   |
-| 31*      | Sign within first 100 blocks                                                             | Spawn time                 | Block 100              |   5    |
+| 29+      | Opt in with a unique pubkey before launch in a single tx                                               | Voting period start        | Spawn time             |   5    |
+| 30*      | Sign within 10 blocks after the CCV channel is established                                                              | Spawn time                 | CCV channel established + 10 blocks               |   10   |
+| 31*      | Sign within 100 blocks after the CCV channel is established                                                            | Spawn time                 | CCV channel established + 100 blocks             |   5    |
 | 32+      | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after launch | CCV channel is established | Chain is offboarded    |   2    |
 | 33       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)       | Voting period start        | Chain is offboarded    |   2    |
 
