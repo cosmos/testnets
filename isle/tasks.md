@@ -96,7 +96,7 @@
 | 29+      | Opt in with a unique pubkey before launch in a single tx                                               | Voting period start        | Spawn time             |   5    |
 | 30*      | Sign within 10 blocks after the CCV channel is established                                                              | Spawn time                 | CCV channel established + 10 blocks               |   10   |
 | 31*      | Sign within 100 blocks after the CCV channel is established                                                            | Spawn time                 | CCV channel established + 100 blocks             |   5    |
-| 32+      | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after launch | CCV channel is established | Chain is offboarded    |   2    |
+| 32+      | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after launch in a single tx | CCV channel is established | Chain is offboarded    |   2    |
 | 33       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)       | Voting period start        | Chain is offboarded    |   2    |
 
 \+ Tasks 29 and 32 are mutually exclusive: only one opt-in transaction will be counted  
