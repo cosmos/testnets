@@ -35,6 +35,9 @@ This file is only posted for verifying the hash from the consumer-addition propo
 
 ### Node Setup
 
+The `setup-ibiza.sh` script provided in this repo will install the chain binary.
+* It must be run either as root or from a sudoer account.
+* The script will build the `elysd` binary using Go 1.21.6.
 
 ### Opt in Before Launch
 
