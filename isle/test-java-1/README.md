@@ -14,7 +14,7 @@
   * Repo: [interchain-security](https://github.com/cosmos/interchain-security/)
   * Version: [`v4.0.0`](https://github.com/cosmos/interchain-security/releases/tag/v4.0.0)
   * Built with Go 1.21.6
-* Spawn time: `2024-05-14T15:30:00Z`
+* Spawn time: `2024-05-17T14:30:00Z`
 * Genesis file: **this file will be posted after the spawn time**
   * [`java-genesis.json`](./java-genesis.json)
   * SHASUM: `` (verify with `shasum -a 256 java-genesis.json`)
