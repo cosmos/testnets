@@ -1,0 +1,663 @@
+{
+    "genesis_time": "2024-05-16T15:45:00.000000000Z",
+    "chain_id": "test-ibiza-1",
+    "initial_height": "1",
+    "consensus_params": {
+      "block": {
+        "max_bytes": "22020096",
+        "max_gas": "-1"
+      },
+      "evidence": {
+        "max_age_num_blocks": "100000",
+        "max_age_duration": "172800000000000",
+        "max_bytes": "1048576"
+      },
+      "validator": {
+        "pub_key_types": [
+          "ed25519"
+        ]
+      },
+      "version": {
+        "app": "0"
+      }
+    },
+    "app_hash": "",
+    "app_state": {
+      "06-solomachine": null,
+      "07-tendermint": null,
+      "amm": {
+        "params": {
+          "pool_creation_fee": "10000000",
+          "slippage_track_duration": "604800"
+        },
+        "pool_list": [],
+        "denom_liquidity_list": [],
+        "slippage_tracks": []
+      },
+      "assetprofile": {
+        "entry_list": [
+          {
+            "address": "",
+            "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+            "base_denom": "ueden",
+            "commit_enabled": true,
+            "decimals": "6",
+            "denom": "ueden",
+            "display_name": "EDEN",
+            "display_symbol": "",
+            "external_symbol": "",
+            "ibc_channel_id": "",
+            "ibc_counterparty_chain_id": "",
+            "ibc_counterparty_channel_id": "",
+            "ibc_counterparty_denom": "",
+            "network": "",
+            "path": "",
+            "permissions": [],
+            "transfer_limit": "",
+            "unit_denom": "",
+            "withdraw_enabled": true
+          },
+          {
+            "address": "",
+            "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+            "base_denom": "uelys",
+            "commit_enabled": true,
+            "decimals": "6",
+            "denom": "uelys",
+            "display_name": "ELYS",
+            "display_symbol": "",
+            "external_symbol": "",
+            "ibc_channel_id": "",
+            "ibc_counterparty_chain_id": "",
+            "ibc_counterparty_channel_id": "",
+            "ibc_counterparty_denom": "",
+            "network": "",
+            "path": "",
+            "permissions": [],
+            "transfer_limit": "",
+            "unit_denom": "",
+            "withdraw_enabled": true
+          },
+          {
+            "address": "",
+            "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+            "base_denom": "uusdc",
+            "commit_enabled": true,
+            "decimals": "6",
+            "denom": "uusdc",
+            "display_name": "USDC",
+            "display_symbol": "uUSDC",
+            "external_symbol": "uUSDC",
+            "ibc_channel_id": "",
+            "ibc_counterparty_chain_id": "",
+            "ibc_counterparty_channel_id": "",
+            "ibc_counterparty_denom": "",
+            "network": "",
+            "path": "",
+            "permissions": [],
+            "transfer_limit": "",
+            "unit_denom": "",
+            "withdraw_enabled": true
+          }
+        ],
+        "params": {}
+      },
+      "auth": {
+        "params": {
+          "max_memo_characters": "256",
+          "tx_sig_limit": "7",
+          "tx_size_cost_per_byte": "10",
+          "sig_verify_cost_ed25519": "590",
+          "sig_verify_cost_secp256k1": "1000"
+        },
+        "accounts": [
+          {
+            "@type": "/cosmos.auth.v1beta1.BaseAccount",
+            "address": "elys1ln85h3p4dpuhp97gfmt2gc924zep3afqtgxxrv",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        ]
+      },
+      "authz": {
+        "authorization": []
+      },
+      "bank": {
+        "params": {
+          "send_enabled": [],
+          "default_send_enabled": true
+        },
+        "balances": [
+          {
+            "address": "elys1ln85h3p4dpuhp97gfmt2gc924zep3afqtgxxrv",
+            "coins": [
+              {
+                "denom": "ubiza",
+                "amount": "100000000000000"
+              }
+            ]
+          },
+          {
+            "address": "elys1zmqfymjtsmtpm3s99dwvsrp7gyx6rulv7hadde",
+            "coins": [
+              {
+                "denom": "ubiza",
+                "amount": "100000000000000"
+              }
+            ]
+          }
+        ],
+        "supply": [],
+        "denom_metadata": [],
+        "send_enabled": []
+      },
+      "burner": {
+        "params": {
+          "epoch_identifier": "epoch_identifier"
+        },
+        "history_list": []
+      },
+      "capability": {
+        "index": "1",
+        "owners": []
+      },
+      "ccvconsumer": {
+        "params": {
+          "enabled": false,
+          "blocks_per_distribution_transmission": "1000",
+          "distribution_transmission_channel": "",
+          "provider_fee_pool_addr_str": "",
+          "ccv_timeout_period": "2419200s",
+          "transfer_timeout_period": "3600s",
+          "consumer_redistribution_fraction": "0.75",
+          "historical_entries": "10000",
+          "unbonding_period": "1209600s",
+          "soft_opt_out_threshold": "0.05",
+          "reward_denoms": [],
+          "provider_reward_denoms": [],
+          "retry_delay_period": "3600s"
+        },
+        "provider": {
+          "client_state": null,
+          "consensus_state": null,
+          "initial_val_set": []
+        },
+        "new_chain": false
+      },
+      "clock": {
+        "params": {
+          "contract_addresses": [],
+          "contract_gas_limit": "1000000000"
+        }
+      },
+      "commitment": {
+        "params": {
+          "vesting_infos": [
+            {
+              "base_denom": "ueden",
+              "vesting_denom": "uelys",
+              "num_blocks": "1555200",
+              "vest_now_factor": "90",
+              "num_max_vestings": "10000"
+            }
+          ],
+          "total_committed": [
+            {
+              "denom": "amm/pool/1",
+              "amount": "1430200000000000000000"
+            },
+            {
+              "denom": "amm/pool/2",
+              "amount": "4425973628934761464322439"
+            },
+            {
+              "denom": "amm/pool/3",
+              "amount": "330107133881883025544417"
+            },
+            {
+              "denom": "amm/pool/4",
+              "amount": "1350545372996875978895276"
+            },
+            {
+              "denom": "amm/pool/5",
+              "amount": "575109959343427873616472"
+            },
+            {
+              "denom": "stablestake/share",
+              "amount": "2306394807388"
+            },
+            {
+              "denom": "ueden",
+              "amount": "397097013918"
+            },
+            {
+              "denom": "uedenb",
+              "amount": "1395779166475"
+            }
+          ]
+        }
+      },
+      "consensus": null,
+      "crisis": {
+        "constant_fee": {
+          "denom": "stake",
+          "amount": "1000"
+        }
+      },
+      "distribution": {
+        "params": {
+          "community_tax": "0.020000000000000000",
+          "base_proposer_reward": "0.000000000000000000",
+          "bonus_proposer_reward": "0.000000000000000000",
+          "withdraw_addr_enabled": true
+        },
+        "fee_pool": {
+          "community_pool": []
+        },
+        "delegator_withdraw_infos": [],
+        "previous_proposer": "",
+        "outstanding_rewards": [],
+        "validator_accumulated_commissions": [],
+        "validator_historical_rewards": [],
+        "validator_current_rewards": [],
+        "delegator_starting_infos": [],
+        "validator_slash_events": []
+      },
+      "epochs": {
+        "epochs": [
+          {
+            "identifier": "band_epoch",
+            "start_time": "0001-01-01T00:00:00Z",
+            "duration": "15s",
+            "current_epoch": "0",
+            "current_epoch_start_time": "0001-01-01T00:00:00Z",
+            "epoch_counting_started": false,
+            "current_epoch_start_height": "0"
+          }
+        ]
+      },
+      "estaking": {
+        "params": {
+          "stake_incentives": null,
+          "eden_commit_val": "",
+          "edenb_commit_val": "",
+          "max_eden_reward_apr_stakers": "0.300000000000000000",
+          "eden_boost_apr": "1.000000000000000000",
+          "dex_rewards_stakers": {
+            "num_blocks": "1",
+            "amount": "0.000000000000000000"
+          }
+        },
+        "staking_snapshots": []
+      },
+      "evidence": {
+        "evidence": []
+      },
+      "feegrant": {
+        "allowances": []
+      },
+      "feeibc": {
+        "identified_fees": [],
+        "fee_enabled_channels": [],
+        "registered_payees": [],
+        "registered_counterparty_payees": [],
+        "forward_relayers": []
+      },
+      "genutil": {
+        "gen_txs": []
+      },
+      "gov": {
+        "starting_proposal_id": "1",
+        "deposits": [],
+        "votes": [],
+        "proposals": [],
+        "deposit_params": null,
+        "voting_params": null,
+        "tally_params": null,
+        "params": {
+          "min_deposit": [
+            {
+              "denom": "stake",
+              "amount": "10000000"
+            }
+          ],
+          "max_deposit_period": "172800s",
+          "voting_period": "172800s",
+          "quorum": "0.334000000000000000",
+          "threshold": "0.500000000000000000",
+          "veto_threshold": "0.334000000000000000",
+          "min_initial_deposit_ratio": "0.000000000000000000",
+          "burn_vote_quorum": false,
+          "burn_proposal_deposit_prevote": false,
+          "burn_vote_veto": true
+        }
+      },
+      "group": {
+        "group_seq": "0",
+        "groups": [],
+        "group_members": [],
+        "group_policy_seq": "0",
+        "group_policies": [],
+        "proposal_seq": "0",
+        "proposals": [],
+        "votes": []
+      },
+      "ibc": {
+        "client_genesis": {
+          "clients": [],
+          "clients_consensus": [],
+          "clients_metadata": [],
+          "params": {
+            "allowed_clients": [
+              "06-solomachine",
+              "07-tendermint",
+              "09-localhost"
+            ]
+          },
+          "create_localhost": false,
+          "next_client_sequence": "0"
+        },
+        "connection_genesis": {
+          "connections": [],
+          "client_connection_paths": [],
+          "next_connection_sequence": "0",
+          "params": {
+            "max_expected_time_per_block": "30000000000"
+          }
+        },
+        "channel_genesis": {
+          "channels": [],
+          "acknowledgements": [],
+          "commitments": [],
+          "receipts": [],
+          "send_sequences": [],
+          "recv_sequences": [],
+          "ack_sequences": [],
+          "next_channel_sequence": "0"
+        }
+      },
+      "incentive": {},
+      "interchainaccounts": {
+        "controller_genesis_state": {
+          "active_channels": [],
+          "interchain_accounts": [],
+          "ports": [],
+          "params": {
+            "controller_enabled": true
+          }
+        },
+        "host_genesis_state": {
+          "active_channels": [],
+          "interchain_accounts": [],
+          "port": "icahost",
+          "params": {
+            "host_enabled": true,
+            "allow_messages": [
+              "*"
+            ]
+          }
+        }
+      },
+      "leveragelp": {
+        "params": {
+          "leverage_max": "10.000000000000000000",
+          "max_open_positions": "9999",
+          "pool_open_threshold": "0.200000000000000000",
+          "safety_factor": "0.100000000000000000",
+          "whitelisting_enabled": false,
+          "epoch_length": "1"
+        },
+        "pool_list": [],
+        "position_list": [],
+        "address_whitelist": []
+      },
+      "masterchef": {
+        "params": {
+          "lp_incentives": null,
+          "reward_portion_for_lps": "0.600000000000000000",
+          "reward_portion_for_stakers": "0.250000000000000000",
+          "dex_rewards_lps": {
+            "num_blocks": "1",
+            "amount": "0.000000000000000000"
+          },
+          "max_eden_reward_apr_lps": "0.500000000000000000",
+          "supported_reward_denoms": [],
+          "protocol_revenue_address": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3"
+        },
+        "external_incentives": [],
+        "pool_infos": [],
+        "pool_reward_infos": [],
+        "user_reward_infos": []
+      },
+      "mint": {
+        "minter": {
+          "inflation": "0.130000000000000000",
+          "annual_provisions": "0.000000000000000000"
+        },
+        "params": {
+          "mint_denom": "stake",
+          "inflation_rate_change": "0.130000000000000000",
+          "inflation_max": "0.200000000000000000",
+          "inflation_min": "0.070000000000000000",
+          "goal_bonded": "0.670000000000000000",
+          "blocks_per_year": "6311520"
+        }
+      },
+      "oracle": {
+        "params": {
+          "band_channel_source": "channel-1",
+          "oracle_script_id": "37",
+          "multiplier": "18",
+          "ask_count": "4",
+          "min_count": "3",
+          "fee_limit": [
+            {
+              "denom": "uband",
+              "amount": "30"
+            }
+          ],
+          "prepare_gas": "600000",
+          "execute_gas": "600000",
+          "client_id": "band_price_id",
+          "band_epoch": "band_epoch",
+          "price_expiry_time": "86400",
+          "life_time_in_blocks": "1"
+        },
+        "port_id": "oracle",
+        "asset_infos": [
+          {
+            "denom": "satoshi",
+            "display": "BTC",
+            "band_ticker": "BTC",
+            "elys_ticker": "BTC",
+            "decimal": "0"
+          },
+          {
+            "denom": "wei",
+            "display": "ETH",
+            "band_ticker": "ETH",
+            "elys_ticker": "ETH",
+            "decimal": "0"
+          }
+        ],
+        "prices": [],
+        "price_feeders": [
+          {
+            "feeder": "elys1mxk8wmns33vs6yynsaeud2k97xkl5dqlkjv3j9",
+            "is_active": true
+          }
+        ]
+      },
+      "parameter": {
+        "params": {
+          "min_commission_rate": "0.050000000000000000",
+          "max_voting_power": "100.000000000000000000",
+          "min_self_delegation": "1",
+          "broker_address": "elys1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqnrec2l"
+        }
+      },
+      "params": null,
+      "perpetual": {
+        "params": {
+          "leverage_max": "10.000000000000000000",
+          "borrow_interest_rate_max": "0.000002700000000000",
+          "borrow_interest_rate_min": "0.000000030000000000",
+          "borrow_interest_rate_increase": "0.000000003300000000",
+          "borrow_interest_rate_decrease": "0.000000003300000000",
+          "health_gain_factor": "0.000000220000000000",
+          "epoch_length": "1",
+          "max_open_positions": "9999",
+          "pool_open_threshold": "1.000000000000000000",
+          "force_close_fund_percentage": "1.000000000000000000",
+          "force_close_fund_address": "elys1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqnrec2l",
+          "incremental_borrow_interest_payment_fund_percentage": "3.500000000000000000",
+          "incremental_borrow_interest_payment_fund_address": "elys1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqnrec2l",
+          "safety_factor": "1.050000000000000000",
+          "incremental_borrow_interest_payment_enabled": true,
+          "whitelisting_enabled": false,
+          "invariant_check_epoch": "day",
+          "take_profit_borrow_interest_rate_min": "1.000000000000000000",
+          "funding_fee_base_rate": "0.000300000000000000",
+          "funding_fee_max_rate": "0.001000000000000000",
+          "funding_fee_min_rate": "-0.001000000000000000",
+          "funding_fee_collection_address": "elys1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqnrec2l",
+          "swap_fee": "0.001000000000000000"
+        },
+        "pool_list": [],
+        "mtp_list": [],
+        "address_whitelist": []
+      },
+      "poolaccounted": {
+        "accounted_pool_list": []
+      },
+      "slashing": {
+        "params": {
+          "signed_blocks_window": "2400",
+          "min_signed_per_window": "0.050000000000000000",
+          "downtime_jail_duration": "600s",
+          "slash_fraction_double_sign": "0.050000000000000000",
+          "slash_fraction_downtime": "0.010000000000000000"
+        },
+        "signing_infos": [],
+        "missed_blocks": []
+      },
+      "stablestake": {
+        "params": {
+          "deposit_denom": "uusdc",
+          "redemption_rate": "1.000000000000000000",
+          "epoch_length": "1",
+          "interest_rate": "0.150000000000000000",
+          "interest_rate_max": "0.170000000000000000",
+          "interest_rate_min": "0.120000000000000000",
+          "interest_rate_increase": "0.010000000000000000",
+          "interest_rate_decrease": "0.010000000000000000",
+          "health_gain_factor": "1.000000000000000000",
+          "total_value": "0"
+        }
+      },
+      "staking": {
+        "params": {
+          "unbonding_time": "1814400s",
+          "max_validators": 100,
+          "max_entries": 7,
+          "historical_entries": 10000,
+          "bond_denom": "stake",
+          "min_commission_rate": "0.000000000000000000"
+        },
+        "last_total_power": "0",
+        "last_validator_powers": [],
+        "validators": [],
+        "delegations": [],
+        "unbonding_delegations": [],
+        "redelegations": [],
+        "exported": false
+      },
+      "tokenomics": {
+        "airdrop_list": [],
+        "genesis_inflation": {
+          "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+          "inflation": {
+            "community_fund": "9750000000000",
+            "ics_staking_rewards": "0",
+            "lm_rewards": "0",
+            "strategic_reserve": "18750000000000",
+            "team_tokens_vested": "0"
+          },
+          "seed_vesting": "6000000000000",
+          "strategic_sales_vesting": "180000000000000"
+        },
+        "params": {},
+        "time_based_inflation_list": [
+          {
+            "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+            "description": "1st Year Inflation",
+            "end_block_height": "6307200",
+            "inflation": {
+              "community_fund": "11000000000000",
+              "ics_staking_rewards": "8000000000000",
+              "lm_rewards": "15500000000000",
+              "strategic_reserve": "11000000000000",
+              "team_tokens_vested": "17000000000000"
+            },
+            "start_block_height": "1"
+          },
+          {
+            "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+            "description": "2nd Year Inflation",
+            "end_block_height": "12614401",
+            "inflation": {
+              "community_fund": "11500000000000",
+              "ics_staking_rewards": "6000000000000",
+              "lm_rewards": "10500000000000",
+              "strategic_reserve": "12000000000000",
+              "team_tokens_vested": "10000000000000"
+            },
+            "start_block_height": "6307201"
+          },
+          {
+            "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+            "description": "3rd Year Inflation",
+            "end_block_height": "18921602",
+            "inflation": {
+              "community_fund": "5750000000000",
+              "ics_staking_rewards": "3000000000000",
+              "lm_rewards": "4000000000000",
+              "strategic_reserve": "7250000000000",
+              "team_tokens_vested": "5000000000000"
+            },
+            "start_block_height": "12614402"
+          }
+        ]
+      },
+      "transfer": {
+        "port_id": "transfer",
+        "denom_traces": [],
+        "params": {
+          "send_enabled": true,
+          "receive_enabled": true
+        },
+        "total_escrowed": []
+      },
+      "transferhook": {
+        "params": {
+          "amm_active": true
+        }
+      },
+      "upgrade": {},
+      "vesting": {},
+      "wasm": {
+        "params": {
+          "code_upload_access": {
+            "permission": "Everybody",
+            "addresses": []
+          },
+          "instantiate_default_permission": "Everybody"
+        },
+        "codes": [],
+        "contracts": [],
+        "sequences": []
+      }
+    }
+  }
+  
