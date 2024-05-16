@@ -1,0 +1,20 @@
+{
+  "title": "ISLE: Add the test-ibiza-1 consumer chain",
+  "summary": "ISLE Day 4: Launch an opt-in chain. It will have the \"test-ibiza-1\" chain ID.",
+  "chain_id": "test-ibiza-1",
+  "initial_height": {
+    "revision_height": 1,
+    "revision_number": 1
+  },
+  "genesis_hash": "8da84e910a714336cb40d1b84f4ba86b3c9071fb438fbc6c707f33c5af2ed858",
+  "binary_hash": "1bf45c172ac477c7184437086523b486c0d464098f6736ddc9a78cfc39f0b1c7",
+  "spawn_time": "2024-05-16T15:45:00.000000000Z",
+  "top_N": 0,
+  "blocks_per_distribution_transmission": 100,
+  "consumer_redistribution_fraction": "0.75",
+  "historical_entries": 10000,
+  "transfer_timeout_period": 3600000000000,
+  "ccv_timeout_period": 2419200000000000,
+  "unbonding_period": 1728000000000000,
+  "deposit": "900000000uatom"
+}
