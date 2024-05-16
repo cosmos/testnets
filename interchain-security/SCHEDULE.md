@@ -2,6 +2,9 @@
 
 | Date              | Testnet Incentives Program Period | Type              | Description                                                                                                                                              |
 | ----------------- | --------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| June 5 2024       | -                                 |            |                                                                                                                                        |
+| May 29 2024       | -                                 |            |                                                                                                                                        |
+| May 22 2024       | -                                 |            |                                                                                                                                        |
 | May 17 2024       | -                                 | Testnet           | ISLE Testnet ends                                                                                                                                        |
 | May 13 2024       | -                                 | Testnet           | [ISLE Testnet](/isle/README.md) begins  ⚡                                                                                                                |
 | May 8 2024        | 5                                 | Major upgrade     | ✅ Provider chain upgraded to Gaia v17.0.0-rc0                                                                                                            |
