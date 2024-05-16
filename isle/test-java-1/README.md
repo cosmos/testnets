@@ -41,7 +41,7 @@ The `setup-java.sh` script provided in this repo will install the chain binary.
 
 ### Opt in Before Launch
 
-* You must submit your opt-in transaction before the spawn time is reached.
+* You must submit your opt-in transaction before the spawn time is reached to start signing blocks as soon as the chain starts.
   ```
   gaiad tx provider opt-in test-java-1 <consumer node public key>
   ```
@@ -70,11 +70,7 @@ jq -s '.[0].app_state.ccvconsumer = .[1] | .[0]' java-genesis-pre-spawn.json ccv
 
 ### Joining the Consumer Chain Validator Set After Launch
 
-* You can submit an opt-in transaction after the consumer chain has launched if you are not in the top N.
+* You can submit an opt-in transaction after the consumer chain has launched.
   ```
-  gaiad tx provider opt-in test-java-1
+  gaiad tx provider opt-in test-java-1 <consumer node public key>
   ```
-  * If you did not assign a consensus key prior to opting in, you can assign it at this time.
-    ```
-    gaiad tx provider opt-in test-java-1 <consumer node public key>
-    ```
