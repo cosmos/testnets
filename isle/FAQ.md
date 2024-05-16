@@ -1,13 +1,19 @@
 # Frequently Asked Questions
 
+## Day 3: launching `test-ibiza-1`
+### Is the minimum commission parameter on the `provider` inherited by the consumer chain?
+Yes -- while validators can set a per-chain commission rate on consumer chains, that commission rate must be => than the minimum commission on the provider.
+
+On the Hub, our min commission right now is 5% so all consumer chain commissions will need to be >5%.
+
 ## Day 2: launching `test-faroe-1` and `test-galapagos-1`
-## What would happen if you’re validating an opt-in chain and assign a new pubkey without opting out?
+### What would happen if you’re validating an opt-in chain and assign a new pubkey without opting out?
 You would continue validating that chain with the new pubkey as soon as the next valset update is sent over the CCV channel.
 
-## When does the change take effect when a validator opts out?
+### When does the change take effect when a validator opts out?
 Valset updates are communicated via the CCV channel, and the epoch on which they are communicated is set on the provider side. For the ICS testnet, our epoch is 50 blocks (or ~5min) so changes in voting power are only communicated every 5 min.
 
-## What happens to the chain and valset if a Top N consumer chain is offboarded by the Hub?
+### What happens to the chain and valset if a Top N consumer chain is offboarded by the Hub?
 If a consumer-removal governance proposal passes, the following will happen:
 
 On the provider side
