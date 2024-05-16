@@ -2,7 +2,7 @@
 
 ## Day 3: launching `test-ibiza-1`
 ### Is the minimum commission parameter on the `provider` inherited by the consumer chain?
-Yes -- while validators can set a per-chain commission rate on consumer chains, that commission rate must be => than the minimum commission on the provider.
+Yes -- while validators can set a per-chain commission rate on consumer chains, that commission rate must be >= than the minimum commission on the provider.
 
 On the Hub, our min commission right now is 5% so all consumer chain commissions will need to be >5%.
 
