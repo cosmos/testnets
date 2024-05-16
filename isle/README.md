@@ -42,5 +42,5 @@ Partial Set Security (PSS) allows consumer chains to set the portion of the vali
   * Launch an opt-in chain
 * May 15: [No-show chain launch](./day-3.md)
   * Pass an opt-in chain proposal for which nobody opts in
-* May 16: [Mainnet chains preview](./day-4.md)
-* May 17: Conclusion
+* May 16: [Mainnet chain preview](./day-4.md)
+* May 17: [ICS 2.0 playground](./day-5.md)
