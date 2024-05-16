@@ -4,7 +4,7 @@
 ### Is the minimum commission parameter on the `provider` inherited by the consumer chain?
 Yes -- while validators can set a per-chain commission rate on consumer chains, that commission rate must be >= than the minimum commission on the provider.
 
-On the Hub, our min commission right now is 5% so all consumer chain commissions will need to be >5%.
+On the Hub, our min commission right now is 5% so all consumer chain commissions will need to be >=5%.
 
 ## Day 2: launching `test-faroe-1` and `test-galapagos-1`
 ### What would happen if you’re validating an opt-in chain and assign a new pubkey without opting out?
