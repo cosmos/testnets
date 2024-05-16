@@ -14,7 +14,7 @@
 * Spawn time: `2024-05-16T15:45:00Z`
 * Genesis file: **this file will be posted after the spawn time**
   * [`ibiza-genesis.json`](./ibiza-genesis.json)
-  * SHASUM: `TBD` (verify with `shasum -a 256 ibiza-genesis.json`)
+  * SHASUM: `16be2851de972bde55bb9926363fe1d25c6e55f848d3514682b669fc73f7f0f2` (verify with `shasum -a 256 ibiza-genesis.json`)
 
 ### Pre-spawn genesis file
 
