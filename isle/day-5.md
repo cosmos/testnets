@@ -16,7 +16,7 @@ Note that for this chain, there are NO TASKS aside from running the chain.
 You do not need to vote or opt-in in any particular way.
 
 * **14:30: Spawn time**
-* 12:45 (Day 6): Consumer chain is offboarded
+* 14:30 (Day 6): Consumer chain is offboarded
 
 ### Instructions
 
