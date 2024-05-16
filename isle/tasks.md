@@ -80,8 +80,8 @@
 | 26+      | [Opt in](./instructions.md#opt-in-to-a-consumer-chain) with a unique pubkey after launch in a single tx  | CCV channel is established | Chain is offboarded    |   2    |
 | 27       | [Set commission rate](./instructions.md#set-a-commission-rate-in-a-consumer-chain)        | Voting period start        | Chain is offboarded    |   2    |
 
-\+ Tasks 23 and 36 are mutually exclusive: only one opt-in transaction will be counted  
-\* Tasks 24 and 26 are mutually exclusive
+\+ Tasks 23 and 26 are mutually exclusive: only one opt-in transaction will be counted  
+\* Tasks 24 and 25 are mutually exclusive
 
 ## Day 5
 
