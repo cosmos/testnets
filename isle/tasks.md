@@ -3,7 +3,7 @@
 **⚠️ Please be aware that the schedule, tasks and point breakdown are subject to change ⚠️** 
 
 * 30 tasks available
-* Maximum score: 129 points
+* Maximum score: 139 points
 
 ## Day 1
 
