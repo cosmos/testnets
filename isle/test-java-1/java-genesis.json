@@ -1,0 +1,475 @@
+{
+  "genesis_time": "2024-05-17T14:30:00.000000000Z",
+  "chain_id": "test-java-1",
+  "initial_height": "1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "2000000",
+      "max_gas": "-1"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000",
+      "max_bytes": "1048576"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    },
+    "version": {
+      "app": "0"
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "07-tendermint": null,
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "consumer140lzw8l08g0ytq877z6yfluxutzzdeul3frz37",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "consumer147jxz57lflkrxw5rqku4vn3mpphlamhd0yuk9w",
+          "pub_key": null,
+          "account_number": "1",
+          "sequence": "0"
+        }
+      ]
+    },
+    "authz": {
+      "authorization": []
+    },
+    "bank": {
+      "params": {
+        "send_enabled": [],
+        "default_send_enabled": true
+      },
+      "balances": [
+        {
+          "address": "consumer140lzw8l08g0ytq877z6yfluxutzzdeul3frz37",
+          "coins": [
+            {
+              "denom": "ujava",
+              "amount": "100000000000000"
+            }
+          ]
+        },
+        {
+          "address": "consumer147jxz57lflkrxw5rqku4vn3mpphlamhd0yuk9w",
+          "coins": [
+            {
+              "denom": "ujava",
+              "amount": "100000000000000"
+            }
+          ]
+        }
+      ],
+      "supply": [
+        {
+          "denom": "ujava",
+          "amount": "200000000000000"
+        }
+      ],
+      "denom_metadata": [],
+      "send_enabled": []
+    },
+    "capability": {
+      "index": "1",
+      "owners": []
+    },
+    "ccvconsumer": {
+      "params": {
+        "enabled": true,
+        "blocks_per_distribution_transmission": "100",
+        "distribution_transmission_channel": "",
+        "provider_fee_pool_addr_str": "",
+        "ccv_timeout_period": "2419200s",
+        "transfer_timeout_period": "3600s",
+        "consumer_redistribution_fraction": "0.75",
+        "historical_entries": "10000",
+        "unbonding_period": "1728000s",
+        "soft_opt_out_threshold": "0.05",
+        "reward_denoms": [
+          "ujava"
+        ],
+        "provider_reward_denoms": [
+          "uatom"
+        ],
+        "retry_delay_period": "3600s"
+      },
+      "provider": {
+        "client_state": {
+          "chain_id": "provider",
+          "trust_level": {
+            "numerator": "1",
+            "denominator": "3"
+          },
+          "trusting_period": "453600s",
+          "unbonding_period": "1814400s",
+          "max_clock_drift": "10s",
+          "frozen_height": {
+            "revision_number": "0",
+            "revision_height": "0"
+          },
+          "latest_height": {
+            "revision_number": "0",
+            "revision_height": "6512622"
+          },
+          "proof_specs": [
+            {
+              "leaf_spec": {
+                "hash": "SHA256",
+                "prehash_key": "NO_HASH",
+                "prehash_value": "SHA256",
+                "length": "VAR_PROTO",
+                "prefix": "AA=="
+              },
+              "inner_spec": {
+                "child_order": [
+                  0,
+                  1
+                ],
+                "child_size": 33,
+                "min_prefix_length": 4,
+                "max_prefix_length": 12,
+                "empty_child": null,
+                "hash": "SHA256"
+              },
+              "max_depth": 0,
+              "min_depth": 0,
+              "prehash_key_before_comparison": false
+            },
+            {
+              "leaf_spec": {
+                "hash": "SHA256",
+                "prehash_key": "NO_HASH",
+                "prehash_value": "SHA256",
+                "length": "VAR_PROTO",
+                "prefix": "AA=="
+              },
+              "inner_spec": {
+                "child_order": [
+                  0,
+                  1
+                ],
+                "child_size": 32,
+                "min_prefix_length": 1,
+                "max_prefix_length": 1,
+                "empty_child": null,
+                "hash": "SHA256"
+              },
+              "max_depth": 0,
+              "min_depth": 0,
+              "prehash_key_before_comparison": false
+            }
+          ],
+          "upgrade_path": [
+            "upgrade",
+            "upgradedIBCState"
+          ],
+          "allow_update_after_expiry": true,
+          "allow_update_after_misbehaviour": true
+        },
+        "consensus_state": {
+          "timestamp": "2024-05-17T14:30:03.351042082Z",
+          "root": {
+            "hash": "ccGuzsNcA4650AXKU7KEhazoMa1pDGF7yy+jVy6ntOw="
+          },
+          "next_validators_hash": "F9BC22529896D85FC545731FAA0239A2B11649E5517D691F561C1C92318514DC"
+        },
+        "initial_val_set": [
+          {
+            "pub_key": {
+              "ed25519": "glsSMJ+QHvp5p6FTY6MH8bAIQLVjLFR/ektJQc0RkQg="
+            },
+            "power": "1000008"
+          },
+          {
+            "pub_key": {
+              "ed25519": "hrLCbKxRcAXeiLg8ONDARCjfEGlL6buI7JHENvEchzs="
+            },
+            "power": "5806042"
+          },
+          {
+            "pub_key": {
+              "ed25519": "o1MDw000365Bd2NMe8K4O+xK5PnxJLTQF5rNtT9FL8s="
+            },
+            "power": "1000001"
+          },
+          {
+            "pub_key": {
+              "ed25519": "F6khSAQqXMeKb4zdmG9Pucd1R3+2N5uoGuDFc8kO3Ds="
+            },
+            "power": "1000009"
+          },
+          {
+            "pub_key": {
+              "ed25519": "azL2lCkjq5zRUlrUnxLjtxcph6R7DVK7Szdi54nVs7g="
+            },
+            "power": "10949683"
+          },
+          {
+            "pub_key": {
+              "ed25519": "VMnNEnyokrPLfVGI2D2K0KNn8gj6OaE4xfFU+VKV/Io="
+            },
+            "power": "5035319"
+          },
+          {
+            "pub_key": {
+              "ed25519": "iK9y2Lbz6oAdlvtrMYGznu/NYatWhuWa+8O9KZZmGAQ="
+            },
+            "power": "1000100"
+          },
+          {
+            "pub_key": {
+              "ed25519": "lBfY35Xi0rysKQd3PowadTTcRbKkLLebJ9C0HjC5a2g="
+            },
+            "power": "1894420"
+          },
+          {
+            "pub_key": {
+              "ed25519": "1LrSKEhHpGzsQyaNeRHtpaunH7zdBzZdtUWkb7FERRg="
+            },
+            "power": "11405494"
+          },
+          {
+            "pub_key": {
+              "ed25519": "1iIGlReK5rrFZlFJN5KVu24LYy8nU5owvBommCHP+Zs="
+            },
+            "power": "1836415"
+          },
+          {
+            "pub_key": {
+              "ed25519": "AYPh1rkeIQfyDISWhbTN2ec0SAdbxCc15XelfSpLQ+4="
+            },
+            "power": "5463498"
+          },
+          {
+            "pub_key": {
+              "ed25519": "g95wjtCMGDEo6/qV+RcSFdF5hbiF65Zx2pJwt8C4UTo="
+            },
+            "power": "1408235"
+          },
+          {
+            "pub_key": {
+              "ed25519": "fDpGSZ4Ib7Wm7tCMufmdx5pTjxtl/3edADjwd/DAkgo="
+            },
+            "power": "5720406"
+          },
+          {
+            "pub_key": {
+              "ed25519": "GVjIfKHydhLVc8YtBrFTnoShB0y/6EhH+kG1hYNeWJ4="
+            },
+            "power": "4093323"
+          },
+          {
+            "pub_key": {
+              "ed25519": "XO6cmLR9ZU3nFVVsyaLp4t2f3qrsi4oTlxjSfd4T8Yo="
+            },
+            "power": "1723148"
+          },
+          {
+            "pub_key": {
+              "ed25519": "3i1j/inZ+ctnmiyhT4RJxkKUzRow/B4NxwLKcblxXUI="
+            },
+            "power": "10062950"
+          },
+          {
+            "pub_key": {
+              "ed25519": "wwtPA4g4AEo7L41E20oD9RKfU6g2iWBe3l26srFuB/U="
+            },
+            "power": "1637512"
+          },
+          {
+            "pub_key": {
+              "ed25519": "QdekNaNl1KRXRQIPNlM/i/xlMf8CKs6ktsDGIoY82r8="
+            },
+            "power": "12491130"
+          },
+          {
+            "pub_key": {
+              "ed25519": "cAVKnyTy7RLC/+aectYnaZz90q7Xgqr+LqTwbH3bHb4="
+            },
+            "power": "1000001"
+          },
+          {
+            "pub_key": {
+              "ed25519": "TZmtYoFjJGRRLIbfEUBJhE/i7QiGvob5xQqC7oYw0mg="
+            },
+            "power": "11234222"
+          },
+          {
+            "pub_key": {
+              "ed25519": "rO0hrsNuMIrLfg5f0bepGBq2odiX5SCrGcbA9ujjhrU="
+            },
+            "power": "1750779"
+          },
+          {
+            "pub_key": {
+              "ed25519": "dTDiUENY8VR690PVRx4k+AezGTRqRwbfIQ+6HXrJfek="
+            },
+            "power": "1932051"
+          },
+          {
+            "pub_key": {
+              "ed25519": "5ens+2u7zDSiHsnQxNvKkM/YaChG7u3a9KPpXXLx3ng="
+            },
+            "power": "4864047"
+          },
+          {
+            "pub_key": {
+              "ed25519": "NKUYHWImZmhesqiEtrdrdNsQW2gX6mgvCje4SQDXdoI="
+            },
+            "power": "1808784"
+          },
+          {
+            "pub_key": {
+              "ed25519": "ccJYNR5oDyL8S4cnQ6srxF1UQAIca9CSsYQy9gJQhmw="
+            },
+            "power": "4521503"
+          },
+          {
+            "pub_key": {
+              "ed25519": "w0NV/2OGgR4BBofuSYcLLq84fRr4+YVohbuEZ6oaRLw="
+            },
+            "power": "1065692"
+          },
+          {
+            "pub_key": {
+              "ed25519": "rORBySYptcHkOvy3/iY7MyERDnIBi/kx+bKU/zq+nyo="
+            },
+            "power": "5377862"
+          },
+          {
+            "pub_key": {
+              "ed25519": "gNHc1B4f4GBbT2haf0ZhGg6L6zft11zZPgicsXwZET4="
+            },
+            "power": "12977314"
+          },
+          {
+            "pub_key": {
+              "ed25519": "YsW5Byy54vlFbdZvOGKl0hoJUpRK3FR4AB4oRbl3FqQ="
+            },
+            "power": "5206591"
+          },
+          {
+            "pub_key": {
+              "ed25519": "/M1JUmrwQ4qGu1KMR6E/IJU3pVrkoUwXlQfWFoHECQg="
+            },
+            "power": "11319858"
+          },
+          {
+            "pub_key": {
+              "ed25519": "8V9E+yP+7fMBJkVHl4LKW8GteJ+b+gO2I0x5pQNJbTo="
+            },
+            "power": "1322599"
+          },
+          {
+            "pub_key": {
+              "ed25519": "ZoGOomBntnq51a3k8x3wWj1OaKuxeluqaMXQy5fvMiY="
+            },
+            "power": "1000012"
+          },
+          {
+            "pub_key": {
+              "ed25519": "m+/Ycuw7MJYDVqGYKreK3SzVcM943wnSbcCaOSjZSdo="
+            },
+            "power": "1551876"
+          },
+          {
+            "pub_key": {
+              "ed25519": "g+Mg/gVNIMYt3bTfIOw+/Ejuf77hISfxGxaCpzzC8+g="
+            },
+            "power": "1493871"
+          }
+        ]
+      },
+      "new_chain": true
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "ujava",
+        "amount": "1000"
+      }
+    },
+    "evidence": {
+      "evidence": []
+    },
+    "feegrant": {
+      "allowances": []
+    },
+    "genutil": {
+      "gen_txs": []
+    },
+    "ibc": {
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "clients_metadata": [],
+        "params": {
+          "allowed_clients": [
+            "06-solomachine",
+            "07-tendermint",
+            "09-localhost"
+          ]
+        },
+        "create_localhost": false,
+        "next_client_sequence": "0"
+      },
+      "connection_genesis": {
+        "connections": [],
+        "client_connection_paths": [],
+        "next_connection_sequence": "0",
+        "params": {
+          "max_expected_time_per_block": "30000000000"
+        }
+      },
+      "channel_genesis": {
+        "channels": [],
+        "acknowledgements": [],
+        "commitments": [],
+        "receipts": [],
+        "send_sequences": [],
+        "recv_sequences": [],
+        "ack_sequences": [],
+        "next_channel_sequence": "0"
+      }
+    },
+    "params": null,
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "1200",
+        "min_signed_per_window": "0.050000000000000000",
+        "downtime_jail_duration": "60s",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": [],
+      "missed_blocks": []
+    },
+    "transfer": {
+      "port_id": "transfer",
+      "denom_traces": [],
+      "params": {
+        "send_enabled": true,
+        "receive_enabled": true
+      },
+      "total_escrowed": []
+    },
+    "upgrade": {},
+    "vesting": {}
+  }
+}

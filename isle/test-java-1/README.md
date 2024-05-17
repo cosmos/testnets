@@ -17,7 +17,7 @@
 * Spawn time: `2024-05-17T14:30:00Z`
 * Genesis file: **this file will be posted after the spawn time**
   * [`java-genesis.json`](./java-genesis.json)
-  * SHASUM: `` (verify with `shasum -a 256 java-genesis.json`)
+  * SHASUM: `f030c5d1cc331a3edf862e7488ccbe336860291d1a40066fd02c8b6363a62098` (verify with `shasum -a 256 java-genesis.json`)
 
 ### Pre-spawn genesis file
 
