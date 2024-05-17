@@ -21,7 +21,6 @@ You do not need to vote or opt-in in any particular way.
 ### Instructions
 
 * Set up a node for your validator before the spawn time
-  * **`test-java-1` 
 * [Opt-in](./instructions.md#opt-in-to-a-consumer-chain) using a unique pubkey before the spawn time
 * Start your validator node after the spawn time
   * The genesis file will be posted to this repo within three minutes after the spawn time
