@@ -2,9 +2,9 @@
 
 | Date              | Testnet Incentives Program Period | Type              | Description                                                                                                                                              |
 | ----------------- | --------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| June 5 2024       | -                                 |            |                                                                                                                                        |
-| May 29 2024       | -                                 |            |                                                                                                                                        |
-| May 22 2024       | -                                 |            |                                                                                                                                        |
+| June 5 2024       | -                                 |            |   Mainnet upgrade to v17.1 -- no testnet event!                                                                                                                                     |
+| May 29 2024       | 6                                 | Consumer addition | Temporary Lorenzo testnet to be launched                                                                                                                                         |
+| May 22 2024       | -                                 |            |     Mainnet upgrade to v16.1 -- no testnet event!                                                                                                                                   |
 | May 17 2024       | -                                 | Testnet           | ISLE Testnet ends                                                                                                                                        |
 | May 13 2024       | -                                 | Testnet           | [ISLE Testnet](/isle/README.md) begins  ⚡                                                                                                                |
 | May 8 2024        | 5                                 | Major upgrade     | ✅ Provider chain upgraded to Gaia v17.0.0-rc0                                                                                                            |
