@@ -7,9 +7,6 @@ The [script](./simulate_mainnet_upgrade.sh) in this folder will help you simulat
 
 The script uses a special build of Gaia to fork the chain with a single validator using a recent snapshot. The upgrade is performed by the one validator running the chain.
 * The forked chain will contain the existing state from the chain we are simulating the upgrade on, but the voting period will be set to 20 seconds (this can be modified with further param change proposals).
-* We set the validator keys and allocate funds to an account we control. The account's mnemonic and validator keys are provided in this repo.  
-  * **Validator key:** [priv_validator_key](priv_validator_key.json)
-  * **Validator mnemonic:** [mnemonic.txt](mnemonic.txt)
 
 If you are interested in running a forked node without going through the upgrade, you can edit the script to stop before the upgrade section.
 

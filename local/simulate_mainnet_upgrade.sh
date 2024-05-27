@@ -1,15 +1,16 @@
 #!/bin/bash
-export NODE_HOME="$(pwd)/.gaia"
 export CHAIN_ID=cosmoshub-4
-export NODE_MONIKER=upgrade-test
-export BINARY=gaiad
+export GENESIS_URL=https://snapshots.polkachu.com/genesis/cosmos/genesis.json
+export SNAPSHOT_URL=https://snapshots.lavenderfive.com/snapshots/cosmoshub/latest.tar.lz4
 export START_VERSION="v16.0.0"
 export FORK_BRANCH="release/v16.x"
 export UPGRADE_NAME=v17
+
+export NODE_HOME="$(pwd)/.gaia"
+export NODE_MONIKER=upgrade-test
+export BINARY=gaiad
 export UPGRADE_VERSION="$UPGRADE_NAME.0.0"
 export PATH="$HOME/go/bin:/usr/local/go/bin:$PATH"
-export VALOPER=cosmosvaloper1r5v5srda7xfth3hn2s26txvrcrntldju7lnwmv
-export WALLET=cosmos1r5v5srda7xfth3hn2s26txvrcrntldjumt8mhl
 
 echo "*** 1. SET UP NODE ***"
 echo ">>> Installing Go and Gaia <<<"
@@ -37,18 +38,17 @@ sed -i -e 's/minimum-gas-prices = ""/minimum-gas-prices = "0.005uatom"/g' $NODE_
 sed -i -e '/block_sync =/ s/= .*/= false/' $NODE_HOME/config/config.toml
 
 echo ">>> Downloading genesis file <<<"
-wget https://snapshots.polkachu.com/genesis/cosmos/genesis.json -O $NODE_HOME/config/genesis.json
+wget $GENESIS_URL -O $NODE_HOME/config/genesis.json
 
-echo ">>> Downloading validator key <<<"
-wget https://raw.githubusercontent.com/cosmos/testnets/master/local/priv_validator_key.json -O $NODE_HOME/config/priv_validator_key.json
-
-echo ">>> Downloading Lavender Five snapshot <<<"
-wget https://snapshots.lavenderfive.com/snapshots/cosmoshub/latest.tar.lz4 -O latest.tar.lz4
+echo ">>> Downloading snapshot <<<"
+wget $SNAPSHOT_URL -O latest.tar.lz4
 lz4 -c -d latest.tar.lz4  | tar -x -C $NODE_HOME
 rm latest.tar.lz4
 
 echo ">>> Adding validator account <<<"
-curl https://raw.githubusercontent.com/cosmos/testnets/master/local/mnemonic.txt | $BINARY --home $NODE_HOME keys add validator --recover
+wallet=$($BINARY --home $NODE_HOME keys add validator --keyring-backend test --output json | jq -r '.address')
+bytes_address=$($BINARY keys parse $wallet --output json | jq -r '.bytes')
+valoper=$($BINARY keys parse $bytes_address --output json | jq -r '.formats[2]')
 
 echo "*** 2. FORK CHAIN ***"
 echo ">>> Building fork binary <<<"
@@ -59,7 +59,7 @@ cp build/gaiad $HOME/go/bin/gaiad-v16-fork
 cd ..
 rm -rf gaia
 echo ">>> Forking the chain with a single validator <<<"
-tmux new-session -d -s fork "$HOME/go/bin/gaiad-v16-fork testnet unsafe-start-local-validator --validator-operator $VALOPER --validator-pubkey $(jq -r '.pub_key.value' $NODE_HOME/config/priv_validator_key.json) --validator-privkey $(jq -r '.priv_key.value' $NODE_HOME/config/priv_validator_key.json) --accounts-to-fund $WALLET --home $NODE_HOME"
+tmux new-session -d -s fork "$HOME/go/bin/gaiad-v16-fork testnet unsafe-start-local-validator --validator-operator $valoper --validator-pubkey $(jq -r '.pub_key.value' $NODE_HOME/config/priv_validator_key.json) --validator-privkey $(jq -r '.priv_key.value' $NODE_HOME/config/priv_validator_key.json) --accounts-to-fund $wallet --home $NODE_HOME"
 sleep 1m
 tmux send-keys -t fork C-c
 
@@ -82,7 +82,7 @@ sleep 30s
 
 echo "*** 4. UPGRADE CHAIN ***"
 echo ">>> Delegating from funded account <<<"
-$BINARY tx staking delegate $VALOPER 10000000uatom --from $WALLET --gas auto --gas-adjustment 2 --gas-prices 0.005uatom -y --home $NODE_HOME
+$BINARY tx staking delegate $valoper 10000000uatom --from $wallet --gas auto --gas-adjustment 2 --gas-prices 0.005uatom -y --home $NODE_HOME
 sleep 8s
 echo ">>> Calculating upgrade height <<<"
 current_block=$($BINARY q block --home $NODE_HOME | jq -r '.block.header.height')
@@ -94,12 +94,12 @@ echo $proposal_json > proposal.json
 jq -r --arg HEIGHT "$upgrade_height" '.messages[0].plan.height |= $HEIGHT' proposal.json > proposal-height.json
 info="{\"binaries\": {\"darwin/amd64\": \"https://github.com/cosmos/gaia/releases/download/$UPGRADE_VERSION/gaiad-$UPGRADE_VERSION-darwin-amd64\", \"darwin/arm64\": \"https://github.com/cosmos/gaia/releases/download/$UPGRADE_VERSION/gaiad-$UPGRADE_VERSION-darwin-arm64\", \"linux/amd64\": \"https://github.com/cosmos/gaia/releases/download/$UPGRADE_VERSION/gaiad-$UPGRADE_VERSION-linux-amd64\", \"linux/arm64\": \"https://github.com/cosmos/gaia/releases/download/$UPGRADE_VERSION/gaiad-$UPGRADE_VERSION-linux-arm64\", \"windows/amd64\": \"https://github.com/cosmos/gaia/releases/download/$UPGRADE_VERSION/gaiad-$UPGRADE_VERSION-windows-amd64.exe\", \"windows/arm64\": \"https://github.com/cosmos/gaia/releases/download/$UPGRADE_VERSION/gaiad-$UPGRADE_VERSION-windows-arm64.exe\"}}"
 jq -r --arg INFO "$info" '.messages[0].plan.info |= $INFO' proposal-height.json > proposal.json
-txhash=$($BINARY tx gov submit-proposal proposal.json --from validator --gas auto --gas-adjustment 2 --gas-prices 0.005uatom -y -o json --home $NODE_HOME | jq -r '.txhash')
+txhash=$($BINARY tx gov submit-proposal proposal.json --from $wallet --gas auto --gas-adjustment 2 --gas-prices 0.005uatom -y -o json --home $NODE_HOME | jq -r '.txhash')
 echo "Hash: $txhash"
 sleep 8s
 proposal_id=$($BINARY q tx $txhash --home $NODE_HOME -o json | jq -r '.events[] | select(.type=="submit_proposal") | .attributes[] | select(.key=="proposal_id").value')
 echo ">>> Voting yes on proposal $proposal_id <<<"
-$BINARY tx gov vote $proposal_id yes --from validator --gas auto --gas-adjustment 2 --gas-prices 0.005uatom -y --home $NODE_HOME
+$BINARY tx gov vote $proposal_id yes --from $wallet --gas auto --gas-adjustment 2 --gas-prices 0.005uatom -y --home $NODE_HOME
 sleep 20s
 status=$($BINARY q gov proposal $proposal_id --home $NODE_HOME -o json | jq -r '.status')
 echo ">>> Upgrade proposal status: $status <<<"
