@@ -1,0 +1,21 @@
+{
+  "title": "Testnet Wednesday: Add the test-valsetcap-1 consumer chain",
+  "summary": "# Testnet Wednesday: 2024-05-29\r\n* Launch an opt-in chain: it will have the \"test-valsetcap-1\" chain ID.\r\n* It will help us test the validator_set_cap parameter.",
+  "chain_id": "test-valset-cap-1",
+  "initial_height": {
+    "revision_height": 1,
+    "revision_number": 1
+  },
+  "genesis_hash": "04d862afbacbece25bf4f9459cf55850f868614f395378fa81770d92ea7535ce",
+  "binary_hash": "f6fdb7f98c15915779d0493eb102ce44bdccda2a68f2abd262c4c88ce23e38b3",
+  "spawn_time": "2024-05-29T15:30:00.000000000Z",
+  "top_N": 0,
+  "validator_set_cap": 8,
+  "blocks_per_distribution_transmission": 100,
+  "consumer_redistribution_fraction": "0.75",
+  "historical_entries": 10000,
+  "transfer_timeout_period": 3600000000000,
+  "ccv_timeout_period": 2419200000000000,
+  "unbonding_period": 1728000000000000,
+  "deposit": "900000000uatom"
+}
