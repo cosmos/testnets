@@ -1,10 +1,13 @@
 #!/bin/bash
+
+# ********** COSMOS HUB> **********
 export CHAIN_ID=cosmoshub-4
 export GENESIS_URL=https://snapshots.polkachu.com/genesis/cosmos/genesis.json
 export SNAPSHOT_URL=https://snapshots.lavenderfive.com/snapshots/cosmoshub/latest.tar.lz4
 export START_VERSION="v16.0.0"
 export FORK_BRANCH="release/v16.x"
 export UPGRADE_NAME=v17
+# ********** <COSMOS HUB **********
 
 export NODE_HOME="$(pwd)/.gaia"
 export NODE_MONIKER=upgrade-test
