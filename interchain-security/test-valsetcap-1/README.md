@@ -14,7 +14,7 @@
   * Repo: [interchain-security](https://github.com/cosmos/interchain-security/)
   * Version: [`v4.0.0`](https://github.com/cosmos/interchain-security/releases/tag/v4.0.0)
   * Built with Go 1.21.6
-* Spawn time: `2024-05-29T14:30:00Z`
+* Spawn time: `2024-05-29T14:45:00Z`
 * Genesis file: **this file will be posted after the spawn time**
   * [`valsetcap-genesis.json`](./valsetcap-genesis.json)
   * SHASUM: `TBD` (verify with `shasum -a 256 valsetcap-genesis.json`)
