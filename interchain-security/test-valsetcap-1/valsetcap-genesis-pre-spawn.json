@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2024-05-29T14:30:00.000000000Z",
+  "genesis_time": "2024-05-29T14:45:00.000000000Z",
   "chain_id": "test-valsetcap-1",
   "initial_height": "1",
   "consensus_params": {

@@ -14,7 +14,7 @@
   * Repo: [interchain-security](https://github.com/cosmos/interchain-security/)
   * Version: [`v4.0.0`](https://github.com/cosmos/interchain-security/releases/tag/v4.0.0)
   * Built with Go 1.21.6
-* Spawn time: `2024-05-29T14:30:00Z`
+* Spawn time: `2024-05-29T14:45:00Z`
 * Genesis file: **this file will be posted after the spawn time**
   * [`valsetcap-genesis.json`](./valsetcap-genesis.json)
   * SHASUM: `TBD` (verify with `shasum -a 256 valsetcap-genesis.json`)
@@ -23,7 +23,7 @@
 
 This file is only posted for verifying the hash from the consumer-addition proposal.
 * [`valsetcap-genesis-pre-spawn.json`](./valsetcap-genesis-pre-spawn.json)
-  * SHASUM: `5a46f864ad4303e2e7b48137f64eddc354471ac443f0128748746ce42d97c930` (verify with `shasum -a 256 valsetcap-genesis-pre-spawn.json`)
+  * SHASUM: `15b924f3368b251ff866eb3cc44121c96a9fcb3bde2b04f9fa775338dc1a3c3d` (verify with `shasum -a 256 valsetcap-genesis-pre-spawn.json`)
 
 ## Endpoints
 
