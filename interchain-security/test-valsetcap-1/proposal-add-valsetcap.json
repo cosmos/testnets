@@ -1,7 +1,7 @@
 {
   "title": "Testnet Wednesday: Add the test-valsetcap-1 consumer chain",
   "summary": "# Testnet Wednesday: 2024-05-29\r\n* Launch an opt-in chain: it will have the \"test-valsetcap-1\" chain ID.\r\n* It will help us test the validator_set_cap parameter.",
-  "chain_id": "test-valset-cap-1",
+  "chain_id": "test-valsetcap-1",
   "initial_height": {
     "revision_height": 1,
     "revision_number": 1
