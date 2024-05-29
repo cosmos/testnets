@@ -17,7 +17,7 @@
 * Spawn time: `2024-05-29T14:45:00Z`
 * Genesis file: **this file will be posted after the spawn time**
   * [`valsetcap-genesis.json`](./valsetcap-genesis.json)
-  * SHASUM: `TBD` (verify with `shasum -a 256 valsetcap-genesis.json`)
+  * SHASUM: `d89b0ce6a481ddc2214809cf9aa98ba20361524725cbb2c69f1b1f91f35a58f5` (verify with `shasum -a 256 valsetcap-genesis.json`)
 
 ### Pre-spawn genesis file
 
