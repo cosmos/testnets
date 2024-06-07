@@ -1,21 +1,30 @@
 # Scheduled Upgrades 🗓️ 
 
-## v18.0.0-rc0
+## v17.2.0
 
 ### Schedule
 
-| Date | Testnet plan                                  |
-| ---- | --------------------------------------------- |
-| TBA  | Gaia `v18.0.0-rc0` is live on the testnet     |
-| TBA  | Submit and pass v18 software upgrade proposal |
+| Date         | Testnet plan                              |
+| ------------ | ----------------------------------------- |
+| June 12 2024 | Gaia v17.2.0 is live on the testnet |
+| June 11 2024 | Set upgrade halt height     |
 
 * **Version before upgrade**: `v17.0.0`
-* **Version after upgrade**: `v18.0.0-rc0`
+* **Version after upgrade**: `v17.2.0`
 
 ### Upgrade details
 
 * **Upgrade height: `TBA`**
-* Estimated upgrade time: `TBA`
+* Estimated upgrade time: `2024-06-12 ~13:00 UTC`
+* Release page: https://github.com/cosmos/gaia/releases/tag/v17.2.0
+* ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
+  * Set the upgrade height in your node(s) `app.toml` and restart the node(s).
+    ```
+    halt-height = TBA
+    ```
+  * Restart your node(s) with the `--halt-height TBA` flag.
+* After the halt height is reached and your node is stopped:
+  * Replace the `gaiad` binary with the new one and restart the node after reverting to `halt-height = 0` in `app.toml` (or restart the node without the `--halt-height` flag).
 
 ## v17.0.0-rc0
 
