@@ -2,7 +2,8 @@
 
 | Date              | Testnet Incentives Program Period | Type              | Description                                                                                                                                              |
 | ----------------- | --------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| June 12 2024       | 6                                 | Consumer upgrade | Consumer chain pion-1 upgraded to v4                                                                                                          |
+| June 12 2024      | 6                                 | Consumer upgrade  | Consumer chain pion-1 upgraded to v4                                                                                                                     |
+| June 12 2024      | -                                 | Minor upgrade     | Provider chain upgrades to Gaia v17.2.0                                                                                                                  |
 | June 5 2024       | -                                 |                   | Mainnet upgrade to v17 -- no testnet event!                                                                                                              |
 | May 29 2024       | 6                                 | Demo Day          | Demo day # 4: Validator set cap in consumer chains                                                                                                       |
 | May 22 2024       | -                                 |                   | Mainnet upgrade to v16.1 -- no testnet event!                                                                                                            |
