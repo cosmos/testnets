@@ -15,7 +15,7 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 The provider chain will upgrade to Gaia [v17.2.0](https://github.com/cosmos/gaia/releases/tag/v17.2.0) on **June 12, 2024**.
 
-* **Block height: `TBA`**
+* **Block height: `6882500`**
 * Target upgrade time: `13:30 UTC`
 * **No software upgrade proposal**
 * Golang version: 1.21
@@ -25,9 +25,9 @@ The provider chain will upgrade to Gaia [v17.2.0](https://github.com/cosmos/gaia
 * ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
   * Set the upgrade height in your node(s) `app.toml` and restart the node(s).
     ```
-    halt-height = TBA
+    halt-height = 6882500
     ```
-  * Restart your node(s) with the `--halt-height TBA` flag.
+  * Restart your node(s) with the `--halt-height 6882500` flag.
 * After the halt height is reached and your node is stopped:
   * Replace the `gaiad` binary with the new one and restart the node after reverting to `halt-height = 0` in `app.toml` (or restart the node without the `--halt-height` flag).
 
