@@ -14,15 +14,15 @@
 
 ### Upgrade details
 
-* **Upgrade height: `TBA`**
+* **Upgrade height: `22113300`**
 * Estimated upgrade time: `2024-06-12 ~13:00 UTC`
 * Release page: https://github.com/cosmos/gaia/releases/tag/v17.2.0
 * ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
   * Set the upgrade height in your node(s) `app.toml` and restart the node(s).
     ```
-    halt-height = TBA
+    halt-height = 22113300
     ```
-  * Restart your node(s) with the `--halt-height TBA` flag.
+  * Restart your node(s) with the `--halt-height 22113300` flag.
 * After the halt height is reached and your node is stopped:
   * Replace the `gaiad` binary with the new one and restart the node after reverting to `halt-height = 0` in `app.toml` (or restart the node without the `--halt-height` flag).
 
