@@ -7,7 +7,7 @@
 NODE_HOME=~/.gaia
 NODE_MONIKER=release-testnet
 SERVICE_NAME=gaiad
-GAIA_VERSION=v17.0.0-rc0
+GAIA_VERSION=v17.2.0
 CHAIN_BINARY_URL=https://github.com/cosmos/gaia/releases/download/$GAIA_VERSION/gaiad-$GAIA_VERSION-linux-amd64
 STATE_SYNC=true
 GAS_PRICE=0.005uatom
