@@ -6,7 +6,7 @@
 
 | Date         | Testnet plan                              |
 | ------------ | ----------------------------------------- |
-| June 12 2024 | Gaia v17.2.0 is live on the testnet |
+| June 12 2024 | ✅ Gaia v17.2.0 is live on the testnet |
 | June 11 2024 | ✅ Set upgrade halt height     |
 
 * **Version before upgrade**: `v17.0.0-rc0`
