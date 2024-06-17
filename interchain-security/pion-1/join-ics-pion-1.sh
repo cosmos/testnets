@@ -11,13 +11,13 @@ NODE_KEY_FILE=${2:-"~/node_key.json"}
 NODE_HOME=~/.neutrond
 NODE_MONIKER=node
 SERVICE_NAME=neutrond
-SERVICE_VERSION="v3.0.0"
+SERVICE_VERSION="v4.0.0-rc3"
 STATE_SYNC=true
 # ***
 
 CHAIN_BINARY='neutrond'
 CHAIN_ID=pion-1
-SEEDS="0de4d730b5341d3a83721e1cbb5ce7772e26a400@p2p-palvus.pion-1.ntrn.tech:26656"
+SEEDS="4dbb91a22ec4222751aec7f682ea20c2c907f09d@p2p-palvus.pion-1.ntrn.tech:26656"
 SYNC_RPC_1=https://rpc.pion.ics-testnet.polypore.xyz:443
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_1"
 
@@ -92,7 +92,7 @@ cp $(which $CHAIN_BINARY) $NODE_HOME/cosmovisor/genesis/bin
 
 echo "Installing cosmovisor..."
 export BINARY=$NODE_HOME/cosmovisor/genesis/bin/$CHAIN_BINARY
-go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@v1.3.0
+go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.5.0
 
 echo "Creating $SERVICE_NAME.service..."
 sudo rm /etc/systemd/system/$SERVICE_NAME.service

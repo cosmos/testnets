@@ -10,7 +10,7 @@ The `pion-1` chain will be launched as a Neutron persistent chain to test Interc
 * **timeout_commit**: `1s`
 * **Spawn time**: `2023-06-29T14:30:00Z`
 * **GitHub repo**: [neutron-org/neutron](https://github.com/neutron-org/neutron.git)
-* **Current version**: [`v3.0.0`](https://github.com/neutron-org/neutron/releases/tag/v3.0.0)
+* **Current version**: [`v4.0.0-rc3`](https://github.com/neutron-org/neutron/releases/tag/v4.0.0-rc3)
   * Launch version: [`v1.0.2-pion-1-upgrade`](https://github.com/neutron-org/neutron/releases/tag/v1.0.2-pion-1-upgrade)
 * **Genesis file with CCV state:** [pion-1-genesis.json](https://github.com/cosmos/testnets/blob/master/interchain-security/pion-1/pion-1-genesis-with-ccv.json.gz)
 
@@ -49,7 +49,7 @@ Endpoints are exposed as subdomains for the sentry and snapshot nodes (described
 
 Seed nodes:
 
-1. `0de4d730b5341d3a83721e1cbb5ce7772e26a400@p2p-palvus.pion-1.ntrn.tech:26656`
+1. `4dbb91a22ec4222751aec7f682ea20c2c907f09d@p2p-palvus.pion-1.ntrn.tech:26656`
 
 State sync nodes:
 
@@ -120,7 +120,7 @@ Run script provided to set up a `pion-1` service:
 Build and install neutron binary. 
 
 ```
-$ git clone -b v3.0.0 https://github.com/neutron-org/neutron.git
+$ git clone -b v4.0.0-rc3 https://github.com/neutron-org/neutron.git
 $ cd neutron
 $ make install
 ```
@@ -133,7 +133,7 @@ You should see the following:
 ```
 name: neutron
 server_name: neutrond
-version: v3.0.0
+version: v4.0.0-rc3
 ```
 
 ### Troubleshooting
