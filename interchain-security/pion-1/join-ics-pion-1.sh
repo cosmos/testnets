@@ -27,7 +27,7 @@ GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/pi
 # Install wget and jq
 sudo apt-get install curl jq wget -y
 
-# Install go 1.20
+# Install go 1.21
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
 wget https://go.dev/dl/go1.21.8.linux-amd64.tar.gz
