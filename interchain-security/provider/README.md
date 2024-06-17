@@ -5,31 +5,19 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v17.0.0-rc0`](https://github.com/cosmos/gaia/releases/tag/v17.0.0-rc0), upgraded from v16 at block height `6380200`.
+* **Current Gaia Version**: [`v17.2.0`](https://github.com/cosmos/gaia/releases/tag/v17.2.0), upgraded from v16 at block height `6380200`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v17.2.0 Upgrade
+## v18.0.0-rc0 Upgrade
 
-The provider chain will upgrade to Gaia [v17.2.0](https://github.com/cosmos/gaia/releases/tag/v17.2.0) on **June 12, 2024**.
+The provider chain will upgrade to Gaia [v17.2.0](https://github.com/cosmos/gaia/releases/tag/v17.2.0) on **TBD**.
 
-* **Block height: `6882500`**
-* Target upgrade time: `13:30 UTC`
-* **No software upgrade proposal**
-* Golang version: 1.21
-
-### Upgrade details
-
-* ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
-  * Set the upgrade height in your node(s) `app.toml` and restart the node(s).
-    ```
-    halt-height = 6882500
-    ```
-  * Restart your node(s) with the `--halt-height 6882500` flag.
-* After the halt height is reached and your node is stopped:
-  * Replace the `gaiad` binary with the new one and restart the node after reverting to `halt-height = 0` in `app.toml` (or restart the node without the `--halt-height` flag).
+* **Block height: `TBD`**
+* Target upgrade time: `TBD`
+* Proposal TBA
 
 ## Endpoints
 
@@ -172,3 +160,9 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `6183000`, it will attempt to upgrade to Gaia `v16`. You can use Cosmovisor's auto-download feature or install the `v16.0.0-rc2` release binary.
 * When the node reaches height `6380200`, it will attempt to upgrade to Gaia `v17`. You can use Cosmovisor's auto-download feature or install the `v17.0.0-rc0` release binary.
+* Before the node reaches height `6882500`, stop the service.
+* Set `halt-height = 6882500` in `~/.gaia/config/app.toml` and start the service.
+* When the node reaches height `6882500`, stop the service.
+* Replace the `v17.0.0-rc0` binary with the `v17.2.0` one.
+* Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
+* When the node reaches height `TBD`, it will attempt to upgrade to Gaia `v18`. You can use Cosmovisor's auto-download feature or install the `v18.0.0-rc0` release binary.
