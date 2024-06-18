@@ -4,6 +4,7 @@
 
 * Chain ID: `test-powercap-1`
 * Opt-in
+* Power cap: 5%
 * Denom: `upow`
 * Minimum gas prices: `0upow`
 * Bech32 prefix: `consumer`
