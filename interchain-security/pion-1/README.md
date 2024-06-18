@@ -115,6 +115,10 @@ Run script provided to set up a `pion-1` service:
 * Script must be run either as root or from a sudoer account.
 * Script will attempt to build a binary from the [neutron-org/neutron] repo.
 
+If you are setting up a validator you will need to set up the `slinky` service:
+* `install-slinky.sh` will install the `slinky` and set up the `slinky` service
+* Script must be run either as root or from a sudoer account.
+
 ### Node manual installation
 
 Build and install neutron binary. 
@@ -136,6 +140,13 @@ server_name: neutrond
 version: v4.0.0-rc3
 ```
 
+If you are joining as a validator you must install and run `slinky` v1.0.0 as a service. To install follow this steps:
+
+```
+$ git clone -b v1.0.0 https://github.com/skip-mev/slinky.git
+$ cd slinky
+$ make install
+```
 ### Troubleshooting
 
 If you see error like this during startup
