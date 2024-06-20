@@ -11,6 +11,19 @@ SERVICE_NAME=slinky
 SERVICE_VERSION="1.0.0"
 # ***
 
+# Create directories
+if [ ! -d $SLINKY_HOME ]
+then
+    mkdir $SLINKY_HOME
+    chown -R $USER $SLINKY_HOME
+fi
+
+if [ ! -d $HOME/go/bin ]
+then
+    mkdir -p $HOME/go/bin
+    chown -R $USER $SLINKY_HOME
+fi
+
 # Install slinky binary
 mkdir ~/slinky-tmp
 cd ~/slinky-tmp
@@ -38,12 +51,6 @@ echo "LimitNOFILE=50000"                    | sudo tee /etc/systemd/system/$SERV
 echo ""                                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "[Install]"                            | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "WantedBy=multi-user.target"           | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-
-if [ ! -d $SLINKY_HOME ]
-then
-    mkdir $SLINKY_HOME
-    chown -R $USER $SLINKY_HOME
-fi
 
 # Start service
 sudo systemctl daemon-reload
