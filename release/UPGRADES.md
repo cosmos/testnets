@@ -1,5 +1,23 @@
 # Scheduled Upgrades 🗓️ 
 
+## v18.0.0-rc0
+
+### Schedule
+
+| Date         | Testnet plan                              |
+| ------------ | ----------------------------------------- |
+| June 26 2024 | Gaia v18.0.0-rc0 is live on the testnet |
+| June 25 2024 | Set upgrade halt height     |
+
+* **Version before upgrade**: `v17.2.0`
+* **Version after upgrade**: `v18.0.0-rc0`
+
+### Upgrade details
+
+* **Upgrade height: `TBD`**
+* Estimated upgrade time: `2024-06-26 ~13:00 UTC`
+* Release page: https://github.com/cosmos/gaia/releases/tag/v18.0.0-rc0
+
 ## v17.2.0
 
 ### Schedule
