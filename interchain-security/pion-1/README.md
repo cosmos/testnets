@@ -119,6 +119,11 @@ If you are setting up a validator you will need to set up the `slinky` service:
 * `install-slinky.sh` will install the `slinky` and set up the `slinky` service
 * Script must be run either as root or from a sudoer account.
 
+If you need to stop Slinky temporarily, adjust your Neutron `app.toml` file as follows to avoid missing blocks while Slinky is offline:
+  * In the `[oracle]` section, set `client_timeout = "500ms"`
+  * This will keep the oracle from timing out.
+  * Once you start Slinky back up, you can set `client_timeout = "2s"` again.
+
 ### Node manual installation
 
 Build and install neutron binary. 
