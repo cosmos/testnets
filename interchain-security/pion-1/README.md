@@ -137,7 +137,7 @@ You should see the following:
 ```
 name: neutron
 server_name: neutrond
-version: v4.0.1
+version: v4.0.1-testnet
 ```
 
 If you are joining as a validator you must install and run `slinky` v1.0.0 as a service. To install follow this steps:
