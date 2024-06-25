@@ -124,7 +124,7 @@ If you are setting up a validator you will need to set up the `slinky` service:
 Build and install neutron binary. 
 
 ```
-$ git clone -b v4.0.1 https://github.com/neutron-org/neutron.git
+$ git clone -b v4.0.1-testnet https://github.com/neutron-org/neutron.git
 $ cd neutron
 $ make install
 ```
