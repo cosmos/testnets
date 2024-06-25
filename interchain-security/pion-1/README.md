@@ -129,7 +129,7 @@ If you need to stop Slinky temporarily, adjust your Neutron `app.toml` file as f
 Build and install neutron binary. 
 
 ```
-$ git clone -b v4.0.0-rc3 https://github.com/neutron-org/neutron.git
+$ git clone -b v4.0.1-testnet https://github.com/neutron-org/neutron.git
 $ cd neutron
 $ make install
 ```
@@ -142,7 +142,7 @@ You should see the following:
 ```
 name: neutron
 server_name: neutrond
-version: v4.0.0-rc3
+version: v4.0.1-testnet
 ```
 
 If you are joining as a validator you must install and run `slinky` v1.0.0 as a service. To install follow this steps:
