@@ -7,15 +7,16 @@
 | Date         | Testnet plan                              |
 | ------------ | ----------------------------------------- |
 | June 26 2024 | Gaia v18.0.0-rc3 is live on the testnet |
-| June 25 2024 | Set upgrade halt height     |
+| June 25 2024 | ✅ Set upgrade halt height     |
 
 * **Version before upgrade**: `v17.2.0`
 * **Version after upgrade**: `v18.0.0-rc3`
 
 ### Upgrade details
 
-* **Upgrade height: `272`**
+* **Upgrade height: `22329350`**
 * Estimated upgrade time: `2024-06-26 ~13:00 UTC`
+  * [Mintscan countdown](https://www.mintscan.io/cosmoshub-testnet/block/22329350)
 * Release page: https://github.com/cosmos/gaia/releases/tag/v18.0.0-rc3
 
 ## v17.2.0
