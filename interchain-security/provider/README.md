@@ -5,7 +5,7 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v17.2.0`](https://github.com/cosmos/gaia/releases/tag/v17.2.0), upgraded from v16 at block height `6380200`.
+* **Current Gaia Version**: [`v18.0.0-rc3`](https://github.com/cosmos/gaia/releases/tag/v18.0.0-rc3), upgraded from v17 at block height `7093050`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
