@@ -17,7 +17,7 @@ The provider chain will upgrade to Gaia [v18.0.0-rc3](https://github.com/cosmos/
 
 * **Block height: `7093050`**
 * Target upgrade time: `13:30 UTC`
-* Proposal 146
+* Proposal [146](https://explorer.polypore.xyz/provider/gov/146)
 
 ## Endpoints
 
