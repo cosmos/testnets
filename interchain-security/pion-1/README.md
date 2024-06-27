@@ -10,7 +10,7 @@ The `pion-1` chain will be launched as a Neutron persistent chain to test Interc
 * **timeout_commit**: `1s`
 * **Spawn time**: `2023-06-29T14:30:00Z`
 * **GitHub repo**: [neutron-org/neutron](https://github.com/neutron-org/neutron.git)
-* **Current version**: [`v4.0.0-rc3`](https://github.com/neutron-org/neutron/releases/tag/v4.0.0-rc3)
+* **Current version**: [`v4.0.1`](https://github.com/neutron-org/neutron/releases/tag/v4.0.1-testnet)
   * Launch version: [`v1.0.2-pion-1-upgrade`](https://github.com/neutron-org/neutron/releases/tag/v1.0.2-pion-1-upgrade)
 * **Genesis file with CCV state:** [pion-1-genesis.json](https://github.com/cosmos/testnets/blob/master/interchain-security/pion-1/pion-1-genesis-with-ccv.json.gz)
 
@@ -94,10 +94,10 @@ Persistent nodes:
 
 ### Software Versions
 
-| Name    | Version               |
-|---------|-----------------------|
-| Neutron | v3.0.0 |
-| Go      | >1.21                 |
+| Name    | Version |
+| ------- | ------- |
+| Neutron | v4.0.1  |
+| Go      | >=1.21  |
 
 The scripts provided in this repo will install Neutron and set up a Cosmovisor service with the auto-download feature enabled on your machine.
 
@@ -148,7 +148,7 @@ version: v4.0.1-testnet
 If you are joining as a validator you must install and run `slinky` v1.0.0 as a service. To install follow this steps:
 
 ```
-$ git clone -b v1.0.0 https://github.com/skip-mev/slinky.git
+$ git clone -b v1.0.3 https://github.com/skip-mev/slinky.git
 $ cd slinky
 $ make install
 ```

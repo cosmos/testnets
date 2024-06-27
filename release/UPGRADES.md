@@ -1,13 +1,32 @@
 # Scheduled Upgrades 🗓️ 
 
+## v19.0.0-rc0
+
+### Schedule
+
+| Date | Testnet plan                            |
+| ---- | --------------------------------------- |
+| TBA  | Gaia v18.0.0-rc3 is live on the testnet |
+| TBA  | Set upgrade halt height                 |
+
+* **Version before upgrade**: `v18.0.0-rc3`
+* **Version after upgrade**: `v19.0.0-rc0`
+
+### Upgrade details
+
+* **Upgrade height: `TBA`**
+* Estimated upgrade time: `TBA ~13:00 UTC`
+  * Mintscan countdown: TBA
+* Release page: https://github.com/cosmos/gaia/releases/tag/v19.0.0-rc0
+
 ## v18.0.0-rc3
 
 ### Schedule
 
 | Date         | Testnet plan                              |
 | ------------ | ----------------------------------------- |
-| June 26 2024 | Gaia v18.0.0-rc3 is live on the testnet |
-| June 25 2024 | ✅ Set upgrade halt height     |
+| June 26 2024 | ✅ Gaia v18.0.0-rc3 is live on the testnet |
+| June 25 2024 | ✅ Set upgrade halt height                 |
 
 * **Version before upgrade**: `v17.2.0`
 * **Version after upgrade**: `v18.0.0-rc3`
@@ -23,10 +42,10 @@
 
 ### Schedule
 
-| Date         | Testnet plan                              |
-| ------------ | ----------------------------------------- |
+| Date         | Testnet plan                          |
+| ------------ | ------------------------------------- |
 | June 12 2024 | ✅ Gaia v17.2.0 is live on the testnet |
-| June 11 2024 | ✅ Set upgrade halt height     |
+| June 11 2024 | ✅ Set upgrade halt height             |
 
 * **Version before upgrade**: `v17.0.0-rc0`
 * **Version after upgrade**: `v17.2.0`
