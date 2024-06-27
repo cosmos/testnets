@@ -2,9 +2,9 @@
 
 | Date              | Testnet Incentives Program Period | Type              | Description                                                                                                                                              |
 | ----------------- | --------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| June 26 2024      | 6                                 | Major upgrade     | Consumer chain pion-1 upgrade                                                                                                                            |
-| June 26 2024      | 6                                 | Major upgrade     | Provider chain upgrades to Gaia v18.0.0-rc3                                                                                                                  |
-| June 19 2024      | 6                                 | Demo Day          | ✅ Demo day # 5: Validator power cap in consumer chains                                                                                                     |
+| June 26 2024      | 6                                 | Major upgrade     | ✅ Consumer chain pion-1 upgrade                                                                                                                          |
+| June 26 2024      | 6                                 | Major upgrade     | ✅ Provider chain upgrades to Gaia v18.0.0-rc3                                                                                                            |
+| June 19 2024      | 6                                 | Demo Day          | ✅ Demo day # 5: Validator power cap in consumer chains                                                                                                   |
 | June 12 2024      | -                                 | Consumer upgrade  | ✅ Consumer chain pion-1 upgraded to v4                                                                                                                   |
 | June 12 2024      | -                                 | Minor upgrade     | ✅ Provider chain upgrades to Gaia v17.2.0                                                                                                                |
 | June 5 2024       | -                                 |                   | Mainnet upgrade to v17 -- no testnet event!                                                                                                              |
