@@ -37,6 +37,14 @@
 * Estimated upgrade time: `2024-07-10 ~14:00 UTC`
   * [Mintscan countdown](https://www.mintscan.io/cosmoshub-testnet/block/22545200)
 * Release page: https://github.com/cosmos/gaia/releases/tag/v18.1.0
+* ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
+  * Set the upgrade height in your node(s) `app.toml` and restart the node(s).
+    ```
+    halt-height = 22545200
+    ```
+  * Restart your node(s) with the `--halt-height 22545200` flag.
+* After the halt height is reached and your node is stopped:
+  * Replace the `gaiad` binary with the new one and restart the node after reverting to `halt-height = 0` in `app.toml` (or restart the node without the `--halt-height` flag).
 
 ## v18.0.0-rc3
 

@@ -19,6 +19,18 @@ The provider chain will upgrade to Gaia [v18.1.0](https://github.com/cosmos/gaia
 * Target upgrade time: `14:30 UTC`
 * No proposal
 
+### Upgrade details
+
+* ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
+  * Set the upgrade height in your node(s) `app.toml` and restart the node(s).
+    ```
+    halt-height = 7303050
+    ```
+  * Restart your node(s) with the `--halt-height 7303050` flag.
+* After the halt height is reached and your node is stopped:
+  * Replace the `gaiad` binary with the new one and restart the node after reverting to `halt-height = 0` in `app.toml` (or restart the node without the `--halt-height` flag).
+
+
 ## Endpoints
 
 Endpoints are exposed as subdomains for the sentry and snapshot nodes (described below) as follows:
