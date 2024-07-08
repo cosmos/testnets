@@ -19,6 +19,25 @@
   * Mintscan countdown: TBA
 * Release page: https://github.com/cosmos/gaia/releases/tag/v19.0.0-rc0
 
+## v18.1.0
+
+### Schedule
+
+| Date         | Testnet plan                            |
+| ------------ | --------------------------------------- |
+| July 10 2024 | Gaia v18.1.0-rc3 is live on the testnet |
+| July 09 2024 | Set upgrade halt height                 |
+
+* **Version before upgrade**: `v18.0.0-rc3`
+* **Version after upgrade**: `v18.1.0`
+
+### Upgrade details
+
+* **Upgrade height: `22545200`**
+* Estimated upgrade time: `2024-07-10 ~14:00 UTC`
+  * [Mintscan countdown](https://www.mintscan.io/cosmoshub-testnet/block/22545200)
+* Release page: https://github.com/cosmos/gaia/releases/tag/v18.1.0
+
 ## v18.0.0-rc3
 
 ### Schedule
