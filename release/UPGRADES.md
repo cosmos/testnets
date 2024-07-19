@@ -6,16 +6,16 @@
 
 | Date | Testnet plan                            |
 | ---- | --------------------------------------- |
-| TBA  | Gaia v18.0.0-rc3 is live on the testnet |
+| TBA  | Gaia v19.0.0-rc0 is live on the testnet |
 | TBA  | Set upgrade halt height                 |
 
-* **Version before upgrade**: `v18.0.0-rc3`
+* **Version before upgrade**: `v18.1.0`
 * **Version after upgrade**: `v19.0.0-rc0`
 
 ### Upgrade details
 
 * **Upgrade height: `TBA`**
-* Estimated upgrade time: `TBA ~13:00 UTC`
+* Estimated upgrade time: `TBA ~13:30 UTC`
   * Mintscan countdown: TBA
 * Release page: https://github.com/cosmos/gaia/releases/tag/v19.0.0-rc0
 
