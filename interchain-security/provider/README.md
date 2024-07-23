@@ -15,9 +15,9 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 The provider chain will upgrade to Gaia [v19.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v19.0.0-rc0) on **July 24, 2024**.
 
-* **Block height: `TBA`**
+* **Block height: `7513200`**
 * Target upgrade time: `14:30 UTC`
-* Proposal `TBA`
+* Proposal `157`
 
 ## Endpoints
 
