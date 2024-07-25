@@ -1,5 +1,24 @@
 # Scheduled Upgrades 🗓️ 
 
+## v19.0.0-rc1
+
+### Schedule
+
+| Date | Testnet plan                            |
+| ---- | --------------------------------------- |
+| 2024-07-24  | Gaia v19.0.0-rc1 is live on the testnet |
+| 2024-07-23  | Submit and pass upgrade proposal |
+
+* **Version before upgrade**: `v18.1.0`
+* **Version after upgrade**: `v19.0.0-rc1`
+
+### Upgrade details
+
+* Estimated upgrade time: `2024-07-31 ~13:30 UTC`
+* **Upgrade height: `TBD`**
+  * Mintscan countdown: TBD
+* Release page: https://github.com/cosmos/gaia/releases/tag/v19.0.0-rc1
+
 ## v19.0.0-rc0
 
 ### Schedule

@@ -2,7 +2,8 @@
 
 | Date              | Testnet Incentives Program Period | Type              | Description                                                                                                                                              |
 | ----------------- | --------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| July 24 2024      | 7                                 | Major upgrade     | Provider chain upgrades to Gaia v19.0.0-rc0                                                                                                                 |
+| July 31 2024      | 7                                 | Patch upgrade     | Provider chain upgrades to Gaia v19.0.0-rc1                                                                                                                 |
+| July 24 2024      | 7                                 | Major upgrade     | ✅ Provider chain upgrades to Gaia v19.0.0-rc0                                                                                                                 |
 | July 10 2024      |                                   | Minor upgrade     | ✅ Provider chain upgrades to Gaia v18.1.0                                                                                                                  |
 | July 3 2024       | 6                                 | Game Day          | ✅ Game day # 3: Permissioned Cosmwasm                                                                                                                       |
 | June 26 2024      | 6                                 | Major upgrade     | ✅ Consumer chain pion-1 upgrade                                                                                                                          |
