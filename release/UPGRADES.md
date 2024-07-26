@@ -1,5 +1,14 @@
 # Scheduled Upgrades 🗓️ 
 
+## v19.0.0-rc1
+
+### Schedule
+
+| Date | Testnet plan                            |
+| ---- | --------------------------------------- |
+| TBD  | Gaia v19.0.0-rc1 is live on the testnet |
+| TBD  | Set upgrade halt height                 |
+
 ## v19.0.0-rc0
 
 ### Schedule
