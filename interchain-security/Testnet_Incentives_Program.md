@@ -23,7 +23,7 @@ In order for us to track your participation, we need to have an on-chain way to 
 We accept two ways of proving this:
 
 1. Memo: Using your **mainnet** validator wallet, send a trivial amount of ATOM to our multisig address (`cosmos1078gmgntta9qguve7c52dhxrs45xumjvcwrutd`). In the memo field, put the cosmovaloper address of your **testnet** validator. Do NOT put the address of your mainnet validator.
-2. Email: Using the email in your mainnet validator’s security contact, email [project.cosmos@hypha.coop](mailto:project.cosmos@hypha.coop) and tell us the cosmovaloper address of your **testnet** validator . Reminder -- you can edit your security contact using the following command: `gaiad tx staking edit-validator --security-contact &lt;contact info> --from &lt;self-delegation address>`
+2. Email: Using the email in your mainnet validator’s security contact, email [project.cosmos@hypha.coop](mailto:project.cosmos@hypha.coop) and tell us the cosmovaloper address of your **testnet** validator . Reminder -- you can edit your security contact using the following command: `gaiad tx staking edit-validator --security-contact <contact info> --from <self-delegation address>`
 
 ⚠️ If either your mainnet or testnet address changes (due to tombstoning, for example), you **must** notify us to remain eligible. Your key is your identity – we can’t process changes in identity without hearing from you!
 
