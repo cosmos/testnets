@@ -9,7 +9,7 @@
 | 2024-07-24  | Gaia v19.0.0-rc1 is live on the testnet |
 | 2024-07-23  | Submit and pass upgrade proposal |
 
-* **Version before upgrade**: `v18.1.0`
+* **Version before upgrade**: `v19.0.0-rc0`
 * **Version after upgrade**: `v19.0.0-rc1`
 
 ### Upgrade details

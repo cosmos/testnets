@@ -16,7 +16,7 @@ NODE_KEY_FILE=~/node_key.json
 NODE_HOME=~/.gaia
 NODE_MONIKER=provider
 SERVICE_NAME=provider
-GAIA_VERSION=v18.1.0
+GAIA_VERSION=v19.0.0-rc0
 CHAIN_BINARY_URL=https://github.com/cosmos/gaia/releases/download/$GAIA_VERSION/gaiad-$GAIA_VERSION-linux-amd64
 STATE_SYNC=true
 GAS_PRICE=0.005uatom
@@ -62,8 +62,8 @@ chmod +x $HOME/go/bin/$CHAIN_BINARY
 # Initialize home directory
 echo "Initializing $NODE_HOME..."
 rm -rf $NODE_HOME
-$CHAIN_BINARY config chain-id $CHAIN_ID --home $NODE_HOME
-$CHAIN_BINARY config keyring-backend test --home $NODE_HOME
+$CHAIN_BINARY config set client chain-id $CHAIN_ID --home $NODE_HOME
+$CHAIN_BINARY config set client keyring-backend test --home $NODE_HOME
 $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
 sed -i -e "/minimum-gas-prices =/ s^= .*^= \"$GAS_PRICE\"^" $NODE_HOME/config/app.toml
 sed -i -e "/seeds =/ s^= .*^= \"$SEEDS\"^" $NODE_HOME/config/config.toml
