@@ -33,7 +33,7 @@ We accept two ways of proving this:
 Each period, we evaluate the following five criteria:
 
 * **Criteria 1:** Be an active mainnet validator. Submit proof via our[ Google form](https://forms.gle/G6VB3uc1KUa54ht39)
-* **Criteria 2:** Validate all available Top N consumer chains secured by the Cosmos Hub (Neutron and Stride). 
+* **Criteria 2:** Validate all available Top N consumer chains secured by the Cosmos Hub (Neutron and Stride) with assigned consumer keys (i.e., do not reuse your Hub key).
 * **Criteria 3:** Remain unjailed on the provider chain for the entire period.
 * **Criteria 4:** Participate in every Testnet Wednesday event according to event criteria (e.g. sign within five blocks of a major upgrade, sign by a designated block after an upgrade). 
 * **Criteria 5:** Run a testnet infrastructure setup that closely mimics mainnet. 
