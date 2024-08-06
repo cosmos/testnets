@@ -1,13 +1,40 @@
 # Scheduled Upgrades 🗓️ 
 
+## v19.0.0-rc4
+
+### Schedule
+
+| Date | Testnet plan                            |
+| ---- | --------------------------------------- |
+| 2024-08-07  | Gaia v19.0.0-rc4 is live on the testnet |
+| 2024-08-06  | ✅ Set upgrade halt height                 |
+
+* **Version before upgrade**: `v19.0.0-rc3`
+* **Version after upgrade**: `v19.0.0-rc4`
+
+### Upgrade details
+
+* Estimated upgrade time: `2024-08-07 ~13:30 UTC`
+* **Upgrade height: `22977700`**
+  * Mintscan countdown: https://www.mintscan.io/cosmoshub-testnet/block/22977700
+* Release page: https://github.com/cosmos/gaia/releases/tag/v19.0.0-rc4
+* ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
+  * Set the upgrade height in your node(s) `app.toml` and restart the node(s).
+    ```
+    halt-height = 22977700
+    ```
+  * Restart your node(s) with the `--halt-height 22977700` flag.
+* After the halt height is reached and your node is stopped:
+  * Replace the `gaiad` binary with the new one and restart the node after reverting to `halt-height = 0` in `app.toml` (or restart the node without the `--halt-height` flag).
+
 ## v19.0.0-rc3
 
 ### Schedule
 
 | Date | Testnet plan                            |
 | ---- | --------------------------------------- |
-| 2024-07-24  | Gaia v19.0.0-rc3 is live on the testnet |
-| 2024-07-23  | Set upgrade halt height                 |
+| 2024-07-24  | ✅ Gaia v19.0.0-rc3 is live on the testnet |
+| 2024-07-23  | ✅ Set upgrade halt height                 |
 
 * **Version before upgrade**: `v19.0.0-rc0`
 * **Version after upgrade**: `v19.0.0-rc3`
@@ -33,8 +60,8 @@
 
 | Date | Testnet plan                            |
 | ---- | --------------------------------------- |
-| 2024-07-24  | Gaia v19.0.0-rc0 is live on the testnet |
-| 2024-07-23  | Submit and pass [upgrade proposal](https://explorer.polypore.xyz/theta-testnet-001/gov/301) |
+| 2024-07-24  | ✅ Gaia v19.0.0-rc0 is live on the testnet |
+| 2024-07-23  | ✅ Submit and pass [upgrade proposal](https://explorer.polypore.xyz/theta-testnet-001/gov/301) |
 
 * **Version before upgrade**: `v18.1.0`
 * **Version after upgrade**: `v19.0.0-rc0`
@@ -52,8 +79,8 @@
 
 | Date         | Testnet plan                            |
 | ------------ | --------------------------------------- |
-| July 10 2024 | Gaia v18.1.0-rc3 is live on the testnet |
-| July 09 2024 | Set upgrade halt height                 |
+| July 10 2024 | ✅ Gaia v18.1.0-rc3 is live on the testnet |
+| July 09 2024 | ✅ Set upgrade halt height                 |
 
 * **Version before upgrade**: `v18.0.0-rc3`
 * **Version after upgrade**: `v18.1.0`
