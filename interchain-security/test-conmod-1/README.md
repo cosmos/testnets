@@ -4,7 +4,7 @@
 
 * Chain ID: `test-conmod-1`
 * Opt-in
-* Allowlist: 
+* Allowlist: `cosmosvalcons146zd98kguwau7y3mfrrs9k4fsthv9qct9mdnx0`,`cosmosvalcons15yprks04304h8wg0x2fef53g50x9w2qa3c0hcd`,`cosmosvalcons12m5td27rwwy95drgk53w9pfhlxqqguqmlfph2g`
 * Denom: `umod`
 * Minimum gas prices: `0umod`
 * Bech32 prefix: `consumer`
