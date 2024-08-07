@@ -1,0 +1,25 @@
+{
+  "title": "Add the test-conmod-1 consumer chain",
+  "summary": "# Testnet Wednesday: 2024-08-07\r\n* Launch an opt-in chain: it will have the \"test-conmod-1\" chain ID.\r\n* It will help us demo a consumer modification proposal.",
+  "chain_id": "test-conmod-1",
+  "initial_height": {
+    "revision_height": 1,
+    "revision_number": 1
+  },
+  "genesis_hash": "49433cab2759283dfb37cfdb959ace532385b3b0e3b6d2dd506b64096e53a9fe",
+  "binary_hash": "3a10025f73204a313e75b5fd121f9ff5f9cc2c23a89d9692264f8eec108a90f0",
+  "spawn_time": "2024-08-07T01:00:00.000000000Z",
+  "top_N": 0,
+  "blocks_per_distribution_transmission": 100,
+  "consumer_redistribution_fraction": "0.75",
+  "historical_entries": 10000,
+  "transfer_timeout_period": 3600000000000,
+  "ccv_timeout_period": 2419200000000000,
+  "unbonding_period": 1728000000000000,
+  "deposit": "900000000uatom",
+  "allowlist": [
+    "cosmosvalcons146zd98kguwau7y3mfrrs9k4fsthv9qct9mdnx0",
+    "cosmosvalcons15yprks04304h8wg0x2fef53g50x9w2qa3c0hcd",
+    "cosmosvalcons12m5td27rwwy95drgk53w9pfhlxqqguqmlfph2g"
+  ]
+}

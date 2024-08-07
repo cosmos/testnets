@@ -1,0 +1,13 @@
+{
+    "title": "Demo day: Consumer modification proposal",
+    "summary": "We will modify the test-conmod-1 consumer chain parameters:\r\n* Clear the allowlist.\r\n* Add the apple validator to the denylist.\n\r* Set the validator power cap to 40.",
+    "chain_id": "test-conmod-1",
+    "top_N": 0,
+    "validators_power_cap": 40,
+    "allowlist": [],
+    "denylist": [
+      "cosmosvalcons1fna9agd8ymg3l08yr6jdfsk0zy9sh4kcmj6aac"
+    ],
+    "deposit": "900000000uatom"
+  }
+  
