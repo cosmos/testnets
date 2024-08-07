@@ -11,10 +11,12 @@ SERVICE_NAME=test-conmod-1
 SERVICE_DESCRIPTION="test-conmod-1 node"
 CHAIN_VERSION="v5.1.1"
 GAS_PRICE=0umod
+
 # ***
 
 CHAIN_BINARY='interchain-security-cd'
 CHAIN_ID=test-conmod-1
+GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/test-conmod-1/conmod-genesis.json
 PEERS="ab4a6db38c2c4932ed3933db40e31c9bb2eb697b@conmod-banana.ics-testnet.polypore.xyz:26656,02618e00d1a8957736ce9b0c8ae77a5298d86a32@conmod-cherry.ics-testnet.polypore.xyz:26656,84e2bb712ab5013a36cd9b8e08c882ea5a445109@conmod-node.ics-testnet.polypore.xyz:26656"
 
 # Install wget and jq
@@ -50,6 +52,9 @@ $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
 sed -i -e "/minimum-gas-prices =/ s^= .*^= \"$GAS_PRICE\"^" $NODE_HOME/config/app.toml
 sed -i -e "s/persistent_peers = \"\"/persistent_peers = \"$PEERS\"/" $NODE_HOME/config/config.toml
 
+echo "Downloading genesis file..."
+wget $GENESIS_URL -O $NODE_HOME/config/genesis.json
+
 sudo rm /etc/systemd/system/$SERVICE_NAME.service
 sudo touch /etc/systemd/system/$SERVICE_NAME.service
 
@@ -69,10 +74,9 @@ echo "WantedBy=multi-user.target"           | sudo tee /etc/systemd/system/$SERV
 # Start service
 echo "Setting up $SERVICE_NAME.service..."
 sudo systemctl daemon-reload
+sudo systemctl enable $SERVICE_NAME.service --now
 
 echo "***********************"
-echo "To start the service after the launch genesis is in place enter:"
-echo "sudo systemctl enable $SERVICE_NAME.service --now"
 echo "To see the service log enter:"
 echo "journalctl -fu $SERVICE_NAME.service"
 echo "***********************"
