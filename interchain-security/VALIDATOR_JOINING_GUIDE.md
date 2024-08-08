@@ -12,25 +12,42 @@ To join the Interchain Security testnet as a validator, you will have to run a b
 
 ## Creating a Validator on the Provider Chain
 
-Once you have some tokens in your self-delegation account, you can submit the `create-validator` transaction.
+Once you have some tokens in your self-delegation account, you can follow these steps to submit the `create-validator` transaction.
 
-Submit the `create-validator` transaction.
+1. Obtain your public key
+```
+gaiad tendermint show-validator
+{"@type":"/cosmos.crypto.ed25519.PubKey","key":"BShP2dtw02I/1SnLp/D/RBHoeEaG3NqlMkwWYZOqcug="}
+```
+
+2. Create the validator JSON (`validator.json`) file replacing the `pubkey` value from the `show-validator` command above and edit the other values for your needs.
+```
+{
+  "pubkey": {"@type":"/cosmos.crypto.ed25519.PubKey","key":"BShP2dtw02I/1SnLp/D/RBHoeEaG3NqlMkwWYZOqcug="},
+  "amount": "1000000uatom",
+  "moniker": "your-validator-moniker-1",
+  "identity": null,
+  "website": null,
+  "security": null,
+  "details": null,
+  "commission-rate": "0.1",
+  "commission-max-rate": "0.2",
+  "commission-max-change-rate": "0.01"
+}
+```
+
+3. Submit the `create-validator` transaction.
 
 ```bash
 gaiad tx staking create-validator \
---amount 1000000uatom \
---pubkey "$(gaiad tendermint show-validator)" \
---moniker <your moniker> \
---chain-id provider \
---commission-rate 0.10 \
---commission-max-rate 1.00 \
---commission-max-change-rate 0.1 \
---min-self-delegation 1000000 \
+validator.json \
+--from <self-delegation-account> \
 --gas auto \
---from <self-delegation-account>
+--gas-adjustment 3 \
+--gas-prices 0.005uatom
 ```
 
-You can verify the validator was created in the [block explorer](https://explorer.rs-testnet.polypore.xyz/provider/staking), or in the command line:
+4. You can verify the validator was created in the [block explorer](https://explorer.rs-testnet.polypore.xyz/provider/staking), or in the command line:
 
 ```
 gaiad q staking validators -o json | jq '.validators[].description.moniker'
