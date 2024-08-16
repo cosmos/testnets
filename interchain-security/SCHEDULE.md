@@ -2,6 +2,8 @@
 
 | Date              | Testnet Incentives Program Period | Type              | Description                                                                                                                                              |
 | ----------------- | --------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| August 22 2024 (THURS)    | 8                                 | Major upgrade          |  Provider chain upgrade                                                                                                             |
+| August 22 2024 (THURS)    | 8                                 | Consumer upgrade          |  Consumer chain pion-1 upgrade                                                                                                             |
 | August 7 2024     | 7                                 | Demo Day          | ✅ Demo day # 6: Consumer modification proposal                                                                                                             |
 | August 7 2024     | -                                 | Patch upgrade     | ✅ Provider chain upgrades to Gaia v19.0.0-rc4                                                                                                              |
 | July 31 2024      | 7                                 | Patch upgrade     | ✅ Provider chain upgrades to Gaia v19.0.0-rc3                                                                                                            |
