@@ -1,5 +1,32 @@
 # Scheduled Upgrades 🗓️ 
 
+## v19.1.0
+
+### Schedule
+
+| Date | Testnet plan                            |
+| ---- | --------------------------------------- |
+| 2024-08-22  | Gaia v19.1.0 is live on the testnet |
+| 2024-08-21  | ✅ Set upgrade halt height                 |
+
+* **Version before upgrade**: `v19.0.0-rc4`
+* **Version after upgrade**: `v19.1.0`
+
+### Upgrade details
+
+* Estimated upgrade time: `2024-08-22 ~14:30 UTC`
+* **Upgrade height: `23209000`**
+  * Mintscan countdown: https://www.mintscan.io/cosmos-testnet/block/23209000
+* Release page: https://github.com/cosmos/gaia/releases/tag/v19.1.0
+* ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
+  * Set the upgrade height in your node(s) `app.toml` and restart the node(s).
+    ```
+    halt-height = 23209000
+    ```
+  * Restart your node(s) with the `--halt-height 23209000` flag.
+* After the halt height is reached and your node is stopped:
+  * Replace the `gaiad` binary with the new one and restart the node after reverting to `halt-height = 0` in `app.toml` (or restart the node without the `--halt-height` flag).
+
 ## v19.0.0-rc4
 
 ### Schedule
