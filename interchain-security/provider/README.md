@@ -11,17 +11,17 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v19.0.0 Upgrade
+## v19.1.0 Upgrade
 
-The provider chain will upgrade to Gaia [v19.0.0](https://github.com/cosmos/gaia/releases/tag/v19.0.0) on **TBD**.
+The provider chain will upgrade to Gaia [v19.1.0](https://github.com/cosmos/gaia/releases/tag/v19.1.0) on **August 22 2024**.
 
-* **Block height: `TBD`**
-* Mintscan countdown https://www.mintscan.io/ics-testnet-provider/block/TBD
-* Target upgrade time: `14:30 UTC`
+* **Block height: `7947500`**
+* Mintscan countdown https://www.mintscan.io/ics-testnet-provider/block/7947500
+* Target upgrade time: `13:30 UTC`
 * This is not a proposal-gated upgrade. You must do one of the following ahead of time:
   * Set the upgrade height in your node(s) `app.toml` and restart the node(s).
     ```
-    halt-height = TBD
+    halt-height = 7947500
     ```
   * Restart your node(s) with the `--halt-height TBD` flag.
 * After the halt height is reached and your node is stopped:
