@@ -6,7 +6,7 @@
 
 | Date | Testnet plan                            |
 | ---- | --------------------------------------- |
-| 2024-08-22  | Gaia v19.1.0 is live on the testnet |
+| 2024-08-22  | ✅ Gaia v19.1.0 is live on the testnet |
 | 2024-08-21  | ✅ Set upgrade halt height                 |
 
 * **Version before upgrade**: `v19.0.0-rc4`
