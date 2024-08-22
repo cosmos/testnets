@@ -189,4 +189,7 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Set `halt-height = 7724100` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `7724100`, stop the service.
 * Replace the `v19.0.0-rc3` binary with the `v19.0.0-rc4` one.
+* Set `halt-height = 7947500` in `~/.gaia/config/app.toml` and start the service.
+* When the node reaches height `7947500`, stop the service.
+* Replace the `v19.0.0-rc4` binary with the `v19.1.0` one.
 * Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
