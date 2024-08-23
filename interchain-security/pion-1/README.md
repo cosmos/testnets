@@ -96,7 +96,7 @@ Persistent nodes:
 
 | Name    | Version |
 | ------- | ------- |
-| Neutron | v4.0.1  |
+| Neutron | v4.2.1  |
 | Go      | >=1.21  |
 
 The scripts provided in this repo will install Neutron and set up a Cosmovisor service with the auto-download feature enabled on your machine.
@@ -142,10 +142,10 @@ You should see the following:
 ```
 name: neutron
 server_name: neutrond
-version: v4.0.1-testnet
+version: v4.2.1-testnet
 ```
 
-If you are joining as a validator you must install and run `slinky` v1.0.0 as a service. To install follow this steps:
+If you are joining as a validator you must install and run `slinky` v1.0.3 as a service. To install follow this steps:
 
 ```
 $ git clone -b v1.0.3 https://github.com/skip-mev/slinky.git

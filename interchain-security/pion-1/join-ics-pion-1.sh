@@ -11,7 +11,7 @@ NODE_KEY_FILE=${2:-"~/node_key.json"}
 NODE_HOME=~/.neutrond
 NODE_MONIKER=node
 SERVICE_NAME=neutrond
-SERVICE_VERSION="v4.0.1-testnet"
+SERVICE_VERSION="v4.2.1-testnet"
 STATE_SYNC=true
 # ***
 
