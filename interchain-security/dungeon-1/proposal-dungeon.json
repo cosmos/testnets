@@ -1,0 +1,18 @@
+{
+    "title": "Create the dungeon chain",
+    "description": "This is the proposal to create the \"dungeon\" consumer chain.**",
+    "chain_id": "dungeon-1",
+    "initial_height": {
+        "revision_height": 1
+    },
+    "genesis_hash": "TODO",
+    "binary_hash": "TODO",
+    "spawn_time": "2023-02-03T15:00:00.000000Z", // TODO
+    "blocks_per_distribution_transmission": 1000,
+    "consumer_redistribution_fraction": "0.10",
+    "historical_entries": 10000,
+    "transfer_timeout_period": 1800000000000, // TODO
+    "ccv_timeout_period": 2419200000000000, // TODO
+    "unbonding_period": 1728000000000000, // TODO
+    "deposit": "10000000uatom"
+}
