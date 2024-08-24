@@ -3,9 +3,14 @@
 
 > Status: **PENDING**
 
-The `dungeon` chain was launched to test the dungeon chain.
+The `dungeon` chain is launched to test the dungeon chain.
 
 ---
+
+`tar -xvzf genesis.json.tar.gz "./network/dungeon-1/genesis.json" --one-top-level=genesis.json --strip-components 4`
+<!-- `tar -zcvf dungeond-linux-amd64.tar.gz dungeond-linux-amd64` -->
+
+`tar -xvzf dungeond-linux-amd64.tar.gz`
 
 * **Chain-ID**: `dungeon-1`
 * **denom**: `udgn`
@@ -13,12 +18,12 @@ The `dungeon` chain was launched to test the dungeon chain.
 * **Stop time**: `-`
 * **GitHub repo**: [Crypto-Dungeon/dungeonchain](https://github.com/Crypto-Dungeon/dungeonchain)
 * **Commit**: [`f2325ed0e0d341f4280992ac3cbc61b9a967d578`](https://github.com/Crypto-Dungeon/dungeonchain/commit/f2325ed0e0d341f4280992ac3cbc61b9a967d578)
-* **Genesis file with CCV state:** [slasher-genesis.json](geunon-genesis.json) // TODO:
+* **Genesis file with CCV state:** [genesis.json.tar.gz](genesis.json.tar.gz)
 
-* **Reference binary**: `slasher-linux-amd64` # TODO: copy the linux bin here
-* **Binary sha256sum**: `c6660834e0786c3032369de6d7798bb411993c741d0c7c2709fc4cbc9cfa1864`
-* **Genesis file _without CCV state_:** `slasher-genesis-without-ccv.json`
-* **SHA256 for genesis file _without CCV state_**: `f2bcaeec812058d761399d355124ceb8945b79168a2848c46c4455bebebe7d00`
+* **Reference binary**: `dungeond-linux-amd64`
+* **Binary sha256sum**: `9e1ace58bc4434111232a84c40bac9640c83f061f2ba84331209beae76dd56ca`
+<!-- * **Genesis file _without CCV state_:** `slasher-genesis-without-ccv.json`
+* **SHA256 for genesis file _without CCV state_**: `f2bcaeec812058d761399d355124ceb8945b79168a2848c46c4455bebebe7d00` -->
 
 The following items will be included in the consumer addition proposal:
 
@@ -27,17 +32,15 @@ The following items will be included in the consumer addition proposal:
   * The `slasher-genesis-without-ccv.json` file cannot be used to run the chain: it must be updated with the CCV (Cross Chain Validation) state after the spawn time is reached.
   * The genesis file includes funds for a relayer and a faucet account, and `signed_blocks_window` has been set to `20000`.
 * Binary hash
-  * The `slasher-linux-amd64` binary is only provided to verify the SHA256. It was built with commit [`e6bd5b72650e107ff0ce613af5d2e17310f7e984`](https://github.com/Crypto-Dungeon/dungeonchain/commit/e6bd5b72650e107ff0ce613af5d2e17310f7e984) of the Interchain Security repo. You can generate the binary following the build instructions in that repo or using one of the scripts provided here.
+  * The `dungeond-linux-amd64` binary is only provided to verify the SHA256. It was built with commit [`f2325ed0e0d341f4280992ac3cbc61b9a967d578`](https://github.com/Crypto-Dungeon/dungeonchain/commit/f2325ed0e0d341f4280992ac3cbc61b9a967d578). You can generate the binary following the build instructions in that repo or using one of the scripts provided here.
 * Spawn time
   * Even if a proposal passes, the CCV state will not be available from the provider chain until after the spawn time is reached.
-
-For more information regarding the consumer chain creation process, see [CCV: Overview and Basic Concepts](https://github.com/cosmos/ibc/blob/main/spec/app/ics-028-cross-chain-validation/overview_and_basic_concepts.md).
 
 ## Endpoints
 
 Persistent nodes:
 
-1. `b7d0bd260fca7a5a19c7631b15f6068891faa60e@slasher-apple.rs-testnet.polypore.xyz:26656`
+1. `b7d0bd260fca7a5a19c7631b15f6068891faa60e@slasher-apple.rs-testnet.polypore.xyz:26656` // TODO:
 
 ## IBC Information
 
