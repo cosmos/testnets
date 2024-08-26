@@ -6,13 +6,13 @@
         "revision_height": 1
     },
     "genesis_hash": "TODO",
-    "binary_hash": "TODO",
-    "spawn_time": "2023-02-03T15:00:00.000000Z", // TODO
-    "blocks_per_distribution_transmission": 1000,
+    "binary_hash": "e44429f3f67c2c57ced7be208092264aed712e6d7b4140e03878552d50dbb2e8",
+    "spawn_time": "2024-08-28T13:30:00.000000Z",
+    "blocks_per_distribution_transmission": 3000,
     "consumer_redistribution_fraction": "0.10",
     "historical_entries": 10000,
-    "transfer_timeout_period": 1800000000000, // TODO
-    "ccv_timeout_period": 2419200000000000, // TODO
-    "unbonding_period": 1728000000000000, // TODO
+    "transfer_timeout_period": 3600000000000,
+    "ccv_timeout_period": 2419200000000000,
+    "unbonding_period": 1814400000000000,
     "deposit": "10000000uatom"
 }
