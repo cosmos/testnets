@@ -46,9 +46,9 @@ The `dungeon` chain is launched to test the dungeon chain.
 * **Reference binary**: `https://github.com/Crypto-Dungeon/dungeonchain/raw/main/network/dungeontest-1/dungeond-0.1.0-amd64.tar.gz`
   * `tar -xvzf dungeond-0.1.0-amd64.tar.gz`
 * **Binary sha256sum**: `e44429f3f67c2c57ced7be208092264aed712e6d7b4140e03878552d50dbb2e8`
-* **Genesis file _without CCV state_:** `dungeon-genesis-without-ccv.json`
-  * `tar -xvzf genesis.json.tar.gz "./network/dungeon-1/genesis.json" --one-top-level=genesis.json --strip-components 4`
-* **SHA256 for genesis file _without CCV state_**: `f2bcaeec812058d761399d355124ceb8945b79168a2848c46c4455bebebe7d00`
+* **Genesis file _without CCV state_:** `genesis.json.tar.gz`
+  * `tar -xvzf genesis.json.tar.gz "./network/dungeontest-1/genesis.json" --one-top-level=genesis.json --strip-components 4`
+* **SHA256 for genesis file _without CCV state_**: `8ee776b221f6c2440079ed5c5bb440f68741aa31988e00babcfc93ae965adb98`
 
 The following items will be included in the consumer addition proposal:
 
