@@ -14,6 +14,13 @@ The `dungeon` chain is launched to test the dungeon chain.
   tar -czvf dungeond-linux-amd64.tar.gz dungeond-linux-amd64
   rm ./dungeond-linux-amd64
 
+  *Get Genesis*
+  cp ~/.dungeond/config/genesis.json genesis.json
+
+  *Decompress Base Genesis*
+  tar -xvzf dungeon-genesis.json.tar.gz "./network/dungeon-1/genesis.json" --one-top-level=genesis.json --strip-components 4
+
+
   *Get CCV Only from genesis*
   cat genesis.json | jq .app_state.ccvconsumer > dungeon-ccv.json
 
@@ -27,14 +34,14 @@ The `dungeon` chain is launched to test the dungeon chain.
 -->
 
 
-* **Chain-ID**: `dungeon-1`
+* **Chain-ID**: `dungeontest-1`
 * **denom**: `udgn`
 * **Spawn time**: `2024-08-28T13:30:00.000000Z`
 * **Stop time**: `-`
 * **GitHub repo**: [Crypto-Dungeon/dungeonchain](https://github.com/Crypto-Dungeon/dungeonchain)
-* **Commit**: [`f2325ed0e0d341f4280992ac3cbc61b9a967d578`](https://github.com/Crypto-Dungeon/dungeonchain/commit/f2325ed0e0d341f4280992ac3cbc61b9a967d578)
-* **Genesis file with CCV state:** [genesis.json.tar.gz](genesis.json.tar.gz)
-  * `tar -xvzf genesis.json.tar.gz "./network/dungeon-1/genesis.json" --one-top-level=genesis.json --strip-components 4`
+* **Commit**: [`f2325ed0e0d341f4280992ac3cbc61b9a967d578`](https://github.com/Crypto-Dungeon/dungeonchain/commit/f2325ed0e0d341f4280992ac3cbc61b9a967d578) **(v0.1.0)**
+* **Genesis file with CCV state:** [TBA](TBA)
+
 
 * **Reference binary**: `dungeond-linux-amd64`
   * ` tar -xvzf dungeond-linux-amd64.tar.gz`
@@ -69,10 +76,8 @@ Connections and channels will be posted here shortly after the chain launches.
 
 #### Bash Scripts
 
-The scripts provided in this repo will install a malicious branch of `interchain-security-cd` and optionally set up a Cosmovisor service on your machine.
-
-Run either one of the scripts provided to set up a `slasher` service:
-* `join-rs-slasher.sh` will create a `slasher` service.
-* `join-rs-slasher-cv.sh` will create a `cosmovisor` service.
+Run either one of the scripts provided to set up a `dungeon` service:
+* `join-rs-dungeon.sh` will create a `dungeon` service.
+* `join-rs-dungeon-cv.sh` will create a `cosmovisor` service.
 * Both scripts must be run either as root or from a sudoer account.
 * Both scripts will attempt to build a binary from the [cosmos/interchain-security] repo.

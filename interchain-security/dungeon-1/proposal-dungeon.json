@@ -3,7 +3,7 @@
     "description": "This is the proposal to create the \"dungeon\" consumer chain.**",
     "chain_id": "dungeon-1",
     "initial_height": {
-        "revision_height": 1
+        "revision_number": 1
     },
     "genesis_hash": "TODO",
     "binary_hash": "e44429f3f67c2c57ced7be208092264aed712e6d7b4140e03878552d50dbb2e8",
