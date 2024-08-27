@@ -1,8 +1,9 @@
 {
     "title": "Create the dungeon chain",
     "description": "This is the proposal to create the \"dungeon\" consumer chain.**",
-    "chain_id": "dungeon-1",
+    "chain_id": "dungeontest-1",
     "initial_height": {
+        "revision_height": 1,
         "revision_number": 1
     },
     "genesis_hash": "8ee776b221f6c2440079ed5c5bb440f68741aa31988e00babcfc93ae965adb98",
