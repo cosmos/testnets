@@ -66,7 +66,8 @@ The following items will be included in the consumer addition proposal:
 Persistent nodes:
 
 <!-- TODO: Dungeon team needs to launch a node before as a peer -->
-1. `b7d0bd260fca7a5a19c7631b15f6068891faa60e@slasher-apple.rs-testnet.polypore.xyz:26656`
+1. `9c9affab7652c9c5a2898d0dd244840c90bc8ba9@dungeon-cherry.ics-testnet.polypore.xyz:26656`
+2. `4c9fe209358b0821fe48be7e449a3ed02af7b740@dungeon.ics-testnet.polypore.xyz:26656`
 
 ## IBC Information
 
