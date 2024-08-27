@@ -21,7 +21,7 @@ CHAIN_ID=dungeon-1
 PERSISTENT_PEERS="" # TODO:
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
-GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/dungeon-1/dungeon-genesis.json.tar.gz
+GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/dungeontest-1/genesis.json.tar.gz
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
@@ -63,7 +63,7 @@ cp $NODE_KEY_FILE $NODE_HOME/config/node_key.json
 # Replace genesis file: only after the spawn time is reached
 echo "Replacing genesis file..."
 wget $GENESIS_URL -O genesis.json.tar.gz
-tar -xvzf genesis.json.tar.gz "./network/dungeon-1/genesis.json" --one-top-level=genesis.json --strip-components 4
+tar -xvzf genesis.json.tar.gz "./network/dungeontest-1/genesis.json" --one-top-level=genesis.json --strip-components 4
 mv genesis.json $NODE_HOME/config/genesis.json
 
 # Set up cosmovisor

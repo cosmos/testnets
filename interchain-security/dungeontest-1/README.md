@@ -54,7 +54,7 @@ The following items will be included in the consumer addition proposal:
 
 * Genesis file hash
   * The SHA256 is used to verify against the genesis file (without CCV state) that the proposer has made available for review.
-  * The `dungeon-genesis-without-ccv.json` file cannot be used to run the chain: it must be updated with the CCV (Cross Chain Validation) state after the spawn time is reached.
+  * The `genesis.json.tar.gz` file cannot be used to run the chain: it must be updated with the CCV (Cross Chain Validation) state after the spawn time is reached.
   * The genesis file includes funds for a relayer and a faucet account, and `signed_blocks_window` has been set to `20000`.
 * Binary hash
   * The `dungeond-linux-amd64` binary is only provided to verify the SHA256. It was built with commit [`f2325ed0e0d341f4280992ac3cbc61b9a967d578`](https://github.com/Crypto-Dungeon/dungeonchain/commit/f2325ed0e0d341f4280992ac3cbc61b9a967d578). You can generate the binary following the build instructions in that repo or using one of the scripts provided here.
@@ -65,7 +65,7 @@ The following items will be included in the consumer addition proposal:
 
 Persistent nodes:
 
-<!-- TODO: Dungeon team needs to launch a node before as a peer? or is this done after coordination -->
+<!-- TODO: Dungeon team needs to launch a node before as a peer -->
 1. `b7d0bd260fca7a5a19c7631b15f6068891faa60e@slasher-apple.rs-testnet.polypore.xyz:26656`
 
 ## IBC Information
