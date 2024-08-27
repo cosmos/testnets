@@ -1,9 +1,9 @@
 
-# `dungeon` Chain Details
+# `dungeontest-1` Chain Details
 
 > Status: **PENDING**
 
-The `dungeon` chain is launched to test the dungeon chain.
+The `dungeontest-1` chain is launched to test the dungeon chain.
 
 ---
 
