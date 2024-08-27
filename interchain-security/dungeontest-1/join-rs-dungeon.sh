@@ -17,7 +17,7 @@ SERVICE_NAME=dungeonchain
 # ***
 
 CHAIN_BINARY='dungeond'
-CHAIN_ID=dungeon-1
+CHAIN_ID=dungeontest-1
 PERSISTENT_PEERS="" # TODO:
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
