@@ -18,7 +18,7 @@ SERVICE_NAME=cv-dungeonchain
 
 CHAIN_BINARY='dungeond'
 CHAIN_ID=dungeontest-1
-PERSISTENT_PEERS="" # TODO:
+PERSISTENT_PEERS="9c9affab7652c9c5a2898d0dd244840c90bc8ba9@dungeon-cherry.ics-testnet.polypore.xyz:26656,4c9fe209358b0821fe48be7e449a3ed02af7b740@dungeon.ics-testnet.polypore.xyz:26656”
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
 GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/dungeontest-1/genesis.json.tar.gz
