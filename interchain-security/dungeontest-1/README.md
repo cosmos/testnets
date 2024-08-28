@@ -40,7 +40,11 @@ The `dungeontest-1` chain is launched to test the dungeon chain.
 * **Stop time**: `-`
 * **GitHub repo**: [Crypto-Dungeon/dungeonchain](https://github.com/Crypto-Dungeon/dungeonchain)
 * **Commit**: [`f2325ed0e0d341f4280992ac3cbc61b9a967d578`](https://github.com/Crypto-Dungeon/dungeonchain/commit/f2325ed0e0d341f4280992ac3cbc61b9a967d578) **(v0.1.0)**
-* **Genesis file with CCV state:** [TBA](TBA)
+* **Genesis file with CCV state:** [genesis.json.gz](./genesis.json.gz)
+```
+jq -S -c -M '.' genesis.json | sha256sum
+309c4878f29866f1f58531d882a1a3a79980f1d24196fe679c77a24c9b1eab8a  -
+```
 
 
 * **Reference binary**: `https://github.com/Crypto-Dungeon/dungeonchain/raw/main/network/dungeontest-1/dungeond-0.1.0-amd64.tar.gz`
