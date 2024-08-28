@@ -75,10 +75,40 @@ Connections and channels will be posted here shortly after the chain launches.
 
 ## How to Join
 
-#### Bash Scripts
+### Bash Scripts
 
 Run either one of the scripts provided to set up a `dungeon` service:
-* `join-rs-dungeon.sh` will create a `dungeon` service.
-* `join-rs-dungeon-cv.sh` will create a `cosmovisor` service.
+* `setup-dungeon.sh` will create a `dungeonchain` service.
+* `setup-dungeon-cv.sh` will create a `cv-dungeonchain` service.
 * Both scripts must be run either as root or from a sudoer account.
-* Both scripts will attempt to build a binary from the [cosmos/interchain-security] repo.
+* Both scripts will attempt to build a binary from the [Crypto-Dungeon/dungeonchain](https://github.com/Crypto-Dungeon/dungeonchain) repo.
+
+### Opt in Before Launch
+
+* You must submit your opt-in transaction before the spawn time is reached to start signing blocks as soon as the chain starts.
+  ```
+  gaiad tx provider opt-in dungeontest-1 <consumer node public key>
+  ```
+
+## Launch Instructions
+
+After the spawn time is reached:
+  * The launch genesis file will be posted in this repo.
+  * Copy this file to your consumer chain's home `/config/genesis.json`.
+  * Start your node
+
+### Preparing the genesis file
+
+These are the commands we will use to generate the launch genesis file after the spawn time is reached:
+
+* Obtain CCV state
+* Populate reward denoms
+* Populate provider reward denoms
+* Patch the consumer genesis file
+
+```
+gaiad q provider consumer-genesis dungeontest-1 -o json --node https://rpc.provider-sentry-01.ics-testnet.polypore.xyz:443 > ccv.json
+jq '.params.reward_denoms |= ["udgn"]' ccv.json > ccv-denom.json
+jq '.params.provider_reward_denoms |= ["uatom"]' ccv-denom.json > ccv-provider-denom.json
+jq -s '.[0].app_state.ccvconsumer = .[1] | .[0]' dungeon-genesis-pre-spawn.json ccv-provider-denom.json > genesis.json
+```
