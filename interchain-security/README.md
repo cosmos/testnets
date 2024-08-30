@@ -36,7 +36,8 @@ Stay tuned!
 * Consumer: [`stride-ics-testnet-1`](/interchain-security/stopped/stride-ics-testnet-1/readme.md)
 * Consumer: [`stride-ics-testnet-two-1`](/interchain-security/stopped/stride-ics-testnet-two-1/README.md)
 * Consumer: [`duality-testnet-1`](/interchain-security/stopped/duality-testnet-1/README.md)
-* Consumer: [`banksy-testnet-3`](/interchain-security/stopped/banksy-testnet-3/README.md) 
+* Consumer: [`banksy-testnet-3`](/interchain-security/stopped/banksy-testnet-3/README.md)
+* Consumer: [`dungeontest-1`](/interchain-security/stopped/dungeontest-1/README.md)
 
 ## Upcoming Events
 

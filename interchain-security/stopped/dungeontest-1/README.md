@@ -37,7 +37,7 @@ The `dungeontest-1` chain is launched to test the dungeon chain.
 * **Chain-ID**: `dungeontest-1`
 * **denom**: `udgn`
 * **Spawn time**: `2024-08-28T13:30:00.000000Z`
-* **Stop time**: `-`
+* **Stop time**: `2024-08-30T13:30:00.000000Z`
 * **GitHub repo**: [Crypto-Dungeon/dungeonchain](https://github.com/Crypto-Dungeon/dungeonchain)
 * **Commit**: [`f2325ed0e0d341f4280992ac3cbc61b9a967d578`](https://github.com/Crypto-Dungeon/dungeonchain/commit/f2325ed0e0d341f4280992ac3cbc61b9a967d578) **(v0.1.0)**
 * **Genesis file with CCV state:** [genesis.json.gz](./genesis.json.gz)
