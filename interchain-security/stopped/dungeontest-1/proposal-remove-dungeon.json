@@ -1,0 +1,7 @@
+{
+    "title": "Remove the dungeontest-1 consumer chain",
+    "summary": "This proposal will remove the consumer chain \"dungeontest-1\".",
+    "chain_id": "dungeontest-1",
+    "stop_time": "2024-08-30T13:30:00.000000000Z",
+    "deposit": "900000000uatom"
+  }
