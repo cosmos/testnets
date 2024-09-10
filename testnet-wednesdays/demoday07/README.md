@@ -30,6 +30,6 @@ We will post announcements in the `testnet-announcements` channel in Discord to 
 
 * We will submit two text proposals with a large character count in the `summary` field within a single block.
   * This will drive the gas price up.
-  * The total gas wanted for these proposals will be ~44_000_000.
-  * When the `max_block_utilization` parameter in the feemarket module is set to 30_000_000, only one of the submit proposal transactions will succeed, and the other one will fail.
-  * When the `max_block_utilization` parameter in the feemarket module is set to 75_000_000, both of the submit proposal transactions will succeed.
+  * The total gas wanted for these proposals will be ~`44_000_000`.
+  * When the `max_block_utilization` parameter in the feemarket module is set to `30_000_000`, only one of the submit proposal transactions will succeed, and the other one will fail.
+  * When the `max_block_utilization` parameter in the feemarket module is set to `75_000_000`, both of the submit proposal transactions will succeed.
