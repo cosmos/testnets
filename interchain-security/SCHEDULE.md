@@ -2,7 +2,7 @@
 
 | Date                   | Testnet Incentives Program Period | Type              | Description                                                                                                                                              |
 | ---------------------- | --------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| September 11 2024      | 8                                 | Consumer addition | Evmos sovereign-consumer transition                                                                                                                      |
+| September 11 2024      | 8                                 | Demo Day | Demo day # 7: feemarket                                                                                                                      |
 | August 28 2024         | 8                                 | Consumer addition | ✅ Crypto Dungeon chain launched                                                                                                                          |
 | August 22 2024 (THURS) | 8                                 | Major upgrade     | ✅ Provider chain upgrades to Gaia v19.1.0 upgrade                                                                                                        |
 | August 22 2024 (THURS) | 8                                 | Consumer upgrade  | ✅ Consumer chain pion-1 upgraded to v4.2.1                                                                                                               |
