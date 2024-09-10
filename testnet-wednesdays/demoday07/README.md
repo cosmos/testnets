@@ -1,6 +1,6 @@
 # Testnet Demo Day # 7: 2024-September-11
 
-In this demo day, we will demonstrate the impact of the feemarket module in gas prices and block size.
+In this demo day, we will demonstrate the impact of the feemarket module in gas limits and prices.
 
 We will kick off this event by submitting a governance proposal to update the feemarket parameters; after the proposal passes, we will submit transactions to verify the new parameters work as intended.
 
