@@ -14,10 +14,10 @@
 
 ### Upgrade details
 
-* Estimated upgrade time: `2024-09-18 ~13:30 UTC`
 * Proposal ID: [323](https://explorer.polypore.xyz/theta-testnet-001/gov/323)
 * **Upgrade height: `23626900`**
   * Mintscan countdown: https://www.mintscan.io/cosmos-testnet/block/23626900
+  * Estimated upgrade time: `2024-09-18 ~13:30 UTC`
 * Release page: https://github.com/cosmos/gaia/releases/tag/v20.0.0-rc0
 
 ## v19.1.0
