@@ -1,5 +1,24 @@
 # Scheduled Upgrades 🗓️ 
 
+## v20.0.0-rc0
+
+### Schedule
+
+| Date | Testnet plan                            |
+| ---- | --------------------------------------- |
+| 2024-09-18  | Gaia v20.0.0-rc0 is live on the testnet |
+| 2024-09-17  | ✅ Submit and pass [upgrade proposal](https://explorer.polypore.xyz/theta-testnet-001/gov/323) |
+
+* **Version before upgrade**: `v19.2.0`
+* **Version after upgrade**: `v20.0.0-rc0`
+
+### Upgrade details
+
+* Estimated upgrade time: `2024-09-18 ~13:30 UTC`
+* **Upgrade height: `23626900`**
+  * Mintscan countdown: https://www.mintscan.io/cosmos-testnet/block/23626900
+* Release page: https://github.com/cosmos/gaia/releases/tag/v20.0.0-rc0
+
 ## v19.1.0
 
 ### Schedule
