@@ -117,7 +117,7 @@ Run either one of the scripts provided in this repo to join the provider chain:
 
 If you want to use Cosmovisor's **auto-download** feature, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=true`
 
-If you are **manually preparing your binary**, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` and download a copy of the v17.0.0-rc0 binary to the v16 upgrade directory in your cosmovisor directory (`upgrades/v16/bin/gaiad`). 
+If you are **manually preparing your binary**, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` and download a copy of the v20.0.0-rc0 binary to the v20 upgrade directory in your cosmovisor directory (`upgrades/v20/bin/gaiad`). 
 
 ```
 .
@@ -126,7 +126,7 @@ If you are **manually preparing your binary**, please set the environment variab
 │   └── bin
 │       └── gaiad
 └── upgrades
-    └── v16
+    └── v20
         ├── bin
         │   └── gaiad
         └── upgrade-info.json
