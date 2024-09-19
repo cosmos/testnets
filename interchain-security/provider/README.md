@@ -5,19 +5,18 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v19.2.0`](https://github.com/cosmos/gaia/releases/tag/v19.2.0), upgraded from v18 at block height `7513200`.
+* **Current Gaia Version**: [`v20.0.0-rc0`](https://github.com/cosmos/gaia/releases/tag/v20.0.0-rc0), upgraded from v19 at block height `8361100`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v20.0.0-rc0 Upgrade
+## v20.0.0 Upgrade
 
-The provider chain will upgrade to Gaia [v20.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v20.0.0-rc0) on **September 18, 2024**.
+The provider chain will upgrade to Gaia [v20.0.0](https://github.com/cosmos/gaia/releases/tag/v20.0.0) on **TBD**.
 
-* Proposal ID: [184](https://explorer.polypore.xyz/provider/gov/184)
-* **Upgrade height: `8361100`**
-  * Mintscan countdown https://www.mintscan.io/ics-testnet-provider/block/8361100
+* **Upgrade height: `TBD`**
+  * Mintscan countdown TBD
   * Target upgrade time: `14:30 UTC`
 
 ## Endpoints
@@ -186,3 +185,4 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * When the node reaches height `7947500`, stop the service.
 * Replace the `v19.0.0-rc4` binary with the `v19.1.0` one.
 * Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
+* When the node reaches height `8361100`, it will attempt to upgrade to Gaia `v20`. You can use Cosmovisor's auto-download feature or install the `v20.0.0-rc0` release binary.
