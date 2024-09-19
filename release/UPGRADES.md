@@ -6,7 +6,7 @@
 
 | Date | Testnet plan                            |
 | ---- | --------------------------------------- |
-| 2024-09-18  | Gaia v20.0.0-rc0 is live on the testnet |
+| 2024-09-18  | ✅ Gaia v20.0.0-rc0 is live on the testnet |
 | 2024-09-17  | ✅ Submit and pass [upgrade proposal](https://explorer.polypore.xyz/theta-testnet-001/gov/323) |
 
 * **Version before upgrade**: `v19.2.0`

@@ -16,7 +16,7 @@ NODE_KEY_FILE=~/node_key.json
 NODE_HOME=~/.gaia
 NODE_MONIKER=provider
 SERVICE_NAME=cv-provider
-GAIA_VERSION=v19.2.0
+GAIA_VERSION=v20.0.0-rc0
 CHAIN_BINARY_URL=https://github.com/cosmos/gaia/releases/download/$GAIA_VERSION/gaiad-$GAIA_VERSION-linux-amd64
 STATE_SYNC=true
 GAS_PRICE=0.005uatom
@@ -35,30 +35,30 @@ sudo apt-get install curl jq wget -y
 mkdir -p $HOME/go/bin
 export PATH=$PATH:$HOME/go/bin
 
-# Install go 1.21
+# Install go 1.22.6
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
-wget https://go.dev/dl/go1.21.6.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.21.6.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.22.6.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.22.6.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
 # Install Gaia binary
 echo "Installing Gaia..."
 
-# Download Linux amd64,
-wget $CHAIN_BINARY_URL -O $HOME/go/bin/$CHAIN_BINARY
-chmod +x $HOME/go/bin/$CHAIN_BINARY
+# Build from source,
+echo "Installing build-essential..."
+sudo apt install build-essential -y
+echo "Installing Gaia..."
+cd $HOME
+rm -rf gaia
+git clone https://github.com/cosmos/gaia.git
+cd gaia
+git checkout $GAIA_VERSION
+make install
 
-# or install from source
-# echo "Installing build-essential..."
-# sudo apt install build-essential -y
-# echo "Installing Gaia..."
-# cd $HOME
-# rm -rf gaia
-# git clone https://github.com/cosmos/gaia.git
-# cd gaia
-# git checkout $GAIA_VERSION
-# make install
+# or download Linux amd64 (unsupported),\
+# wget $CHAIN_BINARY_URL -O $HOME/go/bin/$CHAIN_BINARY
+# chmod +x $HOME/go/bin/$CHAIN_BINARY
 
 # Initialize home directory
 echo "Initializing $NODE_HOME..."
@@ -100,7 +100,7 @@ cp $(which $CHAIN_BINARY) $NODE_HOME/cosmovisor/genesis/bin
 
 echo "Installing cosmovisor..."
 export BINARY=$NODE_HOME/cosmovisor/genesis/bin/$CHAIN_BINARY
-go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.5.0
+go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.6.0
 
 sudo rm /etc/systemd/system/$SERVICE_NAME.service
 sudo touch /etc/systemd/system/$SERVICE_NAME.service
