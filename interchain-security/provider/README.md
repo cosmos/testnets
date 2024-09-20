@@ -11,9 +11,9 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v20.0.0 Upgrade
+## v21.0.0-rc0 Upgrade
 
-The provider chain will upgrade to Gaia [v20.0.0](https://github.com/cosmos/gaia/releases/tag/v20.0.0) on **TBD**.
+The provider chain will upgrade to Gaia [v21.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v21.0.0-rc0) on **TBD**.
 
 * **Upgrade height: `TBD`**
   * Mintscan countdown TBD
@@ -21,30 +21,34 @@ The provider chain will upgrade to Gaia [v20.0.0](https://github.com/cosmos/gaia
 
 ## Endpoints
 
-Endpoints are exposed as subdomains for the sentry and snapshot nodes (described below) as follows:
+### RPC
 
-* `https://rpc.<node-name>.ics-testnet.polypore.xyz:443`
-* `https://rest.<node-name>.ics-testnet.polypore.xyz:443`
-* `https://grpc.<node-name>.ics-testnet.polypore.xyz:443`
-* `p2p.<node-name>.ics-testnet.polypore.xyz:26656`
+* `https://rpc.provider-sentry-01.ics-testnet.polypore.xyz`
+* `https://rpc.provider-sentry-02.ics-testnet.polypore.xyz`
 * `https://rpc-rs.cosmos.nodestake.top`
+
+### API
+
+* `https://rest.provider-sentry-01.ics-testnet.polypore.xyz`
+* `https://rest.provider-sentry-02.ics-testnet.polypore.xyz`
 * `https://api-rs.cosmos.nodestake.top`
+
+### gRPC
+
+* `https://grpc.provider-sentry-01.ics-testnet.polypore.xyz`
+* `https://grpc.provider-sentry-02.ics-testnet.polypore.xyz`
 * `https://grpc-rs.cosmos.nodestake.top`
 
-Sentries:
 
-1. `provider-sentry-01.ics-testnet.polypore.xyz`
-2. `provider-sentry-02.ics-testnet.polypore.xyz`
-
-Seed nodes:
+### Seeds
 
 1. `08ec17e86dac67b9da70deb20177655495a55407@provider-seed-01.ics-testnet.polypore.xyz:26656`
 2. `4ea6e56300a2f37b90e58de5ee27d1c9065cf871@provider-seed-02.ics-testnet.polypore.xyz:26656`
 
-The following state sync nodes serve snapshots every 1000 blocks:
+### State sync
 
-1. `provider-state-sync-01.ics-testnet.polypore.xyz`
-2. `provider-state-sync-02.ics-testnet.polypore.xyz`
+1. `https://provider-state-sync-01.ics-testnet.polypore.xyz:443`
+2. `https://provider-state-sync-02.ics-testnet.polypore.xyz:443`
 
 ## Add to Keplr
 
@@ -63,6 +67,7 @@ Use this [jsfiddle](https://jsfiddle.net/uw4ar8qt/2/).
 ## Faucet
 
 * Visit `faucet.polypore.xyz` to request tokens and check your address balance.
+* Request tokens through the [🚰┇testnet-faucet](https://discord.com/channels/669268347736686612/953697793476821092) Discord channel.
 
 ## Consumer Chains IBC Data
 
