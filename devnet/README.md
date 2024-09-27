@@ -29,10 +29,6 @@ The snapshot provided is stopped at the upgrade height and it is awating for the
 
 * `0ef1c4cbfe5b93a3e778acbc07fe0384567283d2@gaia-devnet.polypore.xyz:26656`
 
-## Add to Keplr
-
-Use this [jsfiddle](https://jsfiddle.net/uw4ar8qt/2/).
-
 ## Block Explorers
 
 * https://explorer.polypore.xyz/gaia-devnet
