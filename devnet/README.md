@@ -53,10 +53,6 @@ Run either one of the scripts provided in this repo to join the provider chain:
 * Both scripts must be run either as root or from a sudoer account.
 * Both scripts will build the current running version from the [Gaia repo](https://github.com/cosmos/gaia/).
 
-#### State Sync
-
-* State sync is unavailable on gaia devnet
-
 #### Sync from snapshot
 
 1. Build, install, and configure the matching running version of gaiad

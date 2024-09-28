@@ -16,7 +16,6 @@ NODE_KEY_FILE=~/node_key.json
 NODE_HOME=~/.gaia
 NODE_MONIKER=gaiad-devnet
 SERVICE_NAME=gaiad-devnet
-STATE_SYNC=false # currently unsupported on gaia-devnet
 GAS_PRICE=0.005uatom
 # ***
 
@@ -24,9 +23,6 @@ CHAIN_BINARY='gaiad'
 CHAIN_ID=cosmoshub-4
 GENESIS_URL=https://github.com/cosmos/mainnet/raw/master/genesis/genesis.cosmoshub-4.json.gz
 PERSISTENT_PEERS="0ef1c4cbfe5b93a3e778acbc07fe0384567283d2@gaia-devnet.polypore.xyz:26656"
-SYNC_RPC_1=https://rpc.gaia-devnet.polypore.xyz:443
-SYNC_RPC_2=https://rpc.gaia-devnet.polypore.xyz:443
-SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_2"
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
@@ -70,23 +66,10 @@ echo "Replacing keys and genesis file..."
 cp $PRIV_VALIDATOR_KEY_FILE $NODE_HOME/config/priv_validator_key.json
 cp $NODE_KEY_FILE $NODE_HOME/config/node_key.json
 
-if $STATE_SYNC ; then
-    echo "Configuring state sync..."
-    CURRENT_BLOCK=$(curl -s $SYNC_RPC_1/block | jq -r '.result.block.header.height')
-    TRUST_HEIGHT=$[$CURRENT_BLOCK-1000]
-    TRUST_BLOCK=$(curl -s $SYNC_RPC_1/block\?height\=$TRUST_HEIGHT)
-    TRUST_HASH=$(echo $TRUST_BLOCK | jq -r '.result.block_id.hash')
-    sed -i -e '/enable =/ s/= .*/= true/' $NODE_HOME/config/config.toml
-    sed -i -e '/trust_period =/ s/= .*/= "8h0m0s"/' $NODE_HOME/config/config.toml
-    sed -i -e "/trust_height =/ s/= .*/= $TRUST_HEIGHT/" $NODE_HOME/config/config.toml
-    sed -i -e "/trust_hash =/ s/= .*/= \"$TRUST_HASH\"/" $NODE_HOME/config/config.toml
-    sed -i -e "/rpc_servers =/ s^= .*^= \"$SYNC_RPC_SERVERS\"^" $NODE_HOME/config/config.toml
-else
-    echo "Downloading gaia-devnet archive..."
-    cd $NODE_HOME
-    curl -o - -L https://files.polypore.xyz/gaia-devnet/latest.tar.gz | tar vzx -C .
-    cd $HOME
-fi
+echo "Downloading gaia-devnet archive..."
+cd $NODE_HOME
+curl -o - -L https://files.polypore.xyz/gaia-devnet/latest.tar.gz | tar vzx -C .
+cd $HOME
 
 # Replace genesis file
 wget $GENESIS_URL -O genesis.json.gz
