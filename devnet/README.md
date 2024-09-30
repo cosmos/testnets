@@ -1,15 +1,20 @@
 
 # Devnet Details
 
-The gaia-testnet will be used to test Gaia features before a release is tagged. It was created to mirror the state of mainnet using the fork tool.
-
-The snapshot provided is stopped at the upgrade height and it is awating for the upgrade to be applied by running the same `gaiad` version running on the devnet.
+The Cosmos Hub devnet is used to test the next major upgrade before a release candidate is tagged.
+* The devnet state represents a recent for of the Cosmos Hub (`cosmoshub-4`).
+* The provided snapshot will start by applying an upgrade.
 
 * **Chain-ID**: `cosmoshub-4`
 * **denom**: `uatom`
-* **Current Gaia Version**: Refer to https://files.polypore.xyz/gaia-devnet/ for the current version.
-* **Genesis File:**  [genesis.cosmoshub-4.json.gz](https://github.com/cosmos/mainnet/raw/master/genesis/genesis.cosmoshub-4.json.gz), verify with `sha256sum genesis.cosmoshub-4.json.gz`
-* **Genesis sha256sum**: `7fe946e6bb3c378da546767f4d078585c38f256c8ec17888d71aeee3b7edd5c7`
+* **Gaia Version**: Refer to https://files.polypore.xyz/gaia-devnet/ for the current version.
+  * The `abci_info` endpoint also provides the current version:
+    ```
+    curl -s https://rpc.gaia-devnet.polypore.xyz/abci_info | jq -r '.result.response.version'
+    ```
+* **Genesis File:**  [genesis.cosmoshub-4.json.gz](https://github.com/cosmos/mainnet/raw/master/genesis/genesis.cosmoshub-4.json.gz)
+   * Verify with `sha256sum genesis.cosmoshub-4.json.gz`
+   * Genesis sha256sum: `7fe946e6bb3c378da546767f4d078585c38f256c8ec17888d71aeee3b7edd5c7`
 
 ## Endpoints
 
