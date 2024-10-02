@@ -2,6 +2,8 @@
 
 | Date                   | Testnet Incentives Program Period | Type              | Description                                                                                                                                              |
 | ---------------------- | --------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| October 16 2024      | 9                                 | Consumer upgrade     | Consumer chain pion-1 upgrade                                                                                                             |
+| October 9 2024      | 9                                 | Patch upgrade and Demo Day     | Provider chain upgrades to Gaia v20.0.0 and permissionless ICS demonstration                                                                                                              |
 | September 18 2024      | 8                                 | Major upgrade     | ✅ Provider chain upgrades to Gaia v20.0.0-rc0                                                                                                              |
 | September 11 2024      | 8                                 | Demo Day          | ✅ Demo day # 7: feemarket                                                                                                                                |
 | August 28 2024         | 8                                 | Consumer addition | ✅ Crypto Dungeon chain launched                                                                                                                          |
