@@ -14,7 +14,7 @@ We will post announcements in the `testnet-announcements` channel in Discord to 
 
 ## Testnet Incentives Program (TIP) Eligibility
 
-* You must complete the tasks listed below by the time the event ends to remain eligible for TIP period 8.
+* You must complete the tasks listed below by the time the event ends to remain eligible for TIP period 9.
 
 ### Tasks
 
