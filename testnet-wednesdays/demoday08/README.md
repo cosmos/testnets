@@ -39,7 +39,7 @@ You'll have to create a JSON file containing the details for your consumer chain
     },
     "genesis_hash": "WjJWdVgyaGhjMmc9",
     "binary_hash": "WW1sdVgyaGhjMmc9",
-    "spawn_time": "2024-10-08T17:00:00.000000-00:00",
+    "spawn_time": "2024-10-09T17:00:00.000000-00:00",
     "unbonding_period": 1728000000000000,
     "ccv_timeout_period": 2419200000000000,
     "transfer_timeout_period": 3600000000000,
