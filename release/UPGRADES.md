@@ -15,8 +15,8 @@
 ### Upgrade details
 
 * Estimated upgrade time: `2024-10-09 ~13:30 UTC`
-* **Upgrade height: `TBD`**
-  * Mintscan countdown: https://www.mintscan.io/cosmos-testnet/block/TBD
+* **Upgrade height: `23952300`**
+  * Mintscan countdown: https://www.mintscan.io/cosmos-testnet/block/23952300
 * Release page: https://github.com/cosmos/gaia/releases/tag/v20.0.0
 * ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
   * Set the upgrade height in your node(s) `app.toml` and restart the node(s).
