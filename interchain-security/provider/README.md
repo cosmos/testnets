@@ -13,7 +13,7 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 ## v20.0.0 Upgrade
 
-The provider chain will upgrade to Gaia [v21.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v20.0.0) on **Oct 9 2024**.
+The provider chain will upgrade to Gaia [v20.0.0](https://github.com/cosmos/gaia/releases/tag/v20.0.0) on **Oct 9 2024**.
 
 * **Upgrade height: `8681200`**
   * Mintscan countdown https://www.mintscan.io/ics-testnet-provider/block/8681200
