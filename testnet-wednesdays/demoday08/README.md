@@ -63,7 +63,7 @@ If you do `gaiad q tx provider list-consumer-chains` now, you should be able to 
 
 ## Task 2: Opt into our consumer chain
 
-* Look at the list in `gaiad q tx provider list-consumer-chains`. You should be able to find one with chain_id `hypha-consumer-1`.
+* Look at the list in `gaiad q provider list-consumer-chains`. You should be able to find one with chain_id `hypha-consumer-1`.
 * One of its fields is the `consumer_id`--note how this **is a numerical id that's different from the `chain_id`**
     * Starting in v20, the `consumer_id` will be used for all `provider` transactions.
 * However, there may be multiple chains with chain_id `hypha-consumer-1`
