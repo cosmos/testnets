@@ -59,7 +59,7 @@ At that point, you can run `create-consumer` to create the consumer chain:
 gaiad tx provider create-consumer consumer-addition.json
 ```
 
-If you do `gaiad q tx provider list-consumer-chains` now, you should be able to see your new chain.
+If you do `gaiad q provider list-consumer-chains` now, you should be able to see your new chain.
 
 ## Task 2: Opt into our consumer chain
 
