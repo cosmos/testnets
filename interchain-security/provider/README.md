@@ -57,7 +57,7 @@ Use this [jsfiddle](https://jsfiddle.net/uw4ar8qt/2/).
 ## Block Explorers
 
 * https://explorer.polypore.xyz/provider/
-* https://explorer.nodestake.top/cosmos-rs/
+* https://explorer.nodestake.org/cosmos-ics-testnet
 * https://www.mintscan.io/ics-testnet-provider
 
 ## Snapshot
