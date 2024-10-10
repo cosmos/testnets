@@ -13,10 +13,10 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 ## v20.0.0 Upgrade
 
-The provider chain will upgrade to Gaia [v20.0.0](https://github.com/cosmos/gaia/releases/tag/v20.0.0) on **Oct 9 2024**.
+The provider chain will upgrade to Gaia [v21.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v21.0.0-rc0) on **TBD**.
 
-* **Upgrade height: `8681200`**
-  * Mintscan countdown https://www.mintscan.io/ics-testnet-provider/block/8681200
+* **Upgrade height: `TBD`**
+  * Mintscan countdown TBD
   * Target upgrade time: `14:30 UTC`
 
 ## Endpoints
@@ -191,3 +191,7 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Replace the `v19.0.0-rc4` binary with the `v19.1.0` one.
 * Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `8361100`, it will attempt to upgrade to Gaia `v20`. You can use Cosmovisor's auto-download feature or install the `v20.0.0-rc0` release binary.
+* Before the node reaches height `8681200`, stop the service.
+* Set `halt-height = 8681200` in `~/.gaia/config/app.toml` and start the service.
+* When the node reaches height `8681200`, stop the service.
+* Replace the `v20.0.0-rc0` binary with the `v20.0.0` one.
