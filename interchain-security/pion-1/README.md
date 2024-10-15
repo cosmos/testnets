@@ -10,12 +10,12 @@ The `pion-1` chain will be launched as a Neutron persistent chain to test Interc
 * **timeout_commit**: `1s`
 * **Spawn time**: `2023-06-29T14:30:00Z`
 * **GitHub repo**: [neutron-org/neutron](https://github.com/neutron-org/neutron.git)
-* **Current version**: [`v4.2.1`](https://github.com/neutron-org/neutron/releases/tag/v4.2.1-testnet)
+* **Current version**: [`v5.0.0-rc0`](https://github.com/neutron-org/neutron/releases/tag/v5.0.0-rc0)
   * Launch version: [`v1.0.2-pion-1-upgrade`](https://github.com/neutron-org/neutron/releases/tag/v1.0.2-pion-1-upgrade)
 * **Genesis file with CCV state:** [pion-1-genesis.json](https://github.com/cosmos/testnets/blob/master/interchain-security/pion-1/pion-1-genesis-with-ccv.json.gz)
 
 * **Reference binary**: [neutrond-linux-amd64](neutrond-linux-amd64)
-* **Binary sha256sum**: `c1d22728005bdd6d01971600f9fa495f31d141a920a3c831566a79cb5b239d1f`
+* **Binary sha256sum**: `<TODO: sha256 binary>`
 * **Genesis file _without CCV state_:** [pion-1-genesis-without-ccv.json](https://github.com/cosmos/testnets/raw/master/interchain-security/pion-1/pion-1-genesis-without-ccv.json.gz ), verify with `gzip -d pion-1-genesis-without-ccv.json.gz -c | shasum -a 256`
 * * **Genesis file _with CCV state_:** [pion-1-genesis-with-ccv.json](https://github.com/cosmos/testnets/raw/master/interchain-security/pion-1/pion-1-genesis-with-ccv.json.gz ), verify with `gzip -d pion-1-genesis-with-ccv.json.gz -c | jq -S -c -M '.' | shasum -a 256`
 * **SHA256 for genesis file _without CCV state_**: `6291227072026b46830a7bcdd6180dca727f10d92fd612cedc07b6d377b0eeea`
@@ -96,7 +96,7 @@ Persistent nodes:
 
 | Name    | Version |
 | ------- | ------- |
-| Neutron | v4.2.1  |
+| Neutron | v5.0.0-rc0  |
 | Go      | >=1.21  |
 
 The scripts provided in this repo will install Neutron and set up a Cosmovisor service with the auto-download feature enabled on your machine.
@@ -129,7 +129,7 @@ If you need to stop Slinky temporarily, adjust your Neutron `app.toml` file as f
 Build and install neutron binary. 
 
 ```
-$ git clone -b v4.0.1-testnet https://github.com/neutron-org/neutron.git
+$ git clone -b v5.0.0-rc0 https://github.com/neutron-org/neutron.git
 $ cd neutron
 $ make install
 ```
@@ -142,7 +142,7 @@ You should see the following:
 ```
 name: neutron
 server_name: neutrond
-version: v4.2.1-testnet
+version: v5.0.0-rc0
 ```
 
 If you are joining as a validator you must install and run `slinky` v1.0.3 as a service. To install follow this steps:
