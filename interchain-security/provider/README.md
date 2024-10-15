@@ -11,12 +11,13 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v21.0.0 Upgrade
+## v21.0.0-rc0 Upgrade
 
-The provider chain will upgrade to Gaia [v21.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v21.0.0-rc0) on **TBD**.
+The provider chain will upgrade to Gaia [v21.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v21.0.0-rc0) on **October 16, 2024**.
 
-* **Upgrade height: `TBD`**
-  * Mintscan countdown TBD
+* **Upgrade height: `8787650`**
+  * Proposal ID: [201](https://explorer.polypore.xyz/provider/gov/201)
+  * Mintscan countdown: 
   * Target upgrade time: `14:30 UTC`
 
 ## Endpoints
@@ -195,3 +196,4 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Set `halt-height = 8681200` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `8681200`, stop the service.
 * Replace the `v20.0.0-rc0` binary with the `v20.0.0` one.
+* When the node reaches height `8787650`, it will attempt to upgrade to Gaia `v21`. You can use Cosmovisor's auto-download feature or install the `v21.0.0-rc0` release binary.
