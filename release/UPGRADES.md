@@ -4,10 +4,10 @@
 
 ### Schedule
 
-| Date | Testnet plan                            |
-| ---- | --------------------------------------- |
-| 2024-10-16  |  Gaia v21.0.0-rc0 is live on the testnet |
-| 2024-10-15  |  ✅ Set upgrade halt height                 |
+| Date       | Testnet plan                                                                                  |
+| ---------- | --------------------------------------------------------------------------------------------- |
+| 2024-10-16 | Gaia v21.0.0-rc0 is live on the testnet                                                       |
+| 2024-10-15 | ✅ Submit and pass [upgrade proposal](https://explorer.polypore.xyz/theta-testnet-001/gov/324) |
 
 * **Version before upgrade**: `v20.0.0`
 * **Version after upgrade**: `v21.0.0-rc0`
@@ -25,10 +25,10 @@
 
 ### Schedule
 
-| Date | Testnet plan                            |
-| ---- | --------------------------------------- |
-| 2024-10-09  |  Gaia v20.0.0 is live on the testnet |
-| 2024-10-08  |  Set upgrade halt height                 |
+| Date       | Testnet plan                        |
+| ---------- | ----------------------------------- |
+| 2024-10-09 | Gaia v20.0.0 is live on the testnet |
+| 2024-10-08 | Set upgrade halt height             |
 
 * **Version before upgrade**: `v20.0.0-rc0`
 * **Version after upgrade**: `v20.0.0`
@@ -52,10 +52,10 @@
 
 ### Schedule
 
-| Date | Testnet plan                            |
-| ---- | --------------------------------------- |
-| 2024-09-18  | ✅ Gaia v20.0.0-rc0 is live on the testnet |
-| 2024-09-17  | ✅ Submit and pass [upgrade proposal](https://explorer.polypore.xyz/theta-testnet-001/gov/323) |
+| Date       | Testnet plan                                                                                  |
+| ---------- | --------------------------------------------------------------------------------------------- |
+| 2024-09-18 | ✅ Gaia v20.0.0-rc0 is live on the testnet                                                     |
+| 2024-09-17 | ✅ Submit and pass [upgrade proposal](https://explorer.polypore.xyz/theta-testnet-001/gov/323) |
 
 * **Version before upgrade**: `v19.2.0`
 * **Version after upgrade**: `v20.0.0-rc0`
@@ -72,10 +72,10 @@
 
 ### Schedule
 
-| Date | Testnet plan                            |
-| ---- | --------------------------------------- |
-| 2024-08-22  | ✅ Gaia v19.1.0 is live on the testnet |
-| 2024-08-21  | ✅ Set upgrade halt height                 |
+| Date       | Testnet plan                          |
+| ---------- | ------------------------------------- |
+| 2024-08-22 | ✅ Gaia v19.1.0 is live on the testnet |
+| 2024-08-21 | ✅ Set upgrade halt height             |
 
 * **Version before upgrade**: `v19.0.0-rc4`
 * **Version after upgrade**: `v19.1.0`
@@ -99,10 +99,10 @@
 
 ### Schedule
 
-| Date | Testnet plan                            |
-| ---- | --------------------------------------- |
-| 2024-08-07  | Gaia v19.0.0-rc4 is live on the testnet |
-| 2024-08-06  | ✅ Set upgrade halt height                 |
+| Date       | Testnet plan                            |
+| ---------- | --------------------------------------- |
+| 2024-08-07 | Gaia v19.0.0-rc4 is live on the testnet |
+| 2024-08-06 | ✅ Set upgrade halt height               |
 
 * **Version before upgrade**: `v19.0.0-rc3`
 * **Version after upgrade**: `v19.0.0-rc4`
@@ -126,10 +126,10 @@
 
 ### Schedule
 
-| Date | Testnet plan                            |
-| ---- | --------------------------------------- |
-| 2024-07-24  | ✅ Gaia v19.0.0-rc3 is live on the testnet |
-| 2024-07-23  | ✅ Set upgrade halt height                 |
+| Date       | Testnet plan                              |
+| ---------- | ----------------------------------------- |
+| 2024-07-24 | ✅ Gaia v19.0.0-rc3 is live on the testnet |
+| 2024-07-23 | ✅ Set upgrade halt height                 |
 
 * **Version before upgrade**: `v19.0.0-rc0`
 * **Version after upgrade**: `v19.0.0-rc3`
@@ -153,10 +153,10 @@
 
 ### Schedule
 
-| Date | Testnet plan                            |
-| ---- | --------------------------------------- |
-| 2024-07-24  | ✅ Gaia v19.0.0-rc0 is live on the testnet |
-| 2024-07-23  | ✅ Submit and pass [upgrade proposal](https://explorer.polypore.xyz/theta-testnet-001/gov/301) |
+| Date       | Testnet plan                                                                                  |
+| ---------- | --------------------------------------------------------------------------------------------- |
+| 2024-07-24 | ✅ Gaia v19.0.0-rc0 is live on the testnet                                                     |
+| 2024-07-23 | ✅ Submit and pass [upgrade proposal](https://explorer.polypore.xyz/theta-testnet-001/gov/301) |
 
 * **Version before upgrade**: `v18.1.0`
 * **Version after upgrade**: `v19.0.0-rc0`
@@ -172,8 +172,8 @@
 
 ### Schedule
 
-| Date         | Testnet plan                            |
-| ------------ | --------------------------------------- |
+| Date         | Testnet plan                              |
+| ------------ | ----------------------------------------- |
 | July 10 2024 | ✅ Gaia v18.1.0-rc3 is live on the testnet |
 | July 09 2024 | ✅ Set upgrade halt height                 |
 
