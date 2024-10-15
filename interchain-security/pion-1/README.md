@@ -15,7 +15,7 @@ The `pion-1` chain will be launched as a Neutron persistent chain to test Interc
 * **Genesis file with CCV state:** [pion-1-genesis.json](https://github.com/cosmos/testnets/blob/master/interchain-security/pion-1/pion-1-genesis-with-ccv.json.gz)
 
 * **Reference binary**: [neutrond-linux-amd64](neutrond-linux-amd64)
-* **Binary sha256sum**: `<TODO: sha256 binary>`
+* **Binary sha256sum**: `62200756847af9daf3d9578afc0902a705911255dc16a846f5a5770d0c44b41b`
 * **Genesis file _without CCV state_:** [pion-1-genesis-without-ccv.json](https://github.com/cosmos/testnets/raw/master/interchain-security/pion-1/pion-1-genesis-without-ccv.json.gz ), verify with `gzip -d pion-1-genesis-without-ccv.json.gz -c | shasum -a 256`
 * * **Genesis file _with CCV state_:** [pion-1-genesis-with-ccv.json](https://github.com/cosmos/testnets/raw/master/interchain-security/pion-1/pion-1-genesis-with-ccv.json.gz ), verify with `gzip -d pion-1-genesis-with-ccv.json.gz -c | jq -S -c -M '.' | shasum -a 256`
 * **SHA256 for genesis file _without CCV state_**: `6291227072026b46830a7bcdd6180dca727f10d92fd612cedc07b6d377b0eeea`
