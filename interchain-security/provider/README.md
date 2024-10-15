@@ -17,8 +17,8 @@ The provider chain will upgrade to Gaia [v21.0.0-rc0](https://github.com/cosmos/
 
 * **Upgrade height: `8787650`**
   * Proposal ID: [201](https://explorer.polypore.xyz/provider/gov/201)
-  * Mintscan countdown: 
-  * Target upgrade time: `14:30 UTC`
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/8787650
+  * Target upgrade time: `13:30 UTC`
 
 ## Endpoints
 
