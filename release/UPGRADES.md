@@ -9,8 +9,8 @@
 | 2024-10-16  |  Gaia v21.0.0-rc0 is live on the testnet |
 | 2024-10-15  |  ✅ Set upgrade halt height                 |
 
-* **Version before upgrade**: `v21.0.0-rc0`
-* **Version after upgrade**: `v20.0.0`
+* **Version before upgrade**: `v20.0.0`
+* **Version after upgrade**: `v21.0.0-rc0`
 
 ### Upgrade details
 
