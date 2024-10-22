@@ -1,5 +1,29 @@
 # Scheduled Upgrades 🗓️ 
 
+## v21.0.0-rc1
+
+### Schedule
+
+| Date       | Testnet plan                                                                                  |
+| ---------- | --------------------------------------------------------------------------------------------- |
+| 2024-10-23 | Gaia v21.0.0-rc1 is live on the testnet                                                       |
+
+* **Version before upgrade**: `v21.0.0-rc0`
+* **Version after upgrade**: `v21.0.0-rc1`
+
+### Upgrade details
+
+* **Upgrade height: `24171100`**
+  * Mintscan countdown: https://www.mintscan.io/cosmos-testnet/block/24171100
+  * Estimated upgrade time: `2024-10-24 ~13:30 UTC`
+* Release page: https://github.com/cosmos/gaia/releases/tag/v21.0.0-rc1
+* ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
+  * Set the upgrade height in your node(s) `app.toml` and restart the node(s).
+    ```
+    halt-height = 24171100
+    ```
+  * Restart your node(s) with the `--halt-height 24171100` flag.
+
 ## v21.0.0-rc0
 
 ### Schedule
