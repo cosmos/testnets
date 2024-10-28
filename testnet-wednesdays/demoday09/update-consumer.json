@@ -1,0 +1,13 @@
+{
+  "chain_id": "test-alpaca-4",
+  "consumer_id": "106",
+  "metadata": {
+    "name": "test-alpaca-4",
+    "description": "My consumer alpaca",
+    "metadata": "ipfs://"
+  },
+  "allowlisted_reward_denoms": {"denoms": ["ibc/2DE03CDD72E687CC1135744CA441C3058AE942F19F25D193DFAB30240871CF9F"]},
+  "power_shaping_parameters": {
+    "topN": 0
+  }
+}
