@@ -14,7 +14,7 @@ For teams looking to join the ICS testnet, the onboarding process can be broken 
 
 * Testing and Integration 
 * Planning with Testnet Coordinators
-* Proposal Submission
+* Consumer Chain Creation
 * Chain Launch
 
 ### Local Testing and Integration
@@ -45,7 +45,7 @@ Additionally, you may want to run:
 
 ## ✍️ Submitting a PR for a new chain
 
-Each consumer chain gets its own directory. You can use the [`slasher`](./stopped/slasher/) chain as reference. Feel free to clone the slasher directory, modify it for your consumer chain, and make a PR with the relevant information.
+Each consumer chain gets its own directory. You can use the [`test-conmod-1`](./stopped/test-conmod-1/) chain as reference. Feel free to clone the `test-conmod-1` directory, modify it for your consumer chain, and make a PR with the relevant information.
 
 Hypha will be reviewing the PR to ensure it meets the following criteria:
 
@@ -60,12 +60,12 @@ Hypha will be reviewing the PR to ensure it meets the following criteria:
   - [ ] Seeds OR persistent peers
   - [ ] State sync nodes (if any)
 
-See the `slasher` chain [page](./stopped/slasher) for reference.
+See the `test-conmod-1` chain [page](./stopped/test-conmod-1) for reference.
 
 #### `chain_id` must be identical in the following places:
  - [ ] `README`
  - [ ] genesis file
- - [ ] consumer addition proposal
+ - [ ] create-consumer JSON file
  - [ ] bash script
 
 We recommend choosing a `chain_id` with the suffix `-1`, even if it's a subsequent test of the same chain, e.g. `testchain-second-rehearsal-1`.
@@ -79,7 +79,7 @@ We recommend choosing a `chain_id` with the suffix `-1`, even if it's a subseque
   - [ ] seeds or persistent peers must match `README`
 
 #### Genesis file
-- [ ] Genesis time must match spawn time in the `consumer-addition` proposal
+- [ ] Genesis time must be no later than one day before the expected launch date
 - [ ] Accounts and balances: Properly funded accounts (e.g., gas fees for relayer, faucet, etc.)
 - [ ] Bank balance denom matches denom in `README`
 - [ ] Slashing parameters: Set `signed_blocks_window` and `min_signed_per_window` adequately to ensure validators have at least 12 hours to join the chain after launch without getting jailed
@@ -87,56 +87,132 @@ We recommend choosing a `chain_id` with the suffix `-1`, even if it's a subseque
 - [ ] `shasum -a 256 <genesis file without CCV>` matches the checksum in the `README`
 - [ ] The genesis file is correctly formed: `<consumer binary or gaiad> validate-genesis /path/to/genesis-without-ccv.json` returns without error
 
-See the `slasher` chain [genesis](./stopped/slasher/slasher-genesis-without-ccv.json) for reference.
+See the `test-conmod-1` chain [genesis](./stopped/test-conmod-1/conmod-genesis-pre-spawn.json) for reference.
 
-#### `consumer-addition` proposal
+#### `create-consumer` JSON file
 
-  - [ ] Spawn time must match genesis time
-  - [ ] Spawn time must be later than voting period
+  - [ ] If set, the spawn time must match the genesis time
   - [ ] `revision_height: 1`
   - [ ] `revision_number: 1` (only if the `chain_id` ends in `-1`)
   - [ ] `transfer_timeout_period: 1800000000000`. This value should be smaller than `blocks_per_distribution_transmission * block_time`.
   - [ ] `ccv_timeout_period: 2419200000000000`. This value must be larger than the unbonding period, the default is 28 days. 
   - [ ] `unbonding_period: 1728000000000000` (given current provider params)
 
-See the `slasher` chain consumer-addition [proposal](./stopped/slasher/proposal-slasher.json) and [Interchain Security time-based parameters](https://github.com/cosmos/interchain-security/blob/main/docs/params.md#time-based-parameters) for reference.
+See the JSON file below and [Interchain Security docs](https://cosmos.github.io/interchain-security/consumer-development/onboarding) for reference:
 
-#### Node configurations
+```json
+{
+  "chain_id": "test-ics-1",
+  "metadata": {
+	"name": "consumer chain",
+	"description": "no description",
+	"metadata": "no metadata"
+  },
+  "initialization_parameters": {
+	"initial_height": {
+  	"revision_number": 1,
+  	"revision_height": 1
+	},
+	"genesis_hash": "",
+	"binary_hash": "",
+	"spawn_time": null,
+	"unbonding_period": 1728000000000000,
+	"ccv_timeout_period": 2419200000000000,
+	"transfer_timeout_period": 3600000000000,
+	"consumer_redistribution_fraction": "0.75",
+	"blocks_per_distribution_transmission": 1000,
+	"historical_entries": 10000
+  },
+  "power_shaping_parameters": {
+	"top_N": 0,
+	"validators_power_cap": 0,
+	"validator_set_cap": 0,
+	"allowlist": [],
+	"denylist": [],
+	"min_stake": 0,
+	"allow_inactive_vals": true
+  }
+}
+```
+
+#### Node configuration
   - [ ] `minimum_gas_prices`
   - [ ] Check with Hypha about any other chain-specific params
 
 --------------
 
-### On-chain Proposal Submission
+## Consumer Chain Creation
 
-When you make your proposal, please let us know well in advance. The current voting period is five minutes, which means we’ll need to vote right after you submit your proposal. We recommend submitting the proposal together with us on a call.
+The following will take place during the chain creation phase:
 
-The following will take place during the proposal submission phase:
-
-* Your team will submit the `consumer-addition` proposal with a command that looks like this:
+* Your team will submit `create-consumer` transaction with a command that looks like this:
   ```
-  gaiad tx gov submit-legacy-proposal consumer-addition proposal.json --from <account name> --chain-id provider --gas auto --fees 500uatom -b block -y
+  gaiad tx provider create-consumer create.json --from <account name> --chain-id provider --gas auto --gas-adjustment 2 --gas-prices 0.005uatom -y
   ```
-* Testnet coordinators will vote on it shortly afterwards to make sure it passes.
+* After the `create-consumer` transaction goes on chain, a consumer ID will be created. You will obtain this ID with the `gaiad q provider list-consumer-chains` command.
 * You will open a pull request to add the new consumer chain entry to this repo and update the [schedule page](SCHEDULE.md) with the launch date.
-* You will announce the upcoming launch, including the spawn time, in the Interchain Security `announcements` channel of the Cosmos Network Discord Server. If you need permissions for posting, please reach out to us.
+* You will announce the upcoming launch in the Interchain Security `announcements` channel of the Cosmos Network Discord Server. If you need permissions for posting, please reach out to us.
+* Validators will opt-in to the chain using the consumer ID.
+* You will submit an `update-consumer` transaction to set the spawn time after enough validators have opted-in. See the JSON file below for reference:
 
-### Chain Launch
+```json
+{
+  "chain_id": "test-ics-1",
+  "consumer_id": "<consumer id>",
+  "metadata": {
+	"name": "consumer chain",
+	"description": "no description",
+	"metadata": "no metadata"
+  },
+  "initialization_parameters": {
+	"initial_height": {
+  	"revision_number": 1,
+  	"revision_height": 1
+	},
+	"genesis_hash": "",
+	"binary_hash": "",
+	"spawn_time": "<current time>",
+	"unbonding_period": 1728000000000000,
+	"ccv_timeout_period": 2419200000000000,
+	"transfer_timeout_period": 3600000000000,
+	"consumer_redistribution_fraction": "0.75",
+	"blocks_per_distribution_transmission": 1000,
+	"historical_entries": 10000
+  },
+  "power_shaping_parameters": {
+	"top_N": 0,
+	"validators_power_cap": 0,
+	"validator_set_cap": 0,
+	"allowlist": [],
+	"denylist": [],
+	"min_stake": 0,
+	"allow_inactive_vals": true
+  }
+}
+```
+
+
+## Chain Launch
 
 After the spawn time is reached, the Cross-Chain Validation (CCV) state will be available on the provider chain and the new IBC client will be created. At this point, you will be able to:
 * Collect the Cross-Chain Validation (CCV) state from the provider chain.
   ```
-  gaiad q provider consumer-genesis <chain-id> -o json > ccv-state.json
+  gaiad q provider consumer-genesis <consumer-id> -o json > ccv-state.json
   ```
-* Update the genesis file with the CCV state.
+* Update the CCV state with the reward denoms.
   ```
-  jq -s '.[0].app_state.ccvconsumer = .[1] | .[0]' <consumer genesis without CCV state> ccv-state.json > <consumer genesis file with CCV state>
+  jq '.params.reward_denoms |= ["<your chain denom>"]' ccv-state.json > ccv-denom.json
+  jq '.params.provider_reward_denoms |= ["uatom"]' ccv-denom.json > ccv-provider-denom.json
+  ```
+* Update the genesis file with the CCV state
+  ```
+  jq -s '.[0].app_state.ccvconsumer = .[1] | .[0]' <consumer genesis without CCV state> ccv-provider-denom.json > <consumer genesis file with CCV state>
   ```
 * Publish the genesis file with CCV state to the testnets repo.
 * Post the link to the genesis file and the SHA256 hash to the Interchain Security `interchain-security-testnet` channel of the Cosmos Network Discord Server.
 * Ensure the required peers are online for people to connect to.
 
-The consumer chain will start producing blocks as soon as 66.67% of the provider chain's voting power comes online. You will be able to start the relayer afterwards:
+The consumer chain will start producing blocks as soon as 66.67% of voting power comes online. You will be able to start the relayer afterwards:
 
 * Query the IBC client ID of the provider chain.
   ```

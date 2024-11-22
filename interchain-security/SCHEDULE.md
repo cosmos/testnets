@@ -2,7 +2,7 @@
 
 | Date                   | Testnet Incentives Program Period | Type                       | Description                                                                                                                                              |
 | ---------------------- | --------------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| October 23 2024        | -                                 | Provider upgrade           | Provider chain upgrades to Gaia v21.0.0-rc1
+| October 23 2024        | -                                 | Provider upgrade           | ✅ Provider chain upgrades to Gaia v21.0.0-rc1
 | October 16 2024        | 9                                 | Consumer upgrade           | ✅ Consumer chain pion-1 upgrade                                                                                                                            |
 | October 16 2024        | 9                                 | Major upgrade              | ✅ Provider chain upgrades to Gaia v21.0.0-rc0                                                                                                              |
 | October 9 2024         | 9                                 | Patch upgrade and Demo Day | ✅ Provider chain upgrades to Gaia v20.0.0 and permissionless ICS demonstration                                                                           |
