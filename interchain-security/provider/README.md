@@ -5,15 +5,15 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v21.0.0-rc1`](https://github.com/cosmos/gaia/releases/tag/v21.0.0-rc1), upgraded from v19 at block height `8787650`.
+* **Current Gaia Version**: [`v21.0.1`](https://github.com/cosmos/gaia/releases/tag/v21.0.1), upgraded from v19 at block height `8787650`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v21.0.0 Upgrade
+## v22 Upgrade
 
-The provider chain will upgrade to Gaia [v21.0.0](https://github.com/cosmos/gaia/releases/tag/v21.0.0) on **TBD**
+The provider chain will upgrade to Gaia [v22.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v22.0.0-rc0) on **TBD**
 
 * **Upgrade height: `TBD`**
   * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/TBD
