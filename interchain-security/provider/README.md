@@ -66,7 +66,7 @@ Use this [jsfiddle](https://jsfiddle.net/uw4ar8qt/2/).
 
 ## Faucet
 
-* Visit `faucet.polypore.xyz` to request tokens and check your address balance.
+* Visit `faucet-2.polypore.xyz` to request tokens and check your address balance.
 * Request tokens through the [🚰┇testnet-faucet](https://discord.com/channels/669268347736686612/953697793476821092) Discord channel.
 * For larger quantities of testnet ATOM, fill out the [mega-faucet request form](https://forms.gle/EvMV2yLSkjPehTct5).
 
