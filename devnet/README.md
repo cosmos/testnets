@@ -1,7 +1,7 @@
 
 # Devnet Details
 
-⏸️ The devnet is currently paused until a mainnet fork can be run with its own chain ID.
+## ⏸️ The devnet is offline until a mainnet fork can be run with its own chain ID.
 
 The Cosmos Hub devnet is used to test the next major upgrade before a release candidate is tagged.
 * The devnet state represents a recent for of the Cosmos Hub (`cosmoshub-4`).
