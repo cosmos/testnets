@@ -44,7 +44,7 @@ The Cosmos Hub devnet is used to test the next major upgrade before a release ca
 
 ## Faucet
 
-* Visit `faucet.polypore.xyz` to request tokens and check your address balance.
+* Visit `faucet-2.polypore.xyz` to request tokens and check your address balance.
 
 ## How to Join
 
