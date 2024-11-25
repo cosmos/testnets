@@ -133,12 +133,9 @@ Let's mess with it.
 
 ### Task 2: Bring your validator down for half an hour
 
-Just bring that node down. It's okay. Unless your golden time is under 30 minutes, you won't get jailed.
+Bring your validator down.
+* You will not be jailed for downtime unless you leave it down for more than 16 hours.
 
-Now look at the golden timer in cvms. You can use ours
-[here](http://143.198.42.179:3000/d/be0fqrlk919moe/validator-consensus-dashboard?from=now-5m&to=now&timezone=browser&refresh=5s)
-if need be. Do you see how it's going down for your validator? This would be a
-great metric to alert on!
+Now look at the Golden Timer in CVMS. You can use [this one](http://143.198.42.179:3000/d/be0fqrlk919moe/validator-consensus-dashboard?from=now-5m&to=now&timezone=browser&refresh=5s) if need be. Do you see how it's going down for your validator? This would be a great metric to alert on!
 
-Once you've been out for 30 minutes, bring your node back up, and watch that
-golden timer go back up.
+After your validator has been down for 30 minutes, bring it back up, and watch that Golden Timer go back up.
