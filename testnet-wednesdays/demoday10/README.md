@@ -57,6 +57,7 @@ See the `172.17.0.1` in the output? That's our machine's local address as reacha
 docker network. You can use this in your `config.yaml`. Make sure you also fill in your validator
 moniker!
 
+`config.yaml`
 ```yaml
 # Set your moniker here
 monikers: ['test-cvms']
