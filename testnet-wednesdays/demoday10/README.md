@@ -34,7 +34,7 @@ git clone https://github.com/cosmostation/cvms.git
 cd cvms
 ```
 
-You'll want to create two config files inside the `cvms` directory,
+Create two config files inside the `cvms` directory,
 `config.yaml` and `.env`.
 
 `config.yaml` will tell CVMS where to find your node. You can use a public
