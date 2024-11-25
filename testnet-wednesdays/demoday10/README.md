@@ -122,8 +122,9 @@ You may now start your CVMS instance by running:
 docker compose up
 ```
 
-If everything went well, you should be able to reach the Grafana dashboard at `http://your.nodes.address:3000`
-Try looking at the `Validator Consensus Dashboard`. It should look like this:
+If everything went well, you should end up seeing messages from the `cvms-indexer` and `cvms-exporter` services.
+* You can now reach the Grafana dashboards at `http://your.nodes.address:3000/dashboards`
+* Try looking at the `Validator Consensus Dashboard`. It should look like this:
 
 ![Grafana screenshot](./consensus-dashboard.png)
 
