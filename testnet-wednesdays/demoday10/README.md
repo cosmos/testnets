@@ -37,7 +37,7 @@ Create two config files inside the `cvms` directory,
 `config.yaml` and `.env`.
 
 `config.yaml` will tell CVMS where to find your node. You can use a public
-endpoint for this, or you may use a docker-bridged IP address.  To find out
+endpoint for this, or you may use a docker-bridged IP address if you are setting up CVMS in the same machine as a node.  To find out
 your localhost's address from a bridged docker network, inspect the `docker0`
 network interface:
 
