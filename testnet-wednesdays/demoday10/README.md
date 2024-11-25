@@ -84,6 +84,7 @@ Next you'll create `.env`. This'll configure publicly-accessible endpoints
 for your CVMS instance. In particular, you probably want `PROM_SERVER_PORT`
 to be set to something other than the default of `9090`:
 
+`.env`
 ```bash
 ###### CVMS Services #######
 # EXPORTER_PORT=9200
