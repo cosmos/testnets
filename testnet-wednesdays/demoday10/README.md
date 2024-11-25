@@ -4,8 +4,8 @@ In this demo day, we'll demonstrate using
 [CVMS](https://github.com/cosmostation/cvms) to monitor your validator node!
 This will consist of two tasks:
 
-1. **No TIP points** You'll set up a CVMS instance to monitor your validator
-2. **1 TIP point** You'll bring your validator down for 30 minutes to see how CVMS' metrics handle downtime
+1. **No TIP points** Set up a CVMS instance to monitor your validator
+2. **1 TIP point** Bring your validator down for 30 minutes to see how CVMS handles downtime
 
 If you don't want to set up your own CVMS, you can [follow this one](http://143.198.42.179:3000/)
 
