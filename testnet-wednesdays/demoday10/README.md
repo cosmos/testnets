@@ -1,7 +1,6 @@
 # Testnet Demo Day # 10: 2024-November-27
 
-In this demo day, we'll demonstrate using
-[CVMS](https://github.com/cosmostation/cvms) to monitor your validator node!
+In this demo day, we'll demonstrate using Cosmostation's [Cosmos Validator Monitoring Service](https://github.com/cosmostation/cvms) (CVMS) to monitor your validator node!
 This will consist of two tasks:
 
 1. **No TIP points** Set up a CVMS instance to monitor your validator
