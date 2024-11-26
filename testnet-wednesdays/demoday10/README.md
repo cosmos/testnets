@@ -15,7 +15,7 @@ We will post announcements in the `testnet-announcements` channel in Discord to 
 
 ## Testnet Incentives Program (TIP) Eligibility
 
-* You'll earn TIP point if you bring your validator down for 30 minutes
+* You'll earn one TIP point if you bring your validator down for 30 minutes
 
 ## Tasks
 
