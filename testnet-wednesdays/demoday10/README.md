@@ -4,7 +4,7 @@ In this demo day, we'll demonstrate using Cosmostation's [Cosmos Validator Monit
 This will consist of two tasks:
 
 1. **No TIP points** Set up a CVMS instance to monitor your validator
-2. **1 TIP point** Bring your validator down for 30 minutes to see how CVMS handles downtime
+2. **1 TIP point** Bring your validator down for 200 blocks (~30m) to see how CVMS handles downtime
 
 If you don't want to set up your own CVMS, you can [follow this one](http://143.198.42.179:3000/)
 
@@ -138,4 +138,4 @@ Bring your validator down.
 
 Now look at the Golden Timer in CVMS. You can use [this one](http://143.198.42.179:3000/d/be0fqrlk919moe/validator-consensus-dashboard?from=now-5m&to=now&timezone=browser&refresh=5s) if need be. Do you see how it's going down for your validator? This would be a great metric to alert on!
 
-After your validator has been down for 30 minutes, bring it back up, and watch that Golden Timer go back up.
+After your validator has been down for 200 blocks, bring it back up, and watch that Golden Timer go back up.
