@@ -1,5 +1,17 @@
 # Cosmos Hub Release Testnet
 
+## 🛑 The Cosmos Hub Release Testnet Will Stop On December 2nd, 2024
+
+### The `theta-testnet-001` chain will halt at block height `24,791,000` (2024-12-02 @ ~11:00 UTC)
+
+We are halting `theta-testnet-001` at block height 24,791,000. Please move all Hub testnet operations to the [`provider`](/interchain-security/provider/README.md) network using the resources in this repo.
+
+For more information (and a brief history of the testnet) you can review the public announcement on the Hub forum [here](https://forum.cosmos.network/t/theta-testnet-001-will-be-deprecated-as-of-dec-1-2024/14679).
+
+Thank you especially to all validators who have continued securing `theta-testnet-001` without any payment or incentives. You're the real ones and we hope you'll continue with that level of commitment and support on the `provider` network.
+
+---
+
 The release testnet will be used to test all Gaia upgrades. It was created to mirror the state of mainnet, aside from a few modifications to the exported genesis file. These adjustments help provide liveness and streamlined governance-permissioned software upgrades.
 
 Visit the [Scheduled Upgrades](UPGRADES.md) page for details on current and upcoming versions. 
