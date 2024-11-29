@@ -46,6 +46,7 @@ The chain is started using a reference binary from the `interchain-security` rep
   "3c53448db7746810cc31c6fd6d69d998ee3aa13b@butterfly-tomato.ics-testnet.polypore.xyz:26656,4bfaa6aab539ec51b89343ee56ea7274e12cdf36@butterfly-cherry.ics-testnet.polypore.xyz:26656,019463585337a6c254733a2f2f402ab2fe7c8b09@butterfly-node.ics-testnet.polypore.xyz:26656"
   ```
 * Genesis file: [butterfly-genesis.json](./butterfly-genesis.json)
+* [Block explorer](https://explorer.polypore.xyz/test-butterfly-1)
 * Use [this script](./join-butterfly-sovereign.sh) as reference for settting up a node.
 * If you wish to create a validator in the sovereign chain, please request `test-butterfly-1` tokens in the `interchain-security-testnet` Discord channel.
 
