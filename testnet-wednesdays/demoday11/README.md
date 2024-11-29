@@ -8,15 +8,18 @@ We will post announcements in the `testnet-announcements` channel in Discord to 
 
 ## Testnet Incentives Program (TIP) Eligibility
 
-* You must complete the tasks listed below by the time the event ends to earn one point for TIP period 10.
+* You must complete the tasks listed below by the time the event ends to earn points for TIP period 10.
+* Available points: 2
 
 ### Tasks
 
-* Task 1: Opt in to the `test-butterfly-1` consumer chain with a public key that differs from the `provider` chain one.
+* (1 point) Task 1: Opt in to the `test-butterfly-1` consumer chain with a public key that differs from the `provider` chain one.
   * You may opt in from the moment the consumer chain is created up until it is removed.
 ```
 gaiad tx provider opt-in <consumer ID> <consumer chain public key> --from <self-delegation wallet> --gas auto --gas-adjustment 2 --gas-prices 0.005uatom -y
 ```
+* (1 point) Task 2: Sign blocks on the `test-butterfly-1` consumer chain before it is removed.
+
 
 ## Changeover Plan
 
@@ -48,7 +51,7 @@ The chain is started using a reference binary from the `interchain-security` rep
 * Genesis file: [butterfly-genesis.json](./butterfly-genesis.json)
 * [Block explorer](https://explorer.polypore.xyz/test-butterfly-1)
 * Use [this script](./join-butterfly-sovereign.sh) as reference for settting up a node.
-* If you wish to create a validator in the sovereign chain, please request `test-butterfly-1` tokens in the `interchain-security-testnet` Discord channel.
+* If you wish to create a validator in the sovereign chain, please request `test-butterfly-1` tokens in the `interchain-security-testnet` Discord channel. Note that becoming a validator in `test-butterfly-1` prior to the consumer chain changeover is entirely optional.
 
 ### 2024-12-02: Consumer Chain Creation
 
