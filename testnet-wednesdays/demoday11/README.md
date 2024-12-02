@@ -16,7 +16,7 @@ We will post announcements in the `testnet-announcements` channel in Discord to 
 * (1 point) Task 1: Opt in to the `test-butterfly-1` consumer chain with a public key that differs from the `provider` chain one.
   * You may opt in from the moment the consumer chain is created up until it is removed.
 ```
-gaiad tx provider opt-in <consumer ID> <consumer chain public key> --from <self-delegation wallet> --gas auto --gas-adjustment 2 --gas-prices 0.005uatom -y
+gaiad tx provider opt-in 111 <consumer chain public key> --from <self-delegation wallet> --gas auto --gas-adjustment 2 --gas-prices 0.005uatom -y
 ```
 * (1 point) Task 2: Sign blocks on the `test-butterfly-1` consumer chain before it is removed.
 
@@ -56,10 +56,11 @@ The chain is started using a reference binary from the `interchain-security` rep
 ### 2024-12-02: Consumer Chain Creation
 
 * The consumer chain is created in the `provider` chain with a spawn time set to `null`.
+  * See [`butterfly-create.json`](./butterfly-create.json) for reference.
 * Validators can opt-in from this point up until the chain is stopped with a `remove-consumer` transaction.
 * If you have set up a node in the `test-butterfly-1` network, you can obtain the pubkey to use in the opt-in transaction with `interchain-security-sd tendermint show-validator`.
 * The slash window will be set to 100,000 blocks (roughly one week at 6s per block), but the chain will be stopped on the same day the consumer chain launches.
-* **Validators who opt-in but do not sign blocks will be in no danger of being jailed for downtime in this consumer chain.**
+* **Validators who opt-in but do not sign blocks will be in no danger of being jailed for downtime in this consumer chain, but they won't get the point for task 2.**
 
 ### 2024-12-04: Consumer Chain Launch
 
@@ -73,8 +74,8 @@ The chain is started using a reference binary from the `interchain-security` rep
     git checkout v6.2.0
     make install
     ```
+* Consumer ID: 111
 * Consumer genesis file: TBD
-* Consumer ID: TBD
 
 #### Launch Day Schedule (approximate times in UTC)
 

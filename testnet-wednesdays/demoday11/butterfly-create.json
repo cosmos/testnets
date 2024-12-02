@@ -1,0 +1,33 @@
+{
+    "chain_id": "test-butterfly-1",
+    "metadata": {
+      "name": "Test sovereign-consumer changeover chain",
+      "description": "The Butterfly chain will join the ICS testnet as an opt-in chain.",
+      "metadata": "ipfs://"
+    },
+    "initialization_parameters": {
+      "initial_height": {
+        "revision_number": 1,
+        "revision_height": 1
+      },
+      "genesis_hash": "WjJWdVgyaGhjMmc9",
+      "binary_hash": "WW1sdVgyaGhjMmc9",
+      "spawn_time": null,
+      "unbonding_period": 1728000000000000,
+      "ccv_timeout_period": 2419200000000000,
+      "transfer_timeout_period": 3600000000000,
+      "consumer_redistribution_fraction": "0.75",
+      "blocks_per_distribution_transmission": 1000,
+      "historical_entries": 10000,
+      "distribution_transmission_channel": "channel-0"
+    },
+    "power_shaping_parameters": {
+      "topN": 0,
+      "allow_inactive_vals": true
+    },
+    "allowlisted_reward_denoms": {
+      "denoms": [
+        "ibc/5FD69375AE150F9E9545E9E3AAC196B55CDF53B7BB7316E5295C380CA328269D"
+      ]
+    }
+}
