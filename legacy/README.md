@@ -1,5 +1,9 @@
 ## Legacy Testnets
 
+### *Dec 02, 2024*, Release Testnet (`theta-testnet-001`)
+
+See the [theta-testnet-001](./theta-testnet-001/) folder.
+
 ### *Feb 02, 2021*, Stargate Testnet
 
 See [repository](https://github.com/cosmos/stargate-launch)
