@@ -75,7 +75,7 @@ The chain is started using a reference binary from the `interchain-security` rep
     make install
     ```
 * Consumer ID: 111
-* Consumer genesis file: TBD
+* Consumer genesis file: [`consumer-genesis.json`](./consumer-genesis.json)
 
 #### Launch Day Schedule (approximate times in UTC)
 
@@ -97,7 +97,7 @@ The chain is started using a reference binary from the `interchain-security` rep
 2. Copy the consumer genesis file to the location specified below.
   * The consumer genesis file posted in this repo will be created as follows:
     ```
-    gaiad q provider consumer-genesis <consumer ID> -o json --node https://rpc.provider-sentry-01.ics-testnet.polypore.xyz:443 > ccv.json
+    gaiad q provider consumer-genesis 111 -o json --node https://rpc.provider-sentry-01.ics-testnet.polypore.xyz:443 > ccv.json
     jq '.params.reward_denoms |= ["ubttr"]' ccv.json > ccv-denom.json
     jq '.params.provider_reward_denoms |= ["uatom"]' ccv-denom.json > ccv-provider-denom.json
     jq -s '.[0].app_state.ccvconsumer = .[1] | .[0]' butterfly-genesis-sovereign.json ccv-provider-denom.json > consumer-genesis.json
@@ -109,4 +109,4 @@ The chain is started using a reference binary from the `interchain-security` rep
     ```
   * The `.sovereign` home directory is hard-coded in the post-changeover binary. It is fine if your actual chain home folder is something else, but the genesis file with the CCV state **must** be placed in this directory.
 3. Update the service or rename the binary so the consumer chain binary (`interchain-security-cdd`) is used instead of the sovereign one (`interchain-security-sd`).
-4. Restart the sovereign chain service.
+4. Restart the service.
