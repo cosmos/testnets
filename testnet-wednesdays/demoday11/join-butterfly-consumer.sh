@@ -1,6 +1,6 @@
 #!/bin/bash
 # Set up a service for the test-butterfly-1 chain.
-
+# Once the node is synced, you should be able to replace the keys with your validator's to start signing blocks.
 # ***
 # Configuration
 # You should only have to modify the values in this block
