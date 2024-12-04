@@ -87,7 +87,7 @@ echo "WantedBy=multi-user.target"           | sudo tee /etc/systemd/system/$SERV
 # Start service
 echo "Setting up $SERVICE_NAME.service..."
 sudo systemctl daemon-reload
-# sudo systemctl enable $SERVICE_NAME.service --now
+sudo systemctl enable $SERVICE_NAME.service --now
 
 echo "***********************"
 echo "To see the service log enter:"
