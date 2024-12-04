@@ -1,11 +1,8 @@
 
 # Devnet Details
 
-## ⏸️ The devnet is offline until a mainnet fork can be run with its own chain ID.
-
 The Cosmos Hub devnet is used to test the next major upgrade before a release candidate is tagged.
-* The devnet state represents a recent for of the Cosmos Hub (`gaia-devnet`).
-* The provided snapshot will start by applying an upgrade.
+* The devnet is restarted periodically with the version currently running on the Cosmos Hub and immediately upgraded to the next major version.
 
 * **Chain-ID**: `gaia-devnet`
 * **denom**: `uatom`
