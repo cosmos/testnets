@@ -17,12 +17,11 @@ NODE_HOME=~/.gaia
 NODE_MONIKER=gaiad-devnet
 SERVICE_NAME=cv-gaiad-devnet
 GAS_PRICE=0.005uatom
-UPGRADE_NAME=v20
 # ***
 
 CHAIN_BINARY='gaiad'
-CHAIN_ID=cosmoshub-4
-GENESIS_URL=https://github.com/cosmos/mainnet/raw/master/genesis/genesis.cosmoshub-4.json.gz
+CHAIN_ID=gaia-devnet
+GENESIS_URL=https://files.polypore.xyz/gaia-devnet/genesis.json
 PERSISTENT_PEERS="0ef1c4cbfe5b93a3e778acbc07fe0384567283d2@gaia-devnet.polypore.xyz:26656"
 
 # Install wget and jq
@@ -74,8 +73,7 @@ curl -o - -L https://files.polypore.xyz/gaia-devnet/latest.tar.gz | tar vzx -C .
 cd $HOME
 
 # Replace genesis file
-wget $GENESIS_URL -O genesis.json.gz
-gunzip genesis.json.gz
+wget $GENESIS_URL -O genesis.json
 mv genesis.json $NODE_HOME/config/genesis.json
 
 # Set up cosmovisor
