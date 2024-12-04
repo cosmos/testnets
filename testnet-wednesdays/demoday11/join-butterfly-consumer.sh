@@ -18,7 +18,7 @@ CHAIN_ID=test-butterfly-1
 PEERS="3c53448db7746810cc31c6fd6d69d998ee3aa13b@butterfly-tomato.ics-testnet.polypore.xyz:26656,4bfaa6aab539ec51b89343ee56ea7274e12cdf36@butterfly-cherry.ics-testnet.polypore.xyz:26656,019463585337a6c254733a2f2f402ab2fe7c8b09@butterfly-node.ics-testnet.polypore.xyz:26656"
 GENESIS_URL="https://github.com/cosmos/testnets/raw/refs/heads/master/testnet-wednesdays/demoday11/butterfly-genesis.json"
 CONSUMER_GENESIS_URL="https://github.com/cosmos/testnets/raw/refs/heads/master/testnet-wednesdays/demoday11/consumer-genesis.json"
-SNAPSHOT_URL=https://files.polypore.xyz/snapshots/test-butterfly-1/butterfly-89602.tar.gz
+SNAPSHOT_URL=https://files.polypore.xyz/snapshots/test-butterfly-1/butterfly-89605.tar.gz
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
@@ -28,7 +28,7 @@ export PATH=$PATH:$HOME/go/bin
 # Install binary
 echo "Installing binary..."
 
-# Install go 1.21.6
+# Install go 1.23.2
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
 wget https://go.dev/dl/go1.23.2.linux-amd64.tar.gz
