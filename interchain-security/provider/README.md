@@ -26,24 +26,28 @@ The provider chain will upgrade to Gaia [v22.0.0-rc0](https://github.com/cosmos/
 * `https://rpc.provider-sentry-01.ics-testnet.polypore.xyz`
 * `https://rpc.provider-sentry-02.ics-testnet.polypore.xyz`
 * `https://rpc-rs.cosmos.nodestake.top`
+* `https://cosmos-testnet-rpc.itrocket.net`
 
 ### API
 
 * `https://rest.provider-sentry-01.ics-testnet.polypore.xyz`
 * `https://rest.provider-sentry-02.ics-testnet.polypore.xyz`
 * `https://api-rs.cosmos.nodestake.top`
+* `https://cosmos-testnet-api.itrocket.net`
 
 ### gRPC
 
 * `https://grpc.provider-sentry-01.ics-testnet.polypore.xyz`
 * `https://grpc.provider-sentry-02.ics-testnet.polypore.xyz`
 * `https://grpc-rs.cosmos.nodestake.top`
+* `https://cosmos-testnet-grpc.itrocket.net:443`
 
 
 ### Seeds
 
 1. `08ec17e86dac67b9da70deb20177655495a55407@provider-seed-01.ics-testnet.polypore.xyz:26656`
 2. `4ea6e56300a2f37b90e58de5ee27d1c9065cf871@provider-seed-02.ics-testnet.polypore.xyz:26656`
+3. `84871382a3ffa5e781034b6519126f2d5ea29f15@cosmos-testnet-seed.itrocket.net:21656`
 
 ### State sync
 
@@ -59,10 +63,12 @@ Use this [jsfiddle](https://jsfiddle.net/uw4ar8qt/2/).
 * https://explorer.polypore.xyz/provider/
 * https://explorer.nodestake.org/cosmos-ics-testnet
 * https://www.mintscan.io/ics-testnet-provider
+* https://testnet.itrocket.net/cosmos
 
 ## Snapshot
 
 * https://nodestake.top/cosmos
+* https://itrocket.net/services/testnet/cosmos/#snap
 
 ## Faucet
 
