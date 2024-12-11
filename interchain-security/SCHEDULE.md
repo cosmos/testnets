@@ -2,7 +2,7 @@
 
 | Date                   | Testnet Incentives Program Period | Type                       | Description                                                                                                                                              |
 | ---------------------- | --------------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| December 11 2024       | )                                 | Consumer upgrade           | ✅ Consumer chain pion-1 upgrade to v5.0.2                                                                                                                |
+| December 11 2024       | 10                                | Consumer upgrade           | ✅ Consumer chain pion-1 upgrade to v5.0.2                                                                                                                |
 | December 4 2024        | 10                                | Demo Day                   | ✅ Demo day # 11: Sovereign-Consumer Changeover with Permissionless ICS                                                                                   |
 | November 27 2024       | 10                                | Demo Day                   | ✅ Demo day # 10: Cosmos Validator Monitoring Service                                                                                                     |
 | November 13 2024       | -                                 | Game Day                   | ✅ Game day # 4: Scavenger hunt                                                                                                                           |
