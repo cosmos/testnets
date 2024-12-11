@@ -10,7 +10,7 @@ The `pion-1` chain will be launched as a Neutron persistent chain to test Interc
 * **timeout_commit**: `1s`
 * **Spawn time**: `2023-06-29T14:30:00Z`
 * **GitHub repo**: [neutron-org/neutron](https://github.com/neutron-org/neutron.git)
-* **Current version**: [`v5.0.0-rc0`](https://github.com/neutron-org/neutron/releases/tag/v5.0.0-rc0)
+* **Current version**: [`v5.0.2`](https://github.com/neutron-org/neutron/releases/tag/v5.0.2)
   * Launch version: [`v1.0.2-pion-1-upgrade`](https://github.com/neutron-org/neutron/releases/tag/v1.0.2-pion-1-upgrade)
 * **Genesis file with CCV state:** [pion-1-genesis.json](https://github.com/cosmos/testnets/blob/master/interchain-security/pion-1/pion-1-genesis-with-ccv.json.gz)
 
@@ -96,7 +96,7 @@ Persistent nodes:
 
 | Name    | Version |
 | ------- | ------- |
-| Neutron | v5.0.0-rc0  |
+| Neutron | v5.0.2  |
 | Go      | >=1.21  |
 
 The scripts provided in this repo will install Neutron and set up a Cosmovisor service with the auto-download feature enabled on your machine.
@@ -129,7 +129,7 @@ If you need to stop Slinky temporarily, adjust your Neutron `app.toml` file as f
 Build and install neutron binary. 
 
 ```
-$ git clone -b v5.0.0-rc0 https://github.com/neutron-org/neutron.git
+$ git clone -b v5.0.2 https://github.com/neutron-org/neutron.git
 $ cd neutron
 $ make install
 ```
@@ -142,20 +142,20 @@ You should see the following:
 ```
 name: neutron
 server_name: neutrond
-version: v5.0.0-rc0
+version: v5.0.2
 ```
 
-If you are joining as a validator you must install and run `slinky` v1.0.3 as a service. To install follow this steps:
+If you are joining as a validator you must install and run `slinky` v1.0.13 as a service. To install follow this steps:
 
 ```
-$ git clone -b v1.0.3 https://github.com/skip-mev/slinky.git
-$ cd slinky
+$ git clone -b v1.0.13 https://github.com/skip-mev/connect.git
+$ cd connect
 $ make install
 ```
 ### Troubleshooting
 
-If you see error like this during startup
+If you see error like this during startup:
 
 `Error: maximum number of retries exceeded, last error: rpc error: code = Unknown desc = failed to load state at height 0; version mismatch on immutable IAVL tree; version does not exist. Version has either been pruned, or is for a future block height (latest height: 0): invalid request`
 
-disable Rosetta service in the `app.toml`, reset state (`neutrond tendermint unsafe-reset-all --home ~/.neutrond --keep-addr-book`  ) and start node again.
+Disable the Rosetta service in `app.toml`, reset state (`neutrond tendermint unsafe-reset-all --home ~/.neutrond --keep-addr-book`), and start the node again.

@@ -11,7 +11,7 @@ NODE_KEY_FILE=${2:-"~/node_key.json"}
 NODE_HOME=~/.neutrond
 NODE_MONIKER=node
 SERVICE_NAME=neutrond
-SERVICE_VERSION="v5.0.0-rc0"
+SERVICE_VERSION="v5.0.2"
 STATE_SYNC=true
 # ***
 
@@ -27,11 +27,11 @@ GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/pi
 # Install wget and jq
 sudo apt-get install curl jq wget -y
 
-# Install go 1.21
+# Install go 1.22
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
-wget https://go.dev/dl/go1.21.8.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.21.8.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.22.10.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.22.10.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
 # Install neutrond binary

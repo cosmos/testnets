@@ -8,7 +8,7 @@
 # ***
 SLINKY_HOME=~/.slinky
 SERVICE_NAME=slinky
-SERVICE_VERSION="1.0.3"
+SERVICE_VERSION="1.0.13"
 # ***
 
 # Create directories
@@ -27,7 +27,7 @@ fi
 # Install slinky binary
 mkdir ~/slinky-tmp
 cd ~/slinky-tmp
-wget https://github.com/skip-mev/slinky/releases/download/v$SERVICE_VERSION/slinky-$SERVICE_VERSION-linux-amd64.tar.gz -O - | tar xvz --strip-components=1
+wget https://github.com/skip-mev/connect/releases/download/v$SERVICE_VERSION/slinky-$SERVICE_VERSION-linux-amd64.tar.gz -O - | tar xvz --strip-components=1
 cp slinky $HOME/go/bin/slinky
 cd ~
 rm -r ~/slinky-tmp
