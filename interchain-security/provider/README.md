@@ -13,7 +13,7 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 ## v22 Upgrade
 
-The provider chain will upgrade to Gaia [v22.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v22.0.0-rc0) on **TBD**
+The provider chain will upgrade to Gaia [v22.0.0-rc0](https://github.com/cosmos/gaia/releases/tag/v22.0.0-rc0) on **January 14, 2025**
 
 * **Upgrade height: `TBD`**
   * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/TBD
