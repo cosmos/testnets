@@ -10,7 +10,8 @@ The ICS testnet is **public**, meaning that anyone can join, run a validator, an
 ## Quick links
 * Join the ICS testnet by following the instructions [here](VALIDATOR_JOINING_GUIDE.md)
 * Register using the Google form [here](https://docs.google.com/forms/d/e/1FAIpQLSeXlXu89uyAgsfck0wpjtUVqaXWRzyJQwLMM-9dlJk9WIH3Zg/viewform)
-* Stay tuned for Testnet Wednesday events by following our schedule [here](SCHEDULE.md) (and in Discord)
+  * Resubmit this form if either your `provider` or `cosmoshub-4` keys change
+* Stay tuned for Testnet Tuesday events by following our schedule [here](SCHEDULE.md) (and in Discord)
 * Track validator participation using the Google sheet [here](https://docs.google.com/spreadsheets/d/1CR-gtLgHUXvP2Ww8KFqnOej7ma_GwDjNt8IhdTXbGGw/edit?gid=1605434271#gid=1605434271)
 
 
@@ -31,7 +32,8 @@ We accept two ways of proving this:
 ## What are the criteria for getting paid?
 Each period, we evaluate the following three criteria:
 * **Criteria 1:** Be an active mainnet validator. Submit proof via our Google form
-* **Criteria 2:** Validate all available Top N consumer chains secured by the Cosmos Hub (Neutron and Stride) with *assigned consumer keys* (i.e., do not reuse your Hub key).
+* **Criteria 2.1:** Validate all available Top N consumer chains secured by the Cosmos Hub (Neutron and Stride) with > 50% uptime.
+* **Criteria 2.2:** Use *assigned consumer keys* for all available Top N consumer chains (i.e., do not reuse your Hub key).
 * **Criteria 3:** Run a testnet infrastructure setup that closely mimics mainnet. 
 
 If you meet these three criteria (most testnet validators do), you can participate in testnet events and earn points. At the end of each period, we'll translate those points into USDC and pay you for your testnet work! There are even bonus points for completing all events perfectly and remaining unjailed.
