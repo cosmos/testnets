@@ -74,7 +74,7 @@ We're serving snapshots every 1000 blocks from the following three nodes. Their 
 * `9e1e3ce30f22083f04ea157e287d338cf20482cf@165.22.235.50:26656`
 * `b7feb9619bef083e3a3e86925824f023c252745b@143.198.41.219:26656`
 
-Add these to your persistent_peers list to help your nodes discover snapshots quickly. To enable snapshot discovery, you'll need to configure the `[statesync]` section of your `config.toml` file. You'll need to set `enable = true`, set a `trust_height`, a corresponding `trust_hash` (easily found on a block explorer), and at least two trusted RPC servers that your node will use to cross-check hashes. A reccommended trusted block height is "current height - 1000." Note than in the future, the RPC server requirement will be deprecated as state sync is [moved to the p2p layer in Tendermint 0.35](https://github.com/tendermint/tendermint/issues/6491).
+Add these to your persistent_peers list to help your nodes discover snapshots quickly. To enable snapshot discovery, you'll need to configure the `[statesync]` section of your `config.toml` file. You'll need to set `enable = true`, set a `trust_height`, a corresponding `trust_hash` (easily found on a block explorer), and at least two trusted RPC servers that your node will use to cross-check hashes. A recommended trusted block height is "current height - 1000." Note than in the future, the RPC server requirement will be deprecated as state sync is [moved to the p2p layer in Tendermint 0.35](https://github.com/tendermint/tendermint/issues/6491).
 
 ### Serving your own snapshots
 
