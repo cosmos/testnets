@@ -30,7 +30,7 @@ The node will stop automatically on Fri, 27 Nov 2020 1500UTC if the above steps 
 sudo systemctl stop akashd
 ```
 State export of the current chain will be taken using this command:
-**Note**: Please execute the follwing command only when the node stops on the pre-determined time. 
+**Note**: Please execute the following command only when the node stops on the pre-determined time. 
 ```
 akashd export --for-zero-height --height <last-commit-height> > bigbang_genesis_export.json
 ```
