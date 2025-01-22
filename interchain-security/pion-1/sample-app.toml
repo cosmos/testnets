@@ -1,0 +1,65 @@
+minimum-gas-prices= "0untrn"
+query-gas-limit = "0"
+pruning = "default"
+pruning-keep-recent = "0"
+pruning-interval = "0"
+halt-height = "0"
+halt-time = "0"
+min-retain-blocks = "0"
+inter-block-cache = true
+index-events = []
+iavl-cache-size = 781250
+iavl-disable-fastnode = false
+app-db-backend = ""
+
+[telemetry]
+service-name = ""
+enabled = false
+enable-hostname = false
+enable-hostname-label = false
+enable-service-label = false
+prometheus-retention-time = 0
+global-labels = []
+metrics-sink = ""
+statsd-addr = ""
+datadog-hostname = ""
+
+[api]
+enable = false
+swagger = false
+address = "tcp://0.0.0.0:1317"
+max-open-connections = 1000
+rpc-read-timeout = 10
+rpc-write-timeout = 0
+rpc-max-body-bytes = 1000000
+enabled-unsafe-cors = false
+
+[grpc]
+enable = true
+address = "0.0.0.0:9090"
+max-recv-msg-size = "10485760"
+max-send-msg-size = "2147483647"
+
+[grpc-web]
+enable = true
+
+[state-sync]
+snapshot-interval = 0
+snapshot-keep-recent = 2
+
+[streaming]
+[streaming.abci]
+keys = []
+plugin = ""
+stop-node-on-err = true
+
+[mempool]
+max-txs = -1
+
+[oracle]
+enabled = "true"
+oracle_address = "localhost:8080"
+client_timeout = "2s"
+metrics_enabled = "true"
+price_ttl = "0s"
+interval = "0s"
