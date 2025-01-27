@@ -5,6 +5,7 @@
 * **denom**: `udown`
 * **Binary**: `interchain-security-cd` [`v6.4.0`](https://github.com/cosmos/interchain-security/releases/tag/v6.4.0)
 * **Genesis File:**  [infraction-genesis.json](infraction-genesis.json)
+* **Consumer ID**: `140`
 
 | Endpoint        | Address                                                                              |
 | :-------------- | :----------------------------------------------------------------------------------- |

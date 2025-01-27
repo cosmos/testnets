@@ -11,7 +11,7 @@ We will post announcements in the `testnet-announcements` channel in Discord to 
 
 ## Customizable Slashing and Jailing
 
-We have launched a chain called `test-infraction-1` with strict slashing parameters to demonstrate the [infraction parameters](https://cosmos.github.io/interchain-security/adrs/adr-020-cutomizable_slashing_and_jailing) feature of Interchain Security:
+We have launched a chain called [`test-infraction-1`](/interchain-security/test-infraction-1/README.md) with strict slashing parameters to demonstrate the [infraction parameters](https://cosmos.github.io/interchain-security/adrs/adr-020-cutomizable_slashing_and_jailing) feature of Interchain Security:
 * A validator only needs to go offline for about a minute to get jailed for downtime.
 * A downtime infraction will result in a 10% slash.
 
@@ -19,7 +19,7 @@ We will ask participants to delegate stake to the `sleepy 🥱` validator (`cosm
 
 ## Power Shaping via Priority List
 
-We have launched a chain called `test-priority-1` with a validator set cap of 11 to demonstrate the [priority list](https://cosmos.github.io/interchain-security/features/power-shaping#prioritylist) feature of Interchain Security.
+We have launched a chain called [`test-priority-1`](/interchain-security/test-priority-1/README.md) with a validator set cap of 11 to demonstrate the [priority list](https://cosmos.github.io/interchain-security/features/power-shaping#prioritylist) feature of Interchain Security.
 
 We will ask participants to opt-in to the `test-priority-1` chain. We will submit several update consumer transactions throughout the event to add different sets of validators to the priority list and trigger an update to the `test-priority-1` validator set.
 
