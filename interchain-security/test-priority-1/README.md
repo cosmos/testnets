@@ -5,6 +5,7 @@
 * **denom**: `upry`
 * **Binary**: `interchain-security-cd` [`v6.4.0`](https://github.com/cosmos/interchain-security/releases/tag/v6.4.0)
 * **Genesis File:**  [priority-genesis.json](priority-genesis.json)
+* **Consumer ID**: `141`
 
 | Endpoint        | Address                                                                              |
 | :-------------- | :----------------------------------------------------------------------------------- |
