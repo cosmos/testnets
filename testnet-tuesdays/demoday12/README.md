@@ -42,16 +42,16 @@ gaiad tx provider opt-in 141 <pubkey> --from <self-delegation wallet> --gas auto
 
 ## Schedule (approximate times in UTC)
 
-| Time  | Event                                                                         | Responsibility       |
-| :---: | :---------------------------------------------------------------------------- | :------------------- |
-| 14:00 | Validators 61-70 get placed in the priority list for `test-priority-1`        | Testnet coordinators |
-| 14:15 | Validators 51-60 get placed in the priority list for `test-priority-1`        | Testnet coordinators |
-| 14:30 | Validators 41-50 get placed in the priority list for `test-priority-1`        | Testnet coordinators |
-| 14:45 | Validators 31-40 get placed in the priority list for `test-priority-1`        | Testnet coordinators |
-| 15:00 | Validators 21-30 get placed in the priority list for `test-priority-1`        | Testnet coordinators |
-| 15:15 | Validators 11-20 get placed in the priority list for `test-priority-1`        | Testnet coordinators |
-| 15:30 | The priority list for `test-priority-1` is cleared                            | Testnet coordinators |
-| 15:35 | Sleepy validator stops signing blocks in `test-infraction-1`                  | Testnet coordinators |
-| 15:45 | Sleepy validator gets jailed **and slashed!**                                 | -                    |
-| 16:00 | The `test-priority-1` chain is removed with a `remove-consumer` transaction   | Testnet coordinators |
-| 16:00 | The `test-infraction-1` chain is removed with a `remove-consumer` transaction | Testnet coordinators |
+| Time  | Event                                                                         |
+| :---: | :---------------------------------------------------------------------------- |
+| 14:00 | Validators 61-70 get placed in the priority list for `test-priority-1`        |
+| 14:15 | Validators 51-60 get placed in the priority list for `test-priority-1`        |
+| 14:30 | Validators 41-50 get placed in the priority list for `test-priority-1`        |
+| 14:45 | Validators 31-40 get placed in the priority list for `test-priority-1`        |
+| 15:00 | Validators 21-30 get placed in the priority list for `test-priority-1`        |
+| 15:15 | Validators 11-20 get placed in the priority list for `test-priority-1`        |
+| 15:30 | The priority list for `test-priority-1` is cleared                            |
+| 15:35 | Sleepy validator stops signing blocks in `test-infraction-1`                  |
+| 15:45 | Sleepy validator gets jailed **and slashed!**                                 |
+| 16:00 | The `test-priority-1` chain is removed with a `remove-consumer` transaction   |
+| 16:00 | The `test-infraction-1` chain is removed with a `remove-consumer` transaction |
