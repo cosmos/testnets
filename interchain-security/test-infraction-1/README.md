@@ -8,6 +8,6 @@
 
 | Endpoint        | Address                                                                              |
 | :-------------- | :----------------------------------------------------------------------------------- |
-| RPC             | `https://infraction.ics-testnet.polypore.xyz:443`                                    |
+| RPC             | `https://rpc.infraction.ics-testnet.polypore.xyz:443`                                    |
 | Persistent peer | `13290d50dc6583d76b8848b1d6ae9e7ea52cb5c2@infraction.ics-testnet.polypore.xyz:26656` |
 

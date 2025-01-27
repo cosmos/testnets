@@ -8,6 +8,6 @@
 
 | Endpoint        | Address                                                                              |
 | :-------------- | :----------------------------------------------------------------------------------- |
-| RPC             | `https://priority.ics-testnet.polypore.xyz:443`                                    |
+| RPC             | `https://rpc.priority.ics-testnet.polypore.xyz:443`                                    |
 | Persistent peer | `07140138e26ec275fab42150a964e0121e5d4fa7@priority.ics-testnet.polypore.xyz:26656` |
 
