@@ -32,11 +32,11 @@ We will ask participants to opt-in to the `test-priority-1` chain. We will submi
 
 * (1 point) Task 1: Delegate at least 1 ATOM to the `sleepy 🥱` validator before it is jailed.
 ```
-gaiad tx staking delegate cosmosvaloper1hv3ghgjgy4rpkw8v3f59x6ajtcv6pjyzuvvh9p 1000000uatom --from <self-delegation wallet> --gas auto --gas-adjustment 2 --gas-prices 0.005uatom -y
+gaiad tx staking delegate cosmosvaloper1hv3ghgjgy4rpkw8v3f59x6ajtcv6pjyzuvvh9p 1000000uatom --from <self-delegation wallet> --gas auto --gas-adjustment 2 --gas-prices 0.005uatom --chain-id provider -y
 ```
 * (1 point) Task 2: Opt-in to the `test-priority-1` consumer chain before it is removed.
 ```
-gaiad tx provider opt-in 141 <pubkey> --from <self-delegation wallet> --gas auto --gas-adjustment 2 --gas-prices 0.005uatom -y
+gaiad tx provider opt-in 141 <pubkey> --from <self-delegation wallet> --gas auto --gas-adjustment 2 --gas-prices 0.005uatom --chain-id provider -y
 ```
 
 
