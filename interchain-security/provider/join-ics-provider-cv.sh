@@ -29,6 +29,17 @@ SEEDS="08ec17e86dac67b9da70deb20177655495a55407@provider-seed-01.ics-testnet.pol
 SYNC_RPC_1=https://rpc.provider-state-sync-01.ics-testnet.polypore.xyz:443
 SYNC_RPC_2=https://rpc.provider-state-sync-02.ics-testnet.polypore.xyz:443
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_2"
+SNAPSHOT_URL=https://snapshots.polypore.xyz/ics-testnet/provider/latest.tar.gz
+SNAPSHOT=false
+
+for i in "$@"; do
+    case $i in
+        -s|--snapshot)
+            SNAPSHOT=true
+            STATE_SYNC=false
+        ;;
+    esac
+done
 
 # Install wget and jq
 sudo apt-get install curl jq wget -y
@@ -74,7 +85,7 @@ echo "Replacing keys and genesis file..."
 cp $PRIV_VALIDATOR_KEY_FILE $NODE_HOME/config/priv_validator_key.json
 cp $NODE_KEY_FILE $NODE_HOME/config/node_key.json
 
-if $STATE_SYNC ; then
+if [ $STATE_SYNC == "true" ]; then
     echo "Configuring state sync..."
     CURRENT_BLOCK=$(curl -s $SYNC_RPC_1/block | jq -r '.result.block.header.height')
     TRUST_HEIGHT=$[$CURRENT_BLOCK-1000]
@@ -87,6 +98,15 @@ if $STATE_SYNC ; then
     sed -i -e "/rpc_servers =/ s^= .*^= \"$SYNC_RPC_SERVERS\"^" $NODE_HOME/config/config.toml
 else
     echo "Skipping state sync..."
+fi
+
+if [ $SNAPSHOT == "true" ]; then
+    echo "Downloading snapshot..."
+    rm -rf $NODE_HOME/wasm $NODE_HOME/data
+    curl $SNAPSHOT_URL
+    curl -o - -L $SNAPSHOT_URL | tar vxz -C $NODE_HOME
+else
+    echo "Skipping download snapshot..."
 fi
 
 # Replace genesis file

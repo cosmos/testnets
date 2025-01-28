@@ -65,6 +65,9 @@ Persistent nodes:
 * https://explorer.polypore.xyz/pion-1/
 * https://testnet.mintscan.io/neutron-testnet
 
+## Snapshot
+* https://snapshots.polypore.xyz/ics-testnet/pion-1/
+
 ## IBC Data
 
 ### Clients
@@ -114,6 +117,7 @@ Run script provided to set up a `pion-1` service:
 * `join-rs-pion-1.sh` will create a `pion-1` service with `cosmovisor` support.
 * Script must be run either as root or from a sudoer account.
 * Script will attempt to build a binary from the [neutron-org/neutron] repo.
+* To sync with Hypha's `pion-1` snapshot run with the `-s` argument
 
 If you are setting up a validator you will need to set up the `slinky` service:
 * `install-slinky.sh` will install the `slinky` and set up the `slinky` service
