@@ -67,6 +67,7 @@ Use this [jsfiddle](https://jsfiddle.net/uw4ar8qt/2/).
 
 ## Snapshot
 
+* https://snapshots.polypore.xyz/ics-testnet/provider/
 * https://nodestake.top/cosmos
 * https://itrocket.net/services/testnet/cosmos/#snap
 
@@ -109,7 +110,8 @@ Run either one of the scripts provided in this repo to join the provider chain:
 * `join-ics-provider.sh` will create a `gaiad` service.
 * `join-ics-provider-cv.sh` will create a `cosmovisor` service.
 * Both scripts must be run either as root or from a sudoer account.
-* Both scripts will attempt to download the amd64 binary from the Gaia [releases](https://github.com/cosmos/gaia/releases) page. You can modify the `CHAIN_BINARY_URL` to match your target architecture if needed.
+* Both scripts will attempt to build a binary from the [cosmos/gaia](https://github.com/cosmos/gaia/releases) repo.
+* To sync with Hypha's `provider` snapshot run with the `-s` argument
 
 #### State Sync
 

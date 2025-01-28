@@ -20,6 +20,17 @@ CHAIN_ID=pion-1
 SEEDS="4dbb91a22ec4222751aec7f682ea20c2c907f09d@p2p-palvus.pion-1.ntrn.tech:26656"
 SYNC_RPC_1=https://rpc.pion.ics-testnet.polypore.xyz:443
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_1"
+SNAPSHOT_URL=https://snapshots.polypore.xyz/ics-testnet/pion-1/latest.tar.gz
+SNAPSHOT=false
+
+for i in "$@"; do
+    case $i in
+        -s|--snapshot)
+            SNAPSHOT=true
+            STATE_SYNC=false
+        ;;
+    esac
+done
 
 # The genesis file that includes the CCV state will not be published until after the spawn time has been reached.
 GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/pion-1/pion-1-genesis-with-ccv.json.gz
@@ -70,7 +81,7 @@ wget $GENESIS_URL -O genesis.json.gz
 gzip -d genesis.json.gz -c > genesis.json
 mv genesis.json $NODE_HOME/config/genesis.json
 
-if $STATE_SYNC ; then
+if [ $STATE_SYNC == "true" ]; then
     echo "Configuring state sync..."
     CURRENT_BLOCK=$(curl -s $SYNC_RPC_1/block | jq -r '.result.block.header.height')
     TRUST_HEIGHT=$[$CURRENT_BLOCK-1000]
@@ -82,6 +93,15 @@ if $STATE_SYNC ; then
     sed -i -e "/rpc_servers =/ s^= .*^= \"$SYNC_RPC_SERVERS\"^" $NODE_HOME/config/config.toml
 else
     echo "Skipping state sync..."
+fi
+
+if [ $SNAPSHOT == "true" ]; then
+    echo "Downloading snapshot..."
+    rm -rf $NODE_HOME/wasm $NODE_HOME/data
+    curl $SNAPSHOT_URL
+    curl -o - -L $SNAPSHOT_URL | tar vxz -C $NODE_HOME
+else
+    echo "Skipping download snapshot..."
 fi
 
 # Set up cosmovisor
