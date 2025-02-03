@@ -6,7 +6,7 @@ the [cw-plus](https://github.com/CosmWasm/cw-plus) project, a simple set of
 smart contracts you can use as building blocks for your own use cases.
 
 * **Start Time:** `2025-02-04 14:00 UTC`
-* **End Time:** `2025-02-04 16:00 UTC`
+* **End Time:** `2025-02-04 17:00 UTC`
 
 
 ## TIP Points
@@ -44,17 +44,22 @@ Both must vote for a transaction to be executed.
 To instantiate the multisig, run this command:
 
 ```bash
-gaiad tx wasm instantiate 66 "$(cat ./parameters.json)" --admin="MY_ADDRESS"
+gaiad tx wasm instantiate 66 "$(cat ./parameters.json)" --admin="MY_SELF_DELEGATION_ADDR" --label=my-contract
 ```
 
-**This is the only task that yields TIP points.**
+**This is the only task that yields TIP points. You must use your
+self-delegation address as the contract's admin so we can track your
+participation!**
+
+Note that MULTISIG_ADDR_1 and MULTISIG_ADDR_2 need not be the same
+as your self-delegation address.
 
 ## Interacting with Your Contract
 
 Let's find our contract's address:
 
 ```bash
-gaiad q wasm list-contracts-by-creator MY_ADDRESS
+gaiad q wasm list-contracts-by-creator MY_SELF_DELEGATION_ADDR
 ```
 
 Now we can send our contract money! Try doing a regular `gaiad tx bank send`
@@ -74,7 +79,7 @@ The first step is to propose a transaction. Save the following JSON as `propose.
       {
         "bank": {
           "send": {
-            "to_address": "RECEPIENT",
+            "to_address": "RECIPIENT",
             "amount": [
               {
                 "denom": "uatom",
@@ -90,15 +95,17 @@ The first step is to propose a transaction. Save the following JSON as `propose.
 }
 ```
 
-Then send the proposal:
+Then send the proposal. It has to come from one of the two addresses in the multisig:
 
 ```bash
-gaiad tx wasm execute CONTRACT_ADDR "$(cat propose.json)" --from MY_ADDRESS
+gaiad tx wasm execute CONTRACT_ADDR "$(cat propose.json)" --from MULTISIG_ADDR_1
 ```
 
 ### Step 2: Voting on the Proposal
 
-Each multisig member needs to vote on the proposal before execution. Save the following JSON as `vote.json`:
+Since the first address proposed the transaction, it's automatically voted yes.
+The remaining member needs to vote before it can be executed. Save the
+following JSON as `vote.json`:
 
 ```json
 {
@@ -109,12 +116,6 @@ Each multisig member needs to vote on the proposal before execution. Save the fo
 }
 ```
 
-Sign with the first multisig address:
-
-```bash
-gaiad tx wasm execute CONTRACT_ADDR "$(cat vote.json)" --from MULTISIG_ADDR_1
-```
-
 Sign with the second multisig address:
 
 ```bash
@@ -123,8 +124,8 @@ gaiad tx wasm execute CONTRACT_ADDR "$(cat vote.json)" --from MULTISIG_ADDR_2
 
 ### Step 3: Executing the Proposal
 
-Once both votes are in, you can execute the proposal from any address that can
-execute the contract. Save the following JSON as `execute.json`:
+Once both votes are in, you can execute the proposal from any address in the
+multisig. Save the following JSON as `execute.json`:
 
 ```json
 {
@@ -137,5 +138,5 @@ execute the contract. Save the following JSON as `execute.json`:
 Run the execution command:
 
 ```bash
-gaiad tx wasm execute CONTRACT_ADDR "$(cat execute.json)" --from MY_ADDRESS
+gaiad tx wasm execute CONTRACT_ADDR "$(cat execute.json)" --from MULTISIG_ADDR_1
 ```
