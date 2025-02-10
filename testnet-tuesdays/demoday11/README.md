@@ -50,7 +50,7 @@ The chain is started using a reference binary from the `interchain-security` rep
   ```
 * Genesis file: [butterfly-genesis.json](./butterfly-genesis.json)
 * [Block explorer](https://explorer.polypore.xyz/test-butterfly-1)
-* Use [this script](./join-butterfly-sovereign.sh) as reference for settting up a node.
+* Use [this script](./join-butterfly-sovereign.sh) as reference for setting up a node.
 * If you wish to create a validator in the sovereign chain, please request `test-butterfly-1` tokens in the `interchain-security-testnet` Discord channel. Note that becoming a validator in `test-butterfly-1` prior to the consumer chain changeover is entirely optional.
 
 ### 2024-12-02: Consumer Chain Creation
