@@ -247,7 +247,7 @@ export BINARY=$NODE_HOME/cosmovisor/upgrades/v10/bin/gaiad
 
 ## Submit and vote on a software upgrade proposal
 
-You can submit a software upgrade proposal without specifiying a binary, but this only works for those nodes who are manually preparing the upgrade binary.
+You can submit a software upgrade proposal without specifying a binary, but this only works for those nodes who are manually preparing the upgrade binary.
 
 ```
 gaiad tx gov submit-proposal software-upgrade v10 \
