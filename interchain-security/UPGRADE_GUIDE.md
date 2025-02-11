@@ -91,7 +91,7 @@ A non-governance gated upgrade occurs when nodes upgrade their binary at an agre
 7. Stop the node service.
 8. Replace the binary listed in the unit file with the new release.
    * For Cosmovisor, this will be `<node home>/cosmovisor/current/bin/gaiad`.
-9.  Update app.toml to set the `halt-hight` back to 0.
+9.  Update app.toml to set the `halt-height` back to 0.
 10. Start the node service.
 
 ### Cosmovisor `add-upgrade`
