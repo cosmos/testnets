@@ -4,12 +4,13 @@ There are two major kinds of upgrades:
 * Governance gated
 * Non-governance gated
 
+In both cases, you can upgrade your node by replacing the binary manually or using Cosmovisor.
+
+
 ## Governance Gated Upgrade
 
 A governance gated upgrade occurs when an upgrade plan goes on chain through a software upgrade proposal.
 * Your node **will** stop at the height listed in the upgrade plan.
-
-You can upgrade your node by replacing the binary manually or using Cosmovisor.
 
 ### Manual Binary Upgrade
 
@@ -92,3 +93,17 @@ A non-governance gated upgrade occurs when nodes upgrade their binary at an agre
    * For Cosmovisor, this will be `<node home>/cosmovisor/current/bin/gaiad`.
 9.  Update app.toml to set the `halt-hight` back to 0.
 10. Start the node service.
+
+### Cosmovisor Upgrade
+
+#### ⚠️ The following instructions have been tested with Cosmovisor `v1.6.0` and `v1.7.0`. Be aware that there are reported issues with using Cosmovisor for non-governance upgrades: the instructions below may result in unexpected behaviour, such as an immediate upgrade or failure to stop at the specified height.
+
+1. Build or download the binary for the release you are upgrading to.
+2. Run the `add-upgrade` command. This command will look as follows using the example values listed below.
+   * New binary: `gaiad-v22.1.0-linux-amd64`
+   * Upgrade name: `v22.1.0`
+   * Halt height: `24385600`
+   ```
+   cosmovisor add-upgrade v22.1.0 gaiad-v22.1.0-linux-amd64 --upgrade-height 24385600 --force
+   ```
+3. Wait for the node to reach the upgrade height. Cosmovisor will restart the node using the new binary.
