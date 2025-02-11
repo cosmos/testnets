@@ -94,7 +94,7 @@ A non-governance gated upgrade occurs when nodes upgrade their binary at an agre
 9.  Update app.toml to set the `halt-hight` back to 0.
 10. Start the node service.
 
-### Cosmovisor Upgrade
+### Cosmovisor `add-upgrade`
 
 #### ⚠️ The following instructions have been tested with Cosmovisor `v1.6.0` and `v1.7.0`. Be aware that there are reported issues with using Cosmovisor for non-governance upgrades: the instructions below may result in unexpected behaviour, such as an immediate upgrade or failure to stop at the specified height.
 
