@@ -96,7 +96,7 @@ A non-governance gated upgrade occurs when nodes upgrade their binary at an agre
 
 ### Cosmovisor `add-upgrade`
 
-#### ⚠️ The following instructions have been tested with Cosmovisor `v1.6.0` and `v1.7.0`. Be aware that there are reported issues with using Cosmovisor for non-governance upgrades: the instructions below may result in unexpected behaviour, such as an immediate upgrade or failure to stop at the specified height.
+#### ⚠️ Be aware that there are reported issues with using Cosmovisor for non-governance upgrades: the instructions below may result in unexpected behaviour, such as an immediate upgrade or failure to stop at the specified height.
 
 1. Build or download the binary for the release you are upgrading to.
 2. Run the `add-upgrade` command. This command will look as follows using the example values listed below.
