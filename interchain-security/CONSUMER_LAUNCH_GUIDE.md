@@ -102,54 +102,63 @@ See the JSON file below and the [Interchain Security docs](https://cosmos.github
 
 ```json
 {
-  "chain_id": "test-ics-1",
-  "metadata": {
-	"name": "consumer chain",
-	"description": "no description",
-	"metadata": "{\"forge_json_url\": \"...\", \"stage\": \"mainnet\"}"
-  },
-  "initialization_parameters": {
-	"initial_height": {
-  	"revision_number": 1,
-  	"revision_height": 1
-	},
-	"genesis_hash": "",
-	"binary_hash": "",
-	"spawn_time": null,
-	"unbonding_period": 1728000000000000,
-	"ccv_timeout_period": 2419200000000000,
-	"transfer_timeout_period": 3600000000000,
-	"consumer_redistribution_fraction": "0.75",
-	"blocks_per_distribution_transmission": 1000,
-	"historical_entries": 10000,
-  "distribution_transmission_channel": "",
-  "connection_id": ""
-  },
-  "power_shaping_parameters": {
-	"top_N": 0,
-	"validators_power_cap": 0,
-	"validator_set_cap": 0,
-  "allowlist": ["cosmosvalcons..."],
-  "denylist": ["cosmosvalcons..."],
-  "min_stake": 0,
-  "allow_inactive_vals": false,
-  "prioritylist": ["cosmosvalcons..."]
-  },
-  "infraction_parameters":{
-  "double_sign":{
-    "slash_fraction": "0.05",
-    "jail_duration": 9223372036854775807,
-    "tombstone": true	 
-   },
-  "downtime":{
-    "slash_fraction": "0.0001",
-    "jail_duration": 600000000000,
-    "tombstone": false	 
-   }
-  },
-  "allowlisted_reward_denoms": {
-    "denoms": ["ibc/...", "ibc/..."]
-  }
+    "chain_id": "test-ics-1",
+    "metadata": {
+        "name": "consumer chain",
+        "description": "no description",
+        "metadata": "{\"forge_json_url\": \"...\", \"stage\": \"mainnet\"}"
+    },
+    "initialization_parameters": {
+        "initial_height": {
+            "revision_number": 1,
+            "revision_height": 1
+        },
+        "genesis_hash": "",
+        "binary_hash": "",
+        "spawn_time": null,
+        "unbonding_period": 1728000000000000,
+        "ccv_timeout_period": 2419200000000000,
+        "transfer_timeout_period": 3600000000000,
+        "consumer_redistribution_fraction": "0.75",
+        "blocks_per_distribution_transmission": 1000,
+        "historical_entries": 10000,
+        "distribution_transmission_channel": "",
+        "connection_id": ""
+    },
+    "power_shaping_parameters": {
+        "top_N": 0,
+        "validators_power_cap": 0,
+        "validator_set_cap": 0,
+        "allowlist": [
+            "cosmosvalcons..."
+        ],
+        "denylist": [
+            "cosmosvalcons..."
+        ],
+        "min_stake": 0,
+        "allow_inactive_vals": false,
+        "prioritylist": [
+            "cosmosvalcons..."
+        ]
+    },
+    "infraction_parameters": {
+        "double_sign": {
+            "slash_fraction": "0.05",
+            "jail_duration": 9223372036854775807,
+            "tombstone": true
+        },
+        "downtime": {
+            "slash_fraction": "0.0001",
+            "jail_duration": 600000000000,
+            "tombstone": false
+        }
+    },
+    "allowlisted_reward_denoms": {
+        "denoms": [
+            "ibc/...",
+            "ibc/..."
+        ]
+    }
 }
 ```
 
@@ -175,29 +184,29 @@ The following will take place during the chain creation phase:
 
 ```json
 {
-  "consumer_id": "<consumer id>",
-  "metadata": {
-	"name": "consumer chain",
-	"description": "no description",
-	"metadata": "{\"forge_json_url\": \"...\", \"stage\": \"mainnet\"}"
-  },
-  "initialization_parameters": {
-	"initial_height": {
-  	"revision_number": 1,
-  	"revision_height": 1
-	},
-	"genesis_hash": "",
-	"binary_hash": "",
-	"spawn_time": "<current time>",
-	"unbonding_period": 1728000000000000,
-	"ccv_timeout_period": 2419200000000000,
-	"transfer_timeout_period": 3600000000000,
-	"consumer_redistribution_fraction": "0.75",
-	"blocks_per_distribution_transmission": 1000,
-	"historical_entries": 10000,
-  "distribution_transmission_channel": "",
-  "connection_id": ""
-  }
+    "consumer_id": "<consumer id>",
+    "metadata": {
+        "name": "consumer chain",
+        "description": "no description",
+        "metadata": "{\"forge_json_url\": \"...\", \"stage\": \"mainnet\"}"
+    },
+    "initialization_parameters": {
+        "initial_height": {
+            "revision_number": 1,
+            "revision_height": 1
+        },
+        "genesis_hash": "",
+        "binary_hash": "",
+        "spawn_time": "<current time>",
+        "unbonding_period": 1728000000000000,
+        "ccv_timeout_period": 2419200000000000,
+        "transfer_timeout_period": 3600000000000,
+        "consumer_redistribution_fraction": "0.75",
+        "blocks_per_distribution_transmission": 1000,
+        "historical_entries": 10000,
+        "distribution_transmission_channel": "",
+        "connection_id": ""
+    }
 }
 ```
 
