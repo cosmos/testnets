@@ -8,7 +8,7 @@
 # ***
 SLINKY_HOME=~/.slinky
 SERVICE_NAME=slinky
-SERVICE_VERSION="1.0.13"
+SERVICE_VERSION="1.2.0"
 # ***
 
 # Create directories
