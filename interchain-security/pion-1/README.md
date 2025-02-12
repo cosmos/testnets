@@ -149,10 +149,10 @@ server_name: neutrond
 version: v5.1.1
 ```
 
-If you are joining as a validator you must install and run `slinky` v1.0.13 as a service. To install follow this steps:
+If you are joining as a validator you must install and run `slinky` v1.2.0 as a service. To install follow this steps:
 
 ```
-$ git clone -b v1.0.13 https://github.com/skip-mev/connect.git
+$ git clone -b v1.2.0 https://github.com/skip-mev/connect.git
 $ cd connect
 $ make install
 ```
