@@ -8,7 +8,7 @@
 # ***
 SLINKY_HOME=~/.slinky
 SERVICE_NAME=slinky
-SERVICE_VERSION="1.0.13"
+SERVICE_VERSION="1.2.0"
 # ***
 
 # Create directories
@@ -37,20 +37,20 @@ echo "Creating $SERVICE_NAME.service..."
 sudo rm /etc/systemd/system/$SERVICE_NAME.service
 sudo touch /etc/systemd/system/$SERVICE_NAME.service
 
-echo "[Unit]"                               | sudo tee /etc/systemd/system/$SERVICE_NAME.service
-echo "Description=Slinky service"           | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "After=network-online.target"          | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo ""                                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "[Service]"                            | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "WorkingDirectory=$SLINKY_HOME"        | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "User=$USER"                           | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "ExecStart=$HOME/go/bin/slinky"        | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "Restart=always"                       | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "RestartSec=3"                         | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "LimitNOFILE=50000"                    | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo ""                                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "[Install]"                            | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "WantedBy=multi-user.target"           | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "[Unit]"                                                                        | sudo tee /etc/systemd/system/$SERVICE_NAME.service
+echo "Description=Slinky service"                                                    | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "After=network-online.target"                                                   | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo ""                                                                              | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "[Service]"                                                                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "WorkingDirectory=$SLINKY_HOME"                                                 | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "User=$USER"                                                                    | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "ExecStart=$HOME/go/bin/slinky --market-map-endpoint=\"127.0.0.1:9090\""        | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "Restart=always"                                                                | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "RestartSec=3"                                                                  | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "LimitNOFILE=50000"                                                             | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo ""                                                                              | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "[Install]"                                                                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "WantedBy=multi-user.target"                                                    | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 
 # Start service
 sudo systemctl daemon-reload

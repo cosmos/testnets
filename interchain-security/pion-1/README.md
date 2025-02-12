@@ -10,7 +10,7 @@ The `pion-1` chain will be launched as a Neutron persistent chain to test Interc
 * **timeout_commit**: `1s`
 * **Spawn time**: `2023-06-29T14:30:00Z`
 * **GitHub repo**: [neutron-org/neutron](https://github.com/neutron-org/neutron.git)
-* **Current version**: [`v5.0.6`](https://github.com/neutron-org/neutron/releases/tag/v5.0.6)
+* **Current version**: [`v5.1.1`](https://github.com/neutron-org/neutron/releases/tag/v5.1.1)
   * Launch version: [`v1.0.2-pion-1-upgrade`](https://github.com/neutron-org/neutron/releases/tag/v1.0.2-pion-1-upgrade)
 * **Genesis file with CCV state:** [pion-1-genesis.json](https://github.com/cosmos/testnets/blob/master/interchain-security/pion-1/pion-1-genesis-with-ccv.json.gz)
 
@@ -99,7 +99,7 @@ Persistent nodes:
 
 | Name    | Version |
 | ------- | ------- |
-| Neutron | v5.0.6  |
+| Neutron | v5.1.1  |
 | Go      | >=1.21  |
 
 The scripts provided in this repo will install Neutron and set up a Cosmovisor service with the auto-download feature enabled on your machine.
@@ -133,7 +133,7 @@ If you need to stop Slinky temporarily, adjust your Neutron `app.toml` file as f
 Build and install neutron binary. 
 
 ```
-$ git clone -b v5.0.6 https://github.com/neutron-org/neutron.git
+$ git clone -b v5.1.1 https://github.com/neutron-org/neutron.git
 $ cd neutron
 $ make install
 ```
@@ -146,13 +146,13 @@ You should see the following:
 ```
 name: neutron
 server_name: neutrond
-version: v5.0.6
+version: v5.1.1
 ```
 
-If you are joining as a validator you must install and run `slinky` v1.0.13 as a service. To install follow this steps:
+If you are joining as a validator you must install and run `slinky` v1.2.0 as a service. To install follow these steps:
 
 ```
-$ git clone -b v1.0.13 https://github.com/skip-mev/connect.git
+$ git clone -b v1.2.0 https://github.com/skip-mev/connect.git
 $ cd connect
 $ make install
 ```
