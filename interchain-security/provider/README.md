@@ -18,6 +18,7 @@ The provider chain will upgrade to Gaia v22.2.0 on **Feb 18, 2025**
 * **Upgrade height: `10566200`**
   * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/10566200
   * Target upgrade time: `14:30 UTC`
+* Release page: https://github.com/cosmos/gaia/releases/tag/v22.2.0
 
 ## Endpoints
 
