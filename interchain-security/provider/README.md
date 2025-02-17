@@ -14,6 +14,7 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 ## v22.2.0 Upgrade
 
 The provider chain will upgrade to Gaia v22.2.0 on **Feb 18, 2025**
+* Proposal ID 243: https://explorer.polypore.xyz/provider/gov/243
 * This is a governance-gated upgrade: your node will stop at the upgrade height listed below.
 * **Upgrade height: `10566200`**
   * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/10566200
