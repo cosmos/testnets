@@ -31,6 +31,7 @@ hermes create client --host-chain provider --reference-chain test-ibcrecovery-1
 
 ### Step 2: Pass an IBC Client Recovery Proposal
 
+* Proposal JSON:
 ```json
 {
  "messages": [
@@ -49,8 +50,17 @@ hermes create client --host-chain provider --reference-chain test-ibcrecovery-1
 }
 ```
 
+* Proposal submission:
+```
+gaiad tx gov submit-proposal recover-client-proposal.json
+```
+
 ### Step 3: Confirm the client is active again 
+
+* Proposal 245 failed because the voting period ended after client `07-tendermint-235` had expired.
+* Proposal 246 was passed afterwards with the substitute client set to `07-tendermint-237`, which used a longer trusting period than `07-tendermint-235`.
 
 ```
 gaiad q ibc client status 07-tendermint-234
+status: Active
 ```
