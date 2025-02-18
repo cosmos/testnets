@@ -11,7 +11,9 @@ In this demo day, we will demonstrate how to recover an expired IBC client.
 ### Tasks
 
 * (1 point) Task 1: Vote YES on the IBC client recovery proposal. The proposal ID will be announced during the event.
-
+```
+gaiad tx gov vote 245 yes --from <self-delegation account> --gas auto --gas-adjustment 3 --gas-prices 0.005uatom -y
+```
 
 ## IBC Client Recovery
 
@@ -35,14 +37,14 @@ hermes create client --host-chain provider --reference-chain test-ibcrecovery-1
   {
    "@type": "/ibc.core.client.v1.MsgRecoverClient",
    "subject_client_id": "07-tendermint-234",
-   "substitute_client_id": "07-tendermint-TBD",
+   "substitute_client_id": "07-tendermint-235",
    "signer": "cosmos10d07y265gmmuvt4z0w9aw880jnsr700j6zn9kn"
   }
  ],
  "metadata": "ipfs://CID",
  "deposit": "1500000000uatom",
  "title": "Recover 07-tendermint-234",
- "summary": "Replace 07-tendermint-234 with 07-tendermint-TBD",
+ "summary": "Replace 07-tendermint-234 with 07-tendermint-235",
  "expedited": false
 }
 ```
