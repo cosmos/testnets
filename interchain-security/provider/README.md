@@ -5,7 +5,7 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v22.0.0-rc0`](https://github.com/cosmos/gaia/releases/tag/v22.0.0-rc0), upgraded from v21 at block height `10059200`.
+* **Current Gaia Version**: [`v22.2.0`](https://github.com/cosmos/gaia/releases/tag/v22.2.0), upgraded from v22.0.0-rc0 at block height `10566200`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
@@ -13,13 +13,13 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 ## v22.2.0 Upgrade
 
-The provider chain will upgrade to Gaia v22.2.0 on **Feb 18, 2025**
-* Proposal ID 243: https://explorer.polypore.xyz/provider/gov/243
+The provider chain will upgrade to Gaia v23.0.0-rc0 on **TBD**
+* Proposal ID TBD: https://explorer.polypore.xyz/provider/gov/TBD
 * This is a governance-gated upgrade: your node will stop at the upgrade height listed below.
-* **Upgrade height: `10566200`**
-  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/10566200
+* **Upgrade height: `TBD`**
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/TBD
   * Target upgrade time: `14:30 UTC`
-* Release page: https://github.com/cosmos/gaia/releases/tag/v22.2.0
+* Release page: https://github.com/cosmos/gaia/releases/tag/v23.0.0-rc0
 
 ## Endpoints
 
@@ -213,3 +213,4 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Replace the `v21.0.0-rc0` binary with the `v21.0.0-rc1` one.
 * Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `10059200`, it will attempt to upgrade to Gaia `v22`. You can use Cosmovisor's auto-download feature or install the `v22.0.0-rc0` release binary.
+* When the node reaches height `10566200`, it will attempt to upgrade to Gaia `v22.2.0`. You can use Cosmovisor's auto-download feature or install the `v22.2.0` release binary.
