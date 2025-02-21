@@ -19,7 +19,8 @@ CHAIN_BINARY='neutrond'
 CHAIN_ID=pion-1
 SEEDS="4dbb91a22ec4222751aec7f682ea20c2c907f09d@p2p-palvus.pion-1.ntrn.tech:26656"
 SYNC_RPC_1=https://rpc.pion.ics-testnet.polypore.xyz:443
-SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_1"
+SYNC_RPC_2=https://rpc.pion-2.ics-testnet.polypore.xyz:443
+SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_2"
 SNAPSHOT_URL=https://snapshots.polypore.xyz/ics-testnet/pion-1/latest.tar.gz
 SNAPSHOT=false
 
