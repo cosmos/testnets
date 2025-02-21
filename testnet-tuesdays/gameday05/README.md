@@ -21,7 +21,7 @@ You will have **the whole week** to complete this game day's tasks.
 We have deployed a dashboard to track block proposals, you can view it [here](http://cvms.ics-testnet.polypore.xyz:3000/d/bedk3wkhshgxsd/blocks-since-last-proposed?orgId=1&from=now-3h&to=now&timezone=browser&var-query0=&var-chain_id=provider&tab=queries).
 * Use the dropdown to switch between `provider` and `pion-1`.
 * Note how rows in red are validators that have not proposed a block in the last 20k blocks. You can use this as a yardstick to figure out if you're proposing blocks correctly.
-* We will assign points to all validators marked in green by the end of the week. If you find a block your validator proposed a block but it was not detected, please tag a Hypha member in Discord with the chain and block height.
+* We will assign points to all validators marked in green by the end of the week. If you find a block that your validator proposed and was not detected, please tag a Hypha member in Discord with the chain and block height.
 
 ### Stake distribution
 
