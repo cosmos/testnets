@@ -65,7 +65,7 @@ If you are not proposing blocks:
 
 ## Re-syncing Reference for `provider`
 
-⚠️ Take extra care when dealing with your validator keys.
+⚠️ Be careful when working with your validator keys.
 
 * Stop your node, back up your keys, and replace them with non-validator ones before clearing the state.
 
@@ -137,7 +137,7 @@ sudo systemctl start cv-provider.service
 
 ## Re-Syncing Reference for `pion-1`
 
-⚠️ Take extra care when dealing with your validator keys.
+⚠️ Be careful when working with your validator keys.
 
 * Stop your node, back up your keys, and replace them with non-validator ones before clearing the state.
 
