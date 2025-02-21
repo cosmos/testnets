@@ -54,6 +54,7 @@ Seed nodes:
 State sync nodes:
 
 1. `pion.ics-testnet.polypore.xyz:26657`
+2. `pion-2.ics-testnet.polypore.xyz:26657`
 
 Persistent nodes:
 
@@ -67,6 +68,7 @@ Persistent nodes:
 
 ## Snapshot
 * https://snapshots.polypore.xyz/ics-testnet/pion-1/
+* https://snapshots-2.polypore.xyz/ics-testnet/pion-1/
 
 ## IBC Data
 

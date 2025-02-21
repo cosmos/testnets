@@ -70,6 +70,7 @@ Use this [jsfiddle](https://jsfiddle.net/uw4ar8qt/2/).
 ## Snapshot
 
 * https://snapshots.polypore.xyz/ics-testnet/provider/
+* https://snapshots-2.polypore.xyz/ics-testnet/provider/
 * https://nodestake.top/cosmos
 * https://itrocket.net/services/testnet/cosmos/#snap
 

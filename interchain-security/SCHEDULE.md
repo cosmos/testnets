@@ -2,6 +2,7 @@
 
 | Date                   | Testnet Incentives Program Period | Type                       | Description                                                                                                                                              |
 | ---------------------- | --------------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| February 24 2025       | Feb 2025                          | Game Day                   | Game day # 5: Block party                                                                                                                                |
 | February 18 2025       | Feb 2025                          | Demo Day                   | ✅ Demo day # 14: IBC client recovery                                                                                                                     |
 | February 18 2025       | Feb 2025                          | Minor upgrade              | ✅ Provider chain upgrades to Gaia v22.2.0                                                                                                                |
 | February 11 2025       | Feb 2025                          | Consumer upgrade           | ✅ Consumer chain pion-1 upgrade to v5.1.1                                                                                                                |
