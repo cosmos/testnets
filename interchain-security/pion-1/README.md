@@ -68,6 +68,7 @@ Persistent nodes:
 
 ## Snapshot
 * https://snapshots.polypore.xyz/ics-testnet/pion-1/
+* https://snapshots-2.polypore.xyz/ics-testnet/pion-1/
 
 ## IBC Data
 
