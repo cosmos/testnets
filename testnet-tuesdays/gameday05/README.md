@@ -31,7 +31,7 @@ We will rotate stake delegations so that five validators will have ~1 % voting p
 ### Troubleshooting
 
 🔧 If you are not proposing blocks:
-* You will have to re-sync. Make sure you **back your keys up**, then do a `gaiad tendermint unsafe-reset-all` and sync from scratch.
+* You will have to re-sync. Make sure you **back your keys up**, then do a `gaiad comet unsafe-reset-all` or `neutrond comet unsafe-reset-all` and sync again.
 * Please sync using snapshots or state sync endpoints on the [provider](../../interchain-security/provider/README.md) and [pion-1](../../interchain-security/pion-1/README.md) readmes in this testnets repo: we cannot verify other snapshots are synced properly.
 * One way to find out if your validator cannot propose blocks if by checking a validator's proposer priority in your node's `validators` RPC endpoint. If this number does not match the result from the nodes listed below, you **must** re-sync.
   * provider
