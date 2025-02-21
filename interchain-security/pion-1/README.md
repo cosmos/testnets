@@ -54,6 +54,7 @@ Seed nodes:
 State sync nodes:
 
 1. `pion.ics-testnet.polypore.xyz:26657`
+2. `pion-2.ics-testnet.polypore.xyz:26657`
 
 Persistent nodes:
 

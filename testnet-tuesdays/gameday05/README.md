@@ -1,4 +1,4 @@
-# Testnet Game ~~Day~~ _Week_: 2025-Feb-24
+# Testnet Game ~~Day~~ _Week_: Block Party 2025-Feb-24
 
 * Start time: `2025-02-24 14:00 UTC`
 * End time: `2025-02-28 23:00 UTC`
@@ -11,10 +11,11 @@ You will have **the whole week** to complete this game day's tasks.
 
 ### Testnet Incentives Program (TIP) Eligibility
 
+This event will be part of the Feb 2025 TIP period and will be worth up to **two points**.
 * (1 point) Task 1: Propose at least one block on `provider`
 * (1 point) Task 2: Propose at least one block on `pion-1`
 
-## Block party
+## Block (Proposal) Party
 
 ### Dashboard
 
@@ -23,25 +24,25 @@ We have deployed a dashboard to track block proposals, you can view it [here](ht
 * Note how rows in red are validators that have not proposed a block in the last 20k blocks. You can use this as a yardstick to figure out if you're proposing blocks correctly.
 * We will assign points to all validators marked in green by the end of the week. If you find a block that your validator proposed and was not detected, please tag a Hypha member in Discord with the chain and block height.
 
-### Stake distribution
+### Stake Distribution
 
-We will rotate stake delegations so that five validators will have ~1 % voting power each at any given time.
+We will rotate stake delegations periodically so that five validators will have ~1 % voting power each at any given time.
 * Ideally, your validator will propose at least one of every 100 blocks at some point during the week.
 
-### Troubleshooting
+### 🔧 Troubleshooting
 
-🔧 If you are not proposing blocks:
+If you are not proposing blocks:
 * You will have to re-sync. Make sure you **back your keys up**, then do a `gaiad comet unsafe-reset-all` or `neutrond comet unsafe-reset-all` and sync again.
-* Please sync using snapshots or state sync endpoints on the [provider](../../interchain-security/provider/README.md) and [pion-1](../../interchain-security/pion-1/README.md) readmes in this testnets repo: we cannot verify other snapshots are synced properly.
+* Please sync using the snapshots or state sync endpoints listed in the [provider](../../interchain-security/provider/README.md) and [pion-1](../../interchain-security/pion-1/README.md) readmes in this testnets repo: we cannot verify other snapshots are synced properly.
 * One way to find out if your validator cannot propose blocks if by checking a validator's proposer priority in your node's `validators` RPC endpoint. If this number does not match the result from the nodes listed below, you **must** re-sync.
   * provider
     * `curl -s https://rpc.provider-sentry-01.ics-testnet.polypore.xyz/validators\?height\=<recent block height> | jq '.result.validators[0].proposer_priority'`
   * pion-1
     * `curl -s https://rpc.pion.ics-testnet.polypore.xyz/validators\?height\=<recent block height> | jq '.result.validators[0].proposer_priority'`
 
-## `provider` sync sources
+## `provider` Sync Sources
 
-### State sync
+### State Sync
 
 1. `https://provider-state-sync-01.ics-testnet.polypore.xyz:443`
 2. `https://provider-state-sync-02.ics-testnet.polypore.xyz:443`
@@ -49,8 +50,9 @@ We will rotate stake delegations so that five validators will have ~1 % voting p
 ### Snapshot
 
 * https://snapshots.polypore.xyz/ics-testnet/provider/
+* https://snapshots-2.polypore.xyz/ics-testnet/provider/
 
-## `pion-1` sync sources
+## `pion-1` Sync Sources
 
 ### State sync
 
@@ -59,8 +61,11 @@ We will rotate stake delegations so that five validators will have ~1 % voting p
 
 ### Snapshot
 * https://snapshots.polypore.xyz/ics-testnet/pion-1/
+* https://snapshots-2.polypore.xyz/ics-testnet/pion-1/
 
-## Re-syncing reference for `provider`
+## Re-syncing Reference for `provider`
+
+⚠️ Take extra care when dealing with your validator keys.
 
 * Stop your node, back up your keys, and replace them with non-validator ones before clearing the state.
 
@@ -78,10 +83,10 @@ rm -r ~/.gaia/wasm
 
 * Pick state sync or snapshot next:
 
-### State sync
+### State Sync
 
 * Obtain a recent block height and save the height and tx hash.
-```
+```bash
 RPC="https://rpc.provider-state-sync-01.ics-testnet.polypore.xyz:443"
 TRUST_HEIGHT=$[$(curl -s $RPC/block | jq -r '.result.block.header.height')-2000]
 TRUST_HASH=$((curl -s $RPC/block\?height\=$TRUST_HEIGHT) | jq -r '.result.block_id.hash')
@@ -98,11 +103,11 @@ trust_hash = <value from $TRUST_HASH>
 trust_period = "8h0m0s"
 ```
 * Start the service.
-```
+```bash
 sudo systemctl start cv-provider.service
 ```
 * After the node has synced, you can replace the dummy keys with the back-up validator ones.
-```
+```bash
 sudo systemctl stop cv-provider.service
 cp ~/.gaia/priv_validator_key.json.bak ~/.gaia/config/priv_validator_key.json
 cp ~/.gaia/node_key.json.bak ~/.gaia/config/node_key.json
@@ -111,25 +116,28 @@ sudo systemctl start cv-provider.service
 
 ### Snapshot
 
-* Download and extract snapshot.
+* Download and extract snapshot. 
 
 ```bash
 curl -LO https://snapshots.polypore.xyz/ics-testnet/provider/latest.tar.gz
 tar -xvf latest.tar.gz -C ~/.gaia
 ```
+
 * Start the service.
 ```
 sudo systemctl start cv-provider.service
 ```
 * After the node has synced, you can replace the dummy keys with the back-up validator ones.
-```
+```bash
 sudo systemctl stop cv-provider.service
 cp ~/.gaia/priv_validator_key.json.bak ~/.gaia/config/priv_validator_key.json
 cp ~/.gaia/node_key.json.bak ~/.gaia/config/node_key.json
 sudo systemctl start cv-provider.service
 ```
 
-## Re-Syncing reference for `pion-1`
+## Re-Syncing Reference for `pion-1`
+
+⚠️ Take extra care when dealing with your validator keys.
 
 * Stop your node, back up your keys, and replace them with non-validator ones before clearing the state.
 
@@ -147,10 +155,10 @@ rm -r ~/.neutrond/wasm
 
 * Pick state sync or snapshot next:
 
-### State sync
+### State Sync
 
 * Obtain a recent block height and save the height and tx hash.
-```
+```bash
 RPC="https://rpc.pion.ics-testnet.polypore.xyz:443"
 TRUST_HEIGHT=$[$(curl -s $RPC/block | jq -r '.result.block.header.height')-20000]
 TRUST_HASH=$((curl -s $RPC/block\?height\=$TRUST_HEIGHT) | jq -r '.result.block_id.hash')
@@ -166,11 +174,11 @@ trust_height = <value from $TRUST_HEIGHT>
 trust_hash = <value from $TRUST_HASH>
 ```
 * Start the service.
-```
+```bash
 sudo systemctl start cv-neutron.service
 ```
 * After the node has synced, you can replace the dummy keys with the back-up validator ones.
-```
+```bash
 sudo systemctl stop cv-neutron.service
 cp ~/.neutrond/priv_validator_key.json.bak ~/.neutrond/config/priv_validator_key.json
 cp ~/.neutrond/node_key.json.bak ~/.neutrond/config/node_key.json
@@ -186,11 +194,11 @@ curl -LO https://snapshots.polypore.xyz/ics-testnet/pion-1/latest.tar.gz
 tar -xvf latest.tar.gz -C ~/.neutrond
 ```
 * Start the service.
-```
+```bash
 sudo systemctl start cv-neutron.service
 ```
 * After the node has synced, you can replace the dummy keys with the back-up validator ones.
-```
+```bash
 sudo systemctl stop cv-neutron.service
 cp ~/.neutrond/priv_validator_key.json.bak ~/.neutrond/config/priv_validator_key.json
 cp ~/.neutrond/node_key.json.bak ~/.neutrond/config/node_key.json
