@@ -18,7 +18,7 @@ A governance gated upgrade occurs when an upgrade plan goes on chain through a s
 2. Wait for the node to stop at the upgrade height.
    * The log will display something like this:
      ```
-     ERR UPGRADE "v22" NEEDED at height: <UPGRADE_HEIGHT>: upgrade to v22 and applying upgrade "v22" at height:<UPGRADE_HEIGHT>
+     ERR UPGRADE "v22.2.0" NEEDED at height: <UPGRADE_HEIGHT>: upgrade to v22.2.0 and applying upgrade "v22.2.0" at height:<UPGRADE_HEIGHT>
      ```
   * If the node service remains active, you can stop it now.
 3. Replace the binary listed in the unit file with the new release.
@@ -28,17 +28,17 @@ A governance gated upgrade occurs when an upgrade plan goes on chain through a s
 
 1. Build or download the binary for the release you are upgrading to.
 2. Create a folder for the new binary in the relevant Cosmovisor directory.
-   * If the upgrade name is `v22`, you would place the binary under `<node home>/cosmovisor/upgrades/v22/bin/gaiad`:
+   * If the upgrade name is `v22.2.0`, you would place the binary under `<node home>/cosmovisor/upgrades/v22.2.0/bin/gaiad`:
      ```
      .
      ├── current -> genesis or upgrades/<name>
      ├── genesis
      │   └── bin
-     │       └── gaiad  # old: v21.0.1
+     │       └── gaiad  # old: v22.1.0
      └── upgrades
          └── v22
              └── bin
-                 └── gaiad  # new: v22.0.0
+                 └── gaiad  # new: v22.2.0
      ```
 3. Verify that Cosmovisor will use the binary you have prepared.
    * The Cosmovisor service should have the auto-download feature disabled. A sample Cosmovisor unit file will look like this:
@@ -78,15 +78,15 @@ A non-governance gated upgrade occurs when nodes upgrade their binary at an agre
 1. Build or download the binary for the release you are upgrading to.
 2. Stop the node service.
 3. Update the app.toml file in your node's config folder to set the `halt-height` variable.
-   * A sample app.toml line will look like this for an upgrade height of `24385600`:
+   * A sample app.toml line will look like this for an upgrade height of `24666000`:
      ```
-     halt-height = 24385600
+     halt-height = 24666000
      ```
 4. Restart the service.
 5. Wait for the halt height. 
    * The log will display something like this when height is reached:
      ```
-     ERR CONSENSUS FAILURE!!! err="failed to apply block; error halt per configuration height 24385600 time 0" 
+     ERR CONSENSUS FAILURE!!! err="failed to apply block; error halt per configuration height 24666000 time 0" 
      ```
 7. Stop the node service.
 8. Replace the binary listed in the unit file with the new release.
@@ -100,10 +100,10 @@ A non-governance gated upgrade occurs when nodes upgrade their binary at an agre
 
 1. Build or download the binary for the release you are upgrading to.
 2. Run the `add-upgrade` command. This command will look as follows using the example values listed below.
-   * New binary: `gaiad-v22.1.0-linux-amd64`
-   * Upgrade name: `v22.1.0`
-   * Halt height: `24385600`
+   * New binary: `gaiad-v22.3.0-linux-amd64`
+   * Upgrade name: `v22.3.0`
+   * Halt height: `24666000`
    ```
-   cosmovisor add-upgrade v22.1.0 gaiad-v22.1.0-linux-amd64 --upgrade-height 24385600 --force
+   cosmovisor add-upgrade v22.3.0 gaiad-v22.3.0-linux-amd64 --upgrade-height 24666000 --force
    ```
 3. Wait for the node to reach the upgrade height. Cosmovisor will restart the node using the new binary.
