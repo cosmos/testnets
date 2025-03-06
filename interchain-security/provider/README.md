@@ -5,7 +5,7 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v22.2.0`](https://github.com/cosmos/gaia/releases/tag/v22.2.0), upgraded from v22.0.0-rc0 at block height `10566200`.
+* **Current Gaia Version**: [`v23.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v23.0.0-rc2), upgraded from v23.0.0-rc2 at block height `10803600`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
@@ -13,13 +13,12 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 ## v23 Upgrade
 
-The provider chain will upgrade to Gaia `v23.0.0-rc2` on **March 6, 2025**
-* Proposal ID 248: https://explorer.polypore.xyz/provider/gov/248
-* This is a governance-gated upgrade: your node will stop at the upgrade height listed below.
-* **Upgrade height: `10803600`**
-  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/10803600
+The provider chain will upgrade to Gaia `v23.0.0-rc3` on **TBD**
+
+* **Upgrade height: `TBD`**
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/TBD
   * Target upgrade time: `14:30 UTC`
-* Release page: https://github.com/cosmos/gaia/releases/tag/v23.0.0-rc2
+* Release page: https://github.com/cosmos/gaia/releases/tag/v23.0.0-rc3
 
 ## Endpoints
 
