@@ -11,15 +11,14 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v23 Upgrade
+## v23.0.0-rc3 Upgrade
 
-The provider chain will upgrade to Gaia `v23.0.0-rc2` on **March 6, 2025**
-* Proposal ID 248: https://explorer.polypore.xyz/provider/gov/248
-* This is a governance-gated upgrade: your node will stop at the upgrade height listed below.
-* **Upgrade height: `10803600`**
-  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/10803600
+The provider chain will upgrade to Gaia v23.0.0-rc3 on **Monday March 10th**
+* This is **not** a governance-gated upgrade. Please set your node's halt-height to the height below:
+* **Upgrade height: `10861850`**
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/10861850
   * Target upgrade time: `14:30 UTC`
-* Release page: https://github.com/cosmos/gaia/releases/tag/v23.0.0-rc2
+* Release page: https://github.com/cosmos/gaia/releases/tag/v23.0.0-rc3
 
 ## Endpoints
 
