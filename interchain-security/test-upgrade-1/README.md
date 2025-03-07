@@ -3,8 +3,9 @@
 
 * **Chain-ID**: `test-upgrade-1`
 * **denom**: `udrl`
-* **Current Gaia Version**: [`v21.0.1`](https://github.com/cosmos/gaia/releases/tag/v21.0.1), upgraded from v22.0.0-rc0 at block height `10566200`.
+* **Current Gaia Version**: [`v21.0.1`](https://github.com/cosmos/gaia/releases/tag/v21.0.1)
 * **Genesis File:**  [genesis.json](genesis.json)
+* [Reference setup script](join-test-upgrade.sh)
 
 ## Endpoints
 
@@ -18,7 +19,7 @@
 
 ### State sync
 
-* `http://upgrade-sentry.ics-testnet.polypore.xyz:26657` (also an archive node)
+* `http://upgrade-sentry.ics-testnet.polypore.xyz:26657`
 
 
 ## IBC Data

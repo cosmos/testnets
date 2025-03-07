@@ -9,11 +9,11 @@ We will use this game day to review our processes for governance-gated and non-g
 
 We have launched a chain, `test-upgrade-1`, running Gaia v21.0.1. We will upgrade it twice in a row.
 
-The validator tasks will be to:
+Participants will:
 1. Set up a validator in `test-upgrade-1`
-1. Vote on a proposal to upgrade to v22
-2. Upgrade to v22.0.0 (governance-gated)
-3. Upgrade to v22.1.0 (non-governance-gated)
+2. Vote on a proposal to upgrade to v22
+3. Upgrade to v22.0.0 (governance-gated)
+4. Upgrade to v22.1.0 (non-governance-gated)
 
 
 ### Testnet Incentives Program (TIP) Eligibility
@@ -22,7 +22,7 @@ This event will be part of the March 2025 TIP period and will be worth up to **f
 * (1 point) Task 1: Sign at least one block on `test-upgrade-1`
 * (1 point) Task 2: Vote on the v22 software upgrade proposal
 * (1 point) Task 3: Sign at least one block after the v22.0.0 upgrade height and before the v22.1.0 halt height
-* (1 point) Task 4: Sign at least one of the 5 blocks following a consensus-breaking tx
+* (1 point) Task 4: Sign at least one of the 5 blocks following a consensus-breaking transaction
 
 
 ### Timeline (times in UTC)
@@ -36,7 +36,7 @@ This event will be part of the March 2025 TIP period and will be worth up to **f
 |   ~13:40   | v22.0.0 upgrade height is reached                |       1,3       |
 |   ~13:45   | v22.1.0 halt height is announced                 |       1,3       |
 |   ~14:00   | v22.1.0 upgrade height is reached                |        1        |
-|   ~14:05   | Consensus-breaking tx is submitted               |       1,4       |
+|   ~14:05   | Consensus-breaking transaction is submitted      |       1,4       |
 
 
 ## 1. Set up a validator in `test-upgrade-1`
