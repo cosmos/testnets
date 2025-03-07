@@ -111,7 +111,7 @@ echo "Restart=no"                       | sudo tee /etc/systemd/system/$SERVICE_
 echo "LimitNOFILE=4096"                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "Environment='DAEMON_NAME=$CHAIN_BINARY'"      | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "Environment='DAEMON_HOME=$NODE_HOME'" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "Environment='DAEMON_ALLOW_DOWNLOAD_BINARIES=true'" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "Environment='DAEMON_ALLOW_DOWNLOAD_BINARIES=false'" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "Environment='DAEMON_RESTART_AFTER_UPGRADE=true'" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "Environment='DAEMON_LOG_BUFFER_SIZE=512'" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo ""                                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
