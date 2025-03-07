@@ -3,7 +3,7 @@
 * Start time: `13:00 UTC`
 * End time: `14:30 UTC`
 
-We will use this game day to review our upgrade processes through governance-gated and non-governance-gated upgrades.
+We will use this game day to review our processes for governance-gated and non-governance-gated upgrades.
 
 ## Summary
 
@@ -12,8 +12,8 @@ We have launched a chain, `test-upgrade-1`, running Gaia v21.0.1. We will upgrad
 The validator tasks will be to:
 1. Set up a validator in `test-upgrade-1`
 1. Vote on a proposal to upgrade to v22
-2. Upgrade to v22.0.0
-3. Upgrade to v22.1.0
+2. Upgrade to v22.0.0 (governance-gated)
+3. Upgrade to v22.1.0 (non-governance-gated)
 
 
 ### Testnet Incentives Program (TIP) Eligibility
