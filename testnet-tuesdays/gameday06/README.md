@@ -1,37 +1,43 @@
 # Testnet Game Day: Upgrade Drill 2025-Mar-11
 
-* Start time: `14:00 UTC`
-* End time: `15:30 UTC`
+* Start time: `13:00 UTC`
+* End time: `14:30 UTC`
 
 We will use this game day to review our upgrade processes through governance-gated and non-governance-gated upgrades.
 
 ## Summary
 
-We have launched a chain, `test-upgrade-1`, running Gaia v21.0.1. You will be asked to:
+We have launched a chain, `test-upgrade-1`, running Gaia v21.0.1. We will upgrade it twice in a row.
+
+The validator tasks will be to:
 1. Set up a validator in `test-upgrade-1`
 1. Vote on a proposal to upgrade to v22
 2. Upgrade to v22.0.0
 3. Upgrade to v22.1.0
-
-### Timeline (times in UTC)
-
-|  Time  | Event                                            |
-| :----: | :----------------------------------------------- |
-| 14:00  | v22.0.0 upgrade proposal goes into voting period |
-| 14:30  | v22.0.0 upgrade proposal passes                  |
-| ~14:40 | v22.0.0 upgrade height is reached                |
-| ~14:45 | v22.1.0 halt height is announced                 |
-| ~15:00 | v22.1.0 upgrade height is reached                |
-| ~15:05 | Consensus-breaking tx is submitted               |
 
 
 ### Testnet Incentives Program (TIP) Eligibility
 
 This event will be part of the March 2025 TIP period and will be worth up to **four points**.
 * (1 point) Task 1: Sign at least one block on `test-upgrade-1`
-* (1 point) Task 2: Vote on the software upgrade proposal
-* (1 point) Task 3: Sign at least one block after the v22.0.0 upgrade
-* (1 point) Task 4: Sign at least 100 blocks after the v22.1.0 upgrade
+* (1 point) Task 2: Vote on the v22 software upgrade proposal
+* (1 point) Task 3: Sign at least one block after the v22.0.0 upgrade height and before the v22.1.0 halt height
+* (1 point) Task 4: Sign at least one of the 5 blocks following a consensus-breaking tx
+
+
+### Timeline (times in UTC)
+
+|    Time    | Event                                            | Available tasks |
+| :--------: | :----------------------------------------------- | :-------------: |
+| March 7-11 | Validators are set up                            |        1        |
+| March 11:  |                                                  |                 |
+|   13:00    | v22.0.0 upgrade proposal goes into voting period |       1,2       |
+|   13:30    | v22.0.0 upgrade proposal passes                  |        1        |
+|   ~13:40   | v22.0.0 upgrade height is reached                |       1,3       |
+|   ~13:45   | v22.1.0 halt height is announced                 |       1,3       |
+|   ~14:00   | v22.1.0 upgrade height is reached                |        1        |
+|   ~14:05   | Consensus-breaking tx is submitted               |       1,4       |
+
 
 ## 1. Set up a validator in `test-upgrade-1`
 
@@ -40,11 +46,13 @@ This event will be part of the March 2025 TIP period and will be worth up to **f
 
 ### Send funds from `provider` to `test-upgrade-1`
 
-* All validators have been sent `udrl` tokens in the `provider` chain (if you need tokens, please tag a Hypha member in Discord). The IBC-wrapped denom is `ibc/25F1EB6956137FB10323746935A2F9CDDCAD2F01A2C89C4A54AE78F2E74D0988`.
+* All validators have been sent `udrl` tokens in the `provider` chain.
+  * The IBC-wrapped denom is `ibc/25F1EB6956137FB10323746935A2F9CDDCAD2F01A2C89C4A54AE78F2E74D0988`.
+  * If you need tokens, please tag a Hypha member in Discord.
 * You must create a new self-delegation wallet in the `test-upgrade-1` chain and send it `udrl` tokens  to create a validator with.
 * In the provider chain:
 ```
-gaiad tx ibc-transfer transfer transfer channel-345 <upgrade chain wallet> 15000000ibc/25F1EB6956137FB10323746935A2F9CDDCAD2F01A2C89C4A54AE78F2E74D0988 --from <provider chain wallet> --gas auto --gas-adjustment 3 --gas-prices 0.005uatom -y
+gaiad tx ibc-transfer transfer transfer channel-345 <wallet in test-upgrade-1> 15000000ibc/25F1EB6956137FB10323746935A2F9CDDCAD2F01A2C89C4A54AE78F2E74D0988 --from <provider validator wallet> --gas auto --gas-adjustment 3 --gas-prices 0.005uatom -y
 ```
 
 ### Create validator in `test-upgrade-1`
@@ -54,10 +62,10 @@ gaiad tx ibc-transfer transfer transfer channel-345 <upgrade chain wallet> 15000
 ```bash
 PUBKEY=$(gaiad comet show-validator)
 ```
-* Setup a validator JSON
+* Set up a validator JSON
 ```json
 {
-  "pubkey": {"@type":"/cosmos.crypto.ed25519.PubKey","key":"<value from gaiad comet show-validator>"},
+  "pubkey": $PUBKEY,
   "amount": "10000000udrl",
   "moniker": "your-moniker",
   "identity": null,
@@ -85,7 +93,7 @@ gaiad q staking validators
 * The voting period is set to **30 minutes**.
 * You must vote YES on this proposal:
 ```
-gaiad tx gov vote <prop ID> yes --from <upgrade chain validator> --gas auto --gas-adjustment 3 --gas-prices 0.005udrl -y
+gaiad tx gov vote <prop ID> yes --from <wallet in test-upgrade-1> --gas auto --gas-adjustment 3 --gas-prices 0.005udrl -y
 ```
 
 ## 3. Upgrade to Gaia v22.0.0
