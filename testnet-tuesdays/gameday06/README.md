@@ -1,4 +1,4 @@
-# Testnet Game Day: Upgrade Drill 2025-Mar-11
+# Testnet Game Day # 6: Upgrade Drill 2025-Mar-11
 
 * Start time: `13:00 UTC`
 * End time: `14:30 UTC`
