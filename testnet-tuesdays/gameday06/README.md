@@ -91,9 +91,9 @@ gaiad q staking validators
 
 * We will submit a proposal to upgrade `test-upgrade-1` to Gaia v22.0.0 and publish the proposal ID in Discord.
 * The voting period is set to **30 minutes**.
-* You must vote YES on this proposal:
+* You must vote YES on prop ID 3:
 ```
-gaiad tx gov vote <prop ID> yes --from <wallet in test-upgrade-1> --gas auto --gas-adjustment 3 --gas-prices 0.005udrl -y
+gaiad tx gov vote 3 yes --from <wallet in test-upgrade-1> --gas auto --gas-adjustment 3 --gas-prices 0.005udrl -y
 ```
 
 ## 3. Upgrade to Gaia v22.0.0
