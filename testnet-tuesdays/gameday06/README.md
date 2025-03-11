@@ -109,7 +109,7 @@ cosmovisor add-upgrade v22 gaiad-v22.0.0
 ```
 
 ## 4. Upgrade to Gaia v22.1.0
-
+* Halt height: **74300**
 * You must set up the v22.1.0 binary ahead of the halt height.
 * Using Cosmovisor, download the binary and set it up with the halt height as follows (Cosmosvisor must have auto-download disabled):
 ```bash
@@ -117,7 +117,7 @@ wget https://github.com/cosmos/gaia/releases/download/v22.1.0/gaiad-v22.1.0-linu
 chmod +x gaiad-v22.1.0
 export DAEMON_NAME=gaiad
 export DAEMON_HOME=<path to .gaia folder>
-cosmovisor add-upgrade v22.1.0 gaiad-v22.1.0 --upgrade-height <published halt height> --force
+cosmovisor add-upgrade v22.1.0 gaiad-v22.1.0 --upgrade-height 74300 --force
 ```
 
 
