@@ -11,13 +11,15 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v23 Upgrade
+## v23.0.0-rc3 Upgrade
 
-The provider chain will upgrade to Gaia `v23.0.0-rc3` on **TBD**
+The provider chain will upgrade to Gaia `v23.0.0-rc3` on **March 11, 2025**
 
-* **Upgrade height: `TBD`**
-  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/TBD
-  * Target upgrade time: `14:30 UTC`
+* **Upgrade name: `23.0.0-rc3`** (notice the missing "v")
+* **Upgrade height: `10882800`**
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/10882800
+  * Target upgrade time: `22:00 UTC`
+* Proposal ID 250: https://explorer.polypore.xyz/provider/gov/250
 * Release page: https://github.com/cosmos/gaia/releases/tag/v23.0.0-rc3
 
 ## Endpoints
@@ -215,3 +217,4 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * When the node reaches height `10059200`, it will attempt to upgrade to Gaia `v22`. You can use Cosmovisor's auto-download feature or install the `v22.0.0-rc0` release binary.
 * When the node reaches height `10566200`, it will attempt to upgrade to Gaia `v22.2.0`. You can use Cosmovisor's auto-download feature or install the `v22.2.0` release binary.
 * When the node reaches height `10803600`, it will attempt to upgrade to Gaia `v23`. You can use Cosmovisor's auto-download feature or install the `v23.0.0-rc2` release binary.
+* When the node reaches height `10882800`, it will attempt to upgrade to Gaia `23.0.0-rc3`. You can use Cosmovisor's auto-download feature or install the `v23.0.0-rc3` release binary.
