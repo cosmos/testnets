@@ -5,22 +5,36 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v23.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v23.0.0-rc2), upgraded from v23.0.0-rc2 at block height `10803600`.
+* **Current Gaia Version**: [`v23.0.0-rc3`](https://github.com/cosmos/gaia/releases/tag/v23.0.0-rc3), upgraded from v23.0.0-rc2 at block height `10882800`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v23.0.0-rc3 Upgrade
+## v23.0.0 Upgrade
 
-The provider chain will upgrade to Gaia `v23.0.0-rc3` on **March 11, 2025**
+The provider chain will upgrade to Gaia `v23.0.0` on **March 18, 2025**
 
-* **Upgrade name: `23.0.0-rc3`** (notice the missing "v")
-* **Upgrade height: `10882800`**
-  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/10882800
-  * Target upgrade time: `22:00 UTC`
-* Proposal ID 250: https://explorer.polypore.xyz/provider/gov/250
-* Release page: https://github.com/cosmos/gaia/releases/tag/v23.0.0-rc3
+* **Halt height: `10982300`**
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/10982300
+  * Target upgrade time: `13:30 UTC`
+* Release page: https://github.com/cosmos/gaia/releases/tag/v23.0.0
+* ⚠️ This is **not** a governance-gated upgrade. You must do **one** of the following:
+  1. Set the upgrade height in your node `app.toml` and restart the node.
+     ```
+     halt-height = 10982300
+     ```
+     * Once the halt height is reached, stop the node service and install the new binary. Set `halt-height = 0` in `app.toml` and restart your node.
+  2. Restart your node(s) with the `--halt-height 10982300` flag.
+     * Once the halt height is reached, stop the node service and install the new binary. Restart your node without the `--halt-height` flag.
+  3. Run the add-upgrade command with Cosmovisor
+     ```
+     export DAEMON_NAME=gaiad
+     export DAEMON_HOME=<.gaia directory location>
+     cosmovisor add-upgrade v23.0.0 gaiad-v23.0.0-linux-amd64 --upgrade-height 10982300 --force
+     ```
+     
+     * The command above assumes that the `gaiad-v23.0.0-linux-amd64` binary is available in the current folder.
 
 ## Endpoints
 
@@ -218,3 +232,8 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * When the node reaches height `10566200`, it will attempt to upgrade to Gaia `v22.2.0`. You can use Cosmovisor's auto-download feature or install the `v22.2.0` release binary.
 * When the node reaches height `10803600`, it will attempt to upgrade to Gaia `v23`. You can use Cosmovisor's auto-download feature or install the `v23.0.0-rc2` release binary.
 * When the node reaches height `10882800`, it will attempt to upgrade to Gaia `23.0.0-rc3`. You can use Cosmovisor's auto-download feature or install the `v23.0.0-rc3` release binary.
+* Before the node reaches height `10982300`, stop the service.
+* Set `halt-height = 10982300` in `~/.gaia/config/app.toml` and start the service.
+* When the node reaches height `8895550`, stop the service.
+* Replace the `v23.0.0-rc3` binary with the `v23.0.0` one.
+* Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
