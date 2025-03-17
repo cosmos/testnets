@@ -232,3 +232,8 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * When the node reaches height `10566200`, it will attempt to upgrade to Gaia `v22.2.0`. You can use Cosmovisor's auto-download feature or install the `v22.2.0` release binary.
 * When the node reaches height `10803600`, it will attempt to upgrade to Gaia `v23`. You can use Cosmovisor's auto-download feature or install the `v23.0.0-rc2` release binary.
 * When the node reaches height `10882800`, it will attempt to upgrade to Gaia `23.0.0-rc3`. You can use Cosmovisor's auto-download feature or install the `v23.0.0-rc3` release binary.
+* Before the node reaches height `10982300`, stop the service.
+* Set `halt-height = 10982300` in `~/.gaia/config/app.toml` and start the service.
+* When the node reaches height `8895550`, stop the service.
+* Replace the `v23.0.0-rc3` binary with the `v23.0.0` one.
+* Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
