@@ -35,6 +35,7 @@ The provider chain will upgrade to Gaia `v23.0.0` on **March 18, 2025**
      ```
      
      * The command above assumes that the `gaiad-v23.0.0-linux-amd64` binary is available in the current folder.
+     * If Cosmovisor is set up with `DAEMON_RESTART_AFTER_UPGRADE=false`, restart the node after the halt height is reached.
 
 ## Endpoints
 
