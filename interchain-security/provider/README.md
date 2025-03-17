@@ -25,7 +25,7 @@ The provider chain will upgrade to Gaia `v23.0.0` on **March 18, 2025**
      halt-height = 10982300
      ```
      * Once the halt height is reached, stop the node service and install the new binary. Set `halt-height = 0` in `app.toml` and restart your node.
-  2. Restart your node(s) with the `--halt-height 10982300` flag.
+  2. Restart your node with the `--halt-height 10982300` flag.
      * Once the halt height is reached, stop the node service and install the new binary. Restart your node without the `--halt-height` flag.
   3. Run the add-upgrade command with Cosmovisor
      ```
