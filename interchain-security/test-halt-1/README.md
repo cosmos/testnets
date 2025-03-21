@@ -27,15 +27,14 @@
 ### Client
 
 * `07-tendermint-0`
-  * Counterparty: [`provider`](/interchain-security/provider/README.md) `07-tendermint-`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `07-tendermint-263`
 
 ### Connections
 
 * `connection-0`
-  * Counterparty: [`provider`](/interchain-security/provider/README.md) `connection-`
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `connection-185`
 
 ### Channels
 
 * `channel-0`: transfer
-  * Counterparty: [`provider`](/interchain-security/provider/README.md) `channel-`
-
+  * Counterparty: [`provider`](/interchain-security/provider/README.md) `channel-352`
