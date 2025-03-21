@@ -126,7 +126,7 @@ cp gaiad-v22.1.0 <path to .gaia folder>/cosmovisor/current/bin/gaiad
 * Start the node again
 * Wait until enough validators in Group B recover their nodes.
 
-* Note that if you do not recover your node until after enough voting power has recovered and the chain starts again, you will see the following in your log:
+* Note that if you do not recover your node until after enough voting power has recovered and the chain starts again, you will see the following in your log (it doesn't change the rollback procedure):
    ```
    ERR CONSENSUS FAILURE!!! err="precommit step; +2/3 prevoted for an invalid block: wrong Block.Header.LastResultsHash.
    ```
