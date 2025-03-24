@@ -115,7 +115,7 @@ ERR prevote step: consensus deems this block invalid; prevoting nil err="wrong B
 ```
 * Stop the node service and roll back your node to the previous height:
 ```bash
-gaiad rollback --hard --home <path to .gaia folder>
+gaiad rollback --home <path to .gaia folder>
 ```
 * Install the new binary
 ```bash
