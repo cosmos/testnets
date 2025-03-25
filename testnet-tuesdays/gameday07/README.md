@@ -50,7 +50,7 @@ This event will be part of the March 2025 TIP period and will be worth up to **t
 * You must create a new self-delegation wallet in the `test-halt-1` chain and send it `uhalt` tokens to create a validator with.
 * In the provider chain:
 ```
-gaiad tx ibc-transfer transfer transfer channel-352 <wallet in test-halt-1> 11000000ibc/55627B1E427C5F9195350C9A9792873C3D88F124D5CC4CFA504E733B7F257E6F --from <provider validator wallet> --gas auto --gas-adjustment 3 --gas-prices 0.005uatom -y
+gaiad tx ibc-transfer transfer transfer channel-352 <wallet in test-halt-1> 11000000ibc/55627B1E427C5F9195350C9A9792873C3D88F124D5CC4CFA504E733B7F257E6F --from <provider validator wallet> --gas auto --gas-adjustment 3 --gas-prices 0.005uatom --chain-id provider -y
 ```
 
 ### Create validator in `test-halt-1`
@@ -77,7 +77,7 @@ PUBKEY=$(gaiad comet show-validator)
 ```
 * Submit create-validator transaction
 ```bash
-gaiad tx staking create-validator validator.json --from <halt chain validator> --gas auto --gas-adjustment 3 --gas-prices 0.005uhalt -y
+gaiad tx staking create-validator validator.json --from <halt chain validator> --gas auto --gas-adjustment 3 --gas-prices 0.005uhalt --chain-id test-halt-1 -y
 ```
 
 * Check that your validator is in the `test-halt-1` validator set:
