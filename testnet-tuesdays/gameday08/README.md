@@ -1,7 +1,7 @@
 # Testnet Game Day # 8: Upgrade Drill 3
 
 * 2025-Apr-1
-* Start time: `13:00 UTC`
+* Start time: `13:30 UTC`
 * End time: `15:00 UTC`
 
 We will use this game day to review the rollback command to recover from a chain halt.
