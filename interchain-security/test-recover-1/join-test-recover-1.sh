@@ -1,5 +1,5 @@
 #!/bin/bash
-# Set up a Cosmovisor service to join the test-halt-1 chain.
+# Set up a Cosmovisor service to join the test-recover-1 chain.
 
 # Configuration
 # You should only have to modify the values in this block
