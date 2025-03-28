@@ -17,7 +17,7 @@ Participants will be divided into two groups:
 * Group A: Upgrade to Gaia `v22.1.0` at the specified halt height
 * Group B: Roll back and upgrade to Gaia `v22.1.0` **after** the chain halts
 
-> We have swapped the group roles from the previous upgrade drill so that everyone has a chance to try recovering their node!
+> We will swap the group roles from the previous upgrade drill so that everyone has a chance to try recovering their node!
 
 ### Testnet Incentives Program (TIP) Eligibility
 
