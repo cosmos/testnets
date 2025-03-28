@@ -33,10 +33,10 @@ This event will be part of the April 2025 TIP period and will be worth up to **t
 | :--------------: | :--------------------------------------------------------- | :-------------: |
 | March 28-April 1 | Validators are set up                                      |        1        |
 |     April 1:     |                                                            |                 |
-|      13:00       | v22.1.0 halt height and latest group members are announced |        1        |
-|      ~13:30      | v22.1.0 halt height is reached                             |        1        |
-|      ~13:35      | Consensus-breaking transaction is submitted                |        1        |
-|      ~14:00      | Chain starts producing blocks again                        |       1,2       |
+|      13:30       | v22.1.0 halt height and latest group members are announced |        1        |
+|      ~14:00      | v22.1.0 halt height is reached                             |        1        |
+|      ~14:05      | Consensus-breaking transaction is submitted                |        1        |
+|      ~14:30      | Chain starts producing blocks again                        |       1,2       |
 
 ## 1. Set up a validator in `test-recover-1`
 
