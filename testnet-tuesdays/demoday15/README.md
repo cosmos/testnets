@@ -47,6 +47,15 @@ cp env_template .env
    * Set `REMOTE_WRITE_URL` to `http://159.203.3.222:9091/api/v1/write`
    * Set `PYROSCOPE_SERVER_ADDRESS` to `http://159.203.3.222:4040`
 
+1. You may want to configure a gcr mirror to pull docker images, since pulling from dockerhub may result in rate limiting.
+   Add the following to `/etc/docker/daemon.json`:
+
+```json
+{
+  "registry-mirrors": ["https://mirror.gcr.io"]
+}
+```
+
 1. Start the metrics exporter:
 
 ```bash
