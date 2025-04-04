@@ -4,7 +4,7 @@
 * Start time: `13:30 UTC`
 * End time: `20:00 UTC`
 
-We will use this Testnet Tuesday to run a census on the environments validators use to build their Gaia binaries via on-chain transactions.
+We will use this Testnet Tuesday to run a census on the environments that validators use to build their Gaia binaries via on-chain transactions.
 
 ## Instructions
 
