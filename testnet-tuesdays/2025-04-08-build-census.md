@@ -30,9 +30,9 @@ CPU: Intel(R) Xeon(R) CPU X5667 @ 3.07GHz
 CPU flags:
 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq vmx ssse3 cx16 pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes hypervisor lahf_lm cpuid_fault pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid tsc_adjust arat vnmi umip flush_l1d arch_capabilities
 OS/distribution: Ubuntu 24.04.2 LTS 6.8.0-57-generic
-Go version": v1.23.6
-Gaia version": v23.0.1
-Release/build": Build
+Go version: v1.23.6
+Gaia version: v23.0.1
+Release/build: Build
 Build flags:
 CGO_CFLAGS="-O -D__BLST_PORTABLE__"
 CGO_CFLAGS_ALLOW="-O -D__BLST_PORTABLE__"
@@ -50,7 +50,7 @@ CPU: Intel(R) Xeon(R) CPU X5667 @ 3.07GHz
 CPU flags:
 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq vmx ssse3 cx16 pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes hypervisor lahf_lm cpuid_fault pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid tsc_adjust arat vnmi umip flush_l1d arch_capabilities
 OS/distribution: Ubuntu 24.04.2 LTS 6.8.0-57-generic
-Go version": v1.23.6
+Go version: v1.23.6
 Gaia version: v23.0.1
 Release/build: Build
 Build flags: None
