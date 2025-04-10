@@ -35,19 +35,19 @@ git clone https://github.com/hyphacoop/cosmos-observability.git
 cd cosmos-observability/metrics-exporter
 ```
 
-1. Create an environment file from the template:
+2. Create an environment file from the template:
 
 ```bash
 cp env_template .env
 ```
 
-1. Edit the `.env` file with your validator information:
+3. Edit the `.env` file with your validator information:
    * Set `VALIDATOR_MONIKER` to your validator's moniker
    * Set `CHAIN_ID` to `provider`
    * Set `REMOTE_WRITE_URL` to `http://159.203.3.222:9091/api/v1/write`
    * Set `PYROSCOPE_SERVER_ADDRESS` to `http://159.203.3.222:4040`
 
-1. You may want to configure a gcr mirror to pull docker images, since pulling from dockerhub may result in rate limiting.
+4. You may want to configure a gcr mirror to pull docker images, since pulling from dockerhub may result in rate limiting.
    Add the following to `/etc/docker/daemon.json`:
 
 ```json
@@ -56,13 +56,13 @@ cp env_template .env
 }
 ```
 
-1. Start the metrics exporter:
+5. Start the metrics exporter:
 
 ```bash
 docker-compose up -d
 ```
 
-1. Go check out your metrics at `http://159.203.3.222:3000/d/CgCw8jKZz/go-metrics`. You should be able to use the `instance` dropdown to filter to your validator.
+6. Go check out your metrics at `http://159.203.3.222:3000/d/CgCw8jKZz/go-metrics`. You should be able to use the `instance` dropdown to filter to your validator.
    Please wait a few minutes for the metrics to start flowing in.
 
 ## Support
