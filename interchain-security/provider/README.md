@@ -5,32 +5,15 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v23.0.0`](https://github.com/cosmos/gaia/releases/tag/v23.0.0), upgraded from v23.0.0-rc3 at block height `10982300`.
+* **Current Gaia Version**: [`v23.0.1`](https://github.com/cosmos/gaia/releases/tag/v23.0.1), upgraded from v23.0.1 at block height `11194800`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v23.0.1 Upgrade
+## v24.0.0-rc0 Upgrade
 
-The provider chain will upgrade to Gaia `v23.0.1` on **April 1st, 2025**
-
-* **Upgrade height: `11194800`**
-  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/11194800
-  * Estimated upgrade time: `2024-04-01 ~13:00 UTC`
-* Release page: https://github.com/cosmos/gaia/releases/tag/v23.0.1
-* ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
-  1. Set the upgrade height in your node(s) `app.toml` and restart the node.
-      ```toml
-      halt-height = 11194800
-      ```
-      Once the the halt height is reached and you have upgraded the binary, set halt-height back to 0 and restart the node.
-  2. Restart the node with the `--halt-height 11194800` flag. Once the the halt height is reached and you have upgraded the binary, restart the node without the `--halt-height` flag.
-  3. Use the Cosmovisor `add-upgrade` command:
-      ```bash
-      cosmovisor add-upgrade v23.0.1 gaiad-v23.0.1-linux-amd64 --upgrade-height 11194800 --force
-      ```
-      `gaiad-v23.0.1-linux-amd64` in the above line is the binary file you are staging.
+The provider chain will upgrade to Gaia `v24.0.0-rc0` on **TBD**
 
 ## Endpoints
 
@@ -232,4 +215,7 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Set `halt-height = 10982300` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `8895550`, stop the service.
 * Replace the `v23.0.0-rc3` binary with the `v23.0.0` one.
+* Set `halt-height = 11194800` in `~/.gaia/config/app.toml` and start the service.
+* When the node reaches height `11194800`, stop the service.
+* Replace the `v23.0.0` binary with the `v23.0.1` one.
 * Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
