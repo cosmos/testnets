@@ -14,7 +14,7 @@ This event will be worth **one point** for the current TIP period:
 
 * (1 point) Successfully set up metrics collection for a validator on `test-locust-1` (metrics appear in our Prometheus throughout the load test)
 
-If you're unable to run the observability stack, please fill out a form (link to be added) and prove that you're signing blocks on the new chain. Proving that there's a validator with your moniker that's signing blocks is acceptable.
+If you're unable to run the observability stack, please fill out the [exception form](https://testnets.hypha.coop/about-the-program/), explain why you can't run the stack, and prove that you're signing blocks on the new chain. Proving that there's a validator with your moniker that's signing blocks is acceptable.
 
 ## Timeline (times in UTC)
 
@@ -35,7 +35,6 @@ For metrics collection setup instructions, please refer to [the observability gu
 
 ## 3. Load testing
 
-* Ensure your node is running Gaia v23.1.1
 * We will conduct multiple load tests to establish baseline performance metrics
 * No action is required from validators during this phase. Hypha will report on load tests as they happen.
 
