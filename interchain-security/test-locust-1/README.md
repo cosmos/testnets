@@ -23,6 +23,12 @@ max_tx_bytes = 10485760
 timeout_commit = "2s"
 ```
 
+In `app.toml`:
+
+```toml
+minimum-gas-prices = "0.001ulcst"
+```
+
 ## Joining as a validator
 
 Run the setup script (or otherwise configure your node to connect to the network):
