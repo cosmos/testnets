@@ -71,7 +71,7 @@ sed -i -e "s/^cache_size = .*/cache_size = 100000/" $NODE_HOME/config/config.tom
 sed -i -e "s/^keep-invalid-txs-in-cache = .*/keep-invalid-txs-in-cache = false/" $NODE_HOME/config/config.toml
 sed -i -e "s/^max_tx_bytes = .*/max_tx_bytes = 10485760/" $NODE_HOME/config/config.toml
 sed -i -e "s/^timeout_commit = .*/timeout_commit = \"2s\"/" $NODE_HOME/config/config.toml
-
+sed -i -e "s/^namespace = .*/namespace = \"tendermint\"/" $NODE_HOME/config/config.toml
 
 if [ $STATE_SYNC == "true" ]; then
     echo "Configuring state sync..."
