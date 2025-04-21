@@ -21,6 +21,10 @@ max_tx_bytes = 10485760
 
 [consensus]
 timeout_commit = "2s"
+
+[instrumentation]
+prometheus = true
+namespace = "tendermint"
 ```
 
 In `app.toml`:

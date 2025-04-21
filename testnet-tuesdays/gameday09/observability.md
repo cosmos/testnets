@@ -41,6 +41,14 @@ docker-compose up -d
 
 ## No metrics?
 
+1. Ensure metrics are enabled in your gaia configuration, and that the metrics namespace is set to `tendermint`. Set the following in config.toml:
+
+```toml
+[instrumentation]
+prometheus = true
+namespace = "tendermint"
+```
+
 1. You may have to configure your firewall to allow the dockerized prometheus to fetch from your validator node.
    You do this by allowing containers within the `metrics-exporter_o11y-network` network to access anything at port 26660.
    If you're running ufw, you can use the following one-liner to do this:
