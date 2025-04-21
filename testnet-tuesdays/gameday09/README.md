@@ -1,6 +1,6 @@
 # Testnet Game Day #9: Load Test
 
-* 2025-Apr-15
+* 2025-Apr-22
 * Start time: `13:30 UTC`
 * End time: `16:30 UTC`
 
