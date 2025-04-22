@@ -54,7 +54,7 @@ namespace = "tendermint"
    If you're running ufw, you can use the following one-liner to do this:
 
 ```bash
-sudo ufw allow from "$(docker inspect metrics-exporter_o11y-network | jq '.[0].IPAM.Config[0].Subnet')" to any port 26660
+sudo ufw allow from "$(docker inspect metrics-exporter_o11y-network | jq -r '.[0].IPAM.Config[0].Subnet')" to any port 26660
 ```
 
 1. If you still see no metrics, note down the gateway address for your network: `docker inspect metrics-exporter_o11y-network | jq '.[0].IPAM.Config[0].Gateway'`
