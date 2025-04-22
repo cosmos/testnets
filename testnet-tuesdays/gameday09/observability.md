@@ -36,6 +36,12 @@ cp env_template .env
 docker-compose up -d
 ```
 
+You might get an error that reads `docker.errors.DockerException: Error while fetching server API version: Not supported URL scheme http+docker`. In that case, try:
+
+```bash
+docker compose up -d
+```
+
 1. Go check out your metrics at `http://159.203.3.222:3000/d/UJyurCTWz/cosmos-dashboard?var-DS=eKzyRJ57k&var-chain_id=test-locust-1`. You should be able to use the `instance` dropdown to filter to your validator.
    Please wait a few minutes for the metrics to start flowing in.
 
