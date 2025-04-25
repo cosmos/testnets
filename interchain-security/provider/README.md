@@ -11,9 +11,27 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v24.0.0-rc0 Upgrade
+## v23.1.1 Upgrade
 
-The provider chain will upgrade to Gaia `v24.0.0-rc0` on **TBD**
+The provider chain will upgrade to Gaia `v23.1.1` on **April 29, 2025**
+
+* **Upgrade height: `TBA`**
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/TBA
+  * Estimated upgrade time: `2025-04-29 ~13:30 UTC`
+* Release page: https://github.com/cosmos/gaia/releases/tag/v23.1.1
+* ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
+  1. Set the upgrade height in your node(s) `app.toml` and restart the node.
+      ```toml
+      halt-height = TBA
+      ```
+      Once the the halt height is reached and you have upgraded the binary, set halt-height back to 0 and restart the node.
+  2. Restart the node with the `--halt-height TBA` flag. Once the the halt height is reached and you have upgraded the binary, restart the node without the `--halt-height` flag.
+  3. Use the Cosmovisor `add-upgrade` command:
+      ```bash
+      cosmovisor add-upgrade v23.1.1 gaiad-v23.1.1-linux-amd64 --upgrade-height TBA --force
+      ```
+      `gaiad-v23.1.1-linux-amd64` in the above line is the binary file you are staging.
+
 
 ## Endpoints
 
