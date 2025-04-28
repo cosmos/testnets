@@ -120,7 +120,7 @@ cp $(which $CHAIN_BINARY) $NODE_HOME/cosmovisor/genesis/bin
 
 echo "Installing cosmovisor..."
 export BINARY=$NODE_HOME/cosmovisor/genesis/bin/$CHAIN_BINARY
-go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.6.0
+go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.7.1
 
 sudo rm /etc/systemd/system/$SERVICE_NAME.service
 sudo touch /etc/systemd/system/$SERVICE_NAME.service
