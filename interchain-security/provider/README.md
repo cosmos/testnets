@@ -18,6 +18,7 @@ The provider chain will upgrade to Gaia `v23.1.1` on **April 29, 2025**
 * **Upgrade height: `11620400`**
   * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/11620400
   * Estimated upgrade time: `2025-04-29 ~13:30 UTC`
+  * Build Go version: `v1.23.6`
 * Release page: https://github.com/cosmos/gaia/releases/tag/v23.1.1
 * ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
   1. Set the upgrade height in your node(s) `app.toml` and restart the node.
