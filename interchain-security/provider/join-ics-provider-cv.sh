@@ -16,7 +16,7 @@ NODE_KEY_FILE=~/node_key.json
 NODE_HOME=~/.gaia
 NODE_MONIKER=provider
 SERVICE_NAME=cv-provider
-GAIA_VERSION=v23.0.1
+GAIA_VERSION=v23.1.1
 CHAIN_BINARY_URL=https://github.com/cosmos/gaia/releases/download/$GAIA_VERSION/gaiad-$GAIA_VERSION-linux-amd64
 STATE_SYNC=true
 GAS_PRICE=0.005uatom
@@ -49,8 +49,8 @@ export PATH=$PATH:$HOME/go/bin
 # Install go 1.22.6
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
-wget https://go.dev/dl/go1.22.6.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.22.6.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.23.6.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.23.6.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
 # Install Gaia binary
