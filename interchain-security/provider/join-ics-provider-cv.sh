@@ -46,7 +46,7 @@ sudo apt-get install curl jq wget -y
 mkdir -p $HOME/go/bin
 export PATH=$PATH:$HOME/go/bin
 
-# Install go 1.22.6
+# Install go 1.23.6
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
 wget https://go.dev/dl/go1.23.6.linux-amd64.tar.gz
