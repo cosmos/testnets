@@ -11,15 +11,15 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v24.0.0-rc0 Upgrade
+## v23.3.0 Upgrade
 
-The provider chain will upgrade to Gaia `v24.0.0-rc0` on **TBD**
+The provider chain will upgrade to Gaia `v23.0.0` on **TBD**
 
-* **Upgrade height: `TBD`**
-  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/TBD
-  * Estimated upgrade time: `2025-04-29 ~13:30 UTC`
+* **Upgrade height: `11829600`**
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/11829600
+  * Estimated upgrade time: `2025-05-13 ~13:30 UTC`
   * Build Go version: `v1.23.6`
-* Release page: https://github.com/cosmos/gaia/releases/tag/v24.0.0-rc0
+* Release page: https://github.com/cosmos/gaia/releases/tag/v23.3.0
 
 ## Endpoints
 
@@ -228,3 +228,4 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * When the node reaches height `11620400`, stop the service.
 * Replace the `v23.0.1` binary with the `v23.1.1` one.
 * Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
+* When the node reaches height `11829600`, it will attempt to upgrade to Gaia `23.3.0`. You can use Cosmovisor's auto-download feature or install the `v23.3.0` release binary.
