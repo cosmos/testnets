@@ -50,7 +50,7 @@ export PATH=$PATH:$HOME/go/bin
 echo "Installing Gaia..."
 
 # Build from source,
-## Install go 1.22.6
+## Install go 1.23.6
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
 wget https://go.dev/dl/go1.23.6.linux-amd64.tar.gz
