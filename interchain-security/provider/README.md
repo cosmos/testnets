@@ -17,7 +17,7 @@ The provider chain will upgrade to Gaia `v24.0.0-rc1` on **TBD**
 
 * **Upgrade height: `TBD`**
   * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/TBD
-  * Estimated upgrade time: `2025-05-13 ~13:30 UTC`
+  * Estimated upgrade time: `TBD`
   * Build Go version: `v1.23.6`
 * Release page: https://github.com/cosmos/gaia/releases/tag/v24.0.0-rc1
 
