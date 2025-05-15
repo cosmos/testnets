@@ -5,21 +5,21 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v23.1.1`](https://github.com/cosmos/gaia/releases/tag/v23.1.1), upgraded from v23.0.1 at block height `11620400`.
+* **Current Gaia Version**: [`v23.3.0`](https://github.com/cosmos/gaia/releases/tag/v23.3.0), upgraded from v23.1.1 at block height `11829600`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v23.3.0 Upgrade
+## v24.0.0-rc0 Upgrade
 
-The provider chain will upgrade to Gaia `v23.0.0` on **TBD**
+The provider chain will upgrade to Gaia `v24.0.0-rc0` on **TBD**
 
-* **Upgrade height: `11829600`**
-  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/11829600
-  * Estimated upgrade time: `2025-05-13 ~13:30 UTC`
+* **Upgrade height: `TBD`**
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/TBD
+  * Estimated upgrade time: `TBD`
   * Build Go version: `v1.23.6`
-* Release page: https://github.com/cosmos/gaia/releases/tag/v23.3.0
+* Release page: https://github.com/cosmos/gaia/releases/tag/v24.0.0-rc0
 
 ## Endpoints
 
