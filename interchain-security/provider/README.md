@@ -13,13 +13,17 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 ## v24.0.0-rc0 Upgrade
 
-The provider chain will upgrade to Gaia `v24.0.0-rc0` on **TBD**
+The provider chain will upgrade to Gaia `v24.0.0-rc0` on **May 20, 2025**
 
-* **Upgrade height: `TBD`**
-  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/TBD
-  * Estimated upgrade time: `TBD`
-  * Build Go version: `v1.23.6`
+* **Upgrade height: `11934600`**
+  * Proposal 269: https://explorer.polypore.xyz/provider/gov/269
+  * Upgrade name: `v24`
+  * Estimated upgrade time: `13:30 UTC`
+    * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/11934600
+  * Build Go version: `v1.24.1`
 * Release page: https://github.com/cosmos/gaia/releases/tag/v24.0.0-rc0
+
+> Please note that the v24.0.0-rc0 build will display an `Upgrade v23 complete` [message](https://github.com/cosmos/gaia/blob/v24.0.0-rc0/app/upgrades/v24/upgrades.go#L40) after the upgrade is complete. This typo will be [fixed](https://github.com/cosmos/gaia/commit/9012cfa6b2f184a75a3f64deb47a59c6cc43e150) in the final release.
 
 ## Endpoints
 
