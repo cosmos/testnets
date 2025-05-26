@@ -11,17 +11,24 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v24.0.0 Upgrade
+## v24.0.0-rc1 Upgrade
 
-The provider chain will upgrade to Gaia `v24.0.0` on **TBD**
+The provider chain will upgrade to Gaia `v24.0.0-rc1` on **May 27, 2025**
 
-* **Upgrade height: `TBD`**
-  <!-- * Proposal 269: https://explorer.polypore.xyz/provider/gov/269
-  * Upgrade name: `v24`
+* **Upgrade height: `12039600`**
   * Estimated upgrade time: `13:30 UTC`
-    * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/11934600 -->
+    * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/12039600
   * Build Go version: `v1.24.1`
-* Release page: https://github.com/cosmos/gaia/releases/tag/v24.0.0
+* Release page: https://github.com/cosmos/gaia/releases/tag/v24.0.0-rc1
+  <!-- * Proposal 269: https://explorer.polypore.xyz/provider/gov/269
+  * Upgrade name: `v24` -->
+* ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
+  1. Set the upgrade height in your node(s) `app.toml` and restart the node.
+      ```toml
+      halt-height = 12039600
+      ```
+      Once the the halt height is reached and you have upgraded the binary, set halt-height back to 0 and restart the node.
+  2. Restart the node with the `--halt-height 12039600` flag. Once the the halt height is reached and you have upgraded the binary, restart the node without the `--halt-height` flag.
 
 ## Endpoints
 
@@ -232,3 +239,8 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
 * When the node reaches height `11829600`, it will attempt to upgrade to Gaia `23.3.0`. You can use Cosmovisor's auto-download feature or install the `v23.3.0` release binary.
 * When the node reaches height `11934600`, it will attempt to upgrade to Gaia `v24`. You can use Cosmovisor's auto-download feature or install the `v24.0.0-rc0` release binary.
+* Before the node reaches height `12039600`, stop the service.
+* Set `halt-height = 12039600` in `~/.gaia/config/app.toml` and start the service.
+* When the node reaches height `12039600`, stop the service.
+* Replace the `v24.0.0-rc0` binary with the `v24.0.0-rc1` one.
+* Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
