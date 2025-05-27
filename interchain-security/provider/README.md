@@ -5,7 +5,7 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v24.0.0-rc0`](https://github.com/cosmos/gaia/releases/tag/v24.0.0-rc0), upgraded from v23.3.0 at block height `11934600`.
+* **Current Gaia Version**: [`v24.0.0-rc1`](https://github.com/cosmos/gaia/releases/tag/v24.0.0-rc1), upgraded from v24.0.0-rc0 at block height `12039600`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
@@ -13,22 +13,22 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 ## v24.0.0-rc1 Upgrade
 
-The provider chain will upgrade to Gaia `v24.0.0-rc1` on **May 27, 2025**
+The provider chain will upgrade to Gaia `v24.0.0` on **TBD**
 
-* **Upgrade height: `12039600`**
-  * Estimated upgrade time: `13:30 UTC`
+* **Upgrade height: `TBD`**
+  <!-- * Estimated upgrade time: `13:30 UTC`
     * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/12039600
   * Build Go version: `v1.24.1`
-* Release page: https://github.com/cosmos/gaia/releases/tag/v24.0.0-rc1
+* Release page: https://github.com/cosmos/gaia/releases/tag/v24.0.0-rc1 -->
   <!-- * Proposal 269: https://explorer.polypore.xyz/provider/gov/269
   * Upgrade name: `v24` -->
-* ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
+<!-- * ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
   1. Set the upgrade height in your node(s) `app.toml` and restart the node.
       ```toml
       halt-height = 12039600
       ```
       Once the the halt height is reached and you have upgraded the binary, set halt-height back to 0 and restart the node.
-  2. Restart the node with the `--halt-height 12039600` flag. Once the the halt height is reached and you have upgraded the binary, restart the node without the `--halt-height` flag.
+  2. Restart the node with the `--halt-height 12039600` flag. Once the the halt height is reached and you have upgraded the binary, restart the node without the `--halt-height` flag. -->
 
 ## Endpoints
 
