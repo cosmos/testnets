@@ -33,6 +33,7 @@ If you're unable to run the observability stack, please fill out the [exception 
 ## 2. Configure metrics collection
 
 For metrics collection setup instructions, please refer to [the observability guide](../gameday09/observability.md).
+**Important:** Make sure you set the chain-id to `test-locust-2`! The observability guide was written for `test-locust-1`.
 
 ## 3. Load testing
 
