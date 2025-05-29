@@ -1,6 +1,6 @@
-# Testnet Game Day #10: Load Test
+# Testnet Game Day #10: Load Test Round Two
 
-* 2025-May-27
+* 2025-Jun-3
 * Start time: `13:30 UTC`
 * End time: `16:30 UTC`
 
