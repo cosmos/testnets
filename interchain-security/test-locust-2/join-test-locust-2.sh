@@ -76,7 +76,7 @@ sed -i -e "s/^namespace = .*/namespace = \"tendermint\"/" $NODE_HOME/config/conf
 if [ $STATE_SYNC == "true" ]; then
     echo "Configuring state sync..."
     CURRENT_BLOCK=$(curl -s $SYNC_RPC_1/block | jq -r '.result.block.header.height')
-    TRUST_HEIGHT=$[$CURRENT_BLOCK-1000]
+    TRUST_HEIGHT=$[$CURRENT_BLOCK-5000]
     TRUST_BLOCK=$(curl -s $SYNC_RPC_1/block\?height\=$TRUST_HEIGHT)
     TRUST_HASH=$(echo $TRUST_BLOCK | jq -r '.result.block_id.hash')
     sed -i -e '/enable =/ s/= .*/= true/' $NODE_HOME/config/config.toml
