@@ -32,7 +32,8 @@ gaiad tendermint show-validator
   "details": null,
   "commission-rate": "0.1",
   "commission-max-rate": "0.2",
-  "commission-max-change-rate": "0.01"
+  "commission-max-change-rate": "0.01",
+  "min-self-delegation": "1"
 }
 ```
 

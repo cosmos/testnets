@@ -2,6 +2,8 @@
 
 | Date                   | Testnet Incentives Program Period | Type                       | Description                                                                                                                                              |
 | ---------------------- | --------------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| April 15 2025          | Apr 2025                          | Demo Day                   | Demo day # 16: Gaia v24 Changelog Review                                                                                                                 |
+| June 3 2025            | June 2025                         | Game Day                   | ✅ Game day # 10: Load testing                                                                                                                            |
 | May 27 2025            | May 2025                          | Minor upgrade              | Provider chain upgrades to Gaia v24.0.0-rc1                                                                                                              |
 | May 20 2025            | May 2025                          | Major upgrade              | ✅ Provider chain upgrades to Gaia v24.0.0-rc0                                                                                                            |
 | May 13 2025            | May 2025                          | Minor upgrade              | ✅ Provider chain upgrades to Gaia v23.3.0                                                                                                                |
