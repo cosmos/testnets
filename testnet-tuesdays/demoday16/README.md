@@ -48,9 +48,9 @@ gaiad tx gov vote 272 yes --from <self-delegation-wallet> --gas auto --gas-adjus
 
 ### Tasks
 
-* (1 point) Task 1: Tokenize 1 ATOM from delegations to the `demo-day` validator.
-* (1 point) Task 2: Vote on the expedited proposal to update the `slashing` module parameters.
-* (1 point) Task 3: Vote on the expedited proposal to add an address to the `wasm` module code_upload_acess.
+* (1 point) Task 1: Tokenize 1 ATOM from delegations to the `demo-day` validator (`cosmosvaloper1euwz7vyqtnlkx8da7z4jdrr6ymghaly4ddwn5q`).
+* (1 point) Task 2: Vote on the expedited proposal (ID 271) to update the `slashing` module parameters.
+* (1 point) Task 3: Vote on the expedited proposal (ID 272) to add an address to the `wasm` module code_upload_acess.
 
 
 ## Schedule (approximate times in UTC)
