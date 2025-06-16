@@ -12,13 +12,25 @@ In both cases, you can upgrade your node by replacing the binary manually or usi
 A governance gated upgrade occurs when an upgrade plan goes on chain through a software upgrade proposal.
 * Your node **will** stop at the height listed in the upgrade plan.
 
+You can query the upgrade name for governance-gated upgrades with the following command:
+```
+gaiad q upgrade plan
+plan:
+  height: "12356200"
+  info: '{"binaries": {"darwin/amd64": "https://github.com/cosmos/gaia/releases/download/v25.0.0-rc0/gaiad-v25.0.0-rc0-darwin-amd64?checksum=sha256:fd0052e170d7367a059f39af487b12e66e05b3b2794e7257d9752ad92e1c1e42",
+    "darwin/arm64": "https://github.com/cosmos/gaia/releases/download/v25.0.0-rc0/gaiad-v25.0.0-rc0-darwin-arm64?checksum=sha256:66dbe3fc87c831b7ba5d7badd40b0cab9ada8280de954054dd7a4a4a8d439112",
+    "linux/amd64": "https://github.com/cosmos/gaia/releases/download/v25.0.0-rc0/gaiad-v25.0.0-rc0-linux-amd64?checksum=sha256:0d6133e77c3ba39f30c2a168fd95d08a6e5e26d5efd7825e2723f30d92781dd5"}}'
+  name: v25.0.0
+  time: "0001-01-01T00:00:00Z"
+```
+
 ### Manual Binary Upgrade
 
 1. Build or download the binary for the release you are upgrading to.
 2. Wait for the node to stop at the upgrade height.
    * The log will display something like this:
      ```
-     ERR UPGRADE "23.0.0-rc3" NEEDED at height: <UPGRADE_HEIGHT>: upgrade to 23.0.0-rc3 and applying upgrade "23.0.0-rc3" at height:<UPGRADE_HEIGHT>
+     ERR UPGRADE "25.0.0" NEEDED at height: <UPGRADE_HEIGHT>: upgrade to 25.0.0 and applying upgrade "25.0.0" at height:<UPGRADE_HEIGHT>
      ```
   * If the node service remains active, you can stop it now.
 3. Replace the binary listed in the unit file with the new release.
@@ -28,17 +40,17 @@ A governance gated upgrade occurs when an upgrade plan goes on chain through a s
 
 1. Build or download the binary for the release you are upgrading to.
 2. Create a folder for the new binary in the relevant Cosmovisor directory.
-   * If the upgrade name is `23.0.0-rc3`, you would place the binary under `<node home>/cosmovisor/upgrades/23.0.0-rc3/bin/gaiad`:
+   * If the upgrade name is `25.0.0`, you would place the binary under `<node home>/cosmovisor/upgrades/25.0.0/bin/gaiad`:
      ```
      .
      ├── current -> genesis or upgrades/<name>
      ├── genesis
      │   └── bin
-     │       └── gaiad  # old: v23.0.0-rc2
+     │       └── gaiad  # old: v24.0.0-rc1
      └── upgrades
-         └── 23.0.0-rc3
+         └── v25.0.0
              └── bin
-                 └── gaiad  # new: v23.0.0-rc3
+                 └── gaiad  # new: v25.0.0-rc0
      ```
 3. Verify that Cosmovisor will use the binary you have prepared.
    * The Cosmovisor service should have the auto-download feature disabled. A sample Cosmovisor unit file will look like this:
