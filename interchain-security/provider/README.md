@@ -11,17 +11,20 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v24.0.0-rc1 Upgrade
+## v25.0.0-rc0 Upgrade
 
-The provider chain will upgrade to Gaia `v24.0.0` on **TBD**
+The provider chain will upgrade to Gaia `v25.0.0-rc0` on **June 17, 2025**
 
-* **Upgrade height: `TBD`**
-  <!-- * Estimated upgrade time: `13:30 UTC`
-    * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/12039600
-  * Build Go version: `v1.24.1`
-* Release page: https://github.com/cosmos/gaia/releases/tag/v24.0.0-rc1 -->
-  <!-- * Proposal 269: https://explorer.polypore.xyz/provider/gov/269
-  * Upgrade name: `v24` -->
+* Upgrade height: `12356200`
+  * Estimated upgrade time: `13:30 UTC`
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/12356200
+  * Proposal 273: https://explorer.polypore.xyz/provider/gov/273
+* Upgrade name: `v25.0.0`
+* Release page: https://github.com/cosmos/gaia/releases/tag/v25.0.0-rc0
+  * Build Go version: `v1.24.3`
+* Please note the following for this upgrade:
+  * The upgrade name is **`v25.0.0`** , not `v25`.
+  * The `x-crisis-skip-assert-invariants` flag has been deprecated and the node will not start if this flag is in place.
 <!-- * ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
   1. Set the upgrade height in your node(s) `app.toml` and restart the node.
       ```toml
@@ -88,27 +91,6 @@ Use this [jsfiddle](https://jsfiddle.net/uw4ar8qt/2/).
 * Visit `faucet.polypore.xyz` to request tokens and check your address balance.
 * Request tokens through the [🚰┇testnet-faucet](https://discord.com/channels/669268347736686612/953697793476821092) Discord channel.
 * For larger quantities of testnet ATOM, fill out the [mega-faucet request form](https://forms.gle/EvMV2yLSkjPehTct5).
-
-## Consumer Chains IBC Data
-
-Connections and channels will be posted here shortly after a consumer chain launches.
-
-### Clients
-
-* `07-tendermint-28`
-  * Counterparty: [`pion-1`](/interchain-security/pion-1/README.md) `07-tendermint-68`
-
-### Connections
-
-* `connection-19`
-  * Counterparty: [`pion-1`](/interchain-security/pion-1/README.md) `connection-42`
-
-### Channels
-
-* `channel-31`: provider port
-  * Counterparty: [`pion-1`](/interchain-security/pion-1/README.md) `channel-95`
-* `channel-32`: transfer port
-  * Counterparty: [`pion-1`](/interchain-security/pion-1/README.md) `channel-96`
 
 ## How to Join
 
@@ -244,3 +226,4 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * When the node reaches height `12039600`, stop the service.
 * Replace the `v24.0.0-rc0` binary with the `v24.0.0-rc1` one.
 * Set `halt-height = 0` in `~/.gaia/config/app.toml` and start the service.
+* When the node reaches height `12356200`, it will attempt to upgrade to Gaia `v25.0.0`. You can use Cosmovisor's auto-download feature or install the `v25.0.0-rc0` release binary.
