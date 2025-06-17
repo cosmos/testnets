@@ -5,7 +5,7 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v24.0.0-rc1`](https://github.com/cosmos/gaia/releases/tag/v24.0.0-rc1), upgraded from v24.0.0-rc0 at block height `12039600`.
+* **Current Gaia Version**: [`v25.0.0-rc0`](https://github.com/cosmos/gaia/releases/tag/v25.0.0-rc0), upgraded from v24.0.0-rc1 at block height `12356200`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
@@ -13,9 +13,9 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 ## v25.0.0-rc0 Upgrade
 
-The provider chain will upgrade to Gaia `v25.0.0-rc0` on **June 17, 2025**
+The provider chain will upgrade to Gaia `v25.0.0` on **TBD**
 
-* Upgrade height: `12356200`
+<!-- * Upgrade height: `12356200`
   * Estimated upgrade time: `13:30 UTC`
   * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/12356200
   * Proposal 273: https://explorer.polypore.xyz/provider/gov/273
@@ -24,7 +24,7 @@ The provider chain will upgrade to Gaia `v25.0.0-rc0` on **June 17, 2025**
   * Build Go version: `v1.24.3`
 * Please note the following for this upgrade:
   * The upgrade name is **`v25.0.0`** , not `v25`.
-  * The `x-crisis-skip-assert-invariants` flag has been deprecated and the node will not start if this flag is in place.
+  * The `x-crisis-skip-assert-invariants` flag has been deprecated and the node will not start if this flag is in place. -->
 <!-- * ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
   1. Set the upgrade height in your node(s) `app.toml` and restart the node.
       ```toml
