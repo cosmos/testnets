@@ -51,7 +51,7 @@ gaiad q bank balances <self-delegation-wallet>
 
 * Obtain the record ID for one of the denoms that represent tokenized shares
 ```
-gaiad q tokenize-share-record-by-denom cosmosvaloper1j39clwz90tzgjem2xdxs8dptchpza0x5a0wv4a/XXX
+gaiad q liquid tokenize-share-record-by-denom cosmosvaloper1j39clwz90tzgjem2xdxs8dptchpza0x5a0wv4a/XXX
 ```
 
 * Transfer ownership of one tokenized share denom to `cosmos1u7r9gyum6z5lvgl5k3u5m0q2g30ru55huz9nk7`
