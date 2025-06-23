@@ -16,7 +16,7 @@ The `liquid` module has replaced the `lsm` one. To tokenize delegations, a deleg
 We will ask validators to:
 - Delegate 2 ATOM to the `demo-day` validator (`cosmosvaloper1j39clwz90tzgjem2xdxs8dptchpza0x5a0wv4a`)
 - Tokenize shares into two liquid tokens (1 ATOM per tokenization)
-- Transfer 1 ATOM of tokenized shares to a collector account (`cosmos1u7r9gyum6z5lvgl5k3u5m0q2g30ru55huz9nk7`)
+- Transfer 1 ATOM of tokenized shares to a rewards collection account (`cosmos1u7r9gyum6z5lvgl5k3u5m0q2g30ru55huz9nk7`)
 - Redeem 1 ATOM of tokenized shares back into delegations
 
 > All transactions must be signed by your validator's self-delegation wallet.
