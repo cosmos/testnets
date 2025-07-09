@@ -11,20 +11,17 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v25.0.0-rc0 Upgrade
+## v25.1.0 Upgrade
 
-The provider chain will upgrade to Gaia `v25.0.0` on **TBD**
+The provider chain will upgrade to Gaia `v25.1.0` on **July 9, 2025**
 
-<!-- * Upgrade height: `12356200`
+* Upgrade height: `12701900`
   * Estimated upgrade time: `13:30 UTC`
-  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/12356200
-  * Proposal 273: https://explorer.polypore.xyz/provider/gov/273
-* Upgrade name: `v25.0.0`
-* Release page: https://github.com/cosmos/gaia/releases/tag/v25.0.0-rc0
-  * Build Go version: `v1.24.3`
-* Please note the following for this upgrade:
-  * The upgrade name is **`v25.0.0`** , not `v25`.
-  * The `x-crisis-skip-assert-invariants` flag has been deprecated and the node will not start if this flag is in place. -->
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/12701900
+  * Proposal 274: https://explorer.polypore.xyz/provider/gov/274
+* Upgrade name: `v25.1.0`
+* Release page: https://github.com/cosmos/gaia/releases/tag/v25.1.0
+  * Build Go version: `v1.24.4`
 <!-- * ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
   1. Set the upgrade height in your node(s) `app.toml` and restart the node.
       ```toml
