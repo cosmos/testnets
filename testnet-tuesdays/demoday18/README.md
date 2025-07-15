@@ -7,6 +7,9 @@ In this demo day, we will explore ways to inspect on-chain transaction data usin
 
 > Note that the endpoint your node is querying must have the relevant data available: if you are querying blocks too far back in the past, they might have been pruned already.
 
+* ⚠️ All the commands shown below will return a result when using a `provider` testnet RPC endpoint in `client.toml`. Feel free to try different addresses and RPC endpoints!
+* All of these transactions are standard to Cosmos chains, so you can use them on different networks.
+
 ## Module queries
 
 The `gaiad query` command allows us to query data from the specified module at the current block height.
