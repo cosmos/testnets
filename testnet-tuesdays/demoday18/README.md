@@ -5,7 +5,7 @@ In this demo day, we will explore ways to inspect on-chain transaction data usin
 * Start time: `2025-07-15 13:30 UTC`
 * End time: `2025-07-15 14:30 UTC`
 
-> Note that the endpoint your node is querying must have the relevant data available: if you are querying blocks too far back in the past, they might be already pruned.
+> Note that the endpoint your node is querying must have the relevant data available: if you are querying blocks too far back in the past, they might have been pruned already.
 
 ## Module queries
 
