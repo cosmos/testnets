@@ -106,3 +106,54 @@ You can assemble an unsigned transaction with several messages to sign it and br
 Can you merge messages to accomplish the following in the same transaction?
 1. Delegate to and tokenize shares from a validator (combine `staking` and `liquid` module messages)
 2. Fund an account and grant it a delegation authorization with authz (combine `bank` and `authz` module messages)
+
+### Question 1 transaction
+
+1. Generate a staking delegate transaction
+   ```
+   gaiad tx staking delegate <cosmosvaloper> <amount> --from <delegator> --gas 1000000 --gas-prices 0.005uatom --generate-only | jq '.' > delegate-unsigned.json
+   ```
+3. Generate a liquid tokenize-share transaction
+   ```
+   gaiad tx liquid tokenize-share <cosmosvaloper> <amount> <owner address> --from <delegator> --gas 1000000 --gas-prices 0.005uatom --generate-only | jq '.' > tokenize-unsigned.json
+   ```
+4. Merge messages
+   ```
+   message2=$(jq '.body.messages' tokenize-unsigned.json)
+   jq --argjson message $message2 '.body.messages += $message' delegate-unsigned.json > delegate-tokenize-unsigned.json
+   ```
+5. Sign transaction
+   ```
+   gaiad tx sign delegate-tokenize-unsigned.json --from <delegator> --output-document delegate-tokenize-signed.json
+   ```
+6. Broadcast transaction
+   ```
+   gaiad tx broadcast delegate-tokenize-signed.json
+   ```
+
+### Question 2 transaction
+
+1. Generate a bank send transaction
+   ```
+   gaiad tx bank send <sender> <recipient> <amount> --from <sender> --gas 1000000 --gas-prices 0.005uatom --generate-only | jq '.' > fund-unsigned.json
+   ```
+2. Create authz grantee account (optional)
+   ```
+   gaiad keys add grantee
+   ```
+3. Generate an authz grant transaction
+   ```
+   gaiad tx authz grant <grantee> delegate --from <sender> --allowed-validators <comma-separated-validators-list> --gas 1000000 --gas-prices 0.005uatom --generate-only | jq '.' > grant-unsigned.json
+   ```
+4. Merge messages
+   ```
+   message2=$(jq '.body.messages' grant-unsigned.json)
+   jq --argjson message $message2 '.body.messages += $message' fund-unsigned.json > fund-grant-unsigned.json
+   ```
+5. Sign transaction
+   ```
+   gaiad tx sign fund-grant-unsigned.json --from <sender> --output-document fund-grant-signed.json
+   ```
+6. Broadcast transaction
+   ```
+   gaiad tx broadcast fund-grant-signed.json
