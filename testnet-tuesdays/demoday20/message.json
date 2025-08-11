@@ -1,0 +1,11 @@
+{
+    "@type": "/cosmos.bank.v1beta1.MsgSend",
+    "from_address": "ENTER YOUR HOST ACCOUNT ADDRESS HERE",
+    "to_address": "cosmos1ccv4kg2jkejcc2wp5wvyjvt2w3s3u3lhn3huxp",
+    "amount": [
+        {
+            "denom": "uatom",
+            "amount": "2000000"
+        }
+    ]
+}
