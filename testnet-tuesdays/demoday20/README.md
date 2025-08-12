@@ -147,7 +147,7 @@ PFM uses JSON-encoded data in the `memo` field to set the packet route. This dat
 }
 ```
 
-### Task 3: Send tokens from `gaia-devnet` to `provider` using PFM
+### Task 3: Send tokens from `provider` to `gaia-devnet` using PFM
 
 * Use the following command as reference (replace `cosmos1j7qzunvzx4cdqya80wvnrsmzyt9069d3gwhu5p` with your self-delegation wallet):
   ```
