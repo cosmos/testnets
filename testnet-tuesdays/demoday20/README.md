@@ -42,7 +42,7 @@ We have set up the following channels between the `provider` and `gaia-devnet` c
 * Send 1000 uatom from your validator self-delegation wallet to `cosmos1ccv4kg2jkejcc2wp5wvyjvt2w3s3u3lhn3huxp` via `channel-513`.
 * You can use this command as reference:
    ```
-   gaiad tx ibc-transfer transfer transfer channel-513 cosmos1ccv4kg2jkejcc2wp5wvyjvt2w3s3u3lhn3huxp 1000uatom --from my_wallet 1000uatom --gas auto --gas-adjustment 3 --gas-prices 0.005uatom -y
+   gaiad tx ibc-transfer transfer transfer channel-513 cosmos1ccv4kg2jkejcc2wp5wvyjvt2w3s3u3lhn3huxp 1000uatom --from my_wallet --gas auto --gas-adjustment 3 --gas-prices 0.005uatom -y
    ```
 
 One way to check if the transfer went through is to look for a change in the recipient balance.
@@ -149,7 +149,7 @@ PFM uses JSON-encoded data in the `memo` field to set the packet route. This dat
 
 ### Task 3: Send tokens from `gaia-devnet` to `provider` using PFM
 
-* Use the following command as reference (replace `cosmos1ccv4kg2jkejcc2wp5wvyjvt2w3s3u3lhn3huxp` with your self-delegation wallet):
+* Use the following command as reference (replace `cosmos1j7qzunvzx4cdqya80wvnrsmzyt9069d3gwhu5p` with your self-delegation wallet):
   ```
   gaiad tx ibc-transfer transfer transfer channel-512 "pfm" --memo "{\"forward\": {\"receiver\": \"cosmos1ccv4kg2jkejcc2wp5wvyjvt2w3s3u3lhn3huxp\",\"port\": \"transfer\",\"channel\": \"channel-4\",\"timeout\": \"10m\"}}" 1000uatom --from cosmos1j7qzunvzx4cdqya80wvnrsmzyt9069d3gwhu5p --gas auto --gas-adjustment 3 --gas-prices 0.005uatom -y
   ```
