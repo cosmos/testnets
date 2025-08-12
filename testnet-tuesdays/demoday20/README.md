@@ -85,9 +85,9 @@ For this demo, we will register an account in `gaia-devnet` to submit a bank sen
   * Visit `https://faucet.polypore.xyz/request?address=<host account address>&chain=gaia-devnet`
 * Step 4: Generate the transaction.
   * Set the `from_address` field in [message.json](message.json) to your host account address.
-  * Use the following command as reference (replace `cosmos1j7qzunvzx4cdqya80wvnrsmzyt9069d3gwhu5p` with your self-delegation wallet address in the `memo` field):
+  * Use the following command as reference, **enter your self-delegation wallet address in the `memo` field**:
   ```
-  gaiad tx interchain-accounts host generate-packet-data "$(cat message.json)" --encoding proto3 --memo "cosmos1j7qzunvzx4cdqya80wvnrsmzyt9069d3gwhu5p" > send-packet-data.json
+  gaiad tx interchain-accounts host generate-packet-data "$(cat message.json)" --encoding proto3 --memo "<your self-delegation wallet>" > send-packet-data.json
   ```
 * Step 5: Submit the packet data transaction
   ```
