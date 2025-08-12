@@ -149,7 +149,7 @@ PFM uses JSON-encoded data in the `memo` field to set the packet route. This dat
 
 ### Task 3: Send tokens from `provider` to `gaia-devnet` using PFM
 
-* Use the following command as reference (replace `cosmos1j7qzunvzx4cdqya80wvnrsmzyt9069d3gwhu5p` with your self-delegation wallet):
+* Use the following command as reference, **replace `cosmos1j7qzunvzx4cdqya80wvnrsmzyt9069d3gwhu5p` with your self-delegation wallet**:
   ```
   gaiad tx ibc-transfer transfer transfer channel-512 "pfm" --memo "{\"forward\": {\"receiver\": \"cosmos1ccv4kg2jkejcc2wp5wvyjvt2w3s3u3lhn3huxp\",\"port\": \"transfer\",\"channel\": \"channel-4\",\"timeout\": \"10m\"}}" 1000uatom --from cosmos1j7qzunvzx4cdqya80wvnrsmzyt9069d3gwhu5p --gas auto --gas-adjustment 3 --gas-prices 0.005uatom -y
   ```
