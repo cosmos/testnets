@@ -1,19 +1,15 @@
-# **Joining the Intento Mainnet (ICS)**
+# **Joining the Intento Mainnet Rehearsal (ICS)**
 
-This is the **Intento Consumer Chain** (Consumer ID `22`) under Cosmos Hub’s **Interchain Security (ICS)**.
-If you’ve run ICS consumers like Neutron, Stride, or Elys, this will feel familiar — but read carefully.
-Spawn time is critical.
+This is the **Intento Consumer Chain** (Consumer ID `148`) under Cosmos Hub Provider chain’s **Interchain Security (ICS)**. If you’ve run ICS consumers, this will feel familiar — but read carefully.
 
 ---
 
 ## **Before You Start**
 
 - **Provider Requirement**: You must run a synced provider testnet node.
-- **Spawn Time**: If you’re not opted in and synced before spawn, you’ll miss inclusion and may be slashed.
-- **Consumer ID**: `22`
+- **Consumer ID**: `148`
 - **Chain ID**: `intento-rehearsal-1`
 - **Binary**: `intentod`
-- **ICS Parameters**: See [Forge](https://forge.cosmos.network/chain/22)
 
 ---
 
@@ -104,7 +100,7 @@ intentod tendermint show-validator
 **Opt-in (replace `[YOUR_KEY]`):**
 
 ```bash
-gaiad tx provider opt-in 22 <consumer-pubkey> \
+gaiad tx provider opt-in 148 <consumer-pubkey> \
   --from [YOUR_KEY] \
   --chain-id cosmoshub-4 \
 
@@ -113,7 +109,7 @@ gaiad tx provider opt-in 22 <consumer-pubkey> \
 **Verify Opt-in:**
 
 ```bash
-gaiad q provider consumer-opted-in-validators 22 \
+gaiad q provider consumer-opted-in-validators 148 \
   --chain-id cosmoshub-4 \
 ```
 
@@ -153,4 +149,6 @@ journalctl -u intentod -f -o cat
 ```
 
 Once 2/3 Hub voting power is running, blocks will produce.
+
+That's it! Keep an eye in the Discord. We will signal when we're ready so you can clean up your environment.
 
