@@ -7,7 +7,7 @@ set -euo pipefail
 CHAINID="intento-rehearsal-1"
 VERSION="v1.0.0-beta.1"  # Replace with latest version
 DENOM="uinto"
-ATOM="ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9"
+ATOM="ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9" # Replace with IBC denom if this changes in practive after transfer channel created
 PEERS=""  # Add persistent peers
 SEED=""   # Add seed nodes
 GENESIS_URL="https://github.com/cosmos/testnets/raw/master/interchain-security/intento-rehearsal-1/intento-rehearsal-1-genesis-with-ccv.json"

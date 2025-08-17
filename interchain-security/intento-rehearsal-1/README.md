@@ -69,7 +69,7 @@ config="$HOME/.intento/config/config.toml"
 app="$HOME/.intento/config/app.toml"
 client="$HOME/.intento/config/client.toml"
 
-ATOM="ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9"
+ATOM="ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9" # placeholder, if this changes in practive after transfer channel created, update this in your config.toml and restart
 
 sed -i "s|^seeds *=.*|seeds = \"$SEED\"|" $config
 sed -i "s|^persistent_peers *=.*|persistent_peers = \"$PEERS\"|" $config
@@ -102,7 +102,7 @@ intentod tendermint show-validator
 ```bash
 gaiad tx provider opt-in 148 <consumer-pubkey> \
   --from [YOUR_KEY] \
-  --chain-id cosmoshub-4 \
+  --chain-id provider \
 
 ```
 
@@ -110,7 +110,7 @@ gaiad tx provider opt-in 148 <consumer-pubkey> \
 
 ```bash
 gaiad q provider consumer-opted-in-validators 148 \
-  --chain-id cosmoshub-4 \
+  --chain-id provider \
 ```
 
 ---
