@@ -62,8 +62,8 @@ _Do this **before** starting node to avoid double signing._
 **Configure Networking:**
 
 ```bash
-SEED="<seed1@ip:port,seed2@ip:port>"
-PEERS="<peer1@ip:port,peer2@ip:port>"
+SEED="d84777fa4b069b62aae6060cdf5674ab7bbf46db@tenderseed.ccvalidators.com:29911"
+PEERS="441c8bc0f0eb74fb90fe5d9c475b0de7ba4c1e84@146.190.16.112:26656"
 
 config="$HOME/.intento/config/config.toml"
 app="$HOME/.intento/config/app.toml"

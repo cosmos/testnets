@@ -8,8 +8,8 @@ CHAINID="intento-rehearsal-1"
 VERSION="v1.0.0-beta.1"  # Replace with latest version
 DENOM="uinto"
 ATOM="ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9" # Replace with IBC denom if this changes in practive after transfer channel created
-PEERS=""  # Add persistent peers
-SEED=""   # Add seed nodes
+PEERS="441c8bc0f0eb74fb90fe5d9c475b0de7ba4c1e84@146.190.16.112:26656"
+SEED="d84777fa4b069b62aae6060cdf5674ab7bbf46db@tenderseed.ccvalidators.com:29911"
 GENESIS_URL="https://github.com/cosmos/testnets/raw/master/interchain-security/intento-rehearsal-1/intento-rehearsal-1-genesis-with-ccv.json"
 
 if [[ $# -lt 1 ]]; then
