@@ -2,6 +2,7 @@
 
 This is the **Intento Consumer Chain** (Consumer ID `148`) under Cosmos Hub Provider chain’s **Interchain Security (ICS)**. If you’ve run ICS consumers, this will feel familiar — but read carefully.
 
+* **SHA256 for genesis file _with CCV state_**: c17ceec78e2f75d10fadda344e36b8fdf03fe519d544fb4eebf11889f134186e
 ---
 
 ## **Before You Start**
