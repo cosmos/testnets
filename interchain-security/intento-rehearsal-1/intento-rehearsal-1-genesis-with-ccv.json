@@ -1,0 +1,619 @@
+{
+  "app_name": "intentod",
+  "app_version": "v1.0.0-beta.1",
+  "genesis_time": "2025-08-19T14:00:00Z",
+  "chain_id": "intento-rehearsal-1",
+  "initial_height": 1,
+  "app_hash": null,
+  "app_state": {
+    "07-tendermint": null,
+    "08-wasm": {
+      "contracts": []
+    },
+    "alloc": {
+      "params": {
+        "distribution_proportions": {
+          "developer_rewards": "0.000000000000000000",
+          "community_pool": "0.700000000000000000",
+          "relayer_incentives": "0.050000000000000000"
+        },
+        "weighted_developer_rewards_receivers": [],
+        "supplement_amount": []
+      }
+    },
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "into1u20df3trc2c2zdhm8qvh2hdjx9ewh00sqnuu4e",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "into1wdplq6qjh2xruc7qqagma9ya665q6qhcpse4k6",
+          "pub_key": null,
+          "account_number": "1",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "into1k74g5w0zwftp675lwv4flyqw9u54pknj7cg49x",
+          "pub_key": null,
+          "account_number": "2",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "into1n25zuhe3mmm9qjqxrdc6tgg7c69tgmflead6vc",
+          "pub_key": null,
+          "account_number": "3",
+          "sequence": "0"
+        }
+      ]
+    },
+    "authz": {
+      "authorization": []
+    },
+    "bank": {
+      "params": {
+        "send_enabled": [],
+        "default_send_enabled": true
+      },
+      "balances": [
+        {
+          "address": "into1wdplq6qjh2xruc7qqagma9ya665q6qhcpse4k6",
+          "coins": [
+            {
+              "denom": "uinto",
+              "amount": "2000000"
+            }
+          ]
+        },
+        {
+          "address": "into1n25zuhe3mmm9qjqxrdc6tgg7c69tgmflead6vc",
+          "coins": [
+            {
+              "denom": "uinto",
+              "amount": "40000000000000"
+            }
+          ]
+        },
+        {
+          "address": "into1k74g5w0zwftp675lwv4flyqw9u54pknj7cg49x",
+          "coins": [
+            {
+              "denom": "uinto",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "into1u20df3trc2c2zdhm8qvh2hdjx9ewh00sqnuu4e",
+          "coins": [
+            {
+              "denom": "uinto",
+              "amount": "2000000"
+            }
+          ]
+        }
+      ],
+      "supply": [],
+      "denom_metadata": [],
+      "send_enabled": []
+    },
+    "capability": {
+      "index": "1",
+      "owners": []
+    },
+    "ccvconsumer": {
+      "params": {
+        "enabled": true,
+        "blocks_per_distribution_transmission": "5000",
+        "distribution_transmission_channel": "",
+        "provider_fee_pool_addr_str": "",
+        "ccv_timeout_period": "4838400s",
+        "transfer_timeout_period": "43200s",
+        "consumer_redistribution_fraction": "0.75",
+        "historical_entries": "10000",
+        "unbonding_period": "1209600s",
+        "soft_opt_out_threshold": "0",
+        "reward_denoms": [],
+        "provider_reward_denoms": [],
+        "retry_delay_period": "3600s",
+        "consumer_id": "148"
+      },
+      "provider": {
+        "client_state": {
+          "chain_id": "provider",
+          "trust_level": {
+            "numerator": "1",
+            "denominator": "3"
+          },
+          "trusting_period": "453600s",
+          "unbonding_period": "1814400s",
+          "max_clock_drift": "10s",
+          "frozen_height": {
+            "revision_number": "0",
+            "revision_height": "0"
+          },
+          "latest_height": {
+            "revision_number": "0",
+            "revision_height": "13305532"
+          },
+          "proof_specs": [
+            {
+              "leaf_spec": {
+                "hash": "SHA256",
+                "prehash_key": "NO_HASH",
+                "prehash_value": "SHA256",
+                "length": "VAR_PROTO",
+                "prefix": "AA=="
+              },
+              "inner_spec": {
+                "child_order": [
+                  0,
+                  1
+                ],
+                "child_size": 33,
+                "min_prefix_length": 4,
+                "max_prefix_length": 12,
+                "empty_child": null,
+                "hash": "SHA256"
+              },
+              "max_depth": 0,
+              "min_depth": 0,
+              "prehash_key_before_comparison": false
+            },
+            {
+              "leaf_spec": {
+                "hash": "SHA256",
+                "prehash_key": "NO_HASH",
+                "prehash_value": "SHA256",
+                "length": "VAR_PROTO",
+                "prefix": "AA=="
+              },
+              "inner_spec": {
+                "child_order": [
+                  0,
+                  1
+                ],
+                "child_size": 32,
+                "min_prefix_length": 1,
+                "max_prefix_length": 1,
+                "empty_child": null,
+                "hash": "SHA256"
+              },
+              "max_depth": 0,
+              "min_depth": 0,
+              "prehash_key_before_comparison": false
+            }
+          ],
+          "upgrade_path": [
+            "upgrade",
+            "upgradedIBCState"
+          ],
+          "allow_update_after_expiry": true,
+          "allow_update_after_misbehaviour": true
+        },
+        "consensus_state": {
+          "timestamp": "2025-08-19T13:30:02.196453067Z",
+          "root": {
+            "hash": "7RtpLuUZJptWY/eXpszNjWNCnpIHl9E8dc18hjQtfLE="
+          },
+          "next_validators_hash": "4A9EA04D47406BC0B9FF90B05C2A1FA8C52D686FFCC30D659B7964AC0FA97806"
+        },
+        "initial_val_set": [
+          {
+            "pub_key": {
+              "ed25519": "GbV5nQQkMZc93MWmJSh0rHJECh3VJ02FqAi+9hCW5Bw="
+            },
+            "power": "5174948"
+          },
+          {
+            "pub_key": {
+              "ed25519": "c7z1VEqiCzmx+yC8glDHwOgaSuRqWsU0HTv9gi77d28="
+            },
+            "power": "5134878"
+          },
+          {
+            "pub_key": {
+              "ed25519": "OQfyisgAZOO5fSbc4OJDvnXB1uO0z3i+bIjCJRQdP64="
+            },
+            "power": "1230000"
+          },
+          {
+            "pub_key": {
+              "ed25519": "4ceW8HuhpwPd2OuqJGcnLrnQbVmYtSm9sLYG8z8d/do="
+            },
+            "power": "1061004"
+          },
+          {
+            "pub_key": {
+              "ed25519": "0kj3CEwZMa5Q+pf+6mM2/802FwYSAKoC/jaSXvQQmvg="
+            },
+            "power": "1041997"
+          },
+          {
+            "pub_key": {
+              "ed25519": "kKIIXJ+bjU+Go8pXMBNIabhpvSETTPGLnXNmRs4wwI4="
+            },
+            "power": "1040397"
+          },
+          {
+            "pub_key": {
+              "ed25519": "aftAlMlYxrwZ+3b19rkgbzf1wUd+mIt5S1mtfJukHSk="
+            },
+            "power": "1040293"
+          },
+          {
+            "pub_key": {
+              "ed25519": "hLJaXG/JJWeSzj5X2wkcQzUhzhggzqL4FChd+bvmko0="
+            },
+            "power": "1036919"
+          },
+          {
+            "pub_key": {
+              "ed25519": "V8AbhcVLw1Ld1mZ+8UfZ8vtfqTeOXw4B3+jYMnVd0Pk="
+            },
+            "power": "1036596"
+          },
+          {
+            "pub_key": {
+              "ed25519": "sCUs61UdyS04NjPBeTOkLSIk/VoR72RBIVSfIeFWPkQ="
+            },
+            "power": "1036595"
+          },
+          {
+            "pub_key": {
+              "ed25519": "QyB5r9Psw3wqB3KScpmvaNnUzEQeZp2dtxdxB3ghOB4="
+            },
+            "power": "1036595"
+          },
+          {
+            "pub_key": {
+              "ed25519": "zjjuDpAgefZhRHenGjKhJVGqSucFKSmbGaTKFNpDTSI="
+            },
+            "power": "1033794"
+          },
+          {
+            "pub_key": {
+              "ed25519": "S1pB1uHXzkEKfGGn6uFeFC8lXHWNKAQwrAq/4Oz1VC8="
+            },
+            "power": "1033237"
+          },
+          {
+            "pub_key": {
+              "ed25519": "PfGziLoTg8rt3jT0awWvnLSWzKm3tBrMGdrIPkCpvt8="
+            },
+            "power": "1033234"
+          },
+          {
+            "pub_key": {
+              "ed25519": "7GxLlVju0J+RlMZfxzX1wxBkW6nxRLBzB3DkUxGUrUk="
+            },
+            "power": "1000040"
+          },
+          {
+            "pub_key": {
+              "ed25519": "DyMtHel+n25WE//8skrSh0uxQDH6waWJpOgCLX0kQ+Y="
+            },
+            "power": "1000002"
+          }
+        ]
+      },
+      "new_chain": true
+    },
+    "claim": {
+      "module_account_balance": {
+        "denom": "uinto",
+        "amount": "89999996000000"
+      },
+      "params": {
+        "airdrop_start_time": "2026-08-27T14:00:00Z",
+        "duration_until_decay": "2419200s",
+        "duration_of_decay": "4838400s",
+        "claim_denom": "uinto",
+        "duration_vesting_periods": [
+          "604800s",
+          "1209600s",
+          "259200s",
+          "2419200s"
+        ]
+      },
+      "claim_records": [
+        {
+          "address": "into1u20df3trc2c2zdhm8qvh2hdjx9ewh00sqnuu4e",
+          "maximum_claimable_amount": {
+            "denom": "uinto",
+            "amount": "44999998000000"
+          },
+          "status": []
+        },
+        {
+          "address": "into1wdplq6qjh2xruc7qqagma9ya665q6qhcpse4k6",
+          "maximum_claimable_amount": {
+            "denom": "uinto",
+            "amount": "44999998000000"
+          },
+          "status": []
+        }
+      ]
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "uinto",
+        "amount": "100000000000"
+      }
+    },
+    "distribution": {
+      "params": {
+        "community_tax": "0.050000000000000000",
+        "base_proposer_reward": "0.000000000000000000",
+        "bonus_proposer_reward": "0.000000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": []
+      },
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "evidence": {
+      "evidence": []
+    },
+    "feegrant": {
+      "allowances": []
+    },
+    "feeibc": {
+      "identified_fees": [],
+      "fee_enabled_channels": [],
+      "registered_payees": [],
+      "registered_counterparty_payees": [],
+      "forward_relayers": []
+    },
+    "genutil": {
+      "gen_txs": []
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": [],
+      "votes": [],
+      "proposals": [],
+      "deposit_params": null,
+      "voting_params": null,
+      "tally_params": null,
+      "params": {
+        "min_deposit": [
+          {
+            "denom": "uinto",
+            "amount": "10000000"
+          }
+        ],
+        "max_deposit_period": "172800s",
+        "voting_period": "172800s",
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000",
+        "min_initial_deposit_ratio": "0.000000000000000000",
+        "proposal_cancel_ratio": "0.500000000000000000",
+        "proposal_cancel_dest": "",
+        "expedited_voting_period": "86400s",
+        "expedited_threshold": "0.667000000000000000",
+        "expedited_min_deposit": [
+          {
+            "denom": "uinto",
+            "amount": "50000000"
+          }
+        ],
+        "burn_vote_quorum": false,
+        "burn_proposal_deposit_prevote": false,
+        "burn_vote_veto": true,
+        "min_deposit_ratio": "0.010000000000000000"
+      },
+      "constitution": ""
+    },
+    "ibc": {
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "clients_metadata": [],
+        "params": {
+          "allowed_clients": [
+            "*"
+          ]
+        },
+        "create_localhost": false,
+        "next_client_sequence": "0"
+      },
+      "connection_genesis": {
+        "connections": [],
+        "client_connection_paths": [],
+        "next_connection_sequence": "0",
+        "params": {
+          "max_expected_time_per_block": "30000000000"
+        }
+      },
+      "channel_genesis": {
+        "channels": [],
+        "acknowledgements": [],
+        "commitments": [],
+        "receipts": [],
+        "send_sequences": [],
+        "recv_sequences": [],
+        "ack_sequences": [],
+        "next_channel_sequence": "0",
+        "params": {
+          "upgrade_timeout": {
+            "height": {
+              "revision_number": "0",
+              "revision_height": "0"
+            },
+            "timestamp": "600000000000"
+          }
+        }
+      }
+    },
+    "ibchooks": {},
+    "intent": {
+      "params": {
+        "flow_funds_commission": "2",
+        "flow_flex_fee_mul": "5",
+        "burn_fee_per_msg": "10000",
+        "gas_fee_coins": [
+          {
+            "denom": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+            "amount": "20"
+          },
+          {
+            "denom": "uinto",
+            "amount": "80"
+          }
+        ],
+        "max_flow_duration": "94867200s",
+        "min_flow_duration": "600s",
+        "min_flow_interval": "300s",
+        "connection_rewards": [
+          {
+            "connection_id": "connection-0",
+            "relayer_rewards": [
+              "20000",
+              "30000",
+              "40000",
+              "50000"
+            ]
+          }
+        ]
+      },
+      "interchain_account_addresses": [],
+      "flows": [],
+      "sequences": []
+    },
+    "interchainaccounts": {
+      "controller_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "ports": [],
+        "params": {
+          "controller_enabled": true
+        }
+      },
+      "host_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "port": "icahost",
+        "params": {
+          "host_enabled": true,
+          "allow_messages": [
+            "*"
+          ]
+        }
+      }
+    },
+    "interchainquery": {
+      "queries": []
+    },
+    "mint": {
+      "minter": {
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "uinto",
+        "start_time": "2026-08-27T14:00:00Z",
+        "initial_annual_provisions": "150000000000000.000000000000000000",
+        "reduction_factor": "0.750000000000000000",
+        "blocks_per_year": "24261538"
+      }
+    },
+    "params": null,
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "48000",
+        "min_signed_per_window": "0.050000000000000000",
+        "downtime_jail_duration": "60s",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.000000000000000000"
+      },
+      "signing_infos": [],
+      "missed_blocks": []
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1209600s",
+        "max_validators": 50,
+        "max_entries": 7,
+        "historical_entries": 10000,
+        "bond_denom": "uinto",
+        "min_commission_rate": "0.000000000000000000"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": [],
+      "validators": [],
+      "delegations": [],
+      "unbonding_delegations": [],
+      "redelegations": [],
+      "exported": false
+    },
+    "transfer": {
+      "port_id": "transfer",
+      "denom_traces": [],
+      "params": {
+        "send_enabled": true,
+        "receive_enabled": true
+      },
+      "total_escrowed": []
+    },
+    "upgrade": {},
+    "vesting": {},
+    "wasm": {
+      "params": {
+        "code_upload_access": {
+          "permission": "Everybody",
+          "addresses": []
+        },
+        "instantiate_default_permission": "Everybody"
+      },
+      "codes": [],
+      "contracts": [],
+      "sequences": []
+    }
+  },
+  "consensus": {
+    "params": {
+      "block": {
+        "max_bytes": "22020096",
+        "max_gas": "-1"
+      },
+      "evidence": {
+        "max_age_num_blocks": "100000",
+        "max_age_duration": "172800000000000",
+        "max_bytes": "1048576"
+      },
+      "validator": {
+        "pub_key_types": [
+          "ed25519"
+        ]
+      },
+      "version": {
+        "app": "0"
+      },
+      "abci": {
+        "vote_extensions_enable_height": "0"
+      }
+    }
+  }
+}
