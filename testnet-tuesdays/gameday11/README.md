@@ -1,4 +1,4 @@
-# Testnet Game Day # 11: CosmWasm Colour Battle
+# Testnet Game Day # 11: CosmWasm Pixel Battle
 
 * 2025-Sep-9
 * Start time: `13:30 UTC`
@@ -8,9 +8,9 @@
 
 * The Cosmos Hub has made CosmWasm fully permissionless, which means anybody can store new contracts on chain without a governance proposal.
 * We will showcase the CosmWasm module by having validators engage in a _friendly_ game of "Zone Control".
-* We will divide this Game Day in two phases: a warm-up and the colour battle.
+* We will divide this Game Day in two phases: a warm-up and the pixel battle.
   * The warm-up phase will have participants store, instantiate, and execute a sample CosmWasm contract.
-  * The colour battle phase will have participants attempt to fill a 2D array with a specific value by executing a contract.
+  * The pixel battle phase will have participants attempt to fill a 2D array with a specific value by executing a contract.
 
 
 ### Timeline (times in UTC)
@@ -27,8 +27,8 @@
 This event will be part of the September 2025 TIP period and will be worth up to **two points**.
 
 1. (1 point) Task 1: [Store a contract code](#task-1-store-a-contract-on-chain) using your self-delegation wallet address.
-2. (1 point) Task 2: [Execute the phase 2 contract](#task-2-set-a-point) using your self-delegation wallet address.
-3. (Bragging rights only!): Control the most points by the end of Game Day (block height `TBA`).
+2. (1 point) Task 2: [Execute the phase 2 contract](#task-2-set-a-pixel) using your self-delegation wallet address.
+3. (Bragging rights only!): Control the most pixels by the end of Game Day (block height `TBA`).
 
 ## Phase 1: CosmWasm Warm-up
 
@@ -67,9 +67,9 @@ gaiad tx wasm execute $contract_address '{"increment":{}}' --from <self-delegati
 ```
 You can query the count afterwards to confirm the value increased.
 
-## Phase 2: Colour Battle
+## Phase 2: Pixel Battle
 
-The goal of the game is to **cover as many points on a 128x128 grid with your team colour** by the end of the event. We will tally the number of points each team has claimed and announce the winning team shortly afterwards.
+The goal of the game is to **cover as many pixels on a 128x128 grid with your team colour** by the end of the event. We will tally the number of pixels each team has claimed and announce the winning team shortly afterwards.
 
 There will be four teams, each one named after a colour:
 
@@ -81,36 +81,35 @@ There will be four teams, each one named after a colour:
 | <span style="color:#FFD28B; font-weight:bold">=></span> Sunset <span style="color:#FFD28B; font-weight:bold"><=</span> | `FFD28B` | `[64,64]` - `[127,127]` |
 
 
-
 > **We will kick off Phase 2 by announcing the contract address and team assignments!**
 
-The grid will look like this at the beginning of the event:
+We will publish a page that renders the current state of the grid when we kick off phase 2. The grid will look like this at the beginning:
 
-![Colour Battle Starting State](battle-start.png)
+![Pixel Battle Starting State](battle-start.png)
 
 ### `bitmap-pay` Contract
 
 We will instantiate a contract based on the [`bitmap-pay`](https://github.com/hyphacoop/cosmos-wasm-samples/tree/main/bitmap-pay) example from the [cosmos-wasm-samples](https://github.com/hyphacoop/cosmos-wasm-samples) repo.
-* There is a cost associated with setting a point. It is the sum of the supply and update costs:
-* **Supply cost**: The more points are set on the grid, the higher the cost will be to set any additional point.
-  * This will stop increasing when all 16,384 points have been set.
-* **Update cost**: The more times a point is set, the higher the cost will be to update it again.
+* There is a cost associated with setting a pixel. It is the sum of the supply and update costs:
+* **Supply cost**: The more pixels are set on the grid, the higher the cost will be to set any additional pixel.
+  * This will stop increasing when all 16,384 pixels have been set.
+* **Update cost**: The more times a pixel is set, the higher the cost will be to update it again.
   * This will **not** stop increasing.
 
-### Task 2: Set a point
+### Task 2: Set a pixel
 
-First, obtain the cost of the point you are interested in with the `get_cost` query.
+First, obtain the cost of the pixel you are interested in with the `get_cost` query.
 * Both x and y coordinates will have a range of `[0,127]`.
 ```bash
 gaiad q wasm contract-state smart <contract address> '{"get_cost":{"x":<x coordinate>,"y",<y coordinate>}}' -o json  | jq -r '.data'
 ```
 
-Then, execute the `set_point` function to set a point in the grid:
+Then, execute the `set` function to set a pixel in the grid:
 ```bash
 gaiad tx wasm execute <contract address> '{"set":{"x":<x coordinate>,"y":<y coordinate>,"z":"<your team colour hex code>"}}' --from <self-delegation wallet> --amount <cost>uatom --gas auto --gas-adjustment 3 --gas-prices $GAS_PRICE -y
 ```
 
-You can confirm the point was set with the `get_point` query:
+You can confirm the pixel was set with the `get_point` query:
 ```bash
 gaiad q wasm contract-state smart <contract address> '{"get_point":{"x":<x coordinate>,"y",<y coordinate>}}' -o json  | jq -r '.data'
 ```
