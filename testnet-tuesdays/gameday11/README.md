@@ -69,7 +69,7 @@ You can query the count afterwards to confirm the value increased.
 
 ## Phase 2: Colour Battle
 
-The goal of the game is to cover as many points on a 128x128 grid with your team colour by the end of the event. We will tally the number of points each team has claimed and announce the winning team shortly afterwards.
+The goal of the game is to **cover as many points on a 128x128 grid with your team colour** by the end of the event. We will tally the number of points each team has claimed and announce the winning team shortly afterwards.
 
 There will be four teams, each one named after a colour:
 
