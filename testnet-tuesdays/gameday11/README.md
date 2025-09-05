@@ -28,7 +28,7 @@ This event will be part of the September 2025 TIP period and will be worth up to
 
 1. (1 point) Task 1: [Store a contract code](#task-1-store-a-contract-on-chain) using your self-delegation wallet address.
 2. (1 point) Task 2: [Execute the phase 2 contract](#task-2-set-a-pixel) using your self-delegation wallet address.
-3. (Bragging rights only!): Control the most pixels by the end of Game Day (block height `TBA`).
+3. (Bragging rights only!): Control the most pixels by the end of Game Day (block height `13622550`).
 
 ## Phase 1: CosmWasm Warm-up
 
@@ -69,16 +69,16 @@ You can query the count afterwards to confirm the value increased.
 
 ## Phase 2: Pixel Battle
 
-The goal of the game is to **cover as many pixels on a 128x128 grid with your team colour** by the end of the event. We will tally the number of pixels each team has claimed and announce the winning team shortly afterwards.
+The goal of the game is to **cover as many pixels on a 100x100 grid with your team colour** by the end of the event. We will tally the number of pixels each team has claimed and announce the winning team shortly afterwards.
 
 There will be four teams, each one named after a colour:
 
-| Team name | Colour hex code | Starting area |
-|:-----:|:------:|:-----:|
-|<span style="color:#FFABCA; font-weight:bold">=></span> Carnation <span style="color:#FFABCA; font-weight:bold"><=</span> | `FFABCA` | `[0,0]` - `[63,63]` |
-|<span style="color:#5A3776; font-weight:bold">=></span> Eminence <span style="color:#5A3776; font-weight:bold"><=</span> | `5A3776` | `[64,0]` - `[127,63]` |
-| <span style="color:#AFAED4; font-weight:bold">=></span> Periwinkle <span style="color:#AFAED4; font-weight:bold"><=</span> | `AFAED4` |  `[0,64]` - `[63,127]` |
-| <span style="color:#FFD28B; font-weight:bold">=></span> Sunset <span style="color:#FFD28B; font-weight:bold"><=</span> | `FFD28B` | `[64,64]` - `[127,127]` |
+|                                                         Team name                                                          | Colour hex code |     Starting area     |
+| :------------------------------------------------------------------------------------------------------------------------: | :-------------: | :-------------------: |
+| <span style="color:#FFABCA; font-weight:bold">=></span> Carnation <span style="color:#FFABCA; font-weight:bold"><=</span>  |    `FFABCA`     |  `[0,0]` - `[49,49]`  |
+|  <span style="color:#5A3776; font-weight:bold">=></span> Eminence <span style="color:#5A3776; font-weight:bold"><=</span>  |    `5A3776`     | `[50,0]` - `[99,50]`  |
+| <span style="color:#AFAED4; font-weight:bold">=></span> Periwinkle <span style="color:#AFAED4; font-weight:bold"><=</span> |    `AFAED4`     | `[0,50]` - `[49,99]`  |
+|   <span style="color:#FFD28B; font-weight:bold">=></span> Sunset <span style="color:#FFD28B; font-weight:bold"><=</span>   |    `FFD28B`     | `[50,50]` - `[99,99]` |
 
 
 > **We will kick off Phase 2 by announcing the contract address and team assignments!**
@@ -92,29 +92,29 @@ We will publish a page that renders the current state of the grid when we kick o
 We will instantiate a contract based on the [`bitmap-pay`](https://github.com/hyphacoop/cosmos-wasm-samples/tree/main/bitmap-pay) example from the [cosmos-wasm-samples](https://github.com/hyphacoop/cosmos-wasm-samples) repo.
 * There is a cost associated with setting a pixel. It is the sum of the supply and update costs:
 * **Supply cost**: The more pixels are set on the grid, the higher the cost will be to set any additional pixel.
-  * This will stop increasing when all 16,384 pixels have been set.
+  * This will stop increasing when all 10,000 pixels have been set.
 * **Update cost**: The more times a pixel is set, the higher the cost will be to update it again.
   * This will **not** stop increasing.
 
 ### Task 2: Set a pixel
 
 First, obtain the cost of the pixel you are interested in with the `get_cost` query.
-* Both x and y coordinates will have a range of `[0,127]`.
+* Both x and y coordinates will have a range of `[0,99]`.
 ```bash
 gaiad q wasm contract-state smart <contract address> '{"get_cost":{"x":<x coordinate>,"y",<y coordinate>}}' -o json  | jq -r '.data'
 ```
 
-Then, execute the `set` function to set a pixel in the grid:
+Then, execute the `set` function to set a pixel in the grid.
 ```bash
 gaiad tx wasm execute <contract address> '{"set":{"x":<x coordinate>,"y":<y coordinate>,"z":"<your team colour hex code>"}}' --from <self-delegation wallet> --amount <cost>uatom --gas auto --gas-adjustment 3 --gas-prices $GAS_PRICE -y
 ```
 
-You can confirm the pixel was set with the `get_point` query:
+You can confirm the pixel was set with the `get_point` query.
 ```bash
 gaiad q wasm contract-state smart <contract address> '{"get_point":{"x":<x coordinate>,"y",<y coordinate>}}' -o json  | jq -r '.data'
 ```
 
-There is also a `get_grid` query, which will return the full grid in a single string of 6-character chunks:
+There is also a `get_grid` query, which will return the full grid in a single string of 6-character chunks.
 ```bash
 gaiad q wasm contract-state smart <contract address> '{"get_grid":{}}' -o json  | jq -r '.data.z_values'
 ```
