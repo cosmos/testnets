@@ -98,13 +98,14 @@ We will instantiate a contract based on the [`bitmap-pay`](https://github.com/hy
 
 ### Task 2: Set a pixel
 
-First, obtain the cost of the pixel you are interested in with the `get_cost` query.
+First, obtain the cost (in `uatom`) of the pixel you are interested in with the `get_cost` query.
 * Both x and y coordinates will have a range of `[0,99]`.
 ```bash
-gaiad q wasm contract-state smart <contract address> '{"get_cost":{"x":<x coordinate>,"y",<y coordinate>}}' -o json  | jq -r '.data'
+gaiad q wasm contract-state smart <contract address> '{"get_cost":{"x":<x coordinate>,"y",<y coordinate>}}' -o json  | jq -r '.data.cost'
 ```
 
 Then, execute the `set` function to set a pixel in the grid.
+* Use the `--amount` flag to cover the cost of setting the pixel.
 ```bash
 gaiad tx wasm execute <contract address> '{"set":{"x":<x coordinate>,"y":<y coordinate>,"z":"<your team colour hex code>"}}' --from <self-delegation wallet> --amount <cost>uatom --gas auto --gas-adjustment 3 --gas-prices $GAS_PRICE -y
 ```
