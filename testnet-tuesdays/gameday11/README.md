@@ -1,0 +1,120 @@
+# Testnet Game Day # 11: CosmWasm Pixel Battle
+
+* 2025-Sep-9
+* Start time: `13:30 UTC`
+* End time: `15:00 UTC`
+
+### Summary
+
+* The Cosmos Hub has made CosmWasm fully permissionless, which means anybody can store new contracts on chain without a governance proposal.
+* We will showcase the CosmWasm module by having validators engage in a _friendly_ game of "Zone Control".
+* We will divide this Game Day in two phases: a warm-up and the pixel battle.
+  * The warm-up phase will have participants store, instantiate, and execute a sample CosmWasm contract.
+  * The pixel battle phase will have participants attempt to fill a 2D array with a specific value by executing a contract.
+
+
+### Timeline (times in UTC)
+
+| Time  | Event          | Available tasks |
+| :---: | :------------- | :-------------: |
+| 13:30 | Phase 1 begins |        1        |
+| 13:45 | Phase 2 begins |       1,2       |
+| 15:00 | Game Day ends  |        -        |
+
+
+## Testnet Incentives Program (TIP) Eligibility
+
+This event will be part of the September 2025 TIP period and will be worth up to **two points**.
+
+1. (1 point) Task 1: [Store a contract code](#task-1-store-a-contract-on-chain) using your self-delegation wallet address.
+2. (1 point) Task 2: [Execute the phase 2 contract](#task-2-set-a-pixel) using your self-delegation wallet address.
+3. (Bragging rights only!): Control the most pixels by the end of Game Day (block height `13622500`).
+
+## Phase 1: CosmWasm Warm-up
+
+Phase 1 will involve uploading a contract code. This folder includes a sample counter [contract](counter.wasm), which allows a user to increment and query a counter variable held in state.
+
+### Task 1: Store a contract on chain
+
+Send a `store` transaction and use the hash to obtain the contract code id.
+```bash
+tx_hash=$(gaiad tx wasm store counter.wasm --from <self-delegation wallet> --gas auto --gas-adjustment 3 --gas-prices 0.005uatom -o json -y | jq -r '.txhash')
+# Wait for the transaction to go on chain
+code_id=$(gaiad query tx $tx_hash -o json | jq -r '.events[] | select(.type=="store_code").attributes[] | select(.key=="code_id").value')
+```
+
+### Instantiate a contract
+
+Send an `instantiate` transaction and use the hash to obtain the contract address.
+```bash
+tx_hash=$(gaiad tx wasm instantiate $code_id '{"count":1}' --label "test-counter" --no-admin --from <self-delegation wallet> --gas auto --gas-adjustment 3 --gas-prices 0.005uatom -o json -y | jq -r '.txhash')
+# Wait for transaction to go on chain
+contract_address=$(gaiad query tx $tx_hash -o json | jq -r '.events[] | select(.type=="instantiate").attributes[] | select(.key=="_contract_address").value')
+```
+
+### Query a contract
+
+You can obtain the current counter value with a `get_count` query:
+```bash
+gaiad q wasm contract-state smart $contract_address '{"get_count":{}}' -o json  | jq -r '.data.count'
+```
+
+### Execute a contract
+
+Increase the counter value with:
+```bash
+gaiad tx wasm execute $contract_address '{"increment":{}}' --from <self-delegation wallet> --gas auto --gas-adjustment 3 --gas-prices 0.005uatom -y
+```
+You can query the count afterwards to confirm the value increased.
+
+## Phase 2: Pixel Battle
+
+The goal of the game is to **cover as many pixels on a 100x100 grid with your team colour** by the end of the event. We will tally the number of pixels each team has claimed and announce the winning team shortly afterwards.
+
+There will be four teams, each one named after a colour:
+
+|                                                         Team name                                                          | Colour hex code |     Starting area     |
+| :------------------------------------------------------------------------------------------------------------------------: | :-------------: | :-------------------: |
+| <span style="color:#FFABCA; font-weight:bold">=></span> Carnation <span style="color:#FFABCA; font-weight:bold"><=</span>  |    `FFABCA`     |  `[0,0]` - `[49,49]`  |
+|  <span style="color:#5A3776; font-weight:bold">=></span> Eminence <span style="color:#5A3776; font-weight:bold"><=</span>  |    `5A3776`     | `[50,0]` - `[99,49]`  |
+| <span style="color:#AFAED4; font-weight:bold">=></span> Periwinkle <span style="color:#AFAED4; font-weight:bold"><=</span> |    `AFAED4`     | `[0,50]` - `[49,99]`  |
+|   <span style="color:#FFD28B; font-weight:bold">=></span> Sunset <span style="color:#FFD28B; font-weight:bold"><=</span>   |    `FFD28B`     | `[50,50]` - `[99,99]` |
+
+
+> **We will kick off Phase 2 by announcing the contract address and team assignments!**
+
+We will publish a page that renders the current state of the grid when we kick off phase 2. The grid will look like this at the beginning:
+
+![Pixel Battle Starting State](battle-start.png)
+
+### `bitmap-pay` Contract
+
+We will instantiate a contract based on the [`bitmap-pay`](https://github.com/hyphacoop/cosmos-wasm-samples/tree/main/bitmap-pay) example from the [cosmos-wasm-samples](https://github.com/hyphacoop/cosmos-wasm-samples) repo.
+* There is a cost associated with setting a pixel. It is the sum of the supply and update costs:
+* **Supply cost**: The more pixels are set on the grid, the higher the cost will be to set any additional pixel.
+  * This will stop increasing when all 10,000 pixels have been set.
+* **Update cost**: The more times a pixel is set, the higher the cost will be to update it again.
+  * This will stop increasing when a pixel has been udpated 255 times.
+
+### Task 2: Set a pixel
+
+First, obtain the cost of the pixel you are interested in with the `get_cost` query.
+* Both x and y coordinates will have a range of `[0,99]`.
+```bash
+gaiad q wasm contract-state smart <contract address> '{"get_cost":{"x":<x coordinate>,"y",<y coordinate>}}' -o json  | jq -r '.data'
+```
+
+Then, execute the `set` function to set a pixel in the grid.
+```bash
+gaiad tx wasm execute <contract address> '{"set":{"x":<x coordinate>,"y":<y coordinate>,"z":"<your team colour hex code>"}}' --from <self-delegation wallet> --amount <cost>uatom --gas auto --gas-adjustment 3 --gas-prices $GAS_PRICE -y
+```
+
+You can confirm the pixel was set with the `get_point` query.
+```bash
+gaiad q wasm contract-state smart <contract address> '{"get_point":{"x":<x coordinate>,"y",<y coordinate>}}' -o json  | jq -r '.data'
+```
+
+There is also a `get_grid` query, which will return the full grid in a single string of 6-character chunks.
+```bash
+gaiad q wasm contract-state smart <contract address> '{"get_grid":{}}' -o json  | jq -r '.data.z_values'
+```
