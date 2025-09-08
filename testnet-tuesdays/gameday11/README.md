@@ -28,7 +28,7 @@ This event will be part of the September 2025 TIP period and will be worth up to
 
 1. (1 point) Task 1: [Store a contract code](#task-1-store-a-contract-on-chain) using your self-delegation wallet address.
 2. (1 point) Task 2: [Execute the phase 2 contract](#task-2-set-a-pixel) using your self-delegation wallet address.
-3. (Bragging rights only!): Control the most pixels by the end of Game Day (block height `13622550`).
+3. (Bragging rights only!): Control the most pixels by the end of Game Day (block height `13622500`).
 
 ## Phase 1: CosmWasm Warm-up
 
@@ -76,7 +76,7 @@ There will be four teams, each one named after a colour:
 |                                                         Team name                                                          | Colour hex code |     Starting area     |
 | :------------------------------------------------------------------------------------------------------------------------: | :-------------: | :-------------------: |
 | <span style="color:#FFABCA; font-weight:bold">=></span> Carnation <span style="color:#FFABCA; font-weight:bold"><=</span>  |    `FFABCA`     |  `[0,0]` - `[49,49]`  |
-|  <span style="color:#5A3776; font-weight:bold">=></span> Eminence <span style="color:#5A3776; font-weight:bold"><=</span>  |    `5A3776`     | `[50,0]` - `[99,50]`  |
+|  <span style="color:#5A3776; font-weight:bold">=></span> Eminence <span style="color:#5A3776; font-weight:bold"><=</span>  |    `5A3776`     | `[50,0]` - `[99,49]`  |
 | <span style="color:#AFAED4; font-weight:bold">=></span> Periwinkle <span style="color:#AFAED4; font-weight:bold"><=</span> |    `AFAED4`     | `[0,50]` - `[49,99]`  |
 |   <span style="color:#FFD28B; font-weight:bold">=></span> Sunset <span style="color:#FFD28B; font-weight:bold"><=</span>   |    `FFD28B`     | `[50,50]` - `[99,99]` |
 
@@ -94,7 +94,7 @@ We will instantiate a contract based on the [`bitmap-pay`](https://github.com/hy
 * **Supply cost**: The more pixels are set on the grid, the higher the cost will be to set any additional pixel.
   * This will stop increasing when all 10,000 pixels have been set.
 * **Update cost**: The more times a pixel is set, the higher the cost will be to update it again.
-  * This will **not** stop increasing.
+  * This will stop increasing when a pixel has been udpated 255 times.
 
 ### Task 2: Set a pixel
 
