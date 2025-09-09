@@ -101,7 +101,7 @@ We will instantiate a contract based on the [`bitmap-pay`](https://github.com/hy
 First, obtain the cost (in `uatom`) of the pixel you are interested in with the `get_cost` query.
 * Both x and y coordinates will have a range of `[0,99]`.
 ```bash
-gaiad q wasm contract-state smart <contract address> '{"get_cost":{"x":<x coordinate>,"y",<y coordinate>}}' -o json  | jq -r '.data.cost'
+gaiad q wasm contract-state smart <contract address> '{"get_cost":{"x":<x coordinate>,"y":<y coordinate>}}' -o json  | jq -r '.data.cost'
 ```
 
 Then, execute the `set` function to set a pixel in the grid.
@@ -112,7 +112,7 @@ gaiad tx wasm execute <contract address> '{"set":{"x":<x coordinate>,"y":<y coor
 
 You can confirm the pixel was set with the `get_point` query.
 ```bash
-gaiad q wasm contract-state smart <contract address> '{"get_point":{"x":<x coordinate>,"y",<y coordinate>}}' -o json  | jq -r '.data'
+gaiad q wasm contract-state smart <contract address> '{"get_point":{"x":<x coordinate>,"y":<y coordinate>}}' -o json  | jq -r '.data'
 ```
 
 There is also a `get_grid` query, which will return the full grid in a single string of 6-character chunks.
