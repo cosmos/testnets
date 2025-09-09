@@ -94,7 +94,7 @@ We will instantiate a contract based on the [`bitmap-pay`](https://github.com/hy
 * **Supply cost**: The more pixels are set on the grid, the higher the cost will be to set any additional pixel.
   * This will stop increasing when all 10,000 pixels have been set.
 * **Update cost**: The more times a pixel is set, the higher the cost will be to update it again.
-  * This will stop increasing when a pixel has been udpated 255 times.
+  * This will stop increasing when a pixel has been updated 255 times.
 
 ### Task 2: Set a pixel
 
