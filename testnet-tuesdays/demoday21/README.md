@@ -13,7 +13,6 @@ In this demo day, we will review the capabilities of the IBC rate limit module.
 | 13:45 | Expedited proposal to set rate limit passes              |        -        |
 | 13:45 | Demo day IBC token is distributed                        |        2        |
 | 14:15 | Rate limit threshold is reached                          |        -        |
-| 14:45 | Rate limit is no longer active                           |        2        |
 | 15:00 | Testnet Tuesday ends                                     |        -        |
 
 
@@ -33,11 +32,9 @@ In this demo day, we will review the capabilities of the IBC rate limit module.
 
 ## 1. Rate Limit
 
-We will submit a [proposal](proposal-ratelimit.json) to add a rate limit to the `provider` chain. After it passes, it will block IBC transfers out of the chain for a specific denom once a threshold (a percentage of the denom supply) is reached.
+The `ratelimit` module prevents massive inflows or outflows of IBC tokens in a short time frame. We will submit a [proposal](proposal-ratelimit.json) to add a rate limit to the `provider` chain. After it passes, it will block IBC transfers out of the chain for a specific denom once a threshold (a percentage of the denom supply) is reached within a one-hour window.
 
-Transfers of the IBC-wrapped Gaia devnet uatom will be blocked:
-* For one hour after the proposal passes
-* After 20% of the token supply has been reached in IBC transfers out of channel-513
+Transfers of the IBC-wrapped Gaia devnet uatom will be blocked after 20% of the token supply has been reached in IBC transfers out of channel-513 until the one-hour window passes.
 
 We will use the following channels between the `provider` and `gaia-devnet` chain:
 
@@ -74,7 +71,7 @@ gaiad q bank balances <recipient address> --node https://rpc.gaia-devnet.polypor
 
 We will submit a large IBC transfer 30 minutes after the proposal passes to reach the threshold set by the rate limit. Once the threshold is reached, further attempts to send additional tokens out will be blocked!
 
-The rate limit will only be in place for one hour after the proposal passes, so you will be able to continue sending these tokens out throuch `channel-513` once the period ends.
+The rate limit will only kick in after the threshold is reached, but after the one-hour window passes you will be able to continue sending these tokens out throuch `channel-513`.
 
 > Visit the [ibc-apps repo](https://github.com/cosmos/ibc-apps/tree/main/modules/rate-limiting) for more details on the `ratelimit` module!
 
