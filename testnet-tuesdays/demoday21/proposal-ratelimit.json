@@ -11,7 +11,7 @@
         }
     ],
     "metadata": "ipfs://CID",
-    "deposit": "1500000000uatom",
+    "deposit": "500000000uatom",
     "title": "Demo Day 21: Add a rate limit to the Gaia devnet uatom",
     "summary": "Set a max percent send of 20% for the IBC-wrapped Gaia devnet uatom on channel-513 for one hour.",
     "expedited": true
