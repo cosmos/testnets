@@ -52,7 +52,7 @@ gaiad tx gov vote 279 yes --from <self-delegation address> --gas auto --gas-adju
 
 ## 2. IBC Transfer
 
-We have distributed IBC-wrapped uatom from the Gaia devnet to all the validators in the `provider` chain.
+We will distribute IBC-wrapped uatom from the Gaia devnet to all the validators in the `provider` chain.
 * Denom: `ibc/002C7C438AF3C8D40655E1C3356E3A0680A78FE08A6CD8A6FFB8A2AC86E0DD7F`
 
 ### Task 2: Send tokens from `provider` to `gaia-devnet`
