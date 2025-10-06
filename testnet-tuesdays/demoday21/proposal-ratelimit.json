@@ -1,0 +1,18 @@
+{
+    "messages": [
+        {
+            "@type": "/ratelimit.v1.MsgAddRateLimit",
+            "authority": "cosmos10d07y265gmmuvt4z0w9aw880jnsr700j6zn9kn",
+            "denom": "ibc/002C7C438AF3C8D40655E1C3356E3A0680A78FE08A6CD8A6FFB8A2AC86E0DD7F",
+            "channel_or_client_id": "channel-513",
+            "max_percent_send": "20",
+            "max_percent_recv": "0",
+            "duration_hours": "1"
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "1500000000uatom",
+    "title": "Demo Day 21: Add a rate limit to the Gaia devnet uatom",
+    "summary": "Set a max percent send of 20% for the IBC-wrapped Gaia devnet uatom on channel-513 for one hour.",
+    "expedited": true
+}
