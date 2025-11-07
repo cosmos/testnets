@@ -40,17 +40,17 @@ plan:
 
 1. Build or download the binary for the release you are upgrading to.
 2. Create a folder for the new binary in the relevant Cosmovisor directory.
-   * If the upgrade name is `25.1.0`, you would place the binary under `<node home>/cosmovisor/upgrades/25.1.0/bin/gaiad`:
+   * If the upgrade name is `25.2.0`, you would place the binary under `<node home>/cosmovisor/upgrades/25.2.0/bin/gaiad`:
      ```
      .
      ├── current -> genesis or upgrades/<name>
      ├── genesis
      │   └── bin
-     │       └── gaiad  # old: v25.0.0-rc0
+     │       └── gaiad  # old: v25.1.0
      └── upgrades
-         └── v25.1.0
+         └── v25.2.0
              └── bin
-                 └── gaiad  # new: v25.1.0
+                 └── gaiad  # new: v25.2.0
      ```
 3. Verify that Cosmovisor will use the binary you have prepared.
    * The Cosmovisor service should have the auto-download feature disabled. A sample Cosmovisor unit file will look like this:
