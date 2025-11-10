@@ -16,11 +16,12 @@ You can query the upgrade name for governance-gated upgrades with the following 
 ```
 gaiad q upgrade plan
 plan:
-  height: "12701900"
-  info: '{"binaries": {"darwin/amd64": "https://github.com/cosmos/gaia/releases/download/v25.1.0/gaiad-v25.1.0-darwin-amd64?checksum=sha256:baeebe95e3db3b01610a79769105a0ed92efd7dabbe7ffe622a778ac46201948",
-    "darwin/arm64": "https://github.com/cosmos/gaia/releases/download/v25.1.0/gaiad-v25.1.0-darwin-arm64?checksum=sha256:1f18dd615a34fb63dcb826b9ddd0423adfe0fbc953c95fd0637c9fbadca4cd1f",
-    "linux/amd64": "https://github.com/cosmos/gaia/releases/download/v25.1.0/gaiad-v25.1.0-linux-amd64?checksum=sha256:1bd6bc72fd98b5ef7a6001a0e42850ab4dd1d32a63a9627ab72834ab61ed4f76"}}'
-  name: v25.1.0
+  height: "14571900"
+  info: '{"binaries": {"darwin/amd64": "https://github.com/cosmos/gaia/releases/download/v25.2.0/gaiad-v25.2.0-darwin-amd64?checksum=sha256:8ec14899b1cc1f8dd847e38467c00ff961da99bf825e5a1816fa309feec7c165",
+    "darwin/arm64": "https://github.com/cosmos/gaia/releases/download/v25.2.0/gaiad-v25.2.0-darwin-arm64?checksum=sha256:9ebf6156b68f0ab0cc9b4159845b2ad3447c58da53acdc56497cff0eefc913b7",
+    "linux/amd64": "https://github.com/cosmos/gaia/releases/download/v25.2.0/gaiad-v25.2.0-linux-amd64?checksum=sha256:e54ab309ca4c117d73a043adfc4e9155f35a480925ad8a94a625bd80e9398f76",
+    "linux/arm64": "https://github.com/cosmos/gaia/releases/download/v25.2.0/gaiad-v25.2.0-linux-arm64?checksum=sha256:bfd0942c63270b4ab3ac07db1319718b68a12cca488316d40e68c160b650455a"}}'
+  name: v25.2.0
   time: "0001-01-01T00:00:00Z"
 ```
 
@@ -30,7 +31,7 @@ plan:
 2. Wait for the node to stop at the upgrade height.
    * The log will display something like this:
      ```
-     ERR UPGRADE "25.1.0" NEEDED at height: <UPGRADE_HEIGHT>: upgrade to 25.1.0 and applying upgrade "25.1.0" at height:<UPGRADE_HEIGHT>
+     ERR UPGRADE "25.2.0" NEEDED at height: <UPGRADE_HEIGHT>: upgrade to 25.2.0 and applying upgrade "25.2.0" at height:<UPGRADE_HEIGHT>
      ```
   * If the node service remains active, you can stop it now.
 3. Replace the binary listed in the unit file with the new release.
@@ -46,7 +47,7 @@ plan:
      ├── current -> genesis or upgrades/<name>
      ├── genesis
      │   └── bin
-     │       └── gaiad  # old: v25.1.0
+     │       └── gaiad  # old: v25.1.1
      └── upgrades
          └── v25.2.0
              └── bin
