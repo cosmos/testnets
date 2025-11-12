@@ -12,18 +12,15 @@ The goals of the Cosmos Hub testnet program are to:
 
 These goals are supported by a persistent testnet using similar, if not identical, parameters to the Cosmos Hub.
 
-### [Interchain Security Persistent Testnet](interchain-security/)
+### [Cosmos Hub Testnet](provider/)
 
-The Interchain Security testnet provides a public platform to explore:
-- Launching and stopping consumer chains
-- Interchain Security features
-- Relayer operations
-- Integrations (block explorers, monitors, etc.)
+The Cosmos Hub testnet (`provider`) provides a public platform to test and demonstrate Gaia features, explore relayer operations, and support the development work of integrations (block explorers, monitoring suites, etc.).
 
 We have configured this testnet so that:
 * Testnet coordinators operate 3+ validators with a combined voting power exceeding 66% total power.
 * Testnet coordinators control a faucet with >100M liquid tokens.
 
+The `provider` testnet is the primary network for [Testnet Tuesday](/testnet-tuesdays/README.md) events.
 
 ### [Local Testnet](local/)
 
