@@ -2,7 +2,7 @@
 
 | Date                   | Testnet Incentives Program Period | Type                       | Description                                                                                                                                              |
 | ---------------------- | --------------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| November 11 2025       | November 2025                     | Minor upgrade              | Provider chain upgrades to Gaia v25.2.0                                                                                                                |
+| November 11 2025       | November 2025                     | Minor upgrade              | ✅ Provider chain upgrades to Gaia v25.2.0                                                                                                                |
 | October 7 2025         | October 2025                      | Demo Day                   | ✅ Demo day # 21: IBC rate limit                                                                                                                            |
 | September 9 2025       | September 2025                    | Game Day                   | ✅ Game day # 11: CosmWasm Pixel Battle                                                                                                                   |
 | August 12 2025         | August 2025                       | Demo Day                   | ✅ Demo day # 20: IBC                                                                                                                                     |
