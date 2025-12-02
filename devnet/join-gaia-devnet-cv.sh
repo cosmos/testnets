@@ -87,9 +87,8 @@ mv genesis.json $NODE_HOME/config/genesis.json
 
 # Set up cosmovisor
 echo "Setting up cosmovisor..."
-mkdir -p $NODE_HOME/cosmovisor/upgrades/v20/bin/
-cp $(which $CHAIN_BINARY) $NODE_HOME/cosmovisor/upgrades/v20/bin/
-ln -sf $NODE_HOME/cosmovisor/upgrades/v20 $NODE_HOME/cosmovisor/current
+mkdir -p $NODE_HOME/cosmovisor/genesis/bin
+cp $(which $CHAIN_BINARY) $NODE_HOME/cosmovisor/genesis/bin
 
 echo "Installing cosmovisor..."
 export BINARY=$NODE_HOME/cosmovisor/genesis/bin/$CHAIN_BINARY
