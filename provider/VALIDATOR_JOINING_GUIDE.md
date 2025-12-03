@@ -1,14 +1,13 @@
 # Validator Joining Process
 
-This guide is intended for validators that are looking to join the Interchain Security testnet.
+This guide is intended for validators that are looking to join the Cosmos Hub (`provider`) testnet.
 
 ## Joining the Provider Chain
 
-To join the Interchain Security testnet as a validator, you will have to run a binary for the provider chain as well as all live consumer chains.
+To join the Cosmos Hub testnet as a validator, you will have to run a binary for the provider chain as well as all live consumer chains.
 
-1. [Join the provider chain](https://github.com/cosmos/testnets/tree/master/interchain-security/provider#how-to-join).
-1. Request funds from the provider chain [faucet](https://faucet.polypore.xyz).
-1. Join all the live consumer chains currently listed in the [status section](https://github.com/cosmos/testnets/tree/master/interchain-security#status).
+1. [Join the provider chain](README.md#how-to-join)
+2. Request funds from the provider chain [faucet](https://faucet.polypore.xyz).
 
 ## Creating a Validator on the Provider Chain
 
@@ -48,7 +47,7 @@ validator.json \
 --gas-prices 0.005uatom
 ```
 
-4. You can verify the validator was created in the [block explorer](https://explorer.rs-testnet.polypore.xyz/provider/staking), or in the command line:
+1. You can verify the validator was created in the [block explorer](https://explorer.polypore.xyz/provider/staking), or in the command line:
 
 ```
 gaiad q staking validators -o json | jq '.validators[].description.moniker'

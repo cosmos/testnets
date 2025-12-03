@@ -1,7 +1,7 @@
 
 # `provider` Chain Details
 
-The provider chain functions as an analogue of the Cosmos Hub. Its governance parameters will provide short voting periods to accelerate the creation of consumer chains.
+The provider chain functions as an analogue of the Cosmos Hub. Its governance parameters provide short voting periods to accelerate upgrades, parameter changes, and recovery of IBC clients.
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
@@ -98,8 +98,8 @@ You can choose to (not) use state sync. Your node will sync much faster if you u
 ### Bash Script
 
 Run either one of the scripts provided in this repo to join the provider chain:
-* `join-ics-provider.sh` will create a `gaiad` service.
-* `join-ics-provider-cv.sh` will create a `cosmovisor` service.
+* `join-provider.sh` will create a `gaiad` service.
+* `join-provider-cv.sh` will create a `cosmovisor` service.
 * Both scripts must be run either as root or from a sudoer account.
 * Both scripts will attempt to build a binary from the [cosmos/gaia](https://github.com/cosmos/gaia/releases) repo.
 * To sync with Hypha's `provider` snapshot run with the `-s` argument
