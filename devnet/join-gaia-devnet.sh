@@ -30,7 +30,16 @@ mkdir -p $HOME/go/bin
 export PATH=$PATH:$HOME/go/bin
 
 # Get current devnet version
-GAIA_VERSION=$(curl -s "https://rpc.gaia-devnet.polypore.xyz/abci_info?" | jq -r '.result.response.version')
+GAIA_VERSION_STRING=$(curl -s "https://rpc.gaia-devnet.polypore.xyz/abci_info?" | jq -r '.result.response.version')
+if [[ $GAIA_VERSION_STRING = v[0-9]* ]]
+then
+        echo "version string is a version"
+        GAIA_VERSION="$GAIA_VERSION_STRING"
+else
+        echo "version string is a build"
+        GAIA_VERSION=$(echo "$GAIA_VERSION_STRING" | grep -oP '[^-]*$')
+        echo "$GAIA_VERSION"
+fi
 
 # Install Gaia binary
 echo "Installing Gaia..."
