@@ -13,9 +13,9 @@ We will post announcements in the `testnet-announcements` channel in Discord to 
 
 | Time  | Event                                                                     | Tasks Available |
 | :---: | :------------------------------------------------------------------------ | :-------------: |
-| 15:30 | Transactions with high gas use start being sent to the `provider` network |                 |
-| 15:40 | Governance proposals start being submitted for voting                     |        1        |
-| 17:00 | Transactions with high gas fees stop being sent                           |                 |
+| 14:30 | Transactions with high gas use start being sent to the `provider` network |                 |
+| 14:40 | Governance proposals start being submitted for voting                     |        1        |
+| 16:00 | Transactions with high gas fees stop being sent                           |                 |
 
 ## Testnet Incentives Program (TIP) Eligibility
 
