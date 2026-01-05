@@ -31,7 +31,7 @@ plan:
 2. Wait for the node to stop at the upgrade height.
    * The log will display something like this:
      ```
-     ERR UPGRADE "25.3.0" NEEDED at height: <UPGRADE_HEIGHT>: upgrade to 25.3.0 and applying upgrade "25.3.0" at height:<UPGRADE_HEIGHT>
+     ERR UPGRADE "v25.3.0" NEEDED at height: 15412400: upgrade to v25.3.0 and applying upgrade "v25.3.0" at height:15412400
      ```
   * If the node service remains active, you can stop it now.
 3. Replace the binary listed in the unit file with the new release.
@@ -41,7 +41,7 @@ plan:
 
 1. Build or download the binary for the release you are upgrading to.
 2. Create a folder for the new binary in the relevant Cosmovisor directory.
-   * If the upgrade name is `25.3.0`, you would place the binary under `<node home>/cosmovisor/upgrades/25.3.0/bin/gaiad`:
+   * If the upgrade name is `v25.3.0`, you would place the binary under `<node home>/cosmovisor/upgrades/v25.3.0/bin/gaiad`:
      ```
      .
      ├── current -> genesis or upgrades/<name>
