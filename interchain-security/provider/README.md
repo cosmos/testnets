@@ -13,15 +13,15 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 ## v26.0.0 Upgrade
 
-The provider chain will upgrade to Gaia `v26.0.0` on **TBD**
+The provider chain will upgrade to Gaia `v25.3.0` on **January 6, 2026**
 
-<!--* Upgrade height: `14571900`
+* Upgrade height: `15412400`
   * Estimated upgrade time: `14:30 UTC`
-  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/14571900
-  * Proposal 281: https://explorer.polypore.xyz/provider/gov/281
-* Upgrade name: `v25.2.0`
-* Release page: https://github.com/cosmos/gaia/releases/tag/v25.2.0
-  * Build Go version: `v1.24.10`-->
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/15412400
+  * Proposal 281: https://explorer.polypore.xyz/provider/gov/294
+* Upgrade name: `v25.3.0`
+* Release page: https://github.com/cosmos/gaia/releases/tag/v25.3.0
+  * Build Go version: `v1.24.11`
 <!-- * ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
   1. Set the upgrade height in your node(s) `app.toml` and restart the node.
       ```toml
@@ -227,3 +227,4 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * When the node reaches height `12701900`, it will attempt to upgrade to Gaia `v25.1.0`. You can use Cosmovisor's auto-download feature or install the `v25.1.0` release binary.
 * Replace the `v25.1.0` binary with the `v25.1.1` one.
 * When the node reaches height `14571900`, it will attempt to upgrade to Gaia `v25.2.0`. You can use Cosmovisor's auto-download feature or install the `v25.2.0` release binary.
+* When the node reaches height `15412400`, it will attempt to upgrade to Gaia `v25.3.0`. You can use Cosmovisor's auto-download feature or install the `v25.3.0` release binary.
