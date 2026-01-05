@@ -18,7 +18,7 @@ The provider chain will upgrade to Gaia `v25.3.0` on **January 6, 2026**
 * Upgrade height: `15412400`
   * Estimated upgrade time: `14:30 UTC`
   * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/15412400
-  * Proposal 281: https://explorer.polypore.xyz/provider/gov/294
+  * Proposal 294: https://explorer.polypore.xyz/provider/gov/294
 * Upgrade name: `v25.3.0`
 * Release page: https://github.com/cosmos/gaia/releases/tag/v25.3.0
   * Build Go version: `v1.24.11`
