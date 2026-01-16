@@ -34,36 +34,36 @@ The provider chain will upgrade to Gaia `v26.0.0` on **TBD**
 
 ### RPC
 
-* `https://rpc.provider-sentry-01.ics-testnet.polypore.xyz`
-* `https://rpc.provider-sentry-02.ics-testnet.polypore.xyz`
+* `https://rpc.provider-sentry-01.hub-testnet.polypore.xyz`
+* `https://rpc.provider-sentry-02.hub-testnet.polypore.xyz`
 * `https://rpc-rs.cosmos.nodestake.top`
 * `https://cosmos-testnet-rpc.itrocket.net`
 
 ### API
 
-* `https://rest.provider-sentry-01.ics-testnet.polypore.xyz`
-* `https://rest.provider-sentry-02.ics-testnet.polypore.xyz`
+* `https://rest.provider-sentry-01.hub-testnet.polypore.xyz`
+* `https://rest.provider-sentry-02.hub-testnet.polypore.xyz`
 * `https://api-rs.cosmos.nodestake.top`
 * `https://cosmos-testnet-api.itrocket.net`
 
 ### gRPC
 
-* `https://grpc.provider-sentry-01.ics-testnet.polypore.xyz`
-* `https://grpc.provider-sentry-02.ics-testnet.polypore.xyz`
+* `https://grpc.provider-sentry-01.hub-testnet.polypore.xyz`
+* `https://grpc.provider-sentry-02.hub-testnet.polypore.xyz`
 * `https://grpc-rs.cosmos.nodestake.top`
 * `https://cosmos-testnet-grpc.itrocket.net:443`
 
 
 ### Seeds
 
-1. `08ec17e86dac67b9da70deb20177655495a55407@provider-seed-01.ics-testnet.polypore.xyz:26656`
-2. `4ea6e56300a2f37b90e58de5ee27d1c9065cf871@provider-seed-02.ics-testnet.polypore.xyz:26656`
+1. `08ec17e86dac67b9da70deb20177655495a55407@provider-seed-01.hub-testnet.polypore.xyz:26656`
+2. `4ea6e56300a2f37b90e58de5ee27d1c9065cf871@provider-seed-02.hub-testnet.polypore.xyz:26656`
 3. `84871382a3ffa5e781034b6519126f2d5ea29f15@cosmos-testnet-seed.itrocket.net:21656`
 
 ### State sync
 
-1. `https://provider-state-sync-01.ics-testnet.polypore.xyz:443`
-2. `https://provider-state-sync-02.ics-testnet.polypore.xyz:443`
+1. `https://provider-state-sync-01.hub-testnet.polypore.xyz:443`
+2. `https://provider-state-sync-02.hub-testnet.polypore.xyz:443`
 
 ## Add to Keplr
 
@@ -78,8 +78,8 @@ Use this [jsfiddle](https://jsfiddle.net/uw4ar8qt/2/).
 
 ## Snapshot
 
-* https://snapshots.polypore.xyz/ics-testnet/provider/
-* https://snapshots-2.polypore.xyz/ics-testnet/provider/
+* https://snapshots.polypore.xyz/provider/
+* https://snapshots-2.polypore.xyz/provider/
 * https://nodestake.top/cosmos
 * https://itrocket.net/services/testnet/cosmos/#snap
 
