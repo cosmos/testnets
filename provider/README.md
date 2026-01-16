@@ -62,8 +62,8 @@ The provider chain will upgrade to Gaia `v26.0.0` on **TBD**
 
 ### State sync
 
-1. `https://provider-state-sync-01.hub-testnet.polypore.xyz:443`
-2. `https://provider-state-sync-02.hub-testnet.polypore.xyz:443`
+1. `https://rpc.provider-state-sync-01.hub-testnet.polypore.xyz:443`
+2. `https://rpc.provider-state-sync-02.hub-testnet.polypore.xyz:443`
 
 ## Add to Keplr
 
