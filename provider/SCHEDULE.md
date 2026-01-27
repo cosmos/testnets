@@ -2,6 +2,7 @@
 
 | Date                   | Testnet Incentives Program Period | Type                       | Description                                                                                                                                              |
 | ---------------------- | --------------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| January 29 2026        | -                                 | Major upgrade              | Provider chain upgrades to Gaia v26.0.0-rc0                                                                                                              |
 | January 6 2026         | -                                 | Minor upgrade              | ✅ Provider chain upgrades to Gaia v25.3.0                                                                                                                |
 | December 16 2025       | December 2025                     | Demo Day                   | ✅ Demo day # 22: Feemarket                                                                                                                               |
 | November 25 2025       | November 2025                     | Node Operations            | ✅ Emergency halt drill                                                                                                                                   |
