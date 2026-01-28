@@ -15,10 +15,10 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 The provider chain will upgrade to Gaia `v26.0.0-rc0` on **January 29, 2026**
 
-* Upgrade height: `TBD`
+* Upgrade height: `15759100`
   * Estimated upgrade time: `14:30 UTC`
-  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/TBD
-  * Proposal TBD
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/15759100
+  * Proposal 296: https://explorer.polypore.xyz/provider/gov/296
 * Upgrade name: `v26.0.0`
 * Release page: https://github.com/cosmos/gaia/releases/tag/v26.0.0-rc0
   * Build Go version: `v1.24.12`

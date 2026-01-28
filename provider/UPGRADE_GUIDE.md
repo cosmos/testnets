@@ -16,12 +16,12 @@ You can query the upgrade name for governance-gated upgrades with the following 
 ```
 gaiad q upgrade plan
 plan:
-  height: "15412400"
-  info: '{"binaries": {"darwin/amd64": "https://github.com/cosmos/gaia/releases/download/v25.3.0/gaiad-v25.3.0-darwin-amd64?checksum=sha256:8a5de7d4bc143948e2e629491c0f59dcb3fd540fbde750252b986194835c0495",
-    "darwin/arm64": "https://github.com/cosmos/gaia/releases/download/v25.3.0/gaiad-v25.3.0-darwin-arm64?checksum=sha256:cb268cd2cda0d1cab15e3cbc4c3fefc6706ded809f8f16e414475e1806e71760",
-    "linux/amd64": "https://github.com/cosmos/gaia/releases/download/v25.3.0/gaiad-v25.3.0-linux-amd64?checksum=sha256:396c2f08c6d60cc14c101383a32f3202379e44d4fc4a65505dbb3897e0f1e1ed",
-    "linux/arm64": "https://github.com/cosmos/gaia/releases/download/v25.3.0/gaiad-v25.3.0-linux-arm64?checksum=sha256:66b904efa14442cc6a8bfbc1284d968b09b51cc914fe2f2c604907c9228334f3"}}'
-  name: v25.3.0
+  height: "15759100"
+  info: '{"binaries": {"darwin/amd64": "https://github.com/cosmos/gaia/releases/download/v26.0.0-rc0/gaiad-v26.0.0-rc0-darwin-amd64?checksum=sha256:2a83c58734274cba27eac2651967a6c3f271bb66009551a2a37ec4ff8aa1c22e",
+    "darwin/arm64": "https://github.com/cosmos/gaia/releases/download/v26.0.0-rc0/gaiad-v26.0.0-rc0-darwin-arm64?checksum=sha256:ebfa99daf57165a741d0fb3869dddff37990f85df3fc393cabc58fe6b572952f",
+    "linux/amd64": "https://github.com/cosmos/gaia/releases/download/v26.0.0-rc0/gaiad-v26.0.0-rc0-linux-amd64?checksum=sha256:cb83ab849c61a8450bf7389a12424700e3bd416ab44ced823e25d5d426dfa243",
+    "linux/arm64": "https://github.com/cosmos/gaia/releases/download/v26.0.0-rc0/gaiad-v26.0.0-rc0-linux-arm64?checksum=sha256:f67cfdebed6e0b8f9213076db0770a8db8a89b0b029719e36420a618cafd6fb0"}}'
+  name: v26.0.0
   time: "0001-01-01T00:00:00Z"
 ```
 
@@ -31,7 +31,7 @@ plan:
 2. Wait for the node to stop at the upgrade height.
    * The log will display something like this:
      ```
-     ERR UPGRADE "v25.3.0" NEEDED at height: 15412400: upgrade to v25.3.0 and applying upgrade "v25.3.0" at height:15412400
+     ERR UPGRADE "v26.0.0" NEEDED at height: 15759100: upgrade to v26.0.0 and applying upgrade "v26.0.0" at height:15759100
      ```
   * If the node service remains active, you can stop it now.
 3. Replace the binary listed in the unit file with the new release.
@@ -41,17 +41,17 @@ plan:
 
 1. Build or download the binary for the release you are upgrading to.
 2. Create a folder for the new binary in the relevant Cosmovisor directory.
-   * If the upgrade name is `v25.3.0`, you would place the binary under `<node home>/cosmovisor/upgrades/v25.3.0/bin/gaiad`:
+   * If the upgrade name is `v26.0.0`, you would place the binary under `<node home>/cosmovisor/upgrades/v26.0.0/bin/gaiad`:
      ```
      .
      ├── current -> genesis or upgrades/<name>
      ├── genesis
      │   └── bin
-     │       └── gaiad  # old: v25.2.0
+     │       └── gaiad  # old: v25.3.2
      └── upgrades
-         └── v25.3.0
+         └── v26.0.0
              └── bin
-                 └── gaiad  # new: v25.3.0
+                 └── gaiad  # new: v26.0.0
      ```
 3. Verify that Cosmovisor will use the binary you have prepared.
    * The Cosmovisor service should have the auto-download feature disabled. A sample Cosmovisor unit file will look like this:
