@@ -5,23 +5,23 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v25.3.0`](https://github.com/cosmos/gaia/releases/tag/v25.3.0), upgraded from v25.2.0 at block height `15412400`.
+* **Current Gaia Version**: [`v26.0.0-rc0`](https://github.com/cosmos/gaia/releases/tag/v26.0.0-rc0), upgraded from v25.3.0 at block height `15412400`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v26.0.0-rc0 Upgrade
+## v27.0.0-rc0 Upgrade
 
-The provider chain will upgrade to Gaia `v26.0.0-rc0` on **January 29, 2026**
+The provider chain will upgrade to Gaia `v27.0.0-rc0` on **TBD**
 
-* Upgrade height: `15759100`
+<!-- * Upgrade height: `15759100`
   * Estimated upgrade time: `14:30 UTC`
   * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/15759100
   * Proposal 296: https://explorer.polypore.xyz/provider/gov/296
 * Upgrade name: `v26.0.0`
 * Release page: https://github.com/cosmos/gaia/releases/tag/v26.0.0-rc0
-  * Build Go version: `v1.24.12`
+  * Build Go version: `v1.24.12` -->
 <!-- * ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
   1. Set the upgrade height in your node(s) `app.toml` and restart the node.
       ```toml
@@ -228,3 +228,4 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * Replace the `v25.1.0` binary with the `v25.1.1` one.
 * When the node reaches height `14571900`, it will attempt to upgrade to Gaia `v25.2.0`. You can use Cosmovisor's auto-download feature or install the `v25.2.0` release binary.
 * When the node reaches height `15412400`, it will attempt to upgrade to Gaia `v25.3.0`. You can use Cosmovisor's auto-download feature or install the `v25.3.0` release binary.
+* When the node reaches height `15759100`, it will attempt to upgrade to Gaia `v26.0.0`. You can use Cosmovisor's auto-download feature or install the `v26.0.0-rc0` release binary.
