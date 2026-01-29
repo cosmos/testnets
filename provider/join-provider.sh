@@ -16,7 +16,7 @@ NODE_KEY_FILE=~/node_key.json
 NODE_HOME=~/.gaia
 NODE_MONIKER=provider
 SERVICE_NAME=provider
-GAIA_VERSION=v25.3.0
+GAIA_VERSION=v26.0.0-rc0
 CHAIN_BINARY_URL=https://github.com/cosmos/gaia/releases/download/$GAIA_VERSION/gaiad-$GAIA_VERSION-linux-amd64
 STATE_SYNC=true
 GAS_PRICE=0.005uatom
@@ -24,12 +24,12 @@ GAS_PRICE=0.005uatom
 
 CHAIN_BINARY='gaiad'
 CHAIN_ID=provider
-GENESIS_URL=https://github.com/cosmos/testnets/raw/master/interchain-security/provider/provider-genesis.json
-SEEDS="08ec17e86dac67b9da70deb20177655495a55407@provider-seed-01.ics-testnet.polypore.xyz:26656,4ea6e56300a2f37b90e58de5ee27d1c9065cf871@provider-seed-02.ics-testnet.polypore.xyz:26656"
-SYNC_RPC_1=https://rpc.provider-state-sync-01.ics-testnet.polypore.xyz:443
-SYNC_RPC_2=https://rpc.provider-state-sync-02.ics-testnet.polypore.xyz:443
+GENESIS_URL=https://raw.githubusercontent.com/cosmos/testnets/refs/heads/master/provider/provider-genesis.json
+SEEDS="08ec17e86dac67b9da70deb20177655495a55407@provider-seed-01.hub-testnet.polypore.xyz:26656,4ea6e56300a2f37b90e58de5ee27d1c9065cf871@provider-seed-02.hub-testnet.polypore.xyz:26656"
+SYNC_RPC_1=https://rpc.provider-state-sync-01.hub-testnet.polypore.xyz:443
+SYNC_RPC_2=https://rpc.provider-state-sync-02.hub-testnet.polypore.xyz:443
 SYNC_RPC_SERVERS="$SYNC_RPC_1,$SYNC_RPC_2"
-SNAPSHOT_URL=https://snapshots.polypore.xyz/ics-testnet/provider/latest.tar.gz
+SNAPSHOT_URL=https://snapshots.polypore.xyz/hub-testnet/provider/latest.tar.gz
 SNAPSHOT=false
 
 for i in "$@"; do
