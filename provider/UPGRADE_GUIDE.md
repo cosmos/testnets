@@ -31,7 +31,7 @@ plan:
 2. Wait for the node to stop at the upgrade height.
    * The log will display something like this:
      ```
-     ERR UPGRADE "v26.0.0" NEEDED at height: 16150500: upgrade to v27.0.0 and applying upgrade "v27.0.0" at height:16150500
+     ERR UPGRADE "v27.0.0" NEEDED at height: 16150500: upgrade to v27.0.0 and applying upgrade "v27.0.0" at height:16150500
      ```
   * If the node service remains active, you can stop it now.
 3. Replace the binary listed in the unit file with the new release.
