@@ -14,14 +14,14 @@ A governance gated upgrade occurs when an upgrade plan goes on chain through a s
 
 You can query the upgrade name for governance-gated upgrades with the following command:
 ```
-gaiad q upgrade plan                                         
+gaiad q upgrade plan
 plan:
-  height: "16150500"
-  info: '{"binaries": {"darwin/amd64": "https://github.com/cosmos/gaia/releases/download/v27.0.0-rc0/gaiad-v27.0.0-rc0-darwin-amd64?checksum=sha256:9b687f8d9dee0731cbc14c59b211c4dce82acf513428942665444bbf46523807",
-    "darwin/arm64": "https://github.com/cosmos/gaia/releases/download/v27.0.0-rc0/gaiad-v27.0.0-rc0-darwin-arm64?checksum=sha256:3dc73ccde40a94a3b16ad7d79cb4501e9fc666c34e712dbf2e170dbe29711de6",
-    "linux/amd64": "https://github.com/cosmos/gaia/releases/download/v27.0.0-rc0/gaiad-v27.0.0-rc0-linux-amd64?checksum=sha256:7bf8df26b45334a90d7c585f2ebed537abb2c76e4e4e1a2ea70cd7bb9fde9e92",
-    "linux/arm64": "https://github.com/cosmos/gaia/releases/download/v27.0.0-rc0/gaiad-v27.0.0-rc0-linux-arm64?checksum=sha256:06b48c94337760184752cbb2059e258b468ba7124389f2c9d93a18a53c1e843e"}}'
-  name: v27.0.0
+  height: "16463900"
+  info: '{"binaries": {"darwin/amd64": "https://github.com/cosmos/gaia/releases/download/v27.1.0-rc0/gaiad-v27.1.0-rc0-darwin-amd64?checksum=sha256:18acf9457cb1771cdf38e8b8eaf5bc6a0fe01eff6c33ca9fd7b80a4629fa9020",
+    "darwin/arm64": "https://github.com/cosmos/gaia/releases/download/v27.1.0-rc0/gaiad-v27.1.0-rc0-darwin-arm64?checksum=sha256:0ee4e50339f24c1df8c30dbd5b71321d6c51528928aa79e3a9ebd6c5e91f03c5",
+    "linux/amd64": "https://github.com/cosmos/gaia/releases/download/v27.1.0-rc0/gaiad-v27.1.0-rc0-linux-amd64?checksum=sha256:16cd0d4ed8446c9466700599bcfe1a2eb594b6de31fcfa8ca48513bc82be4b25",
+    "linux/arm64": "https://github.com/cosmos/gaia/releases/download/v27.1.0-rc0/gaiad-v27.1.0-rc0-linux-arm64?checksum=sha256:d6f0db476c436274c2e7b5fe8757806c9166d78b1cbff29e8fa80451dc6a016e"}}'
+  name: v27.1.0
   time: "0001-01-01T00:00:00Z"
 ```
 
@@ -31,7 +31,7 @@ plan:
 2. Wait for the node to stop at the upgrade height.
    * The log will display something like this:
      ```
-     ERR UPGRADE "v27.0.0" NEEDED at height: 16150500: upgrade to v27.0.0 and applying upgrade "v27.0.0" at height:16150500
+     ERR UPGRADE "v27.1.0" NEEDED at height: 16463900: upgrade to v27.1.0 and applying upgrade "v27.1.0" at height:16150500
      ```
   * If the node service remains active, you can stop it now.
 3. Replace the binary listed in the unit file with the new release.
@@ -41,17 +41,17 @@ plan:
 
 1. Build or download the binary for the release you are upgrading to.
 2. Create a folder for the new binary in the relevant Cosmovisor directory.
-   * If the upgrade name is `v27.0.0`, you would place the binary under `<node home>/cosmovisor/upgrades/v27.0.0/bin/gaiad`:
+   * If the upgrade name is `v27.1.0`, you would place the binary under `<node home>/cosmovisor/upgrades/v27.1.0/bin/gaiad`:
      ```
      .
      ├── current -> genesis or upgrades/<name>
      ├── genesis
      │   └── bin
-     │       └── gaiad  # old: v26.0.0
+     │       └── gaiad  # old: v27.0.0
      └── upgrades
-         └── v27.0.0
+         └── v27.1.0
              └── bin
-                 └── gaiad  # new: v27.0.0
+                 └── gaiad  # new: v27.1.0
      ```
 3. Verify that Cosmovisor will use the binary you have prepared.
    * The Cosmovisor service should have the auto-download feature disabled. A sample Cosmovisor unit file will look like this:
