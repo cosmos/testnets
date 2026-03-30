@@ -11,7 +11,10 @@ In this demo day, we will explore the gas surcharge for multi-send transactions 
 
 ### Tasks
 
-* (1 point) [Task 1](#task-1-send-multi-send-transaction): Send a multi-send transaction that lists at least 10 recipients.
+* (1 point) Task 1: Send a multi-send transaction that lists at least 10 recipients.
+    ```
+    gaiad tx bank multi-send <self-delegation wallet> <recipient 1> <recipient 2>...<recipient n> <amount> --from <self delegation wallet> --gas auto --gas-adjustment 1.2 --gas-prices 0.005uatom --chain-id provider -y
+    ```
 
 ## The `multi-send` Gas Surcharge
 
@@ -28,9 +31,3 @@ gas_surcharge = 300 * <recipients>^2
 
 The number of recipients is capped to 500, but the gas limit per block (currently set to `75_000_000`) means the actual limit is less than that.
 
-### Task 1: Send multi-send transaction
-
-* Send a `bank multi-send` transaction from your self-delegation wallet.
-```
-gaiad tx bank multi-send <self-delegation wallet> <recipient 1> <recipient 2>...<recipient n> <amount> --from <self delegation wallet> --gas auto --gas-adjustment 1.2 --gas-prices 0.005uatom --chain-id provider -y
-```
