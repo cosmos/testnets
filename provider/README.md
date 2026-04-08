@@ -13,7 +13,7 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 ## v28.0.0 Upgrade
 
-The provider chain will upgrade to Gaia `v28.2.0` on **TBD**
+The provider chain will upgrade to Gaia `v28.0.0` on **TBD**
 
 <!-- * Upgrade height: `16776100`
   * Estimated upgrade time: `14:30 UTC`
