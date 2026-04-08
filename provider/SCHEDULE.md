@@ -2,7 +2,7 @@
 
 | Date                   | Testnet Incentives Program Period | Type                       | Description                                                                                                                                              |
 | ---------------------- | --------------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| April 7 2026           | -                                 | Minor upgrade              | Provider chain upgrades to Gaia v27.2.0-rc0                                                                                                              |
+| April 7 2026           | -                                 | Minor upgrade              | ✅ Provider chain upgrades to Gaia v27.2.0-rc0                                                                                                              |
 | March 31 2026          | -                                 | Demo Day                   | ✅ Demo day # 24: Multi-send gas surcharge                                                                                                                |
 | March 17 2026          | -                                 | Minor upgrade              | ✅ Provider chain upgrades to Gaia v27.1.0-rc0                                                                                                            |
 | February 24 2026       | -                                 | Major upgrade              | ✅ Provider chain upgrades to Gaia v27.0.0-rc0                                                                                                            |
