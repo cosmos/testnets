@@ -28,7 +28,7 @@ For this demo day, we will ask validators to create and mint tokens using a samp
 * Instantiate contract with code `360`.
 
 ```
-txhash=$(gaiad tx wasm instantiate 360 "{}" --label "Token Factory Contract" --no-admin --from <self-delegation address> --gas-prices 0.005uatom --gas auto --gas-adjustment 1.5 -y)
+txhash=$(gaiad tx wasm instantiate 360 "{}" --label "Token Factory Contract" --no-admin --from <self-delegation address> --gas-prices 0.005uatom --gas auto --gas-adjustment 1.5 -o json -y | jq -r '.txhash')
 ```
 * Save the contract address.
 ```
