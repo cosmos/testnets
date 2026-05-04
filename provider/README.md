@@ -15,13 +15,13 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 The provider chain will upgrade to Gaia `v27.3.0-rc0` on **May 5, 2026**
 
-<!-- * Upgrade height: `16776100`
-  * Estimated upgrade time: `14:30 UTC`
-  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/16776100
-  * Proposal 299: https://explorer.polypore.xyz/provider/gov/299
-* Upgrade name: `v27.2.0`
-* Release page: https://github.com/cosmos/gaia/releases/tag/v27.2.0-rc0
-  * Build Go version: `v1.25.7` -->
+* Upgrade height: `17185100`
+  * Estimated upgrade time: `13:30 UTC`
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/17185100
+  * Proposal 300: https://explorer.polypore.xyz/provider/gov/300
+* Upgrade name: `v27.3.0`
+* Release page: https://github.com/cosmos/gaia/releases/tag/v27.3.0-rc0
+  * Build Go version: `v1.25.7`
 <!-- * ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
   1. Set the upgrade height in your node(s) `app.toml` and restart the node.
       ```toml
