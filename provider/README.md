@@ -13,7 +13,7 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 ## v27.4.0-rc0 Upgrade
 
-The provider chain will upgrade to Gaia `v27.4.0-rc0` on **TBD**
+The provider chain will upgrade to Gaia `v27.4.0-rc0` on **May 26, 2026**
 
 * Upgrade height: `17475900`
   * Estimated upgrade time: `13:30 UTC`
