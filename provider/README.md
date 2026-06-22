@@ -11,17 +11,17 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v28.0.0-rc0 Upgrade
+## v27.5.0-rc0 Upgrade
 
-The provider chain will upgrade to Gaia `v28.0.0-rc0` on **TBD**
+The provider chain will upgrade to Gaia `v27.5.0-rc0` on **June 23, 2026**
 
-<!-- * Upgrade height: `17475900`
+* Upgrade height: `17868500`
   * Estimated upgrade time: `13:30 UTC`
-  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/17475900
-  * Proposal 301: https://explorer.polypore.xyz/provider/gov/301
-* Upgrade name: `v27.4.0`
-* Release page: https://github.com/cosmos/gaia/releases/tag/v27.4.0-rc0
-  * Build Go version: `v1.25.7` -->
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/17868500
+  * Proposal 317: https://explorer.polypore.xyz/provider/gov/317
+* Upgrade name: `v27.5.0`
+* Release page: https://github.com/cosmos/gaia/releases/tag/v27.5.0-rc0
+  * Build Go version: `v1.25.7`
 <!-- * ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
   1. Set the upgrade height in your node(s) `app.toml` and restart the node.
       ```toml
@@ -234,3 +234,4 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * When the node reaches height `16776100`, it will attempt to upgrade to Gaia `v27.2.0`. You can use Cosmovisor's auto-download feature or install the `v27.2.0-rc0` release binary.
 * When the node reaches height `17185100`, it will attempt to upgrade to Gaia `v27.3.0`. You can use Cosmovisor's auto-download feature or install the `v27.3.0-rc0` release binary.
 * When the node reaches height `17475900`, it will attempt to upgrade to Gaia `v27.4.0`. You can use Cosmovisor's auto-download feature or install the `v27.4.0-rc0` release binary.
+* When the node reaches height `17868500`, it will attempt to upgrade to Gaia `v27.5.0`. You can use Cosmovisor's auto-download feature or install the `v27.5.0-rc0` release binary.
