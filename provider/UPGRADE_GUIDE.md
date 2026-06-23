@@ -47,7 +47,7 @@ plan:
      │   └── bin
      │       └── gaiad  # old: v27.4.0
      └── upgrades
-         └── v27.4.0
+         └── v27.5.0
              └── bin
                  └── gaiad  # new: v27.5.0
      ```
