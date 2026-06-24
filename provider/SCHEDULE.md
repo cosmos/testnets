@@ -2,7 +2,7 @@
 
 | Date                   | Testnet Participation Period | Type                       | Description                                                                                                                                              |
 | ---------------------- | ---------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| June 23 2026           | June 2026                    | Minor upgrade              | Provider chain upgrades to Gaia v27.5.0-rc0                                                                                                              |
+| June 23 2026           | June 2026                    | Minor upgrade              | ✅ Provider chain upgrades to Gaia v27.5.0-rc0                                                                                                              |
 | May 26 2026            | May 2026                     | Minor upgrade              | ✅ Provider chain upgrades to Gaia v27.4.0-rc0                                                                                                            |
 | May 5 2026             | May 2026                     | Minor upgrade              | ✅ Provider chain upgrades to Gaia v27.3.0-rc0                                                                                                            |
 | April 28 2026          | -                            | Demo Day                   | ✅ Demo day # 25: Tokenfactory and wasm                                                                                                                   |
