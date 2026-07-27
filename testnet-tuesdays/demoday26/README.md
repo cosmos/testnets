@@ -46,7 +46,6 @@ You can query proposal 320 this way:
 gaiad q wasm contract-state smart cosmos1r4dkjfa30fk74rgc3wuk44rn2xaf27j4yrxxllgxvf2um7fhl36q3ww0vc '{"proposal":{"proposal_id":320}}'
 ```
 
-
 ### Query a validator
 
 * Contract reference: [validator-query](https://github.com/hyphacoop/cosmos-wasm-samples/tree/main/validator-query)
