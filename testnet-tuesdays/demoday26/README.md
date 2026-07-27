@@ -1,4 +1,4 @@
-# Testnet Demo Day #26: CosmWasm Configs
+# Testnet Demo Day # 26: CosmWasm Configs
 
 Gaia v27.6.0 introduced the following changes to the CosmWasm configuration:
 
