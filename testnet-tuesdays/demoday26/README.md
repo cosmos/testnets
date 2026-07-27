@@ -5,7 +5,7 @@ Gaia v27.6.0 introduced the following changes to the CosmWasm configuration:
 * The maximum contract size has been increased from 800 KiB to 1.6MiB (`1_677_722` bytes)
 * The gRPC query allowlist now includes the following paths:
   * `/cosmos.staking.v1beta1.Query/Validator`
-		`/cosmos.gov.v1.Query/Proposal`
+	*	`/cosmos.gov.v1.Query/Proposal`
 
 We will use this demo day to demonstrate these changes.
 
