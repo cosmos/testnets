@@ -16,7 +16,7 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 The provider chain will upgrade to Gaia `v28.0.0-rc0` on **August 11, 2026**
 
 * Upgrade height: `18545900`
-  * Estimated upgrade time: `13:30 UTC`
+  * Estimated upgrade time: `13:20 UTC`
   * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/18545900
   * Proposal 323: https://explorer.polypore.xyz/provider/gov/323
 * Upgrade name: `v28.0.0`
