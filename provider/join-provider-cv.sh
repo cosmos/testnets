@@ -16,7 +16,7 @@ NODE_KEY_FILE=~/node_key.json
 NODE_HOME=~/.gaia
 NODE_MONIKER=provider
 SERVICE_NAME=cv-provider
-GAIA_VERSION=v27.6.0-rc0
+GAIA_VERSION=v28.0.0-rc0
 CHAIN_BINARY_URL=https://github.com/cosmos/gaia/releases/download/$GAIA_VERSION/gaiad-$GAIA_VERSION-linux-amd64
 STATE_SYNC=true
 GAS_PRICE=0.005uatom
@@ -42,7 +42,8 @@ for i in "$@"; do
 done
 
 # Install wget and jq
-sudo apt-get install curl jq wget -y
+sudo apt update
+sudo apt install curl jq wget -y
 mkdir -p $HOME/go/bin
 export PATH=$PATH:$HOME/go/bin
 
