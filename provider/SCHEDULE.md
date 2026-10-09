@@ -2,7 +2,8 @@
 
 | Date                   | Testnet Participation Period | Type                       | Description                                                                                                                                              |
 | ---------------------- | ---------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| September 17 2026      | -                            | Minor upgrade              | Provider chain upgrades to Gaia v28.2.0                                                                                                                  |
+| October 13 2026        | October 2026                 | Major upgrade              | Provider chain upgrades to Gaia v29.0.0-rc0                                                                                                              |
+| September 17 2026      | -                            | Minor upgrade              | ✅ Provider chain upgrades to Gaia v28.2.0                                                                                                                |
 | August 11 2026         | August 2026                  | Major upgrade              | ✅ Provider chain upgrades to Gaia v28.0.0-rc0                                                                                                            |
 | July 28 2026           | July 2026                    | Demo Day                   | ✅ Demo day # 26: CosmWasm                                                                                                                                |
 | July 21 2026           | July 2026                    | Minor upgrade              | ✅ Provider chain upgrades to Gaia v27.6.0-rc0                                                                                                            |
