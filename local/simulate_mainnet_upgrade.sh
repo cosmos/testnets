@@ -6,25 +6,25 @@ export GENESIS_URL=
 
 # ********** COSMOS HUB> **********
 export CHAIN_ID=cosmoshub-4
-export START_VERSION="v21.0.1"
-export FORK_BRANCH="release/v21.x"
-export UPGRADE_NAME=v22
+export START_VERSION="v28.3.1"
+export FORK_BRANCH="release/v28.x"
+export UPGRADE_NAME=v29.0.0
 # ********** <COSMOS HUB **********
 
 export NODE_HOME="$(pwd)/.gaia"
 export NODE_MONIKER=upgrade-test
 export BINARY=gaiad
-export UPGRADE_VERSION="$UPGRADE_NAME.0.0-rc0"
-export PATH="$HOME/go/bin:/usr/local/go/bin:$PATH"
+export UPGRADE_VERSION="$UPGRADE_NAME-rc0"
+export PATH="$PATH:$HOME/go/bin:/usr/local/go/bin"
 
 echo "*** 1. SET UP NODE ***"
 echo ">>> Installing Go and Gaia <<<"
 sudo apt update
 sudo apt upgrade -y
 sudo apt install git build-essential lz4 -y
-curl -OL https://golang.org/dl/go1.22.6.linux-amd64.tar.gz
-sudo tar -C /usr/local -xvf go1.22.6.linux-amd64.tar.gz
-rm go1.22.6.linux-amd64.tar.gz
+wget -4 https://golang.org/dl/go1.25.7.linux-amd64.tar.gz
+sudo tar -C /usr/local -xvf go1.25.7.linux-amd64.tar.gz
+rm go1.25.7.linux-amd64.tar.gz
 
 # Build a starting binary,
 
@@ -55,6 +55,7 @@ wget $GENESIS_URL -O $NODE_HOME/config/genesis.json
 
 echo ">>> Downloading snapshot <<<"
 wget $SNAPSHOT_URL -O snapshot.tar.lz4
+echo ">>> Extracting snapshot <<<"
 lz4 -c -d snapshot.tar.lz4  | tar -x -C $NODE_HOME
 
 echo ">>> Adding validator account <<<"
@@ -72,7 +73,7 @@ cp build/gaiad $HOME/go/bin/gaiad-fork
 cd ..
 rm -rf gaia
 echo ">>> Forking the chain with a single validator <<<"
-tmux new-session -d -s fork "$HOME/go/bin/gaiad-fork testnet unsafe-start-local-validator --validator-operator $valoper --validator-pubkey $(jq -r '.pub_key.value' $NODE_HOME/config/priv_validator_key.json) --validator-privkey $(jq -r '.priv_key.value' $NODE_HOME/config/priv_validator_key.json) --accounts-to-fund $wallet --home $NODE_HOME"
+tmux new-session -d -s fork "$HOME/go/bin/gaiad-fork testnet unsafe-start-local-validator --validator-operator $valoper --validator-pubkey $(jq -r '.pub_key.value' $NODE_HOME/config/priv_validator_key.json) --validator-privkey $(jq -r '.priv_key.value' $NODE_HOME/config/priv_validator_key.json) --accounts-to-fund $wallet --fund-amount 50000000000000 --validator-tokens 1000000000000000 --auto-find-target --home $NODE_HOME 2>&1 | tee -i $HOME/fork.log"
 sleep 1m
 $BINARY status
 tmux send-keys -t fork C-c
@@ -80,7 +81,7 @@ tmux send-keys -t fork C-c
 echo "*** 3. START CHAIN ***"
 echo ">>> Installing Cosmovisor <<<"
 export GO111MODULE=on
-go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.7.0
+go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.7.3
 export DAEMON_NAME=gaiad
 export DAEMON_HOME=$NODE_HOME
 cosmovisor init $HOME/go/bin/$BINARY
@@ -91,9 +92,11 @@ export DAEMON_RESTART_AFTER_UPGRADE=true
 export DAEMON_ALLOW_DOWNLOAD_BINARIES=true
 export DAEMON_LOG_BUFFER_SIZE=512
 export UNSAFE_SKIP_BACKUP=true
-tmux new-session -d -s cosmovisor "$HOME/go/bin/cosmovisor run start --x-crisis-skip-assert-invariants --home $NODE_HOME"
+# Remove stale upgrade marker from the mainnet snapshot
+rm -f $NODE_HOME/data/upgrade-info.json
+tmux new-session -d -s cosmovisor "$HOME/go/bin/cosmovisor run start --home $NODE_HOME 2>&1 | tee -i $HOME/cosmovisor.log"
 echo ">>> Waiting for chain to start <<<"
-sleep 2m
+sleep 1m
 
 echo "*** 4. UPGRADE CHAIN ***"
 echo ">>> Delegating from funded account <<<"
