@@ -16,8 +16,8 @@ You can query the upgrade name for governance-gated upgrades with the following 
 ```
 gaiad q upgrade plan
 plan:
-  height: "19056100"
-  name: v28.2.0
+  height: "19412500"
+  name: v29.0.0
   time: "0001-01-01T00:00:00Z"
 ```
 
@@ -27,7 +27,7 @@ plan:
 2. Wait for the node to stop at the upgrade height.
    * The log will display something like this:
      ```
-     ERR UPGRADE "v28.2.0" NEEDED at height: <upgrade height>: upgrade to v28.2.0 and applying upgrade "v28.2.0" at height:<upgrade height>
+     ERR UPGRADE "v29.0.0" NEEDED at height: <upgrade height>: upgrade to v29.0.0 and applying upgrade "v29.0.0" at height:<upgrade height>
      ```
   * If the node service remains active, you can stop it now.
 3. Replace the binary listed in the unit file with the new release.
@@ -37,17 +37,17 @@ plan:
 
 1. Build or download the binary for the release you are upgrading to.
 2. Create a folder for the new binary in the relevant Cosmovisor directory.
-   * If the upgrade name is `v28.2.0`, you would place the binary under `<node home>/cosmovisor/upgrades/v28.2.0/bin/gaiad`:
+   * If the upgrade name is `v29.0.0`, you would place the binary under `<node home>/cosmovisor/upgrades/v29.0.0/bin/gaiad`:
      ```
      .
      ├── current -> genesis or upgrades/<name>
      ├── genesis
      │   └── bin
-     │       └── gaiad  # old: v28.0.0
+     │       └── gaiad  # old: v28.2.0
      └── upgrades
-         └── v28.2.0
+         └── v29.0.0
              └── bin
-                 └── gaiad  # new: v28.2.0
+                 └── gaiad  # new: v29.0.0
      ```
 3. Verify that Cosmovisor will use the binary you have prepared.
    * The Cosmovisor service should have the auto-download feature disabled. A sample Cosmovisor unit file will look like this:
