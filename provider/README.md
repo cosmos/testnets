@@ -15,10 +15,10 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 The provider chain will upgrade to Gaia `v29.0.0-rc0` on **October 13, 2026**
 
-* Upgrade height: `TBA`
+* Upgrade height: `TBD`
   * Estimated upgrade time: `14:30 UTC`
-  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/TBA
-  * Proposal TBA: https://explorer.polypore.xyz/provider/gov/TBA
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/TBD
+  * Proposal TBD: https://explorer.polypore.xyz/provider/gov/TBD
 * Upgrade name: `v29.0.0`
 
 <!-- * ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
