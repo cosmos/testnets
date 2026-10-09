@@ -96,7 +96,7 @@ export UNSAFE_SKIP_BACKUP=true
 rm -f $NODE_HOME/data/upgrade-info.json
 tmux new-session -d -s cosmovisor "$HOME/go/bin/cosmovisor run start --home $NODE_HOME 2>&1 | tee -i $HOME/cosmovisor.log"
 echo ">>> Waiting for chain to start <<<"
-sleep 1m
+sleep 2m
 
 echo "*** 4. UPGRADE CHAIN ***"
 echo ">>> Delegating from funded account <<<"
