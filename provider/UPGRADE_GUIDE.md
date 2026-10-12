@@ -16,7 +16,9 @@ You can query the upgrade name for governance-gated upgrades with the following 
 ```
 gaiad q upgrade plan
 plan:
-  height: "19412500"
+  height: "19412200"
+  info: '{"binaries": {"darwin/amd64": "https://github.com/cosmos/gaia/releases/download/v29.0.0-rc0/gaiad-v29.0.0-rc0-darwin-amd64?checksum=sha256:a5cddfc386bd3fb584cda3738820b69d8743db9e01956f0e6abf6c2bff116932",
+    "linux/amd64": "https://github.com/cosmos/gaia/releases/download/v29.0.0-rc0/gaiad-v29.0.0-rc0-linux-amd64?checksum=sha256:6590a407f475f9fe4521b961255dea2d29665723208fdf7c239cf7db2b27c39f"}}'
   name: v29.0.0
   time: "0001-01-01T00:00:00Z"
 ```
