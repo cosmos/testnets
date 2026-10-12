@@ -15,10 +15,10 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 The provider chain will upgrade to Gaia `v29.0.0-rc0` on **October 13, 2026**
 
-* Upgrade height: `TBD`
+* Upgrade height: `19412200`
   * Estimated upgrade time: `14:30 UTC`
-  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/TBD
-  * Proposal TBD: https://explorer.polypore.xyz/provider/gov/TBD
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/19412200
+  * Proposal 329: https://explorer.polypore.xyz/provider/gov/329
 * Upgrade name: `v29.0.0`
 
 <!-- * ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
@@ -237,3 +237,4 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * When the node reaches height `18257200`, it will attempt to upgrade to Gaia `v27.6.0`. You can use Cosmovisor's auto-download feature or install the `v27.6.0-rc0` release binary.
 * When the node reaches height `18545900`, it will attempt to upgrade to Gaia `v28.0.0`. You can use Cosmovisor's auto-download feature or install the `v28.0.0-rc0` release binary.
 * When the node reaches height `19056100`, it will attempt to upgrade to Gaia `v28.2.0`. You must switch to the `v28.2.0` binary.
+* When the node reaches height `19412200`, it will attempt to upgrade to Gaia `v29.0.0`. You can use Cosmovisor's auto-download feature or install the `v29.0.0-rc0` release binary.
