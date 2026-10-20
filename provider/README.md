@@ -94,6 +94,18 @@ The scripts provided in this repo will install Gaia and optionally set up a Cosm
 
 You can choose to (not) use state sync. Your node will sync much faster if you use state sync, but it will not keep all the state locally.
 
+### Hardware Requirements
+
+Minimum
+* 4 CPUs
+* 16GB Memory
+* 500GB SSD
+
+Recommended
+* 8 CPUs
+* 32GB Memory
+* 1TB NVME
+
 ### Bash Script
 
 Run either one of the scripts provided in this repo to join the provider chain:
