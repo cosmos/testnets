@@ -5,7 +5,7 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v29.0.0-rc0`](https://github.com/cosmos/gaia/releases/tag/v29.0.0-rc0), upgraded from v28.2.0 at block height `19412200`.
+* **Current Gaia Version**: [`v29.0.1`](https://github.com/cosmos/gaia/releases/tag/v29.0.1), upgraded from v29.0.0-rc0 at block height `19549500`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
@@ -250,3 +250,4 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * When the node reaches height `18545900`, it will attempt to upgrade to Gaia `v28.0.0`. You can use Cosmovisor's auto-download feature or install the `v28.0.0-rc0` release binary.
 * When the node reaches height `19056100`, it will attempt to upgrade to Gaia `v28.2.0`. You must switch to the `v28.2.0` binary.
 * When the node reaches height `19412200`, it will attempt to upgrade to Gaia `v29.0.0`. You can use Cosmovisor's auto-download feature or install the `v29.0.0-rc0` release binary.
+* When the node reaches height `19549500`, replace the binary with the `v29.0.1` version.
