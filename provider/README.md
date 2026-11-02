@@ -11,15 +11,15 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v30.0.0-rc0 Upgrade
+## v29.1.0-rc0 Upgrade
 
-The provider chain will upgrade to Gaia `v30.0.0-rc0` on **TBD**
+The provider chain will upgrade to Gaia `v29.1.0-rc0` on **November 3, 2026**
 
-<!-- * Upgrade height: `19412200`
-  * Estimated upgrade time: `14:30 UTC`
-  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/19412200
-  * Proposal 329: https://explorer.polypore.xyz/provider/gov/329
-* Upgrade name: `v29.0.0` -->
+* Upgrade height: `19696000`
+  * Estimated upgrade time: `13:00 UTC`
+  * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/19696000
+  * Proposal 332: https://explorer.polypore.xyz/provider/gov/332
+* Upgrade name: `v29.1.0`
 
 <!-- * ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
   1. Set the upgrade height in your node(s) `app.toml` and restart the node.
@@ -251,3 +251,4 @@ Run the script, and then follow the procedure below to upgrade to the latest ver
 * When the node reaches height `19056100`, it will attempt to upgrade to Gaia `v28.2.0`. You must switch to the `v28.2.0` binary.
 * When the node reaches height `19412200`, it will attempt to upgrade to Gaia `v29.0.0`. You can use Cosmovisor's auto-download feature or install the `v29.0.0-rc0` release binary.
 * When the node reaches height `19549500`, replace the binary with the `v29.0.1` version.
+* When the node reaches height `19695950`, it will attempt to upgrade to Gaia `v29.1.0`. You can use Cosmovisor's auto-download feature or install the `v29.1.0-rc0` release binary.

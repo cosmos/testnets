@@ -16,10 +16,9 @@ You can query the upgrade name for governance-gated upgrades with the following 
 ```
 gaiad q upgrade plan
 plan:
-  height: "19412200"
-  info: '{"binaries": {"darwin/amd64": "https://github.com/cosmos/gaia/releases/download/v29.0.0-rc0/gaiad-v29.0.0-rc0-darwin-amd64?checksum=sha256:a5cddfc386bd3fb584cda3738820b69d8743db9e01956f0e6abf6c2bff116932",
-    "linux/amd64": "https://github.com/cosmos/gaia/releases/download/v29.0.0-rc0/gaiad-v29.0.0-rc0-linux-amd64?checksum=sha256:6590a407f475f9fe4521b961255dea2d29665723208fdf7c239cf7db2b27c39f"}}'
-  name: v29.0.0
+  height: "19696000"
+  info: '{"binaries":{"darwin/amd64":"https://github.com/cosmos/gaia/releases/download/v29.1.0-rc0/gaiad-v29.1.0-rc0-darwin-amd64?checksum=sha256:f22a5f58898310d273ed249561a5365d7aeb466a6633642b6c3bc863e3cf2ebd","linux/amd64":"https://github.com/cosmos/gaia/releases/download/v29.1.0-rc0/gaiad-v29.1.0-rc0-linux-amd64?checksum=sha256:98794d7d1231fc88ec864549506f966fff999304edfad67a00611da7ddc5f5d4"}}'
+  name: v29.1.0
   time: "0001-01-01T00:00:00Z"
 ```
 
@@ -29,7 +28,7 @@ plan:
 2. Wait for the node to stop at the upgrade height.
    * The log will display something like this:
      ```
-     ERR UPGRADE "v29.0.0" NEEDED at height: <upgrade height>: upgrade to v29.0.0 and applying upgrade "v29.0.0" at height:<upgrade height>
+     ERR UPGRADE "v29.1.0" NEEDED at height: <upgrade height>: upgrade to v29.1.0 and applying upgrade "v29.1.0" at height:<upgrade height>
      ```
   * If the node service remains active, you can stop it now.
 3. Replace the binary listed in the unit file with the new release.
@@ -39,17 +38,17 @@ plan:
 
 1. Build or download the binary for the release you are upgrading to.
 2. Create a folder for the new binary in the relevant Cosmovisor directory.
-   * If the upgrade name is `v29.0.0`, you would place the binary under `<node home>/cosmovisor/upgrades/v29.0.0/bin/gaiad`:
+   * If the upgrade name is `v29.1.0`, you would place the binary under `<node home>/cosmovisor/upgrades/v29.1.0/bin/gaiad`:
      ```
      .
      ├── current -> genesis or upgrades/<name>
      ├── genesis
      │   └── bin
-     │       └── gaiad  # old: v28.2.0
+     │       └── gaiad  # old: v29.0.1
      └── upgrades
-         └── v29.0.0
+         └── v29.1.0
              └── bin
-                 └── gaiad  # new: v29.0.0
+                 └── gaiad  # new: v29.1.0
      ```
 3. Verify that Cosmovisor will use the binary you have prepared.
    * The Cosmovisor service should have the auto-download feature disabled. A sample Cosmovisor unit file will look like this:
