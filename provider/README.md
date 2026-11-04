@@ -5,21 +5,21 @@ The provider chain functions as an analogue of the Cosmos Hub. Its governance pa
 
 * **Chain-ID**: `provider`
 * **denom**: `uatom`
-* **Current Gaia Version**: [`v29.0.1`](https://github.com/cosmos/gaia/releases/tag/v29.0.1), upgraded from v29.0.0-rc0 at block height `19549500`.
+* **Current Gaia Version**: [`v29.1.0-rc0`](https://github.com/cosmos/gaia/releases/tag/v29.1.0-rc0), upgraded from v29.0.1 at block height `19549500`.
 * **Genesis File:**  [provider-genesis.json](provider-genesis.json), verify with `shasum -a 256 provider-genesis.json`
 * **Genesis sha256sum**: `91870bfb8671f5d60c303f9da8e44b620a5403f913359cc6b212150bfc3e631d`
 * Launch Date: 2023-02-02
 * Launch Gaia Version: [`v9.0.0-rc2`](https://github.com/cosmos/gaia/releases/tag/v9.0.0-rc2)
 
-## v29.1.0-rc0 Upgrade
+## v30.0.0-rc0 Upgrade
 
-The provider chain will upgrade to Gaia `v29.1.0-rc0` on **November 3, 2026**
+The provider chain will upgrade to Gaia `v30.0.0-rc0` on **TBD**
 
-* Upgrade height: `19696000`
+<!-- * Upgrade height: `19696000`
   * Estimated upgrade time: `13:00 UTC`
   * Mintscan countdown: https://www.mintscan.io/ics-testnet-provider/block/19696000
   * Proposal 332: https://explorer.polypore.xyz/provider/gov/332
-* Upgrade name: `v29.1.0`
+* Upgrade name: `v29.1.0` -->
 
 <!-- * ⚠️ This is **not** a governance-gated upgrade. You must do one of the following ahead of time:
   1. Set the upgrade height in your node(s) `app.toml` and restart the node.

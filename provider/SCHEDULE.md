@@ -2,7 +2,7 @@
 
 | Date                   | Testnet Participation Period | Type                       | Description                                                                                                                                              |
 | ---------------------- | ---------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| November 3 2026        | November 2026                | Minor upgrade              | Provider chain upgrades to Gaia v29.1.0-rc0                                                                                                              |
+| November 3 2026        | November 2026                | Minor upgrade              | ✅ Provider chain upgrades to Gaia v29.1.0-rc0                                                                                                              |
 | October 27 2026        | October 2026                 | Patch upgrade              | ✅ Provider chain upgraded to Gaia v29.0.1                                                                                                                |
 | October 13 2026        | October 2026                 | Major upgrade              | ✅ Provider chain upgrades to Gaia v29.0.0-rc0                                                                                                            |
 | September 17 2026      | -                            | Minor upgrade              | ✅ Provider chain upgrades to Gaia v28.2.0                                                                                                                |
